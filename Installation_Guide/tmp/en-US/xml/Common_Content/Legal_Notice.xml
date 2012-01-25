@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE legalnotice PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "../Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<legalnotice lang="en-US">
+	<para>
+		Copyright <trademark class="copyright"></trademark> &YEAR; oVirt Project.
+	</para>
+	 <para>
+		Licensed under the Apache License, Version 2.0 (the "License"). A copy of the License is included in this documentation; in addition, you may obtain a copy of the License at
+	</para>
+	 <para>
+		<ulink url="http://www.apache.org/licenses/LICENSE-2.0" />
+	</para>
+	 <para>
+		Red Hat, Red Hat Enterprise Linux, JBoss, and Fedora are trademarks of Red Hat, Inc., registered in the United States and other countries.
+	</para>
+	 <!--  
+        Trademarks not currently referenced in content have been removed. Where the content is updated such that these marks do appear then the relevant content stating the ownership of the mark must also be reinstated.
+  --><!--  
+    <para>
+        Red Hat, Red Hat Enterprise Linux, the Shadowman logo, JBoss, MetaMatrix, Fedora, the Infinity Logo, and RHCE are trademarks of Red Hat, Inc., registered in the United States and other countries. 
+    </para>
+  --> <para>
+		<trademark class="registered">Linux</trademark> is the registered trademark of Linus Torvalds in the United States and other countries.
+	</para>
+	 <para>
+		<trademark class="registered">Java</trademark> is a registered trademark of Oracle and/or its affiliates.
+	</para>
+	 <!--  
+        Trademarks not currently referenced in content have been removed. Where the content is updated such that these marks do appear then the relevant content stating the ownership of the mark must also be reinstated.
+  --><!--  
+    <para>
+        <trademark class="registered">XFS</trademark> is a trademark of Silicon Graphics International Corp. or its subsidiaries in the United States and/or other countries.
+    </para>
+    <para>
+        <trademark class="registered">MySQL</trademark> is a registered trademark of MySQL AB in the United States, the European Union and other countries.
+    </para>
+  --> <para>
+		All other trademarks are the property of their respective owners.
+	</para>
+</legalnotice>
+
