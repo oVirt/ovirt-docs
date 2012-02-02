@@ -1,15 +1,16 @@
-<?xml version='1.0' encoding='utf-8' ?>
+<?xml version='1.0'?>
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<appendix id="appe-Installation_Guide-Revision_History">
+
+<appendix id="appe-Publican-Revision_History">
 	<title>Revision History</title>
 	<simpara>
 		<revhistory>
 			<revision>
 				<revnumber>1-1</revnumber>
-				<date>Wed Jan 25 2012</date>
+				<date>Thursday February 2 2011</date>
 				<author>
 					<firstname>Stephen</firstname>
 					<surname>Gordon</surname>
@@ -17,7 +18,7 @@
 				</author>
 				<revdescription>
 					<simplelist>
-						<member>Initial creation of book by publican</member>
+						<member>Initial release for oVirt Project.</member>
 					</simplelist>
 				</revdescription>
 			</revision>

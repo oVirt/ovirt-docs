@@ -3,13 +3,60 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
 ]>
+
 <book>
-	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Installing_oVirt_Engine.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Installing_oVirt_Node.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<index />
+	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	<part label="I" id="part_I">
+		<title>Before you Begin</title>
+		<xi:include href="Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	</part>
+	<part label="II" id="part_II">
+		<title>Installing oVirt Engine</title>
+		<partintro>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/RHEV30_Install_Flow_2.png" />
+				</imageobject>
+			</mediaobject>
+		</partintro>
+		<xi:include href="Install_RHEVM.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Reports.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Upgrade.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	</part>
+	<part label="III" id="part_III">
+		<title>Installing Virtualization Hosts</title>
+		<partintro>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/RHEV30_Install_Flow_4.png" />
+				</imageobject>
+			</mediaobject>
+		</partintro>
+		<xi:include href="Hosts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Install_RHEVH.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Install_RHEL.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	</part>
+	<part label="IV" id="part_IV">
+		<title>Environment Configuration</title>
+		<partintro>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/RHEV30_Install_Flow_5.png" />
+				</imageobject>
+			</mediaobject>
+		</partintro>
+		<xi:include href="Planning.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Network.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		<xi:include href="Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	</part>
+	<part label="V" id="part_V">
+		<title>Appendices</title>
+		<xi:include href="Troubleshooting.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		<xi:include href="Directory_Services.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		<xi:include href="Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+	</part>
 </book>
 
