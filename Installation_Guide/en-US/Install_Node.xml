@@ -609,7 +609,7 @@ cdrecord-2.01-10.7.el5
 					<para>
 						The boot splash screen appears. If no input is provided, the node installation will commence in 30 seconds, using default kernel parameters.
 					</para>
-					<figure>
+<!--					<figure>
 						<title>Boot Splash Screen</title>
 						<mediaobject>
 							<imageobject>
@@ -619,13 +619,13 @@ cdrecord-2.01-10.7.el5
 								<phrase>The boot splash screen counts down for 30 seconds before automatically booting the system.</phrase>
 							</textobject>
 						</mediaobject>
-					</figure>
+					</figure>-->
 				</step>
 				<step>
 					<para>
 						To modify the boot options, press any key. The boot menu will display. 					
 					</para>
-					<figure>
+<!--					<figure>
 						<title>Boot Menu Screen</title>
 						<mediaobject>
 							<imageobject>
@@ -635,7 +635,7 @@ cdrecord-2.01-10.7.el5
 								<phrase>The boot menu screen displays all pre-defined boot options, as well as providing the option to edit them.</phrase>
 							</textobject>
 						</mediaobject>
-					</figure>
+					</figure>-->
 					<para>
 						The following boot options are available:
 					</para>
@@ -673,7 +673,7 @@ cdrecord-2.01-10.7.el5
 					<para>
 						Where required additional kernel parameters should be appended to the default parameters displayed. A press of the  <keycap>Enter</keycap> key boots the node installation with the default kernel parameters. Alternatively press the <keycap>Tab</keycap> key to edit kernel parameters for the selected boot option.
 					</para>
-					<figure>
+<!--					<figure>
 						<title>Boot Parameter Screen</title>
 						<mediaobject>
 							<imageobject>
@@ -683,7 +683,7 @@ cdrecord-2.01-10.7.el5
 								<phrase>The boot parameters screen allows you to add and remove boot parameters.</phrase>
 							</textobject>
 						</mediaobject>
-					</figure>
+					</figure>-->
 				</step>
 			</procedure>
 					<formalpara>
