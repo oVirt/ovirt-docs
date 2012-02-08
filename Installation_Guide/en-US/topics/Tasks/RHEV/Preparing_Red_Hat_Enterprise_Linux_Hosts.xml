@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<!--<procedure id="Tasks_oVirt_Preparing_Red_Hat_Enterprise_Linux_Hosts">--><section id="Tasks_oVirt_Preparing_Red_Hat_Enterprise_Linux_Hosts">
+  <!-- Author: Stephen Gordon -->
+  <!-- Author email: sgordon@redhat.com -->
+  <!-- Created: -->
+
+  <!-- Original source: Author -->
+
+  <!-- Audiences: Writer -->
+
+  <!-- SME: -->
+  <!-- SME email: -->
+
+  <!-- Verified by: -->
+  <!-- Verified by email: -->
+  <!-- Verified on: -->
+
+  <!-- QE checked by: -->
+  <!-- QE checked email: -->
+  <!-- QE checked on: -->
+
+  <!-- Last modified: -->
+  <!-- Last modified by: -->
+  <!-- Last modified by email: -->
+
+  <!-- Last modified: -->
+  <!-- Last modified by: -->
+  <!-- Last modified by email: -->
+  
+  <!-- Product: -->    
+  <!-- Applicable versions: all -->
+<title>Preparing Red Hat Enterprise Linux Hosts</title>
+			<para>To ensure a smooth and successful integration of Red Hat Enterprise Linux Hosts and oVirt platform, prepare the host carefully according to the instructions in this section.</para>
+<procedure id="proc_Tasks_oVirt_Preparing_Red_Hat_Enterprise_Linux_Hosts">
+  <title>Directions:</title>
+  <step>
+    <title>Install Red Hat Enterprise Linux</title>
+	<para>
+		Ensure that Red Hat Enterprise Linux is correctly installed and configured on the physical host. Refer to the <citetitle>Red Hat Enterprise Linux Installation Guide</citetitle> for more information. Only the Base package group is required. All other packages can be removed or not selected. 
+	</para>
+	<warning>
+		<title>Warning — DNS Configuration</title>
+		<para>
+			The Red Hat Enterprise Linux host must have a fully resolvable network address. Valid forward and reverse lookups for the address must be available in <acronym>DNS</acronym>. Virtual machine migration will not work in environments where this is not the case.
+		</para>
+	</warning>
+	<important>
+		<title>Important — Authentication Files Required by <command>useradd</command> Must be Accessible</title>
+		<para>
+			If you are using proprietary directory services or standard directory services with no access to authentication files for user management, the <systemitem class="daemon">vdsm</systemitem> package will fail to create the required system user . The authentication files required by the <command>useradd</command> command must be accessible to the installer. oVirt Directory Server (<application>RHDS</application>) recommends a security policy with a mixture of local files and <application>LDAP</application>. Following this recommendation will resolve this issue.
+		</para>
+	</important>
+  </step>
+  <step>
+	<title>Configure <systemitem>VLANs</systemitem></title>
+	<para>If you are using VLAN, ensure that <systemitem>VLANs</systemitem> are configured for access to the oVirt Engine.</para>
+  </step>
+  <step>
+	<title>Check Red Hat Network Subscriptions</title>
+	<para>
+		Ensure the host is correctly subscribed to the <literal>oVirt Enterprise Virt Management Agent (v 6 x86_64)</literal> channel in Red Hat Network, also referred to as <systemitem>rhel-x86_64-rhev-mgmt-agent-6</systemitem>, on Red Hat Network. If you do not have the appropriate subscription entitlements, contact oVirt Customer Service.
+	</para>
+	<substeps>
+		<step>
+			<para>
+				If the machine has not already been registered with Red Hat Network, run the <command>rhn_register</command> command as <systemitem>root</systemitem> to register it. To complete registration successfully you will need to supply your Red Hat Network username and password. Follow the onscreen prompts to complete registration of the system.
+			</para>
+			<screen># rhn_register</screen>
+		</step>
+		<step>
+			<para>
+				You must now add a subscription to the <literal>oVirt Enterprise Virt Management Agent (v 6 x86_64)</literal> channel to the machine. To add the channel subscription to the system from the Red Hat Network web interface:
+			</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>
+						Log on to Red Hat Network (<ulink url="http://rhn.redhat.com"/>).
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Click <guilabel>Systems</guilabel> at the top of the page.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Select the system to which you are adding channels from the list presented on the screen, by clicking the name of the system.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Click <guilabel>Alter Channel Subscriptions</guilabel> in the <guilabel>Subscribed Channels</guilabel> section of the screen.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Select the <literal>oVirt Enterprise Virt Management Agent (v 6 x86_64)</literal> channel from the list presented on the screen, then click the <guilabel>Change Subscription</guilabel> button to finalize the change.
+					</para>
+				</listitem>
+			</orderedlist>
+		</step>
+	</substeps>
+<!--	<note>
+		<title>Note — Beta Release Channels</title> 
+		<para>
+			The channels required to obtain beta releases of the oVirt Management Agent and Red Hat Enterprise Linux are:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					<literal>Red Hat Enterprise Linux Server Beta (v. 6 for 64-bit x86_64)</literal>, this channel is also referred to by the label <systemitem>rhel-x86_64-server-6-beta</systemitem> in Red Hat Network.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<literal>oVirt Enterprise Virt Management Agent Beta (v 6 x86_64)</literal>, this channel is also referred to by the label <systemitem>rhel-x86_64-rhev-mgmt-agent-6-beta</systemitem> in Red Hat Network.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para>	
+			Red Hat Enterprise Linux systems intended for use as virtualization hosts in a oVirt 3.0 beta environment must be subscribed to both channels.
+		</para>
+	</note>-->
+  </step>
+  <step>
+	<title>Edit hosts file</title>
+	<para>
+		Add a manual host entry to the <filename>/etc/hosts</filename> file (on the Red Hat Enterprise Linux host) for the oVirt Engine server to enable <command>vdsm</command> and other services to connect properly to the host.</para>
+	<para>
+		Because Active Directory uses layered domain names, the Active Directory instance takes the domain name usually used by a Linux host. For example, if the server running the oVirt Engine has a hostname of
+		<filename>server1.example.com</filename>, Active Directory uses that address and creates a sub-address named
+		<filename>rhev-engine.server1.example.com</filename>. </para>
+	<para>Edit the
+		<filename>/etc/hosts</filename> file on the Red Hat Enterprise Linux Host. The following screen output sample resembles the contents of the file:</para>
+	<screen>
+127.0.0.1    localhost.localdomain localhost
+::1          localhost6.localdomain6 localhost6
+	</screen>
+	<para>Append a new line to <filename>/etc/hosts</filename> with the IP address and
+		<emphasis>both</emphasis> variants of the oVirt Engine domain names. The following screen output sample resembles the required contents of the file:</para>
+	<para>
+<screen>
+127.0.0.1    localhost.localdomain localhost
+::1          localhost6.localdomain6 localhost6
+10.0.0.1     server1.example.com rhev-engine.server1.example.com
+</screen>
+	</para>
+  </step>
+  <step>
+	<title>Open firewall ports</title>
+	<para>
+		oVirt platform uses a number of network ports for management and other virtualization features.
+	</para>
+	<para>
+		The following steps configure <command>iptables</command> to open the required ports. These steps replace any existing firewall configuration with that required for oVirt Engine. If you have existing firewall rules with which this configuration must be merged then you must manually edit the rules defined in the <command>iptables</command> configuration file, <filename>/etc/sysconfig/iptables</filename>. 
+	</para>
+	<substeps>
+		<step>
+			<para>
+				Remove and existing firewall rules.
+			</para>
+			<screen># iptables --flush</screen>
+		</step>
+		<step>
+			<para>
+				Add the ports required by oVirt Engine  to the <command>iptables</command> rules.
+			</para>
+			<screen>
+# iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+# iptables --append INPUT -p icmp -j ACCEPT
+# iptables --append INPUT -i lo -j ACCEPT
+# iptables --append INPUT -p tcp --dport 22 -j ACCEPT
+# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT
+# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT
+# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT
+# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT
+# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited
+# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --reject-with icmp-host-prohibited
+			</screen>
+			<note>
+				<para>
+					The provided <command>iptables</command> commands add firewall rules to accept network traffic on a number of ports. These include:  
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+							port <systemitem class="protocol">22</systemitem> for <application>SSH</application>,
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							ports <systemitem class="protocol">5634</systemitem> to <systemitem class="protocol">6166</systemitem> for guest console connections,
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							port <systemitem class="protocol">16514</systemitem> for <application>libvirt</application> virtual machine migration traffic, 
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							ports <systemitem class="protocol">49152</systemitem> to <systemitem class="protocol">49216</systemitem> for <acronym>VDSM</acronym> virtual machine migration traffic, and
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							port <systemitem class="protocol">54321</systemitem> for the oVirt Engine.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</note>
+		</step>
+		<step>
+			<para>
+				Save the modified rules.
+			</para>
+			<screen># service iptables save</screen>
+		</step>
+		<step>
+			<para>
+				Ensure that the <command>iptables</command> service is configured to start on boot and has been restarted, or started for the first time if it wasn't already running.
+			</para>
+<screen>
+# chkconfig iptables on
+# service iptables restart
+</screen>
+		</step>
+	</substeps>
+  </step>
+  <step>
+	<title>Configure <command>sudo</command> access</title>
+	<para>
+		The oVirt Engine makes use of <application>sudo</application> to perform operations as <systemitem class="username">root</systemitem> on the host. The default configuration stored in <filename>/etc/sudoers</filename> contains values to allow this. If this file has been modified since Red Had Enterprise Linux installation these values may have been removed. As <systemitem class="username">root</systemitem> run <application>visudo</application> to ensure that the <filename>/etc/sudoers</filename> contains the default configuration values. Where it does not they must be added.
+	</para>
+<screen>
+# Allow root to run any commands anywhere 
+root    ALL=(ALL)   ALL
+</screen>
+  </step>
+  <step>
+    <title>Enable SSH access for root</title>
+	<para>
+		The oVirt management daemon accesses host machines via SSH. To do this it logs in as <systemitem class="username">root</systemitem>  with an encrypted key for authentication. To ensure that SSH is configured and <systemitem class="username">root</systemitem> is able to use it to access the system follow these additional steps.
+	</para>
+	<warning>
+		<para>
+			The first time the oVirt Engine is connected to the host it will install an authentication key. In the process it will overwrite any existing keys which exist in <filename>/root/.ssh/authorized_keys</filename>.
+		</para>
+	</warning>
+	<substeps>
+	  <step>
+		<para>
+			These steps assume that the <package>openssh-server</package> package is installed on the system. Where the package is not present use <application>yum</application> to install it.
+		</para>
+		<screen># yum install openssh-server</screen>
+	  </step>
+	  <step>
+	     <para>
+			Use <command>chkconfig</command> to verify which run-levels SSH is enabled at.
+		 </para>
+<screen>
+# chkconfig --list sshd
+sshd			0:off	1:off	2:on	3:on	4:on	5:on	6:off
+</screen>
+		<para>
+			It is expected that the SSH daemon shows as <literal>on</literal> for run-levels <literal>3</literal>, <literal>4</literal>, and <literal>5</literal>. This is the default configuration. 
+		</para>
+		<para>
+			If the configuration on the host differs use <command>chkconfig</command> to enable it for the required run-levels. The <command>/etc/init.d/sshd</command> script can then be used to ensure the service is currently started.
+		</para>
+<screen>
+# chkconfig --level 345 sshd on
+# /etc/init.d/sshd start
+</screen>
+		<para>
+			To verify this operation as successful run <command>chkconfig --list sshd</command> again and check the output. It should now show the daemon as <literal>on</literal> at run-level <literal>3</literal>, <literal>4</literal>, and <literal>5</literal>.
+		</para>
+	  </step>
+	  <step>
+		<para>
+			In Red Hat Enterprise Linux the default SSH daemon configuration allows remote login by the <systemitem class="username">root</systemitem> user. This is also a requirement for the oVirt Engine to successfully access the machine. In some cases administrator's may have disabled this ability. 
+		</para>
+		<para>
+			To check whether or not this is the case search the <filename>/etc/ssh/sshd_config</filename> for the value <literal>PermitRootLogin</literal>. This must be done while logged in as <systemitem class="username">root</systemitem>.
+		</para>
+<screen>
+# grep PermitRootLogin /etc/ssh/sshd_config
+PermitRootLogin no
+</screen>
+		<para>
+			Where <systemitem>PermitRootLogin</systemitem> is set to <literal>no</literal> the value must be changed to <literal>yes</literal>. To do this edit the configuration file.
+		</para>
+<screen>
+# vi /etc/ssh/sshd_config
+</screen>
+		<para>
+			Once the updated configuration file has been saved the SSH daemon must be told to reload it.
+		</para>
+<screen>
+# /etc/init.d/sshd reload
+Reloading sshd:                                            [  OK  ]
+</screen>
+	  </step>
+	</substeps>
+	<para>
+		The <systemitem class="username">root</systemitem> user should now be able to access the system via SSH.
+	</para>
+  </step>
+  </procedure>
+
+    <formalpara><title>Result:</title>
+		<para>
+			You can now add the correctly installed and configured Red Hat Enterprise Linux host to the oVirt platform.
+		</para>
+    </formalpara>
+  </section>

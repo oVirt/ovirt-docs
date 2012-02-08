@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<section id="Tasks_oVirt_Adding_NFS_Storage">
+  <!-- Author: Stephen Gordon -->
+  <!-- Author email: sgordon@redhat.com -->
+  <!-- Created: -->
+
+  <!-- Original source: Author -->
+
+  <!-- Audiences: Writer -->
+
+  <!-- SME: -->
+  <!-- SME email: -->
+
+  <!-- Verified by: -->
+  <!-- Verified by email: -->
+  <!-- Verified on: -->
+
+  <!-- QE checked by: -->
+  <!-- QE checked email: -->
+  <!-- QE checked on: -->
+
+  <!-- Last modified: -->
+  <!-- Last modified by: -->
+  <!-- Last modified by email: -->
+
+  <!-- Last modified: -->
+  <!-- Last modified by: -->
+  <!-- Last modified by email: -->
+  
+  <!-- Product: -->    
+  <!-- Applicable versions: all -->
+
+			<title>Adding <acronym>NFS</acronym> Storage</title>
+			<para> 
+				An <acronym>NFS</acronym> storage domain is an <acronym>NFS</acronym> file share that is attached to a data center. Once you attach an  <acronym>NFS</acronym> file  share to the data center as a storage domain it is used to provide storage to the oVirt environment. How the storage domain is used depends on the function you select when attaching it. 
+			</para>
+			<para>
+				This section details how to prepare <acronym>NFS</acronym> file shares on your storage infrastructure and attach them using the oVirt Engine. For further information on <acronym>NFS</acronym> itself, see the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle>
+        <figure id="Tasks_oVirt_Adding_NFS_Storage_new-storage-dialog2">
+          <title>Add NFS</title>
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="images/Tasks/RHEV/Adding_NFS_Storage.images/nfs_storage_add.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+        </figure>
+			</para>
+			<important>
+				<para>
+				  For best results, the network interface over which data is shared should be capable of speeds of at least 1Gb/s. 
+				 </para>
+				<para>
+					<acronym>NFSv4</acronym> is not natively supported by oVirt. oVirt will always attempt to mount <acronym>NFS</acronym> storage using <acronym>NFSv3</acronym>. 
+				</para>
+				<para>
+					Your <acronym>NFS</acronym> storage server must support <acronym>NFSv3</acronym> to be used with oVirt. Attempts to attach <acronym>NFS</acronym> storage which has been exported from servers that do not support <acronym>NFSv3</acronym> to the oVirt environment will fail.
+				</para>
+			</important>
+			<formalpara>
+				<title>Preparing <acronym>NFS</acronym> Storage</title>
+				<para>This section outlines how to prepare an <acronym>NFS</acronym> file share on a server running Red Hat Enterprise Linux 6. Once created the <acronym>NFS</acronym> share can be attached by the oVirt Engine.</para>
+			</formalpara>
+			<procedure>
+				<step>
+					<title>Install <package>nfs-utils</package></title>
+					<para>
+						<acronym>NFS</acronym> functionality is provided by the <package>nfs-utils</package> package. Before file shares can be created, check that the package is installed by querying the <acronym>RPM</acronym> database for the system:
+					</para>
+					<screen>$ <command>rpm -qi <package>nfs-utils</package></command></screen>
+					<para>
+						If the <package>nfs-utils</package> package is installed then the package information will be displayed. If no output is displayed then the package is not currently installed. Install it using  <command>yum</command> while logged in as the <systemitem>root</systemitem> user:
+					</para>
+					<screen># <command>yum install <package>nfs-utils</package></command></screen>
+				</step>
+				<step>
+					<title>Configure Boot Scripts</title>
+					<para>
+						To ensure that <acronym>NFS</acronym> shares are always available when the system is operational both the <systemitem>nfs</systemitem> and <systemitem>rpcbind</systemitem> services must start at boot time. Use the <command>chkconfig</command> command while logged in as <systemitem>root</systemitem> to modify the boot scripts. 
+					</para>
+<screen>
+# <command>chkconfig --add rpcbind</command>
+# <command>chkconfig --add nfs</command>
+# <command>chkconfig rpcbind on</command>
+# <command>chkconfig nfs on</command>
+</screen>
+					<para>
+						Once the boot script configuration has been done, start the services for the first time.
+					</para>
+<screen>
+# <command>service rpcbind start</command>
+# <command>service nfs start</command>
+</screen>
+				</step>
+				<step>
+					<title>Create Directory</title>
+					<para>
+						Create the directory you wish to share using <acronym>NFS</acronym>. 
+					</para>
+					<screen># <command>mkdir <replaceable>/exports/iso</replaceable></command></screen>
+					<para>
+						Replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use.
+					</para>
+				</step>
+				<step>
+					<title>Export Directory</title>
+					<para>
+						To be accessible over the network using <acronym>NFS</acronym> the directory must be exported. <acronym>NFS</acronym> exports are controlled using the <filename>/etc/exports</filename> configuration file. Each export path appears on a separate line followed by a tab character and any additional <acronym>NFS</acronym> options. Exports to be attached to the oVirt Engine must have the read, and write, options set. 
+					</para>
+					<para>
+						To grant read, and write access to <filename>/exports/iso</filename> using <acronym>NFS</acronym> for example you add the following line to the <filename>/etc/exports</filename> file.
+					</para>
+					<screen><replaceable>/exports/iso</replaceable>       *(rw)</screen>
+					<para>
+						Again, replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use.
+					</para>
+				</step>
+				<step>
+					<title>Reload <acronym>NFS</acronym> Configuration</title>
+					<para>
+						For the changes to the <filename>/etc/exports</filename> file to take effect the service must be told to reload the configuration. To force the service to reload the configuration run the following command as      <systemitem>root</systemitem>:
+					</para>
+					<screen># <command>service nfs reload</command></screen>
+				</step>
+				<step>
+					<title>Set Permissions</title>
+					<para>
+						The <acronym>NFS</acronym> export directory must be configured for read write access and must be owned by vdsm:kvm. If these users do not exist on your external <acronym>NFS</acronym> server use the following command, assuming that <filename><replaceable>/exports/iso</replaceable></filename> is the directory to be used as an <acronym>NFS</acronym> share.
+					</para>
+					<screen># <command>chown -R 36:36 <replaceable>/exports/iso</replaceable></command></screen>
+					<para>
+						The permissions on the directory must be set to allow read and write access to both the owner and the group. The owner should also have execute access to the directory. The permissions are set using the <command>chmod</command> command. The following command arguments set the required permissions on the <filename><replaceable>/exports/iso</replaceable></filename> directory.
+					</para>
+					<screen># <command>chmod 0755 <replaceable>/exports/iso</replaceable></command></screen>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The <acronym>NFS</acronym> file share has been created, and is ready to be attached by the oVirt Engine.
+						</para>
+					</formalpara>
+
+
+			<formalpara>
+				<title>Attaching NFS Storage</title>
+				<para>
+				An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a data center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the oVirt Engine, using the Administration Portal.
+				</para>
+			</formalpara>
+			  <para>
+              To add an <acronym>NFS</acronym> data, or export, storage domain you must select an <acronym>NFS</acronym> data center. <acronym>NFS</acronym> storage domains for <acronym>ISO</acronym> storage are able to be added to data centers of any type.
+              </para>
+			<procedure>
+				<step>
+					<para>Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display.
+				</para>
+				</step>
+      <step>
+				<para>
+					 Click <guilabel>New Domain</guilabel>. 
+				</para>
+				</step>
+				<step>
+					<para>
+						The <guilabel>New Storage</guilabel> dialog box displays. 
+					<figure id="Tasks_oVirt_Adding_NFS_Storage_new-storage-dialog1">
+								<title>NFS Storage</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="images/Tasks/RHEV/Adding_NFS_Storage.images/storage-nfs.png" format="PNG"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+            </para>
+				</step>
+				<step>
+					<para>
+						Configure the following options: 
+						  <simplelist>
+						    <member><guilabel>Name:</guilabel> Enter a suitably descriptive name. </member>
+						    <member><guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list.</member>
+						    <member><guilabel>Domain Function/ Storage Type:</guilabel> In the drop down menu, select Data → NFS. The storage domain types which are not compatible with the Default data center are grayed out. After you select your domain type, the Export Path field appears. </member>
+						    <member><guilabel>Export path:</guilabel> Enter the IP address or a resolvable hostname of the chosen host. The export path should be in the format of <filename>192.168.0.10:/Images/ISO or domain.example.com:/Images/ISO</filename></member>
+						    <member><guilabel>Use Host:</guilabel> Select any of the hosts from the drop down menu. Only hosts which belong in the pre-selected data center will display in this list. </member>
+						  </simplelist>
+						  <important>
+						<title>Active Host Required</title>
+						<para>
+							All communication to the storage domain is via the selected host and not directly from the oVirt Engine.  At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
+						</para>
+					</important>
+					</para>
+					</step>
+					<step>
+					<para>
+						Click <guilabel>OK</guilabel>.  
+					</para>
+				</step>
+				</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The new NFS data domain displays on the Storage tab. It will remain with a <emphasis>Locked status</emphasis> while it is being prepared for use. When ready, it is automatically attached to the data center. 
+						</para>
+					</formalpara>
+
+
+</section>

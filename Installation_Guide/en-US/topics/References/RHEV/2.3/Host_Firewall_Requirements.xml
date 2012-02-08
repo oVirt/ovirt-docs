@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<section id="References_oVirt_3_Host_Firewall_Requirements">
+   <title>Virtualization Host Firewall Requirements</title>
+	<para>
+		It is required that virtualization hosts have a number of ports be opened in their firewalls to allow network traffic. This allows the oVirt Engine to successfully interact with the hosts. In the case of the oVirt Node these firewall rules are configured automatically. For other Linux hosts however it is necessary to manually configure the firewall.
+	</para>
+<!-- A Reference provides additional information -->
+   <table>
+	<title>Virtualization Host Firewall Requirements</title>
+	<tgroup align="left" cols="5" colsep="1" rowsep="1">
+           <colspec colname="c1" colwidth="1*"/>
+           <colspec colname="c2" colwidth="1*"/>
+           <colspec colname="c3" colwidth="1*"/>
+           <colspec colname="c4" colwidth="1*"/>
+           <colspec colname="c5" colwidth="1*"/>
+         <thead>
+            <row>
+               <entry>Port(s)</entry>
+			   <entry>Protocol</entry>
+			   <entry>Source</entry>
+			   <entry>Destination</entry>
+               <entry>Purpose</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>22</entry>
+			   <entry>TCP</entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Other Hosts
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+               <entry>Secure Shell (<acronym>SSH</acronym>) access.</entry>
+            </row>
+            <row>
+               <entry>5634 - 6166</entry>
+			   <entry>TCP</entry>
+		   	   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Administration Portal clients
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								User Portal clients
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+				<itemizedlist>
+					<listitem>
+						<para>
+							oVirt Node(s)
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							Other Host(s)
+						</para>
+					</listitem>
+				</itemizedlist>
+			   </entry>
+               <entry>
+					<para>
+						Remote guest console access via <acronym>VNC</acronym> and <acronym>Spice</acronym>. These ports must be open to facilitate client access to virtual machines.
+					</para>
+				</entry>
+			</row>
+			<row>
+				<entry>16514</entry>
+				<entry>TCP</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Other Host(s)
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Other Host(s)
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>
+					<para>
+						Virtual machine migration using <systemitem>libvirt</systemitem>.
+					</para>
+				</entry>
+			</row>
+            <row>
+               <entry>49152 - 49216</entry>
+			   <entry>TCP</entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Other Host(s)
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+               <entry>
+					<para>
+						Virtual machine migration and fencing using <acronym>VDSM</acronym>. These ports must be open facilitate both automated and manually initiated migration of virtual machines.
+					</para>
+		       </entry>
+            </row>
+			<row>
+				<entry>54321</entry>
+				<entry>TCP</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Other Host(s)
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Other Host(s)
+							</para>
+						</listitem>
+					</itemizedlist>
+				
+				</entry>
+				<entry>
+					<para>VDSM communications with the Manager and other virtualization hosts.</para>
+				</entry>
+			</row>
+         </tbody>
+      </tgroup>
+   </table>
+
+
+   <!-- Do not edit below this line! -->
+
+   <!-- Injection Point: Related Overviews -->
+   <!-- Injection Point: Related Concepts -->
+   <!-- Injection Point: Related Tasks -->
+</section>

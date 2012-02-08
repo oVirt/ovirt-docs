@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<section id="Tasks_IPA_Adding_New_Users">
+   <title>Adding New Users</title>
+
+   <!-- 1. A Task has a single information role: "instruct". -->
+   <!-- 2. Each step is an active instruction to "do something" -->
+   <!-- 3. Each step reduces uncertainty. -->
+   <!-- 4. Whenever options are presented, guidance must be given on when to choose which. --> 
+
+   <!-- Injection Point: Related Overviews -->
+   <!-- Injection Point: Related Concepts -->
+
+   <!-- Do not edit or move the Injection Points above! -->
+
+<!-- Uncomment and use the Task Summary and Prerequisites below if you have something to say.
+     Otherwise, don't clutter the view! -->
+	<para>
+	Because this section is devoted to getting you started with IPA quickly and easily, we have included only a limited number of examples. In this case, we have used the example of adding a new user to the system as an introduction to administering your IPA system. The methods and general approach, however, apply to nearly all IPA objects (users, groups, hosts, etc.), upon which you would perform some operation, such as add, show, find, or delete. The general syntax involved follows the same pattern: <command>ipa <replaceable>object-operation</replaceable></command>
+	</para>
+	<para>
+	  Use the <command># ipa user-add</command> command to create IPA users. Numerous options are available to customize the way your IPA users are created. Use the <command>ipa help</command> user command to access the available help on operations regarding user creation. Password management can be performed as a separate operation or as part of the initial user creation process. This, and other aspects of creating IPA users, are discussed below. 
+	</para>
+	<formalpara>
+		<title>Interactive Mode</title>
+		<para>
+			In interactive mode, the user is first created and their password created separately so that they can authenticate and log in. Use the <command># ipa user-add</command> command to create an IPA user. You can run this command with or without additional parameters. If you omit any of the required parameters, the interface will prompt you for the information. 
+		</para>
+	</formalpara>
+	<para>
+		The following example demonstrates adding a new user to IPA. In this example, the <command>ipa user-add</command> command was executed without any additional parameters; all required information was entered in interactive mode. 
+	</para>
+<screen><command># ipa user-add</command>
+  First name: Ryan
+  Last name: Andrews
+  User login [randrews]:
+  ---------------------
+  Added user "randrews"
+  ---------------------
+  User login: randrews
+  First name: Ryan
+  Last name: Andrews
+  Full name: Ryan Andrews
+  Display name: Ryan Andrews
+  Initials: RA
+  Home directory: /home/randrews
+  GECOS field: randrews
+  Login shell: /bin/sh
+  Kerberos principal: randrews@IPADOCS.ORG
+  UID: 1316000004</screen>
+	<para>
+	Type <command>ipa passwd <replaceable>&lt;user login&gt;</replaceable></command> to create a password for the user. This is a temporary password, or <firstterm>one-time password (<acronym>OTP</acronym>)</firstterm>, and the user is required to change it the first time they log in. This is done intentionally, so that an administrator can reset a password for a user but they are unable to take advantage of that knowledge, because the user must change the password when they first log in. 
+	</para>
+	<formalpara>
+		<title>Unattended Mode</title>
+		<para>
+			As an integrated (or unattended) operation, you can pass the <parameter>--password</parameter> option to the <command>ipa user-add</command> command. This will force the command to prompt for an initial password. As an alternative, echo the password directly into the command: 
+		</para>
+	</formalpara>
+<screen><command># echo "secret123" | ipa user-add asmart --first=Alex --last=Smart --password</command>
+  --------------------
+  Added user "asmart"
+  --------------------
+  User login: asmart
+  First name: Alex
+  Last name: Smart
+  Full name: Alex Smart
+  Display name: Alex Smart
+  Initials: AS
+  Home directory: /home/asmart
+  GECOS field: asmart
+  Login shell: /bin/sh
+  Kerberos principal: asmart@IPADOCS.ORG
+  UID: 1315400003
+</screen>
+<formalpara>
+	<title>Performing Initial Login</title>
+	<para>
+		You can now authenticate using the newly-created user and temporary password. Type <command>kinit <replaceable>&lt;user login&gt;</replaceable></command> to log in to IPA. This will prompt you for a password and then immediately request a password change. 
+	</para>
+</formalpara>
+<para>
+	You can browse the IPA man pages and help system to explore other IPA commands. Please take some time to become familiar with the ways other IPA objects can be created and modified. 
+</para>
+
+   <!-- Do not edit below this line! -->
+   <!-- Injection Point: Related References -->
+   <!-- Injection Point: Related Tasks -->
+</section>

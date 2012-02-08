@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section id="References_oVirt_3_Admin_Client_Requirements">
+	<title>Client Requirements</title>
+
+<!-- A Reference provides additional information -->
+<!-- A sample table layout is provided below -->
+<para>
+To access the Administration and User Portals, you need a client with a supported web browser. The portals have been tested using the following clients and browsers:
+</para>
+<itemizedlist>
+	<listitem>
+		<para>
+			Client
+			<itemizedlist>
+			 <listitem>
+			  <para>Red Hat Enterprise Linux 5.5 (i386, AMD64 and Intel 64)</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Red Hat Enterprise Linux 6.0 (i386, AMD64 and Intel 64)</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Windows XP</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Windows XP Embedded (XPe)</para>
+			 </listitem>
+			 <listitem>
+			  <para>Windows 7 (x86, AMD64 and Intel 64)</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Windows Embedded Standard 7</para>
+			 </listitem>
+			 <listitem>
+			  <para>Windows 2008/R2 (x86, AMD64 and Intel 64)</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Windows Embedded Standard 2009</para>
+			 </listitem>
+			 <listitem>
+			  <para>Linux-based thin clients</para>
+			 </listitem>
+			</itemizedlist>
+		</para>
+	</listitem>
+	<listitem>
+		<para>
+			Browser
+			<itemizedlist>
+			 <listitem>
+			  <para>Internet Explorer 7 and higher on Windows, with the SPICE ActiveX control installed</para>					
+			 </listitem>
+			 <listitem>
+			  <para>Mozilla Firefox 3.5 and higher on Linux, with the SPICE plugin installed</para>					
+			 </listitem>
+			</itemizedlist>
+		</para>
+	</listitem>
+</itemizedlist>
+   <!-- Do not edit below this line! -->
+
+   <!-- Injection Point: Related Overviews -->
+   <!-- Injection Point: Related Concepts -->
+   <!-- Injection Point: Related Tasks -->
+</section>

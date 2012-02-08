@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<chapter id="chap-Installation_Guide-Installing_the_oVirt_Manager-Manager">
+	<title condition="OVIRT">Engine Installation</title>
+	<title condition="RHEV">Manager Installation</title>
+	<para>
+		Before proceeding with oVirt Engine installation you must ensure that all prerequisites, as listed in <xref linkend="chap-Installation_Guide-System_Requirements"/>, are met. Once you have confirmed that all prerequisites are met you are ready to proceed with installation. 
+	</para>
+	<para>
+		To perform initial installation and configuration of the oVirt Engine follow the steps in <xref linkend="sect-Installation_Guide-Installing_the_oVirt_Manager-Packages"/>. Once you have followed this procedure the oVirt Engine and dependencies, including <acronym>JBoss</acronym> (<ulink url="http://www.jboss.com"/>), will be installed and ready for your first login. Further action must be undertaken to complete configuration of the environment to the point that you can create virtual machines. These tasks will be described in the following chapters.
+	</para>
+	<para>
+		To complete installation of the oVirt Engine successfully you must be able to determine:
+	</para>
+	<orderedlist>
+		<listitem>
+			<para>
+				The ports to be used for <acronym>HTTP</acronym>, and <acronym>HTTPS</acronym>, communication. The defaults are <literal>8080</literal> and <literal>8443</literal> respectively.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The Fully Qualified Domain Name (<acronym>FQDN</acronym>) of the system the engine is to be installed on.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The password you will use to secure the oVirt administration account.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The password you will use to secure the database.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The Organization Name to use when creating the engine's security certificates.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The storage type to be used for the initial data center attached to the engine. The default is <acronym>NFS</acronym>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The path to use for the <acronym>ISO</acronym> share, if the engine is being configured to provide one. The display name, which will be used to label the domain in the oVirt Engine also needs to be provided.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The firewall rules, if any, present on the system that need to be integrated with the rules required for the engine to function.
+			</para>
+		</listitem>
+	</orderedlist>
+	<para>
+		Before installation is completed the values selected are displayed for confirmation. Once the values have been confirmed they are applied and the oVirt Engine is ready for use.
+	</para>
+	<example>
+		<title>Completed Installation</title>
+<screen>
+oVirt Manager will be installed using the following configuration:
+=================================================================
+http-port:                     8080
+https-port:                    8443
+host-fqdn:                     engine.demo.ovirt.org
+auth-pass:                     ********
+db-pass:                       ********
+org-name:                      oVirt
+default-dc-type:               NFS
+nfs-mp:                        /isodomain
+iso-domain-name:               ISODomain
+override-iptables:             yes
+Proceed with the configuration listed above? (yes|no): 
+</screen>
+	</example>
+	<note>
+		<title>Note — Automated Installation</title>
+		<para>
+			Automated installations are created by providing <command>engine-setup</command> with an answer file. An answer file contains answers to the questions asked by the setup command.
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					To create an answer file, use the <parameter>--gen-answer-file</parameter> parameter to set the location to which the answer file must be saved. The <command>engine-setup</command> command will record your answers to the file.
+				</para>
+				<screen># <command>engine-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
+			</listitem>
+			<listitem>
+				<para>
+					To use an answer file for a new installation, use the <parameter>--answer-file</parameter> parameter to set the location of the answer file that must be used. The command <command>engine-setup</command> command will use the answers stored in the file to complete installation.
+				</para>
+				<screen># <command>engine-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
+			</listitem>
+		</itemizedlist>
+		<para>
+			Run <command>engine-setup <parameter>--help</parameter></command> for further information.
+		</para>
+	</note>
+	<section id="sect-Installation_Guide-Installing_the_oVirt_Manager-Packages">
+		<title>Installation</title>
+		<para>
+			In this section installation of the oVirt Engine packages, and their dependencies, will be performed using <command>yum</command>. The packages provided via this mechanism are expected to work for users of Fedora, Red Hat Enterprise Linux, and other Enterprise Linux derivatives. Users of other distributions may wish to consult the following resources:
+		</para>
+		<variablelist>
+			<varlistentry>
+				<term>Debian</term>
+				<listitem>
+					<para>
+						<ulink url="http://www.ovirt.org/wiki/Ovirt_build_on_debian/ubuntu">http://www.ovirt.org/wiki/Ovirt_build_on_debian/ubuntu</ulink>
+					</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Gentoo</term>
+				<listitem>
+					<para>
+						<ulink url="http://wiki.gentoo.org/wiki/OVirt">http://wiki.gentoo.org/wiki/OVirt</ulink>
+					</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Ubuntu</term>
+				<listitem>
+					<para>
+						<ulink url="http://www.ovirt.org/wiki/Ovirt_build_on_debian/ubuntu">http://www.ovirt.org/wiki/Ovirt_build_on_debian/ubuntu</ulink>
+					</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		<para>
+			Note that once the Engine itself is installed, it is to be configured as documented in this guide regardless of distribution.
+		</para>
+		<procedure id="proc-Installation_Guide-Installing_the_oVirt_Manager-Installation">
+			<step>
+				<para>
+					Use <command>wget</command> to retrieve the oVirt <command>yum</command> repository configuration.
+				</para>
+				<screen># wget http://ovirt.org/releases/stable/ovirt-engine.repo -O /etc/yum.repos.d/ovirt-engine.repo</screen>
+			</step>
+			<step>
+				<para>
+					If installed, the <package>classpathx-jaf</package> package must be removed. It conflicts with some of the components installed to support <acronym>JBoss</acronym>.
+				</para>
+				<screen># <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command></screen>
+			</step>
+			<step>
+				<para>
+					Use <command>yum</command> to ensure that the most up to date versions of all installed packages are in use.
+				</para>
+				<screen># <command>yum <parameter>upgrade</parameter></command></screen>
+			</step>
+			<step>
+				<para>
+					Use <command>yum</command> to initiate installation of the <package>ovirt-engine</package> package and all dependencies. You must run this command as the <systemitem class="username">root</systemitem> user.
+				</para>
+				<screen># <command>yum</command> <parameter>install</parameter> <parameter>ovirt-engine</parameter></screen>
+			</step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				All required packages and dependencies are installed. You must now configure the system.
+			</para>
+		</formalpara>
+	</section>
+	<section id="sect-Installation_Guide-Installing_the_oVirt_Manager-Configuration">
+		<title>Configuration</title>
+		<para>
+			Once package installation is complete the oVirt Engine must be configured. The <command>engine-setup</command> command is provided to assist with this task. The script asks you a series of questions, the answers to which form the basis for system configuration. Once all required values have been provided the updated configuration is applied and the oVirt Engine services are started.
+		</para>
+		<procedure id="proc-Installation_Guide-Installing_the_oVirt_Manager-Configuration">
+			<step>
+				<title>Start Setup Script</title>
+				<para>
+					 To begin configuring the system run <command>engine-setup</command> as the <systemitem class="username">root</systemitem> user.
+				</para>
+				<screen># engine-setup</screen>
+			</step>
+			<step>
+				<title>Set Port for <acronym>HTTP</acronym></title>
+				<para>
+					The script prompts for entry of the port to use for <acronym>HTTP</acronym> communication. To use the default value, <literal>8080</literal>, press <keycap>Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap>Enter</keycap>.
+				</para>
+<screen>HTTP Port  [8080] :</screen>
+				<para>
+					The port you select also appears in the <acronym>URL</acronym> that must be used to access the oVirt Engine over <acronym>HTTP</acronym>. 
+				</para>
+				<example>
+					<title>Access Using <acronym>HTTP</acronym></title>
+					<para>
+						For a machine with hostname <literal>engine.demo.ovirt.org</literal> using the default <acronym>HTTP</acronym> port value, <literal>8080</literal>, the <acronym>URL</acronym> to access the entry page over <acronym>HTTP</acronym> is <literal>http://engine.demo.ovirt.org:8080/</literal>.
+					</para>
+				</example>
+			</step>
+			<step>
+				<title>Set Port for <acronym>HTTPS</acronym></title>
+				<para>
+					The script prompts for entry of the port to use for <acronym>HTTPS</acronym> communication. To use the default value, <literal>8443</literal>, press <keycap>Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap>Enter</keycap>.
+				</para>
+				<screen>HTTPS Port  [8443] :</screen>
+				<para>
+					Where a port other than <literal>8443</literal> is selected it changes the <acronym>URL</acronym> that must be used to access the oVirt Engine over <acronym>HTTPS</acronym>.
+				</para>
+				<example>
+					<title>Access Using <acronym>HTTPS</acronym></title>
+					<para>
+						For a machine with hostname <literal>engine.demo.ovirt.org</literal> using the default <acronym>HTTPS</acronym> port value, <literal>8443</literal>, the <acronym>URL</acronym> to access the entry page over <acronym>HTTPS</acronym> is <literal>https://engine.demo.ovirt.org:8443/</literal>.
+					</para>
+				</example>
+			</step>
+			<step>
+				<title>Set Fully Qualified Domain Name (<acronym>FQDN</acronym>)</title>
+				<para>
+					The script prompts for entry of the system's fully qualified domain name. This name should be resolvable via both forward and reverse <acronym>DNS</acronym> lookup. The script attempts to determine the fully qualified domain name automatically. The value identified is listed in square brackets as the default setting for the fully qualified domain name, based on your setup.
+				</para>
+				<screen>Host fully qualified domain name, note that this name should be fully resolvable  [engine.demo.ovirt.org] :</screen>
+				<para>
+					Where the automatically determined fully qualified domain name is correct, press <keycap>Enter</keycap> to use the value and continue. Where the automatically determined fully qualified domain name is not correct, enter the correct value and press <keycap>Enter</keycap> to use the new value and continue.
+				</para>
+			</step>
+			<step>
+				<title>Set Administrator Password</title>
+				<para>
+					The script creates an authentication domain internal to the oVirt Engine for the default administrative account. The domain is named <systemitem>internal</systemitem>, the administrative user is called <systemitem>admin</systemitem>. External authentication domains are added as a post-installation step using the <command>ovirt-manage-domains</command> command. 
+				</para>
+				<para>
+					You must choose a password for the <systemitem class="username">admin</systemitem> user. You will be asked to enter it a second time to confirm your selection.
+				</para>
+				<screen>Password for Administrator (admin@internal) :</screen>
+			</step>
+			<step>
+				<title>Set Database Password</title>
+				<para>
+					The script prompts for entry of a password to use for the oVirt Engine database. You must enter a strong password. Strong passwords consist of a mix of uppercase, lowercase, numeric, and punctuation characters. They are six or more characters long and do not contain dictionary words. Enter the desired password and press <keycap>Enter</keycap>. You will be asked to enter the password again to confirm it.
+				</para>
+				<screen>Database password (required for secure authentication with the locally created database) :</screen>
+			</step>
+			<step>
+				<title>Set Organization Name</title>
+				<para>
+					The script prompts for entry of the Organization Name. The Organization Name appears in the <literal>Subject</literal> field of the certificate used to secure communications with the oVirt Engine.
+				</para>
+				<screen>Organization Name for the Certificate :</screen>
+			</step>
+			<step>
+				<title>Configure Default Storage Type</title>
+				<para>
+					The script prompts for selection of the default storage type. This is the storage type that is used for the <literal>Default</literal> data center. You are able to add further data centers that use different storage types from the Administration Portal at any time.
+				</para>
+				<screen>The default storage type you will be using  ['NFS'| 'FC'| 'ISCSI']  [NFS] :</screen>
+				<para>
+					The default selection is Network File System (<literal>NFS</literal>). The other available values are:
+					<itemizedlist>
+						<listitem>
+							<para>
+								Fibre Channel (<literal>FC</literal>),
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Internet Small Computer System Interface (<literal>ISCSI</literal>), and
+							</para>
+						</listitem>
+					</itemizedlist>
+					The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. oVirt also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center.
+				</para>
+				<para>
+					To use the default selection, <literal>NFS</literal>, press <keycap>Enter</keycap>. To select <literal>FC</literal>, or <literal>ISCSI</literal> then enter the value and then press <keycap>Enter</keycap>.
+				</para>
+			</step>
+			<step>
+				<title>Configure NFS ISO Domain</title>
+				<para>
+					The script asks whether or not an <acronym>NFS</acronym> share should be configured on the server and used as an <acronym>ISO</acronym> storage domain.
+				</para>
+				<screen>Should the installer configure NFS share on this server to be used as an ISO Domain? ['yes'| 'no']  [yes] :</screen>
+				<para>
+					An <acronym>ISO</acronym> storage domain is used to store copies of removable media for use when provisioning and using virtual machines. The oVirt Engine is able to use either an  <acronym>ISO</acronym> storage domain on the system it is installed to or one that exists on remote storage. In either case the <acronym>ISO</acronym> storage domain must be accessible via <acronym>NFS</acronym>. The ability to configure an <acronym>ISO</acronym> storage domain is also available from the Administration Portal after installation.
+				</para>
+				<para>
+					To take the default action, which is to configure an <acronym>NFS</acronym> share for use as an <acronym>ISO</acronym> storage domain, press <keycap>Enter</keycap>. To skip this step type <literal>no</literal> and press <keycap>Enter</keycap>.
+				</para>
+				<para>
+					If you chose to configure an <acronym>NFS</acronym> share then you will also need to provide both a path and a display name for it. The path is the location on the local file system where the <acronym>NFS</acronym> share must be created. The directory must not already exist.
+				</para>
+				<screen>Mount point path:</screen>
+				<para>
+					The display name is the name the storage domain will appear under in the oVirt Engine. The display name must not contain non-alphanumeric characters other than the underscore (<literal>_</literal>) and the hyphen (<literal>-</literal>).
+				</para>
+				<screen>Display name for the ISO domain:</screen>
+				<para>
+					The <acronym>ISO</acronym> domain will be created and exported as an <acronym>NFS</acronym> share. It will be shown as active in the oVirt Engine once the first active virtualization host has been added to the <literal>Default</literal> data center.
+				</para>
+			</step>
+			<step>
+				<title>Configure Firewall</title>
+				<para>
+					The oVirt Engine requires that network traffic on a number of ports be allowed through the system's firewall. The <command>engine-setup</command> script is able to configure this automatically, but selecting this option overrides any existing firewall configuration. Where there is an existing firewall configuration that needs to be maintained you must manually configure the firewall to include the additional rules required by the oVirt Engine.
+				</para>
+<screen>
+Firewall ports need to be opened.
+You can let the installer configure iptables automatically overriding the current configuration. The old configuration will be backed up.
+Alternately you can configure the firewall later using an example iptables file found under /usr/share/ovirt/conf/iptables.example
+Should the installer configure iptables now? ['yes'| 'no']  [yes] :
+</screen>
+				<stepalternatives>
+					<step>
+						<para>
+							To proceed with automatic firewall configuration type <literal>yes</literal> and then press <keycap>Enter</keycap>.
+						</para>
+					</step>
+					<step>
+						<para>
+							To skip automatic firewall configuration type <literal>no</literal> and then press <keycap>Enter</keycap>. You will need to add rules equivalent to those found in <filename>/usr/share/ovirt/conf/iptables.example</filename> to your <command>iptables</command> configuration.
+						</para>
+					</step>
+				</stepalternatives>
+			</step>
+			<step>
+				<title>Confirm Configuration</title>
+				<para>
+					You have now provided the script with all the information required to complete configuration of the oVirt Engine. The values which you entered are displayed for confirmation.
+				</para>
+				<example>
+				<title>Configuration Confirmation Screen</title>
+<screen>
+oVirt Manager will be installed using the following configuration:
+=================================================================
+http-port:                     8080
+https-port:                    8443
+host-fqdn:                     engine.demo.ovirt.org
+auth-pass:                     ********
+db-pass:                       ********
+org-name:                      oVirt
+default-dc-type:               NFS
+nfs-mp:                        /isoshare
+iso-domain-name:               ISODomain
+override-iptables:             yes
+Proceed with the configuration listed above? (yes|no): 
+</screen>
+				</example>
+				<stepalternatives>
+					<step>
+						<para>
+							To permanently apply the configuration values listed type <literal>yes</literal> and then press <keycap>Enter</keycap> to apply the configuration.
+						</para>
+					</step>
+					<step>
+						<para>
+							If one or more of the configuration values listed is incorrect type <literal>no</literal> and then <keycap>Enter</keycap> to revisit the configuration.
+						</para>
+					</step>
+				</stepalternatives>
+				<para>
+					The configuration values are applied. A number of services need to be started and as a result this step takes some time. Do not terminate the installation once application of the configuration values has commenced.
+				</para>
+				<para>
+					Once the script has completed successfully take note of the additional information it provides. In particular note down the <literal>SSH Certificate fingerprint</literal>, <literal>SSH Public key fingerprint</literal>, and oVirt Engine <acronym>URL</acronym> for your records.
+				</para>
+
+				<example>
+					<title>Successful Configuration</title>
+<screen>Installing:
+Creating JBoss Profile...                                [ DONE ]
+Creating CA...                                           [ DONE ]
+Setting Database Security...                             [ DONE ]
+Creating Database...                                     [ DONE ]
+Updating the Default Data Center Storage Type...         [ DONE ]
+Editing JBoss Configuration...                           [ DONE ]
+Editing oVirt Manager Configuration...                    [ DONE ]
+Configuring the Default ISO Domain...                    [ DONE ]
+Configuring Firewall (iptables)...                       [ DONE ]
+Starting JBoss Service...                                [ DONE ]
+
+ **** Installation completed successfully ******
+
+     (Please allow oVirt Manager a few moments to start up.....)
+
+
+Additional information:
+ * SSL Certificate fingerprint: 4C:A4:8F:93:62:50:C1:63:C8:09:70:77:07:90:FD:65:5B:3C:E8:DD
+ * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e
+ * A default ISO share has been created on this host.
+   If IP based access restrictions are required, please edit /isoshare entry in /etc/exports
+ * The firewall has been updated, the old iptables configuration file was saved to /usr/share/ovirt/conf/iptables.backup.103654-09092011_866
+ * The installation log file is available at: /var/log/ovirt/engine-setup_2011_09_09_10_32_56.log
+ * Please use the user "admin" and password specified in order to login into oVirt Manager
+ * To configure additional users, first configure authentication domains using the 'ovirt-manage-domains' utility
+ * To access oVirt Manager please go to the following URL: http://engine.demo.ovirt.org:8080
+</screen>
+				</example>
+			</step>
+					</procedure>
+
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The oVirt Engine has been installed and configured successfully. You are now able to connect to the Administration Portal for the first time, see <xref linkend="sect-Installation_Guide-Connect_to_the_Administration_Portal"/> for further information.
+					</para>
+				</formalpara>
+				<!-- TODO: Insert note once we have an upgrade process for oVirt. -->
+	</section>
+	<!-- TODO: No cleanup utility for OVIRT...yet -->
+	<section id="sect-Installation_Guide-Connect_to_the_Administration_Portal">
+		<title>Connect to the Administration Portal</title>
+		<para>
+			The Administration Portal allows you to create, configure, monitor, and maintain the oVirt environment using a graphical interface. To begin configuring your oVirt environment you must first log into the Administration Portal.
+		</para>
+		<procedure id="connect_to_ovirt">
+		 <title>Connect to oVirt web management portal</title>
+			<step>
+				<para>
+					Open a web browser.
+				</para>
+			</step>
+			<step>
+				<para>
+					Browse to <literal>http://<replaceable>engine.demo.ovirt.org</replaceable>:<replaceable>8080</replaceable>/</literal>, replacing <replaceable>engine.demo.ovirt.org</replaceable> with the hostname of the machine you installed oVirt Engine on and <replaceable>8080</replaceable> with the <acronym>HTTP</acronym> port specified during installation.
+				</para>
+			</step>
+			<step>
+				<para>
+					Click the <guilabel>Administration Portal</guilabel> link.
+				</para>
+			</step>
+			<step>
+				<para>
+					Log in with username <systemitem class="username">admin</systemitem>, domain <systemitem>internal</systemitem>, and the password that you provided when running <command>engine-setup</command>.
+				</para>
+			</step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				You have now successfully logged into the oVirt web Administration Portal. You can now begin installing virtualization hosts - see <xref linkend="part_III"/>.
+			 </para>
+		</formalpara>
+				<!-- TODO: Once reports are packaged we will get this list back in action.
+				 <itemizedlist>
+					<listitem>
+						<para>
+							optionally, install oVirt Engine Reports - see <xref linkend="chap-Installation_Guide-Installing_the_oVirt_Manager-Reports"/>, or
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+						</para>
+					</listitem>
+				 </itemizedlist>
+				-->
+	</section>
+</chapter>

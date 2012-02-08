@@ -6,21 +6,11 @@
 
 <bookinfo id="book-Installation_Guide-Installation_Guide">
 	<title>Installation Guide</title>
-	<subtitle>Installing oVirt Project Environments</subtitle>
+	<subtitle>Installing and Configuring an oVirt Environment</subtitle>
 	<productname>oVirt</productname>
 	<productnumber>3.0</productnumber>
 	<edition>1</edition>
 	<pubsnumber>1</pubsnumber>
-<!--
-	<corpauthor>
-		<inlinemediaobject>
-			<imageobject>
-				<imagedata fileref="Common_Content/images/title_logo.svg" format="SVG" />
-			</imageobject>
-			<textobject><phrase>oVirt Project Engineering Content Services</phrase></textobject>
-		</inlinemediaobject>
-	</corpauthor>
-	-->
 	<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
 	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
 </bookinfo>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<section id="References_oVirt_3_Directory_Firewall_Requirements">
+   <title>Directory Firewall Requirements</title>
+	<para>
+		oVirt requires a directory server to support user authentication. Currently the supported directory servers are <acronym>IPA</acronym> and Active Directory. Both require a number of ports to be opened in the directory server's firewall to support <acronym>GSS-API</acronym> authentication as used by the oVirt Engine.
+	</para>
+<!-- A Reference provides additional information -->
+   <table>
+	<title>Host Firewall Requirements</title>
+	<tgroup align="left" cols="5" colsep="1" rowsep="1">
+           <colspec colname="c1" colwidth="1*"/>
+           <colspec colname="c2" colwidth="1*"/>
+           <colspec colname="c3" colwidth="1*"/>
+           <colspec colname="c4" colwidth="1*"/>
+           <colspec colname="c5" colwidth="1*"/>
+         <thead>
+            <row>
+               <entry>Port(s)</entry>
+			   <entry>Protocol</entry>
+			   <entry>Source</entry>
+			   <entry>Destination</entry>
+               <entry>Purpose</entry>
+            </row>
+         </thead>
+         <tbody>
+			<row>
+				<entry>88, 464</entry>
+				<entry>TCP, UDP</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Directory server
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>Kerberos authentication.</entry>
+			</row>
+			<row>
+				<entry>389, 636</entry>
+				<entry>TCP</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Directory server
+							</para>
+						</listitem>
+					</itemizedlist>
+				</entry>
+				<entry>Lightweight Directory Access Protocol (<acronym>LDAP</acronym>) and LDAP over <acronym>SSL</acronym>.</entry>
+			</row>
+         </tbody>
+      </tgroup>
+   </table>
+
+
+   <!-- Do not edit below this line! -->
+
+   <!-- Injection Point: Related Overviews -->
+   <!-- Injection Point: Related Concepts -->
+   <!-- Injection Point: Related Tasks -->
+</section>

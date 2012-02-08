@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter>
+	<title>Introduction to Virtualization Hosts</title>
+	<para>
+		oVirt supports both virtualization hosts which run the oVirt Node, and those which run a pre-configured Linux installation. Both types of virtualization host are able to coexist in the same oVirt environment.
+	</para>
+	<para>
+		Prior to installing virtualization hosts you should ensure that:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				all virtualization hosts meet the hardware requirements outlined in <xref linkend="References_RHEL_6_oVirtH_Support_Limits_List" />, and
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				you have successfully completed installation of the oVirt Engine as outlined in <xref linkend="chap-Installation_Guide-Installing_the_oVirt_Manager-Manager" /> .
+			</para>
+		</listitem>
+	</itemizedlist>
+	<!-- TODO: Reports not packaged yet. 
+	<para>
+		Additionally you may have chosen to install the oVirt Engine Reports. This is not mandatory and is not required to commence installing virtualization hosts. Once you have completed the above tasks you are ready to install virtualization hosts. 
+	</para>
+	-->
+	<itemizedlist>
+		<listitem>
+			<para>
+				To install oVirt Nodes, see <xref linkend="sect-Installation_Guide-Installing_the_PRODUCT_Node" />.
+			</para>
+		</listitem>
+		<!-- TODO: Rewrite this, probably needs a lot of work. 
+		<listitem>
+			<para>
+				To install pre-configured Linux Hosts, see <xref linkend="sect-Installation_Guide-Using_Red_Hat_Enterprise_Linux_Hosts" />.
+			</para>
+		</listitem>
+		-->
+	</itemizedlist>
+	<important>
+		<title>Important — Attach at Least Two Virtualization Hosts</title>
+	<para>
+		It is recommended that you install at least two virtualization hosts and attach them to the oVirt environment. Where you attach only one virtualization host you will be unable to access features such as migration which require redundant hosts..
+	</para>
+	</important>
+</chapter>

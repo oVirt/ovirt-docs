@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<appendix id="chap-Installation_Guide-Directory_Services">
+	<title>Directory Services</title>
+	<para>
+		oVirt Engine is able to use both Active Directory and <acronym>IPA</acronym> Server for user authentication. This appendix documents the basic requirements for directory servers of either type to be added to the environment.
+	</para>
+	<para>
+		Information on adding or removing directory services domains to the oVirt Engine configuration, once they have been created,  is available in <xref linkend="References_oVirt_3_Manage_Domains"/>.
+	</para>	
+	<section id="sect-Installation_Guide-Installing_the_Infrastructure-Directory_Services-IPA">
+		<title>IPA Server</title>
+		<para>
+			<acronym>IPA</acronym> is an integrated security information management solution which combines Red Hat Enterprise Linux, oVirt Directory Server, <acronym>MIT</acronym> Kerberos, and <acronym>NTP</acronym>. It provides web browser and command-line interfaces, and its numerous administration tools allow an administrator to quickly install, set up, and administer one or more servers for centralized authentication and identity management. 
+		</para>
+		<para>
+			The latest version of <acronym>IPA</acronym> extends the integration of <acronym>DNS</acronym>, includes a Certificate System Server, an enhanced administrative framework, support for host identities, netgroups, automount by location and other features. 
+		</para>
+		<formalpara>
+			<title>Installation</title>
+			<para>
+				<acronym>IPA</acronym> focuses on making centralized identity and policy easy to manage in Linux and Unix environments, and includes compatibility with Windows environments. If you need assistance installing or configuring <acronym>IPA</acronym>, see the <citetitle>Red Hat Enterprise Linux — Enterprise Identity Management Guide</citetitle>.
+			
+			</para>
+		</formalpara>
+		<xi:include href="./topics/Tasks/IPA/Adding_New_Users.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- id="Tasks_IPA_Adding_New_Users" -->
+	</section>
+	<xi:include href="./topics/References/RHEV/2.3/Active_Directory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<!-- id="References_oVirt_3_Active_Directory" -->
+</appendix>

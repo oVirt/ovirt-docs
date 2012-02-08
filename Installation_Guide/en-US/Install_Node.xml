@@ -1,0 +1,1686 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="sect-Installation_Guide-Installing_the_PRODUCT_Node">
+	<title>Installing the oVirt Node</title>
+	<para>
+		This chapter covers installing and integrating oVirt Nodes with a oVirt Engine.
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				The oVirt Node <emphasis>must</emphasis> be installed on a physical server and cannot be installed on a virtual machine.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The installation process will reconfigure the selected storage device and destroy all data. Therefore, ensure that any data to be retained is successfully backed up before proceeding.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The following method can be used when installing multiple servers. However, ensure that unique hostnames and IP addresses are used for each node installation, in order to avoid network conflicts.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The following procedure provides installation instructions for using a CD-ROM created using the oVirt Node ISO image available from the oVirt website.
+			</para>
+			<!-- TODO: PXE Boot, etc. -->
+		</listitem>
+		<listitem>
+			<para>
+				oVirt Nodes can use Storage Attached Networks (SANs) and other network storage for storing virtualized guest images. However, a local storage device is required for installing and booting the node.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<important>
+		<title>Important — DNS Configuration</title>
+		<para>
+			The oVirt Node must exist in the same DNS domain as the oVirt Engine.
+		</para>
+	</important>
+	<note>
+		<title>Note — Automated Installations</title>
+		<para>
+			oVirt Node installations can be automated or conducted without interaction. This type of installation is only recommended for advanced users.
+		</para>
+		<!-- TODO: Unattended installation parameters-->
+	</note>
+	<section id="sect-Installation_Guide-Installing_the_PRODUCT_Node-Preparing">
+	<title>Installation Media</title>
+	<para>
+		This section covers creating installation media and preparing your systems before installing a oVirt Node.
+	</para>
+	<para>
+		This section covers installing oVirt Nodes on a local storage device. This storage device is a removable <acronym>USB</acronym> storage device, an internal hard disk drive or solid state drive. Once the node is installed, the system will boot the node and all configuration data is preserved on the system.
+	</para>
+	<section id="sect-Deployment_Guide-Preparing_Red_Hat_Enterprise_Virtualization_Node_installation_media-Preparation_instructions">
+		<title>Preparation Instructions</title>
+		<para>
+			The oVirt Node ISO image is available from the oVirt website at <ulink url="http://ovirt.org/releases/stable/binary/">http://ovirt.org/releases/stable/binary/</ulink>. The oVirt Node ISO image's filename is of the form <filename>ovirt-node-image-<replaceable>version-release</replaceable>.iso</filename> in this directory.
+		</para>
+		<para>
+			oVirt also provides tools to assist with provisioning Nodes. These are provided by the <package>ovirt-node</package> and <package>ovirt-node-tools</package> packages. These packages are found in the same <command>yum</command> repository used to install oVirt Engine.
+		</para>
+		<formalpara id="form-Deployment_Guide-Preparation_instructions-BIOS_settings_and_boot_process_troubleshooting">
+			<title>BIOS Settings and Boot Process Troubleshooting</title>
+			<para>
+				Before installing oVirt Nodes it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:
+			</para>
+		</formalpara>
+		<orderedlist>
+			<listitem>
+				<para>
+					3.5 inch diskette
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					CD-ROM or DVD device
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Local hard disk
+				</para>
+			</listitem>
+		</orderedlist>
+		<para>
+			Many BIOS chips have disabled one or more of the following boot methods: <acronym>USB</acronym> storage devices, CD-ROMs, DVDs or network boot. To boot from your chosen method, enable the method or device and set that device as the first boot device in BIOS.
+		</para>
+		<para>
+			Most but not all motherboards support the boot methods described in this chapter. Consult the documentation for your motherboard or system to determine whether it is possible to use a particular boot method.
+		</para>
+		<warning>
+			<title>Warning — <acronym>BIOS</acronym> Settings Vary Between Manufacturers</title>
+			<para>
+				<acronym>BIOS</acronym> settings vary between manufacturers. Any specific examples of <acronym>BIOS</acronym> settings may be inaccurate for some systems. Due to this inconsistency, it is necessary to review the motherboard or system manufacturer&#39;s documentation.
+			</para>
+		</warning>
+		<formalpara id="form-Deployment_Guide-Preparation_instructions-Confirm_hardware_virtualization_support">
+			<title>Confirm Hardware Virtualization Support</title>
+			<para>
+				Verify that your system is capable of running the oVirt Node. Nodes require that virtualization extensions are present and enabled in the BIOS before installation proceeds.
+			</para>
+		</formalpara>
+		<procedure>
+			<step>
+				<para>
+					Boot the node from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM.
+				</para>
+			</step>
+			<step>
+				<para>
+					When the message <literal>Automatic boot in 30 seconds...</literal> is displayed, and begins counting down from thirty, press any key to skip the automatic boot process.
+				</para>
+			</step>
+			<step>
+				<para>
+					Ensure the <guilabel>Install or Upgrade</guilabel> option is selected and press <keycap>Tab</keycap> to edit the boot parameters.
+				</para>
+			</step>
+			<step>
+				<para>
+					Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap>Enter</keycap>. This action will boot the node in rescue mode.
+				</para>
+			</step>
+			<step>
+				<para>
+					Once the node boots, verify your CPU contains the virtualization extensions with the following command:
+				</para>
+				
+<screen># grep -E &#39;svm|vmx&#39; /proc/cpuinfo
+</screen>
+				<para>
+					Output displays if the processor has the hardware virtualization extensions.
+				</para>
+			</step>
+			<step>
+				<para>
+					Verify that the KVM modules load by default:
+				</para>
+				
+<screen># lsmod | grep kvm
+</screen>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						If the output includes <literal>kvm_intel</literal> or <literal>kvm_amd</literal> then the kvm hardware virtualization modules are loaded and the system meets the requirements. If the output does not include the required modules then you must check that your hardware supports the virtualization extensions and that they are enabled in the system's <acronym>BIOS</acronym>.
+					</para>
+				</formalpara>
+
+
+
+	</section>
+	
+	<section id="sect-Deployment_Guide-Preparing_Red_Hat_Enterprise_Virtualization_Node_installation_media-Preparing_a_oVirt_Node_USB_storage_device">
+		<title>Preparing a Node USB Storage Device</title>
+		<para>
+			The Node is able to install itself onto <acronym>USB</acronym> storage devices or solid state disks. However, the initial boot/install <acronym>USB</acronym> device must be a separate device from the installation target. Network booting with <acronym>PXE</acronym> and <acronym>tftp</acronym> provides the greatest flexibility and scalability. For environments where network restrictions prevent network booting, or for systems without <acronym>PXE</acronym> capable network interface cards, a local media installation such as CD-ROM or <acronym>USB</acronym> is necessary. Booting from <acronym>USB</acronym> storage devices is a useful alternative to booting from CD, for systems without CD-ROM drives.
+		</para>
+		<note>
+			<title>Note — <acronym>USB</acronym> Boot Support</title>
+
+			<para>Not all systems support booting from a <acronym>USB</acronym> storage device. Ensure that your system's BIOS supports booting from <acronym>USB</acronym> storage devices before proceeding.</para>
+		</note>
+		<!--                                                            rewrite                                                            -->
+		<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device">
+			<title>Making a <acronym>USB</acronym> Storage Device into a Node Boot Device</title>
+			<para>
+				This section covers making <acronym>USB</acronym> storage devices which are able to be used to boot nodes.
+			</para>
+			<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device-livecd-iso-to-disk">
+				<title>Using <command>livecd-iso-to-disk</command> to Create <acronym>USB</acronym> Install Media</title>
+				<para>
+					The <command>livecd-iso-to-disk</command> command will install a node onto a <acronym>USB</acronym> storage device. The <command>livecd-iso-to-disk</command> command is part of the <package>rhev-node</package> package. Devices created with this command are able to boot the nodes on systems which support booting via <acronym>USB</acronym>.
+				</para>
+				<para>
+					The basic <command>livecd-iso-to-disk</command> command usage follows this structure:
+				</para>
+				
+	<screen># livecd-iso-to-disk <systemitem>image</systemitem> <systemitem>device</systemitem>
+	</screen>
+				<para>
+					Where the <parameter>device</parameter> parameter is the partition name of the <acronym>USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the node. The default node image location is <filename>tmp/ovirt-node-image-2.2.2-2.2.fc16.iso</filename>. The <command>livecd-iso-to-disk</command> command requires devices to be formatted with the <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> file system.
+				</para>
+				<note>
+					<title>Note — Partitions and <command>livecd-iso-to-disk</command></title>
+					<para>
+						<command>livecd-iso-to-disk</command> uses a <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> formatted partition or block device.
+					</para>
+					<para>
+						<acronym>USB</acronym> storage devices are sometimes formatted without a partition table, use <systemitem>/dev/sdb</systemitem> or similar device name.
+					</para>
+					<para>
+						When a <acronym>USB</acronym> storage device is formatted with a partition table, use <systemitem>/dev/sdb1</systemitem> or similar device name.
+					</para>
+				</note>
+				<procedure>
+					<step>
+						<para>
+							Download the oVirt Node ISO image file from the location specified in <xref linkend="sect-Deployment_Guide-Preparing_Red_Hat_Enterprise_Virtualization_Node_installation_media-Preparation_instructions" />.
+						</para>
+					</step>
+					<step>
+						<para>
+							Use the <command>livecd-iso-to-disk</command> command to copy the oVirt Node ISO image to the disk. The <parameter>--format</parameter> parameter formats the disk. The <parameter>--reset-mbr</parameter> initializes the Master Boot Record (<acronym>MBR</acronym>). The example uses a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>.
+						</para>
+<example>
+<title>Use of <command>livecd-iso-to-disk</command></title>
+<screen>
+# livecd-iso-to-disk --format --reset-mbr /tmp/ovirt-node-image-2.2.2-2.2.fc16.iso /dev/sdc
+Verifying image...
+/tmp/ovirt-node-image-2.2.2-2.2.fc16.iso:   eccc12a0530b9f22e5ba62b848922309
+Fragment sums: 8688f5473e9c176a73f7a37499358557e6c397c9ce2dafb5eca5498fb586
+Fragment count: 20
+Checking: 100.0%
+
+The media check is complete, the result is: PASS.
+
+It is OK to use this media.
+Copying live image to USB stick
+Updating boot config file
+Installing boot loader
+syslinux: only 512-byte sectors are supported
+USB stick set up as live image!
+</screen>
+</example>
+					</step>
+				</procedure>
+						<formalpara>
+							<title>Result:</title>
+							<para>
+								The <acronym>USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) is ready to be used to boot a system and install the node on it.
+							</para>
+						</formalpara>
+
+
+				
+			</section>
+			<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device-dd">
+				<title>Using <command>dd</command> to Create <acronym>USB</acronym> Install Media</title>
+				<para>
+					The <command>dd</command> command can also be used to install a node onto a <acronym>USB</acronym> storage device. Media created with the command can boot the node on systems which support booting via <acronym>USB</acronym>. Red Hat Enterprise Linux provides <command>dd</command> as part of the <package>coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems. 
+				</para>
+				<para>
+					Windows users are able to obtain the <command>dd</command> command through installation of <application>oVirt Cygwin</application>, a free Linux-like environment for Windows. Refer to <xref linkend="proc-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device-dd-Windows" /> for instruction on the installation and use of <application>oVirt Cygwin</application> to install the node to a <acronym>USB</acronym> storage device.
+				</para>  
+				<para>
+					The basic <command>dd</command> command usage follows this structure:
+				</para>
+				
+	<screen># dd if=<systemitem>image</systemitem> of=<systemitem>device</systemitem>
+	</screen>
+				<para>
+					Where the <parameter>device</parameter> parameter is the device name of the <acronym>USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the node. The default node image location is <filename>tmp/ovirt-node-image-2.2.2-2.2.fc16.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image.
+				</para>
+				<procedure id="proc-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device-dd">
+					<title>Using <command>dd</command> to Create <acronym>USB</acronym> Install Media</title>
+					<step>
+						<para>
+							Download the oVirt Node ISO image file from the location specified in <xref linkend="sect-Deployment_Guide-Preparing_Red_Hat_Enterprise_Virtualization_Node_installation_media-Preparation_instructions" />.
+						</para>
+					</step>
+					<step>
+						<para>
+							Use the <command>dd</command> command to copy the oVirt Node ISO image file to the disk. The example uses a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>.
+						</para>
+<example>
+<title>Use of <command>dd</command></title>
+<screen># dd if=tmp/ovirt-node-image-2.2.2-2.2.fc16.iso of=/dev/sdc
+243712+0 records in
+243712+0 records out
+124780544 bytes (125 MB) copied, 56.3009 s, 2.2 MB/s
+</screen>
+</example>
+						<warning>
+							<title>Warning	— All Data on the Device Specified Will be Overwritten</title>
+							<para>
+								The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command.
+							</para>
+						</warning>
+					</step>
+				</procedure>
+						<formalpara>
+							<title>Result:</title>
+							<para>
+								The <acronym>USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) is ready to boot a node.
+							</para>
+						</formalpara>
+				<procedure id="proc-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Making_a_bootable_oVirt_Node_USB_storage_device-dd-Windows">
+					<title>Using <command>dd</command> to Create <acronym>USB</acronym> Install Media on Systems Running Windows</title>
+					<step>
+						<para>
+							Access <ulink url="http://www.redhat.com/services/custom/cygwin/"/> and click the <application>oVirt Cygwin official installation utility</application> link. The <filename>rhsetup.exe</filename> executable will download.
+						</para>
+					</step>
+					<step>
+						<para>
+							As the <systemitem class="username">Administrator</systemitem> user run the downloaded <filename>rhsetup.exe</filename> executable. The <application>oVirt Cygwin</application> installer will display.
+						</para>
+					</step>
+					<step>
+						<para>
+							Follow the prompts to complete a standard installation of <application>oVirt Cygwin</application>. The <package>Coreutils</package> package within the <package>Base</package> package group provides the <command>dd</command> utility. This is automatically selected for installation.
+						</para>
+					</step>
+					<step>
+						<para>
+							Copy the <filename>rhev-node.iso</filename> file downloaded from <application>Red Hat Network</application> to <filename>C:\rhev-node.iso</filename>.
+						</para>
+					</step>
+					<step>
+						<para>
+							As the <systemitem class="username">Administrator</systemitem> user run <application>oVirt Cygwin</application> from the desktop. A terminal window will appear.
+						</para>
+						<important>
+							<title>Important — Run <application>oVirt Cygwin</application> as Administrator</title>
+							<para>
+								On the <application>Windows 7</application> and <application>Windows Server 2008</application> platforms it is necessary to right click the <application>oVirt Cygwin</application> icon and select the <guilabel>Run as Administrator...</guilabel> option to ensure the application runs with the correct permissions.
+							</para>
+						</important>
+					</step>
+					<step>
+						<para>
+							In the terminal run <command>cat /proc/partitions</command> to see the drives and partitions currently visible to the system.
+						</para>
+<example>
+<title>View of Disk Partitions Attached to System</title>
+<screen>
+Administrator@test /
+$ cat /proc/partitions
+major minor  #blocks  name
+    8     0  15728640 sda
+    8     1    102400 sda1
+    8     2  15624192 sda2
+</screen>
+</example>
+					</step>
+					<step>
+						<para>
+							Plug the <acronym>USB</acronym> storage device which is to be used as the media for the node installation into the system. Re-run the <command>cat /proc/partitions</command> command and compare the output to that of the previous run. A new entry will appear which designates the <acronym>USB</acronym> storage device.
+						</para>
+<example>
+<title>View of Disk Partitions Attached to System</title>
+<screen>
+Administrator@test /
+$ cat /proc/partitions
+major minor  #blocks  name
+    8     0  15728640 sda
+    8     1    102400 sda1
+    8     2  15624192 sda2
+    8    16    524288 sdb
+</screen>
+</example>
+
+					</step>
+					<step>
+						<para>
+							Use the <command>dd</command> command to copy the <filename>rhev-node.iso</filename> file to the disk. The example uses a <acronym>USB</acronym> storage device named <systemitem>/dev/<replaceable>sdb</replaceable></systemitem>. Replace <replaceable>sdb</replaceable> with the correct device name for the <acronym>USB</acronym> storage device to be used.
+						</para>
+<example>
+<title>Use of <command>dd</command> Command Under <application>oVirt Cygwin</application></title>
+<screen>
+Administrator@test /
+$ dd if=/cygdrive/c/rhev-node.iso of=/dev/sdb&amp; pid=$!
+</screen>
+</example>
+						<para>
+							The provided command starts the transfer in the background and saves the process identifier so that it can be used to monitor the progress of the transfer. Refer to the next step for the command used to check the progress of the transfer.
+						</para>
+						<warning>
+							<title>Warning — All Data on the Device Specified will be Overwritten</title>
+							<para>
+								The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command.
+							</para>
+						</warning>
+					</step>
+					<step>
+						<para>
+							Transfer of the <acronym>ISO</acronym> file to the <acronym>USB</acronym> storage device with the version of <command>dd</command> included with <application>oVirt Cygwin</application> can take significantly longer than the equivalent on other platforms. 
+						</para>
+						<para>
+							To check the progress of the transfer in the same terminal window that the process was started in send it the <command>USR1</command> signal. This can be achieved by issuing the <command>kill</command> in the terminal window as follows:
+						</para>
+						<screen>kill -USR1 $pid</screen>
+					</step>
+					<step>
+						<para>
+							When the transfer operation completes the final record counts will be displayed.
+						</para>
+<example>
+<title>Result of <command>dd</command> Initiated Copy</title>
+<screen>
+210944+0 records in
+210944+0 records out
+108003328 bytes (108 MB) copied, 2035.82 s, 53.1 kB/s
+
+[1]+	Done			dd if=/cygdrive/c/rhev-node.iso of=/dev/sdb
+</screen>
+</example>
+					</step>
+				</procedure>
+						<formalpara>
+							<title>Result:</title>
+							<para>
+								The <acronym>USB</acronym> storage device (<systemitem>/dev/sdb</systemitem>) is ready to boot a node.
+							</para>
+						</formalpara>
+			</section>
+		</section>
+		
+		<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_USB_storage_device-Booting_a_oVirt_Node_USB_storage_device">
+			<title>Booting a Node <acronym>USB</acronym> Storage Device</title>
+			<para>
+				Booting a node from a <acronym>USB</acronym> storage device is similar to booting other live <acronym>USB</acronym> operating systems. To boot from a <acronym>USB</acronym> storage device:
+			</para>
+			<procedure>
+				<step>
+					<para>
+						Enter the system&#39;s BIOS menu to enable <acronym>USB</acronym> storage device booting if not already enabled.
+					</para>
+					<substeps>
+						<step>
+							<para>
+								Enable <acronym>USB</acronym> booting if this feature is disabled.
+							</para>
+						</step>
+						<step>
+							<para>
+								Set booting <acronym>USB</acronym> storage devices to be first boot device.
+							</para>
+						</step>
+						<step>
+							<para>
+								Shut down the system.
+							</para>
+						</step>
+					</substeps>
+				</step>
+				<step>
+					<para>
+						Insert the <acronym>USB</acronym> storage device that contains the node boot image.
+					</para>
+				</step>
+				<step>
+					<para>
+						Restart the system.
+					</para>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The Node will boot automatically.
+						</para>
+					</formalpara>
+
+			
+			<para>
+				If the node is running, you must now initialize the local storage device. Refer to <xref linkend="form-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Booting_the_Node_for_installation" /> for details.
+			</para>
+		</section>
+
+	</section>
+	
+	<section id="sect-Deployment_Guide-Preparing_Red_Hat_Enterprise_Virtualization_Node_installation_media-Preparing_a_oVirt_Node_from_a_CD_ROM_or_DVD">
+		<title>Preparing a Node from a CD-ROM or DVD</title>
+		<para>
+			It is possible to install the node with a CD-ROM or DVD.
+		</para>
+		<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_from_a_CD_ROM_or_DVD-Making_a_bootable_oVirt_Node_CD_ROM">
+			<title>Making a Node CD-ROM Boot Disk</title>
+			<para>
+				Burn the node image to a CD-ROM with the <command>cdrecord</command> command. The <command>cdrecord</command> command is part of the <package>cdrecord</package> package which is installed on Red Hat Enterprise Linux by default.
+			</para>
+			<procedure>
+				<step>
+					<para>
+						Verify that the <package>cdrecord</package> package is installed on the system.
+					</para>
+		
+<example>
+<title>Verify Installation of <package>cdrecord</package> Package</title>
+<screen># rpm -q cdrecord
+cdrecord-2.01-10.7.el5
+</screen>
+</example>
+					<para>
+						If the package version is in the output the package is available.
+					</para>
+					<para>
+						If it is not listed, install <package>cdrecord</package>:
+					</para>
+		
+<screen># yum install cdrecord
+</screen>
+				</step>
+				<step>
+					<para>
+						Insert a blank CD-ROM or DVD into your CD or DVD writer.
+					</para>
+				</step>
+				<step>
+					<para>
+						Record the ISO file to the disc. The <package>cdrecord</package> command uses the following:
+					</para>
+		
+<screen>cdrecord <parameter>dev=device /iso/file/path/</parameter>
+</screen>
+					<para>
+						This example uses the first CD-RW (<systemitem>/dev/cdrw</systemitem>) device available and the default node image location, <filename>tmp/ovirt-node-image-2.2.2-2.2.fc16.iso</filename>.
+					</para>
+		
+<example>
+<title>Use of <command>cdrecord</command> Command</title>
+<screen># cdrecord dev=/dev/cdrw tmp/ovirt-node-image-2.2.2-2.2.fc16.iso
+</screen>
+</example>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							If no errors occurred, the node is ready to boot. Errors sometimes occur during the recording process due to errors on the media itself. If this occurs insert another writable disk and repeat the command above.
+						</para>
+					</formalpara>
+
+
+			<para>
+				The Node uses a program (<command>isomd5sum</command>) to verify the integrity of the installation media every time the node is booted. If media errors are reported in the boot sequence you have a bad CD-ROM. Follow the procedure above to create a new CD-ROM or DVD.
+			</para>
+		</section>
+		
+		<section id="sect-Deployment_Guide-Preparing_a_oVirt_Node_from_a_CD_ROM_or_DVD-Booting_a_oVirt_Node_CD_ROM">
+			<title>Booting a Node CD-ROM</title>
+			<para>
+				For many systems, the default BIOS configuration boots from CD-ROM first. If booting from CD-ROM is disabled or is not the first boot device refer to <xref linkend="form-Deployment_Guide-Preparation_instructions-BIOS_settings_and_boot_process_troubleshooting" /> and your manufacturers manuals for more information.
+			</para>
+			<para>
+				To boot from CD-ROM insert the node CD-ROM and then restart the computer.
+			</para>
+			<para>
+				The Node will start to boot. If the node does not start to boot your BIOS may not be configured to boot from CD-ROM first or booting from CD-ROM may be disabled.
+			</para>
+			<para>
+				If the node is running, you must now initialize the local storage device. Refer to <xref linkend="form-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Booting_the_Node_for_installation" /> for details.
+			</para>
+		</section>
+
+	</section>
+	
+	</section>
+
+	<section>
+	<title>Installation</title>
+	<para>
+		This chapter documents the installation of the oVirt node. oVirt Nodes are able to use Storage Area Networks (<acronym>SANs</acronym>) and other network storage for storing virtualized guest images. Nodes can be installed on <acronym>SANs</acronym>, provided that the Host Bus Adapter (<acronym>HBA</acronym>) permits configuration as a boot device in <acronym>BIOS</acronym>.
+	</para>
+	<para>
+		Nodes are able to use multipath devices for installation. Multipath is often used for <acronym>SANs</acronym> or other networked storage. Multipath is enabled by default at install time. Any block device which responds to <command>scsi_id</command> functions with multipath. Devices where this is not the case include <acronym>USB</acronym> storage and some older <acronym>ATA</acronym> disks.
+	</para>
+	<para>
+		There are two methods for installing oVirt Nodes:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				Interactive Installation (see <xref linkend="sect-Deployment_Guide-Installing_Red_Hat_Enterprise_Virtualization_Nodes-Red_Hat_Enterprise_Virtualization_Node_interactive_installation" />).
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Automated Installation with Kernel Parameters (see the <citetitle>Red Hat Enterprise Linux — Node Deployment Guide</citetitle>).
+			</para>
+		</listitem>
+	</itemizedlist>
+	<section id="sect-Deployment_Guide-Installing_Red_Hat_Enterprise_Virtualization_Nodes-Red_Hat_Enterprise_Virtualization_Node_interactive_installation">
+		<title>Interactive Installation</title>
+		<para>
+			oVirt Nodes must be installed on physical servers, not virtual machines.
+		</para>
+		<para>
+			The instructions in this section cover installation on a single system. When deploying on multiple systems always remember to use unique hostnames and <acronym>IP</acronym> addresses to avoid networking conflicts.
+		</para>
+		<section id="form-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Booting_the_Node_for_installation">
+			<title>Booting from the Installation Media</title>
+			<para>
+				There are several methods for booting nodes, refer to <xref linkend="sect-Installation_Guide-Installing_the_PRODUCT_Node-Preparing" /> for detailed instructions on preparing boot media for oVirt Node installation.
+			</para>
+			<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Booting_the_Node">
+				<title>Booting from the Installation Media</title>
+				<step>
+					<para>
+						Insert the oVirt Node installation media.
+					</para>
+				</step>
+				<step>
+					<para>
+						Power on the system and ensure the system boots from the installation media.
+					</para>
+				</step>
+				<step>
+					<para>
+						The boot splash screen appears. If no input is provided, the node installation will commence in 30 seconds, using default kernel parameters.
+					</para>
+					<figure>
+						<title>Boot Splash Screen</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/boot_splash.png" format="PNG" />
+							</imageobject>
+							<textobject>
+								<phrase>The boot splash screen counts down for 30 seconds before automatically booting the system.</phrase>
+							</textobject>
+						</mediaobject>
+					</figure>
+				</step>
+				<step>
+					<para>
+						To modify the boot options, press any key. The boot menu will display. 					
+					</para>
+					<figure>
+						<title>Boot Menu Screen</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/boot_menu.png" format="PNG" />
+							</imageobject>
+							<textobject>
+								<phrase>The boot menu screen displays all pre-defined boot options, as well as providing the option to edit them.</phrase>
+							</textobject>
+						</mediaobject>
+					</figure>
+					<para>
+						The following boot options are available:
+					</para>
+					<itemizedlist>
+						<listitem>
+							<formalpara>
+								<title>Boot</title>
+								<para>
+									Boot the node installer.
+								</para>
+							</formalpara>
+						</listitem>
+						<listitem>
+							<formalpara>
+								<title>Boot with Serial Console</title>
+								<para>
+									Boot the node installer, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>.
+								</para>
+							</formalpara>
+						</listitem>
+						<listitem>
+							<formalpara>
+								<title>Boot from Local Drive</title>
+								<para>
+									Boot the operating system installed on the first local drive.
+								</para>
+							</formalpara>
+						</listitem>
+					</itemizedlist>
+					<para>
+						Select the appropriate boot option from the boot menu.
+					</para>
+				</step>
+				<step>
+					<para>
+						Where required additional kernel parameters should be appended to the default parameters displayed. A press of the  <keycap>Enter</keycap> key boots the node installation with the default kernel parameters. Alternatively press the <keycap>Tab</keycap> key to edit kernel parameters for the selected boot option.
+					</para>
+					<figure>
+						<title>Boot Parameter Screen</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/boot_menu_parameters.png" format="PNG" />
+							</imageobject>
+							<textobject>
+								<phrase>The boot parameters screen allows you to add and remove boot parameters.</phrase>
+							</textobject>
+						</mediaobject>
+					</figure>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The Node boots with the provided boot options.
+						</para>
+					</formalpara>
+
+
+			<important>
+				<title>Important — Kernel Parameters</title>
+				<para>
+					In edit mode you are able to add or remove kernel parameters from the list. Kernel parameters must be separated from each other by a space. Once the desired kernel parameters have been set press <keycap>Enter</keycap> to boot the system. Alternatively pressing <keycap>Esc</keycap> reverts any changes that you have made to the kernel parameters.
+				</para>
+				<para>
+					For more information on the kernel parameters, see the <citetitle>Red Hat Enterprise Linux — Node Deployment Guide</citetitle>.
+				</para>
+			</important>
+			<note>
+				<title>Note — Upgrading Existing Nodes</title>
+				<para>
+					To upgrade an existing node installation, the kernel must be booted with the <parameter>upgrade</parameter> parameter. This will automatically upgrade and reboot the system, rather than displaying the interactive configuration menu. For more information, see the <citetitle>Red Hat Enterprise Linux — Node Deployment Guide</citetitle>.
+				</para>
+			</note>
+		</section>
+		<section>
+			<title>Installation Procedure</title>
+			<para>
+				When the node is first booted the interactive installation script starts. This script facilitates installation of the oVirt Node using  graphical prompts. The following keys are be used to manipulate the screens which support node installation.
+			</para>
+			<itemizedlist id="list-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_Keys">
+				<title>Menu Actions</title>
+				<listitem>
+					<para>
+						The directional keys (<keycap>Up</keycap>, <keycap>Down</keycap>, <keycap>Left</keycap>, <keycap>Right</keycap>) are used to select different controls on the screen. Alternatively the <keycap>Tab</keycap> key cycles through the controls on the screen which are enabled.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Text fields are represented by a series of underscores (<guilabel>_</guilabel>). To enter data in a text field select it and begin entering data. 
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Buttons are represented by labels which are enclosed within a pair of angle brackets (<guilabel>&lt;</guilabel> and <guilabel>&gt;</guilabel>). To activate a button ensure it is selected and press <keycap>Enter</keycap> or <keycap>Space</keycap>. 
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Boolean options are represented by an asterisk (<guilabel>*</guilabel>) or a space character enclosed within a pair of square brackets (<guilabel>[</guilabel> and <guilabel>]</guilabel>). When the value contained within the brackets is an asterisk then the option is set, otherwise it is not. To toggle a Boolean option on or off press <keycap>Space</keycap> while it is selected. 
+					</para>
+				</listitem>
+			</itemizedlist>
+			<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Installation">
+				<title>Node Installation</title>
+				<step>
+					<para>
+						To commence Node installation select <guilabel>Install Node</guilabel> and press <keycap>Enter</keycap>.
+					</para>
+				</step>
+				<step>
+					<title>Disk Configuration</title>
+					<para>
+						The installation script automatically detects all disks attached to the system. This information is used to assist with selection of the boot and installation disks that the node should use. Each entry displayed on these screens indicates the <guilabel>Location</guilabel>, <guilabel>Device Name</guilabel>, and <guilabel>Size (GB)</guilabel> of the relevant disk.
+					</para>
+					<substeps>
+						<step>
+							<title>Boot disk</title>
+							<para>
+								The first disk selection screen is used to select the disk from which the node will boot. The Node's boot loader will be installed to the Master Boot Record (<acronym>MBR</acronym>) of the disk that is selected on this screen. The Node attempts to automatically detect the disks attached to the system and presents the list from which you choose the boot device. Alternatively you are able to manually select a device, by specifying a block device name, by enabling the <guilabel>Other Device</guilabel> option.
+							</para>
+							<important>
+								<title>Important — Boot Order</title>
+								<para>
+									The disk selected must be identified as a boot device and appear in the boot order either in the system's BIOS or in a pre-existing boot loader.
+								</para>
+							</important>
+							<stepalternatives>
+								<step>
+									<title>Automatically Detected Device Selection</title>
+									<substeps>
+										<step>
+											<para>
+												Select the entry for the disk the node is to boot from in the list.
+											</para>
+										</step>
+										<step>
+											<para>
+												Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>. This action will save the boot device selection and start the next step of installation.
+											</para>
+										</step>
+									</substeps>
+								</step>
+								<step>
+									<title>Manual Device Selection</title>
+									<substeps>
+										<step>
+											<para>
+												Select the <guilabel>Other Device</guilabel> entry from the list.
+											</para>
+										</step>
+										<step>
+											<para>
+												Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>.
+											</para>
+										</step>
+										<step>
+											<para>
+												When prompted to <guilabel>Please enter the disk to use for booting oVirt Node</guilabel> enter the name of the block device from which the node should boot.
+											</para>
+											<example>
+												<title>Other Device Selection</title>
+<screen>Please enter the disk to use for booting oVirt Node
+/dev/sda
+</screen>
+											</example>
+										</step>
+										<step>
+											<para>
+												Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>. This action will save the boot device selection and start the next step of installation.
+											</para>
+										</step>
+									</substeps>
+								</step>
+							</stepalternatives>
+							<para>
+								Once a disk has been selected it is necessary to select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to save the selection and continue with node installation.
+							</para>
+						</step>
+						<step>
+							<title>Installation Disk(s)</title>
+							<para>
+								The disk(s) selected for installation will be those to which the node itself is installed. The Node attempts to automatically detect the disks attached to the system and presents the list from which installation devices are chosen.
+							</para>
+							<warning>
+								<title>Warning — Data Loss</title>
+								<para>
+									All data on the selected storage device(s) will be destroyed.
+								</para>
+							</warning>
+							<substeps>
+								<step>
+									<para>
+										Select each disk which the node is to use for installation and press <keycap>Space</keycap> to toggle it to enabled. Repeat this step for all disks you want the node to use. Where other devices are to be used for installation, either solely or in addition to those which are listed automatically, enable the <guilabel>Other Device</guilabel> option.
+									</para>
+								</step>
+								<step>
+									<para>
+										Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to continue.
+									</para>
+								</step>
+								<step>
+									<para>
+										Where the <guilabel>Other Device</guilabel> option was specified a further prompt will appear. Enter the name of each additional block device to use for node installation separated by a comma. Once all required disks have been selected then select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>.
+									</para>
+									<example>
+										<title>Other Device Selection</title>
+<screen>Please select the disk(s) to use for installation of oVirt Node
+Enter multiple entries separated by commas
+/dev/mmcblk0,/dev/mmcblk1______________
+</screen>
+									</example>
+								</step>
+							</substeps>
+							<para>
+								Once the installation disk, or disks, have been selected the next stage of the installation starts.
+							</para>
+						</step>
+					</substeps>
+				</step>
+				<step>
+					<title>Password</title>
+					<para>
+						The Node requires that a password be set to protect local console access by the <systemitem class="username">admin</systemitem> user. The installation script prompts you to enter the desired password in both the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields.
+					</para>
+					<para>
+						A strong password must be used. Strong passwords consist of a mix of uppercase, lowercase, numeric, and punctuation characters. They are six or more characters long and do not contain dictionary words.
+					</para>
+					<para>
+						Once a strong password has been entered  select <guibutton>&lt;Install&gt;</guibutton> and press <keycap>Enter</keycap> to install the node to disk.
+					</para>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							Once installation is complete the message <literal>oVirt Node Installation Finished Successfully</literal> will be displayed. Select the <guibutton>&lt;Restart&gt;</guibutton> button and press <keycap>Enter</keycap> to reboot the system. 
+						</para>
+					</formalpara>
+					<para>
+							Further post installation configuration is required to connect the node to the oVirt Engine. See <xref linkend="chap-Deployment_Guide-Configuration" /> for further details.
+					</para>
+					<note>
+						<title>Note — Remove Boot Media</title>
+						<para>
+							The boot media should be removed and the boot device order changed to prevent the installation sequence restarting after the system reboots.
+						</para>
+					</note>
+
+
+		</section>
+	</section>
+
+	</section>
+
+	<section id="chap-Deployment_Guide-Configuration">
+	<title>Configuration</title>
+
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Login">
+		<title>Logging In</title>
+		<para>
+			The Node allows local console logins to facilitate post-installation configuration. The login prompt used is displayed once the node has booted:
+		</para>
+		<screen>
+Please login as 'admin' to configure the node
+localhost login:
+		</screen>
+		<para>
+			Type <systemitem class="username">admin</systemitem> at the prompt and press <keycap>Enter</keycap>. When prompted enter the password which was set during the installation process and press <keycap>Enter</keycap> again to log in.
+		</para>
+		<para>
+			The Node configuration menu will then be displayed. The menu facilitates interactive configuration of the node. Throughout the remainder of this chapter it will be referred to as the main menu. The main menu provides access to multiple screens which report on the status and configuration of the node. They also provide the ability to change the node configuration. 
+		</para>
+		<para>
+			The configuration interface is similar to that of the installation script. The same keys are used to navigate the menu and associated screens. Refer to <xref linkend="list-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_Keys" /> to review the list of possible actions.
+		</para>
+	</section>
+
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Status">
+		<title>Status</title>
+		<para>
+			The status screen displays a brief overview of the current state of the node. The information displayed consists of:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					the hostname,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the current status of the network connection,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the destination(s) of logs and reports, and
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the number of active virtual machines.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para>
+			The status screen also provides a number of buttons to change the state of the node. They are:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					<guibutton>&lt;Lock&gt;</guibutton>: Locks the node. The username and password must be entered to unlock the node. 
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<guibutton>&lt;Restart&gt;</guibutton>: Restarts the node.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<guibutton>&lt;Power Off&gt;</guibutton>: Turns the node off.
+				</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Network">
+		<title>Network</title>
+		<para>
+			The <guilabel>Network</guilabel> screen is used to configure:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					the node's hostname,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the <acronym>DNS</acronym> server(s) to use,
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the <acronym>NTP</acronym> server(s) to use, and
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					the network interface to use.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Network-Hostname">
+			<title>Hostname Configuration</title>	
+			<step>
+				<para>
+					To set or change the hostname select the <guilabel>Hostname</guilabel> field and enter the new hostname.
+				</para>
+			</step>
+			<step>
+				<para>
+					Select <guibutton>&lt;Apply&gt;</guibutton>, and press <keycap>Enter</keycap> to save changes to the hostname.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The hostname is updated.
+					</para>
+				</formalpara>
+
+
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Network-DNS">
+			<title><acronym>DNS</acronym> Configuration</title>
+			<para>
+				The Node supports the specification of one or more Domain Name System (<acronym>DNS</acronym>) servers to use when resolving host and domain names.
+			</para>
+			<step>
+				<para>
+					To set or change the primary <acronym>DNS</acronym> server select the <guilabel>DNS Server 1</guilabel> field and enter the <acronym>IP</acronym> address of the new primary <acronym>DNS</acronym> server to use.
+				</para>
+			</step>
+			<step>
+				<para>
+					To set or change the secondary <acronym>DNS</acronym> server select the <guilabel>DNS Server 2</guilabel> field and enter the IP address of the new secondary <acronym>DNS</acronym> server to use.
+				</para>
+			</step>
+			<step>
+				<para>
+					Select <guibutton>&lt;Apply&gt;</guibutton>, and press <keycap>Enter</keycap> to save changes to the <acronym>DNS</acronym> configuration.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The primary and secondary <acronym>DNS</acronym> servers queried by the node are updated.
+					</para>
+				</formalpara>
+
+
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Network-NTP">
+			<title><acronym>NTP</acronym> Configuration</title>	
+			<para>
+				The Node supports the specification of one or more Network Time Protocol (<acronym>NTP</acronym>) servers with which the node should synchronize the system clock. It is important that the node is synchronized with the same time source as the oVirt Engine. This ensures accurate time keeping across the oVirt environment.
+			</para>
+			<step>
+				<para>
+					To set or change the primary NTP server select the <guilabel>NTP Server 1</guilabel> field and enter the <acronym>IP</acronym> address or hostname of the new primary NTP server to use.
+				</para>
+			</step>
+			<step>	
+				<para>
+					To set or change the secondary NTP server select the <guilabel>NTP Server 2</guilabel> field and enter the IP address or hostname of the new secondary NTP server to use.
+				</para>
+			</step>
+			<step>
+				<para>
+					Select <guibutton>&lt;Apply&gt;</guibutton>, and press <keycap>Enter</keycap> to save changes to the <acronym>NTP</acronym> configuration.
+				</para>
+			</step>
+		</procedure>	
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The primary and secondary <acronym>NTP</acronym> servers queried by the node are updated.
+					</para>
+				</formalpara>
+
+
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Network-NIC">
+			<title>Network Interface Configuration</title>	
+			<para>
+				For each network interface detected the node will display the:
+				<itemizedlist>
+					<listitem>
+						<para>
+							<guilabel>Device</guilabel>,
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Status</guilabel>,
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Model</guilabel>, and
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>MAC Address</guilabel>.
+						</para>
+					</listitem>
+				</itemizedlist>
+				At least one network interface must be configured before the node is able to connect with the oVirt Engine.
+			</para>
+			<step>
+				<title>Device Identification</title>
+				<para>
+					Select the network interface to be configured from the list and press <keycap>Enter</keycap>.
+				</para>
+				<para>
+					In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the node is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap>Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed.
+				</para>
+			</step>
+			<step>
+				<title><acronym>IPv4</acronym> Settings</title>
+				<para>
+					The Node supports both dynamic (<acronym>DHCP</acronym>), and static <acronym>IPv4</acronym> network configuration.
+				</para>
+				<stepalternatives>
+					<step>
+						<title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
+						<para>
+							Dynamic network configuration allows the node to be dynamically assigned an <acronym>IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym>IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+						</para>
+					</step>
+					<step>
+						<title><guilabel>Static</guilabel> Network Configuration</title>
+						<para>
+							Static network configuration allows the node to be manually assigned an <acronym>IP</acronym> address. To enable static <acronym>IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+						</para>
+						<para>
+							Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
+						</para>
+						<para>
+							In particular it is necessary that:
+							<itemizedlist>
+								<listitem>
+									<para>
+										the <guilabel>IP Address</guilabel> is not already in use on the network, 
+									</para>
+								</listitem>
+								<listitem>
+									<para>
+										the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and
+									</para>
+								</listitem>
+								<listitem>
+									<para>
+										the <guilabel>Gateway</guilabel> matches that used by other machines on the network.
+									</para>
+								</listitem>
+							</itemizedlist>
+							Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration.
+						</para>
+						<example id="exam-IPv4-static-networking">
+							<title>Static IPv4 Networking Configuration</title>
+<screen>IPv4 Settings
+[ ] Disabled [ ] DHCP [*] Static
+IP Address: 192.168.122.100_ Netmask: 255.255.255.0___
+Gateway     192.168.1.1_____
+</screen>
+						</example>
+					</step>
+				</stepalternatives>
+			</step>
+			<step>
+				<title><acronym>IPv6</acronym> Settings</title>
+				<para>
+					The oVirt Engine does not currently support <acronym>IPv6</acronym> networking. <acronym>IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>.
+				</para>
+<!-- SG: Had to remove this content until the Manager supports IPv6...
+				<para>	
+					The Node supports dynamic (<guilabel>DHCP</guilabel>), <guilabel>Static</guilabel>, and <guilabel>Auto</guilabel> <acronym>IPv6</acronym> network configuration.
+				</para>
+				<stepalternatives>
+					<step>
+						<title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
+						<para>
+							Dynamic network configuration allows the node to be dynamically assigned an <acronym>IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym>IPv6</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+						</para>
+					</step>
+					<step>
+						<title><guilabel>Static</guilabel> Network Configuration</title>
+						<para>
+							Static network configuration allows the node to be manually assigned an <acronym>IP</acronym> address. To enable static <acronym>IPv6</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+						</para>
+						<para>
+							Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
+						</para>
+						<para>
+							In particular it is necessary that:
+							<itemizedlist>
+								<listitem>
+									<para>
+										the <guilabel>IP Address</guilabel> is not already in use on the network, 
+									</para>
+								</listitem>
+								<listitem>
+									<para>
+										the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and
+									</para>
+								</listitem>
+								<listitem>
+									<para>
+										the <guilabel>Gateway</guilabel> matches that used by other machines on the network.
+									</para>
+								</listitem>
+							</itemizedlist>
+							Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration.
+						</para>
+						<example id="exam-IPv6-static-networking">
+							<title>Static IPv6 Networking Configuration</title>
+<screen>IPv6 Settings
+[ ] Disabled [ ] DHCP [*] Static
+IP Address: 2001:cdba:9abc:5678::3257______________
+Netmask:    2001:cdba:9abc:5678::/64_______________
+Gateway     2001:cdba:9abc:5678::__________________
+</screen>
+						</example>
+					</step>
+					<step>
+						<title>Automatic Network Configuration</title>
+						<para>
+							Automatic network configuration allows the node to dynamically determine its <acronym>IP</acronym> address using the <acronym>IPv6</acronym> <systemitem class="protocol">Neighbour Discovery</systemitem> protocol. To enable automatic <acronym>IPv6</acronym> network configuration using <systemitem class="protocol">Neighbour Discovery</systemitem> select the <guilabel>Auto</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+						</para>
+					</step>
+				</stepalternatives>
+-->
+			</step>
+			<step>
+				<title><acronym>VLAN</acronym> Configuration</title>
+				<para>
+					If <acronym>VLAN</acronym> support is required then populate the <guilabel>VLAN ID</guilabel> field with the VLAN identifier for the selected device.
+				</para>
+			</step>
+			<step>
+				<title>Save Network Configuration</title>
+				<para>
+					Once all networking options for the selected device have been set the configuration must be saved.
+				</para>
+				<substeps>
+					<step>	
+						<para>
+							Select the <guibutton>&lt;Apply&gt;</guibutton> button and press <keycap>Enter</keycap> to save the network configuration.
+						</para>
+					</step>
+					<step>
+						<para>
+							The <guilabel>Confirm Network Settings</guilabel> dialog box will appear. Ensure that the <guibutton>Ok</guibutton> button is selected and press <keycap>Enter</keycap> to confirm.
+						</para>
+					</step>
+				</substeps>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The <guilabel>Network</guilabel> screen is displayed. The device is listed as <guilabel>Configured</guilabel>.
+					</para>
+				</formalpara>
+
+	</section>
+
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Security">
+		<title>Security</title>
+		<para>
+			The <guilabel>Security</guilabel> screen is used to change the <systemitem class="username">admin</systemitem> password for both local and remote access. SSH password authentication is also enabled or disabled via this screen. 
+		</para>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Security-Password">
+			<title>Change Security Configuration</title>
+			<step>
+				<title>Enable SSH Password Authentication</title>
+				<para>
+					To enable SSH password authentication for remote access select the <guilabel>Enable ssh password authentication</guilabel> option and press <keycap>Space</keycap> to toggle it to enabled.
+				</para>
+			</step>
+			<step>
+				<title>Change <systemitem class="username">admin</systemitem> Password</title>
+				<substeps>
+					<step>
+						<para>
+							Enter the desired <systemitem class="username">admin</systemitem> password in the <guilabel>Password</guilabel> field. You should use a strong password.
+						</para>
+						<para>
+							Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words.
+						</para>
+					</step>
+					<step>
+						<para>
+							Enter the desired <systemitem class="username">admin</systemitem> password in the <guilabel>Confirm Password</guilabel> field. Ensure that the value entered in the <guilabel>Confirm Password</guilabel> field matches the value entered in the <guilabel>Password</guilabel> field exactly. Where this is not the case an error message will be displayed to indicate that the two values are different.
+						</para>
+					</step>
+				</substeps>
+			</step>
+			<step>
+				<para>
+					Select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap> to save the security configuration.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The security configuration has been updated.
+					</para>
+				</formalpara>
+
+
+	</section>
+
+<!--
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Monitoring">
+		<title>Monitoring</title>
+		<para>
+			The Node is able to collect statistical information about the host on which it runs. Tracking of this information over time allows administrators to measure host performance under a variety of workloads. The <guilabel>Monitoring</guilabel> screen allows configuration of the <application>collectd</application> daemon to send these statistics to a central server.
+		</para>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Monitoring">
+			<title><application>collectd</application> configuration</title>
+			<step>
+				<para>
+					The <application>collectd</application> server address must be entered in the <guilabel>Server Address:</guilabel> field.
+				</para>
+			</step>
+			<step>
+				<para>
+					The <application>collectd</application> server port must be entered in the <guilabel>Server Port:</guilabel> field.
+				</para>
+			</step>
+			<step>
+				<para>
+					To save the monitoring configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+				</para>
+			</step>
+			<step>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The monitoring configuration has been updated and statistics will be collated on the remote <application>collectd</application> server specified.
+					</para>
+				</formalpara>
+			</step>
+		</procedure>
+	</section>
+-->
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Logging">
+		<title>Logging</title>
+		<para>
+			The Node creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server.
+		</para>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Logging">
+			<title>Change Logging Configuration</title>
+			<step>
+				<title><application>Logrotate</application> Configuration</title>
+				<para>
+					The <application>logrotate</application> utility simplifies the administration of log files. The Node uses <application>logrotate</application> to rotate logs when they reach a certain file size.
+				</para>
+				<para>
+					Log rotation involves renaming the current log(s) and starting new ones in their place. The <guilabel>Logrotate Max Log Size</guilabel> value set on the <guilabel>Logging</guilabel> screen is used to determine when a log should be rotated.
+				</para>
+				<para>
+					Enter the <guilabel>Logrotate Max Log Size</guilabel> in kilobytes. The default maximum log size is 1024 kilobytes.
+				</para>
+			</step>
+			<step>
+				<title><application>Rsyslog</application> Configuration</title>
+				<para>
+					The <application>rsyslog</application> utility is a multithreaded syslog daemon. The Node is able to use <application>rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Red Hat Enterprise Linux	— Deployment Guide</citetitle>.
+				</para>
+				<substeps>
+					<step>
+						<para>
+							Enter the remote <application>Rsyslog</application> server address in the <guilabel>Server Address</guilabel> field.
+						</para>
+					</step>
+					<step>
+						<para>
+							Enter the remote <application>Rsyslog</application> server port in the <guilabel>Server Port</guilabel> field. The default port is <literal>514</literal>.
+						</para>
+					</step>
+				</substeps>
+			</step>
+			<step>
+				<title><application>netconsole</application> Configuration</title>
+				<para>
+					The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. The Node uses <application>netconsole</application> to transmit kernel messages over the network.
+				</para>
+				<substeps>
+					<step>
+						<para>
+							Enter the <guilabel>Server Address</guilabel>.
+						</para>
+					</step>
+					<step>
+						<para>
+							Enter the <guilabel>Server Port</guilabel>. The default port is <literal>6666</literal>.
+						</para>
+					</step>
+				</substeps>
+			</step>
+			<step>
+				<title>Save Configuration</title>
+				<para>
+					To save the logging configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The logging configuration has been updated and logs will be exported to the remote <application>Rsyslog</application> server specified.
+					</para>
+				</formalpara>
+
+
+	</section>
+	
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Kdump">
+		<title>Kernel Dump</title>
+		<para>
+			oVirt node hosts generate a kernel dump (a <command>kdump</command> file) in the event of a system failure. These <command>kdump</command> files are essential for debugging and support.
+		</para>
+		<para>
+			The Node supports the export of kernel dumps by <application>kdump</application> using NFS or SSH so that they may be analyzed at a later date. The <application>Kernel Dump</application> screen provides for configuration of this facility.
+		</para>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-KDump">
+			<title><application>kdump</application> Configuration</title>
+			<step>
+				<title>Kernel Configuration</title>
+				<para>
+					Crash dumps generated by <application>kdump</application> are exported over <acronym>NFS</acronym> or <acronym>SSH</acronym>. Select the desired transfer method and press <keycap>Space</keycap> to enable it. 
+				</para>
+				<para>
+					For the export method chosen a location to which the <application>kdump</application> files should be exported must also be specified.
+				</para>
+				<substeps>
+					<step>
+						<title><acronym>NFS</acronym> location</title>
+						<para>
+							Set the <acronym>NFS</acronym> location to which crash logs should be exported in the <guilabel>NFS Location</guilabel> field. The <guilabel>NFS Location</guilabel> should be the full <acronym>NFS</acronym> path which includes fully qualified domain name and directory path.
+						</para>
+						<example>
+							<title>NFS Location</title>
+							<simpara>
+								<literal>demo.ovirt.org:/var/crash</literal>
+							</simpara>
+						</example>
+					</step>
+					<step>
+						<title><acronym>SSH</acronym> location</title>
+						<para>
+							Set the <acronym>SSH</acronym> location to which crash logs should be exported in the <guilabel>SSH Location</guilabel> field. The <guilabel>SSH Location</guilabel> should be the full <acronym>SSH</acronym> login which includes the fully qualified domain name and username.
+						</para>
+						<example>
+							<title>SSH Location</title>
+							<simpara>
+								<literal>root@demo.ovirt.org</literal>
+							</simpara>
+						</example>
+					</step>
+				</substeps>
+			</step>
+			<step>
+				<title>Save Configuration</title>
+				<para>
+					To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The <application>Kernel Dump</application> configuration has been updated and kernel dumps will be exported to the remote server(s) specified.
+					</para>
+				</formalpara>
+
+
+	</section>
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Remote_Storage">
+		<title>Remote Storage</title>
+		<para>
+			The Node supports the use of a remote <acronym>iSCSI</acronym> initiator for storage. The <acronym>iSCSI</acronym> initiator to use is set from the <guilabel>Remote Storage</guilabel> screen.
+		</para>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-Remote_Storage">
+			<title>Remote Storage Configuration</title>
+			<step>
+				<title>iSCSI Initiator Name</title>
+				<para>
+					Enter the initiator name in the <guilabel>iSCSI Initiator Name</guilabel> field.
+				</para>
+				<example>
+					<title>iSCSI Initiator Name</title>
+					<simpara>
+						<literal>iqn.1994-05.com.redhat:5189835eeb40</literal>
+					</simpara>
+				</example>
+			</step>
+			<step>
+				<title>Save Configuration</title>
+				<para>
+					To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+				</para>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The <guilabel>Remote Storage</guilabel> configuration has been updated.
+					</para>
+				</formalpara>
+
+
+	</section>
+	<section id="sect-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-oVirtM">
+		<title>oVirt-M</title>
+		<para>
+			The Node is able to attach itself to the oVirt Engine immediately if the address of the engine is available. Where the engine has not yet been installed you must instead set a password. This allows the node to be added from the Administration Portal once the engine has been installed. Both modes of configuration are supported from the <guilabel>oVirt-M</guilabel> screen.
+		</para>
+		<important>
+			<title>Important — Security Considerations</title>
+			<para>
+				Setting a password on the <guilabel>oVirt-M</guilabel> configuration screen sets the node's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the node has successfully been added to the engine it is recommended <acronym>SSH</acronym> password authentication is disabled.
+			</para>
+		</important>
+		<procedure id="proc-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Node_interactive_installation-Configuration-oVirtM">
+			<title>oVirt-M Configuration</title>
+			<step>
+				<stepalternatives>
+					<step>
+						<title>Configuration Using a Management Server Address</title>
+						<substeps>
+							<step>
+								<para>
+									Enter the <acronym>IP</acronym> address or fully qualified domain name of the engine in the <guilabel>Management Server</guilabel> field.
+								</para>
+							</step>
+							<step>
+								<para>
+									Enter the management server port in the <guilabel>Management Server Port</guilabel> field. The default value is <literal>8443</literal>. Where a different port was selected during oVirt Engine installation then it should be specified here, replacing the default value.
+								</para>
+							</step>
+							<step>
+								<para>
+									Enable the <guilabel>Verify oVirtM Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of oVirt Engine installation.
+								</para>
+							</step>
+							<step>
+								<para>
+									Leave the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields blank, these fields are not required if the address of the management server is known.
+								</para>
+							</step>
+						</substeps>
+					</step>
+					<step>
+						<title>Configuration Using a Password</title>
+						<substeps>
+							<step>
+								<para>
+									Enter a password in the <guilabel>Password</guilabel> field. It is recommended that you use a strong password. Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words. 
+								</para>
+							</step>
+							<step>
+								<para>
+									Re-enter the password in the <guilabel>Confirm Password</guilabel> field.
+								</para>
+							</step>
+							<step>
+								<para>
+									Leave the <guilabel>Management Server</guilabel> and <guilabel>Management Server Port</guilabel> fields blank. As long as a password is set, allowing the node to be added to the engine later, these fields are not required.
+								</para>
+							</step>
+						</substeps>
+					</step>
+				</stepalternatives>
+			</step>
+			<step>
+				<title>Save Configuration</title>
+				<para>
+					To save the configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+				</para>
+			</step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				The <guilabel>oVirt</guilabel> configuration has been updated.
+			</para>
+		</formalpara>
+	</section>
+
+	</section>
+
+	<section id="sect-Installation_Guide-Installing_the_PRODUCT_Node-Using_the_node">
+		<title>Using the Node</title>
+		<para>
+			Where the node was configured with the address of the oVirt Engine it reboots and is automatically registered with it. The oVirt Engine interface displays the node under the <application>Hosts</application> tab. To prepare the node for use, it must be approved using oVirt Engine.
+		</para>
+		<procedure id="proc-Installation_Guide-Using_the_node-Approve_the_Node">
+			<title>Approving a oVirt Node</title>
+			<step>
+				<para>
+					Login to the oVirt Engine Administration Portal.
+				</para>
+			</step>
+			<step>
+				<para>
+					From the <application>Hosts</application> tab, click on the host to be approved. The host should currently be listed with the status of <application>Pending Approval</application>.
+				</para>
+			</step>
+			<step>
+				<para>
+					Click the <application>Approve</application> button. The <guilabel>Edit and Approve Hosts</guilabel> dialog displays. You can use the dialog to set a name for the host and configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>oVirt — Administration Guide</citetitle>.
+				</para>
+			</step>
+			<step>
+				<para> 
+					Click <guibutton>OK</guibutton>. If you have not configured power management you will be prompted to confirm that you wish to proceed without doing so, click <guibutton>OK</guibutton>. 
+				</para>
+			</step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				The status in the <guilabel>Hosts</guilabel> tab changes to <application>Installing</application>, after a brief delay the host status changes to <application>Up</application>.
+			</para>
+		</formalpara>
+		<para>
+			Where the node was configured without the address of the oVirt Engine it needs to be added manually. To add the node manually you must have both the IP address of the machine upon which it was installed and the password that was set on the <guilabel>oVirt-M</guilabel> screen during configuration.
+		</para>
+		<procedure>
+			<title>Adding a oVirt Node with a Password</title>
+			<step>
+				<para>
+					Login to the oVirt Engine Administration Portal.
+				</para>
+			</step>
+			<step>
+				<para>
+					From the <application>Hosts</application> tab, click <guilabel>New</guilabel>. The <guilabel>New Host</guilabel> dialog displays. 
+				</para>
+			</step>
+			<step>
+				<para>
+					Enter the details of the new host.
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+							<guilabel>Name</guilabel>: a descriptive name for the host.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Address</guilabel>: the IP address, or resolvable hostname of the host (provided during installation).
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Port</guilabel>: the port used for internal communication control between the hosts. A default port is displayed; change the default only if you are sure that another port can be used.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Host Cluster</guilabel>: the cluster to which the host belongs (select from the drop-down list).
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Root password</guilabel>: the password of the designated host; used during installation of the host.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</step>
+			<step>
+				<para>
+					Optionally, configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>oVirt — Administration Guide</citetitle>.
+				</para>
+			</step>
+			<step>
+				<para>
+					Click <guilabel>OK</guilabel>. 
+				</para>
+			</step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				The added node displays in the list of hosts. Once the host is successfully connect its status changes to <guilabel>Up</guilabel>. 
+			</para>
+		</formalpara>
+	</section>
+</chapter>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<chapter id="chap-Installation_Guide-Setting_Up_Storage">
+	<title>Storage Setup</title>
+	<para>
+		This chapter provides instruction on configuring, and attaching storage to the oVirt environment. For information about managing storage, including maintenance and removal, refer to the <citetitle>oVirt Administration Guide</citetitle>.
+	</para>
+	<para>
+		oVirt uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), or local storage attached directly to the virtualization hosts. This section describes how to set up and manage the variety of storage types that can be used in the oVirt platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.
+	</para>
+	<para>
+		A oVirt system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, or local storage. It is recommended that you read your storage array vendor's guides, and refer to <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle> for more information on managing storage, if necessary.
+	</para>
+	<para>
+		The oVirt platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the oVirt platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain.
+	</para>
+	<para>
+		oVirt platform has three types of storage domains:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+			    Data domains hold the disk images of all the virtual machines running in the system, operating system images and data disks. In addition, snapshots of the virtual machines are also stored in the data domain. The data cannot be shared across data centers, and the data domain must be of the same type as the data center. For example, a data center of a <acronym>iSCSI</acronym> type, must have an <acronym>iSCSI</acronym> data domain. A data domain cannot be shared between data centers.
+			</para>
+			<para>
+				Additionally you must attach a data domain to a data center before you will be allowed to attach domains of other types to it.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+			    <acronym>ISO</acronym> domains store <acronym>ISO</acronym> files (or logical <acronym>CDs</acronym>) used to install and boot operating systems and applications for the virtual machines. Because an <acronym>ISO</acronym> domain is a logical entity replacing a library of physical <acronym>CDs</acronym> or <acronym>DVDs</acronym>, an <acronym>ISO</acronym> domain removes the data center's need for physical media. An <acronym>ISO</acronym> domain can be shared across different data centers. <acronym>ISO</acronym> storage domains must be located on <acronym>NFS</acronym> storage.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				An export domain is a temporary storage repository that is used to copy/move images between data centers and oVirt Engine installations. In addition, the export domain can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time. Support for export storage domains backed by mechanisms other than <acronym>NFS</acronym> is being deprecated. New export storage domains must be created on <acronym>NFS</acronym> storage.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		Once you have determined the storage needs of your data center(s) you must begin configuring and attaching the storage:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				To configure, and attach <acronym>NFS</acronym> storage, see <xref linkend="Tasks_oVirt_Adding_NFS_Storage"/>.
+			</para>	
+		</listitem>
+		<listitem>
+			<para>
+				To configure, and attach <acronym>iSCSI</acronym> storage, see <xref linkend="Tasks_oVirt_Adding_iSCSI_Storage"/>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				To configure, and attach <acronym>FCP</acronym> storage, see <xref linkend="Tasks_oVirt_Adding_FCP_Storage"/>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				To configure, and attach <acronym>local</acronym> storage, see <xref linkend="Tasks_oVirt_Adding_Local_Storage"/>.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<important>
+		<title>Important — Before Adding Storage</title>
+		<para>
+			Before adding storage ensure that you have a working oVirt Engine environment. You must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <literal>Up</literal>.
+		</para>
+	</important>
+	<important>
+		<title>Important — Export Domain Storage Type</title>
+		<para>
+			Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from oVirt 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage.
+		</para>
+	</important>
+	<section id="sect-Installation_Guide-Storage_Setup-Storage_Domains_Overview">
+		<title>Storage Domains Overview</title>
+		<xi:include href="./topics/Tasks/RHEV/Adding_NFS_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- id="Tasks_oVirt_Adding_NFS_Storage" -->
+		<xi:include href="./topics/Tasks/RHEV/Adding_iSCSI_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- id="Tasks_oVirt_Adding_iSCSI_Storage" -->
+		<xi:include href="./topics/Tasks/RHEV/Adding_FCP_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- id="Tasks_oVirt_Adding_FCP_Storage" -->
+		<xi:include href="./topics/Tasks/RHEV/Adding_Local_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- id="Tasks_oVirt_Adding_Local_Storage" -->
+	</section>
+	<section id="sect-Installation_Guide-Setting_Up_Storage-Populate_ISO_Domain">
+		<title>Populate the <acronym>ISO</acronym> Domain</title>
+		<para>
+			Once an <acronym>ISO</acronym> storage domain is defined for a data center, CD-ROM images or <acronym>ISO</acronym> images must be uploaded for the virtual machines to use. oVirt provides an <acronym>ISO</acronym> uploader tool that ensures that the  images are uploaded into the correct directory path, with the correct user permissions. While an example is provided here, for full usage information see <xref linkend="References_oVirt_3_ISO_Uploader"/>.
+		</para>
+		<para>
+			The creation of <acronym>ISO</acronym> images from physical media is not described in this document. It is assumed that you have access to the images required for your environment.
+		</para>
+		<procedure>
+			<step>
+				<para>
+					Copy the required <acronym>ISO</acronym> image to a temporary directory on the system running oVirt Engine.
+				</para>
+			</step>
+			<step>
+				<para>
+					Log in to the system running oVirt Engine as the <systemitem class="username">root</systemitem> user.
+				</para>
+			</step>
+			<step>
+				<para>
+					Use the <command>ovirt-iso-uploader</command> command to upload the <acronym>ISO</acronym> image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth.
+				</para>
+				<example>
+					<title><acronym>ISO</acronym> Uploader Usage</title>
+					<para>
+						In this example the <acronym>ISO</acronym> image <filename>RHEL6.iso</filename> is uploaded to the <acronym>ISO</acronym> domain called <literal>ISODomain</literal> using <acronym>NFS</acronym>. The command will prompt for an administrative username and password. The username must be provided in the form <replaceable>username</replaceable>@<replaceable>domain</replaceable>. 
+					</para>
+					<screen># <command>ovirt-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command></screen>
+				</example>
+			</step>
+		</procedure>
+				<formalpara>
+					<title>Result:</title>
+					<para>
+						The <acronym>ISO</acronym> image is uploaded and appears in the <acronym>ISO</acronym> storage domain specified. It is also available in the list of available boot media when creating virtual machines in the data center which the storage domain is attached to.
+					</para>
+				</formalpara>
+
+
+		<section>
+			<title>Uploading the VirtIO and Guest Tool Image Files</title>
+			<para>
+				When a local <acronym>ISO</acronym> storage domain is configured during installation the <package>virtio-win</package> <acronym>ISO</acronym> and Virtual Floppy Drive (<acronym>VFD</acronym>) images, containing the VirtIO drivers for Windows virtual machines, are automatically copied to the new storage domain. The <package>rhev-tools-setup</package> <acronym>ISO</acronym>, containing the oVirt Guest Tools for Windows virtual machines are also copied to the domain.
+			</para>
+			<para>	
+				These image files provide software that can be installed on guest operating systems to improve the performance and usability of the virtual machine. The most recent <package>virtio-win</package> and <package>rhev-tools-setup</package> images are referred to by the following symbolic links on the filesystem of the oVirt Engine:
+			</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<filename>/usr/share/virtio-win/virtio-win.iso</filename>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<filename>/usr/share/virtio-win/virtio-win.vfd</filename>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>
+					</para>
+				</listitem>
+			</itemizedlist>
+			<para>
+				These image files must be manually uploaded to <acronym>ISO</acronym> storage domains that were not created locally by the installation process. You must use the <command>ovirt-iso-uploader</command> command to upload these images to your <acronym>ISO</acronym> storage domain. Once the image files have been uploaded they can be attached to, and used by, virtual machines.
+			</para>
+			<example>
+				<title>Upload of VirtIO and Guest Tool Image Files</title>
+				<para>
+					In this example the <filename>virtio-win.iso</filename>, <filename>virtio-win.vfd</filename>, and <filename>rhev-tools-setup.iso</filename> image files are uploaded to the <literal>ISODomain</literal> <acronym>ISO</acronym> storage domain.
+				</para>
+<screen># <command>ovirt-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter>/usr/share/virtio-win/virtio-win.iso</parameter> <parameter>/usr/share/virtio-win/virtio-win.vfd</parameter> <parameter><filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename></parameter></command></screen>
+			</example>
+		</section>
+	</section>
+</chapter>

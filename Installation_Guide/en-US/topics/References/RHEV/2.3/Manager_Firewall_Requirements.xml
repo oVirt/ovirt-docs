@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<section id="References_oVirt_3_Manager_Firewall_Requirements">
+   <title>oVirt Engine Firewall Requirements</title>
+
+	<para>
+		The oVirt Engine requires that a number of ports be opened to allow network traffic through the system's firewall. The <filename>engine-setup</filename> script is able to set the required firewall rules automatically. Where an existing firewall configuration exists this step is able to be skipped. This allows the required changes to be manually integrated with the existing firewall script(s).
+	</para>
+	<para>
+		The firewall configuration documented within this chapter assumes a default configuration. Where you choose alternative values during installation, such as specifying a different <acronym>HTTP</acronym>, or <acronym>HTTPS</acronym>, port adjust the firewall rules to allow the selected port - not the default listed here.
+	</para>
+<!-- A Reference provides additional information -->
+   <table>
+	  <title>oVirt Engine Firewall Requirements</title>
+      <tgroup align="left" cols="5" colsep="1" rowsep="1">
+           <colspec colname="c1" colwidth="1*"/>
+           <colspec colname="c2" colwidth="1*"/>
+           <colspec colname="c3" colwidth="1*"/>
+           <colspec colname="c4" colwidth="1*"/>
+           <colspec colname="c5" colwidth="1*"/>
+         <thead>
+            <row>
+               <entry>Port(s)</entry>
+			   <entry>Protocol</entry>
+			   <entry>Source</entry>
+			   <entry>Destination</entry>
+               <entry>Purpose</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>22</entry>
+			   <entry>TCP</entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+							   System(s) used for maintenance of the engine including backend configuration, and software upgrades.
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+               <entry>SSH (optional)</entry>
+            </row>
+            <row>
+               <entry>8080, 8443</entry>
+			   <entry>TCP</entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Administration Portal clients
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								User Portal clients
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								oVirt Node(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								Red Hat Enterprise Linux host(s)
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								REST API clients
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+					<para>
+						Provides <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> access to the engine. 
+					</para>
+			   </entry>
+            </row>
+            <row>
+               <entry>8006 - 8009</entry>
+			   <entry>TCP</entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								Administration Portal clients
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+			   <entry>
+					<itemizedlist>
+						<listitem>
+							<para>
+								oVirt Engine
+							</para>
+						</listitem>
+					</itemizedlist>
+			   </entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </table>
+   <important>
+		<title>Important — Additional Ports Required to Export Storage</title>
+		<para>
+			Where the oVirt Engine is also to export NFS storage, such as an ISO Domain, then additional ports must be allowed through the firewall. The ports used for NFS, which need to be exposed to the Red Hat Enterprise Linux Hosts and oVirt Nodes, are listed in the <filename>/etc/sysconfig/nfs</filename> file:
+			<screen>$ cat /etc/sysconfig/nfs
+LOCKD_TCPPORT=32803
+LOCKD_UDPPORT=32769
+MOUNTD_PORT=892
+RQUOTAD_PORT=875
+STATD_PORT=662
+STATD_OUTGOING_PORT=2020</screen>
+		</para>
+   </important>
+
+
+   <!-- Do not edit below this line! -->
+
+   <!-- Injection Point: Related Overviews -->
+   <!-- Injection Point: Related Concepts -->
+   <!-- Injection Point: Related Tasks -->
+</section>

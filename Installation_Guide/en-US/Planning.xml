@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Installation_Guide-Planning_the_Data_Center">
+	<title>Planning your Data Center</title>
+	<para>
+		Successful planning is essential for a highly available, scalable oVirt environment.
+	</para>
+	<para>
+		Although it is assumed that your solution architect has defined the environment before installation, the following considerations must be made  when designing the system.
+	</para>
+	<formalpara id="form-Installation_Guide-Planning_the_System_Architecture-CPU">
+		<title>CPU</title>
+		<para>
+			Virtual Machines must be distributed across hosts so that enough capacity is available to handle higher than average loads during peak processing. Average target utilization will be 50% of available CPU.
+		</para>
+	</formalpara>
+	<formalpara id="form-Installation_Guide-Planning_the_System_Architecture-Memory">
+		<title>Memory</title>
+		<para>
+			The oVirt page sharing process overcommits up to 150% of physical memory for virtual machines. Therefore, allow for an approximately 30% overcommit.
+		</para>
+	</formalpara>
+	<formalpara id="form-Installation_Guide-Planning_the_System_Architecture-Networking">
+		<title>Networking</title>
+		<para>
+			When designing the network, it is important to ensure that the volume of traffic produced by storage, remote connections and virtual machines is taken into account. As a general rule, allow approximately 50 MBps per virtual machine.
+		</para>
+	</formalpara>
+	<para>
+		It is best practice to separate disk I/O traffic from end-user traffic, as this reduces the load on the Ethernet connection and reduces security vulnerabilities by isolating data from the visual stream. For Ethernet networks, it is suggested that bonds (802.3ad) are utilized to aggregate server traffic types.
+	</para>
+	<note>
+		<para>
+			It is possible to connect both the storage and Nodes via a single high performance switch. For this configuration to be effective, the switch must be able to provide 30 GBps on the backplane.
+		</para>
+	</note>
+	<formalpara id="form-Installation_Guide-Planning_the_System_Architecture-High_Availability">
+		<title>High Availability</title>
+		<para>
+			The system requires at least two hosts to achieve high availability. This redundancy is useful when performing maintenance or repairs.
+		</para>
+	</formalpara>
+	<section id="sect-Installation_Guide-Planning_the_System_Architecture-Data_Centers">
+		<title>Data Centers</title>
+		<para>
+			Following oVirt Engine installation it is necessary to define the data centers, and clusters, that you will use to organize your virtualization hosts. The installation process creates a data center, and associated cluster, called <literal>Default</literal>. The storage type of the data center is set based on the one selected during installation. If you wish to make use of other storage types then you will need to add additional data centers and clusters to support them.
+		</para>
+		<section id="Data-Centers-Prerequisites">
+			<title>Prerequisites for Setting up a Data Center</title>
+			<para>Before you create a new data center, prepare the following resources. 
+			 The following tasks must be done at the host level, not from the oVirt platform.
+			</para>
+			<orderedlist>
+				<listitem>
+					<para>
+						Setup and configure hosts.  
+						A host can be a oVirt Node or a Red Hat Enterprise Linux 6 host. A
+	cluster needs a minimum of one host, and at least one active host is required to connect the system to a storage pool.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Setup, configure and define storage. It is recommended that data centers have a minimum of two storage domains, one to store disk images of the virtual machines and one to store ISO images. Set up the storage domains of the type required for the data center; NFS, iSCSI, FCP or Local. For example, for an NFS data center, create and mount the export directories.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Set up logical networks for the data center, cluster and the hosts. It is recommended that you have the IP addresses/domain names available for reference.</para>
+				</listitem>
+			</orderedlist>
+		</section>
+		<section id="Working-with-Datacenters">
+			<title>Working with Data Centers</title>
+			<para>This section describes how to configure, create and manage data centers. 
+			  The data center is the highest level container for all physical and logical resources within a managed virtual environment. The data center is
+	a collection of clusters of hosts. It owns the logical network (that is, the defined subnets for management, guest network traffic and storage network traffic)
+	and the storage pool.
+			</para>
+			<figure id="data_center_fig">
+				<title>Data Centers</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/data_center_arch.png" format="PNG"/>
+					</imageobject>
+				</mediaobject>
+			</figure>
+			<para>
+				oVirt contains a default data center at installation.  Enterprises can set up new and additional data centers that can all be managed from the single Administration Portal. For example, an organization may have different data centers for different physical locations, business units, or for reasons of security. It is recommended that you do not remove the default data center, instead set up new appropriately named data centers.
+			</para>
+			<para>
+				The system administrator, as the superuser, can manage all aspects of the platform, that is, data centers, storage pools, users, roles and permissions by default; however more specific administrative roles and permissions can be assigned to other users. For example, the enterprise may need a data center administrator for a specific data center, or a particular cluster may need an administrator. All system administration roles for physical resources have a hierarchical permission system. For example, a data center administrator will automatically have permission to manage all the objects in that data center, storage, cluster and hosts; while a cluster administrator can manage all objects in the particular cluster.
+			</para>
+		</section>
+		<section id="Administration_Guide-Create_Objects-Create_Datacenter">
+			<title>Creating a New Data Center</title>
+			<para>
+					A data center is a logical grouping of clusters of hosts. 
+					If you wish to create an additional data center, use the instructions in this section; if you wish to use the existing
+	default data center then you may skip this process and begin creating clusters, see <xref linkend="Installation_Guide-Planning-Clusters"/>.
+			</para>
+			<para>The <guilabel>Data Centers</guilabel> tab displays a list of data centers.
+					</para>
+					<figure id="data_center">
+						<title>Data Centers Tab</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/data-centers.png" format="PNG"/>
+							</imageobject>
+						</mediaobject>
+					</figure>
+				
+			<procedure>
+				<step>
+					<para>
+						Click the <guilabel>New</guilabel> button on the
+						<guilabel>Data Centers</guilabel> tab.
+						The <guilabel>New Data Center</guilabel> dialog displays.
+					</para>
+					<!--<figure id="datacenter_dialog">
+						<title>New Data Center Dialog</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/newdatacenter.png"  format="PNG"/>
+							</imageobject>
+						</mediaobject>
+					</figure>-->
+
+				</step>
+				<step>
+					<para>
+						Enter the <guilabel>Name</guilabel> and  <guilabel>Description</guilabel> of the data center.
+					</para>
+				</step>
+				<step>
+				<para>
+						Select the storage <guilabel>Type</guilabel> of the data center. 
+						Select the storage appropriate to your data center; one of the following:
+						<itemizedlist>
+							<listitem><para>NFS</para></listitem>
+							<listitem><para>iSCSI</para></listitem>
+							<listitem><para>FCP</para></listitem>
+							<listitem><para>Local Storage</para></listitem>
+						</itemizedlist>
+					</para>
+				</step>
+				<step>
+					<para>Select the <guilabel>Compatibility Level</guilabel> of the data center, 2.2 or 3.0.</para>
+				</step>
+				<step>
+					<para>
+						Click <guibutton>OK</guibutton>. 
+					</para>
+				</step>
+				<step>
+					<para>
+						The <guilabel>Guide Me</guilabel> dialog displays a list of configuration tasks that must be completed before the data
+	center can be activated. The data center configuration tasks can be done immediately or later.
+					</para>
+					<figure id="data-center-guide1">
+						<title>New Data Center Guide Me Dialog</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/data-center-guide.png"  format="PNG"/>
+							</imageobject>
+						</mediaobject>
+					</figure>
+						<para>
+							Click <guibutton>Configure Later</guibutton> to close the dialog.
+						</para>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The new data center is added, and appears in appropriate searches or lists of data centers, with a status of
+		<guilabel>Uninitialized</guilabel>.
+							An uninitialized data center typically requires further configuration, for example, storage domains must be attached to
+							it. Either click the <guibutton>Configure Storage</guibutton> button on the <guilabel>Guide Me</guilabel> dialog or
+							select the new data center in the list, and click the <guilabel>Storage</guilabel> tab in the Details pane.  You can
+							define existing storage for the data center, or attach existing storage domains to the data center.</para>
+					</formalpara>
+
+
+		</section>
+	</section>
+	<section id="Installation_Guide-Planning-Clusters">
+		<title>Clusters</title>
+		<para>A cluster is a collection of physical hosts that share the same storage domains and have the same type of CPU. Because virtual machines
+can be migrated across hosts in the same cluster, the cluster is the highest level at which power and load-sharing policies can be defined. The oVirt
+Enterprise Virtualization platform contains a default cluster in the default data center at installation.
+		</para>
+		<para>
+			Every cluster in the system must belong to a data center, and every host in the system must belong to a cluster. This enables the system
+to dynamically allocate a virtual machine to any host in the applicable cluster, according to policies defined on the <guilabel>Cluster</guilabel> tab and in
+the Configuration tool during runtime, thus maximizing memory and disk space, as well as virtual machine uptime. 
+		</para>
+		<para>
+		At any given time, after a virtual machine runs on a specific host in the cluster, the virtual machine can be migrated to another host in the
+cluster using <guilabel>Migrate</guilabel>. This can be very useful when a host is shut down for maintenance. The migration to another host in the cluster is
+transparent to the user, and the user continues working as usual. Note that a virtual machine cannot be migrated to a host outside the cluster.
+		</para>
+
+		<section id="Administration_Guide-Create_Objects-Create_Cluster">
+			<title>Creating a Cluster</title>
+			<para>
+				Before creating a new cluster, ensure that there is at least one 
+				host available to be assigned to it. The hosts in a cluster all run the
+				same type of CPU. That is, a cluster must not contain a mix of both Intel and AMD CPUs.
+	<!-- 			A user belonging to R&amp;D is allocated a virtual machine that is attached to the cluster of R&amp;D Hosts. -->
+			</para>
+			<important>
+				<para>
+					The default <guilabel>ovirt</guilabel> network cannot be modified once a cluster has been attached to a data center. Any
+	configuration required for the <guilabel>ovirt</guilabel> network, such as enabling VLAN tagging, must be performed before a cluster is attached, and the data
+	center is still in the <guilabel>Uninitialized</guilabel> state.
+				</para>
+			</important>
+			
+			<procedure>
+			  <title>To create a new host cluster:</title>
+				<step>
+					<para>
+						Click the <guilabel>Clusters</guilabel> tab.
+						A list of clusters displays.
+					</para><!--<figure id="cluster_tab">
+						<title>Cluster Tab</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/cluster-tab.png" format="PNG"/>
+							</imageobject>
+						</mediaobject>
+					</figure>-->
+					
+				</step>
+				<step>
+					<para>
+						Click the <guilabel>New</guilabel> button on 
+						the <guilabel>Clusters</guilabel> tab.
+					</para>
+					<para>
+						The <guilabel>New Cluster</guilabel> dialog displays.
+					</para>
+					
+					<!--<figure id="cluster_dialog">
+						<title>New Cluster</title>
+						<mediaobject>
+							<imageobject>
+								<imagedata fileref="images/cluster_dialog.png" format="PNG"/>
+							</imageobject>
+						</mediaobject>
+					</figure>-->
+				</step>
+				<step>
+					<para>On the <guilabel>General</guilabel> tab, 
+					Select an existing <guilabel>Data Center</guilabel> from the list, 
+					the cluster <guilabel>Name</guilabel> and <guilabel>Description</guilabel>. 
+					  The name should not include spaces.</para>
+					<para>Select the <guilabel>CPU Name</guilabel> for hosts in this cluster. 
+					All hosts must run the same type of CPU. The    
+	<guilabel>CPU Name</guilabel> list displays all the CPU types supported by oVirt.
+					Finally on the <guilabel>General</guilabel> tab, 
+					select the <guilabel>Compatibility Level</guilabel> of the data center, 
+					from either 2.2 or 3.0.</para>
+				</step>
+				<step>
+					<para>Use the <guilabel>Memory Optimization</guilabel> tab
+					to define how much of the host's
+					memory can be used in excess of the permitted memory for a virtual machine 
+					in the cluster. For example, all virtual machines will not be using the full amount
+					of allocated memory all the time. Memory sharing allows virtual machines that 
+					require additional memory at a certain time to use memory that is not being used
+					  at that time by other virtual machines. This feature allows you to fine tune how you wish to optimize 
+						the memory page sharing and large pages implementation on the hosts in the cluster.
+					 </para>
+					<para>Select from <guilabel>None</guilabel>, that disables memory page sharing, 
+					<guilabel>Optimized for Server Load</guilabel>, that sets the memory page sharing threshold to 150% of the system  memory on each host, or
+					<guilabel>Optimized for Desktop Load</guilabel>, that sets the memory page sharing threshold to 200% of the system memory on each host.
+					</para>
+				</step>
+				<step>
+					<para>Select the <guilabel>Resilience Policy</guilabel> tab 
+					to define if high availability is to be implemented for the virtual machines
+					in the cluster.
+					If a host shuts down unexpectedly or is put into
+					maintenance, the virtual machines running on the host can be re-run on another 
+					host in the same cluster. This field allows you to configure the migration
+					settings for virtual machines.</para>
+					<para>Select from <guilabel>Migrate Virtual Machines</guilabel>, (migrates
+					all machines);
+					<guilabel>Migrate only Highly Available Virtual
+					Machines</guilabel> or <guilabel>Do Not Migrate Virtual Machines</guilabel>.
+					</para>
+						<!--<figure id="cluster_resilience">
+							<title>New Cluster - Resilience Policy</title>
+							<mediaobject>
+								<imageobject>
+									<imagedata fileref="images/cluster-resilience.png" format="PNG"/>
+								</imageobject>
+							</mediaobject>
+					</figure>-->
+				</step>
+				<step>
+					<para>
+						Click <guibutton>OK</guibutton> to create the cluster.
+						The new host cluster is added to the data center and 
+						displays on the Cluster tab.
+	<!-- 				 
+						<figure id="cluster_todo_line">
+							<title>New Cluster Line with ToDo Icon</title>
+							<mediaobject>
+								<imageobject>
+									<imagedata fileref="images/cluster-todo-line.png" format="PNG"/>
+								</imageobject>
+							</mediaobject>
+					</figure>-->
+					</para>
+					<para>
+						The <guilabel>New Cluster - Guide Me</guilabel> dialog displays. 
+						<!--<figure id="cluster_todo">
+							<title>New Cluster</title>
+							<mediaobject>
+								<imageobject>
+									<imagedata fileref="images/cluster-dialog-guideme.png" format="PNG"/>
+								</imageobject>
+							</mediaobject>
+					</figure>-->
+					</para>
+				</step>
+				<step>
+					<para>The <guilabel>Guide Me</guilabel> tab prompts you to add hosts to the new cluster. Click the <guibutton>Configure
+	Hosts</guibutton> button, the <guilabel>New Host</guilabel> dialog displays.
+					</para>
+						<!--<figure id="cluster_todo1">
+							<title>New Host Dialog</title>
+							<mediaobject>
+								<imageobject>
+									<imagedata fileref="images/new_server.png" format="PNG"/>
+								</imageobject>
+							</mediaobject>
+					</figure>-->
+					
+					<para>Enter the details of the host to assign to the cluster. 
+					  Click <guibutton>OK</guibutton> to close the <guilabel>New
+	Host</guilabel> dialog. Now click <guibutton>Configure Later</guibutton> to close the <guilabel>New Cluster Guide Me</guilabel> dialog and return to the <guilabel>Clusters</guilabel> tab.</para>
+				</step>
+			</procedure>
+					<formalpara>
+						<title>Result:</title>
+						<para>
+							The <guilabel>Hosts</guilabel> tab on the Details pane displays the newly added hosts.
+						</para>
+					</formalpara>
+
+
+		</section>
+	</section>
+</chapter>
+

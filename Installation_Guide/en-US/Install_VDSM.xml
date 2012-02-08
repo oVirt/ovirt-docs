@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<chapter id="sect-Installation_Guide-Using_Red_Hat_Enterprise_Linux_Hosts">
+	<title>Installing VDSM</title>
+	<para>
+		The oVirt Engine supports the use of Linux hosts other than the oVirt Node. To use such a host with oVirt Engine it is currently necessary to install and configure VDSM, which provides the mechanism via which the Engine will communicate with the host. This chapter currently documents the installation of VDSM using <command>yum</command>. In future revisions alternative installation methods will also be documented, in the meantime for installation instructions specific to other platforms see the community wiki at <ulink url="http://www.ovirt.org/wiki/" />.
+	</para>
+	<warning>
+		<title>Warning — DNS Configuration</title>
+		<para>
+			All hosts must have a fully resolvable network address. Valid forward and reverse lookups for the address must be available in <acronym>DNS</acronym>. Virtual machine migration will not work in environments where this is not the case.
+		</para>
+	</warning>
+	<important>
+		<para>
+			Only the AMD64/Intel 64 version systems are compatible for use as oVirt Hosts.
+		</para>
+	</important>
+	<section id="sect-Installation_Guide-Using_Red_Hat_Enterprise_Linux_Hosts-VDSM-RPM">
+		<title>Installing VDSM From <acronym>RPMs</acronym></title>
+		<procedure>
+			<step>
+				<title>Configure Repository</title>
+				<para>
+					Configure the host to enable installation of software from the oVirt Project repository.
+				</para>
+				<screen># wget http://ovirt.org/releases/stable/ovirt-engine.repo -O /etc/yum.repos.d/ovirt-engine.repo</screen>
+			</step>
+			<step>
+				<title>Install VDSM Packages</title>
+				<para>
+					Install the VDSM packages.
+				</para>
+				<screen># yum install -y vdsm vdsm-cli</screen>
+			</step>
+		  <step>
+			<title>Open firewall ports</title>
+			<para>
+				oVirt platform uses a number of network ports for management and other virtualization features.
+			</para>
+			<para>
+				The following steps configure <command>iptables</command> to open the required ports. These steps replace any existing firewall configuration with that required for oVirt Engine. If you have existing firewall rules with which this configuration must be merged then you must manually edit the rules defined in the <command>iptables</command> configuration file, <filename>/etc/sysconfig/iptables</filename>. 
+			</para>
+			<substeps>
+				<step>
+					<para>
+						Remove and existing firewall rules.
+					</para>
+					<screen># iptables --flush</screen>
+				</step>
+				<step>
+					<para>
+						Add the ports required by oVirt Engine  to the <command>iptables</command> rules.
+					</para>
+					<screen>
+# iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+# iptables --append INPUT -p icmp -j ACCEPT
+# iptables --append INPUT -i lo -j ACCEPT
+# iptables --append INPUT -p tcp --dport 22 -j ACCEPT
+# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT
+# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT
+# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT
+# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT
+# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited
+# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --reject-with icmp-host-prohibited
+					</screen>
+					<note>
+						<para>
+							The provided <command>iptables</command> commands add firewall rules to accept network traffic on a number of ports. These include:  
+						</para>
+						<itemizedlist>
+							<listitem>
+								<para>
+									port <systemitem class="protocol">22</systemitem> for <application>SSH</application>,
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									ports <systemitem class="protocol">5634</systemitem> to <systemitem class="protocol">6166</systemitem> for guest console connections,
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									port <systemitem class="protocol">16514</systemitem> for <application>libvirt</application> virtual machine migration traffic, 
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									ports <systemitem class="protocol">49152</systemitem> to <systemitem class="protocol">49216</systemitem> for <acronym>VDSM</acronym> virtual machine migration traffic, and
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									port <systemitem class="protocol">54321</systemitem> for the oVirt Engine.
+								</para>
+							</listitem>
+						</itemizedlist>
+					</note>
+				</step>
+				<step>
+					<para>
+						Save the modified rules.
+					</para>
+					<screen># service iptables save</screen>
+				</step>
+				<step>
+					<para>
+						Ensure that the <command>iptables</command> service is configured to start on boot and has been restarted, or started for the first time if it wasn't already running.
+					</para>
+<screen>
+# chkconfig iptables on
+# service iptables restart
+</screen>
+				</step>
+			</substeps>
+		  </step>
+			  <step>
+				<title>Configure <command>sudo</command> access</title>
+				<para>
+					The oVirt Engine makes use of <application>sudo</application> to perform operations as <systemitem class="username">root</systemitem> on the host. The default configuration stored in <filename>/etc/sudoers</filename> contains values to allow this. If this file has been modified since Red Had Enterprise Linux installation these values may have been removed. As <systemitem class="username">root</systemitem> run <application>visudo</application> to ensure that the <filename>/etc/sudoers</filename> contains the default configuration values. Where it does not they must be added.
+				</para>
+			<screen>
+# Allow root to run any commands anywhere 
+root    ALL=(ALL)   ALL
+			</screen>
+			  </step>
+			  <step>
+				<title>Enable SSH access for root</title>
+				<para>
+					The oVirt management daemon accesses host machines via SSH. To do this it logs in as <systemitem class="username">root</systemitem>  with an encrypted key for authentication. To ensure that SSH is configured and <systemitem class="username">root</systemitem> is able to use it to access the system follow these additional steps.
+				</para>
+				<warning>
+					<para>
+						The first time the oVirt Engine is connected to the host it will install an authentication key. In the process it will overwrite any existing keys which exist in <filename>/root/.ssh/authorized_keys</filename>.
+					</para>
+				</warning>
+				<substeps>
+				  <step>
+					<para>
+						These steps assume that the <package>openssh-server</package> package is installed on the system. Where the package is not present use <application>yum</application> to install it.
+					</para>
+					<screen># yum install openssh-server</screen>
+				  </step>
+				  <step>
+					 <para>
+						Use <command>chkconfig</command> to verify which run-levels SSH is enabled at.
+					 </para>
+			<screen>
+# chkconfig --list sshd
+sshd			0:off	1:off	2:on	3:on	4:on	5:on	6:off
+			</screen>
+					<para>
+						It is expected that the SSH daemon shows as <literal>on</literal> for run-levels <literal>3</literal>, <literal>4</literal>, and <literal>5</literal>. This is the default configuration. 
+					</para>
+					<para>
+						If the configuration on the host differs use <command>chkconfig</command> to enable it for the required run-levels. The <command>/etc/init.d/sshd</command> script can then be used to ensure the service is currently started.
+					</para>
+			<screen>
+# chkconfig --level 345 sshd on
+# /etc/init.d/sshd start
+			</screen>
+					<para>
+						To verify this operation as successful run <command>chkconfig --list sshd</command> again and check the output. It should now show the daemon as <literal>on</literal> at run-level <literal>3</literal>, <literal>4</literal>, and <literal>5</literal>.
+					</para>
+				  </step>
+				  <step>
+					<para>
+						oVirt Engine requires that the SSH daemon configuration on the host allows remote login by the <systemitem class="username">root</systemitem> user.  
+					</para>
+					<para>
+						To check whether or not this is the case search the <filename>/etc/ssh/sshd_config</filename> for the value <literal>PermitRootLogin</literal>. This must be done while logged in as <systemitem class="username">root</systemitem>.
+					</para>
+			<screen>
+# grep PermitRootLogin /etc/ssh/sshd_config
+PermitRootLogin no
+			</screen>
+					<para>
+						Where <systemitem>PermitRootLogin</systemitem> is set to <literal>no</literal> the value must be changed to <literal>yes</literal>. To do this edit the configuration file.
+					</para>
+			<screen>
+# vi /etc/ssh/sshd_config
+			</screen>
+					<para>
+						Once the updated configuration file has been saved the SSH daemon must be told to reload it.
+					</para>
+			<screen>
+# /etc/init.d/sshd reload
+Reloading sshd:                                            [  OK  ]
+			</screen>
+				  </step>
+				</substeps>
+				<para>
+					The <systemitem class="username">root</systemitem> user should now be able to access the system via SSH.
+				</para>
+			  </step>
+		</procedure>
+		<formalpara>
+			<title>Result:</title>
+			<para>
+				The VDSM packages are installed, it is now time to add the host from the oVirt Engine, see <xref linkend="To-add-a-new-host" />.
+			</para>
+		</formalpara>
+	</section>
+	<!-- TODO: Need the alternative processes for Debian, Gentoo, etc here. 
+	<section id="sect-Installation_Guide-Using_Red_Hat_Enterprise_Linux_Hosts-VDSM-Source">
+		<title>Installing VDSM From <acronym>Source</acronym></title>
+		<para />
+	</section>
+	-->
+	<section id="To-add-a-new-host">
+		<title>To Add a Host</title>
+		<para>
+			In the process of adding a host, you will need to provide the IP and password of the host. The engine then logs into the host to performs virtualization checks, install  packages, create a network bridge and reboot the host. The process of adding a new host can take some time, the state of the process can be followed in the Details pane.
+		</para>
+		<procedure>
+			<step>
+				<para>
+					Click the <guilabel>Hosts</guilabel> tab.
+					The Hosts tab displays a list of all hosts in the system.
+				</para>	<!--
+				<figure id="server_list">
+					<title>List of Hosts</title>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/host-tab-general.png" format="PNG"/>
+						</imageobject>
+					</mediaobject>
+				</figure>-->
+			</step>
+			<step>
+				<para>
+					Click the <guilabel>New</guilabel> button.
+					The New Host dialog displays.
+				</para>	
+				<figure id="new_server">
+					<title>New Host Dialog</title>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/new_server.png" format="PNG"/>
+						</imageobject>
+					</mediaobject>
+				</figure>
+				<para>
+					Enter the details of the new host.
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+							<emphasis role="bold">Name</emphasis>: a descriptive name for the host.
+						</para>	
+					</listitem>
+					<listitem>
+						<para>
+							<emphasis role="bold">Address</emphasis>: the IP address, or resolvable hostname of the host (provided during installation).
+						</para>
+					</listitem>
+					
+					<listitem>
+						<para>
+							<emphasis role="bold">Port</emphasis>: the port used for internal communication control between the hosts. A default port is displayed; change the default only if you are sure that another port can be used.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<emphasis role="bold">Host Cluster</emphasis>: the cluster to which the host belongs (select from the drop-down list).
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<emphasis role="bold">Root password</emphasis>: the password of the designated host; used during installation of the host.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+								<emphasis role="bold">Enable Power Management</emphasis>: Select this checkbox to turn out-of-band (OOB) power management on. If selected, the information for the following fields must also be provided.
+						</para>
+						<itemizedlist>
+							<listitem>
+								<para>The <guilabel>Address</guilabel> of the host. This is usually the address of the remote access card (RAC) on the host.
+								</para>
+							</listitem>
+							<listitem>
+								<para>A valid <guilabel>User Name</guilabel> for the OOB management.
+								</para>
+							</listitem>
+							<listitem>
+								<para>A valid, robust <guilabel>Password</guilabel> for the OOB management.
+								</para>
+							</listitem>
+							<listitem>
+								<para>The <guilabel>Type</guilabel> of the OOB management device. Select the appropriate device from the drop down list.
+								</para>
+								<informaltable frame="none" id="RAC-Type">
+									<tgroup align="left" cols="2">
+									<colspec colname="c1"/>
+									<colspec colname="c2"/>
+									<tbody>
+								<row>
+									<entry>alom</entry>
+									<entry>Sun Integrated Lights Out Manager (ILOM)</entry>
+								</row>
+								<row>
+									<entry>apc</entry>
+									<entry>APC Master MasterSwitch network power switch</entry>
+								</row>
+								<row>
+									<entry>bladecenter</entry>
+									<entry>IBM Bladecentre Remote Supervisor Adapter</entry>
+								</row>
+								<row>
+									<entry>drac5</entry>
+									<entry>Dell Remote Access Controller for Dell computers</entry>
+								</row>
+								<row>
+									<entry>eps</entry>
+									<entry>ePowerSwitch 8M+ network power switch</entry>
+								</row>
+								<row>
+									<entry>ilo</entry>
+									<entry>HP Integrated Lights Out standard</entry>
+								</row>
+								
+								<row>
+									<entry>ipmilan</entry>
+									<entry>Intelligent Platform Management Interface</entry>
+								</row>
+								<row>
+									<entry>rsa</entry>
+									<entry>IBM Remote Supervisor Adaptor</entry>
+								</row>
+								<row>
+									<entry>rsb</entry>
+									<entry>Fujitsu-Siemens RSB management interface</entry>
+								</row>
+								<row>
+									<entry>wti</entry>
+									<entry>WTI Network PowerSwitch</entry>
+								</row>
+									</tbody>
+									</tgroup>
+								</informaltable>
+							</listitem>
+							<listitem>
+								<para>The <guilabel>Port</guilabel> to connect to OOB management.
+								</para>
+							</listitem>
+							<listitem>
+								<para><guilabel>Slot</guilabel>: The slot number in the blade chassis. This option is for blade systems only.
+								</para>
+							</listitem>
+							<listitem>
+								<para><guilabel>Options</guilabel>: Extra command line options for the fence agent. Detailed documentation of the options available is provided in the man page for each fence agent. 
+								</para>
+							</listitem>
+							<listitem>
+								<para><guilabel>Secure</guilabel>: Some fence agents support both encrypted and unencrypted communications. Select this option to enable encrypted communications.
+								</para>
+							</listitem>
+							<listitem>
+								<para>Click the <guibutton>Test</guibutton> button to test the operation of the OOB management solution.
+								</para>
+							</listitem>
+						</itemizedlist>
+					</listitem>
+				</itemizedlist>
+				<para>oVirt recommends power management. Power management enables the system to fence a troublesome host using an additional interface.</para>
+				<note>
+					<title>Note</title>
+					<para>If the host is required to be Highly Available, power management must be enabled and configured.</para>
+				</note>
+		</step>
+		<step>
+			<para>
+				Click <guibutton>OK</guibutton>.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result:</title>
+		<para> 
+			The new host displays in the list of hosts with a status of <literal>Installing</literal>. Once installation is complete, the status will update to <literal>Reboot</literal> and then <literal>Awaiting</literal>. The host must be activated for the status to change to <literal>Up</literal>.
+		</para>
+	</formalpara>
+	<note>
+		<para>
+			View the process of the host installation on the Details pane.
+		</para>
+	</note>
+</section>
+
+<section id="Administration_Guide-Create_Objects-Activate_Server">
+	<title>Activating a Host</title>
+	<para>
+		After a host has been added, or an existing host has been taken down for maintenance, it needs to be activated before it can be used.
+	</para>
+	<para><emphasis role="bold">To activate a host:</emphasis></para>
+	<procedure>
+		<step>
+			<para>
+				In the Hosts tab, select the host to be activated.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click the <guibutton>Activate</guibutton> button.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result:</title>
+		<para>
+			The host status changes to <literal>Up</literal>. Virtual machines can now run on the host.
+		</para>	
+	</formalpara>
+
+
+</section>
+</chapter>

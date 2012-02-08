@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<chapter id="chap-Installation_Guide-Overview">
+	<title>Overview</title>
+	<para>
+		oVirt provides IT departments with the tools to meet the challenges of managing complex environments. oVirt's state-of-the-art virtualization platform enables administrators to reduce the cost and complexity of large deployments. oVirt platform provides: 
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>High availability to quickly configure virtual machines for fault tolerance.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Live migration to move virtual machines between physical hosts without interruption.
+			</para>
+		</listitem>
+		<listitem>
+			<para>System scheduler to create policies to dynamically balance compute resources.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Power saver to create policies to conserve power and cooling costs.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Image engine to create, manage and provision virtual machines.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Storage virtualization to consistently access common storage from any server.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Multi-level administration to enable administration of physical infrastructure as well as administration of virtual objects.
+			</para>
+		</listitem>
+		<listitem>
+			<para>Ability to convert existing virtual machines on foreign nodes to oVirt platform.
+			</para>
+		</listitem>
+		<listitem>
+			<para>A range of reports either from the reports module based on JasperReports, or from the data warehouse. The reports enable administrators to monitor and analyze information on virtual machines, hosts and storage usage and performance.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<section id="sect-Installation_Guide-Overview-System_architecture">
+		<title>System Components</title>
+		<para>
+			The oVirt platform consists of one or more hosts (either oVirt Nodes or pre-configured Linux systems on which <package>VDSM</package> is installed) and at least one engine. The virtual machines are run on the hosts. The system and all its components are managed through a centralized management system. 
+		</para>
+		<variablelist>
+			<varlistentry>
+				<term>oVirt Engine</term>
+				<listitem>
+					<para>
+						The oVirt Engine acts as a centralized management system that allows system administrators to view and manage virtual machines and images. The oVirt Engine provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning..
+					</para>
+					<para>
+						The engine provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The oVirt Engine exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>).
+					</para>
+					<itemizedlist>
+						<listitem>
+							<para>
+								The Administration Portal is used to perform setup, configuration, and management of the oVirt environment.
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								The User Portal is used to start, stop, reboot, and connect to virtual machines. Users granted power user access by the environment's administrators are also able to create virtual machine templates and, virtual machines from this interface.
+							</para>
+						</listitem>
+						<listitem>
+							<para>
+								The <acronym>REST</acronym> <acronym>API</acronym> provides and interface for automation of tasks normally accomplished manually by users. Scripts that make use of the <acronym>REST</acronym> <acronym>API</acronym> are able to be written in any language which supports accessing <acronym>HTTP</acronym> and <acronym><acronym>HTTP</acronym>S</acronym> resources.
+							</para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>oVirt Node(s)</term>
+				<listitem>
+					<para>
+						The oVirt Node is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. The Node is designed for management via the oVirt Engine. It provides a thin virtualization layer deployed across the server infrastructure.
+					</para>
+					<para>
+						Kernel-based Virtual Machine (<acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization.
+					</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Pre-configured Linux Host(s)</term>
+				<listitem>
+					<para>
+						The oVirt Engine also supports the use of pre-configured systems running Linux with support for <package>vdsm</package> as virtualization hosts. 
+					</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		<section id="sect-Installation_Guide-Overview-About_the_Virtual_Machines">
+			<title>About the Virtual Machines</title>
+			<para>
+				oVirt platform enables you to create virtual machines that perform the same functions as physical machines. Using a standard Web browser, users can run virtual machines that behave like physical desktops. Multiple levels of permissions allow users with different roles to manage virtual machines to meet the requirements of the enterprise. 
+			</para>
+			<xi:include href="./topics/References/RHEV/2.3/Supported_Guests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<!-- id="References_oVirt_3_Supported_Guests" -->
+		</section>
+		<section id="sect-Installation_Guide-Overview-About_SPICE">
+			<title>About <acronym>SPICE</acronym></title>
+			<para>
+				The <acronym>SPICE</acronym> protocol allows the virtual machine to connect to the host with physical <acronym>PC</acronym>-like graphics performance. It supplies video at more than 30 frames per second, bi-directional audio (for soft-phones/IP phones), bi-directional video (for video telephony/video conferencing) and <acronym>USB</acronym> redirection from the client’s <acronym>USB</acronym> port into the virtual machine. <acronym>SPICE</acronym> also supports connection to multiple monitors with a single virtual machine.
+			</para>
+		</section>
+	</section>
+	
+	<section id="sect-Installation_Guide-Overview-About_the_installation_process">
+		<title>Installation Workflow</title>
+		<para>
+			oVirt requires installation and configuration of several components to create a functioning virtualization environment. You must install and configure each component in the order shown in the checklist that follows:
+		</para>
+		<itemizedlist>
+			<title>Check System Requirements</title>
+			<listitem>
+				<para>
+					Check hardware requirements, as seen in <xref linkend="sect-Installation_Guide-System_Requirements-Hardware_requirements"/>.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Check software requirements, as seen in <xref linkend="sect-Installation_Guide-System_Requirements-Software_requirements"/>.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist>
+			<title>oVirt Engine Installation</title>
+			<listitem>
+				<para>
+					Install oVirt Engine, as seen in <xref linkend="chap-Installation_Guide-Installing_the_oVirt_Manager-Manager"/>.
+				</para>
+			</listitem>
+			<!-- TODO: Reports functionality goes here once it is packaged.-->
+		</itemizedlist>
+		<itemizedlist>
+			<title>Install Virtualization Hosts</title>
+			<listitem>
+				<para>
+					Install oVirt Node hosts, as seen in <xref linkend="sect-Installation_Guide-Installing_the_PRODUCT_Node"/>.
+				</para>
+			</listitem>
+			<!-- TODO: Needs to be updated. 
+			<listitem>
+				<para>
+					Install Linux Hosts, as seen in <xref linkend="sect-Installation_Guide-Using_Red_Hat_Enterprise_Linux_Hosts"/>. 
+				</para>
+			</listitem>-->
+		</itemizedlist>
+		<itemizedlist>
+			<title>Plan Your Data Center</title>
+			<listitem>
+				<para>
+					 Plan your oVirt Data Center(s), as seen in <xref linkend="chap-Installation_Guide-Planning_the_Data_Center"/>.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist>
+			<title>Setup Networks</title>
+			<listitem>
+				<para>
+					To configure networks, see <xref linkend="chap-Installation_Guide-Setting_Up_Network" />.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist>
+			<title>Setup Storage</title>
+			<listitem>
+				<para>
+					For an overview of the supported storage types, and how they are attached to the engine, see <xref linkend="sect-Installation_Guide-Storage_Setup-Storage_Domains_Overview"/>.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					To populate your <acronym>ISO</acronym> storage domain with installation media, see <xref linkend="sect-Installation_Guide-Setting_Up_Storage-Populate_ISO_Domain"/>.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para>
+			Completion of the above steps will result in the creation of a functioning oVirt environment capable of running virtual machines.
+		</para>
+	</section>
+</chapter>

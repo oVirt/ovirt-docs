@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM 'Installation_Guide.ent'>
+<!ENTITY PRODUCT 'oVirt'>
+<!ENTITY BOOKID 'Red_Hat_Enterprise_Virtualization-Installation_Guide'>
+<!ENTITY YEAR '2011'>
+<!ENTITY HOLDER 'oVirt, Inc'>
+]>
+<appendix id="chap-Installation_Guide-Utilities">
+	<title>Additional Utilities</title>
+	<xi:include href="./topics/References/RHEV/2.3/Manage_Domains.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<!-- id="References_oVirt_3_Manage_Domains" -->
+	<xi:include href="./topics/References/RHEV/2.3/Configuration_Tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<!-- id="References_oVirt_3_Configuration_Tool" -->
+	<xi:include href="./topics/References/RHEV/2.3/ISO_Uploader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<!-- id="References_oVirt_3_ISO_Uploader" -->
+	<xi:include href="./topics/References/RHEV/2.3/Log_Collector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<!-- id="References_oVirt_3_Log_Collector" -->
+</appendix>
