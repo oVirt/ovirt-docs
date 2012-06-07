@@ -47,9 +47,6 @@ To access the Administration and User Portals, you need a client with a supporte
 			Browser
 			<itemizedlist>
 			 <listitem>
-			  <para>Internet Explorer 7 and higher on Windows, with the SPICE ActiveX control installed</para>					
-			 </listitem>
-			 <listitem>
 			  <para>Mozilla Firefox 3.5 and higher on Linux, with the SPICE plugin installed</para>					
 			 </listitem>
 			</itemizedlist>
