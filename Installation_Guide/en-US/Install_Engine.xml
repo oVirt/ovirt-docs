@@ -228,7 +228,7 @@ Proceed with the configuration listed above? (yes|no):
 			<step>
 				<title>Set Administrator Password</title>
 				<para>
-					The script creates an authentication domain internal to the oVirt Engine for the default administrative account. The domain is named <systemitem>internal</systemitem>, the administrative user is called <systemitem>admin</systemitem>. External authentication domains are added as a post-installation step using the <command>ovirt-manage-domains</command> command. 
+					The script creates an authentication domain internal to the oVirt Engine for the default administrative account. The domain is named <systemitem>internal</systemitem>, the administrative user is called <systemitem>admin</systemitem>. External authentication domains are added as a post-installation step using the <command>engine-manage-domains</command> command. 
 				</para>
 				<para>
 					You must choose a password for the <systemitem class="username">admin</systemitem> user. You will be asked to enter it a second time to confirm your selection.
@@ -392,7 +392,7 @@ Additional information:
  * The firewall has been updated, the old iptables configuration file was saved to /usr/share/ovirt/conf/iptables.backup.103654-09092011_866
  * The installation log file is available at: /var/log/ovirt/engine-setup_2011_09_09_10_32_56.log
  * Please use the user "admin" and password specified in order to login into oVirt Manager
- * To configure additional users, first configure authentication domains using the 'ovirt-manage-domains' utility
+ * To configure additional users, first configure authentication domains using the 'engine-manage-domains' utility
  * To access oVirt Manager please go to the following URL: http://engine.demo.ovirt.org:8080
 </screen>
 				</example>

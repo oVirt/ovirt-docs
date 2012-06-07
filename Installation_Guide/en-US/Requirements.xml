@@ -74,7 +74,7 @@
 				The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users. A directory service consists of at least one instance of Directory Server and at least one directory client program. Client programs can access names, phone numbers, addresses, and other data stored in the directory service.
 			</para>
 			<para>
-				The oVirt platform provides its own internal <systemitem>admin</systemitem> user. Authentication for other users is supported by attaching directory services domains using the provided domain management tool, <command>ovirt-manage-domains</command>. Currently the two supported providers of directory services for use with the oVirt Engine are Identity, Policy, and Audit (<acronym>IPA</acronym>) and Microsoft Active Directory.
+				The oVirt platform provides its own internal <systemitem>admin</systemitem> user. Authentication for other users is supported by attaching directory services domains using the provided domain management tool, <command>engine-manage-domains</command>. Currently the two supported providers of directory services for use with the oVirt Engine are Identity, Policy, and Audit (<acronym>IPA</acronym>) and Microsoft Active Directory.
 			</para>
 			<para>
 				For more information on configuring directory services see <xref linkend="chap-Installation_Guide-Directory_Services"/>. 

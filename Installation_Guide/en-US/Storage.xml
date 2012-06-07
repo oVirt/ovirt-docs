@@ -111,14 +111,14 @@
 			</step>
 			<step>
 				<para>
-					Use the <command>ovirt-iso-uploader</command> command to upload the <acronym>ISO</acronym> image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth.
+					Use the <command>engine-iso-uploader</command> command to upload the <acronym>ISO</acronym> image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth.
 				</para>
 				<example>
 					<title><acronym>ISO</acronym> Uploader Usage</title>
 					<para>
 						In this example the <acronym>ISO</acronym> image <filename>RHEL6.iso</filename> is uploaded to the <acronym>ISO</acronym> domain called <literal>ISODomain</literal> using <acronym>NFS</acronym>. The command will prompt for an administrative username and password. The username must be provided in the form <replaceable>username</replaceable>@<replaceable>domain</replaceable>. 
 					</para>
-					<screen># <command>ovirt-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command></screen>
+					<screen># <command>engine-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command></screen>
 				</example>
 			</step>
 		</procedure>
@@ -156,14 +156,14 @@
 				</listitem>
 			</itemizedlist>
 			<para>
-				These image files must be manually uploaded to <acronym>ISO</acronym> storage domains that were not created locally by the installation process. You must use the <command>ovirt-iso-uploader</command> command to upload these images to your <acronym>ISO</acronym> storage domain. Once the image files have been uploaded they can be attached to, and used by, virtual machines.
+				These image files must be manually uploaded to <acronym>ISO</acronym> storage domains that were not created locally by the installation process. You must use the <command>engine-iso-uploader</command> command to upload these images to your <acronym>ISO</acronym> storage domain. Once the image files have been uploaded they can be attached to, and used by, virtual machines.
 			</para>
 			<example>
 				<title>Upload of VirtIO and Guest Tool Image Files</title>
 				<para>
 					In this example the <filename>virtio-win.iso</filename>, <filename>virtio-win.vfd</filename>, and <filename>rhev-tools-setup.iso</filename> image files are uploaded to the <literal>ISODomain</literal> <acronym>ISO</acronym> storage domain.
 				</para>
-<screen># <command>ovirt-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter>/usr/share/virtio-win/virtio-win.iso</parameter> <parameter>/usr/share/virtio-win/virtio-win.vfd</parameter> <parameter><filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename></parameter></command></screen>
+<screen># <command>engine-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter>/usr/share/virtio-win/virtio-win.iso</parameter> <parameter>/usr/share/virtio-win/virtio-win.vfd</parameter> <parameter><filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename></parameter></command></screen>
 			</example>
 		</section>
 	</section>
