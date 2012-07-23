@@ -5,12 +5,12 @@
 ]>
 
 <section id="Configuring_Hyperisor_for_Red_Hat_Network" remap="TID_7538">
-	<title>Configuring Hypervisor for Red Hat Network</title>
+	<title>Configuring Node for Red Hat Network</title>
 	<para>
-		Guests running on the Hypervisor may need to consume Red Hat Enterprise Linux virtualization entitlements. Where this is the case the Hypervisor must be registered to Red Hat Network , a Satellite server, or Subscription Asset Manager. The Hypervisor is able to connect to these services via a <acronym>HTTP</acronym> proxy where one is in use.
+		Guests running on the Node may need to consume Fedora virtualization entitlements. Where this is the case the Node must be registered to Red Hat Network , a Satellite server, or Subscription Asset Manager. the Node is able to connect to these services via a <acronym>HTTP</acronym> proxy where one is in use.
 	</para>
 	<para>
-		Note that when new versions of the Hypervisor itself become available they are installed from the Red Hat Enterprise Virtualization Manager, not Red Hat Network.
+		Note that when new versions of the Node itself become available they are installed from the oVirt Engine, not Red Hat Network.
 	</para>
 	<procedure>
 		<title>Register with Red Hat Network</title>
@@ -32,7 +32,7 @@
 		<step>
 			<title>Update Source</title>
 			<para>
-				The Hypervisor is able to register directly to Red Hat Network or, if available, either a Satellite installation or a Subscription Asset Manager.
+				the Node is able to register directly to Red Hat Network or, if available, either a Satellite installation or a Subscription Asset Manager.
 			</para>
 			<stepalternatives>
 				<step>
@@ -139,12 +139,12 @@ Username: puser________ Password: ******_______
 		</step>
 	</procedure>
 	<para>
-		The Hypervisor's <guilabel>Red Hat Network</guilabel> configuration has been updated.
+		the Node's <guilabel>Red Hat Network</guilabel> configuration has been updated.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7538-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7538-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -7,7 +7,7 @@
 <section id="Attaching_NFS_Storage" remap="TID_7540">
 	<title>Attaching NFS Storage</title>
 	<para>
-		An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a Data Center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the Red Hat Enterprise Virtualization Manager, using the Administration Portal.
+		An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a Data Center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the oVirt Engine, using the Administration Portal.
 	</para>
 	<para><acronym>NFS</acronym> data, or export, storage domains can be added to <acronym>NFS</acronym> data center. You can add <acronym>NFS</acronym> <acronym>ISO</acronym> storage domains to data centers of any type.
 	</para>
@@ -62,7 +62,7 @@
 				<important>
 					<title>Active Host Required</title>
 					<para>
-						All communication to the Storage Domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen Data Center, before the storage is configured.
+						All communication to the Storage Domain is via the selected host and not directly from the oVirt Engine. At least one active host must exist in the system, and be attached to the chosen Data Center, before the storage is configured.
 					</para>
 				</important>
 			</para>
@@ -79,7 +79,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7540-162154+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7540-162154+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

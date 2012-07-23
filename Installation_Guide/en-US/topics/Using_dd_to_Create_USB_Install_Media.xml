@@ -7,11 +7,11 @@
 <section id="Using_dd_to_Create_USB_Install_Media" remap="TID_7854">
 	<title>Preparing USB Installation Media Using dd</title>
 	<para>
-		The <command>dd</command> command can also be used to install a hypervisor onto a <acronym>USB</acronym> storage device. Media created with the command can boot the hypervisor on systems which support booting via <acronym>USB</acronym>. Red Hat Enterprise Linux provides <command>dd</command> as part of the <package> coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems.
+		The <command>dd</command> command can also be used to install a Node onto a <acronym>USB</acronym> storage device. Media created with the command can boot the Node on systems which support booting via <acronym>USB</acronym>. Fedora provides <command>dd</command> as part of the <package> coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems.
 	</para>
 	<para>
 		Windows users are able to obtain the <command>dd</command> command through installation of <application>Red Hat Cygwin</application>, a free Linux-like environment for Windows. 
-		<!-- Refer to <xref linkend="proc-Deployment_Guide-Preparing_a_RHEV_Hypervisor_USB_storage_device-Making_a_bootable_RHEV_Hypervisor_USB_storage_device-dd-Windows" /> for instruction on the installation and use of <application>Red Hat Cygwin</application> to install the hypervisor to a <acronym>USB</acronym> storage device.-->
+		<!-- Refer to <xref linkend="proc-Deployment_Guide-Preparing_a_RHEV_Hypervisor_USB_storage_device-Making_a_bootable_RHEV_Hypervisor_USB_storage_device-dd-Windows" /> for instruction on the installation and use of <application>Red Hat Cygwin</application> to install the Node to a <acronym>USB</acronym> storage device.-->
 	</para>
 	<para>
 		The basic <command>dd</command> command usage follows this structure:
@@ -19,7 +19,7 @@
 	<screen># dd if=<replaceable>image</replaceable> of=<replaceable>device</replaceable>
     </screen>
 	<para>
-		Where the <parameter>device</parameter> parameter is the device name of the <acronym> USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image.
+		Where the <parameter>device</parameter> parameter is the device name of the <acronym> USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the Node. The default Node image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image.
 	</para>
 	<formalpara role="see-also-list">
 		<title>See Also:</title>
@@ -41,7 +41,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7854-164522+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7854-164522+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

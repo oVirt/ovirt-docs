@@ -7,45 +7,45 @@
 <section id="Bonding_Modes" remap="TID_7859">
 	<title>Bonding Modes</title>
 	<para>
-		Red Hat Enterprise Virtualization supports the following common bonding modes:
+		oVirt supports the following common bonding modes:
 	</para>
 	<itemizedlist>
 		<!--<listitem>
-                <para>Mode 0 (round-robin policy) transmits packets to interfaces in sequential order. Packet transmission occurs in iterations that begin with the first available interface and end with the last available interface. Similarly, all subsequent iterations initiate with the first available interface. Mode 0 offers fault tolerance and load balancing to the network. However, mode 0 cannot be used in conjunction with bridges, therefore it is not supported in Red Hat Enterprise Virtualization.</para>
+                <para>Mode 0 (round-robin policy) transmits packets to interfaces in sequential order. Packet transmission occurs in iterations that begin with the first available interface and end with the last available interface. Similarly, all subsequent iterations initiate with the first available interface. Mode 0 offers fault tolerance and load balancing to the network. However, mode 0 cannot be used in conjunction with bridges, therefore it is not supported in oVirt.</para>
                   </listitem>-->
 		<listitem>
 			<para>
-				(Mode 1) Active-backup policy sets all interfaces to the backup state while one remains active. Upon failure on the active interface, a backup interface replaces it as the only active interface in the bond. The MAC address of the bond in mode 1 is visible on only one port (the network adapter), to prevent confusion for the switch. Mode 1 provides fault tolerance and is supported in Red Hat Enterprise Virtualization.
+				(Mode 1) Active-backup policy sets all interfaces to the backup state while one remains active. Upon failure on the active interface, a backup interface replaces it as the only active interface in the bond. The MAC address of the bond in mode 1 is visible on only one port (the network adapter), to prevent confusion for the switch. Mode 1 provides fault tolerance and is supported in oVirt.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				(Mode 2) XOR policy selects an interface to transmit packages to based on the result of a XOR operation on the source and destination MAC addresses multiplied by the modulo slave count. This calculation ensures that the same interface is selected for each destination MAC address used. Mode 2 provides fault tolerance and load balancing and is supported in Red Hat Enterprise Virtualization.
+				(Mode 2) XOR policy selects an interface to transmit packages to based on the result of a XOR operation on the source and destination MAC addresses multiplied by the modulo slave count. This calculation ensures that the same interface is selected for each destination MAC address used. Mode 2 provides fault tolerance and load balancing and is supported in oVirt.
 			</para>
 		</listitem>
 		<!--
             <listitem>
-                <para>(Mode 3) Broadcast policy transmits all packages to all interfaces. Mode 3 provides fault tolerance and is supported in Red Hat Enterprise Virtualization.</para>
+                <para>(Mode 3) Broadcast policy transmits all packages to all interfaces. Mode 3 provides fault tolerance and is supported in oVirt.</para>
             </listitem>
             -->
 		<listitem>
 			<para>
-				(Mode 4) IEEE 802.3ad policy creates aggregation groups for which included interfaces share the speed and duplex settings. Mode 4 uses all interfaces in the active aggregation group in accordance with the IEEE 802.3ad specification and is supported in Red Hat Enterprise Virtualization.
+				(Mode 4) IEEE 802.3ad policy creates aggregation groups for which included interfaces share the speed and duplex settings. Mode 4 uses all interfaces in the active aggregation group in accordance with the IEEE 802.3ad specification and is supported in oVirt.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				(Mode 5) Adaptive transmit load balancing policy ensures the outgoing traffic distribution is according to the load on each interface and that the current interface receives all incoming traffic. If the interface assigned to receive traffic fails, another interface is assigned the receiving role instead. Mode 5 is supported in Red Hat Enterprise Virtualization.
+				(Mode 5) Adaptive transmit load balancing policy ensures the outgoing traffic distribution is according to the load on each interface and that the current interface receives all incoming traffic. If the interface assigned to receive traffic fails, another interface is assigned the receiving role instead. Mode 5 is supported in oVirt.
 			</para>
 		</listitem>
 		<!--<listitem>
-                <para>Mode 6 (adaptive load balancing policy)combines mode 5 (adaptive transmit load balancing policy) with receive load balancing for IPV4 traffic without any special switch requirements. ARP negotiation is used for balancing the receive load. Mode 6 cannot be used in conjunction with bridges, therefore it is not supported in Red Hat Enterprise Virtualization.</para>
+                <para>Mode 6 (adaptive load balancing policy)combines mode 5 (adaptive transmit load balancing policy) with receive load balancing for IPV4 traffic without any special switch requirements. ARP negotiation is used for balancing the receive load. Mode 6 cannot be used in conjunction with bridges, therefore it is not supported in oVirt.</para>
                   </listitem>-->
 	</itemizedlist>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7859-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7859-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

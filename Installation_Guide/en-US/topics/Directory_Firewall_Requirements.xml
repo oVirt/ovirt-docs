@@ -7,7 +7,7 @@
 <section id="Directory_Firewall_Requirements" remap="TID_7852">
 	<title>Directory Server Firewall Requirements</title>
 	<para>
-		Red Hat Enterprise Virtualization requires a directory server to support user authentication. A number of ports must be opened in the directory server's firewall to support <acronym>GSS-API</acronym> authentication as used by the Red Hat Enterprise Virtualization Manager.
+		oVirt requires a directory server to support user authentication. A number of ports must be opened in the directory server's firewall to support <acronym>GSS-API</acronym> authentication as used by the oVirt Engine.
 	</para>
 	<table>
 		<title>Host Firewall Requirements</title>
@@ -48,7 +48,7 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Manager
+									oVirt Engine
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -77,7 +77,7 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Manager
+									oVirt Engine
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -101,7 +101,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7852-163907+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7852-163907+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

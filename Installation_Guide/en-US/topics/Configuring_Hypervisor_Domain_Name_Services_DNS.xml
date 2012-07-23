@@ -5,10 +5,10 @@
 ]>
 
 <section id="Configuring_Hypervisor_Domain_Name_Services_DNS" remap="TID_7613">
-	<title>Configuring Hypervisor Domain Name Services (DNS)</title>
+	<title>Configuring Node Domain Name Services (DNS)</title>
 	<procedure>
 		<para>
-			The Hypervisor supports the specification of one or more Domain Name Services (<acronym>DNS</acronym>) servers. These servers will be used when resolving host and domain names
+			the Node supports the specification of one or more Domain Name Services (<acronym>DNS</acronym>) servers. These servers will be used when resolving host and domain names
 		</para>
 		<step>
 			<para>
@@ -27,12 +27,12 @@
 		</step>
 	</procedure>
 	<para>
-		The primary and secondary <acronym>DNS</acronym> servers queried by the Hypervisor are updated.
+		The primary and secondary <acronym>DNS</acronym> servers queried by the Node are updated.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7613-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7613-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

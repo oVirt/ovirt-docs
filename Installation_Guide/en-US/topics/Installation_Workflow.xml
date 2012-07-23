@@ -5,9 +5,9 @@
 ]>
 
 <section id="Installation_Workflow" remap="TID_7839">
-	<title>Red Hat Enterprise Virtualization Installation Workflow</title>
+	<title>oVirt Installation Workflow</title>
 	<para>
-		Red Hat Enterprise Virtualization requires installation and configuration of several components to create a functioning virtualization environment. You must install and configure each component in the order shown in this checklist:
+		oVirt requires installation and configuration of several components to create a functioning virtualization environment. You must install and configure each component in the order shown in this checklist:
 	</para>
 	<!--
         <mediaobject>
@@ -29,15 +29,15 @@
 		</listitem>
 	</itemizedlist>
 	<itemizedlist>
-		<title>Red Hat Enterprise Virtualization Manager Installation</title>
+		<title>oVirt Engine Installation</title>
 		<listitem>
 			<para>
-				Install Red Hat Enterprise Virtualization Manager.
+				Install oVirt Engine.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				Install Red Hat Enterprise Virtualization Manager Reports (Optional).
+				Install oVirt Engine Reports (Optional).
 			</para>
 		</listitem>
 	</itemizedlist>
@@ -45,12 +45,12 @@
 		<title>Install Virtualization Hosts</title>
 		<listitem>
 			<para>
-				Install Red Hat Enterprise Virtualization Hypervisor hosts.
+				Install oVirt Node hosts.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				Install Red Hat Enterprise Linux Hosts.
+				Install Fedora Hosts.
 			</para>
 		</listitem>
 	</itemizedlist>
@@ -58,7 +58,7 @@
 		<title>Plan Your Data Center</title>
 		<listitem>
 			<para>
-				Plan your Red Hat Enterprise Virtualization Data Center(s).
+				Plan your oVirt Data Center(s).
 			</para>
 		</listitem>
 	</itemizedlist>
@@ -84,7 +84,7 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		Completion of the above steps will result in the creation of a functioning Red Hat Enterprise Virtualization environment capable of running virtual machines.
+		Completion of the above steps will result in the creation of a functioning oVirt environment capable of running virtual machines.
 	</para>
 	<formalpara role="link-list">
 		<title/>
@@ -126,7 +126,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7839-163894+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7839-163894+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

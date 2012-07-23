@@ -6,17 +6,11 @@
 ]>
 <bookinfo id="book-Installation_Guide-Installation_Guide">
 	<title>Installation Guide</title>
-	<subtitle>Installing Red Hat Enterprise Virtualization Environments</subtitle>
-	<productname>Red Hat Enterprise Virtualization</productname>
-	<productnumber>3.1 Beta</productnumber>
-	<edition>5</edition>
-	<pubsnumber>41</pubsnumber>
-	<abstract>
-		<para>
-			Note: This document is under development, is subject to substantial change, and is provided only as a preview. The included information and instructions should not be considered complete, and should be used with caution.
-		</para>
-	</abstract>
-
+	<subtitle>Installing oVirt Virtualization  Environments</subtitle>
+	<productname>oVirt</productname>
+	<productnumber>3.1</productnumber>
+	<edition>1</edition>
+	<pubsnumber>1</pubsnumber>
 	<corpauthor>
 		<inlinemediaobject>
 	 	<imageobject>

@@ -5,10 +5,10 @@
 ]>
 
 <section id="Configuring_Hypervisor_Network_Interfaces" remap="TID_7615">
-	<title>Configuring Hypervisor Network Interfaces</title>
+	<title>Configuring Node Network Interfaces</title>
 	<procedure>
 		<para>
-			For each network interface detected the hypervisor will display the: 
+			For each network interface detected the Node will display the: 
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -30,7 +30,7 @@
 						<guilabel>MAC Address</guilabel>.
 					</para>
 				</listitem>
-			</itemizedlist> At least one network interface must be configured before the hypervisor is able to connect with the Red Hat Enterprise Virtualization Manager.
+			</itemizedlist> At least one network interface must be configured before the Node is able to connect with the oVirt Engine.
 		</para>
 		<step>
 			<title>Device Identification</title>
@@ -38,25 +38,25 @@
 				Select the network interface to be configured from the list and press <keycap> Enter</keycap>.
 			</para>
 			<para>
-				In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the hypervisor is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap> Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed.
+				In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the Node is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap> Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed.
 			</para>
 		</step>
 		<step>
 			<title><acronym>IPv4</acronym> Settings</title>
 			<para>
-				The hypervisor supports both dynamic ( <acronym> DHCP</acronym>), and static <acronym> IPv4</acronym> network configuration.
+				the Node supports both dynamic ( <acronym> DHCP</acronym>), and static <acronym> IPv4</acronym> network configuration.
 			</para>
 			<stepalternatives>
 				<step>
 					<title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
 					<para>
-						Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym> IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym> IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
+						Dynamic network configuration allows the Node to be dynamically assigned an <acronym> IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym> IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
 					</para>
 				</step>
 				<step>
 					<title><guilabel>Static</guilabel> Network Configuration</title>
 					<para>
-						Static network configuration allows the hypervisor to be manually assigned an <acronym> IP</acronym> address. To enable static <acronym> IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
+						Static network configuration allows the Node to be manually assigned an <acronym> IP</acronym> address. To enable static <acronym> IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
 					</para>
 					<para>
 						Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
@@ -95,23 +95,23 @@ Gateway     192.168.1.1_____
 		<step>
 			<title><acronym>IPv6</acronym> Settings</title>
 			<para>
-				The Red Hat Enterprise Virtualization Manager does not currently support <acronym> IPv6</acronym> networking. <acronym> IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>.
+				The oVirt Engine does not currently support <acronym> IPv6</acronym> networking. <acronym> IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>.
 			</para>
 			<!-- SG: Had to remove this content until the Manager supports IPv6...
                 <para>  
-                    The Hypervisor supports dynamic (<guilabel>DHCP</guilabel>), <guilabel>Static</guilabel>, and <guilabel>Auto</guilabel> <acronym>IPv6</acronym> network configuration.
+                    the Node supports dynamic (<guilabel>DHCP</guilabel>), <guilabel>Static</guilabel>, and <guilabel>Auto</guilabel> <acronym>IPv6</acronym> network configuration.
                 </para>
                 <stepalternatives>
                     <step>
                         <title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
                         <para>
-                            Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym>IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym>IPv6</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                            Dynamic network configuration allows the Node to be dynamically assigned an <acronym>IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym>IPv6</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
                         </para>
                     </step>
                     <step>                                                                                                                                                                                                                   
                         <title><guilabel>Static</guilabel> Network Configuration</title>
                         <para>
-                            Static network configuration allows the hypervisor to be manually assigned an <acronym>IP</acronym> address. To enable static <acronym>IPv6</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                            Static network configuration allows the Node to be manually assigned an <acronym>IP</acronym> address. To enable static <acronym>IPv6</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
                         </para>
                         <para>
                             Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
@@ -150,7 +150,7 @@ Gateway     2001:cdba:9abc:5678::__________________
                     <step>
                         <title>Automatic Network Configuration</title>
                         <para>
-                            Automatic network configuration allows the hypervisor to dynamically determine its <acronym>IP</acronym> address using the <acronym>IPv6</acronym> <systemitem class="protocol">Neighbour Discovery</systemitem> protocol. To enable automatic <acronym>IPv6</acronym> network configuration using <systemitem class="protocol">Neighbour Discovery</systemitem> select the <guilabel>Auto</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                            Automatic network configuration allows the Node to dynamically determine its <acronym>IP</acronym> address using the <acronym>IPv6</acronym> <systemitem class="protocol">Neighbour Discovery</systemitem> protocol. To enable automatic <acronym>IPv6</acronym> network configuration using <systemitem class="protocol">Neighbour Discovery</systemitem> select the <guilabel>Auto</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
                         </para>
                     </step>
                 </stepalternatives>
@@ -187,7 +187,7 @@ Gateway     2001:cdba:9abc:5678::__________________
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7615-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7615-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

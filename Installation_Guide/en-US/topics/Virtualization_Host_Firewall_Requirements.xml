@@ -7,7 +7,7 @@
 <section id="Virtualization_Host_Firewall_Requirements" remap="TID_7851">
 	<title>Virtualization Host Firewall Requirements</title>
 	<para>
-		Both Red Hat Enterprise Linux hosts and Red Hat Enterprise Virtualization Hypervisors require that a number of ports be opened to allow network traffic through the system's firewall. In the case of the Red Hat Enterprise Virtualization Hypervisor these firewall rules are configured automatically. For Red Hat Enterprise Linux hosts however it is necessary to manually configure the firewall.
+		Both Fedora hosts and oVirt Nodes require that a number of ports be opened to allow network traffic through the system's firewall. In the case of the oVirt Node these firewall rules are configured automatically. For Fedora hosts however it is necessary to manually configure the firewall.
 	</para>
 	<!-- A Reference provides additional information -->
 	<table>
@@ -49,7 +49,7 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Manager
+									oVirt Engine
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -58,12 +58,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux host(s)
+									Fedora host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -97,12 +97,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux host(s)
+									Fedora host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -124,12 +124,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Host(s)
+									Fedora Host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -138,12 +138,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Host(s)
+									Fedora Host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -165,12 +165,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Hypervisor(s)
+									Fedora Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Host(s)
+									Fedora Host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -179,12 +179,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Hypervisor(s)
+									Fedora Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux Host(s)
+									Fedora Host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -206,17 +206,17 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Manager
+									oVirt Engine
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux host(s)
+									Fedora host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -225,12 +225,12 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									Red Hat Enterprise Virtualization Hypervisor(s)
+									oVirt Node(s)
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									Red Hat Enterprise Linux host(s)
+									Fedora host(s)
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -247,7 +247,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7851-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7851-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

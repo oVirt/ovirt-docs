@@ -4,12 +4,12 @@
 %BOOK_ENTITIES;
 ]>
 
-<section id="Syntax_for_rhevm_manage_domains_Command" remap="TID_7865">
+<section id="Syntax_for_OVIRT_manage_domains_Command" remap="TID_7865">
 	<title>Syntax for the Domain Management Tool</title>
 	<para>
 		The usage syntax is:
 	</para>
-	<screen><command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command></screen>
+	<screen><command>engine-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command></screen>
 	<para>
 		Available actions are:
 	</para>
@@ -18,7 +18,7 @@
 			<term><parameter>add</parameter></term>
 			<listitem>
 				<para>
-					Add a domain to the Red Hat Enterprise Virtualization Manager's directory services configuration.
+					Add a domain to the oVirt Engine's directory services configuration.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -26,7 +26,7 @@
 			<term><parameter>edit</parameter></term>
 			<listitem>
 				<para>
-					Edit a domain in the Red Hat Enterprise Virtualization Manager's directory services configuration.
+					Edit a domain in the oVirt Engine's directory services configuration.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -34,7 +34,7 @@
 			<term><parameter>delete</parameter></term>
 			<listitem>
 				<para>
-					Delete a domain from the Red Hat Enterprise Virtualization Manager's directory services configuration.
+					Delete a domain from the oVirt Engine's directory services configuration.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -42,7 +42,7 @@
 			<term><parameter>validate</parameter></term>
 			<listitem>
 				<para>
-					Validate the Red Hat Enterprise Virtualization Manager's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password.
+					Validate the oVirt Engine's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -50,7 +50,7 @@
 			<term><parameter>list</parameter></term>
 			<listitem>
 				<para>
-					List the Red Hat Enterprise Virtualization Manager's current directory services configuration.
+					List the oVirt Engine's current directory services configuration.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -139,8 +139,8 @@
 		</varlistentry>
 	</variablelist>
 	<para>
-		For full usage information consult the <command>rhevm-manage-domains</command> command's help output: 
-		<screen># <command>rhevm-manage-domains --help</command></screen>
+		For full usage information consult the <command>engine-manage-domains</command> command's help output: 
+		<screen># <command>engine-manage-domains --help</command></screen>
 	</para>
 	<formalpara role="see-also-list">
 		<title>See Also:</title>
@@ -177,7 +177,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7865-163869+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7865-163869+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

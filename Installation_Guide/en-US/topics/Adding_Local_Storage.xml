@@ -16,10 +16,10 @@
 		</para>
 		<listitem>
 			<para>
-				On a Red Hat Enterprise Virtualization Hypervisor host, set up the path for the local storage as <filename>/data/images</filename>. This is the only path permitted for a Red Hat Enterprise Virtualization Hypervisor. On a Red Hat Enterprise Linux host other paths are supported but the directories to support it must be manually created first.
+				On a oVirt Node host, set up the path for the local storage as <filename>/data/images</filename>. This is the only path permitted for a oVirt Node. On a Fedora host other paths are supported but the directories to support it must be manually created first.
 			</para>
 			<para>
-				The path must have permissions allowing read and write access to the <systemitem> vdsm</systemitem> user and <systemitem> kvm</systemitem> group. These permissions are set automatically on the <filename>/data/images</filename> path for Red Hat Enterprise Virtualization Hypervisor hosts. you must set them manually on paths to be used for local storage on Red Hat Enterprise Linux hosts.
+				The path must have permissions allowing read and write access to the <systemitem> vdsm</systemitem> user and <systemitem> kvm</systemitem> group. These permissions are set automatically on the <filename>/data/images</filename> path for oVirt Node hosts. you must set them manually on paths to be used for local storage on Fedora hosts.
 			</para>
 			<screen>
 # chown 36:36 /data /data/images
@@ -28,7 +28,7 @@
 		</listitem>
 		<listitem>
 			<para>
-				On a Red Hat Enterprise Linux host, set up the path for local storage in the <filename>/data</filename> directory. Any path is permitted on a Red Hat Enterprise Linux host. Follow these instructions to add local storage:
+				On a Fedora host, set up the path for local storage in the <filename>/data</filename> directory. Any path is permitted on a Fedora host. Follow these instructions to add local storage:
 			</para>
 			<procedure>
 				<step>
@@ -63,7 +63,7 @@
 					<important>
 						<title>Important — Active Host Required</title>
 						<para>
-							All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
+							All communication to the storage domain is via the selected host and not directly from the oVirt Engine. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
 						</para>
 					</important>
 				</step>
@@ -89,7 +89,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7636-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7636-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

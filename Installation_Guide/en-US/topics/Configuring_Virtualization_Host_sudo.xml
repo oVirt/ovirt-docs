@@ -7,7 +7,7 @@
 <section id="Configuring_Virtualization_Host_sudo" remap="TID_10232">
 	<title>Configuring Virtualization Host sudo</title>
 	<itemizedlist>
-		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-previous-link">
 				<xref linkend="Configuring_Virtualization_Host_Firewall"/>
@@ -17,7 +17,7 @@
 	<formalpara>
 		<title>Summary</title>
 		<para>
-			The Red Hat Enterprise Virtualization Manager makes use of <application>sudo</application> to perform operations as the <systemitem class="username">root</systemitem> on the host. The default Red Hat Enterprise Linux configuration, stored in <filename>/etc/sudoers</filename>, contains values that allow this. If this file has been modified since Red Had Enterprise Linux installation these values may have been removed. This procedure provides steps to verify that the required entry still exists in the configuration, and add it if it does not.
+			The oVirt Engine makes use of <application>sudo</application> to perform operations as the <systemitem class="username">root</systemitem> on the host. The default Fedora configuration, stored in <filename>/etc/sudoers</filename>, contains values that allow this. If this file has been modified since Red Had Enterprise Linux installation these values may have been removed. This procedure provides steps to verify that the required entry still exists in the configuration, and add it if it does not.
 		</para>
 	</formalpara>
 	<procedure>
@@ -59,7 +59,7 @@
 		</para>
 	</formalpara>
 	<itemizedlist>
-		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-next-link">
 				<xref linkend="Configuring_Virtualization_Host_SSH"/>
@@ -69,7 +69,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10232-163385+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10232-163385+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -5,11 +5,11 @@
 ]>
 
 <section id="Booting_the_Hypervisor_from_Installation_Media" remap="TID_7609">
-	<title>The Hypervisor Boot Menu</title>
+	<title>the Node Boot Menu</title>
 	<procedure>
 		<step>
 			<para>
-				Insert the Red Hat Enterprise Virtualization Hypervisor installation media.
+				Insert the oVirt Node installation media.
 			</para>
 		</step>
 		<step>
@@ -19,7 +19,7 @@
 		</step>
 		<step>
 			<para>
-				The boot splash screen appears. If no input is provided, the hypervisor installation will commence in 30 seconds, using default kernel parameters.
+				The boot splash screen appears. If no input is provided, the Node installation will commence in 30 seconds, using default kernel parameters.
 			</para>
 			<figure>
 				<title>Boot Splash Screen</title>
@@ -54,7 +54,7 @@
 					<term><guilabel>Install or Upgrade</guilabel></term>
 					<listitem>
 						<para>
-							Boot the hypervisor installer.
+							Boot the Node installer.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -62,7 +62,7 @@
 					<term><guilabel>Install (Basic Video)</guilabel></term>
 					<listitem>
 						<para>
-							Install or Upgrade the Hypervisor, using basic video mode.
+							Install or Upgrade the Node, using basic video mode.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -70,7 +70,7 @@
 					<term><guilabel>Install or Upgrade with Serial Console</guilabel></term>
 					<listitem>
 						<para>
-							Install or Upgrade the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>.
+							Install or Upgrade the Node, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -78,7 +78,7 @@
 					<term><guilabel>Reinstall</guilabel></term>
 					<listitem>
 						<para>
-							Reinstall the Hypervisor.
+							Reinstall the Node.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -86,7 +86,7 @@
 					<term><guilabel>Reinstall (Basic Video)</guilabel></term>
 					<listitem>
 						<para>
-							Reinstall the hypervisor, using basic video mode.
+							Reinstall the Node, using basic video mode.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -94,7 +94,7 @@
 					<term><guilabel>Reinstall with Serial Console</guilabel></term>
 					<listitem>
 						<para>
-							Reinstall the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>.
+							Reinstall the Node, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>.
 						</para>
 					</listitem>
 				</varlistentry>
@@ -115,7 +115,7 @@
 			<stepalternatives>
 				<step>
 					<para>
-						Press the <keycap>Enter</keycap> key to boot the Hypervisor with the default kernel parameters for the option selected; or
+						Press the <keycap>Enter</keycap> key to boot the Node with the default kernel parameters for the option selected; or
 					</para>
 				</step>
 				<step>
@@ -133,19 +133,19 @@
 						</mediaobject>
 					</figure>
 					<para>
-						For a list of supported kernel parameters, see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>.
+						For a list of supported kernel parameters, see the <citetitle>Fedora — Node Deployment Guide</citetitle>.
 					</para>
 				</step>
 			</stepalternatives>
 		</step>
 	</procedure>
 	<para>
-		The hypervisor boots with the provided boot options.
+		the Node boots with the provided boot options.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7609-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7609-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

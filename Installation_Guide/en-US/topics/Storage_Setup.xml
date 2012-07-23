@@ -5,19 +5,19 @@
 ]>
 
 <section id="Storage_Setup" remap="TID_8671">
-	<title>Introduction to storage in Red Hat Enterprise Virtualization</title>
+	<title>Introduction to storage in oVirt</title>
 	<!--    <mediaobject>        <imageobject>            <imagedata fileref="images/813.png" />        </imageobject>    </mediaobject>-->
 	<para>
-		Red Hat Enterprise Virtualization uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the Red Hat Enterprise Virtualization platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.
+		oVirt uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the oVirt platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.
 	</para>
 	<para>
-		A Red Hat Enterprise Virtualization system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle> for more information on managing storage, if necessary.
+		A oVirt system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Fedora — Storage Administration Guide</citetitle> for more information on managing storage, if necessary.
 	</para>
 	<para>
-		The Red Hat Enterprise Virtualization platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the Red Hat Enterprise Virtualization platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain.
+		The oVirt platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the oVirt platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain.
 	</para>
 	<para>
-		Red Hat Enterprise Virtualization platform has three types of storage domains:
+		oVirt platform has three types of storage domains:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -35,23 +35,23 @@
 		</listitem>
 		<listitem>
 			<para>
-				An export domain is a temporary storage repository that is used to copy/move images between data centers and Red Hat Enterprise Virtualization Manager installations. In addition, the export domain can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time. Support for export storage domains backed by mechanisms other than <acronym>NFS</acronym> is being deprecated. New export storage domains must be created on <acronym>NFS</acronym> storage.
+				An export domain is a temporary storage repository that is used to copy/move images between data centers and oVirt Engine installations. In addition, the export domain can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time. Support for export storage domains backed by mechanisms other than <acronym>NFS</acronym> is being deprecated. New export storage domains must be created on <acronym>NFS</acronym> storage.
 			</para>
 		</listitem>
 	</itemizedlist>
 	<para>
-		Only commence configuring and attaching storage for your Red Hat Enterprise Virtualization environment once you have determined the storage needs of your data center(s).
+		Only commence configuring and attaching storage for your oVirt environment once you have determined the storage needs of your data center(s).
 	</para>
 	<important>
 		<title>Important — Before Adding Storage</title>
 		<para>
-			Before adding storage ensure that you have a working Red Hat Enterprise Virtualization Manager environment. You must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <literal>Up</literal>.
+			Before adding storage ensure that you have a working oVirt Engine environment. You must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <literal>Up</literal>.
 		</para>
 	</important>
 	<important>
 		<title>Important — Export Domain Storage Type</title>
 		<para>
-			Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from Red Hat Enterprise Virtualization 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage.
+			Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from oVirt 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage.
 		</para>
 	</important>
 	<formalpara role="link-list">
@@ -84,7 +84,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -5,10 +5,10 @@
 ]>
 
 <section id="Configuring_Hypervisor_Network_Time_Protocol_NTP" remap="TID_7614">
-	<title>Configuring Hypervisor Network Time Protocol (NTP)</title>
+	<title>Configuring Node Network Time Protocol (NTP)</title>
 	<procedure>
 		<para>
-			The Hypervisor supports the specification of one or more Network Time Protocol ( <acronym> NTP</acronym>) servers with which the Hypervisor should synchronize the system clock. It is important that the Hypervisor is synchronized with the same time source as the Red Hat Enterprise Virtualization Manager. This ensures accurate time keeping across the Red Hat Enterprise Virtualization environment.
+			the Node supports the specification of one or more Network Time Protocol ( <acronym> NTP</acronym>) servers with which the Node should synchronize the system clock. It is important that the Node is synchronized with the same time source as the oVirt Engine. This ensures accurate time keeping across the oVirt environment.
 		</para>
 		<step>
 			<para>
@@ -27,12 +27,12 @@
 		</step>
 	</procedure>
 	<para>
-		The primary and secondary <acronym> NTP</acronym> servers queried by the Hypervisor are updated.
+		The primary and secondary <acronym> NTP</acronym> servers queried by the Node are updated.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7614-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7614-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

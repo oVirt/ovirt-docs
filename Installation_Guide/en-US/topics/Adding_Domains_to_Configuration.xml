@@ -7,12 +7,12 @@
 <section id="Adding_Domains_to_Configuration" remap="TID_8405">
 	<title>Adding Domains to Configuration</title>
 	<para>
-		In this example, the <command>rhevm-manage-domains</command> command is used to add the <literal>IPA</literal> domain <literal>directory.demo.redhat.com</literal> to the Red Hat Enterprise Virtualization Manager configuration. The configuration is set to use the <systemitem>admin</systemitem> user when querying the domain; the password is provided interactively.
+		In this example, the <command>engine-manage-domains</command> command is used to add the <literal>IPA</literal> domain <literal>directory.demo.redhat.com</literal> to the oVirt Engine configuration. The configuration is set to use the <systemitem>admin</systemitem> user when querying the domain; the password is provided interactively.
 	</para>
 	<example>
-		<title><command>rhevm-manage-domains</command> Add Action</title>
+		<title><command>engine-manage-domains</command> Add Action</title>
 		<screen>
-# rhevm-manage-domains -action=add -domain='directory.demo.redhat.com' -provider='IPA' -user='admin' -interactive
+# engine-manage-domains -action=add -domain='directory.demo.redhat.com' -provider='IPA' -user='admin' -interactive
 loaded template kr5.conf file
 setting default_tkt_enctypes 
 setting realms
@@ -25,7 +25,7 @@ Successfully added domain directory.demo.redhat.com. oVirt Engine restart is req
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8405-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8405-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

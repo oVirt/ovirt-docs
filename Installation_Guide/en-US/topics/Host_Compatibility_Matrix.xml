@@ -11,16 +11,16 @@
 			<thead>
 				<row>
 					<entry>
-						Red Hat Enterprise Linux Version
+						Fedora Version
 					</entry>
 					<entry>
-						Red Hat Enterprise Virtualization 3.0 clusters
+						oVirt 3.0 clusters
 					</entry>
 					<entry>
-						Red Hat Enterprise Virtualization 3.1 clusters in 3.0 compatibility mode
+						oVirt 3.1 clusters in 3.0 compatibility mode
 					</entry>
 					<entry>
-						Red Hat Enterprise Virtualization 3.1 clusters
+						oVirt 3.1 clusters
 					</entry>
 				</row>
 			</thead>
@@ -67,7 +67,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7858-164530+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7858-164530+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

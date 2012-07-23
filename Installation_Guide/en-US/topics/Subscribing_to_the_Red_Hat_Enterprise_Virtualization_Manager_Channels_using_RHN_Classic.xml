@@ -5,7 +5,7 @@
 ]>
 
 <section id="Subscribing_to_the_Red_Hat_Enterprise_Virtualization_Manager_Channels_using_RHN_Classic" remap="TID_10007">
-	<title>Subscribing to the Red Hat Enterprise Virtualization Manager Channels using RHN Classic</title>
+	<title>Subscribing to the oVirt Engine Channels using RHN Classic</title>
 	<procedure>
 		<step>
 			<para>
@@ -26,7 +26,7 @@
 					</para>
 					<screen>
 # rhn-channel --add --channel=rhel-x86_64-server-6
-# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3
+# rhn-channel --add --channel=rhel-x86_64-server-6-engine-3
 # rhn-channel --add --channel=jbappplatform-6-x86_64-server-6-rpm
 </screen>
 					<important>
@@ -51,7 +51,7 @@ Explanation:
 					</important>
 					<note>
 						<para>
-							Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is the <literal>Red Hat Enterprise Virtualization Manager Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3-beta</systemitem>.
+							Beta releases of oVirt Engine are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the oVirt Engine is the <literal>oVirt Engine Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-engine-3-beta</systemitem>.
 						</para>
 					</note>
 				</step>
@@ -83,17 +83,17 @@ Explanation:
 						</step>
 						<step>
 							<para>
-								Select the channels to be added from the list presented on the screen. Red Hat Enterprise Virtualization Manager requires:
+								Select the channels to be added from the list presented on the screen. oVirt Engine requires:
 							</para>
 							<itemizedlist>
 								<listitem>
 									<para>
-										the <guilabel>Red Hat Enterprise Linux Server (v. 6 for 64-bit x86_64)</guilabel> channel,
+										the <guilabel>Fedora Server (v. 6 for 64-bit x86_64)</guilabel> channel,
 									</para>
 								</listitem>
 								<listitem>
 									<para>
-										the <guilabel>Red Hat Enterprise Virtualization Manager (v.3 x86_64)</guilabel> channel, and
+										the <guilabel>oVirt Engine (v.3 x86_64)</guilabel> channel, and
 									</para>
 								</listitem>
 								<listitem>
@@ -104,7 +104,7 @@ Explanation:
 							</itemizedlist>
 							<note>
 								<para>
-									Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is the <literal>Red Hat Enterprise Virtualization Manager Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3-beta</systemitem>.
+									Beta releases of oVirt Engine are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the oVirt Engine is the <literal>oVirt Engine Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-engine-3-beta</systemitem>.
 								</para>
 							</note>
 						</step>
@@ -119,12 +119,12 @@ Explanation:
 		</step>
 	</procedure>
 	<para>
-		The system is now registered with Red Hat Network and subscribed to the channels required for Red Hat Enterprise Virtualization Manager installation.
+		The system is now registered with Red Hat Network and subscribed to the channels required for oVirt Engine installation.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10007-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10007-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -5,11 +5,11 @@
 ]>
 
 <section id="Approving_a_Hypervisor" remap="TID_7618">
-	<title>Approving a Hypervisor</title>
+	<title>Approving a Node</title>
 	<procedure>
 		<step>
 			<para>
-				Log in to the Red Hat Enterprise Virtualization Manager Administration Portal.
+				Log in to the oVirt Engine Administration Portal.
 			</para>
 		</step>
 		<step>
@@ -19,7 +19,7 @@
 		</step>
 		<step>
 			<para>
-				Click the <application> Approve</application> button. The <guilabel>Edit and Approve Hosts</guilabel> dialog displays. You can use the dialog to set a name for the host and configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>Red Hat Enterprise Virtualization — Administration Guide</citetitle>.
+				Click the <application> Approve</application> button. The <guilabel>Edit and Approve Hosts</guilabel> dialog displays. You can use the dialog to set a name for the host and configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>oVirt — Administration Guide</citetitle>.
 			</para>
 		</step>
 		<step>
@@ -34,7 +34,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7618-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7618-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

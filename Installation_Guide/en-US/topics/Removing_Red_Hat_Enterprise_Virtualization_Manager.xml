@@ -5,50 +5,50 @@
 ]>
 
 <section id="Removing_Red_Hat_Enterprise_Virtualization_Manager" remap="TID_7521">
-	<title>Removing Red Hat Enterprise Virtualization Manager</title>
+	<title>Removing oVirt Engine</title>
 	<para>
-		The Red Hat Enterprise Virtualization Manager provides the <command>rhevm-cleanup</command> utility to allow quick and easy removal of the data files associated with the installation. Once this has been run you are able to remove the Red Hat Enterprise Virtualization Manager packages using <command>yum</command>.
+		The oVirt Engine provides the <command>engine-cleanup</command> utility to allow quick and easy removal of the data files associated with the installation. Once this has been run you are able to remove the oVirt Engine packages using <command>yum</command>.
 	</para>
 	<warning>
 		<title>Warning — Potential Data Loss</title>
 		<para>
-			The <command>rhevm-cleanup</command> command removes all existing Red Hat Enterprise Virtualization Manager data. This includes configuration settings, certificates, and database tables.
+			The <command>engine-cleanup</command> command removes all existing oVirt Engine data. This includes configuration settings, certificates, and database tables.
 		</para>
 	</warning>
 	<procedure>
 		<step>
 			<para>
-				Run the <command>rhevm-cleanup</command> command on the system that Red Hat Enterprise Virtualization Manager is installed on. You must be logged in as the <systemitem>root</systemitem> user to run <command>rhevm-cleanup</command>.
+				Run the <command>engine-cleanup</command> command on the system that oVirt Engine is installed on. You must be logged in as the <systemitem>root</systemitem> user to run <command>engine-cleanup</command>.
 			</para>
-			<screen># rhevm-cleanup</screen>
+			<screen># engine-cleanup</screen>
 		</step>
 		<step>
 			<para>
-				The script prompts you to confirm that you wish to remove Red Hat Enterprise Virtualization Manager.
+				The script prompts you to confirm that you wish to remove oVirt Engine.
 			</para>
 			<screen>Would you like to proceed? (yes|no): yes</screen>
 			<para>
-				Type <literal>yes</literal> and then press <keycap> Enter</keycap> to proceed with removal of Red Hat Enterprise Virtualization Manager.
+				Type <literal>yes</literal> and then press <keycap> Enter</keycap> to proceed with removal of oVirt Engine.
 			</para>
 		</step>
 		<step>
 			<para>
-				The <command>rhevm-cleanup</command> command displays a message confirming that the Red Hat Enterprise Virtualization data files have been removed successfully.
+				The <command>engine-cleanup</command> command displays a message confirming that the oVirt data files have been removed successfully.
 			</para>
-			<screen>RHEV Manager cleanup finished successfully!</screen>
+			<screen>OVIRT Engine cleanup finished successfully!</screen>
 			<para>
-				To complete removal of the Red Hat Enterprise Virtualization Manager you must also use <command>yum</command> to remove the relevant packages. While still logged in as the <systemitem> root</systemitem> user run:
+				To complete removal of the oVirt Engine you must also use <command>yum</command> to remove the relevant packages. While still logged in as the <systemitem> root</systemitem> user run:
 			</para>
-			<screen># <command>yum <parameter>remove</parameter> <parameter>rhevm*</parameter> <parameter>vdsm-bootstrap</parameter></command></screen>
+			<screen># <command>yum <parameter>remove</parameter> <parameter>OVIRT*</parameter> <parameter>vdsm-bootstrap</parameter></command></screen>
 		</step>
 	</procedure>
 	<para>
-		Red Hat Enterprise Virtualization Manager has been removed from the system successfully.
+		oVirt Engine has been removed from the system successfully.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7521-163913+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7521-163913+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

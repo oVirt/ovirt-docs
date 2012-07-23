@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<book status="draft">
+<book>
 	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 		<xi:include href="part-Before_you_Begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -12,7 +12,6 @@
 	<xi:include href="part-Environment_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="appe-Log_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="appe-Additional_Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Errors.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-
+	<xi:include href="Common_Content/Apache_Software_License.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </book>

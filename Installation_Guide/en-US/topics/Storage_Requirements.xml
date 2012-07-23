@@ -7,10 +7,10 @@
 <section id="Storage_Requirements" remap="TID_7845">
 	<title>Virtualization Host Storage Requirements</title>
 	<para>
-		Virtualization hosts require local storage to store configuration, logs, kernel dumps, and for use as swap space. The minimum storage requirements of the Red Hat Enterprise Virtualization Hypervisor are documented in this section. The storage requirements for Red Hat Enterprise Linux hosts vary based on the amount of disk space used by their existing configuration but are expected to be greater than those of the Red Hat Enterprise Virtualization Hypervisor.
+		Virtualization hosts require local storage to store configuration, logs, kernel dumps, and for use as swap space. The minimum storage requirements of the oVirt Node are documented in this section. The storage requirements for Fedora hosts vary based on the amount of disk space used by their existing configuration but are expected to be greater than those of the oVirt Node.
 	</para>
 	<para>
-		It is recommended that each virtualization host has at least 2&nbsp;<acronym>GB</acronym> of internal storage. The minimum supported internal storage for each Hypervisor is the total of that required to provision the following partitions:
+		It is recommended that each virtualization host has at least 2&nbsp;<acronym>GB</acronym> of internal storage. The minimum supported internal storage for each Node is the total of that required to provision the following partitions:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -30,13 +30,13 @@
 		</listitem>
 		<listitem>
 			<para>
-				The data partition requires at least 256&nbsp;MB of storage. Use of a smaller data partition may prevent future upgrades of the Hypervisor from the Red Hat Enterprise Virtualization Manager. By default all disk space remaining after allocation of swap space will be allocated to the data partition.
+				The data partition requires at least 256&nbsp;MB of storage. Use of a smaller data partition may prevent future upgrades of the Node from the oVirt Engine. By default all disk space remaining after allocation of swap space will be allocated to the data partition.
 			</para>
 		</listitem>
-		<!--   So the default size for the Hypervisor, excluding swap and storage is 2615MB   -->
+		<!--   So the default size for the Node, excluding swap and storage is 2615MB   -->
 		<listitem>
 			<para>
-				The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Hypervisor is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the Red Hat Enterprise Virtualization environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>.
+				The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Node is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the oVirt environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>.
 			</para>
 			<para>
 				The recommended size of the swap partition can be determined by:
@@ -80,7 +80,7 @@
 	<important>
 		<title>Important — <systemitem>Fakeraid Devices</systemitem> are not Supported</title>
 		<para>
-			The Red Hat Enterprise Virtualization Hypervisor does not support installation on <systemitem>fakeraid</systemitem> devices. Where a <systemitem>fakeraid</systemitem> device is present it must be reconfigured such that it no longer runs in <acronym>RAID</acronym> mode.
+			The oVirt Node does not support installation on <systemitem>fakeraid</systemitem> devices. Where a <systemitem>fakeraid</systemitem> device is present it must be reconfigured such that it no longer runs in <acronym>RAID</acronym> mode.
 		</para>
 		<procedure>
 			<step>
@@ -101,7 +101,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

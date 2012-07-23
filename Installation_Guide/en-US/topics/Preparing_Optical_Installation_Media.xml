@@ -5,9 +5,9 @@
 ]>
 
 <section id="Preparing_Optical_Installation_Media" remap="TID_7531">
-	<title>Preparing Optical Hypervisor Installation Media</title>
+	<title>Preparing Optical Node Installation Media</title>
 	<para>
-		Burn the hypervisor image to a CD-ROM with the <command>wodim</command> command. The <command>wodim</command> command is part of the <package> wodim</package> package.
+		Burn the Node image to a CD-ROM with the <command>wodim</command> command. The <command>wodim</command> command is part of the <package> wodim</package> package.
 	</para>
 	<procedure>
 		<step>
@@ -40,7 +40,7 @@ wodim-1.1.9-11.el6.x86_64
 			</para>
 			<screen>wodim dev=<replaceable>device</replaceable> <replaceable>image</replaceable></screen>
 			<para>
-				This example uses the first CD-RW (<systemitem>/dev/cdrw</systemitem>) device available and the default hypervisor image location, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>.
+				This example uses the first CD-RW (<systemitem>/dev/cdrw</systemitem>) device available and the default Node image location, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>.
 			</para>
 			<example>
 				<title>Use of <command>wodim</command> Command</title>
@@ -50,15 +50,15 @@ wodim-1.1.9-11.el6.x86_64
 		</step>
 	</procedure>
 	<para>
-		If no errors occurred, the hypervisor is ready to boot. Errors sometimes occur during the recording process due to errors on the media itself. If this occurs insert another writable disk and repeat the command above.
+		If no errors occurred, the Node is ready to boot. Errors sometimes occur during the recording process due to errors on the media itself. If this occurs insert another writable disk and repeat the command above.
 	</para>
 	<para>
-		The hypervisor uses a program (<command>isomd5sum</command>) to verify the integrity of the installation media every time the hypervisor is booted. If media errors are reported in the boot sequence you have a bad CD-ROM. Follow the procedure above to create a new CD-ROM or DVD.
+		the Node uses a program (<command>isomd5sum</command>) to verify the integrity of the installation media every time the Node is booted. If media errors are reported in the boot sequence you have a bad CD-ROM. Follow the procedure above to create a new CD-ROM or DVD.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7531-164528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7531-164528+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

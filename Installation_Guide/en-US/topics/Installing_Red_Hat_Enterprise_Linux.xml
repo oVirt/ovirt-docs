@@ -5,40 +5,40 @@
 ]>
 
 <section id="Installing_Red_Hat_Enterprise_Linux" remap="TID_10236">
-	<title>Installing Red Hat Enterprise Linux</title>
+	<title>Installing Fedora</title>
 	<formalpara>
 		<title>Summary</title>
 		<para>
-			You must install Red Hat Enterprise Linux&nbsp;6.3 Server on a system to use it as a virtualization host in a Red Hat Enterprise Virtualization environment.
+			You must install Fedora&nbsp;17 Server on a system to use it as a virtualization host in a oVirt environment.
 		</para>
 	</formalpara>
 	<procedure>
-		<title>Installing Red Hat Enterprise Linux</title>
+		<title>Installing Fedora</title>
 		<step>
-			<title>Download and Install Red Hat Enterprise Linux&nbsp;6.3 Server</title>
+			<title>Download and Install Fedora&nbsp;17 Server</title>
 			<para>
-				Download and Install Red Hat Enterprise Linux&nbsp;6 Server on the target virtualization host, referring to the <citetitle>Red Hat Enterprise Linux&nbsp;6 Installation Guide</citetitle> for detailed instructions. Only the <package>Base</package> package group is required to use the virtualization host in a Red Hat Enterprise Virtualization environment.
+				Download and Install Fedora&nbsp;17 Server on the target virtualization host, referring to the <citetitle>Fedora&nbsp;17 Installation Guide</citetitle> for detailed instructions. Only the <package>Base</package> package group is required to use the virtualization host in a oVirt environment.
 			</para>
 			<important>
 				<para>
-					If you are using directory services with no direct access to authentication files for user management, the <systemitem class="daemon">vdsm</systemitem> package will fail to create the required system user when adding the host to Red Hat Enterprise Virtualization. To avoid this issue you must ensure that the authentication files required by the <command>useradd</command> command are locally accessible. Using a security policy with a mixture of local files and <application> LDAP</application> is recommended.
+					If you are using directory services with no direct access to authentication files for user management, the <systemitem class="daemon">vdsm</systemitem> package will fail to create the required system user when adding the host to oVirt. To avoid this issue you must ensure that the authentication files required by the <command>useradd</command> command are locally accessible. Using a security policy with a mixture of local files and <application> LDAP</application> is recommended.
 				</para>
 			</important>
 		</step>
 		<step>
 			<para>
-				If you intend to use Virtual Local Area Networks (<acronym>VLANs</acronym>) in your Red Hat Enterprise Virtualization environment, ensure that they are configured for access to the Red Hat Enterprise Virtualization Manager.
+				If you intend to use Virtual Local Area Networks (<acronym>VLANs</acronym>) in your oVirt environment, ensure that they are configured for access to the oVirt Engine.
 			</para>
 		</step>
 	</procedure>
 	<formalpara>
 		<title>Result</title>
 		<para>
-			You have installed Red Hat Enterprise Linux&nbsp;6.3 Server. You must however complete additional configuration tasks before adding the virtualization host to your Red Hat Enterprise Virtualization environment.
+			You have installed Fedora&nbsp;17 Server. You must however complete additional configuration tasks before adding the virtualization host to your oVirt environment.
 		</para>
 	</formalpara>
 	<itemizedlist>
-		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-next-link">
 				<xref linkend="Subscribing_to_Required_Channels_using_Subscription_Manager"/>
@@ -48,7 +48,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10236-163370+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10236-163370+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

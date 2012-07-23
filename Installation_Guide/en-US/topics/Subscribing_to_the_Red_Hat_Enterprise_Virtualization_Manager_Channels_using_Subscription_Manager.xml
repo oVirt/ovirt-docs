@@ -5,7 +5,7 @@
 ]>
 
 <section id="Subscribing_to_the_Red_Hat_Enterprise_Virtualization_Manager_Channels_using_Subscription_Manager" remap="TID_10008">
-	<title>Subscribing to the Red Hat Enterprise Virtualization Manager Channels using Subscription Manager</title>
+	<title>Subscribing to the oVirt Engine Channels using Subscription Manager</title>
 	<procedure>
 		<step>
 			<para>
@@ -16,19 +16,19 @@
 		<step>
 			<title>Identify Available Entitlement Pools</title>
 			<para>
-				To subscribe the system to Red Hat Enterprise Virtualization you must locate the identifiers for the relevant entitlement pools. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these.
+				To subscribe the system to oVirt you must locate the identifiers for the relevant entitlement pools. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these.
 			</para>
 			<para>
-				To identify available subscription pools for <literal>Red Hat Enterprise Linux Server</literal> use the command:
+				To identify available subscription pools for <literal>Fedora Server</literal> use the command:
 			</para>
 			<screen>
-# subscription-manager list --available | grep -A8 "Red Hat Enterprise Linux Server"        
+# subscription-manager list --available | grep -A8 "Fedora Server"        
       		</screen>
 			<para>
-				To identify available subscription pools for <literal>Red Hat Enterprise Virtualization</literal> use the command:
+				To identify available subscription pools for <literal>oVirt</literal> use the command:
 			</para>
 			<screen>
-# subscription-manager list --available | grep -A8 "Red Hat Enterprise Virtualization"        
+# subscription-manager list --available | grep -A8 "oVirt"        
       		</screen>
 			<para>
 				To identify available subscription pools for <literal>JBoss Enterprise Application Platform</literal> use the command:
@@ -38,25 +38,25 @@
       		</screen>
 			<note>
 				<para>
-					Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of Red Hat Enterprise Virtualization Manager is called <literal>Red Hat Enterprise Virtualization Beta</literal>.
+					Beta releases of oVirt Engine are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of oVirt Engine is called <literal>oVirt Beta</literal>.
 				</para>
 			</note>
 		</step>
 		<step>
 			<title>Subscribe System to Entitlement Pools</title>
 			<para>
-				Using the pool identifiers located in the previous step, subscribe the system to <literal>Red Hat Enterprise Linux Server</literal>, <literal>Red Hat Enterprise Virtualization</literal>, and <literal>JBoss Application Platform</literal> entitlements. Use the <parameter>subscribe</parameter> parameter to the <command>subscription-manager</command> command, replacing <replaceable>POOLID</replaceable> with one of the pool identifiers each time the command is run.:
+				Using the pool identifiers located in the previous step, subscribe the system to <literal>Fedora Server</literal>, <literal>oVirt</literal>, and <literal>JBoss Application Platform</literal> entitlements. Use the <parameter>subscribe</parameter> parameter to the <command>subscription-manager</command> command, replacing <replaceable>POOLID</replaceable> with one of the pool identifiers each time the command is run.:
 			</para>
 			<screen># subscription-manager subscribe --pool=<replaceable>POOLID</replaceable></screen>
 		</step>
 	</procedure>
 	<para>
-		The system is now registered with Red Hat Network and subscribed to the channels required for Red Hat Enterprise Virtualization Manager installation.
+		The system is now registered with Red Hat Network and subscribed to the channels required for oVirt Engine installation.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10008-162838+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10008-162838+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

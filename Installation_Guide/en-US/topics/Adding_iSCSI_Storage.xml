@@ -7,10 +7,10 @@
 <section id="Adding_iSCSI_Storage" remap="TID_7633">
 	<title>Adding iSCSI Storage</title>
 	<para>
-		Red Hat Enterprise Virtualization platform supports iSCSI storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-existent <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time.
+		oVirt platform supports iSCSI storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). oVirt supports creation of a <systemitem> Storage Domain</systemitem> from a pre-existent <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time.
 	</para>
 	<para>
-		For information regarding the setup and configuration of iSCSI on Red Hat Enterprise Linux, see the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle>.
+		For information regarding the setup and configuration of iSCSI on Fedora, see the <citetitle>Fedora — Storage Administration Guide</citetitle>.
 	</para>
 	<procedure>
 		<step>
@@ -48,13 +48,13 @@
 			<important>
 				<title>Active Host Required</title>
 				<para>
-					All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
+					All communication to the storage domain is via the selected host and not directly from the oVirt Engine. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
 				</para>
 			</important>
 		</step>
 		<step>
 			<para>
-				The Red Hat Enterprise Virtualization Manager is able to map either <acronym> iSCSI</acronym> targets to <acronym> LUNs</acronym>, or <acronym> LUNs</acronym> to <acronym> iSCSI</acronym> targets. The <guilabel>New Domain</guilabel> dialog automatically displays known targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step.
+				The oVirt Engine is able to map either <acronym> iSCSI</acronym> targets to <acronym> LUNs</acronym>, or <acronym> LUNs</acronym> to <acronym> iSCSI</acronym> targets. The <guilabel>New Domain</guilabel> dialog automatically displays known targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step.
 			</para>
 			<!--<figure id="fig_Tasks_RHEV_Adding_iSCSI_Storage">
                         <title>New Domain Dialog</title>
@@ -126,7 +126,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7633-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7633-164508+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -7,7 +7,7 @@
 <section id="Subscribing_to_Required_Channels_using_RHN_Classic" remap="TID_10235">
 	<title>Subscribing to Required Channels using RHN Classic</title>
 	<itemizedlist>
-		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-previous-link">
 				<xref linkend="Subscribing_to_Required_Channels_using_Subscription_Manager"/>
@@ -17,7 +17,7 @@
 	<formalpara>
 		<title>Summary</title>
 		<para>
-			To be used as a virtualization host a Red Hat Enterprise Linux host be registered and subscribed to a number of entitlements using either Subscription Manager or <acronym>RHN</acronym> Classic. You must follow the steps in this procedure if you wish to register and subscribe using <acronym>RHN</acronym> Classic. Completion of this procedure will mean that you have: 
+			To be used as a virtualization host a Fedora host be registered and subscribed to a number of entitlements using either Subscription Manager or <acronym>RHN</acronym> Classic. You must follow the steps in this procedure if you wish to register and subscribe using <acronym>RHN</acronym> Classic. Completion of this procedure will mean that you have: 
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -26,7 +26,7 @@
 				</listitem>
 				<listitem>
 					<para>
-						subscribed the virtualization host to the <literal>Red Hat Enterprise Linux Server (v. 6 for 64-bit AMD64 / Intel64)</literal> channel; and
+						subscribed the virtualization host to the <literal>Fedora Server (v. 6 for 64-bit AMD64 / Intel64)</literal> channel; and
 					</para>
 				</listitem>
 				<listitem>
@@ -80,11 +80,11 @@
 						</step>
 						<step>
 							<para>
-								Select the channels to be added from the list presented on the screen. To use the virtualization host in a Red Hat Enterprise Virtualization environment you must select: 
+								Select the channels to be added from the list presented on the screen. To use the virtualization host in a oVirt environment you must select: 
 								<itemizedlist>
 									<listitem>
 										<para>
-											<guilabel>Red Hat Enterprise Linux Server (v. 6 for 64-bit x86_64)</guilabel>; and
+											<guilabel>Fedora Server (v. 6 for 64-bit x86_64)</guilabel>; and
 										</para>
 									</listitem>
 									<listitem>
@@ -95,7 +95,7 @@
 								</itemizedlist>
 								<note>
 									<para>
-										Beta releases of Red Hat Enterprise Virtualization are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Agent is called <literal>Red Hat Enterprise Virt Management Agent Beta (v 6 x86_64)</literal>.
+										Beta releases of oVirt are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the oVirt Agent is called <literal>Red Hat Enterprise Virt Management Agent Beta (v 6 x86_64)</literal>.
 									</para>
 								</note>
 							</para>
@@ -113,10 +113,10 @@
 						Run the <command>rhn-channel</command> command to subscribe the virtualization host to each of the required channels. The commands that need to be run are:
 					</para>
 					<screen># rhn-channel --add --channel=rhel-x86_64-server-6
-# rhn-channel --add --channel=rhel-x86_64-rhev-mgmt-agent-6					</screen>
+# rhn-channel --add --channel=rhel-x86_64-OVIRTgmt-agent-6					</screen>
 					<note>
 						<para>
-							Beta releases of Red Hat Enterprise Virtualization are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Agent is called <literal>rhel-x86_64-rhev-mgmt-agent-6-beta</literal>.
+							Beta releases of oVirt are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the oVirt Agent is called <literal>rhel-x86_64-OVIRTgmt-agent-6-beta</literal>.
 						</para>
 					</note>
 					<important>
@@ -146,7 +146,7 @@ Explanation:
 		</para>
 	</formalpara>
 	<itemizedlist>
-		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-next-link">
 				<xref linkend="Configuring_Virtualization_Host_Firewall"/>
@@ -156,7 +156,7 @@ Explanation:
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10235-163388+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10235-163388+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

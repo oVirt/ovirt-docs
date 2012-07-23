@@ -5,9 +5,9 @@
 ]>
 
 <section id="Adding_Red_Hat_Enterprise_Linux_Hosts" remap="TID_8665">
-	<title>Red Hat Enterprise Linux hosts</title>
+	<title>Fedora hosts</title>
 	<para>
-		Red Hat Enterprise Virtualization also supports hosts running Red Hat Enterprise Linux&nbsp;6&nbsp;Server AMD64/Intel 64 version. This section describes the preparatory steps for installing the Red Hat Enterprise Linux host, as well as the steps to manually add the host to the Red Hat Enterprise Virtualization platform.
+		oVirt also supports hosts running Fedora&nbsp;17 AMD64/Intel 64 version. This section describes the preparatory steps for installing the Fedora host, as well as the steps to manually add the host to the oVirt platform.
 	</para>
 	<para>
 		Adding a host can take some time, as the following steps are completed by the platform: virtualization checks, installation of packages, creation of bridge and a reboot of the host. Use the Details pane to monitor the hand-shake process as the host and management system establish a connection.
@@ -27,7 +27,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8665-162486+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8665-162486+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

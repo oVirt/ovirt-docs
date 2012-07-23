@@ -7,7 +7,7 @@
 <section id="Configuring_Virtualization_Host_SSH" remap="TID_10231">
 	<title>Configuring Virtualization Host SSH</title>
 	<itemizedlist>
-		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-previous-link">
 				<xref linkend="Configuring_Virtualization_Host_sudo"/>
@@ -17,12 +17,12 @@
 	<formalpara>
 		<title>Summary</title>
 		<para>
-			The Red Hat Enterprise Virtualization Manager accesses virtualization hosts via <acronym>SSH</acronym>. To do this it logs in as the <systemitem class="username">root</systemitem> user using an encrypted key for authentication. You must follow this procedure to ensure that <acronym>SSH</acronym> is configured to allow this.
+			The oVirt Engine accesses virtualization hosts via <acronym>SSH</acronym>. To do this it logs in as the <systemitem class="username">root</systemitem> user using an encrypted key for authentication. You must follow this procedure to ensure that <acronym>SSH</acronym> is configured to allow this.
 		</para>
 	</formalpara>
 	<warning>
 		<para>
-			The first time the Red Hat Enterprise Virtualization Manager is connected to the host it will install an authentication key. In the process it will overwrite any existing keys contained in the <filename>/root/.ssh/authorized_keys</filename> file.
+			The first time the oVirt Engine is connected to the host it will install an authentication key. In the process it will overwrite any existing keys contained in the <filename>/root/.ssh/authorized_keys</filename> file.
 		</para>
 	</warning>
 	<procedure>
@@ -82,7 +82,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10231-164517+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10231-164517+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

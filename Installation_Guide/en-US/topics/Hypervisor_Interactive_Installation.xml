@@ -5,15 +5,15 @@
 ]>
 
 <section id="Hypervisor_Interactive_Installation" remap="TID_7610">
-	<title>Installing the Hypervisor Interactively</title>
+	<title>Installing the Node Interactively</title>
 	<para>
-		Red Hat Enterprise Virtualization Hypervisors are able to use Storage Area Networks (<acronym>SANs</acronym>) and other network storage for storing virtualized guest images. Hypervisors can be installed on <acronym> SANs</acronym>, provided that the Host Bus Adapter (<acronym>HBA</acronym>) permits configuration as a boot device in <acronym> BIOS</acronym>.
+		oVirt Nodes are able to use Storage Area Networks (<acronym>SANs</acronym>) and other network storage for storing virtualized guest images. Nodes can be installed on <acronym> SANs</acronym>, provided that the Host Bus Adapter (<acronym>HBA</acronym>) permits configuration as a boot device in <acronym> BIOS</acronym>.
 	</para>
 	<para>
 		Hypervisors are able to use multipath devices for installation. Multipath is often used for <acronym>SANs</acronym> or other networked storage. Multipath is enabled by default at install time. Any block device which responds to <command>scsi_id</command> functions with multipath. Devices where this is not the case include <acronym> USB</acronym> storage and some older <acronym> ATA</acronym> disks.
 	</para>
 	<para>
-		There are two methods for installing Red Hat Enterprise Virtualization Hypervisors:
+		There are two methods for installing oVirt Nodes:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -29,12 +29,12 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		For information about unattended installation, refer to the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>.
+		For information about unattended installation, refer to the <citetitle>Fedora — Node Deployment Guide</citetitle>.
 	</para>
 	<procedure>
 		<step>
 			<para>
-				To commence Hypervisor installation select <guilabel>Install Hypervisor</guilabel> and press <keycap>Enter</keycap>.
+				To commence Node installation select <guilabel>Install Node</guilabel> and press <keycap>Enter</keycap>.
 			</para>
 		</step>
 		<step>
@@ -63,13 +63,13 @@
 		<step>
 			<title>Disk Configuration</title>
 			<para>
-				The installation script automatically detects all disks attached to the system. This information is used to assist with selection of the boot and installation disks that the hypervisor should use. Each entry displayed on these screens indicates the <guilabel>Location</guilabel>, <guilabel>Device Name</guilabel>, and <guilabel>Size (GB)</guilabel> of the relevant disk.
+				The installation script automatically detects all disks attached to the system. This information is used to assist with selection of the boot and installation disks that the Node should use. Each entry displayed on these screens indicates the <guilabel>Location</guilabel>, <guilabel>Device Name</guilabel>, and <guilabel>Size (GB)</guilabel> of the relevant disk.
 			</para>
 			<substeps>
 				<step>
 					<title>Boot disk</title>
 					<para>
-						The first disk selection screen is used to select the disk from which the hypervisor will boot. The hypervisor's boot loader will be installed to the Master Boot Record ( <acronym> MBR</acronym>) of the disk that is selected on this screen. The hypervisor attempts to automatically detect the disks attached to the system and presents the list from which you choose the boot device. Alternatively you are able to manually select a device, by specifying a block device name, by enabling the <guilabel>Other Device</guilabel> option.
+						The first disk selection screen is used to select the disk from which the Node will boot. the Node's boot loader will be installed to the Master Boot Record ( <acronym> MBR</acronym>) of the disk that is selected on this screen. the Node attempts to automatically detect the disks attached to the system and presents the list from which you choose the boot device. Alternatively you are able to manually select a device, by specifying a block device name, by enabling the <guilabel>Other Device</guilabel> option.
 					</para>
 					<important>
 						<title>Important — Boot Order</title>
@@ -83,7 +83,7 @@
 							<substeps>
 								<step>
 									<para>
-										Select the entry for the disk the hypervisor is to boot from in the list.
+										Select the entry for the disk the Node is to boot from in the list.
 									</para>
 								</step>
 								<step>
@@ -108,11 +108,11 @@
 								</step>
 								<step>
 									<para>
-										When prompted to <guilabel>Please enter the disk to use for booting RHEV Hypervisor</guilabel> enter the name of the block device from which the hypervisor should boot.
+										When prompted to <guilabel>Please enter the disk to use for booting RHEV Node</guilabel> enter the name of the block device from which the Node should boot.
 									</para>
 									<example>
 										<title>Other Device Selection</title>
-										<screen>Please enter the disk to use for booting RHEV Hypervisor
+										<screen>Please enter the disk to use for booting RHEV Node
 /dev/sda 
 </screen>
 									</example>
@@ -126,13 +126,13 @@
 						</step>
 					</stepalternatives>
 					<para>
-						Once a disk has been selected it is necessary to select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to save the selection and continue with hypervisor installation.
+						Once a disk has been selected it is necessary to select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to save the selection and continue with Node installation.
 					</para>
 				</step>
 				<step>
 					<title>Installation Disk(s)</title>
 					<para>
-						The disk(s) selected for installation will be those to which the hypervisor itself is installed. The hypervisor attempts to automatically detect the disks attached to the system and presents the list from which installation devices are chosen.
+						The disk(s) selected for installation will be those to which the Node itself is installed. the Node attempts to automatically detect the disks attached to the system and presents the list from which installation devices are chosen.
 					</para>
 					<warning>
 						<title>Warning — Data Loss</title>
@@ -143,7 +143,7 @@
 					<substeps>
 						<step>
 							<para>
-								Select each disk which the hypervisor is to use for installation and press <keycap> Space</keycap> to toggle it to enabled. Repeat this step for all disks you want the hypervisor to use. Where other devices are to be used for installation, either solely or in addition to those which are listed automatically, enable the <guilabel>Other Device</guilabel> option.
+								Select each disk which the Node is to use for installation and press <keycap> Space</keycap> to toggle it to enabled. Repeat this step for all disks you want the Node to use. Where other devices are to be used for installation, either solely or in addition to those which are listed automatically, enable the <guilabel>Other Device</guilabel> option.
 							</para>
 						</step>
 						<step>
@@ -153,11 +153,11 @@
 						</step>
 						<step>
 							<para>
-								Where the <guilabel>Other Device</guilabel> option was specified a further prompt will appear. Enter the name of each additional block device to use for hypervisor installation separated by a comma. Once all required disks have been selected then select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>.
+								Where the <guilabel>Other Device</guilabel> option was specified a further prompt will appear. Enter the name of each additional block device to use for Node installation separated by a comma. Once all required disks have been selected then select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>.
 							</para>
 							<example>
 								<title>Other Device Selection</title>
-								<screen>Please select the disk(s) to use for installation of RHEV Hypervisor
+								<screen>Please select the disk(s) to use for installation of RHEV Node
 Enter multiple entries separated by commas
 /dev/mmcblk0,/dev/mmcblk1______________
 </screen>
@@ -173,18 +173,18 @@ Enter multiple entries separated by commas
 		<step>
 			<title>Password</title>
 			<para>
-				The hypervisor requires that a password be set to protect local console access by the <systemitem class="username"> admin</systemitem> user. The installation script prompts you to enter the desired password in both the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields.
+				the Node requires that a password be set to protect local console access by the <systemitem class="username"> admin</systemitem> user. The installation script prompts you to enter the desired password in both the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields.
 			</para>
 			<para>
 				A strong password must be used. Strong passwords consist of a mix of uppercase, lowercase, numeric, and punctuation characters. They are six or more characters long and do not contain dictionary words.
 			</para>
 			<para>
-				Once a strong password has been entered select <guibutton>&lt;Install&gt;</guibutton> and press <keycap>Enter</keycap> to install the hypervisor to disk.
+				Once a strong password has been entered select <guibutton>&lt;Install&gt;</guibutton> and press <keycap>Enter</keycap> to install the Node to disk.
 			</para>
 		</step>
 	</procedure>
 	<para>
-		Once installation is complete the message <literal>RHEV Hypervisor Installation Finished Successfully</literal> will be displayed. Select the <guibutton>&lt;Restart&gt;</guibutton> button and press <keycap>Enter</keycap> to reboot the system.
+		Once installation is complete the message <literal>RHEV Node Installation Finished Successfully</literal> will be displayed. Select the <guibutton>&lt;Restart&gt;</guibutton> button and press <keycap>Enter</keycap> to reboot the system.
 	</para>
 	<note>
 		<title>Note — Remove Boot Media</title>
@@ -195,7 +195,7 @@ Enter multiple entries separated by commas
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7610-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7610-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -7,7 +7,7 @@
 <section id="CPU_Requirements" remap="TID_7843">
 	<title>Virtualization Host CPU Requirements</title>
 	<para>
-		Virtualization hosts must have at least one <acronym> CPU</acronym>. Red Hat Enterprise Virtualization supports the use of these <acronym> CPU</acronym> models in virtualization hosts:
+		Virtualization hosts must have at least one <acronym> CPU</acronym>. oVirt supports the use of these <acronym> CPU</acronym> models in virtualization hosts:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -62,7 +62,7 @@
 	<itemizedlist>
 		<listitem>
 			<para>
-				At the Red Hat Enterprise Linux or Red Hat Enterprise Virtualization Hypervisor boot screen press any key and select the <guilabel>Boot</guilabel> or <guilabel>Boot with serial console</guilabel> entry from the list. Press <guilabel>Tab</guilabel> to edit the kernel parameters for the selected option. After the last kernel parameter listed ensure there is a <keycap>Space</keycap> and append the <literal>rescue</literal> parameter.
+				At the Fedora or oVirt Node boot screen press any key and select the <guilabel>Boot</guilabel> or <guilabel>Boot with serial console</guilabel> entry from the list. Press <guilabel>Tab</guilabel> to edit the kernel parameters for the selected option. After the last kernel parameter listed ensure there is a <keycap>Space</keycap> and append the <literal>rescue</literal> parameter.
 			</para>
 		</listitem>
 		<listitem>
@@ -104,7 +104,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7843-161528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7843-161528+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

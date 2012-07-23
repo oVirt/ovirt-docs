@@ -5,45 +5,45 @@
 ]>
 
 <section id="Installing_and_Configuring_Red_Hat_Enterprise_Virtualization_Manager_Reports" remap="TID_7523">
-	<title>Installing and Configuring Red Hat Enterprise Virtualization Manager Reports</title>
+	<title>Installing and Configuring oVirt Engine Reports</title>
 	<procedure>
 		<step>
 			<para>
-				Use <command>yum</command> to install the Red Hat Enterprise Virtualization Manager Reports package, <package> rhevm-reports</package>, if you did not already do this when performing the datawarehouse installation. This package must be installed on the system that the Red Hat Enterprise Virtualization Manager is installed. You must be logged in as the <systemitem> root</systemitem> user.
+				Use <command>yum</command> to install the oVirt Engine Reports package, <package> engine-reports</package>, if you did not already do this when performing the datawarehouse installation. This package must be installed on the system that the oVirt Engine is installed. You must be logged in as the <systemitem> root</systemitem> user.
 			</para>
-			<screen># <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command></screen>
+			<screen># <command>yum <parameter>install</parameter> <parameter>engine-reports</parameter></command></screen>
 		</step>
 		<step>
 			<para>
-				You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager.
+				You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the oVirt Engine.
 			</para>
-			<screen># <command>rhevm-reports-setup</command></screen>
+			<screen># <command>engine-reports-setup</command></screen>
 		</step>
 		<step>
 			<para>
-				For the Red Hat Enterprise Virtualization Manager Reports installation to take effect it is necessary to restart the <systemitem> jbossas</systemitem> service. The <command>rhevm-reports-setup</command> command asks you:
+				For the oVirt Engine Reports installation to take effect it is necessary to restart the <systemitem> jbossas</systemitem> service. The <command>engine-reports-setup</command> command asks you:
 			</para>
 			<screen>In order to proceed the installer must stop the JBoss service
 Would you like to stop the JBoss service? (yes|no):</screen>
 			<para>
-				Type <keycap> yes</keycap> and then press <keycap> Enter</keycap> to proceed. The command then performs a number of actions before prompting you to set the password for the Red Hat Enterprise Virtualization Manager Reports administrative user ( <systemitem class="username"> rhev-admin</systemitem>). Note that the reports system maintains its own set of credentials.
+				Type <keycap> yes</keycap> and then press <keycap> Enter</keycap> to proceed. The command then performs a number of actions before prompting you to set the password for the oVirt Engine Reports administrative user ( <systemitem class="username"> rhev-admin</systemitem>). Note that the reports system maintains its own set of credentials.
 			</para>
-			<screen>Please choose a password for the admin user (rhevm-admin):</screen>
+			<screen>Please choose a password for the admin user (engine-admin):</screen>
 			<para>
 				You will be prompted to enter the password a second time to confirm it.
 			</para>
 		</step>
 	</procedure>
 	<para>
-		Red Hat Enterprise Virtualization Manager Reports have been installed successfully. Access Red Hat Enterprise Virtualization Manager Reports at <literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/rhevm-reports</literal>, replacing <literal><replaceable>demo.redhat.com</replaceable></literal> with the fully qualified domain name of the Red Hat Enterprise Virtualization Manager. If during Red Hat Enterprise Virtualization Manager installation you selected a non-default <acronym> HTTP</acronym> port replace <literal>8080</literal> with the port chosen.
+		oVirt Engine Reports have been installed successfully. Access oVirt Engine Reports at <literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/engine-reports</literal>, replacing <literal><replaceable>demo.redhat.com</replaceable></literal> with the fully qualified domain name of the oVirt Engine. If during oVirt Engine installation you selected a non-default <acronym> HTTP</acronym> port replace <literal>8080</literal> with the port chosen.
 	</para>
 	<para>
-		Use the username <systemitem class="username"> rhevm-admin</systemitem> and the password you set during reports installation to log in for the first time. Note that the first time you log into Red Hat Enterprise Virtualization Manager Reports a number of web pages are generated, as a result your initial attempt to login may take some time to complete.
+		Use the username <systemitem class="username"> engine-admin</systemitem> and the password you set during reports installation to log in for the first time. Note that the first time you log into oVirt Engine Reports a number of web pages are generated, as a result your initial attempt to login may take some time to complete.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7523-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7523-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

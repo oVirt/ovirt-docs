@@ -5,9 +5,9 @@
 ]>
 
 <section id="Required_Channels" remap="TID_7849">
-	<title>Red Hat Enterprise Virtualization Manager Software Channels</title>
+	<title>oVirt Engine Software Channels</title>
 	<para>
-		Installation of the Red Hat Enterprise Virtualization Manager requires that the system be subscribed to a number of Red Hat Network channels in addition to those required for Red Hat Enterprise Linux. These channels are used to retrieve both the initial installation packages and later updates as they become available.
+		Installation of the oVirt Engine requires that the system be subscribed to a number of Red Hat Network channels in addition to those required for Fedora. These channels are used to retrieve both the initial installation packages and later updates as they become available.
 	</para>
 	<para>
 		You must ensure that you have entitlements to the required channels listed here before proceeding with installation.
@@ -16,12 +16,12 @@
 		<title>Certificate-based Red Hat Network</title>
 		<listitem>
 			<para>
-				The <literal>Red Hat Enterprise Linux Server</literal> entitlement, provides Red Hat Enterprise Linux.
+				The <literal>Fedora Server</literal> entitlement, provides Fedora.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				The <literal>Red Hat Enterprise Virtualization</literal> entitlement, provides Red Hat Enterprise Virtualization Manager.
+				The <literal>oVirt</literal> entitlement, provides oVirt Engine.
 			</para>
 		</listitem>
 		<listitem>
@@ -32,19 +32,19 @@
 	</itemizedlist>
 	<note>
 		<para>
-			Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is called <literal>Red Hat Enterprise Virtualization Beta</literal>.
+			Beta releases of oVirt Engine are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the oVirt Engine is called <literal>oVirt Beta</literal>.
 		</para>
 	</note>
 	<itemizedlist>
 		<title>Red Hat Network Classic</title>
 		<listitem>
 			<para>
-				The <literal>Red Hat Enterprise Linux Server (v. 6 for 64-bit x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6</systemitem>, provides Red Hat Enterprise Linux&nbsp;6 Server. The Channel Entitlement name for this channel is <literal>Red Hat Enterprise Linux Server (v. 6)</literal>.
+				The <literal>Fedora Server (v. 6 for 64-bit x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6</systemitem>, provides Fedora&nbsp;17. The Channel Entitlement name for this channel is <literal>Fedora Server (v. 6)</literal>.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				The <literal>Red Hat Enterprise Virtualization Manager (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3</systemitem>, provides Red Hat Enterprise Virtualization Manager. The Channel Entitlement Name for this channel is <literal>Red Hat Enterprise Virtualization Manager (v3)</literal>.
+				The <literal>oVirt Engine (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-engine-3</systemitem>, provides oVirt Engine. The Channel Entitlement Name for this channel is <literal>oVirt Engine (v3)</literal>.
 			</para>
 		</listitem>
 		<listitem>
@@ -55,13 +55,13 @@
 	</itemizedlist>
 	<note>
 		<para>
-			Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is the <literal>Red Hat Enterprise Virtualization Manager Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3-beta</systemitem>.
+			Beta releases of oVirt Engine are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the oVirt Engine is the <literal>oVirt Engine Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-engine-3-beta</systemitem>.
 		</para>
 	</note>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7849-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7849-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

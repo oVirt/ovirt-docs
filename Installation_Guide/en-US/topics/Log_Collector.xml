@@ -7,15 +7,15 @@
 <section id="Log_Collector" remap="TID_8676">
 	<title>Log Collector</title>
 	<para>
-		A log collection tool is included in the Red Hat Enterprise Virtualization Manager. This allows you to easily collect relevant logs from across the Red Hat Enterprise Virtualization environment when requesting support.
+		A log collection tool is included in the oVirt Engine. This allows you to easily collect relevant logs from across the oVirt environment when requesting support.
 	</para>
 	<para>
-		The log collection command is <command>rhevm-log-collector</command>. You are required to log in as the <systemitem class="username">root</systemitem> user and provide the administration credentials for the Red Hat Enterprise Virtualization environment. The <command>rhevm-log-collector <parameter>-h</parameter></command> command displays usage information, including a list of all valid options for the <command>rhevm-log-collector</command> command.
+		The log collection command is <command>engine-log-collector</command>. You are required to log in as the <systemitem class="username">root</systemitem> user and provide the administration credentials for the oVirt environment. The <command>engine-log-collector <parameter>-h</parameter></command> command displays usage information, including a list of all valid options for the <command>engine-log-collector</command> command.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8676-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8676-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

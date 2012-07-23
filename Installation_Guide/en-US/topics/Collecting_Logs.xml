@@ -7,24 +7,24 @@
 <section id="Collecting_Logs" remap="TID_7518">
 	<title>Collecting Logs</title>
 	<para>
-		In this example Log Collector is run to collect all logs from the Red Hat Enterprise Virtualization Manager, and the three attached hosts. Additionally the database and <acronym> JBoss</acronym> logs are also collected.
+		In this example Log Collector is run to collect all logs from the oVirt Engine, and the three attached hosts. Additionally the database and <acronym> JBoss</acronym> logs are also collected.
 	</para>
 	<example>
 		<title>Log Collection</title>
 		<screen>
-# <command>rhevm-log-collector</command>
-Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com
-Please provide the password for rhevm (CTRL+D to abort): 
+# <command>engine-log-collector</command>
+Please provide the username for OVIRT (CTRL+D to abort): admin@directory.demo.redhat.com
+Please provide the password for OVIRT (CTRL+D to abort): 
 Host list (datacenter=None, cluster=None, host=None):
 Data Center          | Cluster              | Hostname/IP Address
 SalesDataCenter      | SalesCluster         | 192.168.122.250
 EngineeringDataCenter | EngineeringCluster   | 192.168.122.251
 FinanceDataCenter    | FinanceCluster       | 192.168.122.252
-# <command>rhevm-log-collector collect</command>
-Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com
-Please provide the password for rhevm (CTRL+D to abort): 
-About to collect information from 3 hypervisors. Continue? (Y/n): Y
-INFO: Gathering information from selected hypervisors...
+# <command>engine-log-collector collect</command>
+Please provide the username for OVIRT (CTRL+D to abort): admin@directory.demo.redhat.com
+Please provide the password for OVIRT (CTRL+D to abort): 
+About to collect information from 3 Nodes. Continue? (Y/n): Y
+INFO: Gathering information from selected Nodes...
 INFO: collecting information from 192.168.122.250
 INFO: collecting information from 192.168.122.251
 INFO: collecting information from 192.168.122.252
@@ -32,8 +32,8 @@ INFO: finished collecting information from 192.168.122.250
 INFO: finished collecting information from 192.168.122.251
 INFO: finished collecting information from 192.168.122.252
 Please provide the password to dump the PostgreSQL database (CTRL+D to abort): 
-INFO: Gathering PostgreSQL the RHEV-M database and log files from localhost...
-INFO: Gathering RHEV-M information...
+INFO: Gathering PostgreSQL the OVIRT database and log files from localhost...
+INFO: Gathering OVIRT information...
 Please provide the password for jboss (CTRL+D to abort): 
 INFO: Log files have been collected and placed in /tmp/logcollector/sosreport-rhn-account-20110804121320-ce2a.tar.xz.
       The MD5 for this file is 6d741b78925998caff29020df2b2ce2a and its size is 26.7M
@@ -42,7 +42,7 @@ INFO: Log files have been collected and placed in /tmp/logcollector/sosreport-rh
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7518-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7518-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

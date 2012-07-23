@@ -5,9 +5,9 @@
 ]>
 
 <section id="Hypervisor_Status" remap="TID_7856">
-	<title>Viewing Hypervisor Status</title>
+	<title>Viewing Node Status</title>
 	<para>
-		The status screen displays a brief overview of the current state of the hypervisor. The information displayed consists of:
+		The status screen displays a brief overview of the current state of the Node. The information displayed consists of:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -32,29 +32,29 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		The status screen also provides a number of buttons to change the state of the hypervisor. They are:
+		The status screen also provides a number of buttons to change the state of the Node. They are:
 	</para>
 	<itemizedlist>
 		<listitem>
 			<para>
-				<guibutton>&lt;Lock&gt;</guibutton>: Locks the hypervisor. The username and password must be entered to unlock the hypervisor.
+				<guibutton>&lt;Lock&gt;</guibutton>: Locks the Node. The username and password must be entered to unlock the Node.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				<guibutton>&lt;Restart&gt;</guibutton>: Restarts the hypervisor.
+				<guibutton>&lt;Restart&gt;</guibutton>: Restarts the Node.
 			</para>
 		</listitem>
 		<listitem>
 			<para>
-				<guibutton>&lt;Power Off&gt;</guibutton>: Turns the hypervisor off.
+				<guibutton>&lt;Power Off&gt;</guibutton>: Turns the Node off.
 			</para>
 		</listitem>
 	</itemizedlist>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7856-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7856-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

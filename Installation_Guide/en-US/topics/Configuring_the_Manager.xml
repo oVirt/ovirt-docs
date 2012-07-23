@@ -5,22 +5,22 @@
 ]>
 
 <section id="Configuring_the_Manager" remap="TID_7520">
-	<title>Configuring Red Hat Enterprise Virtualization Manager</title>
+	<title>Configuring oVirt Engine</title>
 	<para>
-		Once package installation is complete the Red Hat Enterprise Virtualization Manager must be configured. The <command>rhevm-setup</command> command is provided to assist with this task. The script asks you a series of questions, the answers to which form the basis for system configuration. Once all required values have been provided the updated configuration is applied and the Red Hat Enterprise Virtualization Manager services are started.
+		Once package installation is complete the oVirt Engine must be configured. The <command>engine-setup</command> command is provided to assist with this task. The script asks you a series of questions, the answers to which form the basis for system configuration. Once all required values have been provided the updated configuration is applied and the oVirt Engine services are started.
 	</para>
 	<procedure id="proc-Installation_Guide-Installing_the_RHEV_Manager-Configuration">
 		<step>
 			<title>Start setup script</title>
 			<para>
-				To begin configuring the system run <command>rhevm-setup</command> as the <systemitem class="username"> root</systemitem> user.
+				To begin configuring the system run <command>engine-setup</command> as the <systemitem class="username"> root</systemitem> user.
 			</para>
-			<screen># rhevm-setup</screen>
+			<screen># engine-setup</screen>
 		</step>
 		<step>
 			<title>Override Apache configuration</title>
 			<para>
-				Red Hat Enterprise Virtualization uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>rhevm-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:
+				oVirt uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>engine-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:
 			</para>
 			<screen>Do you wish to override current httpd configuration and restart the service? ['yes'| 'no']  [yes] :</screen>
 			<stepalternatives>
@@ -55,7 +55,7 @@
 			</para>
 			<screen>HTTP Port  [80] :</screen>
 			<para>
-				The port you select also appears in the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTP</acronym>.
+				The port you select also appears in the <acronym> URL</acronym> that must be used to access the oVirt Engine over <acronym> HTTP</acronym>.
 			</para>
 		</step>
 		<step>
@@ -65,7 +65,7 @@
 			</para>
 			<screen>HTTPS Port  [443] :</screen>
 			<para>
-				Where a port other than <literal>443</literal> is selected it changes the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTPS</acronym>.
+				Where a port other than <literal>443</literal> is selected it changes the <acronym> URL</acronym> that must be used to access the oVirt Engine over <acronym> HTTPS</acronym>.
 			</para>
 		</step>
 		<step>
@@ -81,7 +81,7 @@
 		<step>
 			<title>Set Administrator Password</title>
 			<para>
-				The script creates an authentication domain internal to the Red Hat Enterprise Virtualization Manager for the default administrative account. The domain is named <systemitem> internal</systemitem>, the administrative user is called <systemitem> admin</systemitem>. External authentication domains are added as a post-installation step using the <command>rhevm-manage-domains</command> command.
+				The script creates an authentication domain internal to the oVirt Engine for the default administrative account. The domain is named <systemitem> internal</systemitem>, the administrative user is called <systemitem> admin</systemitem>. External authentication domains are added as a post-installation step using the <command>engine-manage-domains</command> command.
 			</para>
 			<para>
 				You must choose a password for the <systemitem class="username"> admin</systemitem> user. You will be asked to enter it a second time to confirm your selection.
@@ -91,7 +91,7 @@
 		<step>
 			<title>Set Organization Name</title>
 			<para>
-				The script prompts for entry of the Organization Name. The Organization Name appears in the <literal>Subject</literal> field of the certificate used to secure communications with the Red Hat Enterprise Virtualization Manager.
+				The script prompts for entry of the Organization Name. The Organization Name appears in the <literal>Subject</literal> field of the certificate used to secure communications with the oVirt Engine.
 			</para>
 			<screen>Organization Name for the Certificate :</screen>
 		</step>
@@ -114,7 +114,7 @@
 							Internet Small Computer System Interface (<literal>ISCSI</literal>).
 						</para>
 					</listitem>
-				</itemizedlist> The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. Red Hat Enterprise Virtualization also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center.
+				</itemizedlist> The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. oVirt also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center.
 			</para>
 			<para>
 				To use the default selection, <literal>NFS</literal>, press <keycap> Enter</keycap>. To select <literal>FC</literal>, or <literal>ISCSI</literal> then enter the value and then press <keycap> Enter</keycap>.
@@ -123,7 +123,7 @@
 		<step>
 			<title>Select database location</title>
 			<para>
-				Red Hat Enterprise Virtualization supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:
+				oVirt supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:
 			</para>
 			<screen>Enter DB type for installation ['remote'| 'local']  [local] :</screen>
 			<stepalternatives>
@@ -132,7 +132,7 @@
 						Enter <literal>local</literal> to have the setup script create a local Postgresql database server for the Manager.
 					</para>
 					<para>
-						The script prompts for entry of a password to use for the local Red Hat Enterprise Virtualization Manager database. Enter the desired password. You will be asked to enter the password again to confirm it.
+						The script prompts for entry of a password to use for the local oVirt Engine database. Enter the desired password. You will be asked to enter the password again to confirm it.
 					</para>
 					<screen>Database password (required for secure authentication with the locally created database) :</screen>
 				</step>
@@ -179,7 +179,7 @@ Confirm password :
 						<step>
 							<title>Secure connection</title>
 							<para>
-								You can configure Red Hat Enterprise Virtualization Manager to use a secure connection, encrypted using <acronym>SSL</acronym> when connecting to the remote database server.
+								You can configure oVirt Engine to use a secure connection, encrypted using <acronym>SSL</acronym> when connecting to the remote database server.
 							</para>
 							<screen>Configure secure connection? ['yes'| 'no']  [no] :</screen>
 							<para>
@@ -200,7 +200,7 @@ Confirm password :
 			</para>
 			<screen>Should the installer configure NFS share on this server to be used as an ISO Domain? ['yes'| 'no']  [yes] :</screen>
 			<para>
-				An <acronym> ISO</acronym> storage domain is used to store copies of removable media for use when provisioning and using virtual machines. The Red Hat Enterprise Virtualization Manager is able to use either an <acronym> ISO</acronym> storage domain on the system it is installed to or one that exists on remote storage. In either case the <acronym> ISO</acronym> storage domain must be accessible via <acronym> NFS</acronym>. The ability to configure an <acronym> ISO</acronym> storage domain is also available from the Administration Portal after installation.
+				An <acronym> ISO</acronym> storage domain is used to store copies of removable media for use when provisioning and using virtual machines. The oVirt Engine is able to use either an <acronym> ISO</acronym> storage domain on the system it is installed to or one that exists on remote storage. In either case the <acronym> ISO</acronym> storage domain must be accessible via <acronym> NFS</acronym>. The ability to configure an <acronym> ISO</acronym> storage domain is also available from the Administration Portal after installation.
 			</para>
 			<para>
 				To take the default action, which is to configure an <acronym> NFS</acronym> share for use as an <acronym> ISO</acronym> storage domain, press <keycap> Enter</keycap>. To skip this step type <literal>no</literal> and press <keycap> Enter</keycap>.
@@ -210,17 +210,17 @@ Confirm password :
 			</para>
 			<screen>Mount point path:</screen>
 			<para>
-				The display name is the name the storage domain will appear under in the Red Hat Enterprise Virtualization Manager. The display name must not contain non-alphanumeric characters other than the underscore (<literal>_</literal>) and the hyphen (<literal>-</literal>).
+				The display name is the name the storage domain will appear under in the oVirt Engine. The display name must not contain non-alphanumeric characters other than the underscore (<literal>_</literal>) and the hyphen (<literal>-</literal>).
 			</para>
 			<screen>Display name for the ISO domain:</screen>
 			<para>
-				The <acronym> ISO</acronym> domain will be created and exported as an <acronym> NFS</acronym> share. It will be shown as active in the Red Hat Enterprise Virtualization Manager once the first active virtualization host has been added to the <literal>Default</literal> data center.
+				The <acronym> ISO</acronym> domain will be created and exported as an <acronym> NFS</acronym> share. It will be shown as active in the oVirt Engine once the first active virtualization host has been added to the <literal>Default</literal> data center.
 			</para>
 		</step>
 		<step>
 			<title>Configure Firewall</title>
 			<para>
-				The Red Hat Enterprise Virtualization Manager requires that network traffic on a number of ports be allowed through the system's firewall. The <command>rhevm-setup</command> script is able to configure this automatically, but selecting this option overrides any existing firewall configuration. Where there is an existing firewall configuration that needs to be maintained you must manually configure the firewall to include the additional rules required by the Red Hat Enterprise Virtualization Manager.
+				The oVirt Engine requires that network traffic on a number of ports be allowed through the system's firewall. The <command>engine-setup</command> script is able to configure this automatically, but selecting this option overrides any existing firewall configuration. Where there is an existing firewall configuration that needs to be maintained you must manually configure the firewall to include the additional rules required by the oVirt Engine.
 			</para>
 			<screen>
 Firewall ports need to be opened.
@@ -244,12 +244,12 @@ Configure iptables ? ['yes'| 'no']:
 		<step>
 			<title>Confirm Configuration</title>
 			<para>
-				You have now provided the script with all the information required to complete configuration of the Red Hat Enterprise Virtualization Manager. The values which you entered are displayed for confirmation.
+				You have now provided the script with all the information required to complete configuration of the oVirt Engine. The values which you entered are displayed for confirmation.
 			</para>
 			<example>
 				<title>Configuration Confirmation Screen</title>
 				<screen>
-RHEV Manager will be installed using the following configuration:
+OVIRT Engine will be installed using the following configuration:
 =================================================================
 http-port:                     80
 https-port:                    443
@@ -282,7 +282,7 @@ Proceed with the configuration listed above? (yes|no):
 				The configuration values are applied. A number of services need to be started and as a result this step takes some time. Do not terminate the installation once application of the configuration values has commenced.
 			</para>
 			<para>
-				Once the script has completed successfully take note of the additional information it provides. In particular note down the <literal>SSH Certificate fingerprint</literal>, <literal>SSH Public key fingerprint</literal>, and Red Hat Enterprise Virtualization Manager <acronym> URL</acronym> for your records.
+				Once the script has completed successfully take note of the additional information it provides. In particular note down the <literal>SSH Certificate fingerprint</literal>, <literal>SSH Public key fingerprint</literal>, and oVirt Engine <acronym> URL</acronym> for your records.
 			</para>
 			<example>
 				<title>Successful Configuration</title>
@@ -293,14 +293,14 @@ Setting Database Security...                             [ DONE ]
 Creating Database...                                     [ DONE ]
 Updating the Default Data Center Storage Type...         [ DONE ]
 Editing JBoss Configuration...                           [ DONE ]
-Editing RHEV Manager Configuration...                    [ DONE ]
+Editing OVIRT Engine Configuration...                    [ DONE ]
 Configuring the Default ISO Domain...                    [ DONE ]
 Configuring Firewall (iptables)...                       [ DONE ]
 Starting JBoss Service...                                [ DONE ]
 
  **** Installation completed successfully ******
 
-     (Please allow RHEV Manager a few moments to start up.....)
+     (Please allow OVIRT Engine a few moments to start up.....)
 
 
 Additional information:
@@ -308,22 +308,22 @@ Additional information:
  * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e
  * A default ISO share has been created on this host.
    If IP based access restrictions are required, please edit /isoshare entry in /etc/exports
- * The firewall has been updated, the old iptables configuration file was saved to /usr/share/rhevm/conf/iptables.backup.103654-09092011_866
- * The installation log file is available at: /var/log/rhevm/rhevm-setup_2011_09_09_10_32_56.log
- * Please use the user "admin" and password specified in order to login into RHEV Manager
- * To configure additional users, first configure authentication domains using the 'rhevm-manage-domains' utility
- * To access RHEV Manager please go to the following URL: http://manager.demo.redhat.com:8080
+ * The firewall has been updated, the old iptables configuration file was saved to /usr/share/OVIRT/conf/iptables.backup.103654-09092011_866
+ * The installation log file is available at: /var/log/OVIRT/engine-setup_2011_09_09_10_32_56.log
+ * Please use the user "admin" and password specified in order to login into OVIRT Engine
+ * To configure additional users, first configure authentication domains using the 'engine-manage-domains' utility
+ * To access OVIRT Engine please go to the following URL: http://manager.demo.redhat.com:8080
 </screen>
 			</example>
 		</step>
 	</procedure>
 	<para>
-		The Red Hat Enterprise Virtualization Manager has been installed and configured successfully. You are now able to connect to the Administration Portal for the first time.
+		The oVirt Engine has been installed and configured successfully. You are now able to connect to the Administration Portal for the first time.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

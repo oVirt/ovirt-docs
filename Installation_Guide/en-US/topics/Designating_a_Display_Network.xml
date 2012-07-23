@@ -5,7 +5,7 @@
 ]>
 
 <section id="Designating_a_Display_Network" remap="TID_7627">
-	<title>Designating a Logical Network for a Specific Traffic Type in Red Hat Enterprise Virtualization Manager</title>
+	<title>Designating a Logical Network for a Specific Traffic Type in oVirt Engine</title>
 	<para>
 		A Logical Network created to carry specific network traffic must be designated as such using the Administration Portal. To designate a Logical Netwok for specific network traffic:
 	</para>
@@ -35,7 +35,7 @@
 					</para>
 				</listitem>
 				<listitem>
-					<para><guilabel>Required</guilabel> &mdash; When selected, the Logical Network is considered mandatory for Cluster operation. Hosts that are not attached to the Logical Network, and therefore not candidates for migration of Virtual Machines from hosts that are attached to the Logical Network, will be marked non-operational. This was the default behaviour for all Logical Networks assigned to a Cluster in previous versions of Red Hat Enterprise Virtualization.
+					<para><guilabel>Required</guilabel> &mdash; When selected, the Logical Network is considered mandatory for Cluster operation. Hosts that are not attached to the Logical Network, and therefore not candidates for migration of Virtual Machines from hosts that are attached to the Logical Network, will be marked non-operational. This was the default behaviour for all Logical Networks assigned to a Cluster in previous versions of oVirt.
 					</para>
 				</listitem>
 				<listitem>
@@ -58,7 +58,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7627-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7627-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

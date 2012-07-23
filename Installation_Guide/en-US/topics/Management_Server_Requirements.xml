@@ -5,7 +5,7 @@
 ]>
 
 <section id="Management_Server_Requirements" remap="TID_7841">
-	<title>Red Hat Enterprise Virtualization Manager Hardware Requirements</title>
+	<title>oVirt Engine Hardware Requirements</title>
 	<!-- A Reference provides additional information -->
 	<para>
 		The minimum and recommended hardware requirements outlined here are based on a typical small to medium sized installation. The exact requirements vary between deployments based on sizing and load. Please use these recommendations as a guide only.
@@ -57,7 +57,7 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		The Red Hat Enterprise Virtualization Manager runs on Red Hat Enterprise Linux. To confirm whether or not specific hardware items are certified for use with Red Hat Enterprise Linux refer to <ulink url="http://www.redhat.com/rhel/compatibility/hardware/"/>.
+		The oVirt Engine runs on Fedora. To confirm whether or not specific hardware items are certified for use with Fedora refer to <ulink url="http://www.redhat.com/rhel/compatibility/hardware/"/>.
 	</para>
 	<!-- Do not edit below this line! -->
 	<!-- Injection Point: Related Overviews -->
@@ -66,7 +66,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7841-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7841-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

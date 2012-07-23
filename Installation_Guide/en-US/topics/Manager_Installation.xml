@@ -27,7 +27,7 @@
 		Before proceeding with Red Hat Virtualization Manager installation you must ensure that all prerequisites are met. Only once you have confirmed that all prerequisites are met are you ready to proceed with installation.
 	</para>
 	<para>
-		To complete installation of the Red Hat Enterprise Virtualization Manager successfully you must also be able to determine:
+		To complete installation of the oVirt Engine successfully you must also be able to determine:
 	</para>
 	<orderedlist>
 		<listitem>
@@ -42,7 +42,7 @@
 		</listitem>
 		<listitem>
 			<para>
-				The password you will use to secure the Red Hat Enterprise Virtualization administration account.
+				The password you will use to secure the oVirt administration account.
 			</para>
 		</listitem>
 		<listitem>
@@ -64,7 +64,7 @@
 		</listitem>
 		<listitem>
 			<para>
-				The Organization Name to use when creating the manager's security certificates.
+				The Organization Name to use when creating the Manager's security certificates.
 			</para>
 		</listitem>
 		<listitem>
@@ -74,7 +74,7 @@
 		</listitem>
 		<listitem>
 			<para>
-				The path to use for the <acronym>ISO</acronym> share, if the manager is being configured to provide one. The display name, which will be used to label the domain in the Red Hat Enterprise Virtualization Manager also needs to be provided.
+				The path to use for the <acronym>ISO</acronym> share, if the manager is being configured to provide one. The display name, which will be used to label the domain in the oVirt Engine also needs to be provided.
 			</para>
 		</listitem>
 		<listitem>
@@ -84,11 +84,11 @@
 		</listitem>
 	</orderedlist>
 	<para>
-		Before installation is completed the values selected are displayed for confirmation. Once the values have been confirmed they are applied and the Red Hat Enterprise Virtualization Manager is ready for use.
+		Before installation is completed the values selected are displayed for confirmation. Once the values have been confirmed they are applied and the oVirt Engine is ready for use.
 	</para>
 	<example>
 		<title>Completed Installation</title>
-		<screen>RHEV Manager will be installed using the following configuration:
+		<screen>OVIRT Engine will be installed using the following configuration:
 =================================================================
 http-port:                     80
 https-port:                    443
@@ -106,38 +106,38 @@ Proceed with the configuration listed above? (yes|no): </screen>
 	</example>
 	<note>
 		<para>
-			Automated installations are created by providing <command>rhevm-setup</command> with an answer file. An answer file contains answers to the questions asked by the setup command.
+			Automated installations are created by providing <command>engine-setup</command> with an answer file. An answer file contains answers to the questions asked by the setup command.
 		</para>
 		<itemizedlist>
 			<listitem>
 				<para>
-					To create an answer file, use the <parameter>--gen-answer-file</parameter> parameter to set the location to which the answer file must be saved. The <command>rhevm-setup</command> command will record your answers to the file.
+					To create an answer file, use the <parameter>--gen-answer-file</parameter> parameter to set the location to which the answer file must be saved. The <command>engine-setup</command> command will record your answers to the file.
 				</para>
-				<screen># <command>rhevm-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
+				<screen># <command>engine-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
 			</listitem>
 			<listitem>
 				<para>
-					To use an answer file for a new installation, use the <parameter>--answer-file</parameter> parameter to set the location of the answer file that must be used. The command <command>rhevm-setup</command> command will use the answers stored in the file to complete installation.
+					To use an answer file for a new installation, use the <parameter>--answer-file</parameter> parameter to set the location of the answer file that must be used. The command <command>engine-setup</command> command will use the answers stored in the file to complete installation.
 				</para>
-				<screen># <command>rhevm-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
+				<screen># <command>engine-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command></screen>
 			</listitem>
 		</itemizedlist>
 		<para>
-			Run <command>rhevm-setup <parameter>--help</parameter></command> for further information.
+			Run <command>engine-setup <parameter>--help</parameter></command> for further information.
 		</para>
 	</note>
 	<note>
 		<para>
-			Offline installation requires the creation of a software repository local to your Red Hat Enterprise Virtualization environment. This software repository must contain all of the packages required to install Red Hat Enterprise Virtualization Manager, Red Hat Enterprise Linux virtualization hosts, and Red Hat Enterprise Linux virtual machines.
+			Offline installation requires the creation of a software repository local to your oVirt environment. This software repository must contain all of the packages required to install oVirt Engine, Fedora virtualization hosts, and Fedora virtual machines.
 		</para>
 		<para>
-			If you wish to create such a repository, refer to the <citetitle>Installing Red Hat Enterprise Virtualization Offline</citetitle> technical brief, available at <ulink url="https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30"/>.
+			If you wish to create such a repository, refer to the <citetitle>Installing oVirt Offline</citetitle> technical brief, available at <ulink url="https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30"/>.
 		</para>
 	</note>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

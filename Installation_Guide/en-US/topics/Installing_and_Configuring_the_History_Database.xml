@@ -10,20 +10,20 @@
 		<step>
 			<title>Install Required Packages</title>
 			<para>
-				Use <command>yum</command> to initiate installation of the <package> rhevm-reports-dwh</package> package, or the <package> rhevm-reports</package> package if you also intend to install Red Hat Enterprise Virtualization Manager Reports. You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager.
+				Use <command>yum</command> to initiate installation of the <package> engine-reports-dwh</package> package, or the <package> rhevm-reports</package> package if you also intend to install oVirt Engine Reports. You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the oVirt Engine.
 			</para>
 			<stepalternatives>
 				<step>
 					<para>
 						To install only the data warehouse package:
 					</para>
-					<screen># <command>yum <parameter>install</parameter> <parameter>rhevm-reports-dwh</parameter></command></screen>
+					<screen># <command>yum <parameter>install</parameter> <parameter>engine-reports-dwh</parameter></command></screen>
 				</step>
 				<step>
 					<para>
-						To install both the data warehouse package and the Red Hat Enterprise Virtualization Manager Reports package:
+						To install both the data warehouse package and the oVirt Engine Reports package:
 					</para>
-					<screen># <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command></screen>
+					<screen># <command>yum <parameter>install</parameter> <parameter>engine-reports</parameter></command></screen>
 				</step>
 			</stepalternatives>
 		</step>
@@ -36,18 +36,18 @@
 		<step>
 			<title>Configure History Database</title>
 			<para>
-				You need to use the <command>rhevm-dwh-setup</command> command to configure the Extract, Transform, Load ( <acronym> ETL</acronym>) process and database scripts used to create and maintain a working history database.
+				You need to use the <command>engine-dwh-setup</command> command to configure the Extract, Transform, Load ( <acronym> ETL</acronym>) process and database scripts used to create and maintain a working history database.
 			</para>
 			<substeps>
 				<step>
 					<para>
-						You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager.
+						You must run this command as the <systemitem class="username"> root</systemitem> user on the system hosting the oVirt Engine.
 					</para>
-					<screen># <command>rhevm-dwh-setup</command></screen>
+					<screen># <command>engine-dwh-setup</command></screen>
 				</step>
 				<step>
 					<para>
-						For the history database installation to take effect it is necessary to restart the <systemitem> ovirt-engine</systemitem> service. The <command>rhevm-dwh-setup</command> command asks you:
+						For the history database installation to take effect it is necessary to restart the <systemitem> ovirt-engine</systemitem> service. The <command>OVIRT-dwh-setup</command> command asks you:
 					</para>
 					<screen>Would you like to stop the ovirt-engine service? (yes|no): </screen>
 					<para>
@@ -60,7 +60,7 @@
 							</listitem>
 							<listitem>
 								<para>
-									creates and configures the <systemitem> rhevm_history</systemitem> database, and
+									creates and configures the <systemitem> OVIRT_history</systemitem> database, and
 								</para>
 							</listitem>
 							<listitem>
@@ -75,12 +75,12 @@
 		</step>
 	</procedure>
 	<para>
-		The <systemitem> rhevm_history</systemitem> database has been created. The Red Hat Enterprise Virtualization Manager is configured to log information to this database for reporting purposes.
+		The <systemitem> OVIRT_history</systemitem> database has been created. The oVirt Engine is configured to log information to this database for reporting purposes.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7522-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7522-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

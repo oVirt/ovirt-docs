@@ -7,22 +7,22 @@
 <section id="System_Components" remap="TID_8652">
 	<title>System Components</title>
 	<para>
-		Red Hat Enterprise Virtualization platform consists of one or more virtualization hosts (either Red Hat Enterprise Virtualization Hypervisors or Red Hat Enterprise Linux 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system.
+		oVirt platform consists of one or more virtualization hosts (either oVirt Nodes or Fedora 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system.
 	</para>
 	<variablelist>
 		<varlistentry>
-			<term>Red Hat Enterprise Virtualization Manager</term>
+			<term>oVirt Engine</term>
 			<listitem>
 				<para>
-					The Red Hat Enterprise Virtualization Manager acts as a centralized management system that allows system administrators to view and manage virtual machines. The Red Hat Enterprise Virtualization Manager provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning. The Red Hat Enterprise Virtualization Manager itself also runs on Red Hat Enterprise Linux&nbsp;6.3.
+					The oVirt Engine acts as a centralized management system that allows system administrators to view and manage virtual machines. The oVirt Engine provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning. The oVirt Engine itself also runs on Fedora&nbsp;17.
 				</para>
 				<para>
-					The manager provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The Red Hat Enterprise Virtualization Manager exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>).
+					The manager provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The oVirt Engine exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>).
 				</para>
 				<itemizedlist>
 					<listitem>
 						<para>
-							The Administration Portal is used to perform setup, configuration, and management of the Red Hat Enterprise Virtualization environment.
+							The Administration Portal is used to perform setup, configuration, and management of the oVirt environment.
 						</para>
 					</listitem>
 					<listitem>
@@ -42,21 +42,21 @@
 			</listitem>
 		</varlistentry>
 		<varlistentry>
-			<term>Red Hat Enterprise Virtualization Hypervisor(s)</term>
+			<term>oVirt Node(s)</term>
 			<listitem>
 				<para>
-					The Red Hat Enterprise Virtualization Hypervisor is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. The Hypervisor is designed for management via the Red Hat Enterprise Virtualization Manager. It provides a thin virtualization layer deployed across the server infrastructure.
+					The oVirt Node is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. the Node is designed for management via the oVirt Engine. It provides a thin virtualization layer deployed across the server infrastructure.
 				</para>
 				<para>
-					Kernel-based Virtual Machine ( <acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization. Red Hat Enterprise Virtualization Hypervisor 6.3 and later are supported by this release of Red Hat Enterprise Virtualization.
+					Kernel-based Virtual Machine ( <acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization. oVirt Node 6.3 and later are supported by this release of oVirt.
 				</para>
 			</listitem>
 		</varlistentry>
 		<varlistentry>
-			<term>Red Hat Enterprise Linux Host(s)</term>
+			<term>Fedora Host(s)</term>
 			<listitem>
 				<para>
-					The Red Hat Enterprise Virtualization Manager also supports the use of systems running Red Hat Enterprise Linux 6.3, or higher, <acronym>AMD64</acronym>/Intel 64 versions as virtualization hosts.
+					The oVirt Engine also supports the use of systems running Fedora 6.3, or higher, <acronym>AMD64</acronym>/Intel 64 versions as virtualization hosts.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -64,7 +64,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

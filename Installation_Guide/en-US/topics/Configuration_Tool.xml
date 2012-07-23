@@ -7,13 +7,13 @@
 <section id="Configuration_Tool" remap="TID_8674">
 	<title>Configuration Tool</title>
 	<para>
-		Installing the Red Hat Enterprise Virtualization Manager modifies only a subset of configuration settings from their defaults. Further modifications are made using the configuration tool: <command>rhevm-config</command>.
+		Installing the oVirt Engine modifies only a subset of configuration settings from their defaults. Further modifications are made using the configuration tool: <command>engine-config</command>.
 	</para>
 	<para>
-		The configuration tool does not require JBoss or the Red Hat Enterprise Virtualization Manager to be running to update the configuration. Configuration key values are stored in the database; configuration changes will not be saved unless the database is operational. Changes are applied when JBoss is restarted.
+		The configuration tool does not require JBoss or the oVirt Engine to be running to update the configuration. Configuration key values are stored in the database; configuration changes will not be saved unless the database is operational. Changes are applied when JBoss is restarted.
 	</para>
 	<para>
-		The Red Hat Enterprise Virtualization Manager stores configuration settings as a series of key-to-value pair mappings. The configuration tool allows you to:
+		The oVirt Engine stores configuration settings as a series of key-to-value pair mappings. The configuration tool allows you to:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -38,12 +38,12 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		You are also able to maintain multiple versions of the manager's configuration with the configuration tool. Use the <parameter>--cver</parameter> parameter to specify the configuration version to be used when retrieving or setting a value for a configuration key. The default configuration version is <literal>general</literal>.
+		You are also able to maintain multiple versions of the Manager's configuration with the configuration tool. Use the <parameter>--cver</parameter> parameter to specify the configuration version to be used when retrieving or setting a value for a configuration key. The default configuration version is <literal>general</literal>.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8674-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8674-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

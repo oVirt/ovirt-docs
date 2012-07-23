@@ -7,7 +7,7 @@
 <section id="Introduction_to_Virtualization_Hosts" remap="TID_8655">
 	<title>Introduction to Virtualization Hosts</title>
 	<para>
-		Red Hat Enterprise Virtualization supports both virtualization hosts which run the Red Hat Enterprise Virtualization Hypervisor, and those which run Red Hat Enterprise Linux. Both types of virtualization host are able to coexist in the same Red Hat Enterprise Virtualization environment.
+		oVirt supports both virtualization hosts which run the oVirt Node, and those which run Fedora. Both types of virtualization host are able to coexist in the same oVirt environment.
 	</para>
 	<para>
 		Prior to installing virtualization hosts you should ensure that:
@@ -20,17 +20,17 @@
 		</listitem>
 		<listitem>
 			<para>
-				you have successfully completed installation of the Red Hat Enterprise Virtualization Manager.
+				you have successfully completed installation of the oVirt Engine.
 			</para>
 		</listitem>
 	</itemizedlist>
 	<para>
-		Additionally you may have chosen to install the Red Hat Enterprise Virtualization Manager Reports. This is not mandatory and is not required to commence installing virtualization hosts. Once you have completed the above tasks you are ready to install virtualization hosts.
+		Additionally you may have chosen to install the oVirt Engine Reports. This is not mandatory and is not required to commence installing virtualization hosts. Once you have completed the above tasks you are ready to install virtualization hosts.
 	</para>
 	<important>
 		<title>Important — Attach at Least Two Virtualization Hosts</title>
 		<para>
-			It is recommended that you install at least two virtualization hosts and attach them to the Red Hat Enterprise Virtualization environment. Where you attach only one virtualization host you will be unable to access features such as migration which require redundant hosts..
+			It is recommended that you install at least two virtualization hosts and attach them to the oVirt environment. Where you attach only one virtualization host you will be unable to access features such as migration which require redundant hosts..
 		</para>
 	</important>
 	<formalpara role="link-list">
@@ -53,7 +53,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8655-163915+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8655-163915+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

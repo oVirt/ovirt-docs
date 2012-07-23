@@ -5,14 +5,14 @@
 ]>
 
 <section id="Configuring_Hypervisor_Management_Server" remap="TID_7537">
-	<title>Configuring Hypervisor Management Server</title>
+	<title>Configuring Node Management Server</title>
 	<para>
-		The hypervisor is able to attach itself to the Red Hat Enterprise Virtualization Manager immediately if the address of the Manager is available. Where the Manager has not yet been installed you must instead set a password. This allows the hypervisor to be added from the Administration Portal once the Manager has been installed. Both modes of configuration are supported from the <guilabel>RHEV-M</guilabel> screen in the Hypervisor user interface.
+		the Node is able to attach itself to the oVirt Engine immediately if the address of the Manager is available. Where the Manager has not yet been installed you must instead set a password. This allows the Node to be added from the Administration Portal once the Manager has been installed. Both modes of configuration are supported from the <guilabel>OVIRT</guilabel> screen in the Node user interface.
 	</para>
 	<important>
 		<title>Important — Security Considerations</title>
 		<para>
-			Setting a password on the <guilabel>RHEV-M</guilabel> configuration screen sets the Hypervisor's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Hypervisor has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled.
+			Setting a password on the <guilabel>OVIRT</guilabel> configuration screen sets the Node's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Node has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled.
 		</para>
 	</important>
 	<procedure>
@@ -28,12 +28,12 @@
 						</step>
 						<step>
 							<para>
-								Enter the management server port in the <guilabel>Management Server Port</guilabel> field. The default value is <literal>443</literal>. Where a different port was selected during Red Hat Enterprise Virtualization Manager installation then it should be specified here, replacing the default value.
+								Enter the management server port in the <guilabel>Management Server Port</guilabel> field. The default value is <literal>443</literal>. Where a different port was selected during oVirt Engine installation then it should be specified here, replacing the default value.
 							</para>
 						</step>
 						<step>
 							<para>
-								Enable the <guilabel>Verify RHEVM Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of Red Hat Enterprise Virtualization Manager installation.
+								Enable the <guilabel>Verify OVIRT Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of oVirt Engine installation.
 							</para>
 						</step>
 						<step>
@@ -58,7 +58,7 @@
 						</step>
 						<step>
 							<para>
-								Leave the <guilabel>Management Server</guilabel> and <guilabel>Management Server Port</guilabel> fields blank. As long as a password is set, allowing the Hypervisor to be added to the Manager later, these fields are not required.
+								Leave the <guilabel>Management Server</guilabel> and <guilabel>Management Server Port</guilabel> fields blank. As long as a password is set, allowing the Node to be added to the Manager later, these fields are not required.
 							</para>
 						</step>
 					</substeps>
@@ -73,12 +73,12 @@
 		</step>
 	</procedure>
 	<para>
-		The <guilabel>RHEV-M</guilabel> configuration has been updated.
+		The <guilabel>OVIRT</guilabel> configuration has been updated.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

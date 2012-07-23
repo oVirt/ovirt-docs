@@ -5,13 +5,13 @@
 ]>
 
 <chapter id="chap-Installing_Red_Hat_Enterprise_Virtualization_Hypervisor_Hosts">
-	<title>Installing Red Hat Enterprise Virtualization Hypervisor Hosts</title>
+	<title>Installing oVirt Node Hosts</title>
 	<xi:include href="topics/Installing_the_Red_Hat_Enterprise_Virtualization_Hypervisor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<xi:include href="topics/Installing_the_Hypervisor_Packages.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<section id="sect-Preparing_Hypervisor_Installation_Media">
-		<title>Preparing Hypervisor Installation Media</title>
+		<title>Preparing Node Installation Media</title>
 		<section id="sect-Preparing_USB_Hypervisor_Installation_Media">
-			<title>Preparing USB Hypervisor Installation Media</title>
+			<title>Preparing USB Node Installation Media</title>
 			<xi:include href="topics/Preparing_a_Hypervisor_USB_Storage_Device.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Preparing_USB_Installation_Media_using_rhevhisotodisk.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Using_dd_to_Create_USB_Install_Media.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -20,7 +20,7 @@
 		</section>
 		<xi:include href="topics/Preparing_Optical_Installation_Media.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<section id="sect-Booting_from_Hypervisor_Installation_Media">
-			<title>Booting from Hypervisor Installation Media</title>
+			<title>Booting from Node Installation Media</title>
 			<xi:include href="topics/Booting_the_Hypervisor_from_USB_Installation_Media.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Booting_the_Hypervisor_from_Optical_Installation_Media.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Troubleshooting_BIOS_Settings_and_Boot_Process.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -28,17 +28,17 @@
 		</section>
 	</section>
 	<section id="sect-Installing_the_Hypervisor">
-		<title>Installing the Hypervisor</title>
+		<title>Installing the Node</title>
 		<xi:include href="topics/Hypervisor_Menu_Actions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Hypervisor_Interactive_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	</section>
 	<section id="sect-Configuring_the_Hypervisor">
-		<title>Configuring the Hypervisor</title>
+		<title>Configuring the Node</title>
 		<xi:include href="topics/Logging_in_to_the_Hypervisor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Configuring_Hypervisor_Keyboard.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Hypervisor_Status.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<section id="sect-Configuring_Hypervisor_Network">
-			<title>Configuring Hypervisor Network</title>
+			<title>Configuring Node Network</title>
 			<xi:include href="topics/Hypervisor_Network_Screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Hypervisor_Hostname_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 			<xi:include href="topics/Configuring_Hypervisor_Domain_Name_Services_DNS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -53,7 +53,7 @@
 		<xi:include href="topics/Configuring_Hyperisor_for_Red_Hat_Network.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	</section>
 	<section id="sect-Attaching_the_Hypervisor_to_the_Red_Hat_Enterprise_Virtualization_Manager">
-		<title>Attaching the Hypervisor to the Red Hat Enterprise Virtualization Manager</title>
+		<title>Attaching the Node to the oVirt Engine</title>
 		<xi:include href="topics/Configuring_Hypervisor_Management_Server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Using_the_Hypervisor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Approving_a_Hypervisor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

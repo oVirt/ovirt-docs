@@ -7,7 +7,7 @@
 <section id="Configuring_Virtualization_Host_Firewall" remap="TID_10234">
 	<title>Configuring Virtualization Host Firewall</title>
 	<itemizedlist>
-		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-previous-link">
 				<xref linkend="Subscribing_to_Required_Channels_using_RHN_Classic"/>
@@ -17,13 +17,13 @@
 	<formalpara>
 		<title>Summary</title>
 		<para>
-			Red Hat Enterprise Virtualization requires that a number of network ports be open to support virtual machines and remote management of the virtualization host from the Red Hat Enterprise Virtualization Manager. You must follow this procedure to open the required network ports before attempting to add the virtualization host to the Manager.
+			oVirt requires that a number of network ports be open to support virtual machines and remote management of the virtualization host from the oVirt Engine. You must follow this procedure to open the required network ports before attempting to add the virtualization host to the Manager.
 		</para>
 	</formalpara>
 	<procedure>
 		<title>Configuring virtualization host firewall</title>
 		<para>
-			The following steps configure the default firewall in Red Hat Enterprise Linux, <command>iptables</command>, to allow traffic on the required network ports. These steps replace any existing firewall configuration on your host with one containing only the required by Red Hat Enterprise Virtualization. If you have existing firewall rules with which this configuration must be merged then you must do so by manually editing the rules defined in the <command>iptables</command> configuration file, <filename>/etc/sysconfig/iptables</filename>.
+			The following steps configure the default firewall in Fedora, <command>iptables</command>, to allow traffic on the required network ports. These steps replace any existing firewall configuration on your host with one containing only the required by oVirt. If you have existing firewall rules with which this configuration must be merged then you must do so by manually editing the rules defined in the <command>iptables</command> configuration file, <filename>/etc/sysconfig/iptables</filename>.
 		</para>
 		<para>
 			All commands in this procedure must be run as the <systemitem>root</systemitem> user.
@@ -38,7 +38,7 @@
 		<step>
 			<title>Add new firewall rules to configuration</title>
 			<para>
-				Add the new firewall rules, required by Red Hat Enterprise Virtualization, using the <parameter>--append</parameter> parameter to the <command>iptables</command> command.
+				Add the new firewall rules, required by oVirt, using the <parameter>--append</parameter> parameter to the <command>iptables</command> command.
 			</para>
 			<screen># iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT# iptables --append INPUT -p icmp -j ACCEPT# iptables --append INPUT -i lo -j ACCEPT# iptables --append INPUT -p tcp --dport 22 -j ACCEPT# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --reject-with icmp-host-prohibited</screen>
 			<note>
@@ -68,7 +68,7 @@
 					</listitem>
 					<listitem>
 						<para>
-							port <systemitem class="protocol"> 54321</systemitem> for the Red Hat Enterprise Virtualization Manager.
+							port <systemitem class="protocol"> 54321</systemitem> for the oVirt Engine.
 						</para>
 					</listitem>
 				</itemizedlist>
@@ -92,11 +92,11 @@
 	<formalpara>
 		<title>Result</title>
 		<para>
-			You have configured the virtualization host's firewall to allow the network traffic required by Red Hat Enterprise Virtualization.
+			You have configured the virtualization host's firewall to allow the network traffic required by oVirt.
 		</para>
 	</formalpara>
 	<itemizedlist>
-		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Fedora Host</link></title>
 		<listitem>
 			<para role="process-next-link">
 				<xref linkend="Configuring_Virtualization_Host_sudo"/>
@@ -118,7 +118,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10234-163863+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10234-163863+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

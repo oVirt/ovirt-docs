@@ -5,15 +5,15 @@
 ]>
 
 <section id="Configuring_Hypervisor_Logging" remap="TID_7534">
-	<title>Configuring Hypervisor Logging</title>
+	<title>Configuring Node Logging</title>
 	<para>
-		The hypervisor creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server.
+		the Node creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server.
 	</para>
 	<procedure>
 		<step>
 			<title><application>Logrotate</application> Configuration</title>
 			<para>
-				The <application>logrotate</application> utility simplifies the administration of log files. The hypervisor uses <application>logrotate</application> to rotate logs when they reach a certain file size.
+				The <application>logrotate</application> utility simplifies the administration of log files. the Node uses <application>logrotate</application> to rotate logs when they reach a certain file size.
 			</para>
 			<para>
 				Log rotation involves renaming the current log(s) and starting new ones in their place. The <guilabel>Logrotate Max Log Size</guilabel> value set on the <guilabel>Logging</guilabel> screen is used to determine when a log should be rotated.
@@ -25,7 +25,7 @@
 		<step>
 			<title><application>Rsyslog</application> Configuration</title>
 			<para>
-				The <application> rsyslog</application> utility is a multithreaded syslog daemon. The hypervisor is able to use <application> rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Red Hat Enterprise Linux — Deployment Guide</citetitle>.
+				The <application> rsyslog</application> utility is a multithreaded syslog daemon. the Node is able to use <application> rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Fedora — Deployment Guide</citetitle>.
 			</para>
 			<substeps>
 				<step>
@@ -43,7 +43,7 @@
 		<step>
 			<title><application>netconsole</application> Configuration</title>
 			<para>
-				The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. The hypervisor uses <application>netconsole</application> to transmit kernel messages over the network.
+				The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. the Node uses <application>netconsole</application> to transmit kernel messages over the network.
 			</para>
 			<substeps>
 				<step>
@@ -71,7 +71,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7534-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7534-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

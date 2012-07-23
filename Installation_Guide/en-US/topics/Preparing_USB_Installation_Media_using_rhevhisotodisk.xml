@@ -7,7 +7,7 @@
 <section id="Preparing_USB_Installation_Media_using_rhevhisotodisk" remap="TID_7527">
 	<title>Preparing USB Installation Media using rhevh-iso-to-disk</title>
 	<para>
-		The <command>rhevh-iso-to-disk</command> command will install a Hypervisor onto a <acronym> USB</acronym> storage device. The <command>rhevh-iso-to-disk</command> command is included in the <package>rhev-hypervisor-tools</package> package. Devices which have the Hypervisor image written to them with this command are able to boot the Hypervisor on systems which support booting via <acronym> USB</acronym>.
+		The <command>rhevh-iso-to-disk</command> command will install a Node onto a <acronym> USB</acronym> storage device. The <command>rhevh-iso-to-disk</command> command is included in the <package>rhev-hypervisor-tools</package> package. Devices which have the Node image written to them with this command are able to boot the Node on systems which support booting via <acronym> USB</acronym>.
 	</para>
 	<para>
 		The basic <command>rhevh-iso-to-disk</command> command usage follows this structure:
@@ -15,7 +15,7 @@
 	<screen># rhevh-iso-to-disk <replaceable>image</replaceable> <replaceable>device</replaceable>
     </screen>
 	<para>
-		Where the <replaceable>device</replaceable> parameter is the partition name of the <acronym>USB</acronym> storage device to install to. The <replaceable>image</replaceable> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>rhevh-iso-to-disk</command> command requires devices to be formatted with the <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> file system.
+		Where the <replaceable>device</replaceable> parameter is the partition name of the <acronym>USB</acronym> storage device to install to. The <replaceable>image</replaceable> parameter is a ISO image of the Node. The default Node image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>rhevh-iso-to-disk</command> command requires devices to be formatted with the <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> file system.
 	</para>
 	<note>
 		<title>Note — Partitions and <command>rhevh-iso-to-disk</command></title>
@@ -63,7 +63,7 @@ USB stick set up as live image!
 			</example>
 			<important>
 				<para>
-					Red Hat Enterprise Linux 6.3 enables the use of the Unified Extensible Firmware Interface (UEFI) as a Technology Preview.
+					Fedora 6.3 enables the use of the Unified Extensible Firmware Interface (UEFI) as a Technology Preview.
 				</para>
 				<para>
 					Technology Preview features provide early access to upcoming product features, allowing you to test functionality and provide feedback during feature development. However, these features are not fully supported, may not be functionally complete, and are not intended for production use. Because these features are still under development, Red Hat cannot guarantee their stability. Therefore, you may not be able to upgrade seamlessly from a Technology Preview feature to a subsequent release of that feature. Additionally, if the feature does not meet standards for enterprise viability, Red Hat cannot guarantee that the Technology Preview will be released in a supported manner. Some Technology Preview features may only be available for specific hardware architectures.
@@ -74,18 +74,18 @@ USB stick set up as live image!
 				<screen># rhevh-iso-to-disk --format -- efi <replaceable>image</replaceable> <replaceable>device</replaceable></screen>
 				<screen># rhevh-iso-to-disk --format /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc</screen>
 				<para>
-					Note that this Technology Preview is only available in Red Hat Enterprise Linux 6.3.
+					Note that this Technology Preview is only available in Fedora 6.3.
 				</para>
 			</important>
 		</step>
 	</procedure>
 	<para>
-		The <acronym> USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) has been prepared. You can now use it to boot a system and install the Hypervisor.
+		The <acronym> USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) has been prepared. You can now use it to boot a system and install the Node.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7527-164519+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7527-164519+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

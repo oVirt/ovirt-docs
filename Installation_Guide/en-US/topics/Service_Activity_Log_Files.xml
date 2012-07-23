@@ -5,7 +5,7 @@
 ]>
 
 <section id="Service_Activity_Log_Files" remap="TID_7862">
-	<title>Red Hat Enterprise Virtualization Manager Service Activity Log Files</title>
+	<title>oVirt Engine Service Activity Log Files</title>
 	<table>
 		<title>Service Activity</title>
 		<tgroup align="left" cols="2" colsep="1" rowsep="1">
@@ -23,10 +23,10 @@
 			</thead>
 			<tbody>
 				<row>
-					<entry><filename>/var/log/rhevm/rhevm.log</filename>
+					<entry><filename>/var/log/OVIRT/rhevm.log</filename>
 					</entry>
 					<entry>
-						Reflects all Red Hat Enterprise Virtualization Manager GUI crashes, Active Directory look-ups, Database issues, and other events.
+						Reflects all oVirt Engine GUI crashes, Active Directory look-ups, Database issues, and other events.
 					</entry>
 				</row>
 			</tbody>
@@ -35,7 +35,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7862-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7862-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

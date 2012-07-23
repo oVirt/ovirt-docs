@@ -5,9 +5,9 @@
 ]>
 
 <section id="Hardware_Requirements1" remap="TID_7840">
-	<title>Red Hat Enterprise Virtualization Hardware Requirements Overview</title>
+	<title>oVirt Hardware Requirements Overview</title>
 	<para>
-		This section outlines the minimum hardware required to install, configure, and operate a Red Hat Enterprise Virtualization environment. To setup a Red Hat Enterprise Virtualization environment it is necessary to have, at least:
+		This section outlines the minimum hardware required to install, configure, and operate a oVirt environment. To setup a oVirt environment it is necessary to have, at least:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -32,12 +32,12 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		The hardware required for each of these systems is further outlined in the following sections. The Red Hat Enterprise Virtualization environment also requires storage infrastructure that is accessible to the virtualization hosts. Storage infrastructure must be accessible using <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FC</acronym>, or locally attached to virtualization hosts. The use of other <acronym>POSIX</acronym> compliant filesystems is also supported.
+		The hardware required for each of these systems is further outlined in the following sections. The oVirt environment also requires storage infrastructure that is accessible to the virtualization hosts. Storage infrastructure must be accessible using <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FC</acronym>, or locally attached to virtualization hosts. The use of other <acronym>POSIX</acronym> compliant filesystems is also supported.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7840-163897+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7840-163897+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

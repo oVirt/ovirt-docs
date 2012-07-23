@@ -55,7 +55,7 @@ major minor  #blocks  name
 		</step>
 		<step>
 			<para>
-				Plug the <acronym> USB</acronym> storage device which is to be used as the media for the hypervisor installation into the system. Re-run the <command>cat /proc/partitions</command> command and compare the output to that of the previous run. A new entry will appear which designates the <acronym> USB</acronym> storage device.
+				Plug the <acronym> USB</acronym> storage device which is to be used as the media for the Node installation into the system. Re-run the <command>cat /proc/partitions</command> command and compare the output to that of the previous run. A new entry will appear which designates the <acronym> USB</acronym> storage device.
 			</para>
 			<example>
 				<title>View of Disk Partitions Attached to System</title>
@@ -117,12 +117,12 @@ $ dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb&amp; pid=$!
 		</step>
 	</procedure>
 	<para>
-		The <acronym> USB</acronym> storage device ( <systemitem> /dev/sdb</systemitem>) is ready to boot a hypervisor.
+		The <acronym> USB</acronym> storage device ( <systemitem> /dev/sdb</systemitem>) is ready to boot a Node.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7529-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7529-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

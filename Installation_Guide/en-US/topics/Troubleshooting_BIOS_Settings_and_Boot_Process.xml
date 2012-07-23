@@ -7,7 +7,7 @@
 <section id="Troubleshooting_BIOS_Settings_and_Boot_Process" remap="TID_7526">
 	<title>Troubleshooting BIOS Settings and Boot Process</title>
 	<para>
-		Before installing Red Hat Enterprise Virtualization Hypervisors it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:
+		Before installing oVirt Nodes it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:
 	</para>
 	<orderedlist>
 		<listitem>
@@ -41,11 +41,11 @@
 	<procedure>
 		<title>Confirming Hardware Virtualization Support</title>
 		<para>
-			Verify that your system is capable of running the Red Hat Enterprise Virtualization Hypervisor. Hypervisors require that virtualization extensions are present and enabled in the BIOS before installation proceeds.
+			Verify that your system is capable of running the oVirt Node. Nodes require that virtualization extensions are present and enabled in the BIOS before installation proceeds.
 		</para>
 		<step>
 			<para>
-				Boot the hypervisor from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM.
+				Boot the Node from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM.
 			</para>
 		</step>
 		<step>
@@ -60,12 +60,12 @@
 		</step>
 		<step>
 			<para>
-				Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap> Enter</keycap>. This action will boot the hypervisor in rescue mode.
+				Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap> Enter</keycap>. This action will boot the Node in rescue mode.
 			</para>
 		</step>
 		<step>
 			<para>
-				Once the hypervisor boots, verify your CPU contains the virtualization extensions with the following command:
+				Once the Node boots, verify your CPU contains the virtualization extensions with the following command:
 			</para>
 			<screen># grep -E "svm|vmx" /proc/cpuinfo
 </screen>
@@ -87,7 +87,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7526-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7526-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

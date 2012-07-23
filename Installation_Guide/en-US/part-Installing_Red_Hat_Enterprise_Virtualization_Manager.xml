@@ -5,7 +5,7 @@
 ]>
 
 <part id="part-Installing_Red_Hat_Enterprise_Virtualization_Manager">
-	<title>Installing Red Hat Enterprise Virtualization Manager</title>
+	<title>Installing oVirt Engine</title>
 	<xi:include href="chap-Manager_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<xi:include href="chap-Data_Collection_Setup_and_Reports_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<xi:include href="chap-Upgrades_between_Minor_Releases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

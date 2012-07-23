@@ -7,15 +7,15 @@
 <section id="Deleting_Domains_from_Configuration" remap="TID_8407">
 	<title>Deleting a Domain from the Configuration</title>
 	<para>
-		In this example, the <command>rhevm-manage-domains</command> command is used to remove the <literal>directory.demo.redhat.com</literal> domain from the Red Hat Enterprise Virtualization Manager configuration. Users defined in the removed domain will no longer be able to authenticate with the Red Hat Enterprise Virtualization Manager. The entries for the affected users will remain defined in the Red Hat Enterprise Virtualization Manager until they are explicitly removed.
+		In this example, the <command>engine-manage-domains</command> command is used to remove the <literal>directory.demo.redhat.com</literal> domain from the oVirt Engine configuration. Users defined in the removed domain will no longer be able to authenticate with the oVirt Engine. The entries for the affected users will remain defined in the oVirt Engine until they are explicitly removed.
 	</para>
 	<para>
-		The domain being removed in this example is the last one listed in the Red Hat Enterprise Virtualization Manager configuration. A warning is displayed highlighting this fact and that only the <systemitem>admin</systemitem> user from the <literal>internal</literal> domain will be able to log in until another domain is added.
+		The domain being removed in this example is the last one listed in the oVirt Engine configuration. A warning is displayed highlighting this fact and that only the <systemitem>admin</systemitem> user from the <literal>internal</literal> domain will be able to log in until another domain is added.
 	</para>
 	<example>
-		<title><command>rhevm-manage-domains</command> Delete Action</title>
+		<title><command>engine-manage-domains</command> Delete Action</title>
 		<screen>
-# rhevm-manage-domains -action=delete -domain='directory.demo.redhat.com'
+# engine-manage-domains -action=delete -domain='directory.demo.redhat.com'
 WARNING: Domain directory.demo.redhat.com is the last domain in the configuration. After deleting it you will have to either add another domain, or to use the internal admin user in order to login.
 Successfully deleted domain directory.demo.redhat.com. Please remove all users and groups of this domain using the Administration portal or the API.
 </screen>
@@ -23,7 +23,7 @@ Successfully deleted domain directory.demo.redhat.com. Please remove all users a
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8407-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8407-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

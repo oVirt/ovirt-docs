@@ -5,9 +5,9 @@
 ]>
 
 <section id="POSIX_Compliant_Filesystem_Storage_in_Red_Hat_Enterprise_Virtualization" remap="TID_10032">
-	<title>POSIX Compliant Filesystem Storage in Red Hat Enterprise Virtualization</title>
+	<title>POSIX Compliant Filesystem Storage in oVirt</title>
 	<para>
-		Red Hat Enterprise Virtualuzation&nbsp;3.1 supports the use of POSIX (native) filesystems for storage. POSIX filesystem support allows you to mount filesystems using the same mount options that you would normally use when mounting them manually from the command line. This functionality is intended to allow access to storage not formally supported by Red Hat Enterprise Virtualization at this time.
+		Red Hat Enterprise Virtualuzation&nbsp;3.1 supports the use of POSIX (native) filesystems for storage. POSIX filesystem support allows you to mount filesystems using the same mount options that you would normally use when mounting them manually from the command line. This functionality is intended to allow access to storage not formally supported by oVirt at this time.
 	</para>
 	<important>
 		<para>
@@ -17,7 +17,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10032-160905+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10032-160905+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>
