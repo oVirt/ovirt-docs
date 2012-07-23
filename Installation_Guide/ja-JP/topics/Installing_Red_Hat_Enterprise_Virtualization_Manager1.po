@@ -1,0 +1,69 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 04:58-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Red Hat Enterprise Virtualization Manager Packages"
+msgstr "Red Hat Enterprise Virtualization Manager のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager and all of its dependencies are available via Red Hat Network. To install the Manager you must ensure connectivity with either the Red Hat Network or a Red Hat Network Satellite Server is available. You must also ensure that you have access to all required Red Hat Network channels."
+msgstr "Red Hat Enterprise Virtualization Manager およびその依存パッケージはすべて Red Hat Network より入手できます。Manager をインストールする場合は Red Hat Network または Red Hat Network Satellite Server のいずれかとの接続が行える状態であることを確認してください。また、必要となる Red Hat Network のチャンネルすべてにアクセスできることも確認しておく必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If installed, the <package>classpathx-jaf</package> package must be removed. It conflicts with some of the components installed to support <acronym> JBoss</acronym>."
+msgstr "インストールをする場合は <package>classpathx-jaf</package> パッケージは削除してください。このパッケージは <acronym>JBoss</acronym> に対応するためにインストールされるコンポーネントの一部と競合してしまいます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command>"
+msgstr "# <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to ensure that the most up to date versions of all installed packages are in use."
+msgstr "インストールされている全パッケージに関して最新バージョンが使用されていることを <command>yum</command> を使って確認します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>upgrade</parameter></command>"
+msgstr "# <command>yum <parameter>upgrade</parameter></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to initiate installation of the <package>rhevm</package> package and all dependencies. You must run this command as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr "<package>rhevm</package> パッケージと全依存パッケージのインストールを <command>yum</command> を使って開始します。このコマンドは <systemitem class=\"username\">root</systemitem> ユーザーで実行してください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum</command> <parameter>install</parameter> <parameter>rhevm</parameter>"
+msgstr "# <command>yum</command> <parameter>install</parameter> <parameter>rhevm</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All required packages and dependencies are installed. You must now configure the system."
+msgstr "必要なパッケージと依存パッケージがすべてインストールされます。次にシステムの設定を行います。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7519-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

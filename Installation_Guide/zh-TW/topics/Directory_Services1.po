@@ -1,0 +1,49 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:39-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "About Directory Services"
+msgstr "目錄服務"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users. A directory service consists of at least one directory server and at least one directory client program. Client programs can access names, phone numbers, addresses, and other data stored in the directory service."
+msgstr "「目錄服務」這個名詞代表用來儲存有關於企業、訂閱者（或兩者同時）相關資訊，並讓使用者能夠存取這些資訊的軟體、硬體與程序的集合。目錄服務包含了至少一項 Directory Server（目錄伺服器），以及至少一項目錄客戶端程式。客戶端程式可存取名稱、電話號碼、地址，以及其它存放在目錄服務中的資料。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8650-163899+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The Red Hat Enterprise Virtualization platform provides its own internal <systemitem>admin</systemitem> user. Authentication for other users is supported by attaching directory services domains using the provided domain management tool, <command>rhevm-manage-domains</command>. Currently the two supported providers of directory services for use with the Red Hat Enterprise Virtualization Manager are Identity, Policy, and Audit ( <acronym> IPA</acronym>) and Microsoft Active Directory."
+#~ msgstr "RHEV 平台提供了自己的內部 <systemitem>admin</systemitem> 使用者。其它使用者的認證，可透過使用已提供的區域管理工具 <command>rhevm-manage-domains</command>，連接目錄服務區域來進行支援。目前，受到支援與 RHEV Manager 搭配使用的目錄服務提供者為 Identity、Policy 與 Audit（<acronym>IPA</acronym>），以及 Microsoft Active Directory。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

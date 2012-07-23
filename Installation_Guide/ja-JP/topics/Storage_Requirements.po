@@ -1,0 +1,134 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 01:03-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Storage Requirements"
+msgstr "ストレージの要件"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtualization hosts require local storage to store configuration, logs, kernel dumps, and for use as swap space. The minimum storage requirements of the Red Hat Enterprise Virtualization Hypervisor are documented in this section. The storage requirements for Red Hat Enterprise Linux hosts vary based on the amount of disk space used by their existing configuration but are expected to be greater than those of the Red Hat Enterprise Virtualization Hypervisor."
+msgstr "仮想化ホストには、設定、ログ、カーネルダンプを格納したり、swap 領域として使用するためのローカルストレージが必要です。本セクションでは、Red Hat Enterprise Virtualization Hypervisor のストレージの最小要件について説明します。Red Hat Enterprise Linux ホストのストレージ要件は、既存の設定で使用されるディスク容量によって異なりますが、Red Hat Enterprise Virtualization Hypervisor の場合を上回ることが予想されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is recommended that each virtualization host has at least 2&nbsp;<acronym>GB</acronym> of internal storage. The minimum supported internal storage for each Hypervisor is the total of that required to provision the following partitions:"
+msgstr "各仮想化ホストには少なくとも 2 <acronym>GB</acronym> の内部ストレージを確保することを推奨します。各 Hypervisor でサポートされる内部ストレージの最小容量は、以下のパーティションのプロビジョニングに必要とされる容量の合計です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The root partitions require at least 512&nbsp;MB of storage."
+msgstr "root パーティションには少なくとも 512 MB のストレージが必要です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration partition requires at least 8&nbsp;MB of storage."
+msgstr "設定パーティションには少なくとも 8 MB のストレージが必要です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The recommended minimum size of the logging partition is 2048&nbsp;MB."
+msgstr "logging パーティションの推奨最小サイズは 2048 MB です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The data partition requires at least 256&nbsp;MB of storage. Use of a smaller data partition may prevent future upgrades of the Hypervisor from the Red Hat Enterprise Virtualization Manager. By default all disk space remaining after allocation of swap space will be allocated to the data partition."
+msgstr "データパーティションには、少なくとも 256 MB のストレージが必要です。この値を下回るデータパーティションを使用すると、将来、Red Hat Enterprise Virtualization Manager から Hypervisor をアップグレードできなくなる可能性があります。デフォルトでは、swap 領域の割り当て後に残ったディスク領域がすべてデータパーティションに割り当てられます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Hypervisor is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the Red Hat Enterprise Virtualization environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>."
+msgstr "swap パーティションには少なくとも 8 MB のストレージが必要です。swap パーティションの推奨サイズは、Hypervisor がインストールされているシステムと、その環境で予想されるオーバーコミットレベルの両方に応じて異なります。 オーバーコミットにより Red Hat Enterprise Virtualization 環境で実際物理的に存在する RAM を上回る容量の RAM をゲストに提供することができるようになります。デフォルトのオーバーコミット率は <literal>0.5</literal> です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The recommended size of the swap partition can be determined by:"
+msgstr "SWAP パーティションの推奨サイズは、 以下のような計算で決定します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Multiplying the amount of system <acronym>RAM</acronym> by the expected overcommit ratio, and adding"
+msgstr "システムの <acronym>RAM</acronym> 容量に予想されるオーバーコミット率をかけ、次の容量を加算します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "2&nbsp;<acronym>GB</acronym> of swap space for systems with 4&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> or less, or"
+msgstr "4 <acronym>GB</acronym> 以下の <acronym>RAM</acronym> が搭載されたシステムの場合は、2 <acronym>GB</acronym> の swap 領域"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "4&nbsp;<acronym>GB</acronym> of swap space for systems with between 4&nbsp;<acronym>GB</acronym> and 16 <acronym>GB</acronym> of <acronym>RAM</acronym>, or"
+msgstr "4 <acronym>GB</acronym> から 16 <acronym>GB</acronym> までの <acronym>RAM</acronym> が搭載されたシステムの場合は、4 <acronym>GB</acronym> の swap 領域"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "8 <acronym>GB</acronym> of swap space for systems with between 16&nbsp;<acronym>GB</acronym> and 64&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym>, or"
+msgstr "16 <acronym>GB</acronym> から 64 <acronym>GB</acronym> までの <acronym>RAM</acronym> が搭載されたシステムの場合は、8 <acronym>GB</acronym> の swap 領域"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "16&nbsp;<acronym>GB</acronym> of swap space for systems with between 64&nbsp;<acronym>GB</acronym> and 256 <acronym>GB</acronym> of <acronym>RAM</acronym>."
+msgstr "64 <acronym>GB</acronym> から 256 <acronym>GB</acronym> までの <acronym>RAM</acronym> が搭載されたシステムの場合は、16 <acronym>GB</acronym> の swap 領域"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Calculating Swap Partition Size"
+msgstr "Swap パーティションサイズの計算"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For a system with 8&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> this means the formula for determining the amount of swap space to allocate is:"
+msgstr "8 <acronym>GB</acronym> の <acronym>RAM</acronym> を搭載したシステムの場合、swap 領域に割り当てる容量を割り出す計算式は次のようになります。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "(8 <acronym>GB</acronym> x 0.5) + 4 <acronym>GB</acronym> = 8 <acronym>GB</acronym>"
+msgstr "(8 <acronym>GB</acronym> x 0.5) + 4 <acronym>GB</acronym> = 8 <acronym>GB</acronym>"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — <systemitem>Fakeraid Devices</systemitem> are not Supported"
+msgstr "重要 — <systemitem>fakeraid デバイス</systemitem> はサポートしていません"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor does not support installation on <systemitem>fakeraid</systemitem> devices. Where a <systemitem>fakeraid</systemitem> device is present it must be reconfigured such that it no longer runs in <acronym>RAID</acronym> mode."
+msgstr "Red Hat Enterprise Virtualization Hypervisor は、<systemitem>fakeraid</systemitem> デバイスへのインストールはサポートしていません。<systemitem>fakeraid</systemitem> デバイスがある場合は、 <acronym>RAID</acronym> モードでは実行されなくなるように再設定する必要があります。 "
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Access the <acronym>RAID</acronym> controller's <acronym>BIOS</acronym> and remove all logical drives from it."
+msgstr "<acronym>RAID</acronym> コントローラーの <acronym>BIOS</acronym> にアクセスして、すべての論理ドライブを削除してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Change controller mode to be non-RAID. This may be referred to as compatibility or <acronym>JBOD</acronym> mode."
+msgstr "コントローラーのモードを non-RAID (非 RAID) に変更します。これは、互換モードまたは <acronym>JBOD</acronym> モードと呼ばれる場合もあります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Access the manufacturer provided documentation for further information related to the specific device in use."
+msgstr "特定のデバイスに関する詳細情報は、製造元が提供しているドキュメントで確認してください。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

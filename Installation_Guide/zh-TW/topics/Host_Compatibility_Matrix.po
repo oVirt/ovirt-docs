@@ -1,0 +1,95 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:59-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Host Compatibility Matrix"
+msgstr "主機相容性基礎"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Version"
+msgstr "RHEL 版本"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization 3.0 clusters"
+msgstr "RHEV 3.0 叢集"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization 3.1 clusters in 3.0 compatibility mode"
+msgstr "RHEV 3.0 叢集於 2.2 相容性模式中"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization 3.1 clusters"
+msgstr "RHEV 3.0 叢集"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "6.2"
+msgstr "6.2+"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Supported"
+msgstr "支援"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Unsupported"
+msgstr "不支援"
+
+#. Tag: entry
+#, no-c-format
+msgid "6.3+"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7858-164530+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: entry
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization 2.2 clusters"
+#~ msgstr "RHEV 2.2 叢集"
+
+# Tag: entry
+#~ msgctxt ""
+#~ msgid "5.6+"
+#~ msgstr "5.6+"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

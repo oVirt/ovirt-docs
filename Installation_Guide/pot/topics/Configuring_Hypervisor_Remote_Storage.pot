@@ -1,0 +1,64 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring Hypervisor Remote Storage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The hypervisor supports the use of a remote <acronym> iSCSI</acronym> initiator for storage. The <acronym> iSCSI</acronym> initiator to use is set from the <guilabel>Remote Storage</guilabel> screen."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Remote Storage Configuration"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "iSCSI Initiator Name"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the initiator name in the <guilabel>iSCSI Initiator Name</guilabel> field."
+msgstr ""
+
+#. Tag: simpara
+#, no-c-format
+msgid "<literal>iqn.1994-05.com.redhat:5189835eeb40</literal>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Save Configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <guilabel>Remote Storage</guilabel> configuration has been updated."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7536-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

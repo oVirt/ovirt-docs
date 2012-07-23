@@ -1,0 +1,60 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Checking for Red Hat Enterprise Virtualization Manager Updates"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Use the <command>rhevm-check-update</command> command, included in Red Hat Enterprise Virtualization Manager, to check for updates."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run <command>rhevm-check-update</command> as the <systemitem>root</systemitem> user."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>rhevm-check-update</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Where no updates are available the command will output the text <literal>No updates available</literal>."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"# rhevm-check-update\n"
+"Loaded plugins: product-id, versionlock\n"
+"Checking for updates... (This may take several minutes)\n"
+"No updates available\n"
+"#\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Where updates are available the command will list the packages to be updated. You must then use the <command>rhevm-upgrade</command> to start the update process."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9941-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

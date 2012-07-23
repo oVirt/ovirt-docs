@@ -1,0 +1,48 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 09:45-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Data Centers in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The data center is the highest level container for all physical and logical resources within a managed virtual environment. The data center is a collection of clusters of Hosts. It owns the logical network (that is, the defined subnets for management, guest network traffic and storage network traffic) and the storage pool."
+msgstr "本セクションでは、データセンターの設定、作成、管理方法について説明します。データセンターは、管理対象の仮想環境内にあるすべての物理/論理リソースの最上位のコンテナーです。データセンターは、ホストクラスターの集合体で、論理ネットワーク (管理、ゲストネットワークトラフィック、およびストレージネットワークトラフィック用の定義済みサブネット) とストレージプールを持ちます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization contains a <literal>Default</literal> data center at installation. You can create new data centers that will also be managed from the single Administration Portal. For example, you may choose to have different data centers for different physical locations, business units, or for reasons of security. It is recommended that you do not remove the <literal>Default</literal> data center, instead set up new appropriately named data centers."
+msgstr "Red Hat Enterprise Virtualization では、インストール時にデフォルトのデータセンターが設定されますが、新規および追加のデータセンターをセットアップすることができます。データセンターはすべて、単一の管理ポータルから管理されます。たとえば、組織によっては、物理ロケーションや事業単位別に、もしくはセキュリティ上の理由から、異なるデータセンターを設置している場合があります。デフォルトのデータセンターは削除せずに、適切な名前のデータセンターを新たにセットアップすることを推奨します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The system administrator, as the superuser, can manage all aspects of the platform, that is, data centers, storage domains, users, roles and permissions by default; however more specific administrative roles and permissions can be assigned to other users. For example, the enterprise may need a Data Center administrator for a specific data center, or a particular cluster may need an administrator. All system administration roles for physical resources have a hierarchical permission system. For example, a data center administrator will automatically have permission to manage all the objects in that data center - including storage domains, clusters and hosts."
+msgstr "システム管理者は、スーパーユーザーとしてプラットフォームの全側面 (デフォルトでは、データセンター、ストレージプール、ユーザー、ロール、およびパーミッション) を管理することができますが、より具体的な管理ロールとパーミッションを他のユーザーに割り当てることができます。たとえば、エンタープライズ環境には、特定のデータセンターのデータセンター管理者や特定のクラスターの管理者が必要な場合があります。物理リソースを対象とするシステム管理ロールにはすべて、階層型のパーミッションシステムがあります。たとえば、データセンター管理者には、データセンター、ストレージ、クラスター、ホスト内の全オブジェクトを管理するパーミッションが自動的に割り当てられる一方、クラスター管理者が管理できるのは、特定のクラスター内の全オブジェクトです。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8913-162847+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Working with Data Centers"
+#~ msgstr "データセンターの操作"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

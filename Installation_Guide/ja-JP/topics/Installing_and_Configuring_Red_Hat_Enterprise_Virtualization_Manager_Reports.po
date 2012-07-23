@@ -1,0 +1,88 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 12:18-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing and Configuring Red Hat Enterprise Virtualization Manager Reports"
+msgstr "Red Hat Enterprise Virtualization Manager Reports のインストールと設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to install the Red Hat Enterprise Virtualization Manager Reports package, <package> rhevm-reports</package>, if you did not already do this when performing the datawarehouse installation. This package must be installed on the system that the Red Hat Enterprise Virtualization Manager is installed. You must be logged in as the <systemitem> root</systemitem> user."
+msgstr "データウェアハウスのインストール時に Red Hat Enterprise Virtualization Manager Reports パッケージの <package>rhevm-reports</package> をまだインストールしていない場合は <command>yum</command> を使用してインストールを行います。このパッケージは Red Hat Enterprise Virtualization Manager がインストールされているシステムにインストールする必要があります。また、<systemitem>root</systemitem> ユーザーでログインしてください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+msgstr "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You must run this command as the <systemitem class=\"username\"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager."
+msgstr "このコマンドは Red Hat Enterprise Virtualization Manager をホストしているシステムで <systemitem class=\"username\">root</systemitem> ユーザーとして実行しなければなりません。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-reports-setup</command>"
+msgstr "# <command>rhevm-reports-setup</command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the Red Hat Enterprise Virtualization Manager Reports installation to take effect it is necessary to restart the <systemitem> jbossas</systemitem> service. The <command>rhevm-reports-setup</command> command asks you:"
+msgstr "Red Hat Enterprise Virtualization Manager Reports インストールを機能させるには、<systemitem>jbossas</systemitem> サービスを再起動する必要があります。 <command>rhevm-reports-setup</command> コマンドにより以下の入力が求められます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"In order to proceed the installer must stop the JBoss service\n"
+"Would you like to stop the JBoss service? (yes|no):"
+msgstr ""
+"In order to proceed the installer must stop the JBoss service\n"
+"Would you like to stop the JBoss service? (yes|no):"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <keycap> yes</keycap> and then press <keycap> Enter</keycap> to proceed. The command then performs a number of actions before prompting you to set the password for the Red Hat Enterprise Virtualization Manager Reports administrative user ( <systemitem class=\"username\"> rhev-admin</systemitem>). Note that the reports system maintains its own set of credentials."
+msgstr "<keycap>yes</keycap> と入力してから <keycap>Enter</keycap> を押して続行します。このコマンドによりいくつかの動作が行われてから、Red Hat Enterprise Virtualization Manager Reports の管理ユーザーのパスワード設定が求められます (<systemitem class=\"username\">rhev-admin</systemitem>)。Reports システムではシステム独自の認証情報を管理する点に注意してください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Please choose a password for the admin user (rhevm-admin):"
+msgstr "Please choose a password for the admin user (rhevm-admin):"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You will be prompted to enter the password a second time to confirm it."
+msgstr "パスワードは確認のため 2 度入力が求められます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Reports have been installed successfully. Access Red Hat Enterprise Virtualization Manager Reports at <literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/rhevm-reports</literal>, replacing <literal><replaceable>demo.redhat.com</replaceable></literal> with the fully qualified domain name of the Red Hat Enterprise Virtualization Manager. If during Red Hat Enterprise Virtualization Manager installation you selected a non-default <acronym> HTTP</acronym> port replace <literal>8080</literal> with the port chosen."
+msgstr "Red Hat Enterprise Virtualization Manager Reports が正しくインストールされました。<literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/rhevm-reports</literal> で Red Hat Enterprise Virtualization Manager Reports にアクセスします。<literal><replaceable>demo.redhat.com</replaceable></literal> の部分は Red Hat Enterprise Virtualization Manager の完全修飾ドメイン名に置き換えてください。 Red Hat Enterprise Virtualization Manager のインストール中にデフォルト以外の <acronym>HTTP</acronym> ポートを選択している場合は <literal>8080</literal> の部分もそのポートにします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the username <systemitem class=\"username\"> rhevm-admin</systemitem> and the password you set during reports installation to log in for the first time. Note that the first time you log into Red Hat Enterprise Virtualization Manager Reports a number of web pages are generated, as a result your initial attempt to login may take some time to complete."
+msgstr "ユーザー名 <systemitem class=\"username\">rhevm-admin</systemitem> と Reports インストール時に設定したパスワードを使って初回ログインを行います。初めて Red Hat Enterprise Virtualization Manager Reports にログインすると、Web ページがいくつか生成されるためログインが完了するのに時間がかかる場合があります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7523-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

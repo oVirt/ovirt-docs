@@ -1,0 +1,152 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 11:51-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Syntax for rhevm-config Command"
+msgstr "rhevm-config 指令的語法"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration tool is accessible on the client machine on which the Red Hat Enterprise Virtualization Manager is installed. For full usage information consult the help output of the <command>rhevm-config</command> command:"
+msgstr "您將會在安裝了 RHEV Manager 的機器上發現配置工具。常見的使用範例將討論於此文件中。欲取得完整的使用資訊，請參閱 <command>rhevm-config</command> 指令的協助輸出："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-config <parameter>--help</parameter></command>"
+msgstr "# <command>rhevm-config <parameter>--help</parameter></command>"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Common tasks"
+msgstr "常見工作"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "List available configuration keys"
+msgstr "列出可用的配置金鑰"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <parameter>--list</parameter> parameter to list available configuration keys."
+msgstr "使用 <parameter>--list</parameter> 參數來列出可用的配置金鑰。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-config <parameter>--list</parameter></command>"
+msgstr "# <command>rhevm-config <parameter>--list</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Each available configuration key is listed by name and description."
+msgstr "此工具會以名稱列出各個可用配置金鑰。它亦會回傳各個金鑰用途上的詳述。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "List available configuration values"
+msgstr "列出可用的配置值"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <parameter>--all</parameter> parameter to list available configuration values."
+msgstr "使用 <parameter>--all</parameter> 參數來列出可用的配置值。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-config <parameter>--all</parameter></command>"
+msgstr "# <command>rhevm-config <parameter>--all</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Each available configuration key is listed by name, current value of the key, and the configuration version."
+msgstr "此工具會以名稱列出各個可用的配置金鑰，以及金鑰目前的值，與配置版本。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Retrieve value of configuration key"
+msgstr "取得配置金鑰的值"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <parameter>--get</parameter> parameter to retrieve the value of a specific key."
+msgstr "使用 <parameter>--get</parameter> 參數來取得特定金鑰的值。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-config <parameter>--get <replaceable>KEY_NAME</replaceable></parameter></command>"
+msgstr "# <command>rhevm-config <parameter>--get <replaceable>KEY_NAME</replaceable></parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Replace <replaceable>KEY_NAME</replaceable> with the name of the specific key to retrieve the key name, value, and the configuration version. Use the <parameter>--cver</parameter> parameter to specify the configuration version of the value to be retrieved."
+msgstr "請將 <replaceable>KEY_NAME</replaceable> 替換為金鑰的名稱，以取得金鑰。此工具會回傳金鑰的名稱、值，以及配置版本。您亦可使用選用性的 <parameter>--cver</parameter> 參數，來指定要由哪個配置值取得數值。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Set value of configuration key"
+msgstr "設置配置金鑰的值"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <parameter>--set</parameter> parameter to set the value of a specific key. You must also set the configuration version to which the change is to apply using The <parameter>--cver</parameter> parameter is required to specify the configuration version of the value to be set."
+msgstr "使用 <parameter>--set</parameter> 參數來設置特定金鑰的值。您亦必須透過使用 <parameter>--cver</parameter> 參數，來設置欲套用變更至哪個配置版本。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-config <parameter>--set <replaceable>KEY_NAME</replaceable>=<replaceable>KEY_VALUE</replaceable></parameter> <parameter>--cver=<replaceable>VERSION</replaceable></parameter></command>"
+msgstr "# <command>rhevm-config <parameter>--set <replaceable>KEY_NAME</replaceable>=<replaceable>KEY_VALUE</replaceable></parameter> <parameter>--cver=<replaceable>VERSION</replaceable></parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Replace <replaceable>KEY_NAME</replaceable> with the name of the specific key to set; replace <replaceable>KEY_VALUE</replaceable> with the value to be set. Environments with more than one configuration version require the <replaceable>VERSION</replaceable> to be specified."
+msgstr "請將 <replaceable>KEY_NAME</replaceable> 替換為欲設置的金鑰之名稱，並將 <replaceable>KEY_VALUE</replaceable> 替換為欲指定給它的值。在一個擁有超過一個配置版本的環境中，您亦必須小心將 <replaceable>VERSION</replaceable> 替換為使用中之配置版本的名稱。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7867-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

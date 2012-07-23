@@ -1,0 +1,103 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:27-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Installation Media using dd on Linux Systems"
+msgstr "準備 USB 安裝媒介以在 Linux 系統上使用 dd"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages."
+msgstr "安裝 <application> rhev-hypervisor*</application> 套件。"
+
+#. Tag: screen
+#, no-c-format
+msgid "# yum install rhev-hypervisor6 rhevm-hypervisor-tools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Use the <command>dd</command> command to copy the image file to the disk."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Use of <command>dd</command>"
+msgstr "<command>dd</command> 的使用方法"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This example uses a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>."
+msgstr "<acronym>USB</acronym> 儲存裝置（<systemitem>/dev/sdc</systemitem>）已準備好使用來啟動 hypervisor。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"# dd if=/usr/share/rhev-hypervisor/rhev-hypervisor.iso of=/dev/sdc\n"
+"243712+0 records in\n"
+"243712+0 records out\n"
+"124780544 bytes (125 MB) copied, 56.3009 s, 2.2 MB/s\n"
+msgstr ""
+"# dd if=/usr/share/rhev-hypervisor/rhev-hypervisor.iso of=/dev/sdc\n"
+"243712+0 records in\n"
+"243712+0 records out\n"
+"124780544 bytes (125 MB) copied, 56.3009 s, 2.2 MB/s\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning — All Data on the Device Specified Will be Overwritten"
+msgstr "警告 — 所指定之裝置上的所有資料皆會被覆寫"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command."
+msgstr "<command>dd</command> 指令會將為<parameter>of</parameter> 所指定之裝置上的所有資料覆蓋過去。裝置上的所有既有資料皆會損毀。在引動 <command>dd</command> 指令之前，請確認您指定了正確的裝置，並且該裝置不包含重要的資料。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym>USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) is ready to boot a hypervisor."
+msgstr "<acronym>USB</acronym> 儲存裝置（<systemitem>/dev/sdc</systemitem>）已準備好使用來啟動 hypervisor。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7528-164524+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Use the <command>dd</command> command to copy the .iso file to the disk. The example uses a <acronym> USB</acronym> storage device named <systemitem> /dev/sdc</systemitem>."
+#~ msgstr "使用 <command>dd</command> 指令來將 .iso 檔案複製至磁碟上。範例中使用了一個名為 <systemitem>/dev/sdc</systemitem> 的 <acronym>USB</acronym> 儲存裝置。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,328 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:10-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Hypervisor Interactively"
+msgstr "Hypervisor 互動式安裝"
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisors are able to use Storage Area Networks (<acronym>SANs</acronym>) and other network storage for storing virtualized guest images. Hypervisors can be installed on <acronym> SANs</acronym>, provided that the Host Bus Adapter (<acronym>HBA</acronym>) permits configuration as a boot device in <acronym> BIOS</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Hypervisors are able to use multipath devices for installation. Multipath is often used for <acronym>SANs</acronym> or other networked storage. Multipath is enabled by default at install time. Any block device which responds to <command>scsi_id</command> functions with multipath. Devices where this is not the case include <acronym> USB</acronym> storage and some older <acronym> ATA</acronym> disks."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "There are two methods for installing Red Hat Enterprise Virtualization Hypervisors:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Interactive Installation, documented here; and ."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unattended installation."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For information about unattended installation, refer to the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To commence Hypervisor installation select <guilabel>Install Hypervisor</guilabel> and press <keycap>Enter</keycap>."
+msgstr "若要開始進行 Hypervisor 的安裝程序，請選擇「<guilabel>安裝 Hypervisor</guilabel>」，然後按下「<keycap>Enter</keycap>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Keyboard Selection"
+msgstr "鍵盤選擇"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Keyboard screen allows you to configure the appropriate keyboard layout for your locale. Use the arrow keys to highlight the appropriate option. To save your selection, use <keycap>Tab</keycap> to move to <guilabel>Apply</guilabel>, and press <keycap>Enter</keycap>."
+msgstr "「鍵盤」畫面將能讓您配置適合您語言區域的鍵盤格式。請使用箭頭鍵來選取適當的選項。若要儲存您的選項，請使用 <keycap> Tab</keycap> 來移至「<guilabel>套用</guilabel>」，並按下 <keycap> Enter</keycap>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Keyboard Layout Configuration"
+msgstr "鍵盤格式配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Keyboard Layout Selection\n"
+"\n"
+"| Swiss German (latin1)                |\n"
+"| Slovak (qwerty)                      |\n"
+"| Slovenian                            |\n"
+"| Serbian                              |\n"
+"| Serbian (latin)                      |\n"
+"| Swedish                              |\n"
+"| Turkish                              |\n"
+"| Ukrainian                            |\n"
+"| United Kingdom                       |\n"
+"| *** U.S. English ******************* |\n"
+"\n"
+"&lt;Apply&gt;   &lt;Reset&gt;"
+msgstr ""
+"Keyboard Layout Selection\n"
+"\n"
+"| Swiss German (latin1)                |\n"
+"| Slovak (qwerty)                      |\n"
+"| Slovenian                            |\n"
+"| Serbian                              |\n"
+"| Serbian (latin)                      |\n"
+"| Swedish                              |\n"
+"| Turkish                              |\n"
+"| Ukrainian                            |\n"
+"| United Kingdom                       |\n"
+"| *** U.S. English ******************* |\n"
+"\n"
+"&lt;Apply&gt;   &lt;Reset&gt;"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Disk Configuration"
+msgstr "磁碟配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The installation script automatically detects all disks attached to the system. This information is used to assist with selection of the boot and installation disks that the hypervisor should use. Each entry displayed on these screens indicates the <guilabel>Location</guilabel>, <guilabel>Device Name</guilabel>, and <guilabel>Size (GB)</guilabel> of the relevant disk."
+msgstr "安裝 script 會自動偵測所有連至系統的磁碟。這項資訊會被使用來協助選擇 hypervisor 應使用哪個開機和安裝磁碟。顯示在這些畫面上的各個項目，皆代表相關磁碟的「<guilabel>位置</guilabel>」、「<guilabel>裝置名稱</guilabel>」，以及「<guilabel>大小（GB）</guilabel>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Boot disk"
+msgstr "開機磁碟"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The first disk selection screen is used to select the disk from which the hypervisor will boot. The hypervisor's boot loader will be installed to the Master Boot Record ( <acronym> MBR</acronym>) of the disk that is selected on this screen. The hypervisor attempts to automatically detect the disks attached to the system and presents the list from which you choose the boot device. Alternatively you are able to manually select a device, by specifying a block device name, by enabling the <guilabel>Other Device</guilabel> option."
+msgstr "第一個磁碟選擇畫面可用來選擇 hypervisor 所會經由其啟動的磁碟。Hypervisor 的開機載入程式將會被安裝至在此畫面上所選擇之磁碟的 Master Boot Record（<acronym>MBR</acronym>）。Hypervisor 會嘗試自動偵測連至系統的磁碟，並顯示清單以供您選擇開機裝置。此外，您亦可藉由啟用「<guilabel>其它裝置</guilabel>」，以指定區塊裝置名稱來手動式選擇裝置。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Boot Order"
+msgstr "重要 — 開機順序"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The disk selected must be identified as a boot device and appear in the boot order either in the system's BIOS or in a pre-existing boot loader."
+msgstr "您所選擇的磁碟必須被指定為開機裝置，並且出現在系統 BIOS，或是預先存在的開機載入程式中的開機順序裡。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Automatically Detected Device Selection"
+msgstr "自動偵測的裝置選擇"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the entry for the disk the hypervisor is to boot from in the list."
+msgstr "由清單中選擇 hypervisor 會經由其啟動的磁碟項目。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>. This action will save the boot device selection and start the next step of installation."
+msgstr "請點選「<guibutton>&lt;下一步&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap>。此動作將儲存開機裝置選項，並繼續進行安裝程序的下個步驟。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Manual Device Selection"
+msgstr "手動式裝置選擇"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Other Device</guilabel> entry from the list."
+msgstr "由清單中選擇「<guilabel>其它裝置</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>."
+msgstr "請點選「<guibutton>&lt;下一步&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "When prompted to <guilabel>Please enter the disk to use for booting RHEV Hypervisor</guilabel> enter the name of the block device from which the hypervisor should boot."
+msgstr "當被提示「<guilabel>請輸入欲用來啟動 RHEV Hypervisor 的磁碟</guilabel>」時，請輸入 hypervisor 將經由其啟動的區塊裝置之名稱。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Other Device Selection"
+msgstr "其它裝置選擇"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Please enter the disk to use for booting RHEV Hypervisor\n"
+"/dev/sda \n"
+msgstr ""
+"請輸入欲使用來啟動 RHEV Hypervisor 的磁碟\n"
+"/dev/sda \n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once a disk has been selected it is necessary to select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to save the selection and continue with hypervisor installation."
+msgstr "當您選擇了一個磁碟後，您必須點選「<guibutton>&lt;下一步&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap>，以儲存選項並繼續進行 hypervisor 的安裝程序。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installation Disk(s)"
+msgstr "安裝磁碟"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The disk(s) selected for installation will be those to which the hypervisor itself is installed. The hypervisor attempts to automatically detect the disks attached to the system and presents the list from which installation devices are chosen."
+msgstr "選擇用來安裝的磁碟，將會是 hypervisor 本身已安裝至的磁碟。Hypervisor 會嘗試自動偵測連至系統的磁碟，並顯示選擇了安裝裝置的清單。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning — Data Loss"
+msgstr "警告 — 資料遺失"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All data on the selected storage device(s) will be destroyed."
+msgstr "所選儲存裝置上的資料將會被刪除。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select each disk which the hypervisor is to use for installation and press <keycap> Space</keycap> to toggle it to enabled. Repeat this step for all disks you want the hypervisor to use. Where other devices are to be used for installation, either solely or in addition to those which are listed automatically, enable the <guilabel>Other Device</guilabel> option."
+msgstr "請選擇 hypervisor 將用來進行安裝的各個磁碟，並按下 <keycap>Space</keycap> 以將它切換為啟用狀態。請針對於您希望 hypervisor 所使用的各個磁碟重複此步驟。若有其它需使用來進行安裝的裝置（無論乃單獨或是搭配那些自動列出的裝置），請啟用「<guilabel>其它裝置</guilabel>」選項。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap> to continue."
+msgstr "請選擇「<guibutton>&lt;下一步&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap> 以繼續進行。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the <guilabel>Other Device</guilabel> option was specified a further prompt will appear. Enter the name of each additional block device to use for hypervisor installation separated by a comma. Once all required disks have been selected then select the <guibutton>&lt;Continue&gt;</guibutton> button and press <keycap>Enter</keycap>."
+msgstr "當指定了「<guilabel>其它裝置</guilabel>」選項後，另外會有項提示出現。請輸入各個欲使用於 hypervisor 安裝程序的額外區塊裝置名稱（以逗號來進行區隔）。當所有必要的磁碟皆選擇後，請點選「<guibutton>&lt;下一步&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap>。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Please select the disk(s) to use for installation of RHEV Hypervisor\n"
+"Enter multiple entries separated by commas\n"
+"/dev/mmcblk0,/dev/mmcblk1______________\n"
+msgstr ""
+"請選擇欲使用來安裝 RHEV Hypervisor 的磁碟\n"
+"請輸入多重項目並以逗號區隔開項目\n"
+"/dev/mmcblk0,/dev/mmcblk1______________\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once the installation disk, or disks, have been selected the next stage of the installation starts."
+msgstr "選擇了安裝磁碟後，安裝程序的下個步驟便會開始。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Password"
+msgstr "密碼"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor requires that a password be set to protect local console access by the <systemitem class=\"username\"> admin</systemitem> user. The installation script prompts you to enter the desired password in both the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields."
+msgstr "Hypervisor 會要求您設置一組密碼，以保護透過 <systemitem class=\"username\">admin</systemitem> 使用者身份，對於本機主控台的存取。安裝 script 會提示您在「<guilabel>密碼</guilabel>」與「<guilabel>確認密碼</guilabel>」欄位中輸入密碼。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A strong password must be used. Strong passwords consist of a mix of uppercase, lowercase, numeric, and punctuation characters. They are six or more characters long and do not contain dictionary words."
+msgstr "您必須使用一組高安全性的密碼。高安全性的密碼包含了大小寫字母、數字，以及標點符號字元。密碼長度必須達六個字元以上，並且不包含任何字典字彙。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once a strong password has been entered select <guibutton>&lt;Install&gt;</guibutton> and press <keycap>Enter</keycap> to install the hypervisor to disk."
+msgstr "輸入了一組高安全性的密碼後，請選擇「<guibutton>&lt;安裝&gt;</guibutton>」並按下 <keycap>Enter</keycap> 鍵，以將 hypervisor 安裝至磁碟上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once installation is complete the message <literal>RHEV Hypervisor Installation Finished Successfully</literal> will be displayed. Select the <guibutton>&lt;Restart&gt;</guibutton> button and press <keycap>Enter</keycap> to reboot the system."
+msgstr "安裝完成後，<literal>RHEV Hypervisor 安裝程序已成功完成</literal>這則訊息便會出現。請選擇「<guibutton>&lt;重新開機&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap> 鍵，以重新啟動系統。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Note — Remove Boot Media"
+msgstr "請注意 — 移除開機媒介"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The boot media should be removed and the boot device order changed to prevent the installation sequence restarting after the system reboots."
+msgstr "您需要移除開機光碟，並更改開機裝置的順序，以避免重新開機之後，又再次進入安裝程序。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7610-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,86 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:16-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Red Hat Enterprise Virtualization Manager Packages"
+msgstr "安裝 Red Hat Enterprise Virtualization Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager and all of its dependencies are available via Red Hat Network. To install the Manager you must ensure connectivity with either the Red Hat Network or a Red Hat Network Satellite Server is available. You must also ensure that you have access to all required Red Hat Network channels."
+msgstr "RHEV Manager 以及其所有相依項目皆能透過 Red Hat Network（RHN）取得。若要安裝 manager，您必須確認您擁有有效的 RHN 或是 Red Hat Network Satellite Server 連線。您亦必須確認您能夠存取所有必要的 RHN 頻道。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If installed, the <package>classpathx-jaf</package> package must be removed. It conflicts with some of the components installed to support <acronym> JBoss</acronym>."
+msgstr "若已安裝了 <package>classpathx-jaf</package> 套件，您必須將之移除。它會與某些安裝來支援 <acronym>JBoss</acronym> 的套件產生衝突。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command>"
+msgstr "# <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to ensure that the most up to date versions of all installed packages are in use."
+msgstr "請使用 <command>yum</command> 以確保您所使用的套件皆為最新版本。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>upgrade</parameter></command>"
+msgstr "# <command>yum <parameter>upgrade</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to initiate installation of the <package>rhevm</package> package and all dependencies. You must run this command as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr "請使用 <command>yum</command> 來進行 <package>rhevm</package> 套件以及所有相依套件的安裝程序。您必須以 <systemitem class=\"username\">root</systemitem> 身份來執行這項指令。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum</command> <parameter>install</parameter> <parameter>rhevm</parameter>"
+msgstr "# <command>yum</command> <parameter>install</parameter> <parameter>rhevm</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All required packages and dependencies are installed. You must now configure the system."
+msgstr "您已安裝了所有必要套件及其相依項目。您現在必須配置系統。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7519-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

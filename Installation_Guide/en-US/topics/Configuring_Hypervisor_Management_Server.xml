@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Hypervisor_Management_Server" remap="TID_7537">
+	<title>Configuring Hypervisor Management Server</title>
+	<para>
+		The hypervisor is able to attach itself to the Red Hat Enterprise Virtualization Manager immediately if the address of the Manager is available. Where the Manager has not yet been installed you must instead set a password. This allows the hypervisor to be added from the Administration Portal once the Manager has been installed. Both modes of configuration are supported from the <guilabel>RHEV-M</guilabel> screen in the Hypervisor user interface.
+	</para>
+	<important>
+		<title>Important — Security Considerations</title>
+		<para>
+			Setting a password on the <guilabel>RHEV-M</guilabel> configuration screen sets the Hypervisor's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Hypervisor has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled.
+		</para>
+	</important>
+	<procedure>
+		<step>
+			<stepalternatives>
+				<step>
+					<title>Configuration Using a Management Server Address</title>
+					<substeps>
+						<step>
+							<para>
+								Enter the <acronym>IP</acronym> address or fully qualified domain name of the Manager in the <guilabel>Management Server</guilabel> field.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enter the management server port in the <guilabel>Management Server Port</guilabel> field. The default value is <literal>443</literal>. Where a different port was selected during Red Hat Enterprise Virtualization Manager installation then it should be specified here, replacing the default value.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enable the <guilabel>Verify RHEVM Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of Red Hat Enterprise Virtualization Manager installation.
+							</para>
+						</step>
+						<step>
+							<para>
+								Leave the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields blank, these fields are not required if the address of the management server is known.
+							</para>
+						</step>
+					</substeps>
+				</step>
+				<step>
+					<title>Configuration Using a Password</title>
+					<substeps>
+						<step>
+							<para>
+								Enter a password in the <guilabel>Password</guilabel> field. It is recommended that you use a strong password. Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words.
+							</para>
+						</step>
+						<step>
+							<para>
+								Re-enter the password in the <guilabel>Confirm Password</guilabel> field.
+							</para>
+						</step>
+						<step>
+							<para>
+								Leave the <guilabel>Management Server</guilabel> and <guilabel>Management Server Port</guilabel> fields blank. As long as a password is set, allowing the Hypervisor to be added to the Manager later, these fields are not required.
+							</para>
+						</step>
+					</substeps>
+				</step>
+			</stepalternatives>
+		</step>
+		<step>
+			<title>Save Configuration</title>
+			<para>
+				To save the configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The <guilabel>RHEV-M</guilabel> configuration has been updated.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

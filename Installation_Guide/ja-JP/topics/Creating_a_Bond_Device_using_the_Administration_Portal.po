@@ -1,0 +1,120 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-04 12:11-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Creating a Bond Device using the Administration Portal"
+msgstr "管理ポータルを使用したボンドデバイスの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Hosts</guilabel> tab."
+msgstr "<guilabel>ホスト</guilabel>タブをクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the host for which a bond device will be created."
+msgstr "ボンドデバイスを作成するホストを選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Network Interfaces</guilabel> tab in the details pane."
+msgstr "詳細ペインにある<guilabel>ネットワークインターフェース</guilabel>タブをクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the devices that will be included in the bond, ensuring they are all of the same make and model."
+msgstr "ボンドに含ませるデバイスを選択します。選択するデバイスは同じメーカーの同じ型式のものにします。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Bond Network Devices."
+msgstr "ネットワークデバイスのボンド"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>Bond</guibutton> button. The <guilabel>Bond Network Interfaces</guilabel> dialog displays."
+msgstr "<guibutton>ボンド</guibutton>ボタンをクリックします。<guilabel>ネットワークインターフェースのボンド</guilabel>ダイアログが表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Bond Devices Dialogue."
+msgstr "ボンドデバイスのダイアログ"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the configuration information for the new bond device including:"
+msgstr "以下のような新しいボンドデバイスの設定情報を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bond Name: select one from the drop down list."
+msgstr "ボンド名: ドロップダウンリストから一つ選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Network: the logical network that the bond device will be a part of."
+msgstr "ネットワーク: ボンドデバイスを参加させる論理ネットワークを選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bonding mode: the bonding mode that provides the desired functionality."
+msgstr "ボンディングモード: 目的の機能を提供するボンディングモードを選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "IP address assignment mechanism: either DHCP or Static. If static, then IP, Subnet Mask, and Default Gateway must all be set manually."
+msgstr "IP アドレス割り当てのメカニズム: DHCP か静的のどちらかを選択します。静的の場合は IP、サブネットマスク、デフォルトのゲートウェイをすべて手作業で設定しなければなりません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Check connectivity: ensure that the bond device is functional upon creation."
+msgstr "接続の確認: 作成時にボンドデバイスが機能することを確認します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Save Network Configuration: make the bond device persistent through reboots."
+msgstr "ネットワーク設定の保存: 再起動後もボンドデバイス構成を持続させます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>OK</guibutton>. The <guilabel>Events</guilabel> tab displays <guilabel>Bond device created</guilabel>."
+msgstr "<guibutton>OK</guibutton> をクリックします。<guilabel>イベント</guilabel>タブに<guilabel>ボンドデバイスが作成されました。</guilabel>が表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A bond device is listed in the <guilabel>Network Interfaces</guilabel> tab of the details pain for the selected host"
+msgstr "選択したホストの詳細ペインの<guilabel>ネットワークインターフェース</guilabel>タブにボンドデバイスが表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bonding must be enabled for the ports that the host uses on the switch it is connected to. The process by which bonding is enabled is slightly different for each switch, consult the manual provided by your switch vendor for detailed information on how to enable bonding."
+msgstr "接続しているスイッチでホストが使用するポートに対してボンディングを有効にする必要があります。ボンディングを有効にするプロセスは各スイッチによって若干異なりますので、ボンディングを有効にする方法についてはメーカー提供のマニュアルを参照してください。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7628-162305+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

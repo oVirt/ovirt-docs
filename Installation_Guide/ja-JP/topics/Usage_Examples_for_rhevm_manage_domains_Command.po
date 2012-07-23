@@ -1,0 +1,78 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:33\n"
+"PO-Revision-Date: 2012-07-05 10:31-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Using the Domain Management Tool"
+msgstr "ドメイン管理ツールの使用"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The following examples demonstrate the use of the <command>rhevm-manage-"
+"domains</command> to perform basic manipulation of the Red Hat Enterprise "
+"Virtualization Manager domain configuration."
+msgstr ""
+"以下のセクションには、Red Hat Enterprise Virtualization Manager ドメイン設定の基本的な操作を行うための "
+"<command>rhevm-manage-domains</command> の使用方法の実例を取り上げています。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "See Also:"
+msgstr "参照先:"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<xref linkend=\"Adding_Domains_to_Configuration\" />"
+msgstr "<xref linkend=\"Adding_Domains_to_Configuration\" />"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<xref linkend=\"Edit_Domain_in_Configuration\" />"
+msgstr "<xref linkend=\"Edit_Domain_in_Configuration\" />"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<xref linkend=\"Deleting_Domains_from_Configuration\" />"
+msgstr "<xref linkend=\"Deleting_Domains_from_Configuration\" />"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<xref linkend=\"Validating_Configuration\" />"
+msgstr "<xref linkend=\"Validating_Configuration\" />"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<xref linkend=\"Listing_Domains_in_Configuration\" />"
+msgstr "<xref linkend=\"Listing_Domains_in_Configuration\" />"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"

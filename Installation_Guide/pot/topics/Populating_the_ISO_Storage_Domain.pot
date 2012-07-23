@@ -1,0 +1,74 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Populating the ISO Storage Domain"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Once an <acronym> ISO</acronym> storage domain is defined for a data center, CD-ROM images or <acronym> ISO</acronym> images must be uploaded for the virtual machines to use. Red Hat Enterprise Virtualization provides an <acronym> ISO</acronym> uploader tool that ensures that the images are uploaded into the correct directory path, with the correct user permissions. While an example is provided here, for full usage information see ."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The creation of <acronym> ISO</acronym> images from physical media is not described in this document. It is assumed that you have access to the images required for your environment."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Copy the required <acronym> ISO</acronym> image to a temporary directory on the system running Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Log in to the system running Red Hat Enterprise Virtualization Manager as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Use the <command>rhevm-iso-uploader</command> command to upload the <acronym> ISO</acronym> image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "<acronym>ISO</acronym> Uploader Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In this example the <acronym> ISO</acronym> image <filename>RHEL6.iso</filename> is uploaded to the <acronym> ISO</acronym> domain called <literal>ISODomain</literal> using <acronym> NFS</acronym>. The command will prompt for an administrative username and password. The username must be provided in the form <replaceable>username</replaceable>@<replaceable>domain</replaceable>."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>rhevm-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <acronym> ISO</acronym> image is uploaded and appears in the <acronym> ISO</acronym> storage domain specified. It is also available in the list of available boot media when creating virtual machines in the data center which the storage domain is attached to."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7637-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

@@ -1,0 +1,77 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-06 03:19-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Network Setup"
+msgstr "ネットワークの設定"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This chapter provides instruction on configuring networking for the Red Hat "
+"Enterprise Virtualization environment. For information about managing "
+"networking, including maintenance, refer to the <citetitle>Red Hat "
+"Enterprise Virtualization Administration Guide</citetitle>."
+msgstr ""
+"本章では Red Hat Enterprise Virtualization "
+"環境のネットワーク設定の方法について説明します。ネットワーク管理に関する情報 (例: メンテナンス) は <citetitle>Red Hat "
+"Enterprise Virtualization 管理ガイド</citetitle> を参照してください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization uses networking to support almost every "
+"aspect of operations. Storage, host management, user connections, and "
+"virtual machine connectivity, for example, all rely on a well planned and "
+"configured network to deliver optimal performance. Setting up networking is "
+"a vital prerequisite for a Red Hat Enterprise Virtualization environment "
+"because it is much simpler to plan for your projected networking "
+"requirements and implement your network accordingly than it is to discover "
+"your networking requirements through use and attempt to alter your network "
+"configuration retroactively."
+msgstr ""
+"Red Hat Enterprise Virtualization "
+"では、ネットワークを使用することによって、操作のほぼ全側面に対応しています。ストレージ、ホストの管理、ユーザー接続、仮想マシンの接続などで最適なパフォーマンスを提供できるかどうかはすべて、ネットワークが適切に計画/"
+"設定されているかによって左右されます。ネットワークの使用を試みることでネットワーク要件を特定してから過去に遡ってネットワーク設定を修正するよりは、推定されるネットワーク要件に対応した計画を立て、その計画に応じてネットワークを実装する方がはるかに容易であるため、ネットワークの設定は、Red "
+"Hat Enterprise Virtualization 環境の極めて重要な前提条件となります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"A familiarity with the network concepts and their use is highly recommended "
+"when planning and setting up networking in a Red Hat Enterprise "
+"Virtualization environment. This document does not describe the concepts, "
+"protocols, requirements or general usage of bonds, bridges and logical "
+"networks. It is recommended that you read your network hardware vendor's "
+"guides for more information on managing networking."
+msgstr ""
+"Red Hat Enterprise Virtualization "
+"環境におけるネットワークの計画と設定を行うにあたっては、ネットワークの概念と使用方法を充分に理解しておくことを強く推奨します。本ガイドではボンド、ブリッジ、論理ネットワークの概念/"
+"プロトコル/要件/"
+"一般的な使用法については説明しません。ネットワーク管理についての詳しい情報は、ご使用のネットワークハードウェアの製造元が提供している説明書を参照することをお勧めします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

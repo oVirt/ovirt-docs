@@ -1,0 +1,112 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 06:34-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing Optical Hypervisor Installation Media"
+msgstr "インストール用光学メディアの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Burn the hypervisor image to a CD-ROM with the <command>wodim</command> command. The <command>wodim</command> command is part of the <package> wodim</package> package."
+msgstr "<command>wodim</command> コマンドを使用して Hypervisor のイメージを CD-ROM に焼き付けます。<command>wodim</command> コマンドは <package>wodim</package> パッケージの一部です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Verify that the <package> wodim</package> package is installed on the system."
+msgstr "<package>wodim</package> パッケージがシステムにインストールされていることを確認します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Verify Installation of <package>wodim</package> Package"
+msgstr "<package>wodim</package> パッケージのインストール確認"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"# rpm -q wodim\n"
+"wodim-1.1.9-11.el6.x86_64\n"
+msgstr ""
+"# rpm -q wodim\n"
+"wodim-1.1.9-11.el6.x86_64\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the package version is in the output the package is available."
+msgstr "パッケージのバージョンが出力に表示された場合には、そのパッケージは使用可能です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If nothing is listed, install <package> wodim</package>:"
+msgstr "出力が表示されない場合には <package>wodim</package> をインストールします。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# yum install wodim\n"
+msgstr "# yum install wodim"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert a blank CD-ROM or DVD into your CD or DVD writer."
+msgstr "CD/DVD ライターに、空の CD-ROM または DVD を挿入します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Record the ISO file to the disc. The <package> wodim</package> command uses the following:"
+msgstr "<package>wodim</package> コマンドを以下のように使用して ISO ファイルをディスクに焼き付けます。"
+
+#. Tag: screen
+#, no-c-format
+msgid "wodim dev=<replaceable>device</replaceable> <replaceable>image</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This example uses the first CD-RW (<systemitem>/dev/cdrw</systemitem>) device available and the default hypervisor image location, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>."
+msgstr "この例では、利用可能な 第 1 の CD-RW (<systemitem>/dev/cdrw</systemitem>) デバイスと、Hypervisor イメージのデフォルトの場所 <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> を使用しています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Use of <command>wodim</command> Command"
+msgstr "<command>wodim</command> コマンドの使用例"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# wodim dev=/dev/cdrw /usr/share/rhev-hypervisor/rhev-hypervisor.iso\n"
+msgstr "# wodim dev=/dev/cdrw /usr/share/rhev-hypervisor/rhev-hypervisor.iso\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If no errors occurred, the hypervisor is ready to boot. Errors sometimes occur during the recording process due to errors on the media itself. If this occurs insert another writable disk and repeat the command above."
+msgstr "エラーが出力されない場合は、Hypervisor の起動準備が整ったことになります。メディア自体の不具合により記録のプロセスでエラーが発生することが時々あります。このような状態が発生した場合には、別の書き込み可能なディスクを挿入して、上記のコマンドを再度入力してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor uses a program (<command>isomd5sum</command>) to verify the integrity of the installation media every time the hypervisor is booted. If media errors are reported in the boot sequence you have a bad CD-ROM. Follow the procedure above to create a new CD-ROM or DVD."
+msgstr "Hypervisor は、プログラム (<command>isomd5sum</command>) を使用して、Hypervisor の起動時に毎回、インストールメディアの整合性を検証します。起動シーケンスでメディアエラーが報告される場合は、CD-ROM 自体が不良ということになります。上記の手順にしたがって CD-ROM または DVD を新規作成してください。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7531-164528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "wodim <parameter>dev=device /iso/file/path/</parameter>\n"
+#~ msgstr "wodim <parameter>dev=device /iso/file/path/</parameter>\n"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

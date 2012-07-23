@@ -1,0 +1,79 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-21 09:00-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Client Log Files"
+msgstr "客戶端日誌檔案"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Client"
+msgstr "客戶端"
+
+# Tag: entry
+#. Tag: entry
+#, no-c-format
+msgctxt ""
+msgid "Log File"
+msgstr "日誌檔案"
+
+# Tag: entry
+#. Tag: entry
+#, no-c-format
+msgctxt ""
+msgid "Description"
+msgstr "描述"
+
+# Tag: entry
+#. Tag: entry
+#, no-c-format
+msgctxt ""
+msgid ""
+"<filename><replaceable>%TEMP%</replaceable>/<replaceable>manager_hostname</"
+"replaceable>/log</filename>"
+msgstr ""
+"<filename><replaceable>%TEMP%</replaceable>/<replaceable>manager_hostname</"
+"replaceable>/log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, no-c-format
+msgctxt ""
+msgid ""
+"Client side log of messages output by the Administration Portal <acronym> "
+"WPF</acronym> applet."
+msgstr "由管理入口網站 <acronym>WPF</acronym> 小程式所輸出的用戶端日誌訊息。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

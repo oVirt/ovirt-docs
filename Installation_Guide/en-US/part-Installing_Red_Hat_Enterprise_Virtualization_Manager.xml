@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE part PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<part id="part-Installing_Red_Hat_Enterprise_Virtualization_Manager">
+	<title>Installing Red Hat Enterprise Virtualization Manager</title>
+	<xi:include href="chap-Manager_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<xi:include href="chap-Data_Collection_Setup_and_Reports_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<xi:include href="chap-Upgrades_between_Minor_Releases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</part>

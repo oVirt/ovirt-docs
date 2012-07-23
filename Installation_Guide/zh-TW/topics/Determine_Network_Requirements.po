@@ -1,0 +1,98 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:36-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Networking in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization uses networking to support almost every aspect of operations. Storage, host management, user connections, and virtual machine connectivity, for example, all rely on a well planned and configured network to deliver optimal performance. Setting up networking is a vital prerequisite for a Red Hat Enterprise Virtualization environment because it is much simpler to plan for your projected networking requirements and implement your network accordingly than it is to discover your networking requirements through use and attempt to alter your network configuration retroactively."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is however possible to deploy a Red Hat Enterprise Virtualization environment with no consideration given to networking at all. Simply ensuring that each physical machine in the environment has at least one <firstterm>Network Interface Controller</firstterm> (<acronym>NIC</acronym>) cabled to a switch and assigned an IP address by DHCP is enough to begin using a Red Hat Enterprise Virtualization environment. While it is true that this approach to networking will provide a functional environment, it will not provide an optimal environment. Because network usage varies by task or action, grouping related tasks or functions into specialized networks can improve performance while simplifying the troubleshooting of network issues. By default, the Red Hat Enterprise Virtualization Manager creates one logical network called <systemitem>rhevm</systemitem> and uses this logical network for all traffic."
+msgstr "您亦可在完全不顧慮網路的情況下，建置 RHEV 環境。您僅需要確認環境中的各個實體機器皆擁有至少一個 <firstterm>Network Interface Controller</firstterm>（<acronym>NIC</acronym>）連至網路切換器，並由 DHCP 提供了一組 IP 位址，如此一來便以足夠開始使用 RHEV 環境。儘管這麼作能提供一個可運作的環境，不過它將無法提供最佳的環境。因為網路使用量取決於工作或動作，因此若將相關的工作或功能分組至特定的網路中，將能改善效能並簡化網路問題的疑難排解。就預設值，RHEV Manager 會建立一個名為 <systemitem>rhevm</systemitem> 的邏輯網路，並使用此邏輯網路來處理所有流量。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <systemitem>rhevm</systemitem> network is created and labeled as the <guilabel>Management</guilabel> logical network. The <systemitem>rhevm</systemitem> logical network is intended for management traffic between the Red Hat Enterprise Virtualization Manager and virtualization hosts. Other types of traffic that are common to all Red Hat Enterprise Virtualization environments are:"
+msgstr "<systemitem>rhevm</systemitem> 網路會被建立且標記為「<guilabel>Management</guilabel>」邏輯網路。<systemitem>rhevm</systemitem> 邏輯網路是為了用來管理 RHEV Manager，以及虛擬主機之間的流量。所有 RHEV 環境中的常見流量類型有："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Display related traffic."
+msgstr "顯示相關流量"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "General virtual machine networking traffic."
+msgstr "一般虛擬機器網路流量"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Storage related traffic."
+msgstr "儲存裝置相關的流量"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the Red Hat Enterprise Virtualization environment to perform optimally, these types of traffic should be separated. This is easily accomplished by assigning each type of network traffic to a different logical network. Each logical network must be associated with a cabled, active network device. The network device that supports each logical network can be a physical <acronym>NIC</acronym> or a logical interface, such as a bond device."
+msgstr "若希望 RHEV 環境能以最佳化執行，您應將這些類型的流量區隔開。若要如此，您可將各類型的網路流量指定給不同的邏輯網路。各個邏輯網路皆必須與實體連接、啟用的網路裝置相聯。支援各個邏輯網路的網路裝置能是實體裝置、<acronym>NIC</acronym> 或邏輯裝置，例如綁定裝置或是虛擬 NIC（<acronym>VNIC</acronym>）。"
+
+#. Tag: para
+#, no-c-format
+msgid "The number of logical networks that can be created in a Red Hat Enterprise Virtualization environment is limited by the number of VLANs defined in the environment. Each logical network needs at least one VLAN to support it."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A familiarity with the network concepts and their use is highly recommended when planning and setting up networking in a Red Hat Enterprise Virtualization environment. This document does not describe the concepts, protocols, requirements or general usage of bonds, bridges and logical networks. It is recommended that you read your network hardware vendor's guides for more information on managing networking."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8668-162223+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Determine Network Requirements"
+#~ msgstr "判斷網路需求"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The number of logical networks that can be defined and implemented in a Red Hat Enterprise Virtualization environment is limited by the number of network interfaces present on the virtualization hosts in the environment. Each logical network needs at least one physical device to support it. Because a logical network must be implemented for each host in a cluster for the logical network to be operational, the number of logical networks that can be implemented in a given cluster is limited by the host in a cluster with the fewest NICs."
+#~ msgstr "RHEV 環境中所能定義及實作的邏輯網路數量，受限於環境中之虛擬主機上的網路介面卡數量。各邏輯網路皆需要至少一個支援它的實體裝置。因為叢集中所有主機的邏輯網路皆必須實作，邏輯網路才能進行作業，因此叢集中可實作的邏輯網路數量受限於叢集中 NIC 數量最少的主機。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

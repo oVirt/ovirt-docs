@@ -1,0 +1,105 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 10:30-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Connecting to the Administration Portal"
+msgstr "連上管理入口網站"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Return to the browser and navigate to <uri>https://<replaceable>manager.demo.redhat.com</replaceable>/webadmin</uri>. Replace <filename>manager.demo.redhat.com</filename> with the fully qualified domain name that you provided during installation. Additionally where a non-default <acronym>HTTPS</acronym> port was selected during installation, it must be appended to the domain name. For example if the port selected during installation was <literal>8443</literal> then the URL would become <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:<replaceable>8443</replaceable>/webadmin</uri>."
+msgstr "請返回瀏覽器並前往 <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:8443/RHEVManager</uri>。請將 <filename>manager.demo.redhat.com</filename> 替換為在進行安裝程序時所提供的 URL。此外，若在進行安裝時選擇了非預設的 <acronym>HTTPS</acronym> 連接埠，請將 <acronym>URL</acronym> 中的 <literal>8443</literal> 替換為所選擇的連接埠。"
+
+#. Tag: para
+#, no-c-format
+msgid "The first time that you connect, you will be prompted to trust the certificate being used to secure communications between your browser and the web server."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The login screen displays. Enter <systemitem>admin</systemitem> as your <guilabel>User Name</guilabel>, and enter the password that you set during installation into the <guilabel>Password</guilabel> field. Ensure that the <systemitem>internal</systemitem> domain is selected in the <guilabel>Domain</guilabel> list."
+msgstr "入口網站登錄畫面將會出現。請以您的「<guilabel>使用者名稱</guilabel>」進入「<systemitem>admin</systemitem>」。請將在進行安裝時設置的密碼輸入在「<guilabel>密碼</guilabel>」欄位中。請由「<guilabel>區域</guilabel>」清單中，選擇 <systemitem>internal</systemitem> 區域。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Login</guilabel> to log in."
+msgstr "點選「<guilabel>登錄</guilabel>」以進行登入。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You have now successfully logged into the Red Hat Enterprise Virtualization web Administration Portal. You can now:"
+msgstr "您現在已成功登入至 RHEV 的管理入口網站。您現在能夠："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "optionally, install Red Hat Enterprise Virtualization Manager Reports, or"
+msgstr "選用性的安裝 RHEV Manager Reports，或是"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "begin installing virtualization hosts."
+msgstr "開始安裝虛擬主機。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Data_Collection_Setup_and_Reports_Installation\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"part-Installing_Virtualization_Hosts\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7629-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "If this is your first time connecting to the Administration Portal, you will be prompted to trust the <filename>ca.cer</filename> certificate and install the <filename>RHEV-GUI-CertificateInstaller.exe</filename> certificate. Follow the prompts, then click the new link that appears on the page to reload the Administration Portal."
+#~ msgstr "若這是您第一次連上管理入口網站，您將會被提示信任 <filename>ca.cer</filename> 憑證，並安裝 <filename>RHEV-GUI-CertificateInstaller.exe</filename> 憑證。請依照提示進行，並按下出現在網頁上的新連結，以載入管理入口網站。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

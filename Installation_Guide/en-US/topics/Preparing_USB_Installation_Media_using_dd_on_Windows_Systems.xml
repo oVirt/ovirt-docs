@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Preparing_USB_Installation_Media_using_dd_on_Windows_Systems" remap="TID_7529">
+	<title>Preparing USB Installation Media using dd on Windows Systems</title>
+	<procedure>
+		<step>
+			<para>
+				Access <ulink url="http://www.redhat.com/services/custom/cygwin/"/> and click the <application>Red Hat Cygwin official installation utility</application> link. The <filename>rhsetup.exe</filename> executable will download.
+			</para>
+		</step>
+		<step>
+			<para>
+				As the <systemitem class="username">Administrator</systemitem> user run the downloaded <filename>rhsetup.exe</filename> executable. The <application>Red Hat Cygwin</application> installer will display.
+			</para>
+		</step>
+		<step>
+			<para>
+				Follow the prompts to complete a standard installation of <application>Red Hat Cygwin</application>. The <package>Coreutils</package> package within the <package>Base</package> package group provides the <command>dd</command> utility. This is automatically selected for installation.
+			</para>
+		</step>
+		<step>
+			<para>
+				Copy the <filename>rhev-hypervisor.iso</filename> file downloaded from <application>Red Hat Network</application> to <filename>C:\rhev-hypervisor.iso</filename>.
+			</para>
+		</step>
+		<step>
+			<para>
+				As the <systemitem class="username">Administrator</systemitem> user run <application>Red Hat Cygwin</application> from the desktop. A terminal window will appear.
+			</para>
+			<important>
+				<para>
+					On the <application>Windows 7</application> and <application>Windows Server 2008</application> platforms it is necessary to right click the <application>Red Hat Cygwin</application> icon and select the <guilabel>Run as Administrator...</guilabel> option to ensure the application runs with the correct permissions.
+				</para>
+			</important>
+		</step>
+		<step>
+			<para>
+				In the terminal run <command>cat /proc/partitions</command> to see the drives and partitions currently visible to the system.
+			</para>
+			<example>
+				<title>View of Disk Partitions Attached to System</title>
+				<screen>                    
+Administrator@test /
+$ cat /proc/partitions  
+major minor  #blocks  name
+    8     0  15728640 sda
+    8     1    102400 sda1
+    8     2  15624192 sda2  
+</screen>
+			</example>
+		</step>
+		<step>
+			<para>
+				Plug the <acronym> USB</acronym> storage device which is to be used as the media for the hypervisor installation into the system. Re-run the <command>cat /proc/partitions</command> command and compare the output to that of the previous run. A new entry will appear which designates the <acronym> USB</acronym> storage device.
+			</para>
+			<example>
+				<title>View of Disk Partitions Attached to System</title>
+				<screen>
+Administrator@test /
+$ cat /proc/partitions
+major minor  #blocks  name
+    8     0  15728640 sda
+    8     1    102400 sda1
+    8     2  15624192 sda2
+    8    16    524288 sdb
+</screen>
+			</example>
+		</step>
+		<step>
+			<para>
+				Use the <command>dd</command> command to copy the <filename>rhev-hypervisor.iso</filename> file to the disk. The example uses a <acronym> USB</acronym> storage device named <systemitem> /dev/<replaceable>sdb</replaceable></systemitem>. Replace <replaceable>sdb</replaceable> with the correct device name for the <acronym> USB</acronym> storage device to be used.
+			</para>
+			<example>
+				<title>Use of <command>dd</command> Command Under <application>Red Hat Cygwin</application></title>
+				<screen>
+Administrator@test /
+$ dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb&amp; pid=$!
+</screen>
+			</example>
+			<para>
+				The provided command starts the transfer in the background and saves the process identifier so that it can be used to monitor the progress of the transfer. Refer to the next step for the command used to check the progress of the transfer.
+			</para>
+			<warning>
+				<title>Warning — All Data on the Device Specified will be Overwritten</title>
+				<para>
+					The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command.
+				</para>
+			</warning>
+		</step>
+		<step>
+			<para>
+				Transfer of the <acronym> ISO</acronym> file to the <acronym> USB</acronym> storage device with the version of <command>dd</command> included with <application> Red Hat Cygwin</application> can take significantly longer than the equivalent on other platforms.
+			</para>
+			<para>
+				To check the progress of the transfer in the same terminal window that the process was started in send it the <command>USR1</command> signal. This can be achieved by issuing the <command>kill</command> in the terminal window as follows:
+			</para>
+			<screen>kill -USR1 $pid</screen>
+		</step>
+		<step>
+			<para>
+				When the transfer operation completes the final record counts will be displayed.
+			</para>
+			<example>
+				<title>Result of <command>dd</command> Initiated Copy</title>
+				<screen>
+210944+0 records in
+210944+0 records out
+108003328 bytes (108 MB) copied, 2035.82 s, 53.1 kB/s
+
+[1]+    Done            dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb
+</screen>
+			</example>
+		</step>
+	</procedure>
+	<para>
+		The <acronym> USB</acronym> storage device ( <systemitem> /dev/sdb</systemitem>) is ready to boot a hypervisor.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7529-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

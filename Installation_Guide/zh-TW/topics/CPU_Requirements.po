@@ -1,0 +1,152 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 08:57-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host CPU Requirements"
+msgstr "CPU 需求"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtualization hosts must have at least one <acronym> CPU</acronym>. Red Hat Enterprise Virtualization supports the use of these <acronym> CPU</acronym> models in virtualization hosts:"
+msgstr "虛擬主機必須擁有至少一個 <acronym> CPU</acronym>。RHEV 支援在虛擬主機中，使用下列 <acronym> CPU</acronym> 模組："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G1"
+msgstr "AMD Opteron G1"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G2"
+msgstr "AMD Opteron G2"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G3"
+msgstr "AMD Opteron G3"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G4"
+msgstr "AMD Opteron G1"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Conroe"
+msgstr "Intel Conroe"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Penryn"
+msgstr "Intel Penryn"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Nehalem"
+msgstr "Intel Nehalem"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Westmere"
+msgstr "Intel Westmere"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Sandybridge"
+msgstr "Intel Conroe"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All <acronym> CPUs</acronym> must have support for the <trademark class=\"registered\"> Intel</trademark> 64 or AMD64 CPU extensions, and the <trademark class=\"trade\"> AMD-V</trademark> or <trademark class=\"registered\"> Intel VT</trademark> hardware virtualization extensions enabled. Support for the <literal>No eXecute</literal> flag (NX) is also required. To check that your processor supports the required flags, and that they are enabled:"
+msgstr "所有的 <acronym> CPU</acronym> 些必須支援 <trademark class=\"registered\"> Intel </trademark> 64 或 AMD64 CPU 延伸模組，並且 <trademark class=\"trade\"> AMD-V </trademark> 或 <trademark class=\"registered\"> Intel VT </trademark> 硬體虛擬化延伸功能亦必須啟用。同時亦必須啟用 <literal>No eXecute</literal> 旗標（NX）上的支援。若要檢查您的處理器是否支援必要的虛擬化延伸功能，以及它們是否已啟用："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At the Red Hat Enterprise Linux or Red Hat Enterprise Virtualization Hypervisor boot screen press any key and select the <guilabel>Boot</guilabel> or <guilabel>Boot with serial console</guilabel> entry from the list. Press <guilabel>Tab</guilabel> to edit the kernel parameters for the selected option. After the last kernel parameter listed ensure there is a <keycap>Space</keycap> and append the <literal>rescue</literal> parameter."
+msgstr "請在 RHEL 或是 RHEV Hypervisor 的開機畫面上按下任何鍵，並由清單中選擇「<guilabel>開機</guilabel>」或是「<guilabel>搭配序列主控台開機</guilabel>」項目。請按下「<guilabel>Tab</guilabel>」，以為所選的選項編輯 kernel 參數。在所選擇的最後 kernel 參數後，請確認有個 <keycap> Space</keycap> 字元，並附加 <literal>rescue</literal> 參數。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Press <keycap>Enter</keycap> to boot into rescue mode."
+msgstr "請按下 <keycap> Enter</keycap> 以進入救援模式。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At the prompt which appears, determine that your processor has the required extensions and that they are enabled by running this command:"
+msgstr "請在提示出現時，檢查您的處理器是否擁有虛擬化延伸功能，並且透過下列指令來啟用它們："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# grep -E 'svm|vmx' /proc/cpuinfo | grep nx"
+msgstr "# grep -E 'svm|vmx' /proc/cpuinfo"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If any output is shown, the processor is hardware virtualization capable. If no output is shown it is still possible that your processor supports hardware virtualization. In some circumstances manufacturers disable the virtualization extensions in the BIOS. Where you believe this to be the case consult the system's BIOS and the motherboard manual provided by the manufacturer."
+msgstr "若有顯示任何輸出，即代表硬體擁有虛擬化功能。若沒有顯示任何輸出，您的處理器還是有可能支援硬體虛擬化。在某些情況下，製造商會停用 BIOS 中的虛擬化延伸功能。若是如此，請檢查您的系統 BIOS，並參閱製造商所提供的主機板指南。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "As an additional check, verify that the <computeroutput> kvm </computeroutput> modules are loaded in the kernel:"
+msgstr "此外，請驗證 <computeroutput> kvm </computeroutput> 模組是否已載入 kernel 中："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# lsmod | grep kvm"
+msgstr "# lsmod | grep kvm"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the output includes <computeroutput> kvm_intel </computeroutput> or <computeroutput> kvm_amd </computeroutput> then the <computeroutput> kvm </computeroutput> hardware virtualization modules are loaded and your system meets requirements."
+msgstr "若輸出包含了 <computeroutput> kvm_intel </computeroutput> 或 <computeroutput> kvm_amd </computeroutput>，那麼即代表 <computeroutput> kvm </computeroutput> 硬體虛擬化模組已載入，並且您的系統已滿足需求。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7843-161528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

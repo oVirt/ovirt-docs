@@ -1,0 +1,32 @@
+# David Mason <damason@redhat.com>, 2012. #zanata
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 10:16-0400\n"
+"Last-Translator: David Mason <damason@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: firstname
+#, no-c-format
+msgid "Stephen"
+msgstr ""
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Author_Group, author Ykatabam
+#. Tag: surname
+#, fuzzy, no-c-format
+msgid "Gordon"
+msgstr "Gordon"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Author_Group, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Steve"
+#~ msgstr "Steve"

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Adding_FCP_Storage" remap="TID_7635">
+	<title>Adding FCP Storage</title>
+	<para>
+		Red Hat Enterprise Virtualization platform supports SAN storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-defined <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time.
+	</para>
+	<para>
+		Red Hat Enterprise Virtualization system administrators need a working knowledge of Storage Area Networks (SAN) concepts. SAN usually uses Fibre Channel Protocol (FCP) for traffic between hosts and shared external storage. For this reason, SAN may occasionally be referred to as FCP storage.
+	</para>
+	<para>
+		For information regarding the setup and configuration of FCP or multipathing on Red Hat Enterprise Linux, please refer to the <citetitle>Storage Administration Guide</citetitle> and <citetitle>DM Multipath Guide</citetitle>.
+	</para>
+	<procedure>
+		<title>To Add FCP Storage:</title>
+		<step>
+			<para>
+				Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>New Domain</guilabel>.
+			</para>
+		</step>
+		<step>
+			<para>
+				The <guilabel>New Domain</guilabel> dialog box displays. 
+				<!--
+                <figure id="Tasks_RHEV_Adding_FCP_Storage_Storage-fcp">
+                        <title>Adding FCP Storage</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="Adding_FCP_Storage.images/storage-fcp.png" format="PNG"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>-->
+			</para>
+		</step>
+		<step>
+			<para>
+				Configure the following options: 
+				<orderedlist>
+					<listitem>
+						<para>
+							<guilabel>Name:</guilabel> Enter a suitably descriptive name.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Domain Function/ Storage Type</guilabel>: Select <guimenuitem>FCP</guimenuitem>.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Use Host:</guilabel> Select the IP address of either the hypervisor or Red Hat Enterprise Linux host. 
+							<important>
+								<title>Active Host Required</title>
+								<para>
+									All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
+								</para>
+							</important>
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							The list of existing LUNs display. On the selected LUN, select the Add LUN check box to use it as the FCP data domain.
+						</para>
+					</listitem>
+				</orderedlist>
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>OK</guilabel>.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result:</title>
+		<para>
+			The new FCP data domain displays on the <guimenuitem>Storage</guimenuitem> tab. It will remain with a Locked status while it is being prepared for use. When ready, it is automatically attached to the data center. Select either <guilabel>Build New Domain</guilabel> or <guilabel>Use Existing Volume Group</guilabel>.
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7635-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

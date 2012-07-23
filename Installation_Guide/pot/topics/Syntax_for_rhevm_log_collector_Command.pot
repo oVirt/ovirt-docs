@@ -1,0 +1,442 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Syntax for rhevm-log-collector Command"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The basic syntax for the log collector command is:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"<command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter> <parameter>[all, clusters, datacenters]</parameter></command>\n"
+"       <command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>collect</parameter></command>\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The two supported modes of operation are <parameter>list</parameter> and <parameter>collect</parameter>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <parameter>list</parameter> parameter lists either the hosts, clusters, or data centers attached to the Red Hat Enterprise Virtualization Manager. You are able to filter the log collection based on the listed objects."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <parameter>collect</parameter> parameter performs log collection from the Red Hat Virtualization Manager. The collected logs are placed in an archive file under the <filename>/tmp/logcollector</filename> directory. The <command>rhevm-log-collector</command> command assigns each log a specific file name."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unless another parameter is specified, the default action is to list the available hosts together with the data center and cluster to which they belong. You will be prompted to enter user names and passwords to retrieve certain logs."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "There are numerous parameters to further refine the <command>rhevm-log-collector</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "General options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--version</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays the version number of the command in use before exiting."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-h</parameter>, <parameter>--help</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays command usage information before exiting."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the configuration file the tool is to use."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--local-tmp=<replaceable>PATH</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the directory in which logs are saved. The default directory is <filename>/tmp/logcollector</filename>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--ticket-number=<replaceable>TICKET</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>TICKET</replaceable> as the ticket, or case number, to associate with the SOS report."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--upload=<replaceable>FTP_SERVER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>FTP_SERVER</replaceable> as the destination for retrieved logs to be sent using FTP. Do not use this option unless advised to by a Red Hat support representative."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the specific file name the command should use for the log output."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--quiet</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets quiet mode, reducing console output to a minimum. Quiet mode is off by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-v</parameter>, <parameter>--verbose</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets verbose mode, providing more console output. Verbose mode is off by default."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Options"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These options filter the log collection and specify authentication details for the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These parameters can be combined for specific commands. For example, <command>rhevm-log-collector --user=admin@internal --cluster ClusterA,ClusterB --hosts \"SalesHost\"*</command> specifies the user as <literal>admin@internal</literal> and limits the log collection to only <literal>SalesHost</literal> hosts in clusters <literal>A</literal> and <literal>B</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--no-hypervisors</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Omits virtualization hosts from the log collection."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-u <replaceable>USER</replaceable></parameter>, <parameter>--user=<replaceable>USER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the user name for login. The <replaceable>USER</replaceable> is specified in the format <replaceable>user</replaceable>@<replaceable>domain</replaceable>, where <replaceable>user</replaceable> is the user name and <replaceable>domain</replaceable> is the directory services domain in use. The user must exist in directory services and be known to the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the fully qualified domain name of the Red Hat Enterprise Virtualization Manager server from which to collect logs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the log collector is being run on the same local host as the Red Hat Enterprise Virtualization Manager; the default value is <literal>localhost</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-c <replaceable>CLUSTER</replaceable></parameter>, <parameter>--cluster <replaceable>CLUSTER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>CLUSTER</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The cluster(s) for inclusion must be specified in a comma separated list of cluster names or match patterns."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-d <replaceable>DATACENTER</replaceable></parameter>, <parameter>--data-center <replaceable>DATACENTER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>DATACENTER</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The data center(s) for inclusion must be specified in a comma separated list of data center names or match patterns."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-H <replaceable>HOSTS_LIST</replaceable></parameter>, <parameter>--hosts=<replaceable>HOSTS_LIST</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>HOSTS_LIST</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The hosts for inclusion must be specified in a comma-separated list of host names, fully qualified domain names, or IP addresses. Match patterns are also valid."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "SOS Report Options"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The log collector uses the JBoss SOS plugin. Use the following options to activate data collection from the JMX console."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-home=<replaceable>JBOSS_HOME</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "JBoss installation directory path. The default is <filename>/var/lib/jbossas</filename>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--java-home=<replaceable>JAVA_HOME</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Java installation directory path. The default is <filename>/usr/lib/jvm/java</filename>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-profile=<replaceable>JBOSS_PROFILE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays a quoted and space-separated list of server profiles; limits log collection to specified profiles. The default is <parameter>'rhevm-slimmed'</parameter>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--enable-jmx</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables the collection of run-time metrics from Red Hat Enterprise Virtualization's JBoss JMX interface."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-user=<replaceable>JBOSS_USER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "User with permissions to invoke JBoss JMX. The default is <parameter>admin</parameter>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-logsize=<replaceable>LOG_SIZE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Maximum size in MB for the retrieved log files."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-stdjar=<replaceable>STATE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets collection of JAR statistics for JBoss standard JARs. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-servjar=<replaceable>STATE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets collection of JAR statistics from any server configuration directories. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-twiddle=<replaceable>STATE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets collection of twiddle data on or off. Twiddle is the JBoss tool used to collect data from the JMX invoker. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--jboss-appxml=<replaceable>XML_LIST</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays a quoted and space-separated list of applications with XML descriptions to be retrieved. Default is <literal>all</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "<acronym>SSH</acronym> Configuration"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--ssh-host=<replaceable>PORT</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PORT</replaceable> as the port to use for SSH connections with virtualization hosts."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>, <parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public SSH key to be used for accessing the virtualization hosts."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--max-connections=<replaceable>MAX_CONNECTIONS</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>MAX_CONNECTIONS</replaceable> as the maximum concurrent SSH connections for logs from virtualization hosts. The default is <literal>10</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "PostgreSQL Database Options"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <parameter>pg-pass</parameter> parameter includes the Red Hat Enterprise Virtualization Manager database in the log. The database user name and database name must be specified if they have been changed from the default values."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Use the <parameter>pg-dbhost</parameter> parameter if the database is not on the local host. Use the optional <parameter>pg-host-key</parameter> parameter to collect remote logs. The PostgreSQL SOS plugin must be installed on the database server for remote log collection to be successful."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--no-postgresql</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables collection of database. Database collection is performed by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--pg-user=<replaceable>USER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>USER</replaceable> as the user name to use for connections with the database server. The default is <systemitem>postgres</systemitem>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--pg-dbname=<replaceable>DBNAME</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>DBNAME</replaceable> as the database name to use for connections with the database server. The default is <systemitem>rhevm</systemitem>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--pg-dbhost=<replaceable>DBHOST</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>DBHOST</replaceable> as the host name for the database server. The default is <systemitem>localhost</systemitem>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--pg-host-key=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public identity file (private key) for the database server. This value is not set by default; it is required only where the database does not exist on the local host."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8434-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

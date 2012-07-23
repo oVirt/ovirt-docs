@@ -1,0 +1,94 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Adding a Red Hat Enterprise Linux Host"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A Red Hat Enterprise Linux host is based on an standard installation of Red Hat Enterprise Linux."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization hosts are based on a customized disk image with just enough Red Hat Enterprise Linux for virtualization. They are approved rather than added."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To add a Red Hat Enterprise Linux host, provide some details about it. The Manager logs into the host to perform virtualization checks, install packages, create a network bridge and reboot the host. The process of adding a new host can take up to 10 minutes. The process can be followed in the host's details pane."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>Hosts</guilabel> tab. The <guilabel>Hosts</guilabel> tab displays a list of all hosts in the system."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guibutton>New</guibutton> button. The <guilabel>New Host</guilabel> dialog displays. It allows you to configure three aspects of your new host, each identified by a tab. The tabs are <guilabel>General</guilabel>, <guilabel>Power Management</guilabel>, and <guilabel>SPM</guilabel>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>General</guilabel> tab to enter the general configuration details of your host. Only the <guilabel>General</guilabel> configuration details are mandatory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If your host has a power management device, click the <guilabel>Power Management</guilabel> tab to configure it. This allows the Manager to perform lifecycle operations on your host, like turning it off and on."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization recommends power management. Power management enables the system to fence a troublesome host by using an additional interface to bypass the host operating system."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the host is to be Highly Available, power management must be enabled and configured."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>SPM</guilabel> tab to configure the host's priority when the Manager is assigning role of Storage Pool Manager. This can usually be left at the default value."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guibutton>OK</guibutton> when you've entered all the necessary configuration details of your host."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The new host displays in the list of hosts with a status of <literal>Installing</literal>. Once installation is complete, the status will update to <literal>Reboot</literal> and then <literal>Awaiting</literal>. The host must be activated for the status to change to <literal>Up</literal>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "View the progress of the host installation on the Details pane."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7621-164532+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

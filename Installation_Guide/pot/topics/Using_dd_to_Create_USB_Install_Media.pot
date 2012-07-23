@@ -1,0 +1,65 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Preparing USB Installation Media Using dd"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <command>dd</command> command can also be used to install a hypervisor onto a <acronym>USB</acronym> storage device. Media created with the command can boot the hypervisor on systems which support booting via <acronym>USB</acronym>. Red Hat Enterprise Linux provides <command>dd</command> as part of the <package> coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows users are able to obtain the <command>dd</command> command through installation of <application>Red Hat Cygwin</application>, a free Linux-like environment for Windows."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The basic <command>dd</command> command usage follows this structure:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# dd if=<replaceable>image</replaceable> of=<replaceable>device</replaceable>\n"
+"    "
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Where the <parameter>device</parameter> parameter is the device name of the <acronym> USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Linux_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Windows_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7854-164522+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

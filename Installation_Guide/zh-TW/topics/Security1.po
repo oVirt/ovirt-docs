@@ -1,0 +1,51 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-24 10:04-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Security"
+msgstr "安全性"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The <guilabel>Security</guilabel> screen is used to change the <systemitem "
+"class=\"username\">admin</systemitem> password for both local and remote "
+"access. SSH password authentication is also enabled or disabled via this "
+"screen."
+msgstr ""
+"「<guilabel>安全性</guilabel>」畫面可用來更改 <systemitem class=\"username\">admin</"
+"systemitem> 密碼，以進行本機或遠端存取。SSH 密碼認證亦可透過此畫面來啟用或停用。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

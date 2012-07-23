@@ -1,0 +1,63 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-25 12:52-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Kernel Dump"
+msgstr "Kernel 傾印"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization hypervisor hosts generate a kernel dump (a "
+"<command>kdump</command> file) in the event of a system failure. These "
+"<command>kdump</command> files are essential for debugging and support."
+msgstr ""
+"RHEV Hypervisor 主機會在系統發生錯誤時，產生 kernel 傾印（一個 <command>kdump</command> 檔案）。這些 "
+"<command>kdump</command> 檔案乃進行除錯與支援時的必要檔案。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The hypervisor supports the export of kernel dumps by <application>kdump</"
+"application> using NFS or SSH so that they may be analyzed at a later date. "
+"The <application>Kernel Dump</application> screen provides for configuration "
+"of this facility."
+msgstr ""
+"Hypervisor 支援藉由使用 NFS 或 SSH，以透過 <application>kdump</application> 支援 kernel "
+"傾印的匯出，如此一來便可日後分析它們。<application>Kernel Dump</application> 畫面提供了此功能的配置。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

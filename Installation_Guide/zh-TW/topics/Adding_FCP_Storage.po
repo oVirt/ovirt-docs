@@ -1,0 +1,146 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 12:46-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding FCP Storage"
+msgstr "新增 FCP 儲存裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform supports SAN storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-defined <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time."
+msgstr "RHEV 平台透過為「<systemitem> 卷冊群組</systemitem>」建立「<systemitem> 儲存網域</systemitem>」，來支援 SAN 儲存裝置。「<systemitem> 卷冊群組</systemitem>」是一組預先定義的 LUN。RHEV 支援為事先存在的「<systemitem> 卷冊群組</systemitem>」建立「<systemitem> 儲存網域</systemitem>」。「<systemitem> 卷冊群組</systemitem>」與 LUN 皆無法同時連上超過一組「<systemitem> 儲存網域</systemitem>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization system administrators need a working knowledge of Storage Area Networks (SAN) concepts. SAN usually uses Fibre Channel Protocol (FCP) for traffic between hosts and shared external storage. For this reason, SAN may occasionally be referred to as FCP storage."
+msgstr "RHEV 系統管理者需要有 SAN（儲存區域網路，Storage Area Network）的概念與知識。SAN 通常透過 FCP（光纖通道通訊協定）讓主機與共享的外部儲存裝置通訊。基於這理由，SAN 有時亦指 FCP 儲存裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For information regarding the setup and configuration of FCP or multipathing on Red Hat Enterprise Linux, please refer to the <citetitle>Storage Administration Guide</citetitle> and <citetitle>DM Multipath Guide</citetitle>."
+msgstr "欲取得有關於如何在 RHEL 上設定、配置 FCP 或 multipath 的資訊，請參閱《<citetitle>儲存管理指南</citetitle>》與《<citetitle>DM Multipath 指南</citetitle>》。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Add FCP Storage:"
+msgstr "新增 FCP 儲存裝置："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display."
+msgstr "請點選「<guimenuitem>儲存裝置</guimenuitem>」分頁。這將顯示儲存裝置清單與工具列。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>."
+msgstr "按下「<guilabel>新網域</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>New Domain</guilabel> dialog box displays."
+msgstr "「<guilabel>新區域</guilabel>」對話方塊將會出現。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Configure the following options:"
+msgstr "配置下列選項："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Name:</guilabel> Enter a suitably descriptive name."
+msgstr "「<guilabel>名稱</guilabel>」：輸入適當且具有描述性的名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list."
+msgstr "「<guilabel>資料中心</guilabel>」：從下拉式選單選取所需的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Domain Function/ Storage Type</guilabel>: Select <guimenuitem>FCP</guimenuitem>."
+msgstr "「<guilabel>網域功能/儲存裝置類型</guilabel>」：請選擇「<guimenuitem>FCP</guimenuitem>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Use Host:</guilabel> Select the IP address of either the hypervisor or Red Hat Enterprise Linux host."
+msgstr "「<guilabel>使用主機</guilabel>」：請選擇 hypervisor 或是 RHEL 主機的 IP 位址。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "需要啟用的主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "所有連往儲存網域的通訊，皆是透過所選主機，而不是直接從 RHEV Manager 連出。因此在配置儲存裝置前，系統中至少得存在一台啟用中的主機，並連上所選的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The list of existing LUNs display. On the selected LUN, select the Add LUN check box to use it as the FCP data domain."
+msgstr "這將顯示現有的 LUN 清單。在所選擇的 LUN 上，選取「新增 LUN」勾選方塊以將它作為 FCP 資料網域使用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel>."
+msgstr "請按下「<guilabel>確定</guilabel>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new FCP data domain displays on the <guimenuitem>Storage</guimenuitem> tab. It will remain with a Locked status while it is being prepared for use. When ready, it is automatically attached to the data center. Select either <guilabel>Build New Domain</guilabel> or <guilabel>Use Existing Volume Group</guilabel>."
+msgstr "新的 FCP 資料網域會出現在「<guimenuitem>儲存</guimenuitem>」分頁中。在準備過程中，它會保持鎖定狀態。準備完成之後，它會自動連上資料中心。請選擇「<guilabel>建立新網域</guilabel>」或「<guilabel>使用現有卷冊群組</guilabel>」。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7635-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

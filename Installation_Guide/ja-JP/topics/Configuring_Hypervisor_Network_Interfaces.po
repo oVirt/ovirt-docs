@@ -1,0 +1,197 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 08:47-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Network Interfaces"
+msgstr "Hypervisor ネットワークインターフェースの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For each network interface detected the hypervisor will display the:"
+msgstr "検出された各ネットワークインターフェースに対して、 Hypervisor は以下の情報を表示します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Device</guilabel>,"
+msgstr "<guilabel>デバイス</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Status</guilabel>,"
+msgstr "<guilabel>ステータス</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Model</guilabel>, and"
+msgstr "<guilabel>モデル</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>MAC Address</guilabel>."
+msgstr "<guilabel>MAC アドレス</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At least one network interface must be configured before the hypervisor is able to connect with the Red Hat Enterprise Virtualization Manager."
+msgstr "Hypervisor を Red Hat Enterprise Virtualization Manager に接続する前に、 インターフェースを少なくとも一つ設定しておく必要があります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Device Identification"
+msgstr "デバイスの識別"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the network interface to be configured from the list and press <keycap> Enter</keycap>."
+msgstr "一覧から設定するネットワークインターフェースを選択して <keycap>Enter</keycap> を押します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the hypervisor is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap> Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed."
+msgstr "一覧内のエントリがどの物理デバイスを指しているのか不明な場合があります。そのような場合には、 Hypervisor でその物理デバイスのネットワークトラフィック用ライトを点滅させて特定することができます。この機能を利用する場合は、一覧からエントリを選択してから <guibutton>&lt;ライトを点滅させてデバイスを特定&gt;</guibutton> ボタンを選択します。<keycap>Enter</keycap> を押し、点滅開始した物理デバイスのライトをメモしておきます。選択したデバイスの設定画面が表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>IPv4</acronym> Settings"
+msgstr "<acronym>IPv4</acronym> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor supports both dynamic ( <acronym> DHCP</acronym>), and static <acronym> IPv4</acronym> network configuration."
+msgstr "Hypervisor は動的 (<acronym>DHCP</acronym>) および静的な <acronym>IPv4</acronym> ネットワーク設定のいずれにも対応しています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Dynamic (<guilabel>DHCP</guilabel>) Network Configuration"
+msgstr "動的なネットワーク設定 (<guilabel>DHCP</guilabel>)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym> IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym> IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "動的なネットワーク設定では、<guilabel>DHCP</guilabel> で Hypervisor に動的に <acronym>IP</acronym> アドレスを割り当てることができます。動的な <acronym>IPv4</acronym> ネットワーク設定を有効にするには、<guilabel>IPv4 設定</guilabel> で <guilabel>DHCP</guilabel> オプションを選択し、<keycap>Space</keycap> を押して有効に切り替えます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<guilabel>Static</guilabel> Network Configuration"
+msgstr "<guilabel>静的</guilabel>ネットワーク設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Static network configuration allows the hypervisor to be manually assigned an <acronym> IP</acronym> address. To enable static <acronym> IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "静的なネットワーク設定では、手動で Hypervisor に <acronym>IP</acronym> アドレスを割り当てることができます。静的な <acronym>IPv4</acronym> ネットワーク設定を有効にするには、 <guilabel>IPv4 設定</guilabel> で<guilabel>静的</guilabel>オプションを選択し、<keycap>Space</keycap> を押して有効に切り替えます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration."
+msgstr "<guilabel>静的</guilabel>オプションを選択すると、<guilabel>IP アドレス</guilabel>、<guilabel>ネットマスク</guilabel>、<guilabel>ゲートウェイ</guilabel>のフィールドに入力できるようになります。静的なネットワーク設定を完了するには、<guilabel>IP アドレス</guilabel>、<guilabel>ネットマスク</guilabel>、<guilabel>ゲートウェイ</guilabel>のフィールドへの入力が必要になります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In particular it is necessary that:"
+msgstr "以下にあげる点が特に重要となります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>IP Address</guilabel> is not already in use on the network,"
+msgstr "指定する <guilabel>IP アドレス</guilabel>がネットワーク上で未使用であること。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and"
+msgstr "<guilabel>ネットマスク</guilabel>は、ネットワーク上の他のマシンで使用している設定と一致すること。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Gateway</guilabel> matches that used by other machines on the network."
+msgstr "<guilabel>ゲートウェイ</guilabel>は、ネットワーク上の他のマシンで使用している設定と一致すること。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration."
+msgstr "<guilabel>IP アドレス</guilabel>、<guilabel>ネットマスク</guilabel>、 <guilabel>ゲートウェイ</guilabel>のフィールドに使用すべき値が不明な場合には、ネットワーク管理者に問い合わせるか、動的設定にすることを検討してください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Static IPv4 Networking Configuration"
+msgstr "静的な IPv4 ネットワークの設定"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"IPv4 Settings\n"
+"[ ] Disabled [ ] DHCP [*] Static\n"
+"IP Address: 192.168.122.100_ Netmask: 255.255.255.0___\n"
+"Gateway     192.168.1.1_____\n"
+msgstr ""
+"IPv4 Settings\n"
+"[ ] Disabled [ ] DHCP [*] Static\n"
+"IP Address: 192.168.122.100_ Netmask: 255.255.255.0___\n"
+"Gateway     192.168.1.1_____\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>IPv6</acronym> Settings"
+msgstr "<acronym>IPv6</acronym> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager does not currently support <acronym> IPv6</acronym> networking. <acronym> IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>."
+msgstr "Red Hat Enterprise Virtualization Manager は現在、<acronym>IPv6</acronym> ネットワークには対応していません。<acronym>IPv6</acronym> ネットワークは<guilabel>無効</guilabel>の設定のままにしておいてください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>VLAN</acronym> Configuration"
+msgstr "<acronym>VLAN</acronym> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If <acronym> VLAN</acronym> support is required then populate the <guilabel>VLAN ID</guilabel> field with the VLAN identifier for the selected device."
+msgstr "<acronym>VLAN</acronym> サポートを必要とする場合は、<guilabel>VLAN ID</guilabel> フィールドに選択したデバイスの VLAN 識別子を入力します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Network Configuration"
+msgstr "ネットワーク設定の保存"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once all networking options for the selected device have been set the configuration must be saved."
+msgstr "選択したデバイスに対するネットワークのオプションをすべて設定したら、その設定を保存する必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guibutton>&lt;Apply&gt;</guibutton> button and press <keycap> Enter</keycap> to save the network configuration."
+msgstr "<guibutton>&lt;適用&gt;</guibutton> ボタンを選択して <keycap>Enter</keycap> を押し、ネットワーク設定を保存します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>Confirm Network Settings</guilabel> dialog box will appear. Ensure that the <guibutton>Ok</guibutton> button is selected and press <keycap> Enter</keycap> to confirm."
+msgstr "<guilabel>ネットワーク設定の確認</guilabel>ダイアログボックスが表示されます。<guibutton>Ok</guibutton> ボタンが選択されていることを確認した上で <keycap>Enter</keycap> を押して確定します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>Network</guilabel> screen is displayed. The device is listed as <guilabel>Configured</guilabel>."
+msgstr "<guilabel>ネットワーク</guilabel>画面が表示されます。デバイスは <guilabel>設定済</guilabel>として表示されます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7615-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

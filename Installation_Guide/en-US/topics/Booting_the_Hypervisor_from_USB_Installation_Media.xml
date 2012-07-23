@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Booting_the_Hypervisor_from_USB_Installation_Media" remap="TID_7530">
+	<title>Booting the Hypervisor from USB Installation Media</title>
+	<para>
+		Booting a hypervisor from a <acronym>USB</acronym> storage device is similar to booting other live <acronym>USB</acronym> operating systems. To boot from a <acronym>USB</acronym> storage device:
+	</para>
+	<procedure>
+		<step>
+			<para>
+				Enter the system's BIOS menu to enable <acronym>USB</acronym> storage device booting if not already enabled.
+			</para>
+			<substeps>
+				<step>
+					<para>
+						Enable <acronym>USB</acronym> booting if this feature is disabled.
+					</para>
+				</step>
+				<step>
+					<para>
+						Set booting <acronym>USB</acronym> storage devices to be first boot device.
+					</para>
+				</step>
+				<step>
+					<para>
+						Shut down the system.
+					</para>
+				</step>
+			</substeps>
+		</step>
+		<step>
+			<para>
+				Insert the <acronym>USB</acronym> storage device that contains the hypervisor boot image.
+			</para>
+		</step>
+		<step>
+			<para>
+				Restart the system.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The hypervisor will boot automatically.
+	</para>
+	<!--
+            <para>
+                If the hypervisor is running, you must now initialize the local storage device. Refer to <xref linkend="form-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Hypervisor_interactive_installation-Booting_the_Hypervisor_for_installation" /> for details.
+            </para>-->
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="Troubleshooting_BIOS_Settings_and_Boot_Process" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Booting_the_Hypervisor_from_Installation_Media" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7530-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

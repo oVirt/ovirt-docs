@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Hyperisor_for_Red_Hat_Network" remap="TID_7538">
+	<title>Configuring Hypervisor for Red Hat Network</title>
+	<para>
+		Guests running on the Hypervisor may need to consume Red Hat Enterprise Linux virtualization entitlements. Where this is the case the Hypervisor must be registered to Red Hat Network , a Satellite server, or Subscription Asset Manager. The Hypervisor is able to connect to these services via a <acronym>HTTP</acronym> proxy where one is in use.
+	</para>
+	<para>
+		Note that when new versions of the Hypervisor itself become available they are installed from the Red Hat Enterprise Virtualization Manager, not Red Hat Network.
+	</para>
+	<procedure>
+		<title>Register with Red Hat Network</title>
+		<step>
+			<title>Authentication</title>
+			<para>
+				Enter your Red Hat Network username in the <guilabel>Login</guilabel> field.
+			</para>
+			<para>
+				Enter your Red Hat Network password in the <guilabel>Password</guilabel> field.
+			</para>
+		</step>
+		<step performance="optional">
+			<title>Profile Name</title>
+			<para>
+				Enter the profile name to be used for the system in the <guilabel>Profile Name</guilabel> field. This is the name that the system will appear under when viewed via the Red Hat Network.
+			</para>
+		</step>
+		<step>
+			<title>Update Source</title>
+			<para>
+				The Hypervisor is able to register directly to Red Hat Network or, if available, either a Satellite installation or a Subscription Asset Manager.
+			</para>
+			<stepalternatives>
+				<step>
+					<title>To Connect Directly to RHN</title>
+					<para>
+						Select the <guilabel>RHN</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled. The <guilabel>URL</guilabel> and <guilabel>CA</guilabel> values do not need to be provided.
+					</para>
+					<example>
+						<title>Red Hat Network Configuration</title>
+						<screen>[*] RHN [ ] Satellite [ ] Subscription Asset Manager           
+URL:  ________________________________________                 
+CA :  ________________________________________  </screen>
+					</example>
+				</step>
+				<step>
+					<title>To Connect via Satellite</title>
+					<substeps>
+						<step>
+							<para>
+								Select the <guilabel>Satellite</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enter the URL of the Satellite server in the <guilabel>URL</guilabel> field.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enter the URL of the Certificate Authority for the Satellite server in the <guilabel>CA</guilabel> field.
+							</para>
+						</step>
+					</substeps>
+					<example>
+						<title>Satellite Configuration</title>
+						<screen>[ ] RHN [*] Satellite [ ] Subscription Asset Manager
+URL:   https://your-satellite.example.com
+CA :   https://your-satellite.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT</screen>
+					</example>
+				</step>
+				<step>
+					<title>To Connect via Subscription Asset Manager</title>
+					<substeps>
+						<step>
+							<para>
+								Select the <guilabel>Subscription Asset Manager</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enter the URL of the Subscription Asset Manager server in the <guilabel>URL</guilabel> field.
+							</para>
+						</step>
+						<step>
+							<para>
+								Enter the URL of the Certificate Authority for the Subscription Asset Manager server in the <guilabel>CA</guilabel> field.
+							</para>
+						</step>
+					</substeps>
+					<example>
+						<title>Subscription Asset Manager Configuration</title>
+						<screen>[ ] RHN [ ] Satellite [*] Subscription Asset Manager           
+URL:  https://subscription-asset-manager.example.com                 
+CA :  https://subscription-asset-manager.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT</screen>
+					</example>
+				</step>
+			</stepalternatives>
+		</step>
+		<step performance="optional">
+			<title><acronym>HTTP</acronym> Proxy</title>
+			<para>
+				Where a <acronym> HTTP</acronym> proxy is in use the details to connect to it must be provided. To connect to the Red Hat Network or a Satellite server via a proxy you must enter: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							the proxy <guilabel>Server</guilabel>'s network address,
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							the <guilabel>Port</guilabel> to connect to the proxy on, and
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							optionally, the <guilabel>Username</guilabel> and <guilabel>Password</guilabel> to use to connect to the proxy.
+						</para>
+					</listitem>
+				</itemizedlist> In environments where a <acronym> HTTP</acronym> proxy is not in use it is safe to ignore this step.
+			</para>
+			<example>
+				<title>HTTP Proxy Configuration</title>
+				<screen>HTTP Proxy
+Server: proxy.example.com__ Port: 8080_
+Username: puser________ Password: ******_______
+</screen>
+			</example>
+		</step>
+		<step>
+			<title>Save Configuration</title>
+			<para>
+				To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap>.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The Hypervisor's <guilabel>Red Hat Network</guilabel> configuration has been updated.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7538-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

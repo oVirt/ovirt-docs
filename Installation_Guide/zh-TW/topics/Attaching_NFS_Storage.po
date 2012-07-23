@@ -1,0 +1,127 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 03:04-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Attaching NFS Storage"
+msgstr "連上 NFS 儲存裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a Data Center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the Red Hat Enterprise Virtualization Manager, using the Administration Portal."
+msgstr "NFS 類型的「<guilabel>儲存網域</guilabel>」是連上資料中心的 NFS 共享目錄，為虛擬化客座端提供映像檔與 ISO 啟動光碟映像檔。一旦 <acronym> NFS</acronym> 儲存裝置匯出之後，就必須使用管理入口網站連上 RHEV Manager。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym>NFS</acronym> data, or export, storage domains can be added to <acronym>NFS</acronym> data center. You can add <acronym>NFS</acronym> <acronym>ISO</acronym> storage domains to data centers of any type."
+msgstr "要新增 <acronym> NFS</acronym> 匯出目錄，您必須選擇 <acronym> NFS</acronym> 資料中心。 <acronym> ISO</acronym> 儲存裝置的 <acronym> NFS</acronym> 儲存區域可加入資料中心，成為任意類型。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display."
+msgstr "請點選「<guimenuitem>儲存</guimenuitem>」分頁。這將顯示儲存清單與工具列。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>."
+msgstr "按下「<guilabel>新區域</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Configure the following options:"
+msgstr "配置下列選項："
+
+# Tag: member
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Name:</guilabel> Enter a suitably descriptive name."
+msgstr "「<guilabel>名稱</guilabel>」：輸入適當且具有描述性的名稱。"
+
+# Tag: member
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list."
+msgstr "「<guilabel>資料中心</guilabel>」：從下拉式選單選取所需的資料中心。"
+
+# Tag: member
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Domain Function/ Storage Type:</guilabel> In the drop down menu, select the type of storage domain you are creating."
+msgstr "「<guilabel>區域功能/儲存類型</guilabel>」：在下拉式選單中，選擇「資料」?「NFS」。不支援預設資料中心的儲存區域類型將會無法選取。選擇區域類型後，會出現「匯出路徑」欄位。"
+
+# Tag: member
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Export path:</guilabel> Enter the IP address or a resolvable hostname of the chosen host. The export path should be in the format of <filename>192.168.0.10:/data or domain.example.com:/data</filename>"
+msgstr "「<guilabel>匯出路徑</guilabel>」：輸入所選主機的 IP 位址或可解析的主機名稱。匯出路徑的格式應為 <filename>192.168.0.10:/Images/ISO</filename> 或是 <filename>domain.example.com:/Images/ISO</filename>。"
+
+# Tag: member
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Use Host:</guilabel> Select any of the hosts from the drop down menu. Only hosts which belong in the pre-selected data center will be displayed in this list."
+msgstr "「<guilabel>使用主機</guilabel>」：從下拉式選單選取任何主機。只有屬於事先選取的資料中心之主機，才會出現在清單中。"
+
+#. Tag: member
+#, no-c-format
+msgid "<guilabel>Advanced Parameters</guilabel> A number of additional, advanced, parameters are provided. It is recommended that the values of these parameters not be modified."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "需要啟用的主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the Storage Domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen Data Center, before the storage is configured."
+msgstr "所有連往儲存區域的通訊，皆是透過所選主機，而不是直接從 RHEV Manager 連出。因此在配置儲存裝置前，系統中至少得存在一台啟用中的主機，並連上所選的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel>."
+msgstr "請按下「<guilabel>確定</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new NFS data domain displays on the Storage tab. It will remain with a <emphasis>Locked status</emphasis> while it is being prepared for use. When ready, it is automatically attached to the Data Center."
+msgstr "新的 NFS 資料區域會顯示在儲存裝置分頁上。當它被準備使用時，它將會保持為 <emphasis> Locked </emphasis> 狀態。當準備好時，它將自動附加至資料中心。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7540-162154+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

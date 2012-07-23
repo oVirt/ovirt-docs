@@ -1,0 +1,46 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 04:59-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding Logical Networks"
+msgstr "論理ネットワークの追加"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"A logical network is assigned by an administrator as a required resource of "
+"a cluster in a data center. By extension all hosts in a cluster must have "
+"the same set of logical networks implemented. The implementation itself may "
+"vary from host to host (IP and bonding properties). Therefore, to configure "
+"a network, you need to first define the network for a data center and then "
+"apply this network to each host in a cluster. By default the management "
+"network (<systemitem>rhevm</systemitem>) is defined for a data center."
+msgstr ""
+"論理ネットワークは、データセンターにクラスターの必要リソースとして管理者によって割り当てられます。さらに、クラスター内の全ホストに同じセットの論理ネットワークが実装される必要があります。実装自体はホストによって異なる場合があります "
+"(IP "
+"およびボンディングのプロパティ)。したがって、ネットワークを設定するにはまずデータセンターにネットワークを定義してから、そのネットワークをクラスター内の各ホストに適用する必要があります。デフォルトでは、管理ネットワーク "
+"(<systemitem>rhevm</systemitem>) がデータセンターに定義されます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

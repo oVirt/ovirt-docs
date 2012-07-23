@@ -1,0 +1,74 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 03:13-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "VirtIO and Guest Tool Image Files"
+msgstr "上傳 VirtIO 和客座端工具映像檔"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <package>virtio-win</package> ISO and Virtual Floppy Drive (VFD) images, which contain the VirtIO drivers for Windows virtual machines, and the <package>rhev-tools-setup</package> ISO, which contains the Red Hat Enterprise Virtualization Guest Tools for Windows virtual machines, are copied to an ISO storage domain upon installation and configuration of the domain."
+msgstr "當在進行安裝時，配置了本機 <acronym>ISO</acronym> 儲存區域的時候，<package>virtio-win</package> <acronym>ISO</acronym> 與 Virtual Floppy Drive（<acronym>VFD</acronym>）映像檔（包含了 Windows 虛擬機器的 VirtIO 驅動程式）會自動被複製至新的儲存區域。包含了 Windows 虛擬機器的 RHEV 客座端工具的 <package>rhev-tools-setup</package> <acronym>ISO</acronym>，亦會被複製至區域中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These image files provide software that can be installed on virtual machines to improve performance and usability. The most recent <package>virtio-win</package> and <package>rhev-tools-setup</package> images are referred to by the following symbolic links on the file system of the Red Hat Enterprise Virtualization Manager:"
+msgstr "這些映像檔提供了能被安裝在客座端作業系統上的軟體，以改善效能和虛擬機器的使用性。最新的 <package>virtio-win</package> 和 <package>rhev-tools-setup</package> 映像檔，將在 RHEV Manager 的檔案系統上，以下列符號連結參照："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.iso</filename>"
+msgstr "<filename>/usr/share/virtio-win/virtio-win.iso</filename>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.vfd</filename>"
+msgstr "<filename>/usr/share/virtio-win/virtio-win.vfd</filename>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>"
+msgstr "<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These image files must be manually uploaded to ISO storage domains that were not created locally by the installation process. Use the <command>rhevm-iso-uploader</command> command to upload these images to your ISO storage domain. Once uploaded, the image files can be attached to and used by virtual machines."
+msgstr "這些映像檔必須手動式上傳至非透過安裝程序所本機建立的 <acronym>ISO</acronym> 儲存區域上。您必須使用 <command>rhevm-iso-uploader</command> 指令來將這些映像檔上傳至您的 <acronym>ISO</acronym> 儲存區域中。當這些映像檔被上傳後，它們便可連至虛擬機器，並供虛擬機器使用。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8672-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

@@ -1,0 +1,162 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 12:07-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This section is intended to provide a brief overview of the "
+"<application>Active Directory</application> configuration required to "
+"support the directory services requirements of Red Hat Enterprise "
+"Virtualization. It is not to be considered as a complete guide to the use of "
+"<application>Active Directory</application>. For full configuration "
+"procedures, refer to the appropriate Microsoft documentation available at "
+"<ulink url=\"http://technet.microsoft.com/en-us/library/dd578336(WS.10)."
+"aspx\" />."
+msgstr ""
+"本章は、Red Hat Enterprise Virtualization のディレクトリサービス要件への対応に必要とされる "
+"<application>Active Directory</application> "
+"設定概要を説明することを目的としています。<application>Active Directory</application> "
+"の用途に関する完全ガイドではありません。全体的な設定手順については、<ulink url=\"http://technet.microsoft.com/"
+"en-us/library/dd578336(WS.10).aspx\" />の該当の Microsoft 文書を参照してください。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "インストール"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<application>Active Directory Domain Services</application> must be "
+"installed and available prior to commencement of the Red Hat Enterprise "
+"Virtualization Manager installation. For <application>Active Directory "
+"Domain Services</application> installation instructions, including the "
+"creation of a new <systemitem>Forest</systemitem> and associated "
+"<systemitem>Domain</systemitem>, refer to the Microsoft documentation at: "
+"<ulink url=\"http://technet.microsoft.com/en-au/library/cc772464(WS.10)."
+"aspx\" />."
+msgstr ""
+"Red Hat Enterprise Virtualization Managerのインストールを開始する前に、<application>Active "
+"Directory Domain Services</application> をインストールし利用できるようにしてください。新規 "
+"<systemitem>Forest</systemitem> や関連 <systemitem>Domain</systemitem> "
+"など、<application>Active Directory Domain Services</application> については、<ulink "
+"url=\"http://technet.microsoft.com/en-au/library/cc772464(WS.10).aspx\" /> "
+"にある Microsoft の文書を参照してください。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Users"
+msgstr "ユーザー"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization administrative user must be created "
+"prior to installation. The credentials of this user are required to complete "
+"Red Hat Enterprise Virtualization Manager installation. It is the account "
+"used when logging into the Red Hat Enterprise Virtualization Administration "
+"Portal to manage the system."
+msgstr ""
+"Red Hat Enterprise Virtualization の管理者ユーザーは、インストール前に作成する必要があります。このユーザーの認証情報が "
+"Red Hat Enterprise Virtualization Manager "
+"のインストール時に必要になってきます。また、このアカウントは、当システムの管理を行う Red Hat Enterprise Virtualization "
+"管理ポータルにログインする際に使います。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization administrative user must have "
+"delegated control over the <systemitem>Domain</systemitem> to:"
+msgstr ""
+"Red Hat Enterprise Virtualization の管理者ユーザーは、以下を行えるように、<systemitem>Domain</"
+"systemitem> の管理者権限を割り当てる必要があります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<systemitem>Join a computer to the domain</systemitem>."
+msgstr "<systemitem>Join a computer to the domain</systemitem>."
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<systemitem>Modify the membership of a group</systemitem>."
+msgstr "<systemitem>Modify the membership of a group</systemitem>."
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"For information on creation of user accounts refer to <ulink url=\"http://"
+"technet.microsoft.com/en-us/library/cc732336.aspx\" />."
+msgstr ""
+"ユーザーアカウントの作成に関する情報は、<ulink url=\"http://technet.microsoft.com/en-us/library/"
+"cc732336.aspx\" /> を参照してください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"For information on delegation of control refer to <ulink url=\"http://"
+"technet.microsoft.com/en-us/library/cc732524.aspx\" />."
+msgstr ""
+"管理者権限の割り当てに関する情報は、<ulink url=\"http://technet.microsoft.com/en-us/library/"
+"cc732524.aspx\" /> を参照してください。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid ""
+"Important — Do <emphasis>not</emphasis> use the <systemitem class="
+"\"username\">Administrator</systemitem> user"
+msgstr ""
+"重要 — <systemitem class=\"username\">Administrator (管理者)</systemitem> "
+"ユーザーを<emphasis>使わないようにしてください。</emphasis> "
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"An Active Directory user account must be created specifically for use as the "
+"Red Hat Enterprise Virtualization administrative user. Do <emphasis> not </"
+"emphasis> use the Active Directory <systemitem class="
+"\"username\">Administrator</systemitem> account as the Red Hat Enterprise "
+"Virtualization Manager administrative user."
+msgstr ""
+"Red Hat Enterprise Virtualization 管理者ユーザーとして使用できるように、別途 Active Directory "
+"ユーザーアカウントを作る必要があります。Red Hat Enterprise Virtualization Manager "
+"の管理者ユーザーとしてActive Directory <systemitem class=\"username\">Administrator</"
+"systemitem> アカウントを<emphasis>使わないようにしてください。</emphasis> "
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

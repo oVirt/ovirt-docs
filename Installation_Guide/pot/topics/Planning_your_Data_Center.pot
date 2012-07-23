@@ -1,0 +1,84 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Planning your Data Center"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Successful planning is essential for a highly available, scalable Red Hat Enterprise Virtualization environment."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Although it is assumed that your solution architect has defined the environment before installation, the following considerations must be made when designing the system."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "CPU"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Virtual Machines must be distributed across hosts so that enough capacity is available to handle higher than average loads during peak processing. Average target utilization will be 50% of available CPU."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Memory"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization page sharing process overcommits up to 150% of physical memory for virtual machines. Therefore, allow for an approximately 30% overcommit."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Networking"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "When designing the network, it is important to ensure that the volume of traffic produced by storage, remote connections and virtual machines is taken into account. As a general rule, allow approximately 50 MBps per virtual machine."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "It is best practice to separate disk I/O traffic from end-user traffic, as this reduces the load on the Ethernet connection and reduces security vulnerabilities by isolating data from the visual stream. For Ethernet networks, it is suggested that bonds (802.3ad) are utilized to aggregate server traffic types."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "It is possible to connect both the storage and Hypervisors via a single high performance switch. For this configuration to be effective, the switch must be able to provide 30 GBps on the backplane."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "High Availability"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The system requires at least two hosts to achieve high availability. This redundancy is useful when performing maintenance or repairs."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8666-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

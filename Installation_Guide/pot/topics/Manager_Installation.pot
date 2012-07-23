@@ -1,0 +1,173 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Manager Installation Overview"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Prerequisites:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Hardware_Requirements\" xrefstyle=\"prereq\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Software_Requirements\" xrefstyle=\"prereq\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before proceeding with Red Hat Virtualization Manager installation you must ensure that all prerequisites are met. Only once you have confirmed that all prerequisites are met are you ready to proceed with installation."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To complete installation of the Red Hat Enterprise Virtualization Manager successfully you must also be able to determine:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The ports to be used for <acronym>HTTP</acronym>, and <acronym>HTTPS</acronym>, communication. The defaults are <literal>80</literal> and <literal>443</literal> respectively."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Fully Qualified Domain Name (<acronym>FQDN</acronym>) of the system the manager is to be installed on."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The password you will use to secure the Red Hat Enterprise Virtualization administration account."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The location of the database server to be used. You can use the setup script to install and configure a local database server or use an existing remote database server. To use a remote database server you will need to know:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the hostname of the system on which the remote database server exists,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the port on which the remote database server is listening."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Additionally you must know the username and password of a user that is known to the remote database server. The user must have permission to create databases in PostgreSQL."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Organization Name to use when creating the manager's security certificates."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The storage type to be used for the initial data center attached to the manager. The default is <acronym>NFS</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The path to use for the <acronym>ISO</acronym> share, if the manager is being configured to provide one. The display name, which will be used to label the domain in the Red Hat Enterprise Virtualization Manager also needs to be provided."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The firewall rules, if any, present on the system that need to be integrated with the rules required for the manager to function."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before installation is completed the values selected are displayed for confirmation. Once the values have been confirmed they are applied and the Red Hat Enterprise Virtualization Manager is ready for use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Completed Installation"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port:                     80\n"
+"https-port:                    443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"db-remote-install              local\n"
+"db-local-pass                  ********\n"
+"nfs-mp:                        /isodomain\n"
+"iso-domain-name:               ISODomain\n"
+"config-nfs:                    yes\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): "
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Automated installations are created by providing <command>rhevm-setup</command> with an answer file. An answer file contains answers to the questions asked by the setup command."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To create an answer file, use the <parameter>--gen-answer-file</parameter> parameter to set the location to which the answer file must be saved. The <command>rhevm-setup</command> command will record your answers to the file."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>rhevm-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To use an answer file for a new installation, use the <parameter>--answer-file</parameter> parameter to set the location of the answer file that must be used. The command <command>rhevm-setup</command> command will use the answers stored in the file to complete installation."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>rhevm-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run <command>rhevm-setup <parameter>--help</parameter></command> for further information."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Offline installation requires the creation of a software repository local to your Red Hat Enterprise Virtualization environment. This software repository must contain all of the packages required to install Red Hat Enterprise Virtualization Manager, Red Hat Enterprise Linux virtualization hosts, and Red Hat Enterprise Linux virtual machines."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you wish to create such a repository, refer to the <citetitle>Installing Red Hat Enterprise Virtualization Offline</citetitle> technical brief, available at <ulink url=\"https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

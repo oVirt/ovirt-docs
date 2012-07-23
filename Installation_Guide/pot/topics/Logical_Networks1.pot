@@ -1,0 +1,59 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Logical Networks in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "By default the management network, called <guilabel>rhevm</guilabel> is defined for a data center. New logical networks, for example for data, storage or display can be defined by the administrator. In general, logical networks are created to isolate network traffic by functionality or virtualize a physical topology. In addition, other networks can be used to segregate virtual machine traffic from the management networks, or isolate traffic between groups of virtual machines in the same cluster. In Red Hat Enterprise Virtualization Manager, network definition, type and function are encapsulated in a logical entity called a <systemitem>Logical Network</systemitem>. For example, a data center may have the following networks,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Guest data network"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Storage network access"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Management network"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Display network (for SPICE or VNC)"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Warning:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Do not change networking in a Data center or a Cluster if any hosts are active. This may make the hosts unreachable."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8669-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

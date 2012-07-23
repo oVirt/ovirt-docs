@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Hypervisor_Status" remap="TID_7856">
+	<title>Viewing Hypervisor Status</title>
+	<para>
+		The status screen displays a brief overview of the current state of the hypervisor. The information displayed consists of:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				the hostname,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				the current status of the network connection,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				the destination(s) of logs and reports, and
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				the number of active virtual machines.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		The status screen also provides a number of buttons to change the state of the hypervisor. They are:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				<guibutton>&lt;Lock&gt;</guibutton>: Locks the hypervisor. The username and password must be entered to unlock the hypervisor.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				<guibutton>&lt;Restart&gt;</guibutton>: Restarts the hypervisor.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				<guibutton>&lt;Power Off&gt;</guibutton>: Turns the hypervisor off.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7856-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

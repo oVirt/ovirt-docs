@@ -1,0 +1,68 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 02:30-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Approving a Hypervisor"
+msgstr "認可 Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log in to the Red Hat Enterprise Virtualization Manager Administration Portal."
+msgstr "登入 RHEV Manager 管理入口網站。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "From the <application> Hosts</application> tab, click on the host to be approved. The host should currently be listed with the status of <application> Pending Approval</application>."
+msgstr "從「<application> Hosts</application>」分頁，點選欲認可的主機。主機目前的狀態應該要是「<application> 等候認可中</application>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <application> Approve</application> button. The <guilabel>Edit and Approve Hosts</guilabel> dialog displays. You can use the dialog to set a name for the host and configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>Red Hat Enterprise Virtualization — Administration Guide</citetitle>."
+msgstr "請按下 <application> Approve</application> 按鈕。「<guilabel>編輯並認可主機</guilabel>」對話方塊將會出現。您可使用該對話方塊來為主機設置一組名稱，並且若是主機擁有受支援的電源管理介面卡，您亦可配置電源管理。欲取得有關於電源管理配置上的相關資訊，請參閱《<citetitle>Red Hat Enterprise Virtualization — 管理指南</citetitle>》的《<citetitle>電源管理</citetitle>》章節。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton>. If you have not configured power management you will be prompted to confirm that you wish to proceed without doing so, click <guibutton>OK</guibutton>."
+msgstr "請點選「<guibutton>確定</guibutton>」。若您尚未配置電源管理，您將會被提示確認您是否希望在不進行此步驟的情況下，繼續進行，請按下「<guibutton>確定</guibutton>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status in the <guilabel>Hosts</guilabel> tab changes to <application> Installing</application>, after a brief delay the host status changes to <application> Up</application>."
+msgstr "「<guilabel>主機</guilabel>」分頁中的狀態會改變為 <application> Installing</application>，在過了一段時間後，主機的狀態便會改變為 <application> Up</application>。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7618-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

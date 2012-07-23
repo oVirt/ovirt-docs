@@ -1,0 +1,43 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-28 11:37-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "ISO Uploader"
+msgstr "ISO アップローダー"
+
+#. Tag: para
+#, no-c-format
+msgid "The ISO uploader is a tool for uploading ISO images to the ISO storage domain. It is installed as part of the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The ISO uploader command is <command>rhevm-iso-uploader</command>. You are required to log in as the <systemitem class=\"username\">root</systemitem> user and provide the administration credentials for the Red Hat Enterprise Virtualization environment. The <command>rhevm-iso-uploader <parameter>-h</parameter></command> command displays usage information, including a list of all valid options for the <command>rhevm-iso-uploader</command> command."
+msgstr "<acronym>ISO</acronym> アップローダーのコマンドは、<command>rhevm-iso-uploader</command> です。このコマンドを実行するには、必ず <systemitem class=\"username\">root</systemitem> ユーザーとしてログインしてください。コマンドラインで Red Hat Enterprise Virtualization 環境の管理者の認証情報を入力する必要があります。このコマンドに使用できるオプションの全一覧など、使用方法に関する詳細情報は、<command>rhevm-iso-uploader <parameter>-h</parameter></command> のコマンドを実行すると表示することができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8675-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "The Red Hat Enterprise Virtualization Manager installation includes a tool for uploading <acronym> ISO</acronym> images to the <acronym> ISO</acronym> storage domain. This tool is referred to as the ISO uploader. It provides for the listing of storage domains and uploading of <acronym> ISO</acronym> files to them."
+#~ msgstr "Red Hat Enterprise Virtualization Manager のインストールには、<acronym>ISO</acronym> イメージを <acronym>ISO</acronym> ストレージドメインにアップロードするツールが搭載されています。このツールは ISO アップローダーと呼ばれており、ストレージドメインを一覧表示したり、それらのストレージドメインに <acronym>ISO</acronym> ファイルをアップロードする機能を提供します。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

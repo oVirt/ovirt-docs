@@ -1,0 +1,115 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:21-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Removing Red Hat Enterprise Virtualization Manager"
+msgstr "移除 Red Hat Enterprise Virtualization Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager provides the <command>rhevm-cleanup</command> utility to allow quick and easy removal of the data files associated with the installation. Once this has been run you are able to remove the Red Hat Enterprise Virtualization Manager packages using <command>yum</command>."
+msgstr "RHEV Manager 提供了 <command>rhevm-cleanup</command> 工具程式，讓使用者以簡單的方法，快速地移除與安裝相關的資料檔。一旦執行了直後，您就可以透過 <command>yum</command> 移除 RHEV Manager。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning — Potential Data Loss"
+msgstr "警告 — 資料可能會佚失"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>rhevm-cleanup</command> command removes all existing Red Hat Enterprise Virtualization Manager data. This includes configuration settings, certificates, and database tables."
+msgstr "<command>rhevm-cleanup</command> 指令會移除所有現有的 RHEV Manager 資料，包括配置檔案、認證、與資料庫表單。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Run the <command>rhevm-cleanup</command> command on the system that Red Hat Enterprise Virtualization Manager is installed on. You must be logged in as the <systemitem>root</systemitem> user to run <command>rhevm-cleanup</command>."
+msgstr "請在 RHEV Manager 所安裝的系統上，執行 <command>rhevm-cleanup</command>。您必須是 <systemitem>root</systemitem> 才能執行 <command>rhevm-cleanup</command>。"
+
+#. Tag: screen
+#, no-c-format
+msgid "# rhevm-cleanup"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts you to confirm that you wish to remove Red Hat Enterprise Virtualization Manager."
+msgstr "這程序檔會請您確認，是否真的要移除 RHEV Manager。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Would you like to proceed? (yes|no): yes"
+msgstr "是否要繼續？(yes|no): yes"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <literal>yes</literal> and then press <keycap> Enter</keycap> to proceed with removal of Red Hat Enterprise Virtualization Manager."
+msgstr "輸入 <literal>yes</literal> 然後按下 <keycap>Enter</keycap>，開始移除 Red Hat Enterprise Virtualization Manager。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>rhevm-cleanup</command> command displays a message confirming that the Red Hat Enterprise Virtualization data files have been removed successfully."
+msgstr "<command>rhevm-cleanup</command> 指令會顯示一則訊息，確認 Red Hat Enterprise Virtualization 資料檔已經成功移除。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "RHEV Manager cleanup finished successfully!"
+msgstr "RHEV Manager 已成功移除！"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To complete removal of the Red Hat Enterprise Virtualization Manager you must also use <command>yum</command> to remove the relevant packages. While still logged in as the <systemitem> root</systemitem> user run:"
+msgstr "要完全移除 RHEV Manager，您必須使用 <command>yum</command> 移除相關套件。在您還以 <systemitem>root</systemitem> 身分登入時，請執行："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>remove</parameter> <parameter>rhevm*</parameter> <parameter>vdsm-bootstrap</parameter></command>"
+msgstr "# <command>yum <parameter>remove</parameter> <parameter>rhevm*</parameter> <parameter>vdsm-bootstrap</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager has been removed from the system successfully."
+msgstr "已從系統成功移除 RHEV Manager 。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7521-163913+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

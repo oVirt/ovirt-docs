@@ -1,0 +1,59 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 10:35-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "VirtIO and Guest Tool Image Files"
+msgstr "VirtIO およびゲストツールのイメージファイルのアップロード"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <package>virtio-win</package> ISO and Virtual Floppy Drive (VFD) images, which contain the VirtIO drivers for Windows virtual machines, and the <package>rhev-tools-setup</package> ISO, which contains the Red Hat Enterprise Virtualization Guest Tools for Windows virtual machines, are copied to an ISO storage domain upon installation and configuration of the domain."
+msgstr "インストール中にローカルの <acronym>ISO</acronym> ストレージドメインを設定すると、Windows 仮想マシン用の VirtIO ドライバーを含む <package>virtio-win</package> <acronym>ISO</acronym> イメージと Virtual Floppy Drive (<acronym>VFD</acronym> - 仮想フロッピードライバー) イメージがその新しいストレージドメインに自動的にコピーされます。 Windows 仮想マシン用の Red Hat Enterprise Virtualization ゲストツールが含まれている <package>rhev-tools-setup</package> <acronym>ISO</acronym> もこのドメインにコピーされます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These image files provide software that can be installed on virtual machines to improve performance and usability. The most recent <package>virtio-win</package> and <package>rhev-tools-setup</package> images are referred to by the following symbolic links on the file system of the Red Hat Enterprise Virtualization Manager:"
+msgstr "これらのイメージファイルで提供されるソフトウェアをゲストのオペレーティングシステムにインストールすると、仮想マシンのパフォーマンスやユーザービリティを向上させることができます。最新の <package>virtio-win</package> と <package>rhev-tools-setup</package> の各イメージは、Red Hat Enterprise Virtualization Manager のファイルシステム上では以下のシンボリックリンクで参照されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.iso</filename>"
+msgstr "<filename>/usr/share/virtio-win/virtio-win.iso</filename>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.vfd</filename>"
+msgstr "<filename>/usr/share/virtio-win/virtio-win.vfd</filename>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>"
+msgstr "<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These image files must be manually uploaded to ISO storage domains that were not created locally by the installation process. Use the <command>rhevm-iso-uploader</command> command to upload these images to your ISO storage domain. Once uploaded, the image files can be attached to and used by virtual machines."
+msgstr "インストールプロセスで <acronym>ISO</acronym> ストレージドメインがローカルに作成されなかった場合には、これらのファイルを手動でアップロードする必要があります。<acronym>ISO</acronym> ストレージドメインにこれらのファイルをアップロードするには <command>rhevm-iso-uploader</command> コマンドを使用する必要があります。イメージファイルのアップロードが完了すると、仮想マシンにアタッチして使用することができるようになります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8672-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

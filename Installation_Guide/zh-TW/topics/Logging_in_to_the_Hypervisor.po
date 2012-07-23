@@ -1,0 +1,64 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:55-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Logging into the Hypervisor"
+msgstr "登入 Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor allows local console logins to facilitate post-installation configuration. The login prompt used is displayed once the hypervisor has booted:"
+msgstr "Hypervisor 允許本機主控台登錄，以進行安裝後的配置。當 hypervisor 啟動後，登錄提示便會出現："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Please login as 'admin' to configure the node\n"
+"localhost login:\n"
+"        "
+msgstr ""
+"\n"
+"請以管理員身份登入，以配置節點\n"
+"本機主機登入：\n"
+"        "
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <systemitem class=\"username\"> admin</systemitem> at the prompt and press <keycap> Enter</keycap>. When prompted enter the password which was set during the installation process and press <keycap> Enter</keycap> again to log in."
+msgstr "請在提示中輸入 <systemitem class=\"username\">admin</systemitem>，並按下 <keycap>Enter</keycap> 鍵。當被提示時，請輸入在進行安裝程序時所設置的密碼，並再次按下 <keycap>Enter</keycap> 來登入。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7611-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

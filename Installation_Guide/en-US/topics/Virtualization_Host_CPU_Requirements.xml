@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Virtualization_Host_CPU_Requirements" remap="TID_7842">
+	<title>Virtualization Host Hardware Requirements Overview</title>
+	<para>
+		Red Hat Enterprise Virtualization Hypervisors and Red Hat Enterprise Linux Hosts have a number of hardware requirements and supported limits.
+	</para>
+	<!--
+
+2.1.2.1. CPU Requirements	install	reference	Installing RHEV	7843
+2.1.2.2. RAM Requirements	install	reference	Installing RHEV	7844
+2.1.2.3. Storage Requirements	install	reference	Installing RHEV	7845
+2.1.2.4. PCI Device Requirements	install	reference	Installing RHEV	7846
+
+
+-->
+	<formalpara role="link-list">
+		<title/>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="CPU_Requirements" xrefstyle="link-list"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="RAM_Requirements" xrefstyle="link-list"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Storage_Requirements" xrefstyle="link-list"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="PCI_Device_Requirements" xrefstyle="link-list"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7842-161526+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

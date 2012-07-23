@@ -1,0 +1,79 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Hardware Requirements"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The minimum and recommended hardware requirements outlined here are based on a typical small to medium sized installation. The exact requirements vary between deployments based on sizing and load. Please use these recommendations as a guide only."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Minimum"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A dual core <acronym>CPU</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "4&nbsp;GB of available system <acronym>RAM</acronym> that is not being consumed by existing processes."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "25&nbsp;GB of locally accessible, writeable, disk space."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "1 Network Interface Card (<acronym>NIC</acronym>) with bandwidth of at least 1 Gbps."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Recommended"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A quad core <acronym>CPU</acronym> or multiple dual core <acronym>CPUs</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "16 GB of system <acronym>RAM</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "50 GB of locally accessible, writeable, disk space."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager runs on Red Hat Enterprise Linux. To confirm whether or not specific hardware items are certified for use with Red Hat Enterprise Linux refer to <ulink url=\"http://www.redhat.com/rhel/compatibility/hardware/\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7841-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

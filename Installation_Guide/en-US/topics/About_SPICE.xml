@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="About_SPICE" remap="TID_8649">
+	<title>SPICE</title>
+	<para>
+		The <acronym> SPICE</acronym> protocol allows the virtual machine to connect to the host with physical <acronym> PC</acronym>-like graphics performance. It supplies video at more than 30 frames per second, bi-directional audio (for soft-phones/IP phones), bi-directional video (for video telephony/video conferencing) and <acronym> USB</acronym> redirection from the client’s <acronym> USB</acronym> port into the virtual machine. <acronym> SPICE</acronym> also supports connection to multiple monitors with a single virtual machine.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8649-162149+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

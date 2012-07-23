@@ -1,0 +1,34 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 08:27-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtual Machines"
+msgstr "仮想マシンについて"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform enables you to create virtual machines that perform the same functions as physical machines. Using a standard Web browser, users can run virtual machines that behave like physical desktops. Multiple levels of permissions allow users with different roles to manage virtual machines to meet the requirements of the enterprise."
+msgstr "Red Hat Enterprise Virtualization プラットフォームでは、物理マシンと同じ機能を実行する仮想マシンを作成することができます。ユーザーは標準の Web ブラウザーを使用して物理的なデスクトップと同様の動作をする仮想マシンを実行させることができます。マルチレベルのパーミッションで、仮想マシンの管理には企業のニーズに合うようユーザーごとに異なるロールを持たせることができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8648-162528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

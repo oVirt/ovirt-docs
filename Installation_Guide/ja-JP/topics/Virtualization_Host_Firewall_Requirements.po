@@ -1,0 +1,149 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 10:05-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Firewall Requirements"
+msgstr "仮想化ホストのファイアウォール要件"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Both Red Hat Enterprise Linux hosts and Red Hat Enterprise Virtualization Hypervisors require that a number of ports be opened to allow network traffic through the system's firewall. In the case of the Red Hat Enterprise Virtualization Hypervisor these firewall rules are configured automatically. For Red Hat Enterprise Linux hosts however it is necessary to manually configure the firewall."
+msgstr "Red Hat Enterprise Linux ホストおよび Red Hat Enterprise Virtualization Hypervisor ではいずれも、ネットワークトラフィックがシステムのファイアウォールを通過できるように複数のポートを開放しておく必要があります。Red Hat Enterprise Virtualization Hypervisor の場合、このファイアウォールルールは自動的に設定されますが、Red Hat Enterprise Linux ホストの場合には手動でファイアウォールを設定する必要があります。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Port(s)"
+msgstr "ポート"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Protocol"
+msgstr "プロトコル"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Source"
+msgstr "ソース"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Destination"
+msgstr "デスティネーション"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Purpose"
+msgstr "目的"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "22"
+msgstr "22"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "TCP"
+msgstr "TCP"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "Red Hat Enterprise Virtualization Manager"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr "Red Hat Enterprise Virtualization Hypervisor"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux host(s)"
+msgstr "Red Hat Enterprise Linux ホスト"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Secure Shell ( <acronym> SSH</acronym>) access."
+msgstr "Secure Shell (<acronym>SSH</acronym>) アクセス"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "5634 - 6166"
+msgstr "5634 - 6166"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Administration Portal clients"
+msgstr "管理ポータルのクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "User Portal clients"
+msgstr "ユーザーポータルのクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Remote guest console access via <acronym> VNC</acronym> and <acronym> Spice</acronym>. These ports must be open to facilitate client access to virtual machines."
+msgstr "<acronym>VNC</acronym> や <acronym>SPICE</acronym> によるリモートゲストのコンソールアクセス (クライアントが仮想マシンに容易にアクセスできるようこれらのポートを開けておく必要があります)"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "16514"
+msgstr "16514"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr "Red Hat Enterprise Linux ホスト"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtual machine migration using <systemitem> libvirt</systemitem>."
+msgstr "<systemitem>libvirt</systemitem> を使用した仮想マシンの移行"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "49152 - 49216"
+msgstr "49152 - 49216"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Hypervisor(s)"
+msgstr "Red Hat Enterprise Linux Hypervisor"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtual machine migration and fencing using <acronym> VDSM</acronym>. These ports must be open facilitate both automated and manually initiated migration of virtual machines."
+msgstr "<acronym>VDSM</acronym> を使用した仮想マシンの移行とフェンシング (仮想マシンの自動および手動での移行を容易に実行できるように、これらのポートを開けておく必要があります)"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "54321"
+msgstr "54321"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "VDSM communications with the Manager and other virtualization hosts."
+msgstr "VDSM による Manager およびその他の仮想化ホストとの通信"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7851-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

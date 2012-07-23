@@ -1,0 +1,99 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Installation Log Files"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log File"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-cleanup_<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-setup</command>. This is the command used to remove a Red Hat Enterprise Virtualization Manager installation. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command detailing the creation and configuration of the <systemitem>rhevm</systemitem> database."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-dwh-setup</command> command. This is the command used to create the <systemitem> rhevm_history</systemitem> database for reporting. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-reports-setup</command> command. This is the command used to install the Red Hat Enterprise Virtualization Manager Reports modules. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/engine-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-upgrade</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

@@ -1,0 +1,128 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:14-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Required UIDs and GIDs"
+msgstr "所需的 UID 與 GID"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization requires certain User IDs and Group IDs (UIDs and GIDs) on the host system. When the <package> vdsm</package> and <package> qemu</package> packages are installed, default versions of these UIDs and GIDs are created on the host."
+msgstr "Red Hat Enterprise Virtualization 在主機上需要幾個特定的使用者 ID 與群組 ID（UID 與 GID）s)。安裝 <package>vdsm</package> 與 <package>qemu</package> 套件之後主機上會建立這些 UID 與 GID 的預設版本。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If existing UIDs and GIDs on the host conflict with the default values used during <package> vdsm</package> and <package> qemu</package> installation, a conflict occurs."
+msgstr "如果主機上現有的 UID 與 GID 及 <package>vdsm</package> 與 <package>qemu</package> 安裝時的預設值相同，就會產生衝突。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The UIDs and GIDs created by default during Red Hat Enterprise Virtualization installation are:"
+msgstr "RHEV 安裝期間建立的預設 UID 與 GID 為："
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "GIDs and UIDs required by RHEV"
+msgstr "RHEV 所需的 GID 與 UID"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Name"
+msgstr "名稱"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "UID"
+msgstr "UID"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "GID"
+msgstr "GID"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Auxiliary Group"
+msgstr "輔助群組"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<systemitem> vdsm</systemitem>"
+msgstr "<systemitem>vdsm</systemitem>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "36"
+msgstr "36"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "nil"
+msgstr "nil"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "109"
+msgstr "109"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<systemitem> kvm</systemitem>"
+msgstr "<systemitem>kvm</systemitem>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<systemitem> qemu</systemitem>"
+msgstr "<systemitem>qemu</systemitem>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "107"
+msgstr "107"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7853-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

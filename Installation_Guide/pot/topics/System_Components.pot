@@ -1,0 +1,89 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "System Components"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization platform consists of one or more virtualization hosts (either Red Hat Enterprise Virtualization Hypervisors or Red Hat Enterprise Linux 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager acts as a centralized management system that allows system administrators to view and manage virtual machines. The Red Hat Enterprise Virtualization Manager provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning. The Red Hat Enterprise Virtualization Manager itself also runs on Red Hat Enterprise Linux&nbsp;6.3."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The manager provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The Red Hat Enterprise Virtualization Manager exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>)."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Administration Portal is used to perform setup, configuration, and management of the Red Hat Enterprise Virtualization environment."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The User Portal is used to start, stop, reboot, and connect to virtual machines. Users granted power user access are also able to create virtual machine templates and, virtual machines from this interface."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <acronym>REST</acronym>&nbsp;<acronym>API</acronym> provides an interface for automation of tasks normally accomplished manually by users. Scripts that make use of the <acronym>REST</acronym><acronym>API</acronym> are able to be written in any language which supports accessing <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> resources."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Python bindings for the <acronym>REST</acronym>&nbsp;<acronym>API</acronym> are also provided, as well as an interface for interacting with the <acronym>API</acronym> from the command line."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. The Hypervisor is designed for management via the Red Hat Enterprise Virtualization Manager. It provides a thin virtualization layer deployed across the server infrastructure."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Kernel-based Virtual Machine ( <acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization. Red Hat Enterprise Virtualization Hypervisor 6.3 and later are supported by this release of Red Hat Enterprise Virtualization."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager also supports the use of systems running Red Hat Enterprise Linux 6.3, or higher, <acronym>AMD64</acronym>/Intel 64 versions as virtualization hosts."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

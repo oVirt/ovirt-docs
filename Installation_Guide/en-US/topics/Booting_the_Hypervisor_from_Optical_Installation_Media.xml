@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Booting_the_Hypervisor_from_Optical_Installation_Media" remap="TID_7532">
+	<title>Booting the Hypervisor from Optical Installation Media</title>
+	<para>
+		For many systems, the default BIOS configuration boots from CD-ROM first. If booting from CD-ROM is disabled or is not the first boot device refer to 
+		<!--<xref linkend="form-Deployment_Guide-Preparation_instructions-BIOS_settings_and_boot_process_troubleshooting" /> and -->your manufacturers manuals for more information.
+	</para>
+	<para>
+		To boot from CD-ROM insert the hypervisor CD-ROM and then restart the computer.
+	</para>
+	<para>
+		The hypervisor will start to boot. If the hypervisor does not start to boot your BIOS may not be configured to boot from CD-ROM first or booting from CD-ROM may be disabled.
+	</para>
+	<!--
+            <para>
+                If the hypervisor is running, you must now initialize the local storage device. Refer to <xref linkend="form-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Hypervisor_interactive_installation-Booting_the_Hypervisor_for_installation" /> for details.
+            </para>-->
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="Troubleshooting_BIOS_Settings_and_Boot_Process" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Booting_the_Hypervisor_from_Installation_Media" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7532-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

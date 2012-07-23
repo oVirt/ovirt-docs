@@ -1,0 +1,74 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-28 10:03-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Viewing Hypervisor Status"
+msgstr "Hypervisor のステータス表示"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status screen displays a brief overview of the current state of the hypervisor. The information displayed consists of:"
+msgstr "ステータス画面には、Hypervisor の現在のステータスに関する概要が表示されます。この情報は以下のような内容で構成されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the hostname,"
+msgstr "ホスト名"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the current status of the network connection,"
+msgstr "ネットワーク接続の現在のステータス"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the destination(s) of logs and reports, and"
+msgstr "ログとレポートの出力先"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the number of active virtual machines."
+msgstr "アクティブな仮想マシン数"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status screen also provides a number of buttons to change the state of the hypervisor. They are:"
+msgstr "ステータス画面には、Hypervisor の状態を変更するためボタンも複数あります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Lock&gt;</guibutton>: Locks the hypervisor. The username and password must be entered to unlock the hypervisor."
+msgstr "<guibutton>&lt;ロック&gt;</guibutton>: Hypervisor をロックします。 Hypervisor のロックを解除する場合はユーザー名とパスワードの入力が必要になります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Restart&gt;</guibutton>: Restarts the hypervisor."
+msgstr "<guibutton>&lt;再起動&gt;</guibutton>: Hypervisor を再起動します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Power Off&gt;</guibutton>: Turns the hypervisor off."
+msgstr "<guibutton>&lt;電源オフ&gt;</guibutton>: Hypervisor の電源をオフにします。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7856-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

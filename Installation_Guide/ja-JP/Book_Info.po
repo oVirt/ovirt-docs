@@ -1,0 +1,45 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+# noriko <noriko@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-20 03:09-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Book_Info
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installation Guide"
+msgstr "インストールガイド"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Book_Info, author myamamot
+#. Tag: subtitle
+#, fuzzy, no-c-format
+msgid "Installing Red Hat Enterprise Virtualization Environments"
+msgstr "Red Hat Enterprise Virtualization 環境のインストール"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Book_Info, author Ykatabam
+#. Tag: productname
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization"
+msgstr "Red Hat Enterprise Virtualization"
+
+#. Tag: para
+#, no-c-format
+msgid "Note: This document is under development, is subject to substantial change, and is provided only as a preview. The included information and instructions should not be considered complete, and should be used with caution."
+msgstr ""
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Book_Info, author noriko
+#~ msgctxt ""
+#~ msgid "Red Hat Engineering Content Services"
+#~ msgstr "Red Hat Engineering Content Services"

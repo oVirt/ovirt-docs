@@ -1,0 +1,158 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 12:12-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Installation Workflow"
+msgstr "Red Hat Enterprise Virtualization Manager のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization requires installation and configuration of several components to create a functioning virtualization environment. You must install and configure each component in the order shown in this checklist:"
+msgstr "機能的な仮想化環境を構築するには、複数のコンポーネントを Red Hat Enterprise Virtualization にインストールしてから設定を行う必要があります。 各コンポーネントは以下のチェックリストに記載された順序でインストールと設定を行う必要があります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Check System Requirements"
+msgstr "システム要件の確認"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Check hardware requirements."
+msgstr "ハードウェア要件の確認"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Check software requirements."
+msgstr "ソフトウェア要件の確認"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Installation"
+msgstr "Red Hat Enterprise Virtualization Manager のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install Red Hat Enterprise Virtualization Manager."
+msgstr "Red Hat Enterprise Virtualization Manager のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install Red Hat Enterprise Virtualization Manager Reports (Optional)."
+msgstr "Red Hat Enterprise Virtualization Manager Reports のインストール"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Install Virtualization Hosts"
+msgstr "仮想化ホストのインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install Red Hat Enterprise Virtualization Hypervisor hosts."
+msgstr "Red Hat Enterprise Virtualization Hypervisor ホストのインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install Red Hat Enterprise Linux Hosts."
+msgstr "Red Hat Enterprise Linux ホストのインストール"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Plan Your Data Center"
+msgstr "データセンターのプランニング"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Plan your Red Hat Enterprise Virtualization Data Center(s)."
+msgstr "Red Hat Enterprise Virtualization データセンターのプランニング"
+
+#. Tag: title
+#, no-c-format
+msgid "Setup Networks (Optional)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Configure storage, data, and display networks."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Setup Storage"
+msgstr "ストレージの設定"
+
+#. Tag: para
+#, no-c-format
+msgid "Setup Data, <acronym>ISO</acronym>, and (optionally) Export Storage Domains."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Populate your <acronym>ISO</acronym> storage domain with installation media for Virtual Machines."
+msgstr "インストールメディアで <acronym>ISO</acronym> ストレージドメインを生成する方法は"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Completion of the above steps will result in the creation of a functioning Red Hat Enterprise Virtualization environment capable of running virtual machines."
+msgstr "上記の手順を完了すると、仮想マシンを実行でき機能的な Red Hat Enterprise Virtualization 環境が整ったことになります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-System_Requirements\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"part-Installing_Red_Hat_Enterprise_Virtualization_Manager\" xrefstyle=\"link-list\" />"
+msgstr "Red Hat Enterprise Virtualization Manager Reports のインストール"
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"part-Installing_Virtualization_Hosts\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Planning_your_Data_Center\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Network_Setup\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Storage_Setup\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7839-163894+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Installation Workflow"
+#~ msgstr "インストールの流れ"
+
+#, fuzzy
+#~ msgctxt ""
+#~ msgid "For an overview of the supported storage types, and how they are attached to the manager ."
+#~ msgstr "対応ストレージの種類に関する概要および Manager への接続方法について"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

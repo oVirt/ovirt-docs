@@ -1,0 +1,99 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Required UIDs and GIDs"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization requires certain User IDs and Group IDs (UIDs and GIDs) on the host system. When the <package> vdsm</package> and <package> qemu</package> packages are installed, default versions of these UIDs and GIDs are created on the host."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If existing UIDs and GIDs on the host conflict with the default values used during <package> vdsm</package> and <package> qemu</package> installation, a conflict occurs."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The UIDs and GIDs created by default during Red Hat Enterprise Virtualization installation are:"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "GIDs and UIDs required by RHEV"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Name"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "UID"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "GID"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Auxiliary Group"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<systemitem> vdsm</systemitem>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "36"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "nil"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "109"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<systemitem> kvm</systemitem>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<systemitem> qemu</systemitem>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "107"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7853-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

@@ -1,0 +1,232 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Syntax for rhevm-iso-uploader Command"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The basic syntax for the ISO uploader command is:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"<command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter></command>\n"
+"       <command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>[file].[file]...[file]</replaceable></parameter></command>\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The two supported modes of operation are <parameter>list</parameter> and <parameter>upload</parameter>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <parameter>list</parameter> parameter lists the valid ISO storage domains available for ISO uploads. The Red Hat Enterprise Virtualization Manager sets this list on the local machine upon installation."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <parameter>upload</parameter> parameter uploads selected ISO file(s) to the specified ISO storage domain. NFS is used as default; SSH is available."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The ISO uploader command requires either the <parameter>list</parameter> or <parameter>upload</parameter> parameter be included for basic usage. The <parameter>upload</parameter> parameter requires a minimum of one local file name to upload."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "There are numerous parameters to further refine the <command>rhevm-iso-uploader</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "General Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--version</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays the version number of the command in use before exiting."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-h</parameter>, <parameter>--help</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays command usage information before exiting."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the configuration file the tool is to use."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the specific file name the command should use for the log output."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--quiet</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets quiet mode, reducing console output to a minimum. Quiet mode is off by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-v</parameter>, <parameter>--verbose</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets verbose mode, providing more console output. Verbose mode is off by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-f</parameter>, <parameter>--force</parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Force mode is necessary when the source file being uploaded has an identical file name as an existing file at the destination; it forces the existing file to be overwritten. Force mode is off by default."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-u <replaceable>USER</replaceable></parameter>, <parameter>--user=<replaceable>USER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the user associated with the file to be uploaded. The <replaceable>USER</replaceable> is specified in the format <replaceable>user</replaceable>@<replaceable>domain</replaceable>, where <replaceable>user</replaceable> is the user name and <replaceable>domain</replaceable> is the directory services domain in use. The user must exist in directory services and be known to the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the fully qualified domain name of the Red Hat Enterprise Virtualization Manager server from which to upload ISOs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the ISO uploader is being run on the same client machine as the Red Hat Enterprise Virtualization Manager; the default value is <literal>localhost</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "<acronym>ISO</acronym> Storage Domain Options"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These options specify the ISO domain to which files are uploaded. They are alternatives; do not use these parameters together."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-i</parameter>, <parameter>--iso-domain=<replaceable>ISODOMAIN</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the storage domain <replaceable>ISODOMAIN</replaceable> as the destination for uploads."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-n</parameter>, <parameter>--nfs-server=<replaceable>NFSSERVER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets the NFS path <replaceable>NFSSERVER</replaceable> as the destination for uploads."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Connection Options"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The ISO uploader uses NFS as default to upload files. These options specify SSH file transfer instead."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--ssh-user=<replaceable>USER</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>USER</replaceable> as the SSH user name to use for the upload."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>--ssh-port=<replaceable>PORT</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>PORT</replaceable> as the port to use when connecting to SSH."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>, <parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public key to use for SSH authentication. You will be prompted to enter the password of the specified user if not key is set."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8412-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

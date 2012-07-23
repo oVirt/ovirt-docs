@@ -1,0 +1,179 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:46-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Red Hat Enterprise Virtualization Hypervisor Packages"
+msgstr "安裝 Hypervisor 套件"
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> Red Hat Network channel contains the Hypervisor packages. The Hypervisor itself is contained in the <package>rhev-hypervisor6</package> package. Additional tools supporting <acronym>USB</acronym> and <acronym>PXE</acronym> installations are contained in the <package>rhev-hypervisor-tools</package> package. You must install the Hypervisor packages on the system that you intend to use to create Hypervisor boot media."
+msgstr "RHEV Hypervisor 頻道在 <package>rhev-hypervisor-tools</package> 套件中包含了 <acronym>USB</acronym> 與 <acronym>PXE</acronym> 安裝程序的額外工具，當您依照此程序進行時，此套件亦會被安裝。"
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribing to download the Hypervisor using certificate-based RHN"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Identify Available Entitlement Pools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To subscribe the system to the Red Hat Enterprise Virtualization you must locare the identifier for the relevant entitlement pool. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To identify available subscription pools for <literal>Red Hat Enterprise Virtualization</literal> use the command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# subscription-manager list --available | grep -A8 \"Red Hat Enterprise Virtualization\""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <literal>Red Hat Enterprise Virtualization Beta</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribe System to Entitlement Pools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Using the pool identifiers located in the previous step, subscribe the system to <literal>Red Hat Enterprise Linux Server</literal>, <literal>Red Hat Enterprise Virtualization</literal> entitlements. Use the <parameter>subscribe</parameter> parameter to the <command>subscription-manager</command> command, replacing <replaceable>POOLID</replaceable> with one of the pool identifiers.:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# subscription-manager subscribe --pool=<replaceable>POOLID</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribing to download the Hypervisor using RHN Classic"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr "登入 RHN（<ulink url=\"http://rhn.redhat.com\" />）。"
+
+#. Tag: para
+#, no-c-format
+msgid "Move the mouse cursor over the <guilabel>Subscriptions</guilabel> link at the top of the page, and then click <guilabel>Registered Systems</guilabel> in the menu that appears."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the system to which you are adding channels from the list presented on the screen, by clicking the name of the system."
+msgstr "透過點選系統名稱，以選擇您希望將畫面上列出的頻道，新增至哪部系統。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Alter Channel Subscriptions</guilabel> in the <guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr "請點選畫面上「<guilabel>已訂閱頻道</guilabel>」部分中的「<guilabel>修改頻道訂閱</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> channel from the list presented on the screen, then click the <guilabel>Change Subscription</guilabel> button to finalize the change."
+msgstr "由畫面上所提供的清單中，選擇<systemitem> Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> 頻道，然後按下「<guilabel>更改訂閱</guilabel>」按鈕，以確認變更。"
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <systemitem>Red Hat Enterprise Virtualization Hypervisor Beta (v.6 x86_64)</systemitem>."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log in to the system on which the Red Hat Enterprise Virtualization Manager is installed. You must log in as the <systemitem>root</systemitem> user."
+msgstr "請登入安裝了 RHEV Manager 的系統。您必須以 <systemitem>root</systemitem> 使用者身份登入。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages."
+msgstr "請使用 <command>yum</command> 來安裝 <package>rhev-hypervisor</package> 和 <package>rhev-hypervisor-tools</package> 套件。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# yum install rhev-hypervisor6 rhev-hypervisor-tools"
+msgstr "# yum install \"rhev-hypervisor*\""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor ISO image is installed into the <filename>/usr/share/rhev-hypervisor/</filename> directory. The <command>rhevh-iso-to-disk</command> and <command>rhevh-iso-to-pxeboot</command> scripts are installed to the <filename>/usr/bin</filename> directory."
+msgstr "Hypervisor ISO 映像檔會被安裝至 <filename>/usr/share/rhev-hypervisor/</filename> 目錄中。<filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> 這個符號連結會被更新為指向 ISO 映像檔。<command>rhevh-iso-to-disk</command> 和 <command>rhevh-iso-to-pxeboot</command> script 將會被安裝至 <filename>/usr/bin</filename> 目錄。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 6.2 and later allows more than one version of the ISO image to be installed at one time. As such, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> is now a symbolic link to a uniquely-named version of the hypervisor ISO image, such as <filename>/usr/share/rhev-hypervisor/rhevh-6.2-20111006.0.el6.iso</filename>. Different versions of the image can now be installed alongside each other, allowing administrators to run and maintain a cluster on a previous version of the hypervisor while upgrading another cluster for testing."
+msgstr "RHEL 6.2 和更新版本能容許一次安裝超過一個版本的 hypervisor ISO 映像檔。因此，<filename>rhev-hypervisor.iso</filename> 現在是個獨特名稱版本之 hypervisor ISO 映像檔的符號連結，例如 <filename>/usr/share/rhev-hypervisor/rhevh-6.2-20111006.0.el6.iso</filename>。您可相應地安裝不同版本的 hypervisor ISO，這能讓管理員在先前版本的 hypervisor 上執行和維護叢集，並同時升級其它叢集以進行測試。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Additionally, the symbolic links <filename>/usr/share/rhev-hypervisor/rhevh-latest6.iso</filename>, and <filename>/usr/share/rhev-hypervisor/rhev-hypervisor6.iso</filename> are created. These links also target the most recently installed version of the Red Hat Enterprise Virtualization ISO image."
+msgstr "此外，<filename>/usr/share/rhev-hypervisor/</filename> 和 <filename>/usr/share/rhev-hypervisor/</filename> 這兩個符號連結也會視需求被建立。它們相應地連至了最近期安裝的 RHEV Hypervisor&nbsp;5 與 RHEV Hypervisor&nbsp;6 的 ISO 版本。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7525-164513+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Click <guilabel>Systems</guilabel> at the top of the page."
+#~ msgstr "點選畫面上方的「<guilabel>系統</guilabel>」。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

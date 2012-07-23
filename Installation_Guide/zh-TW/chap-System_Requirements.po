@@ -1,0 +1,62 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 12:22-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "System Requirements"
+msgstr "系統需求"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Hardware Requirements"
+msgstr "硬體需求"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Hardware Requirements"
+msgstr "虛擬主機需求"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Software Requirements"
+msgstr "軟體需求"
+
+#. Tag: title
+#, no-c-format
+msgid "Directory Services"
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Firewall Configuration"
+msgstr "防火牆配置"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Red Hat Network (RHN)"
+#~ msgstr "Red Hat Network（RHN）"

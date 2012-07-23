@@ -1,0 +1,51 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-24 09:38-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Directory Services"
+msgstr "目錄服務"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization Manager is able to use both Active "
+"Directory and <acronym>IPA</acronym> Server for user authentication. This "
+"appendix documents the basic requirements for directory servers of either "
+"type to be added to the environment."
+msgstr ""
+"RHEV Manager 能夠使用 Active Directory 與 <acronym>IPA</acronym> Server "
+"來進行使用者認證。本附錄記載了新增這兩種目錄伺服器至環境中的基本需求。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

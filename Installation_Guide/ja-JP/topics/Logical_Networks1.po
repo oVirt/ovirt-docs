@@ -1,0 +1,68 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 12:55-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Logical Networks in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "By default the management network, called <guilabel>rhevm</guilabel> is defined for a data center. New logical networks, for example for data, storage or display can be defined by the administrator. In general, logical networks are created to isolate network traffic by functionality or virtualize a physical topology. In addition, other networks can be used to segregate virtual machine traffic from the management networks, or isolate traffic between groups of virtual machines in the same cluster. In Red Hat Enterprise Virtualization Manager, network definition, type and function are encapsulated in a logical entity called a <systemitem>Logical Network</systemitem>. For example, a data center may have the following networks,"
+msgstr "デフォルトでは <guilabel>rhevm</guilabel> と呼ばれる管理ネットワークがデータセンター用に定義されます。管理者は、データ、ストレージ、ディスプレイ用などの論理ネットワークを新たに定義することができます。通常、論理ネットワークはネットワークトラフィックを機能別に分離したり、物理トポロジを仮想化するために作成します。また、ネットワークは仮想マシンのトラフィックを管理ネットワークから隔離したり、同じクラスター内の仮想マシングループごとにトラフィックを分離したりするのにも別のネットワークを使用することができます。Red Hat Enterprise Virtualization Manager では、ネットワークの定義、タイプ、および機能は、<systemitem>論理ネットワーク</systemitem> と呼ばれる論理エンティティにカプセル化されます。たとえば、データセンターには以下のようなネットワークを設定することができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Guest data network"
+msgstr "ゲストデータネットワーク"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Storage network access"
+msgstr "ストレージネットワークアクセス"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Management network"
+msgstr "管理ネットワーク"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Display network (for SPICE or VNC)"
+msgstr "ディスプレイネットワーク (SPICE または VNC)"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning:"
+msgstr "警告"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Do not change networking in a Data center or a Cluster if any hosts are active. This may make the hosts unreachable."
+msgstr "実行中のホストがある場合には、クラスターやデータセンター内のネットワーク構成を変更しないでください。ホストが到達不能となる可能性があります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8669-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Logical Networks"
+#~ msgstr "論理ネットワーク"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

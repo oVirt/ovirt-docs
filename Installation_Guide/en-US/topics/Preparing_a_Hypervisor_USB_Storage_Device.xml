@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Preparing_a_Hypervisor_USB_Storage_Device" remap="TID_8656">
+	<title>Preparing a Hypervisor USB Storage Device</title>
+	<para>
+		Red Hat Enterprise Virtualization Hypervisor is able to install itself onto <acronym>USB</acronym> storage devices or solid state disks. However, the initial boot/install <acronym>USB</acronym> device must be a separate device from the installation target. Network booting with <acronym>PXE</acronym> and <acronym>tftp</acronym> provides the greatest flexibility and scalability. For environments where network restrictions prevent network booting, or for systems without <acronym>PXE</acronym> capable network interface cards, a local media installation such as CD-ROM or <acronym>USB</acronym> is necessary. Booting from <acronym>USB</acronym> storage devices is a useful alternative to booting from CD, for systems without CD-ROM drives.
+	</para>
+	<note>
+		<title>Note — <acronym>USB</acronym> Boot Support</title>
+		<para>
+			Not all systems support booting from a <acronym>USB</acronym> storage device. Ensure that your system's BIOS supports booting from <acronym>USB</acronym> storage devices before proceeding.
+		</para>
+	</note>
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="Preparing_USB_Installation_Media_using_rhevhisotodisk" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Using_dd_to_Create_USB_Install_Media" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8656-164515+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

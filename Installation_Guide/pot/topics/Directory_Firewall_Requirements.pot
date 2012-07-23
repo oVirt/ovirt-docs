@@ -1,0 +1,99 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Directory Server Firewall Requirements"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization requires a directory server to support user authentication. A number of ports must be opened in the directory server's firewall to support <acronym>GSS-API</acronym> authentication as used by the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Host Firewall Requirements"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Port(s)"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Protocol"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Source"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Destination"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Purpose"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "88, 464"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "TCP, UDP"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Directory server"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Kerberos authentication."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "389, 636"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "TCP"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lightweight Directory Access Protocol ( <acronym> LDAP</acronym>) and LDAP over <acronym> SSL</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7852-163907+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

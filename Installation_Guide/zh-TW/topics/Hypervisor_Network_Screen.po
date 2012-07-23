@@ -1,0 +1,93 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:12-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Hypervisor Network Screen"
+msgstr "Hypervisor 網路畫面"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>Network</guilabel> screen is used to configure:"
+msgstr "「<guilabel>網路</guilabel>」畫面可用來配置："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the hypervisor's hostname,"
+msgstr "hypervisor 的主機名稱、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <acronym> DNS</acronym> server(s) to use,"
+msgstr "欲使用的 <acronym>DNS</acronym> 伺服器、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <acronym> NTP</acronym> server(s) to use, and"
+msgstr "欲使用的 <acronym>NTP</acronym> 伺服器，以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the network interface to use."
+msgstr "欲使用的網路介面卡。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Hypervisor_Hostname_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Hypervisor_Domain_Name_Services_DNS\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Hypervisor_Network_Time_Protocol_NTP\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Hypervisor_Network_Interfaces\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7857-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

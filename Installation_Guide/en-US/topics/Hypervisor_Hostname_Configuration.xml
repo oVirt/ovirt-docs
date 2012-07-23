@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Hypervisor_Hostname_Configuration" remap="TID_7612">
+	<title>Configuring Hypervisor Hostname</title>
+	<procedure>
+		<step>
+			<para>
+				To set or change the hostname select the <guilabel>Hostname</guilabel> field on the <guilabel>Network</guilabel> screen, and enter the new hostname.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select <guibutton>&lt;Apply&gt;</guibutton>, and press <keycap> Enter</keycap> to save changes to the hostname.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The hostname has been updated.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7612-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

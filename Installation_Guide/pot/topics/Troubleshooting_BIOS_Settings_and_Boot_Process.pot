@@ -1,0 +1,126 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Troubleshooting BIOS Settings and Boot Process"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before installing Red Hat Enterprise Virtualization Hypervisors it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "3.5 inch diskette"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "CD-ROM or DVD device"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Local hard disk"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Many BIOS chips have disabled one or more of the following boot methods: <acronym>USB</acronym> storage devices, CD-ROMs, DVDs or network boot. To boot from your chosen method, enable the method or device and set that device as the first boot device in BIOS."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Most but not all motherboards support the boot methods described in this chapter. Consult the documentation for your motherboard or system to determine whether it is possible to use a particular boot method."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Warning — <acronym>BIOS</acronym> Settings Vary Between Manufacturers"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>BIOS</acronym> settings vary between manufacturers. Any specific examples of <acronym>BIOS</acronym> settings may be inaccurate for some systems. Due to this inconsistency, it is necessary to review the motherboard or system manufacturer's documentation."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Confirming Hardware Virtualization Support"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Verify that your system is capable of running the Red Hat Enterprise Virtualization Hypervisor. Hypervisors require that virtualization extensions are present and enabled in the BIOS before installation proceeds."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Boot the hypervisor from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "When the message <literal>Automatic boot in 30 seconds...</literal> is displayed, and begins counting down from thirty, press any key to skip the automatic boot process."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Ensure the <guilabel>Install or Upgrade</guilabel> option is selected and press <keycap> Tab</keycap> to edit the boot parameters."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap> Enter</keycap>. This action will boot the hypervisor in rescue mode."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Once the hypervisor boots, verify your CPU contains the virtualization extensions with the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# grep -E \"svm|vmx\" /proc/cpuinfo\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Output displays if the processor has the hardware virtualization extensions."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Verify that the KVM modules load by default:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# lsmod | grep kvm\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the output includes <literal>kvm_intel</literal> or <literal>kvm_amd</literal> then the kvm hardware virtualization modules are loaded and the system meets the requirements. If the output does not include the required modules then you must check that your hardware supports the virtualization extensions and that they are enabled in the system's <acronym>BIOS</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7526-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

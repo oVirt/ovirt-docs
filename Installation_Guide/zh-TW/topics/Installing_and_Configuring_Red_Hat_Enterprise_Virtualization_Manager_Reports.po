@@ -1,0 +1,108 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:18-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing and Configuring Red Hat Enterprise Virtualization Manager Reports"
+msgstr "安裝和配置 RHEV Manager Reports"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to install the Red Hat Enterprise Virtualization Manager Reports package, <package> rhevm-reports</package>, if you did not already do this when performing the datawarehouse installation. This package must be installed on the system that the Red Hat Enterprise Virtualization Manager is installed. You must be logged in as the <systemitem> root</systemitem> user."
+msgstr "請使用 <command>yum</command> 來安裝 RHEV Manager Reports 套件 <package>rhevm-reports</package>（若您在進行 datawarehouse 安裝時，尚未進行此步驟）。此套件必須安裝在 RHEV Manager 所安裝於的系統上。您必須以 <systemitem>root</systemitem> 使用者登入。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+msgstr "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You must run this command as the <systemitem class=\"username\"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager."
+msgstr "您必須在執行 RHEV Manager 的系統上，以 <systemitem class=\"username\">root</systemitem> 身份執行這項指令。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-reports-setup</command>"
+msgstr "# <command>rhevm-reports-setup</command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the Red Hat Enterprise Virtualization Manager Reports installation to take effect it is necessary to restart the <systemitem> jbossas</systemitem> service. The <command>rhevm-reports-setup</command> command asks you:"
+msgstr "若要 RHEV Manager Reports 安裝生效，您必須重新啟用 <systemitem>jbossas</systemitem> 服務。<command>rhevm-reports-setup</command> 指令將會詢問您："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"In order to proceed the installer must stop the JBoss service\n"
+"Would you like to stop the JBoss service? (yes|no):"
+msgstr ""
+"若要繼續進行，安裝程式必須停用 JBoss 服務\n"
+"您是否希望停用 JBoss 服務？（yes|no）："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <keycap> yes</keycap> and then press <keycap> Enter</keycap> to proceed. The command then performs a number of actions before prompting you to set the password for the Red Hat Enterprise Virtualization Manager Reports administrative user ( <systemitem class=\"username\"> rhev-admin</systemitem>). Note that the reports system maintains its own set of credentials."
+msgstr "請輸入 <keycap>yes</keycap> 然後按下 <keycap>Enter</keycap>，以繼續進行。指令接著將會執行數項動作，之後便會提示您設置 RHEV Manager Reports 管理員（<systemitem class=\"username\">rhev-admin</systemitem>）的密碼。請注意，回報系統擁有自己的身份認證。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Please choose a password for the admin user (rhevm-admin):"
+msgstr "請為管理使用者（rhevm-admin）輸入一組密碼："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You will be prompted to enter the password a second time to confirm it."
+msgstr "您將會被提示輸入一組密碼兩次，以進行確認。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Reports have been installed successfully. Access Red Hat Enterprise Virtualization Manager Reports at <literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/rhevm-reports</literal>, replacing <literal><replaceable>demo.redhat.com</replaceable></literal> with the fully qualified domain name of the Red Hat Enterprise Virtualization Manager. If during Red Hat Enterprise Virtualization Manager installation you selected a non-default <acronym> HTTP</acronym> port replace <literal>8080</literal> with the port chosen."
+msgstr "RHEV Manager Reports 已成功安裝。您可藉由 <literal>http://<replaceable>demo.redhat.com</replaceable>:<replaceable>8080</replaceable>/rhevm-reports</literal> 存取 RHEV Manager Reports，請將 <literal><replaceable>demo.redhat.com</replaceable></literal> 替換為 RHEV Manager 的完整區域名稱。若在進行 RHEV Manager 的安裝程序時，您選擇了非預設的 <acronym>HTTP</acronym> 連接埠，請將 <literal>8080</literal> 替換為您所選擇的連接埠。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the username <systemitem class=\"username\"> rhevm-admin</systemitem> and the password you set during reports installation to log in for the first time. Note that the first time you log into Red Hat Enterprise Virtualization Manager Reports a number of web pages are generated, as a result your initial attempt to login may take some time to complete."
+msgstr "請使用使用者名稱 <systemitem class=\"username\">rhevm-admin</systemitem> 以及您在進行 report 安裝程序時所設置的密碼，來進行第一次的登錄。請注意，第一次登入 RHEV Manager Reports 時，會有數個網站產生，因此您第一次嘗試登入時，可能會花上一點時間才能完成。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7523-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

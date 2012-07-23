@@ -1,0 +1,152 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:49-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing and Configuring the History Database"
+msgstr "安裝和配置 History 資料庫"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Install Required Packages"
+msgstr "安裝必要的套件"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to initiate installation of the <package> rhevm-reports-dwh</package> package, or the <package> rhevm-reports</package> package if you also intend to install Red Hat Enterprise Virtualization Manager Reports. You must run this command as the <systemitem class=\"username\"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager."
+msgstr "請使用 <command>yum</command> 來啟動 <package>rhevm-reports-dwh</package> 套件的安裝程序，或若是您亦希望安裝 RHEV Manager Reports，請安裝 <package>rhevm-reports</package> 套件。您必須在執行 RHEV Manager 的系統上，以 <systemitem class=\"username\">root</systemitem> 身份執行這項指令。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install only the data warehouse package:"
+msgstr "僅安裝資料庫套件："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports-dwh</parameter></command>"
+msgstr "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports-dwh</parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install both the data warehouse package and the Red Hat Enterprise Virtualization Manager Reports package:"
+msgstr "安裝資料庫套件與 RHEV Manager Reports 套件："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+msgstr "# <command>yum <parameter>install</parameter> <parameter>rhevm-reports</parameter></command>"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Confirm Package Installation"
+msgstr "確認套件安裝"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The required packages are downloaded. Once all packages have been downloaded they are listed for review. You will be prompted to confirm that you wish to continue with the installation. Once you have confirmed the operation <command>yum</command> installs the packages. Some further configuration is, however, required before the reports functionality can be used."
+msgstr "必要的套件已下載。當所有套件皆已下載後，它們會被列出以供檢視。您將會被提示確認您是否希望繼續進行安裝。當您確認了作業後，<command>yum</command> 便會安裝套件。然而，在您能夠使用 reports 功能之前，依然需要進行某些配置。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure History Database"
+msgstr "配置 History 資料庫"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You need to use the <command>rhevm-dwh-setup</command> command to configure the Extract, Transform, Load ( <acronym> ETL</acronym>) process and database scripts used to create and maintain a working history database."
+msgstr "您需要使用 <command>rhevm-dwh-setup</command> 指令來配置 Extract、Transform、Load（<acronym>ETL</acronym>）程序，以及使用來建立和維護有效資料庫的資料庫 script。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You must run this command as the <systemitem class=\"username\"> root</systemitem> user on the system hosting the Red Hat Enterprise Virtualization Manager."
+msgstr "您必須在執行 RHEV Manager 的系統上，以 <systemitem class=\"username\">root</systemitem> 身份執行這項指令。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-dwh-setup</command>"
+msgstr "# <command>rhevm-dwh-setup</command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the history database installation to take effect it is necessary to restart the <systemitem> ovirt-engine</systemitem> service. The <command>rhevm-dwh-setup</command> command asks you:"
+msgstr "若要 history 資料庫安裝生效，您必須重新啟用 <systemitem>jbossas</systemitem> 服務。<command>rhevm-dwh-setup</command> 指令將會詢問您："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Would you like to stop the ovirt-engine service? (yes|no): "
+msgstr "您是否希望停止 JBoss 服務？（yes|no）："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <literal>yes</literal> and then press <keycap> Enter</keycap> to proceed. The command then:"
+msgstr "請輸入 <literal>yes</literal> 並按下 <keycap>Enter</keycap> 以繼續進行。指令接著將會："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "stops the <systemitem> ovirt-engine</systemitem> service,"
+msgstr "停用 <systemitem>jbossas</systemitem> 服務、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "creates and configures the <systemitem> rhevm_history</systemitem> database, and"
+msgstr "建立並配置 <systemitem>rhevm_history</systemitem> 資料庫，然後"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "starts the <systemitem> ovirt-engine</systemitem> service."
+msgstr "啟用 <systemitem>jbossas</systemitem> 服務。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <systemitem> rhevm_history</systemitem> database has been created. The Red Hat Enterprise Virtualization Manager is configured to log information to this database for reporting purposes."
+msgstr "<systemitem>rhevm_history</systemitem> 資料庫已建立。RHEV Manager 已配置好將資訊紀錄至此資料庫，以作為回報用途。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7522-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Network_Setup">
+	<title>Network Setup</title>
+	<xi:include href="topics/Determine_Network_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<section id="sect-Logical_Networks">
+		<title>Logical Networks</title>
+		<xi:include href="topics/Logical_Networks1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/To_create_a_new_logical_network_in_a_data_center_or_cluster.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/To_add_or_edit_a_logical_network_to_hosts_in_a_cluster.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Designating_a_Display_Network.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="sect-Bonding">
+		<title>Bonding</title>
+		<xi:include href="topics/Bonding_Modes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Creating_a_Bond_Device_using_the_Administration_Portal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Switch_Configuration_for_Bonding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</chapter>

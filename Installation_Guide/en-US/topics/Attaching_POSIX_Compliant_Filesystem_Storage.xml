@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Attaching_POSIX_Compliant_Filesystem_Storage" remap="TID_10031">
+	<title>Attaching POSIX Compliant Filesystem Storage</title>
+	<procedure>
+		<step>
+			<para>
+				Click the <guilabel>Storage</guilabel> tab. The Storage list and toolbar display.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click the <guilabel>New Domain</guilabel> button. The <guilabel>New Domain</guilabel> dialog box appears.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter a <guilabel>Name</guilabel> for the Storage Domain.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>Data Center</guilabel> the Storage Domain must be attached to. The Data Center selected must be of type <guilabel>POSIX (POSIX compliant FS)</guilabel>.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select a host from the <guilabel>Use Host</guilabel> list. Only hosts within the selected Data Center will be listed. The host that you selet will be used to connect the Storage Domain.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter the <guilabel>Path</guilabel> to the <acronym>POSIX</acronym> filesystem, as you would normally provide it to the <command>mount</command> command.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter the <guilabel>VFS Type</guilabel>, as you would normally provide it to the <command>mount</command> command using the <parameter>-t</parameter> argument. See <command>man mount</command> for a list of valid <acronym>VFS</acronym> types.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter additional <guilabel>Mount Options</guilabel>, as you would normally them to the <command>mount</command> command using the <parameter>-o</parameter> argument. The mount options should be provided in a comma separated list. See <command>man mount</command> for a list of valid mount options.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>OK</guilabel> to attach the new Storage Domain.
+			</para>
+		</step>
+	</procedure>
+	<!-- Generated Topic Details
+
+GENERAL DETAILS
+
+Topic ID: 10031
+Topic Title: Adding POSIXFS Storage
+Topic Description: 
+
+TOPIC TAGS
+
+4: Task
+393: RHEV 3.1
+400: sgordon
+435: RHEV Installation Guide
+
+SOURCE URLS
+
+
+RELATED TOPICS
+
+
+-->
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10031-160906+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

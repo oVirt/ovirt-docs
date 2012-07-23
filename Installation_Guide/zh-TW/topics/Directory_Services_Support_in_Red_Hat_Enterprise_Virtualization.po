@@ -1,0 +1,177 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T19:40:51\n"
+"PO-Revision-Date: 2012-06-24 09:38-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Directory Services Support in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "During installation Red Hat Enterprise Virtualization Manager creates its own internal administration user, <systemitem>admin</systemitem>. This account is intended for use when initially configuring the environment, and for troubleshooting. To add other users to Red Hat Enterprise Virtualization you will need to attach a directory server to the Manager using the Domain Management Tool, <command>rhevm-manage-domains</command>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Once at least one directory server has been attached to the Manager you will be able to add users that exist in the directory server and assign roles to them using the Administration Portal. Users will be identified by their User Principle Name (<acronym>UPN</acronym>) of the form <systemitem><replaceable>user</replaceable>@<replaceable>domain</replaceable></systemitem>. Attachment of more than one Directory Server to the Manager is also supported."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Directory Servers currently supported for use with Red Hat Enterprise Virtualization&nbsp;3.1 are:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Active Directory;"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Identity, Policy, Audit (<acronym>IPA</acronym>);"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>IBM</acronym> Tivoli Directory Server (<acronym>ITDS</acronym>); and"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Directory Server (<acronym>RHDS</acronym>)."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You must ensure that the correct <acronym>DNS</acronym> records exist for your directory server. In particular you must ensure that the <acronym>DNS</acronym> records for the Directory Server include:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A valid pointer record (<acronym>PTR</acronym>) for the directory server's reverse look-up address."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A valid service record (<acronym>SRV</acronym>) for <acronym>LDAP</acronym> over <acronym>TCP</acronym> port <systemitem>389</systemitem>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A valid service record (<acronym>SRV</acronym>) for <acronym>Kerberos</acronym> over <acronym>TCP</acronym> port <systemitem>88</systemitem>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A valid service record (<acronym>SRV</acronym>) for <acronym>Kerberos</acronym> over <acronym>UDP</acronym> port <systemitem>88</systemitem>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If these records do not exist in <acronym>DNS</acronym> then you will be unable to add the domain to the Red Hat Enterprise Virtualization Manager configuration using <command>rhevm-manage-domains</command>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For more detailed information on installing and configuring a supported directory server, refer to the vendor's documentation:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Active Directory — <ulink url=\"http://technet.microsoft.com/en-us/windowsserver/dd448614\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Identity, Policy, Audit (<acronym>IPA</acronym>) — <ulink url=\"http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Identity_Management_Guide/index.html\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>IBM</acronym> Tivoli Directory Server (<acronym>ITDS</acronym>) — <ulink url=\"https://www.ibm.com/developerworks/wikis/display/tivolidoccentral/Tivoli+Directory+Server\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Directory Server (<acronym>RHDS</acronym>) — <ulink url=\"http://docs.redhat.com/docs/en-US/Red_Hat_Directory_Server/index.html\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A user must be created in the Directory Server specifically for use as the Red Hat Enterprise Virtualization administrative user. Do <emphasis>not</emphasis> use the Directory Server's administrative user as the Red Hat Enterprise Virtualization administrative user."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you are using Active Directory as your Directory Server, and you wish to use <systemitem>sysprep</systemitem> in the creation of Templates and Virtual Machines, then the Red Hat Enterprise Virtualization administrative user must be delegated control over the Domain to:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Join a computer to the domain</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Modify the membership of a group</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For information on creation of user accounts in Active Directory refer to <ulink url=\"http://technet.microsoft.com/en-us/library/cc732336.aspx\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For information on delegation of control in Active Directory refer to <ulink url=\"http://technet.microsoft.com/en-us/library/cc732524.aspx\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Domain_Management_Tool\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9262-163901+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Directory Services"
+#~ msgstr "目錄服務"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization Manager is able to use both Active Directory and <acronym>IPA</acronym> Server for user authentication. This appendix documents the basic requirements for directory servers of either type to be added to the environment."
+#~ msgstr "RHEV Manager 能夠使用 Active Directory 與 <acronym>IPA</acronym> Server 來進行使用者認證。本附錄記載了新增這兩種目錄伺服器至環境中的基本需求。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://zanata.org/namespace/config/">
+  <url>https://translate.engineering.redhat.com/</url>
+  <project>rhev_installation_guide</project>
+  <project-version>3.1</project-version>
+  <project-type>podir</project-type>
+
+ <locales>
+     <locale map-from="ja-JP">ja</locale>
+     <locale map-from="zh-TW">zh-Hant</locale>
+  </locales>
+
+</config>

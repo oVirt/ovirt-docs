@@ -1,0 +1,236 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 08:36-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "The Hypervisor Boot Menu"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert the Red Hat Enterprise Virtualization Hypervisor installation media."
+msgstr "插入 RHEV Hypervisor 的安裝媒介。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Power on the system and ensure the system boots from the installation media."
+msgstr "啟動系統，確定系統以安裝媒介開機。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The boot splash screen appears. If no input is provided, the hypervisor installation will commence in 30 seconds, using default kernel parameters."
+msgstr "開機畫面將會出現。若未提供輸入，hypervisor 的安裝程序將會於 30 秒鐘後開始，請使用預設的 kernel 參數。"
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Splash Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot splash screen counts down for 30 seconds before automatically booting the system."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To modify the boot options, press any key. The boot menu will display."
+msgstr "若要修改開機選項，請按下任何按鍵。開機選單將會出現。"
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Menu Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot menu screen displays all pre-defined boot options, as well as providing the option to edit them."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The following boot options are available:"
+msgstr "下列為可用開機選項："
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install or Upgrade</guilabel>"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boot the hypervisor installer."
+msgstr "啟動 hypervisor 安裝程式。"
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install (Basic Video)</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Install or Upgrade the Hypervisor, using basic video mode."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install or Upgrade with Serial Console</guilabel>"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install or Upgrade the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>."
+msgstr "啟動 hypervisor 安裝程式，並將主控台重定向至一個連至了 <filename>/dev/ttyS0</filename> 的序列裝置。"
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Reinstall the Hypervisor."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall (Basic Video)</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Reinstall the hypervisor, using basic video mode."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall with Serial Console</guilabel>"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Reinstall the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>."
+msgstr "啟動 hypervisor 安裝程式，並將主控台重定向至一個連至了 <filename>/dev/ttyS0</filename> 的序列裝置。"
+
+# Tag: title
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<guilabel>Boot from Local Drive</guilabel>"
+msgstr "由本機磁碟啟動"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boot the operating system installed on the first local drive."
+msgstr "啟動安裝在第一顆本機硬碟上的作業系統。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the appropriate boot option from the boot menu."
+msgstr "由開機選單中選擇適當的開機選項。"
+
+#. Tag: para
+#, no-c-format
+msgid "Press the <keycap>Enter</keycap> key to boot the Hypervisor with the default kernel parameters for the option selected; or"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "press the <keycap>Tab</keycap> key to edit the kernel parameters. In edit mode you are able to add or remove kernel parameters. Kernel parameters must be separated from each other by a space. Once the desired kernel parameters have been set press <keycap>Enter</keycap> to boot the system. Alternatively pressing <keycap>Esc</keycap> reverts any changes that you have made to the kernel parameters."
+msgstr "在編輯模式中，您能夠在清單中新增或移除 kernel 參數。Kernel 參數之間必須以空白鍵區隔開來。當設置了欲使用的參數後，請按下 <keycap> Enter</keycap>，以啟動系統。此外，您亦可按下 <keycap> Esc</keycap> 鍵，以復原任何您對於 kernel 參數所進行的變更。"
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Parameter Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot parameters screen allows you to add and remove boot parameters."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For a list of supported kernel parameters, see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+msgstr "欲取得更多有關於 kernel 參數上的相關資訊，請參閱《<citetitle>Red Hat Enterprise Linux — Hypervisor 建置指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor boots with the provided boot options."
+msgstr "Hypervisor 會以提供的開機選項啟動。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7609-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Booting the Hypervisor from Installation Media"
+#~ msgstr "透過安裝媒介啟動 Hypervisor"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Boot"
+#~ msgstr "開機"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Boot with Serial Console"
+#~ msgstr "以序列主控台啟動"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Where required additional kernel parameters should be appended to the default parameters displayed. A press of the <keycap> Enter</keycap> key boots the hypervisor installation with the default kernel parameters. Alternatively press the <keycap> Tab</keycap> key to edit kernel parameters for the selected boot option."
+#~ msgstr "額外的 Kernel 參數應視需求附加至顯示出的預設參數。按下 <keycap> Enter</keycap> 鍵將會以預設的 kernel 參數啟動 hypervisor 安裝程序。此外，請按下 <keycap> Tab</keycap> 鍵，以為選擇的開機選項編輯 kernel 參數。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Important — Kernel Parameters"
+#~ msgstr "重要 — Kernel 參數"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Note — Upgrading Existing Hypervisors"
+#~ msgstr "請注意 — 升級既有的 Hypervisor"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To upgrade an existing hypervisor installation, the kernel must be booted with the <parameter>upgrade</parameter> parameter. This will automatically upgrade and reboot the system, rather than displaying the interactive configuration menu. For more information, see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+#~ msgstr "若要升級既有的 hypervisor，kernel 必須以 <parameter>upgrade</parameter> 參數啟動。這將會自動升級並重新啟動系統，而不會顯示互動式的配置選單。欲取得更多資訊，請參閱《<citetitle>Red Hat Enterprise Linux — Hypervisor 建置指南</citetitle>》。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

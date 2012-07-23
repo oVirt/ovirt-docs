@@ -1,0 +1,160 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 01:26-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding Local Storage"
+msgstr "新增本機儲存裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A local storage domain can be set up on a host, to be used as a data domain for a data center and cluster that contains only a single host. Virtual machines created in a single host cluster cannot be migrated, fenced or scheduled."
+msgstr "本機儲存網域可設定在主機上，作為僅包含單主機的資料中心與叢集的資料網域。在單一主機叢集中建立的虛擬機器不能遷移、隔離或排程。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing Local Storage"
+msgstr "準備本機儲存裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This section outlines how to set up a local directory with recommended settings."
+msgstr "本節描述了如何使用建議的設定，以配置本機目錄。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On a Red Hat Enterprise Virtualization Hypervisor host, set up the path for the local storage as <filename>/data/images</filename>. This is the only path permitted for a Red Hat Enterprise Virtualization Hypervisor. On a Red Hat Enterprise Linux host other paths are supported but the directories to support it must be manually created first."
+msgstr "在 RHEV Hypervisor 主機上，將本機儲存裝置的路徑設為 <filename>/data/images</filename>。這是 RHEV Hypervisor 唯一允許的路徑。在 RHEL 主機上能支援其它路徑，但必須先手動建立。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The path must have permissions allowing read and write access to the <systemitem> vdsm</systemitem> user and <systemitem> kvm</systemitem> group. These permissions are set automatically on the <filename>/data/images</filename> path for Red Hat Enterprise Virtualization Hypervisor hosts. you must set them manually on paths to be used for local storage on Red Hat Enterprise Linux hosts."
+msgstr "這路徑必須能讓 <systemitem> vdsm</systemitem> 使用者與 <systemitem> kvm</systemitem> 群組擁有讀、寫權限。這些讀取權限會自動設定在 <filename>/data/images</filename> 路徑上，給 RHEV Hypervisor 主機使用。您必須在 RHEL 主機的本機儲存裝置路徑上，手動設定。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# chown 36:36 /data /data/images\n"
+"# chmod 0755 /data /data/images \n"
+"            "
+msgstr ""
+"\n"
+"# chown 36:36 /data /data/images\n"
+"# chmod 0755 /data /data/images \n"
+"            "
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On a Red Hat Enterprise Linux host, set up the path for local storage in the <filename>/data</filename> directory. Any path is permitted on a Red Hat Enterprise Linux host. Follow these instructions to add local storage:"
+msgstr "在 RHEL 主機上，在 <filename>/data</filename> 目錄上，設定本機儲存裝置的路徑。RHEL 主機允許任何路徑。請遵循以下指示，新增本機儲存裝置："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers."
+msgstr "在樹狀分頁中，選取「<guilabel>樹狀</guilabel>」分頁。在「<guilabel>系統</guilabel>」上，點選「<guibutton>+</guibutton>」號，以顯示可用的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add a local data storage domain you must select a local data center."
+msgstr "選擇網域要加入的「<guilabel>資料中心</guilabel>」。所選取的資料中心之儲存類型，會決定儲存網域的類型。若要新增本機資料儲存網域，您必須選擇本機的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>. The <guilabel>New Domain</guilabel> dialog box displays."
+msgstr "按下「<guilabel>新網域</guilabel>」，這將顯示「<guilabel>新網域</guilabel>」對話視窗。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Name</guilabel> of the domain. A descriptive name is recommended."
+msgstr "輸入儲存網域的「<guilabel>名稱</guilabel>」。我們建議您使用具描述特徵的名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data / Local on Host</guilabel> option as the <guilabel>Domain Function / Storage Type</guilabel> for the storage domain."
+msgstr "為儲存網域選擇「<guilabel>資料/主機上本機</guilabel>」選項，作為儲存網域的「<guilabel>網域功能/資料類型</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the local host in the <guilabel>Use host</guilabel> field. This must be the host on which the local storage is set up."
+msgstr "在「<guilabel>使用主機</guilabel>」欄位裡選擇本機主機。這必須是設定了本機儲存裝置的主機。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Active Host Required"
+msgstr "重要 — 需要啟用的主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "所有連往儲存網域的通訊，皆是透過所選主機，而不是直接從 RHEV Manager 連出。因此在配置儲存裝置前，系統中至少得存在一台啟用中的主機，並連上所選的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the Path of the storage. For example, <filename>/data/images</filename>."
+msgstr "輸入儲存裝置的路徑，例如 <filename>/data/images</filename>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton>."
+msgstr "請按下「<guibutton>確定</guibutton>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new local storage domain displays on the Storage tab. This may take a few moments."
+msgstr "新的儲存網域會顯示在「儲存裝置」分頁中。這可能會花上一些時間。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7636-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

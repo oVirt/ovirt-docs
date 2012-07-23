@@ -1,0 +1,108 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-29 12:00-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Installation Log Files"
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installation"
+msgstr "インストール"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log File"
+msgstr "ログファイル"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Description"
+msgstr "説明"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-cleanup_<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-setup</command>. This is the command used to remove a Red Hat Enterprise Virtualization Manager installation. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist."
+msgstr "<command>rhevm-reports-setup</command> コマンドからのログ。このコマンドを使い Red Hat Enterprise Virtualization Manager レポートモジュールをインストールする。このコマンドを実行すると毎回ログが生成される。ファイル名に実行日時を使うことで、同時に複数のログを存在させることができる。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command detailing the creation and configuration of the <systemitem>rhevm</systemitem> database."
+msgstr ""
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-dwh-setup</command> command. This is the command used to create the <systemitem> rhevm_history</systemitem> database for reporting. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "<command>rhevm-dwh-setup</command> コマンドからのログ。このコマンドを使いレポート用に <systemitem>rhevm_history</systemitem> データベスを作成する。このコマンドを実行すると毎回ログが生成される。ファイル名に実行日時を使うことで、同時に複数のログを存在させることができる。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-reports-setup</command> command. This is the command used to install the Red Hat Enterprise Virtualization Manager Reports modules. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "<command>rhevm-reports-setup</command> コマンドからのログ。このコマンドを使い Red Hat Enterprise Virtualization Manager レポートモジュールをインストールする。このコマンドを実行すると毎回ログが生成される。ファイル名に実行日時を使うことで、同時に複数のログを存在させることができる。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/engine-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "<command>rhevm-setup</command> コマンドからのログ。このコマンドを実行すると毎回ログが生成される。ファイル名に実行日時を使うことで、同時に複数のログを存在させることができる。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-upgrade</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "<command>rhevm-upgrade</command> コマンドからのログ。このコマンドを実行すると毎回ログが生成される。ファイル名に実行日時を使うことで、同時に複数のログを存在させることができる。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Installation Log Files"
+#~ msgstr "インストールログファイル"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,81 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-08 07:42-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "IPA Server"
+msgstr "IPA サーバー"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<acronym>IPA</acronym> is an integrated security information management "
+"solution which combines Red Hat Enterprise Linux, Red Hat Directory Server, "
+"<acronym>MIT</acronym> Kerberos, and <acronym>NTP</acronym>. It provides web "
+"browser and command-line interfaces, and its numerous administration tools "
+"allow an administrator to quickly install, set up, and administer one or "
+"more servers for centralized authentication and identity management."
+msgstr ""
+"<acronym>IPA</acronym> とは、Red Hat Enterprise Linux、 Red Hat Directory "
+"サーバー、<acronym>MIT</acronym> Kerberos そして <acronym>NTP</acronym> "
+"を組み合わせてセキュリティ情報を管理することができる統合ソリューションです。このソリューションには、Web "
+"ブラウザーやコマンドラインのインターフェースを含まれており、さまざまな管理ツールにより管理者が 認証、ID "
+"管理を行うサーバーを台数に関わらず迅速にインストール、セットアップ、管理することができます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The latest version of <acronym>IPA</acronym> extends the integration of "
+"<acronym>DNS</acronym>, includes a Certificate System Server, an enhanced "
+"administrative framework, support for host identities, netgroups, automount "
+"by location and other features."
+msgstr ""
+"<acronym>IPA</acronym> の最新バージョンでは、Certificate System "
+"Server、強化された管理フレームワーク、ホスト識別のサポート、netgroups、場所別の automount 機能など <acronym>DNS</"
+"acronym> の統合が拡張されています。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "インストール"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<acronym>IPA</acronym> focuses on making centralized identity and policy "
+"easy to manage in Linux and Unix environments, and includes compatibility "
+"with Windows environments. If you need assistance installing or configuring "
+"<acronym>IPA</acronym>, see the <citetitle>Red Hat Enterprise Linux — "
+"Enterprise Identity Management Guide</citetitle>."
+msgstr ""
+"<acronym>IPA</acronym> は Linux や Unix "
+"環境で集中型アイデンティティやポリシーを容易に管理できる点に重点を置き、Windows 環境との互換性にも対応します。<acronym>IPA</"
+"acronym>  のインストール方法または設定方法についての詳細は <citetitle>Red Hat Enterprise Linux  "
+"Enterprise Identity Management Guide (エンタープライズアイデンティティ管理ガイド)</citetitle> "
+"を参照してください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

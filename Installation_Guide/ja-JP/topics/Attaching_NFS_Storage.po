@@ -1,0 +1,104 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 12:18-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Attaching NFS Storage"
+msgstr "NFS ストレージのアタッチ"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a Data Center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the Red Hat Enterprise Virtualization Manager, using the Administration Portal."
+msgstr "NFS タイプの<guilabel>ストレージドメイン</guilabel>とは、データセンターにアタッチされた、マウント済みの NFS共有です。仮想化ゲストイメージおよび ISO 起動メディアを格納するためのストレージの提供に使用します。<acronym>NFS</acronym> ストレージをエクスポートした後には、管理ポータルを使用して Red Hat Enterprise Virtualization Manager にアタッチする必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym>NFS</acronym> data, or export, storage domains can be added to <acronym>NFS</acronym> data center. You can add <acronym>NFS</acronym> <acronym>ISO</acronym> storage domains to data centers of any type."
+msgstr "<acronym>NFS</acronym> データを追加する、あるいはストレージドメインをエクスポートするには、<acronym>NFS</acronym> データセンターを選択する必要があります。<acronym>ISO</acronym> ストレージ用の <acronym>NFS</acronym> ストレージドメインは、任意のタイプのデータセンターに追加することができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display."
+msgstr "<guimenuitem>ストレージ</guimenuitem>タブをクリックします。ストレージ一覧とツールバーが表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>."
+msgstr "<guilabel>新規ドメイン</guilabel>をクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Configure the following options:"
+msgstr "以下のオプションを設定します。"
+
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Name:</guilabel> Enter a suitably descriptive name."
+msgstr "<guilabel>Name:</guilabel> 適切な記述名を入力します。"
+
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list."
+msgstr "<guilabel>データセンター:</guilabel> ドロップダウンリストから、対象のデータセンターを選択します。"
+
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Domain Function/ Storage Type:</guilabel> In the drop down menu, select the type of storage domain you are creating."
+msgstr "<guilabel>ドメイン機能 / ストレージタイプ:</guilabel> ドロップダウンメニューで Data → NFS を選択します。デフォルトのデータセンターと互換性のないストレージドメインタイプは、グレイアウトされます。ドメインタイプを選択するとエクスポートパスフィールドが表示されます。"
+
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Export path:</guilabel> Enter the IP address or a resolvable hostname of the chosen host. The export path should be in the format of <filename>192.168.0.10:/data or domain.example.com:/data</filename>"
+msgstr "<guilabel>エクスポートパス:</guilabel> 選択したホストの IP アドレスか解決可能なホスト名を入力します。エクスポートパスは <filename>192.168.0.10:/Images/ISO または domain.example.com:/Images/ISO</filename> の形式にします。"
+
+#. Tag: member
+#, fuzzy, no-c-format
+msgid "<guilabel>Use Host:</guilabel> Select any of the hosts from the drop down menu. Only hosts which belong in the pre-selected data center will be displayed in this list."
+msgstr "<guilabel>使用ホスト:</guilabel> ドロップダウンメニューから任意のホストを選択します。一覧には、事前に選択済みのデータセンターに属するホストのみが表示されます。"
+
+#. Tag: member
+#, no-c-format
+msgid "<guilabel>Advanced Parameters</guilabel> A number of additional, advanced, parameters are provided. It is recommended that the values of these parameters not be modified."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "アクティブなホストが必要です"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the Storage Domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen Data Center, before the storage is configured."
+msgstr "ストレージドメインへの通信はすべて、Red Hat Enterprise Virtualization Manager から直接ではなく、選択したホスト経由で行われます。ストレージを設定する前には、システム内にアクティブなホストが少なくとも 1 台存在し、選択したデータセンターにアタッチされている必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel>."
+msgstr "<guilabel>OK</guilabel> をクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new NFS data domain displays on the Storage tab. It will remain with a <emphasis>Locked status</emphasis> while it is being prepared for use. When ready, it is automatically attached to the Data Center."
+msgstr "新しい NFS データドメインがストレージタブに表示されます。使用準備中には <emphasis>ロック状態</emphasis>となります。準備が整うと、データセンターに自動的にアタッチされます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7540-162154+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

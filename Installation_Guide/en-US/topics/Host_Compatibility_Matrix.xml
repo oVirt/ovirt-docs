@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Host_Compatibility_Matrix" remap="TID_7858">
+	<title>Host Compatibility Matrix</title>
+	<informaltable frame="none">
+		<tgroup align="left" cols="4">
+			<thead>
+				<row>
+					<entry>
+						Red Hat Enterprise Linux Version
+					</entry>
+					<entry>
+						Red Hat Enterprise Virtualization 3.0 clusters
+					</entry>
+					<entry>
+						Red Hat Enterprise Virtualization 3.1 clusters in 3.0 compatibility mode
+					</entry>
+					<entry>
+						Red Hat Enterprise Virtualization 3.1 clusters
+					</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry>
+						6.2
+					</entry>
+					<!-- RHEL version -->
+					<entry>
+						Supported
+					</entry>
+					<!-- RHEV 3.0 -->
+					<entry>
+						Supported
+					</entry>
+					<!-- RHEV 3.1 in 3.0 compatibility mode -->
+					<entry>
+						Unsupported
+					</entry>
+					<!-- RHEV 3.1 -->
+				</row>
+				<row>
+					<entry>
+						6.3+
+					</entry>
+					<!-- RHEL version -->
+					<entry>
+						Supported
+					</entry>
+					<!-- RHEV 3.0 -->
+					<entry>
+						Supported
+					</entry>
+					<!-- RHEV 3.1 in 3.0 compatibility mode -->
+					<entry>
+						Supported
+					</entry>
+					<!-- RHEV 3.1 -->
+				</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7858-164530+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

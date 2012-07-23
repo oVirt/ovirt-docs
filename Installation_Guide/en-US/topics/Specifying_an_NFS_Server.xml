@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Specifying_an_NFS_Server" remap="TID_8413">
+	<title>Specifying an NFS Server</title>
+	<example>
+		<title>Uploading to an <acronym>NFS</acronym> Server</title>
+		<screen># <command>rhevm-iso-uploader --nfs-server=<replaceable>storage.demo.redhat.com:/iso/path</replaceable> upload <replaceable>RHEL6.0.iso</replaceable></command></screen>
+	</example>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8413-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

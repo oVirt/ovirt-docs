@@ -1,0 +1,158 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 10:15-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Red Hat Enterprise Virtualization Hypervisor Packages"
+msgstr "Hypervisor パッケージのインストール"
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> Red Hat Network channel contains the Hypervisor packages. The Hypervisor itself is contained in the <package>rhev-hypervisor6</package> package. Additional tools supporting <acronym>USB</acronym> and <acronym>PXE</acronym> installations are contained in the <package>rhev-hypervisor-tools</package> package. You must install the Hypervisor packages on the system that you intend to use to create Hypervisor boot media."
+msgstr "Red Hat Enterprise Virtualization Hypervisor のチャンネルには、<package>rhev-hypervisor-tools</package> パッケージに　<acronym>USB</acronym> インストールおよび <acronym>PXE</acronym> インストール用の追加ツールが含まれています。このパッケージは以下に記載した手順でインストールすることもできます。"
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribing to download the Hypervisor using certificate-based RHN"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Identify Available Entitlement Pools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To subscribe the system to the Red Hat Enterprise Virtualization you must locare the identifier for the relevant entitlement pool. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To identify available subscription pools for <literal>Red Hat Enterprise Virtualization</literal> use the command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# subscription-manager list --available | grep -A8 \"Red Hat Enterprise Virtualization\""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <literal>Red Hat Enterprise Virtualization Beta</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribe System to Entitlement Pools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Using the pool identifiers located in the previous step, subscribe the system to <literal>Red Hat Enterprise Linux Server</literal>, <literal>Red Hat Enterprise Virtualization</literal> entitlements. Use the <parameter>subscribe</parameter> parameter to the <command>subscription-manager</command> command, replacing <replaceable>POOLID</replaceable> with one of the pool identifiers.:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# subscription-manager subscribe --pool=<replaceable>POOLID</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribing to download the Hypervisor using RHN Classic"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr "Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />) にログインします。"
+
+#. Tag: para
+#, no-c-format
+msgid "Move the mouse cursor over the <guilabel>Subscriptions</guilabel> link at the top of the page, and then click <guilabel>Registered Systems</guilabel> in the menu that appears."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the system to which you are adding channels from the list presented on the screen, by clicking the name of the system."
+msgstr "画面に表示された一覧から、チャンネルを追加するシステムの名前をクリックして選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Alter Channel Subscriptions</guilabel> in the <guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr "画面の <guilabel>サブスクライブしているチャンネル</guilabel> のセクションで <guilabel>チャンネルサブスクリプションの変更</guilabel> をクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> channel from the list presented on the screen, then click the <guilabel>Change Subscription</guilabel> button to finalize the change."
+msgstr "画面に表示される一覧から <systemitem> Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> チャンネルを選択し、<guilabel>サブスクリプションの変更</guilabel> ボタンを押して変更を完了します。"
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <systemitem>Red Hat Enterprise Virtualization Hypervisor Beta (v.6 x86_64)</systemitem>."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log in to the system on which the Red Hat Enterprise Virtualization Manager is installed. You must log in as the <systemitem>root</systemitem> user."
+msgstr "Red Hat Enterprise Virtualization Manager がインストールされているシステムにログインします。<systemitem>root</systemitem> ユーザーとしてログインする必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use <command>yum</command> to install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages."
+msgstr "<command>yum</command> で <package>rhev-hypervisor</package> および <package>rhev-hypervisor-tools</package> のパッケージをインストールします。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# yum install rhev-hypervisor6 rhev-hypervisor-tools"
+msgstr "# yum install \"rhev-hypervisor*\""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor ISO image is installed into the <filename>/usr/share/rhev-hypervisor/</filename> directory. The <command>rhevh-iso-to-disk</command> and <command>rhevh-iso-to-pxeboot</command> scripts are installed to the <filename>/usr/bin</filename> directory."
+msgstr "Hypervisor ISO イメージが <filename>/usr/share/rhev-hypervisor/</filename> ディレクトリにインストールされます。この ISO イメージをポイントするように <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> のシンボリックリンクが更新されます。<command>rhevh-iso-to-disk</command> ぉよび <command>rhevh-iso-to-pxeboot</command> のスクリプトが <filename>/usr/bin</filename> ディレクトリにインストールされます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 6.2 and later allows more than one version of the ISO image to be installed at one time. As such, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> is now a symbolic link to a uniquely-named version of the hypervisor ISO image, such as <filename>/usr/share/rhev-hypervisor/rhevh-6.2-20111006.0.el6.iso</filename>. Different versions of the image can now be installed alongside each other, allowing administrators to run and maintain a cluster on a previous version of the hypervisor while upgrading another cluster for testing."
+msgstr "Red Hat Enterprise Linux 6.2 以降では、一度に複数のバージョンの Hypervisor ISO イメージをインストールすることができるので、<filename>rhev-hypervisor.iso</filename> は、Hypervisor ISO イメージの一意名が付いたバージョンへのシンボリックリンクとなりました (例: <filename>/usr/share/rhev-hypervisor/rhevh-6.2-20111006.0.el6.iso</filename>)。異なるバージョンの Hypervisor ISO を並行してインストールすることができます。これにより、管理者は、旧バージョンの Hypervisor でクラスターの実行とメンテナンスを行いつつ、別のクラスターをアップグレードしてテストすることができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Additionally, the symbolic links <filename>/usr/share/rhev-hypervisor/rhevh-latest6.iso</filename>, and <filename>/usr/share/rhev-hypervisor/rhev-hypervisor6.iso</filename> are created. These links also target the most recently installed version of the Red Hat Enterprise Virtualization ISO image."
+msgstr "また、<filename>/usr/share/rhev-hypervisor/</filename> および <filename>/usr/share/rhev-hypervisor/</filename> のシンボリックリンクは必要に応じて作成することもできます。これらはそれぞれ、Red Hat Enterprise Virtualization Hypervisor&nbsp;5 および Red Hat Enterprise Virtualization Hypervisor&nbsp;6 用の最も新しくインストールされた ISO バージョンにリンクしています。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7525-164513+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Click <guilabel>Systems</guilabel> at the top of the page."
+#~ msgstr "ページの最上部の <guilabel>システム</guilabel> をクリックします。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

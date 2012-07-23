@@ -1,0 +1,131 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:17-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Installation Log Files"
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installation"
+msgstr "安裝"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log File"
+msgstr "日誌檔案"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Description"
+msgstr "描述"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-cleanup_<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-setup</command>. This is the command used to remove a Red Hat Enterprise Virtualization Manager installation. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist."
+msgstr "來自 <command>rhevm-reports-setup</command> 指令的日誌。這是用來安裝 RHEV Manager Reports（報告）模組的指令。每次執行這項指令時，都會產生日誌。檔名所使用的乃日期與時間，這能讓多筆日誌同時存在。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+#. Tag: entry
+#, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command detailing the creation and configuration of the <systemitem>rhevm</systemitem> database."
+msgstr ""
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-dwh-setup</command> command. This is the command used to create the <systemitem> rhevm_history</systemitem> database for reporting. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "來自 <command>rhevm-dwh-setup</command> 指令的日誌。這是用來建立 <systemitem>rhevm_history</systemitem> 資料庫，以提供報表的指令。每次執行這項指令時，都會產生日誌。檔名所使用的乃日期與時間，這能讓多筆日誌同時存在。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-reports-setup</command> command. This is the command used to install the Red Hat Enterprise Virtualization Manager Reports modules. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "來自 <command>rhevm-reports-setup</command> 指令的日誌。這是用來安裝 RHEV Manager Reports（報告）模組的指令。每次執行這項指令時，都會產生日誌。檔名所使用的乃日期與時間，這能讓多筆日誌同時存在。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/engine-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-setup</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "來自 <command>rhevm-setup</command> 指令的日誌。每次執行這項指令時，都會產生日誌。檔名所使用的乃日期與時間，這能讓多筆日誌同時存在。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/ovirt-engine/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log from the <command>rhevm-upgrade</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently."
+msgstr "來自 <command>rhevm-upgrade</command> 指令的日誌。每次執行這項指令時，都會產生日誌。檔名所使用的乃日期與時間，這能讓多筆日誌同時存在。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Installation Log Files"
+#~ msgstr "安裝日誌檔案"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

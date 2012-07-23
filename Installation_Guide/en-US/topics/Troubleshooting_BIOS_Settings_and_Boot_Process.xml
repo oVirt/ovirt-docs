@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Troubleshooting_BIOS_Settings_and_Boot_Process" remap="TID_7526">
+	<title>Troubleshooting BIOS Settings and Boot Process</title>
+	<para>
+		Before installing Red Hat Enterprise Virtualization Hypervisors it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:
+	</para>
+	<orderedlist>
+		<listitem>
+			<para>
+				3.5 inch diskette
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				CD-ROM or DVD device
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Local hard disk
+			</para>
+		</listitem>
+	</orderedlist>
+	<para>
+		Many BIOS chips have disabled one or more of the following boot methods: <acronym>USB</acronym> storage devices, CD-ROMs, DVDs or network boot. To boot from your chosen method, enable the method or device and set that device as the first boot device in BIOS.
+	</para>
+	<para>
+		Most but not all motherboards support the boot methods described in this chapter. Consult the documentation for your motherboard or system to determine whether it is possible to use a particular boot method.
+	</para>
+	<warning>
+		<title>Warning — <acronym>BIOS</acronym> Settings Vary Between Manufacturers</title>
+		<para>
+			<acronym>BIOS</acronym> settings vary between manufacturers. Any specific examples of <acronym>BIOS</acronym> settings may be inaccurate for some systems. Due to this inconsistency, it is necessary to review the motherboard or system manufacturer's documentation.
+		</para>
+	</warning>
+	<procedure>
+		<title>Confirming Hardware Virtualization Support</title>
+		<para>
+			Verify that your system is capable of running the Red Hat Enterprise Virtualization Hypervisor. Hypervisors require that virtualization extensions are present and enabled in the BIOS before installation proceeds.
+		</para>
+		<step>
+			<para>
+				Boot the hypervisor from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM.
+			</para>
+		</step>
+		<step>
+			<para>
+				When the message <literal>Automatic boot in 30 seconds...</literal> is displayed, and begins counting down from thirty, press any key to skip the automatic boot process.
+			</para>
+		</step>
+		<step>
+			<para>
+				Ensure the <guilabel>Install or Upgrade</guilabel> option is selected and press <keycap> Tab</keycap> to edit the boot parameters.
+			</para>
+		</step>
+		<step>
+			<para>
+				Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap> Enter</keycap>. This action will boot the hypervisor in rescue mode.
+			</para>
+		</step>
+		<step>
+			<para>
+				Once the hypervisor boots, verify your CPU contains the virtualization extensions with the following command:
+			</para>
+			<screen># grep -E "svm|vmx" /proc/cpuinfo
+</screen>
+			<para>
+				Output displays if the processor has the hardware virtualization extensions.
+			</para>
+		</step>
+		<step>
+			<para>
+				Verify that the KVM modules load by default:
+			</para>
+			<screen># lsmod | grep kvm
+</screen>
+		</step>
+	</procedure>
+	<para>
+		If the output includes <literal>kvm_intel</literal> or <literal>kvm_amd</literal> then the kvm hardware virtualization modules are loaded and the system meets the requirements. If the output does not include the required modules then you must check that your hardware supports the virtualization extensions and that they are enabled in the system's <acronym>BIOS</acronym>.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7526-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

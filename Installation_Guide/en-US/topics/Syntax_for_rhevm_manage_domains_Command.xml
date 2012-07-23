@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Syntax_for_rhevm_manage_domains_Command" remap="TID_7865">
+	<title>Syntax for the Domain Management Tool</title>
+	<para>
+		The usage syntax is:
+	</para>
+	<screen><command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command></screen>
+	<para>
+		Available actions are:
+	</para>
+	<variablelist>
+		<varlistentry>
+			<term><parameter>add</parameter></term>
+			<listitem>
+				<para>
+					Add a domain to the Red Hat Enterprise Virtualization Manager's directory services configuration.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>edit</parameter></term>
+			<listitem>
+				<para>
+					Edit a domain in the Red Hat Enterprise Virtualization Manager's directory services configuration.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>delete</parameter></term>
+			<listitem>
+				<para>
+					Delete a domain from the Red Hat Enterprise Virtualization Manager's directory services configuration.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>validate</parameter></term>
+			<listitem>
+				<para>
+					Validate the Red Hat Enterprise Virtualization Manager's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>list</parameter></term>
+			<listitem>
+				<para>
+					List the Red Hat Enterprise Virtualization Manager's current directory services configuration.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<para>
+		These options can be combined with the actions on the command line:
+	</para>
+	<variablelist>
+		<varlistentry>
+			<term><parameter>-domain=<replaceable>DOMAIN</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Specifies the domain on which the action will be performed. The <parameter>-domain</parameter> parameter is mandatory for <parameter>add</parameter>, <parameter>edit</parameter>, and <parameter>delete</parameter>.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-provider=</parameter>PROVIDER</term>
+			<listitem>
+				<para>
+					Specifies the <acronym>LDAP</acronym> provider type of the directory server for the domain. Valid values are:
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+							<literal>ActiveDirectory</literal> Active Directory.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<literal>IPA</literal> - Identity, Policy, Audit.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<literal>ITDS</literal> - <acronym>IBM</acronym> Tivoli Directory Server.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<literal>RHDS</literal> - Red Hat Directory Server.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-user=<replaceable>USER</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Specifies the domain user to use. The <parameter>-user</parameter> parameter is mandatory for <parameter>add</parameter>, and optional for <parameter>edit</parameter>.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-passwordFile=<replaceable>FILE</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Specifies that the domain user's password is on the first line of the provided file. This option, or the <parameter>-interactive</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-interactive</parameter></term>
+			<listitem>
+				<para>
+					Specifies that the domain user's password is to be provided interactively. This option, or the <parameter>-passwordFile</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-configFile=<replaceable>FILE</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Specifies an alternate configuration file that the command must load. The <parameter>-configFile</parameter> parameter is always optional.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-report</parameter></term>
+			<listitem>
+				<para>
+					In conjunction with the <parameter>validate</parameter> action results in the output of a report of all encountered validation errors.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<para>
+		For full usage information consult the <command>rhevm-manage-domains</command> command's help output: 
+		<screen># <command>rhevm-manage-domains --help</command></screen>
+	</para>
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="Adding_Domains_to_Configuration" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Edit_Domain_in_Configuration" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Deleting_Domains_from_Configuration" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Validating_Configuration" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="Listing_Domains_in_Configuration" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7865-163869+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

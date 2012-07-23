@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Upgrading_between_Minor_Releases" remap="TID_7524">
+	<title>Updating the Red Hat Enterprise Virtualization Manager</title>
+	<para>
+		Upgrades of the Red Hat Enterprise Virtualization Manager are released via Red Hat Network. Before installing an update from the Red Hat Network be sure to read the advisory text associated with it as well as the most recent version of the <citetitle>Red Hat Enterprise Virtualization — Release Notes</citetitle>, and the <citetitle>Red Hat Enterprise Virtualization — Technical Notes</citetitle>.
+	</para>
+	<para>
+		To complete an upgrade a number of actions must be performed including:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				stopping the <acronym> JBoss</acronym> service,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				downloading and installing the updated packages,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				backing up and updating the database,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				performing post installation configuration, and
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				restarting the <acronym> JBoss</acronym> service.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		A script is included to perform all of these actions for you in an automated fashion. Active virtualization hosts are not upgraded by this process and must be updated separately. As a result the virtual machines running upon them are not affected.
+	</para>
+	<para>
+		Upgrading the Red Hat Enterprise Virtualization Manager requires network connectivity with either Red Hat Network or a Red Hat Network Satellite Server installation. You must be logged in as the <systemitem> root</systemitem> user to initiate the upgrade process.
+	</para>
+	<para>
+		Before you upgrade your Red Hat Enterprise Virtualization Manager installation ensure you have the latest version of the installation utilities by running <command>yum update rhevm-setup</command> as the <systemitem> root</systemitem> user. Once this has been done to commence an upgrade of the Red Hat Enterprise Virtualization Manager run the <command>rhevm-upgrade</command> command, again as the <systemitem> root</systemitem> user. No additional parameters are required. The command will produce output when it has completed each step of the upgrade process.
+	</para>
+	<para>
+		Be aware that the upgrade process may take some time. Allow time for the upgrade process to complete and do not stop it once initiated. Once the upgrade has been completed you will also be instructed to separately upgrade the data warehouse and reports functionality. These additional steps are only required if these optional packages are installed.
+	</para>
+	<note>
+		<title>Note — Upgrading Red Hat Enterprise Virtualization Hypervisors</title>
+		<para>
+			Red Hat Enterprise Virtualization Hypervisors can be updated directly or via the Red Hat Enterprise Virtualization Manager. For information on upgrading the hypervisor see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>.
+		</para>
+	</note>
+	<example>
+		<title>Upgrade Output</title>
+		<screen>
+# <command>rhevm-upgrade</command> 
+Checking for updates....
+Stopping JBoss Service... DONE!
+Backing Up RHEVM DB... DONE!
+Updating RHEVM rpm... DONE!
+Updating RHEVM DB... DONE!
+Running post install configuration... DONE!
+Starting JBoss... DONE!
+
+Upgrade log available at  /var/log/rhevm/rhevm-upgrade_2011_07_27_08_15_10.log
+DB Backup available at  /usr/share/rhevm/db-backups/tmpVCI0WM.sql
+To upgrade the history service or the reporting package, please run yum update rhevm-reports* and then rhevm-dwh-setup and rhevm-reports-setup.
+</screen>
+	</example>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7524-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

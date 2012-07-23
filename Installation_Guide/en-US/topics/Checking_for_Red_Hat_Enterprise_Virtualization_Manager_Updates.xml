@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Checking_for_Red_Hat_Enterprise_Virtualization_Manager_Updates" remap="TID_9941">
+	<title>Checking for Red Hat Enterprise Virtualization Manager Updates</title>
+	<!-- INJECT TITLE HERE -->
+	<!-- Uncomment prerequisites and result if required. -->
+	<!-- Replace all text marked with ** and leave other text -->
+	<para>
+		Use the <command>rhevm-check-update</command> command, included in Red Hat Enterprise Virtualization Manager, to check for updates.
+	</para>
+	<procedure>
+		<step>
+			<para>
+				Run <command>rhevm-check-update</command> as the <systemitem>root</systemitem> user.
+			</para>
+			<screen># <command>rhevm-check-update</command></screen>
+		</step>
+		<step>
+			<stepalternatives>
+				<step>
+					<para>
+						Where no updates are available the command will output the text <literal>No updates available</literal>.
+					</para>
+					<screen>
+# rhevm-check-update
+Loaded plugins: product-id, versionlock
+Checking for updates... (This may take several minutes)
+No updates available
+#
+</screen>
+				</step>
+				<step>
+					<para>
+						Where updates are available the command will list the packages to be updated. You must then use the <command>rhevm-upgrade</command> to start the update process.
+					</para>
+				</step>
+			</stepalternatives>
+		</step>
+	</procedure>
+	<!-- Generated Topic Details
+
+GENERAL DETAILS
+
+Topic ID: null
+Topic Title: Checking for Red Hat Enterprise Virtualization Manager Updates
+Topic Description: 
+
+TOPIC TAGS
+
+4: Task
+30: IA Low Priority
+34: IA Triage
+359: Red Hat Enterprise Virtualization Manager
+385: Upgrading
+393: RHEV 3.1
+400: sgordon
+411: Text
+422: Installing RHEV
+427: Managing RHEV
+435: RHEV Installation Guide
+
+SOURCE URLS
+
+
+RELATED TOPICS
+
+
+-->
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9941-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

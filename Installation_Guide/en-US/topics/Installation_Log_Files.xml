@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Installation_Log_Files" remap="TID_7861">
+	<title>Red Hat Enterprise Virtualization Manager Installation Log Files</title>
+	<table>
+		<title>Installation</title>
+		<tgroup align="left" cols="2" colsep="1" rowsep="1">
+			<colspec colname="c1" colwidth="1*"/>
+			<colspec colname="c2" colwidth="1*"/>
+			<thead>
+				<row>
+					<entry>
+						Log File
+					</entry>
+					<entry>
+						Description
+					</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry><filename>/var/log/ovirt-engine/rhevm-cleanup_<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-setup</command>. This is the command used to remove a Red Hat Enterprise Virtualization Manager installation. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist.
+					</entry>
+				</row>
+				<row>
+					<entry>
+						<filename>/var/log/ovirt-engine/rhevm-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-setup</command> command detailing the creation and configuration of the <systemitem>rhevm</systemitem> database.
+					</entry>
+				</row>
+				<row>
+					<entry><filename>/var/log/ovirt-engine/rhevm-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-dwh-setup</command> command. This is the command used to create the <systemitem> rhevm_history</systemitem> database for reporting. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
+					</entry>
+				</row>
+				<row>
+					<entry><filename>/var/log/ovirt-engine/rhevm-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-reports-setup</command> command. This is the command used to install the Red Hat Enterprise Virtualization Manager Reports modules. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
+					</entry>
+				</row>
+				<row>
+					<entry><filename>/var/log/ovirt-engine/engine-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-setup</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
+					</entry>
+				</row>
+				<row>
+					<entry><filename>/var/log/ovirt-engine/rhevm-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					</entry>
+					<entry>
+						Log from the <command>rhevm-upgrade</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
+					</entry>
+				</row>
+			</tbody>
+		</tgroup>
+	</table>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

@@ -1,0 +1,134 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Adding iSCSI Storage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization platform supports iSCSI storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-existent <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For information regarding the setup and configuration of iSCSI on Red Hat Enterprise Linux, see the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add an <acronym> iSCSI</acronym> data, or export, storage domain you must select an <acronym> iSCSI</acronym> data center. <acronym> iSCSI</acronym> storage domains can not be used for <acronym> ISO</acronym> storage domains."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>New Domain</guilabel> button."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guilabel>New Storage</guilabel>. The <guilabel>New Storage</guilabel> dialog box displays. <remark> TODO: Image here. </remark>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "From the <guilabel>Domain Function / Storage Type</guilabel> drop-down menu, select the appropriate storage type for the storage domain. The storage domain types that are not compatible with the chosen data center are not available."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select an active host in the <guilabel>Use host</guilabel> field. To attach a domain, the name of an active host must be selected from the list of existing hosts. Only hosts that are attached to the selected <acronym> Data Center</acronym> are listed."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Active Host Required"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager is able to map either <acronym> iSCSI</acronym> targets to <acronym> LUNs</acronym>, or <acronym> LUNs</acronym> to <acronym> iSCSI</acronym> targets. The <guilabel>New Domain</guilabel> dialog automatically displays known targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "<acronym>iSCSI</acronym> Target Discovery"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guilabel>Discover Targets</guilabel> to enable target discovery options. The <guilabel>New Domain</guilabel> dialog automatically displays targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding is not listed, click <guilabel>Discover Targets</guilabel> to enable target discovery options."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the fully qualified domain name or <acronym> IP</acronym> address of the <acronym> iSCSI</acronym> host in the <guilabel>Address</guilabel> field."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the port to connect to the host on when browsing for targets in the <guilabel>Port</guilabel> field. The default is <literal>3260</literal>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the Challenge Handshake Authentication Protocol ( <acronym> CHAP</acronym>) is being used to secure the storage, select the <guilabel>User Authentication</guilabel> check box. Enter the <acronym> CHAP</acronym> user name and password."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guibutton>Discover</guibutton> button."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>+</guilabel> button next to the desired target. This will expand the entry and display all unused <acronym> LUNs</acronym> attached to the target."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the check box for each <acronym> LUN</acronym> that you are using to create the storage domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guibutton>OK</guibutton> to create the storage domain."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The new <acronym> iSCSI</acronym> storage domain displays on the storage tab. This will take some time."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7633-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

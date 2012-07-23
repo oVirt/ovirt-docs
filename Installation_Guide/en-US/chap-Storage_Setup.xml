@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Storage_Setup">
+	<title>Storage Setup</title>
+	<xi:include href="topics/Storage_Setup.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<section id="sect-Adding_Storage_to_the_Environment">
+		<title>Adding Storage to the Environment</title>
+		<section id="sect-Adding_NFS_Storage">
+			<title>Adding NFS Storage</title>
+			<xi:include href="topics/Preparing_NFS_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Attaching_NFS_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+		<section id="sect-Adding_iSCSI_Storage">
+			<title>Adding iSCSI Storage</title>
+			<xi:include href="topics/Adding_iSCSI_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Mapping_iSCSI_Targets_to_LUNs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+		<xi:include href="topics/Adding_FCP_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Adding_Local_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<section id="sect-Adding_POSIX_Compliant_Filesystem_Storage">
+			<title>Adding POSIX Compliant Filesystem Storage</title>
+			<xi:include href="topics/POSIX_Compliant_Filesystem_Storage_in_Red_Hat_Enterprise_Virtualization.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Attaching_POSIX_Compliant_Filesystem_Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+	</section>
+	<section id="sect-Populating_the_ISO_Domain">
+		<title>Populating the ISO Domain</title>
+		<xi:include href="topics/Populating_the_ISO_Storage_Domain.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Uploading_the_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Upload_of_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</chapter>

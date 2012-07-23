@@ -1,0 +1,44 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 12:26-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "SPICE"
+msgstr "關於 SPICE"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> SPICE</acronym> protocol allows the virtual machine to connect to the host with physical <acronym> PC</acronym>-like graphics performance. It supplies video at more than 30 frames per second, bi-directional audio (for soft-phones/IP phones), bi-directional video (for video telephony/video conferencing) and <acronym> USB</acronym> redirection from the client’s <acronym> USB</acronym> port into the virtual machine. <acronym> SPICE</acronym> also supports connection to multiple monitors with a single virtual machine."
+msgstr "<acronym> SPICE</acronym> 協定能讓虛擬機器連至含有類似實體 <acronym> PC</acronym> 繪圖效能的主機。它能提供超過 30 fps 的影像、雙向音效（用於軟體電話/IP 電話）、雙向影像（用於視訊通話/視訊會議），並且能由客戶端的 <acronym> USB</acronym> 連接埠將 <acronym> USB</acronym> 重定向入虛擬機器中。<acronym> SPICE</acronym> 亦支援單個虛擬機器連接至多個螢幕。<acronym> SPICE</acronym> 能透過使用虛擬機器上的瀏覽器，經由 ActiveX 自動安裝。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8649-162149+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

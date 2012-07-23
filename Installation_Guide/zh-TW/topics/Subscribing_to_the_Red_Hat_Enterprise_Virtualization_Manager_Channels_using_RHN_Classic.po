@@ -1,0 +1,158 @@
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T19:40:51\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribing to the Red Hat Enterprise Virtualization Manager Channels using RHN Classic"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run the <command>rhn_register</command> command to register the system with the Red Hat Network. To complete registration successfully you will need to supply your Red Hat Network username and password. Follow the onscreen prompts to complete registration of the system."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# rhn_register"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Subscribe to Required Channels"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You must subscribe the system to the required channels using either the Red Hat Network web interface or the command line <command>rhn-channel</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Using the <command>rhn-channel</command> Command"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run the <command>rhn-channel</command> command to subscribe the system to each of the required channels. The commands which need to be run are:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3\n"
+"# rhn-channel --add --channel=jbappplatform-6-x86_64-server-6-rpm\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Important — Troubleshooting <command>rhn-channel</command> Errors"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you are not the Red Hat Network administrator for the machine, or the machine is not registered to Red Hat Network, then use of the <command>rhn-channel</command> command will result in an error:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"Error communicating with server. The message was:\n"
+"Error Class Code: 37\n"
+"Error Class Info: You are not allowed to perform administrative tasks on this system.\n"
+"Explanation: \n"
+"     An error has occurred while processing your request. If this problem\n"
+"     persists please enter a bug report at bugzilla.redhat.com.\n"
+"     If you choose to submit the bug report, please be sure to include\n"
+"     details of what you were trying to do when this error occurred and\n"
+"     details on how to reproduce this problem.\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you encounter this error when using <command>rhn-channel</command> then to add the Red Hat Network channel to the system you must use the web user interface."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is the <literal>Red Hat Enterprise Virtualization Manager Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3-beta</systemitem>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Using the Red Hat Network Web Interface"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To add a channel subscription to a system from the web interface:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Move the mouse cursor over the <guilabel>Subscriptions</guilabel> link at the top of the screen, and then click the <guilabel>Registered Systems</guilabel> link in the menu that appears."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the system to which you are adding channels from the list presented on the screen, by clicking the name of the system."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guilabel>Alter Channel Subscriptions</guilabel> in the <guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the channels to be added from the list presented on the screen. Red Hat Enterprise Virtualization Manager requires:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the <guilabel>Red Hat Enterprise Linux Server (v. 6 for 64-bit x86_64)</guilabel> channel,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the <guilabel>Red Hat Enterprise Virtualization Manager (v.3 x86_64)</guilabel> channel, and"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the <guilabel>JBoss Application Platform (v 6) for 6Server x86_64</guilabel> channel."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>Change Subscription</guilabel> button to finalize the change."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The system is now registered with Red Hat Network and subscribed to the channels required for Red Hat Enterprise Virtualization Manager installation."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10007-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""

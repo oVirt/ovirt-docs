@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Hypervisor_Security" remap="TID_7533">
+	<title>Configuring Hypervisor Security</title>
+	<para>
+		The <guilabel>Security</guilabel> screen is used to change the <systemitem class="username">admin</systemitem> password for both local and remote access. SSH password authentication is also enabled or disabled via this screen.
+	</para>
+	<procedure>
+		<step>
+			<title>Enable SSH Password Authentication</title>
+			<para>
+				To enable SSH password authentication for remote access select the <guilabel>Enable ssh password authentication</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled.
+			</para>
+		</step>
+		<step>
+			<title>Change <systemitem class="username">admin</systemitem> Password</title>
+			<substeps>
+				<step>
+					<para>
+						Enter the desired <systemitem class="username">admin</systemitem> password in the <guilabel>Password</guilabel> field. You should use a strong password.
+					</para>
+					<para>
+						Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words.
+					</para>
+				</step>
+				<step>
+					<para>
+						Enter the desired <systemitem class="username">admin</systemitem> password in the <guilabel>Confirm Password</guilabel> field. Ensure that the value entered in the <guilabel>Confirm Password</guilabel> field matches the value entered in the <guilabel>Password</guilabel> field exactly. Where this is not the case an error message will be displayed to indicate that the two values are different.
+					</para>
+				</step>
+			</substeps>
+		</step>
+		<step>
+			<para>
+				Select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap> to save the security configuration.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The security configuration has been updated.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7533-162798+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

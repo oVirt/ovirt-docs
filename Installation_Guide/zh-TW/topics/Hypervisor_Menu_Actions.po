@@ -1,0 +1,62 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:11-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Hypervisor Menu Actions"
+msgstr "Hypervisor 選單動作"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The directional keys ( <keycap> Up</keycap>, <keycap> Down</keycap>, <keycap> Left</keycap>, <keycap> Right</keycap>) are used to select different controls on the screen. Alternatively the <keycap> Tab</keycap> key cycles through the controls on the screen which are enabled."
+msgstr "方向鍵（<keycap>Up</keycap>、<keycap>Down</keycap>、<keycap>Left</keycap>、<keycap>Right</keycap>）可使用來選擇畫面上不同的控制。此外，<keycap>Tab</keycap> 鍵可用來在畫面上，啟用中的功能之間進行瀏覽。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Text fields are represented by a series of underscores (<guilabel>_</guilabel>). To enter data in a text field select it and begin entering data."
+msgstr "文字欄位會以一系列的下劃線（「<guilabel>_</guilabel>」）表示。若要在文字欄位中輸入資料，請點選該欄位並輸入資料。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Buttons are represented by labels which are enclosed within a pair of angle brackets (<guilabel>&lt;</guilabel> and <guilabel>&gt;</guilabel>). To activate a button ensure it is selected and press <keycap> Enter</keycap> or <keycap> Space</keycap>."
+msgstr "按鈕會以一對括號之間的標籤來表示（「<guilabel>&lt;</guilabel>」和「<guilabel>&gt;</guilabel>」）。若要啟用某個按鈕，請確認它已選取，並按下 <keycap>Enter</keycap> 或 <keycap>Space</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boolean options are represented by an asterisk (<guilabel>*</guilabel>) or a space character enclosed within a pair of square brackets (<guilabel>[</guilabel> and <guilabel>]</guilabel>). When the value contained within the brackets is an asterisk then the option is set, otherwise it is not. To toggle a Boolean option on or off press <keycap> Space</keycap> while it is selected."
+msgstr "布林值選項會以星號（<guilabel>*</guilabel>）或是正括號（<guilabel>[</guilabel> 和 <guilabel>]</guilabel>）之間的空白字元顯示。若括號中的值是個星號，即代表該選項已設置，否則即代表未設置。若要將布林值選項開啟或關閉，請點選它並按下 <keycap>Space</keycap>。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7855-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

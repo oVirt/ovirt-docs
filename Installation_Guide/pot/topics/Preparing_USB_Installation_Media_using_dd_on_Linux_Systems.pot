@@ -1,0 +1,73 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Preparing USB Installation Media using dd on Linux Systems"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# yum install rhev-hypervisor6 rhevm-hypervisor-tools"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Use the <command>dd</command> command to copy the image file to the disk."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Use of <command>dd</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This example uses a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# dd if=/usr/share/rhev-hypervisor/rhev-hypervisor.iso of=/dev/sdc\n"
+"243712+0 records in\n"
+"243712+0 records out\n"
+"124780544 bytes (125 MB) copied, 56.3009 s, 2.2 MB/s\n"
+""
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Warning — All Data on the Device Specified Will be Overwritten"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <acronym>USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) is ready to boot a hypervisor."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7528-164524+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

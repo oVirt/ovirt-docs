@@ -1,0 +1,119 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Virtualization Host CPU Requirements"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Virtualization hosts must have at least one <acronym> CPU</acronym>. Red Hat Enterprise Virtualization supports the use of these <acronym> CPU</acronym> models in virtualization hosts:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "AMD Opteron G1"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "AMD Opteron G2"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "AMD Opteron G3"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "AMD Opteron G4"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Intel Conroe"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Intel Penryn"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Intel Nehalem"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Intel Westmere"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Intel Sandybridge"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "All <acronym> CPUs</acronym> must have support for the <trademark class=\"registered\"> Intel</trademark> 64 or AMD64 CPU extensions, and the <trademark class=\"trade\"> AMD-V</trademark> or <trademark class=\"registered\"> Intel VT</trademark> hardware virtualization extensions enabled. Support for the <literal>No eXecute</literal> flag (NX) is also required. To check that your processor supports the required flags, and that they are enabled:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "At the Red Hat Enterprise Linux or Red Hat Enterprise Virtualization Hypervisor boot screen press any key and select the <guilabel>Boot</guilabel> or <guilabel>Boot with serial console</guilabel> entry from the list. Press <guilabel>Tab</guilabel> to edit the kernel parameters for the selected option. After the last kernel parameter listed ensure there is a <keycap>Space</keycap> and append the <literal>rescue</literal> parameter."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Press <keycap>Enter</keycap> to boot into rescue mode."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "At the prompt which appears, determine that your processor has the required extensions and that they are enabled by running this command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# grep -E 'svm|vmx' /proc/cpuinfo | grep nx"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If any output is shown, the processor is hardware virtualization capable. If no output is shown it is still possible that your processor supports hardware virtualization. In some circumstances manufacturers disable the virtualization extensions in the BIOS. Where you believe this to be the case consult the system's BIOS and the motherboard manual provided by the manufacturer."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "As an additional check, verify that the <computeroutput> kvm </computeroutput> modules are loaded in the kernel:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# lsmod | grep kvm"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the output includes <computeroutput> kvm_intel </computeroutput> or <computeroutput> kvm_amd </computeroutput> then the <computeroutput> kvm </computeroutput> hardware virtualization modules are loaded and your system meets requirements."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7843-161528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

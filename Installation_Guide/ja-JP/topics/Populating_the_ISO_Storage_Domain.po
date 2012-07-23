@@ -1,0 +1,79 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 03:14-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Populating the ISO Storage Domain"
+msgstr "ISO ストレージドメインへのデータ読み込み"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once an <acronym> ISO</acronym> storage domain is defined for a data center, CD-ROM images or <acronym> ISO</acronym> images must be uploaded for the virtual machines to use. Red Hat Enterprise Virtualization provides an <acronym> ISO</acronym> uploader tool that ensures that the images are uploaded into the correct directory path, with the correct user permissions. While an example is provided here, for full usage information see ."
+msgstr "データセンター用に <acronym>ISO</acronym> ストレージドメインを定義したら、仮想マシンが使用するための CD-ROM イメージまたは <acronym>ISO</acronym> イメージをアップロードする必要があります。Red Hat Enterprise Virtualization は、イメージを正しいディレクトリパスにアップロードして適切なユーザーパーミッションを付与するための <acronym>ISO</acronym> アップローダーツールを提供しています。以下に例を記載していますが、詳しい使用方法については　を参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The creation of <acronym> ISO</acronym> images from physical media is not described in this document. It is assumed that you have access to the images required for your environment."
+msgstr "物理メディアから <acronym>ISO</acronym> イメージを作成する方法については本ガイドでは触れていません。ご使用の環境に必要なイメージがお手元にあることを前提としています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Copy the required <acronym> ISO</acronym> image to a temporary directory on the system running Red Hat Enterprise Virtualization Manager."
+msgstr "Red Hat Enterprise Virtualization Manager を実行しているシステムのテンポラリディレクトリに、必要な <acronym>ISO</acronym> イメージをコピーします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log in to the system running Red Hat Enterprise Virtualization Manager as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr "Red Hat Enterprise Virtualization Manager を実行しているシステムに <systemitem class=\"username\">root</systemitem> ユーザーとしてログインします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <command>rhevm-iso-uploader</command> command to upload the <acronym> ISO</acronym> image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth."
+msgstr "<command>rhevm-iso-uploader</command> コマンドを使用して <acronym>ISO</acronym> イメージをアップロードします。この操作には多少時間がかかり、アップロードするイメージのサイズや使用可能なネットワークの帯域幅によって所要時間が異なります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>ISO</acronym> Uploader Usage"
+msgstr "<acronym>ISO</acronym> アップローダーの使用例"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In this example the <acronym> ISO</acronym> image <filename>RHEL6.iso</filename> is uploaded to the <acronym> ISO</acronym> domain called <literal>ISODomain</literal> using <acronym> NFS</acronym>. The command will prompt for an administrative username and password. The username must be provided in the form <replaceable>username</replaceable>@<replaceable>domain</replaceable>."
+msgstr "この例では、<filename>RHEL6.iso</filename> の <acronym>ISO</acronym> イメージを <literal>ISODomain</literal> という名前の <acronym>ISO</acronym> ドメインに <acronym>NFS</acronym> を使用してアップロードしています。コマンドにより、管理者のユーザー名およびパスワードの入力が求められます。ユーザー名は <replaceable>username</replaceable>@<replaceable>domain</replaceable> の形式で入力する必要があります。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command>"
+msgstr "# <command>rhevm-iso-uploader <parameter>--iso-domain=<replaceable>ISODomain</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>RHEL6.iso</replaceable></parameter></command>"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> ISO</acronym> image is uploaded and appears in the <acronym> ISO</acronym> storage domain specified. It is also available in the list of available boot media when creating virtual machines in the data center which the storage domain is attached to."
+msgstr "<acronym>ISO</acronym> イメージがアップロードされ、 指定した <acronym>ISO</acronym> ストレージドメイン内に表示されます。また、ストレージドメインがアタッチされているデータセンター内で仮想マシンを作成する場合には、使用できるブートメディアの一覧にも表示されます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7637-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Storage_Requirements" remap="TID_7845">
+	<title>Virtualization Host Storage Requirements</title>
+	<para>
+		Virtualization hosts require local storage to store configuration, logs, kernel dumps, and for use as swap space. The minimum storage requirements of the Red Hat Enterprise Virtualization Hypervisor are documented in this section. The storage requirements for Red Hat Enterprise Linux hosts vary based on the amount of disk space used by their existing configuration but are expected to be greater than those of the Red Hat Enterprise Virtualization Hypervisor.
+	</para>
+	<para>
+		It is recommended that each virtualization host has at least 2&nbsp;<acronym>GB</acronym> of internal storage. The minimum supported internal storage for each Hypervisor is the total of that required to provision the following partitions:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				The root partitions require at least 512&nbsp;MB of storage.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The configuration partition requires at least 8&nbsp;MB of storage.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The recommended minimum size of the logging partition is 2048&nbsp;MB.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The data partition requires at least 256&nbsp;MB of storage. Use of a smaller data partition may prevent future upgrades of the Hypervisor from the Red Hat Enterprise Virtualization Manager. By default all disk space remaining after allocation of swap space will be allocated to the data partition.
+			</para>
+		</listitem>
+		<!--   So the default size for the Hypervisor, excluding swap and storage is 2615MB   -->
+		<listitem>
+			<para>
+				The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Hypervisor is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the Red Hat Enterprise Virtualization environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>.
+			</para>
+			<para>
+				The recommended size of the swap partition can be determined by:
+			</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Multiplying the amount of system <acronym>RAM</acronym> by the expected overcommit ratio, and adding
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						2&nbsp;<acronym>GB</acronym> of swap space for systems with 4&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> or less, or
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						4&nbsp;<acronym>GB</acronym> of swap space for systems with between 4&nbsp;<acronym>GB</acronym> and 16 <acronym>GB</acronym> of <acronym>RAM</acronym>, or
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						8 <acronym>GB</acronym> of swap space for systems with between 16&nbsp;<acronym>GB</acronym> and 64&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym>, or
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						16&nbsp;<acronym>GB</acronym> of swap space for systems with between 64&nbsp;<acronym>GB</acronym> and 256 <acronym>GB</acronym> of <acronym>RAM</acronym>.
+					</para>
+				</listitem>
+			</itemizedlist>
+			<example>
+				<title>Calculating Swap Partition Size</title>
+				<para>
+					For a system with 8&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> this means the formula for determining the amount of swap space to allocate is: 
+					<screen>(8 <acronym>GB</acronym> x 0.5) + 4 <acronym>GB</acronym> = 8 <acronym>GB</acronym></screen>
+				</para>
+			</example>
+		</listitem>
+	</itemizedlist>
+	<important>
+		<title>Important — <systemitem>Fakeraid Devices</systemitem> are not Supported</title>
+		<para>
+			The Red Hat Enterprise Virtualization Hypervisor does not support installation on <systemitem>fakeraid</systemitem> devices. Where a <systemitem>fakeraid</systemitem> device is present it must be reconfigured such that it no longer runs in <acronym>RAID</acronym> mode.
+		</para>
+		<procedure>
+			<step>
+				<para>
+					Access the <acronym>RAID</acronym> controller's <acronym>BIOS</acronym> and remove all logical drives from it.
+				</para>
+			</step>
+			<step>
+				<para>
+					Change controller mode to be non-RAID. This may be referred to as compatibility or <acronym>JBOD</acronym> mode.
+				</para>
+			</step>
+		</procedure>
+		<para>
+			Access the manufacturer provided documentation for further information related to the specific device in use.
+		</para>
+	</important>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

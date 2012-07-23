@@ -1,0 +1,139 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:30-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Revision History"
+msgstr "修訂紀錄"
+
+#. Tag: firstname
+#, no-c-format
+msgid "CS Builder"
+msgstr ""
+
+#. Tag: surname
+#, no-c-format
+msgid "Robot"
+msgstr ""
+
+#. Tag: member
+#, no-c-format
+msgid "Initial creation by publican"
+msgstr ""
+
+#. Tag: member
+#, no-c-format
+msgid "Built from Content Specification: 8983, Revision: 164535"
+msgstr ""
+
+# Tag: firstname
+#~ msgctxt ""
+#~ msgid "Tim"
+#~ msgstr "Tim"
+
+# Tag: surname
+#~ msgctxt ""
+#~ msgid "Hildred"
+#~ msgstr "Hildred"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Initial staging of topic based edition of guide for review by product management."
+#~ msgstr "初次使用以主題為基礎的版本，供產品經理檢視。"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author tchuang
+#~ msgctxt ""
+#~ msgid "Daniel"
+#~ msgstr "Daniel"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author ccheng
+#~ msgctxt ""
+#~ msgid "Macpherson"
+#~ msgstr "Macpherson"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "BZ#798843 - Shortened admonition title to avoid overlap"
+#~ msgstr "BZ#798843 - 縮短了警告標題，以防止重疊"
+
+# Tag: firstname
+#~ msgctxt ""
+#~ msgid "Zac"
+#~ msgstr "Zac"
+
+# Tag: surname
+#~ msgctxt ""
+#~ msgid "Dover"
+#~ msgstr "Dover"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "BZ#805568 - Updating storage requirements from 10GB minimum to 2 GB minimum"
+#~ msgstr "BZ#805568 - 將最低儲存裝置需求由 10GB 更新為 2GB"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Bumped pubsnumber prior to topic export."
+#~ msgstr "匯出主題之前，推送 pubsnumber。"
+
+# Tag: firstname
+#~ msgctxt ""
+#~ msgid "Stephen"
+#~ msgstr "Stephen"
+
+# Tag: surname
+#~ msgctxt ""
+#~ msgid "Gordon"
+#~ msgstr "Gordon"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization General Availability"
+#~ msgstr "Red Hat Enterprise Virtualization General Availability"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 4"
+#~ msgstr "Red Hat Enterprise Virtualization External Beta 4"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 3"
+#~ msgstr "Red Hat Enterprise Virtualization External Beta 3"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 2"
+#~ msgstr "Red Hat Enterprise Virtualization External Beta 2"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 1"
+#~ msgstr "Red Hat Enterprise Virtualization External Beta 1"
+
+# Tag: member
+#~ msgctxt ""
+#~ msgid "Draft"
+#~ msgstr "草稿"

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Supported_virtual_machines" remap="TID_8301">
+	<title>Supported virtual machines</title>
+	<itemizedlist id="References_RHEV_3_Supported_Guests">
+		<title>Supported Guests</title>
+		<para>
+			Red Hat Enterprise Virtualization presently supports the virtualization of these guest operating systems:
+		</para>
+		<listitem>
+			<para>
+				Red Hat Enterprise Linux 3 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Red Hat Enterprise Linux 4 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Red Hat Enterprise Linux 5 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Red Hat Enterprise Linux 6 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Windows XP Service Pack 3 and newer (32 bit only)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Windows 7 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Windows Server 2003 Service Pack 2 and newer (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Windows Server 2008 (32 bit and 64 bit)
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Windows Server 2008 R2 (64 bit only)
+			</para>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8301-163892+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

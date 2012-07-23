@@ -1,0 +1,74 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:03-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Mapping iSCSI Targets to LUNs"
+msgstr "將 iSCSI 目標映射至 LUN"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Follow the below mentioned procedure:"
+msgstr "遵循下列程序進行："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>+</guilabel> button next to the desired target."
+msgstr "按下欲選取目標旁的「<guilabel>+</guilabel>」號按鈕。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the check box for each <acronym> LUN</acronym> that you are using to create the storage domain."
+msgstr "選擇您要用來建立儲存區域的每個 <acronym>LUN</acronym>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton>."
+msgstr "請按下「<guibutton>確定</guibutton>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new storage domain is created."
+msgstr "這會建立新的儲存區域。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7634-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

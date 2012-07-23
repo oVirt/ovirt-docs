@@ -1,0 +1,54 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Data Collection Setup and Reports Installation Overview"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager optionally includes a comprehensive management history database, which can be utilized by any application to extract a range of information at the data center, cluster, and host levels. As the database structure changes over time a number of database views are also included to provide a consistent structure to consuming applications. A view is a virtual table composed of the result set of a database query. The definition of a view is stored in the database as a <literal>SELECT</literal> statement. The result set of the <literal>SELECT</literal> statement populates the virtual table returned by the view. If the optional comprehensive management history database has been enabled, the history tables and their associated views are stored in the <systemitem>rhevm_history</systemitem> database."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In addition to the history database Red Hat Enterprise Virtualization Manager Reports functionality is also available as an optional component. Red Hat Enterprise Virtualization Manager Reports provides a customized implementation of JasperServer, and JasperReports. JasperServer is a component of JasperReports, an open source reporting tool capable of being embedded in Java-based applications. It produces reports which can be rendered to screen, printed, or exported to a variety of formats including <acronym> PDF</acronym>, Excel, <acronym> CSV</acronym>, Word, <acronym> RTF</acronym>, Flash, <acronym> ODT</acronym> and <acronym> ODS</acronym>. Reports built in Red Hat Enterprise Virtualization Manager Reports are accessed via a web interface. In addition to a range of pre-configured reports and dashboards for monitoring the system, you are also able to create your own ad hoc reports."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before proceeding with Red Hat Virtualization Manager Reports installation you must first have installed the Red Hat Enterprise Virtualization Manager ."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager Reports functionality depends on the presence of the history database, which is installed separately. Both the history database and the Red Hat Enterprise Virtualization Manager Reports are optional components. They are not installed by default when you install the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To install and configure the <systemitem>rhevm_history</systemitem> database, see ."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To install and configure the Red Hat Enterprise Virtualization Manager Reports, see . You must ensure that you have installed, and configured, the <systemitem>rhevm_history</systemitem> database prior to installing JasperReports."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8654-162351+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

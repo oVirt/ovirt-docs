@@ -1,0 +1,85 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-25 01:03-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Network Setup"
+msgstr "網路設定"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This chapter provides instruction on configuring networking for the Red Hat "
+"Enterprise Virtualization environment. For information about managing "
+"networking, including maintenance, refer to the <citetitle>Red Hat "
+"Enterprise Virtualization Administration Guide</citetitle>."
+msgstr ""
+"本章提供了為 RHEV 環境配置網路的相關指示。欲取得網路管理（包括維護）上的相關資訊，請參閱《<citetitle>Red Hat "
+"Enterprise Virtualization 管理指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization uses networking to support almost every "
+"aspect of operations. Storage, host management, user connections, and "
+"virtual machine connectivity, for example, all rely on a well planned and "
+"configured network to deliver optimal performance. Setting up networking is "
+"a vital prerequisite for a Red Hat Enterprise Virtualization environment "
+"because it is much simpler to plan for your projected networking "
+"requirements and implement your network accordingly than it is to discover "
+"your networking requirements through use and attempt to alter your network "
+"configuration retroactively."
+msgstr ""
+"RHEV 使用了網路來支援幾乎所有的作業。儲存裝置、主機管理、使用者連線，以及虛擬機器連線等等，皆依賴完善計畫及配置的網路，以達到最佳的效能。網路設定為 "
+"RHEV "
+"環境的先決條件中，最重要的一環，因為為您企劃的網路需求進行計畫並相應地實作網路，會比透過事後找出您的網路需求，並逆動修改您的網路配置要來得輕易許多。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"A familiarity with the network concepts and their use is highly recommended "
+"when planning and setting up networking in a Red Hat Enterprise "
+"Virtualization environment. This document does not describe the concepts, "
+"protocols, requirements or general usage of bonds, bridges and logical "
+"networks. It is recommended that you read your network hardware vendor's "
+"guides for more information on managing networking."
+msgstr ""
+"當要計劃與設定 RHEV "
+"環境中的網路時，強烈建議您熟悉其網路概念與用途。本文件將不會詳述綁定、橋街，以及邏輯網路上的概念、協定、需求以及一般使用方法。建議您詳讀您網路硬體供應商的指南，以取得更多網路管理上的相關資訊。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

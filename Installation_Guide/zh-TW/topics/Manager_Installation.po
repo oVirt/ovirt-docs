@@ -1,0 +1,238 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:02-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Manager Installation Overview"
+msgstr "Manager 安裝程序"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Prerequisites:"
+msgstr "先決條件："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"sect-Hardware_Requirements\" xrefstyle=\"prereq\" />"
+msgstr "<xref linkend=\"sect-Hardware_Requirements\" />"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"sect-Software_Requirements\" xrefstyle=\"prereq\" />"
+msgstr "<xref linkend=\"sect-Software_Requirements\" />"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before proceeding with Red Hat Virtualization Manager installation you must ensure that all prerequisites are met. Only once you have confirmed that all prerequisites are met are you ready to proceed with installation."
+msgstr "在進行 RHEV Manager 安裝程序之前，您必須確認已滿足所有列在 中的需求。當您確認所有已滿足所有條件後，您便能開始進行安裝。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To complete installation of the Red Hat Enterprise Virtualization Manager successfully you must also be able to determine:"
+msgstr "若要成功完成 RHEV Manager 的安裝程序，您必須提供："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The ports to be used for <acronym>HTTP</acronym>, and <acronym>HTTPS</acronym>, communication. The defaults are <literal>80</literal> and <literal>443</literal> respectively."
+msgstr "<acronym>HTTP</acronym> 與 <acronym>HTTPS</acronym> 通訊上所要使用的連接埠。相應的預設值為 <literal>8080</literal> 和 <literal>8443</literal>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Fully Qualified Domain Name (<acronym>FQDN</acronym>) of the system the manager is to be installed on."
+msgstr "Manager 將要安裝於的系統的完整區域名稱（<acronym>FQDN</acronym>）。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The password you will use to secure the Red Hat Enterprise Virtualization administration account."
+msgstr "您將使用來保護 RHEV 管理員帳號的密碼。"
+
+#. Tag: para
+#, no-c-format
+msgid "The location of the database server to be used. You can use the setup script to install and configure a local database server or use an existing remote database server. To use a remote database server you will need to know:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the hostname of the system on which the remote database server exists,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the port on which the remote database server is listening."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Additionally you must know the username and password of a user that is known to the remote database server. The user must have permission to create databases in PostgreSQL."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Organization Name to use when creating the manager's security certificates."
+msgstr "當建立 Manager 安全性憑證時所使用的組織名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The storage type to be used for the initial data center attached to the manager. The default is <acronym>NFS</acronym>."
+msgstr "初始資料中心連至 Manager 時所要使用的儲存裝置類型。預設值為<acronym>NFS</acronym>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The path to use for the <acronym>ISO</acronym> share, if the manager is being configured to provide one. The display name, which will be used to label the domain in the Red Hat Enterprise Virtualization Manager also needs to be provided."
+msgstr "<acronym>ISO</acronym> share 所要使用的路徑（若 manager 需提供的話）。您也必須提供將被使用來標記 RHEV Manager 中之區域的顯示名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The firewall rules, if any, present on the system that need to be integrated with the rules required for the manager to function."
+msgstr "在系統上（若有必要）的防火牆規則，此規則能與讓 manager 正常運作的規則整合。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before installation is completed the values selected are displayed for confirmation. Once the values have been confirmed they are applied and the Red Hat Enterprise Virtualization Manager is ready for use."
+msgstr "在安裝程序完成前，您所配置的值將會再次顯示以供確認。當進行確認後，這些值便會被套用，並且 RHEV Manager 將會被準備好以供使用。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Completed Installation"
+msgstr "已完成的安裝程序"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port:                     80\n"
+"https-port:                    443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"db-remote-install              local\n"
+"db-local-pass                  ********\n"
+"nfs-mp:                        /isodomain\n"
+"iso-domain-name:               ISODomain\n"
+"config-nfs:                    yes\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): "
+msgstr ""
+"\n"
+"RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port: 8080\n"
+"https-port: 8443\n"
+"host-fqdn: manager.demo.redhat.com\n"
+"auth-pass: ********\n"
+"db-pass: ********\n"
+"org-name: Red Hat\n"
+"default-dc-type: NFS\n"
+"nfs-mp: /isodomain\n"
+"iso-domain-name: ISODomain\n"
+"override-iptables: yes\n"
+"Proceed with the configuration listed above? (yes|no): "
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Automated installations are created by providing <command>rhevm-setup</command> with an answer file. An answer file contains answers to the questions asked by the setup command."
+msgstr "自動化安裝程序乃透過提供 <command>rhevm-setup</command>，以及一個回應檔案所建立的。此回應檔案包含了 setup 指令所會問到的問題之答案。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To create an answer file, use the <parameter>--gen-answer-file</parameter> parameter to set the location to which the answer file must be saved. The <command>rhevm-setup</command> command will record your answers to the file."
+msgstr "若要建立回應檔案，請使用 <parameter>--gen-answer-file</parameter> 參數來設置儲存回應檔案的位置。<command>rhevm-setup</command> 指令會將您的回應記錄至檔案中。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+msgstr "# <command>rhevm-setup <parameter>--gen-answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To use an answer file for a new installation, use the <parameter>--answer-file</parameter> parameter to set the location of the answer file that must be used. The command <command>rhevm-setup</command> command will use the answers stored in the file to complete installation."
+msgstr "若要在新的安裝程序上使用回應檔案，請使用 <parameter>--answer-file</parameter> 參數來設置欲使用之回應檔案的位置。<command>rhevm-setup</command> 這項指令，將會使用儲存在檔案中的回應來完成安裝程序。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+msgstr "# <command>rhevm-setup <parameter>--answer-file=<replaceable>ANSWER_FILE</replaceable></parameter></command>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Run <command>rhevm-setup <parameter>--help</parameter></command> for further information."
+msgstr "請執行 <command>rhevm-setup <parameter>--help</parameter></command> 以取得更多資訊。"
+
+#. Tag: para
+#, no-c-format
+msgid "Offline installation requires the creation of a software repository local to your Red Hat Enterprise Virtualization environment. This software repository must contain all of the packages required to install Red Hat Enterprise Virtualization Manager, Red Hat Enterprise Linux virtualization hosts, and Red Hat Enterprise Linux virtual machines."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you wish to create such a repository, refer to the <citetitle>Installing Red Hat Enterprise Virtualization Offline</citetitle> technical brief, available at <ulink url=\"https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To perform initial installation and configuration of the Red Hat Enterprise Virtualization Manager follow the steps in . Once you have followed this procedure the Red Hat Enterprise Virtualization Manager and dependencies, including <acronym>JBoss</acronym> (<ulink url=\"http://www.jboss.com\" />), will be installed and configured ready for your first login. Further action must be undertaken to complete configuration of the environment to the point that you can create virtual machines. These tasks will be described in the following chapters."
+#~ msgstr "若要進行 RHEV Manager 的初始安裝和配置，請依照 中的步驟進行。在依照了此步驟進行後，RHEV Manager 與其相依項目，包括 <acronym>JBoss</acronym>（<ulink url=\"http://www.jboss.com\" />），皆會被安裝並配置，以供您第一次登錄時使用。您必須進行更多動作，以完成能夠建立虛擬機器的環境配置。這些工作將會詳述於下列章節中。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The password you will use to secure the database."
+#~ msgstr "您將使用來保護資料庫的密碼。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Note — Automated Installation"
+#~ msgstr "請注意 — 自動化安裝程序"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

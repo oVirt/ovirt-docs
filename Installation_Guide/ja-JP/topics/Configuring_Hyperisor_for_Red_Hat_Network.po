@@ -1,0 +1,238 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 09:28-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor for Red Hat Network"
+msgstr "Red Hat Network 向けの Hypervisor 設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Guests running on the Hypervisor may need to consume Red Hat Enterprise Linux virtualization entitlements. Where this is the case the Hypervisor must be registered to Red Hat Network , a Satellite server, or Subscription Asset Manager. The Hypervisor is able to connect to these services via a <acronym>HTTP</acronym> proxy where one is in use."
+msgstr "Hypervisor 上で実行されるゲストには、may need to consume Red Hat Enterprise Linux の仮想化エンタイトルメントが必要となる場合があります。そのような場合には、その Hypervisor を Red Hat Network または Satellite サーバーに登録する必要があります。Hypervisor は、<acronym>HTTP</acronym> プロキシ (使用している場合) を介して、これらのサービスに接続することができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Note that when new versions of the Hypervisor itself become available they are installed from the Red Hat Enterprise Virtualization Manager, not Red Hat Network."
+msgstr "Hypervisor 自体の新バージョンが入手可能になった際には、Red Hat Network ではなく、Red Hat Enterprise Virtualization Manager からインストールする点に注意してください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Register with Red Hat Network"
+msgstr "Red Hat Network への登録"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Authentication"
+msgstr "認証"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter your Red Hat Network username in the <guilabel>Login</guilabel> field."
+msgstr "<guilabel>Login</guilabel> フィールドに、Red Hat Network のユーザー名を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter your Red Hat Network password in the <guilabel>Password</guilabel> field."
+msgstr "<guilabel>Password</guilabel> フィールドに、Red Hat Network のパスワードを入力します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Profile Name"
+msgstr "プロファイル名"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the profile name to be used for the system in the <guilabel>Profile Name</guilabel> field. This is the name that the system will appear under when viewed via the Red Hat Network."
+msgstr "<guilabel>Profile Name</guilabel> フィールドに、システムに使用するプロファイル名を入力します。Red Hat Network では、この名前でシステムがを表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Update Source"
+msgstr "ソースの更新"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Hypervisor is able to register directly to Red Hat Network or, if available, either a Satellite installation or a Subscription Asset Manager."
+msgstr "Hypervisor は、Red Hat Network に直接登録することができます。または、利用可能な場合には、Satellite インストールや Subscription Asset Manager を使用することもできます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect Directly to RHN"
+msgstr "RHN に直接接続する手順"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>RHN</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled. The <guilabel>URL</guilabel> and <guilabel>CA</guilabel> values do not need to be provided."
+msgstr "<guilabel>RHN</guilabel> オプションを選択して <keycap>Space</keycap> を押し、有効に切り替えます。<guilabel>URL</guilabel> と <guilabel>CA</guilabel> の値を入力する必要はありません。 "
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Network Configuration"
+msgstr "Red Hat Network の設定"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[*] RHN [ ] Satellite [ ] Subscription Asset Manager           \n"
+"URL:  ________________________________________                 \n"
+"CA :  ________________________________________  "
+msgstr ""
+"[*] RHN [ ] Satellite [ ] Subscription Asset Manager           \n"
+"URL:  ________________________________________                 \n"
+"CA :  ________________________________________  "
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect via Satellite"
+msgstr "Satellite 経由で接続する手順"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Satellite</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "<guilabel>Satellite</guilabel> オプションを選択して <keycap>Space</keycap> を押し、有効に切り替えます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Satellite server in the <guilabel>URL</guilabel> field."
+msgstr "<guilabel>URL</guilabel> フィールドに Satellite サーバーの URL を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Certificate Authority for the Satellite server in the <guilabel>CA</guilabel> field."
+msgstr "<guilabel>CA</guilabel> フィールドには、Satellite サーバーの認証局の URL を入力します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Satellite Configuration"
+msgstr "Satellite の設定"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[ ] RHN [*] Satellite [ ] Subscription Asset Manager\n"
+"URL:   https://your-satellite.example.com\n"
+"CA :   https://your-satellite.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+msgstr ""
+"[ ] RHN [*] Satellite [ ] Subscription Asset Manager\n"
+"URL:   https://your-satellite.example.com\n"
+"CA :   https://your-satellite.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect via Subscription Asset Manager"
+msgstr "Subscription Asset Manager 経由で接続する手順"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Subscription Asset Manager</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "<guilabel>Subscription Asset Manager</guilabel> オプションを選択して <keycap> Space</keycap> を押し、有効に切り替えます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Subscription Asset Manager server in the <guilabel>URL</guilabel> field."
+msgstr "<guilabel>URL</guilabel> フィールドに Subscription Asset Manager サーバーの URL を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Certificate Authority for the Subscription Asset Manager server in the <guilabel>CA</guilabel> field."
+msgstr "<guilabel>CA</guilabel> フィールドには、Subscription Asset Manager サーバーの認証局の URL を入力します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Subscription Asset Manager Configuration"
+msgstr "Subscription Asset Manager の設定"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[ ] RHN [ ] Satellite [*] Subscription Asset Manager           \n"
+"URL:  https://subscription-asset-manager.example.com                 \n"
+"CA :  https://subscription-asset-manager.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+msgstr ""
+"[ ] RHN [ ] Satellite [*] Subscription Asset Manager           \n"
+"URL:  https://subscription-asset-manager.example.com                 \n"
+"CA :  https://subscription-asset-manager.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>HTTP</acronym> Proxy"
+msgstr "<acronym>HTTP</acronym> プロキシ"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where a <acronym> HTTP</acronym> proxy is in use the details to connect to it must be provided. To connect to the Red Hat Network or a Satellite server via a proxy you must enter:"
+msgstr "<acronym>HTTP</acronym> プロキシを使用している場合には、 プロキシ接続の詳細を入力する必要があります。プロキシ経由で Red Hat Network または Satellite サーバーに接続する場合は、以下の情報を入力してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the proxy <guilabel>Server</guilabel>'s network address,"
+msgstr "プロキシ <guilabel>サーバー</guilabel> のネットワークアドレス"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Port</guilabel> to connect to the proxy on, and"
+msgstr "プロキシに接続するための <guilabel>ポート</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "optionally, the <guilabel>Username</guilabel> and <guilabel>Password</guilabel> to use to connect to the proxy."
+msgstr "オプションとして、プロキシへの接続に使用する <guilabel>ユーザー名</guilabel> と <guilabel>パスワード</guilabel>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In environments where a <acronym> HTTP</acronym> proxy is not in use it is safe to ignore this step."
+msgstr "<acronym>HTTP</acronym> プロキシを使用していない環境では、この手順は無視しても問題ありません。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "HTTP Proxy Configuration"
+msgstr "HTTP プロキシの設定"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"HTTP Proxy\n"
+"Server: proxy.example.com__ Port: 8080_\n"
+"Username: puser________ Password: ******_______\n"
+msgstr ""
+"HTTP Proxy\n"
+"Server: proxy.example.com__ Port: 8080_\n"
+"Username: puser________ Password: ******_______\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Configuration"
+msgstr "設定の保存"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap>."
+msgstr "設定を保存するには、<guibutton>&lt;適用&gt;</guibutton> を選択して <keycap>Enter</keycap> を押す必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Hypervisor's <guilabel>Red Hat Network</guilabel> configuration has been updated."
+msgstr "<guilabel>Red Hat Network</guilabel> の設定が更新されました。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7538-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

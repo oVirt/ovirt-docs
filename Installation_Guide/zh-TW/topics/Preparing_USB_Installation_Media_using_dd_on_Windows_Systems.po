@@ -1,0 +1,240 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:27-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Installation Media using dd on Windows Systems"
+msgstr "準備 USB 安裝媒介以在 Windows 系統上使用 dd"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Access <ulink url=\"http://www.redhat.com/services/custom/cygwin/\" /> and click the <application>Red Hat Cygwin official installation utility</application> link. The <filename>rhsetup.exe</filename> executable will download."
+msgstr "請存取 <ulink url=\"http://www.redhat.com/services/custom/cygwin/\" /> 並點選 <application>Red Hat Cygwin official installation utility</application> 連結。<filename>rhsetup.exe</filename> 可執行檔將會被下載。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "As the <systemitem class=\"username\">Administrator</systemitem> user run the downloaded <filename>rhsetup.exe</filename> executable. The <application>Red Hat Cygwin</application> installer will display."
+msgstr "請以 <systemitem class=\"username\">Administrator</systemitem> 使用者來執行下載的 <filename>rhsetup.exe</filename> 執行檔。<application>Red Hat Cygwin</application> 安裝程式將會出現。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Follow the prompts to complete a standard installation of <application>Red Hat Cygwin</application>. The <package>Coreutils</package> package within the <package>Base</package> package group provides the <command>dd</command> utility. This is automatically selected for installation."
+msgstr "請依照提示進行以完成 <application>Red Hat Cygwin</application> 的標準安裝。<package>Base</package> 套件群組中的 <package>Coreutils</package> 套件提供了 <command>dd</command> 工具程式。這會被自動選擇安裝。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Copy the <filename>rhev-hypervisor.iso</filename> file downloaded from <application>Red Hat Network</application> to <filename>C:\\rhev-hypervisor.iso</filename>."
+msgstr "請將由 <application>Red Hat Network</application> 下載的 <filename>rhev-hypervisor.iso</filename> 檔案複製至 <filename>C:\\rhev-hypervisor.iso</filename>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "As the <systemitem class=\"username\">Administrator</systemitem> user run <application>Red Hat Cygwin</application> from the desktop. A terminal window will appear."
+msgstr "請以 <systemitem class=\"username\">Administrator</systemitem> 使用者身份由桌面執行 <application>Red Hat Cygwin</application>。將會有個終端機視窗出現。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On the <application>Windows 7</application> and <application>Windows Server 2008</application> platforms it is necessary to right click the <application>Red Hat Cygwin</application> icon and select the <guilabel>Run as Administrator...</guilabel> option to ensure the application runs with the correct permissions."
+msgstr "在 <application>Windows 7</application> 和 <application>Windows Server 2008</application> 平台上，您必須按右鍵點選 <application>Red Hat Cygwin</application> 圖像，並選擇「<guilabel>以管理員身份執行...</guilabel>」選項，以確保應用程式以正確的權限運作。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In the terminal run <command>cat /proc/partitions</command> to see the drives and partitions currently visible to the system."
+msgstr "請在終端機中執行 <command>cat /proc/partitions</command>，以查看系統目前能看見的磁碟與分割區。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "View of Disk Partitions Attached to System"
+msgstr "檢視連至系統的磁碟分割區"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"                    \n"
+"Administrator@test /\n"
+"$ cat /proc/partitions  \n"
+"major minor  #blocks  name\n"
+"    8     0  15728640 sda\n"
+"    8     1    102400 sda1\n"
+"    8     2  15624192 sda2  \n"
+msgstr ""
+"                    \n"
+"Administrator@test /\n"
+"$ cat /proc/partitions  \n"
+"major minor  #blocks  name\n"
+"    8     0  15728640 sda\n"
+"    8     1    102400 sda1\n"
+"    8     2  15624192 sda2  \n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Plug the <acronym> USB</acronym> storage device which is to be used as the media for the hypervisor installation into the system. Re-run the <command>cat /proc/partitions</command> command and compare the output to that of the previous run. A new entry will appear which designates the <acronym> USB</acronym> storage device."
+msgstr "請將要用來作為 hypervisor 安裝媒介的 <acronym>USB</acronym> 儲存裝置插入系統中。請重新執行 <command>cat /proc/partitions</command> 指令，並與先前的輸出做比較。會有個新項目出現，此項目指定了 <acronym>USB</acronym> 儲存裝置。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Administrator@test /\n"
+"$ cat /proc/partitions\n"
+"major minor  #blocks  name\n"
+"    8     0  15728640 sda\n"
+"    8     1    102400 sda1\n"
+"    8     2  15624192 sda2\n"
+"    8    16    524288 sdb\n"
+msgstr ""
+"\n"
+"Administrator@test /\n"
+"$ cat /proc/partitions\n"
+"major minor  #blocks  name\n"
+"    8     0  15728640 sda\n"
+"    8     1    102400 sda1\n"
+"    8     2  15624192 sda2\n"
+"    8    16    524288 sdb\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <command>dd</command> command to copy the <filename>rhev-hypervisor.iso</filename> file to the disk. The example uses a <acronym> USB</acronym> storage device named <systemitem> /dev/<replaceable>sdb</replaceable></systemitem>. Replace <replaceable>sdb</replaceable> with the correct device name for the <acronym> USB</acronym> storage device to be used."
+msgstr "請使用 <command>dd</command> 指令來將 <filename>rhev-hypervisor.iso</filename> 檔案複製至磁碟。範例使用了一個名為 <systemitem>/dev/<replaceable>sdb</replaceable></systemitem> 的 <acronym>USB</acronym> 儲存裝置。請將 <replaceable>sdb</replaceable> 替換為欲使用之 <acronym>USB</acronym> 儲存裝置的正確裝置名稱。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Use of <command>dd</command> Command Under <application>Red Hat Cygwin</application>"
+msgstr "<command>dd</command> 指令在 <application>Red Hat Cygwin</application> 下的使用方法"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Administrator@test /\n"
+"$ dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb&amp; pid=$!\n"
+msgstr ""
+"\n"
+"Administrator@test /\n"
+"$ dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb&amp; pid=$!\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The provided command starts the transfer in the background and saves the process identifier so that it can be used to monitor the progress of the transfer. Refer to the next step for the command used to check the progress of the transfer."
+msgstr "所提供的指令會在背景中開始進行傳輸，並儲存程序識別符號，如此一來它便能被使用來監控傳輸的完成度。請參閱下個步驟，以查看使用來檢查傳輸完成度的指令。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning — All Data on the Device Specified will be Overwritten"
+msgstr "警告 — 指定之裝置上的所有資料皆會被覆寫"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>dd</command> command will overwrite all data on the device specified for the <parameter>of</parameter> parameter. Any existing data on the device will be destroyed. Ensure that the correct device is specified and that it contains no valuable data before invocation of the <command>dd</command> command."
+msgstr "<command>dd</command> 指令會將為<parameter>of</parameter> 所指定之裝置上的所有資料覆蓋過去。裝置上的所有既有資料皆會損毀。在引動 <command>dd</command> 指令之前，請確認您指定了正確的裝置，並且該裝置不包含重要的資料。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Transfer of the <acronym> ISO</acronym> file to the <acronym> USB</acronym> storage device with the version of <command>dd</command> included with <application> Red Hat Cygwin</application> can take significantly longer than the equivalent on other platforms."
+msgstr "與在其它相等平台上相較之下，透過 <application>Red Hat Cygwin</application> 所包含之 <command>dd</command> 版本來將 <acronym>ISO</acronym> 檔案傳輸至 <acronym>USB</acronym> 儲存裝置，可能會多花上一段時間。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To check the progress of the transfer in the same terminal window that the process was started in send it the <command>USR1</command> signal. This can be achieved by issuing the <command>kill</command> in the terminal window as follows:"
+msgstr "若要在程序啟動的相同終端機視窗中檢查傳輸完成度，請傳送 <command>USR1</command> 訊號。這可如下透過在終端機視窗中發送 <command>kill</command> 訊號來達成："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "kill -USR1 $pid"
+msgstr "kill -USR1 $pid"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "When the transfer operation completes the final record counts will be displayed."
+msgstr "當傳輸作業完成時，最終的記錄計數便會出現。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result of <command>dd</command> Initiated Copy"
+msgstr "<command>dd</command> 複製程序的結果"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"210944+0 records in\n"
+"210944+0 records out\n"
+"108003328 bytes (108 MB) copied, 2035.82 s, 53.1 kB/s\n"
+"\n"
+"[1]+    Done            dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb\n"
+msgstr ""
+"\n"
+"210944+0 records in\n"
+"210944+0 records out\n"
+"108003328 bytes (108 MB) copied, 2035.82 s, 53.1 kB/s\n"
+"\n"
+"[1]+    Done            dd if=/cygdrive/c/rhev-hypervisor.iso of=/dev/sdb\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> USB</acronym> storage device ( <systemitem> /dev/sdb</systemitem>) is ready to boot a hypervisor."
+msgstr "<acronym>USB</acronym> 儲存裝置（<systemitem>/dev/sdb</systemitem>）已準備好使用來啟動 hypervisor。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7529-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Using <command>dd</command> to Create <acronym>USB</acronym> Install Media on Systems Running Windows"
+#~ msgstr "使用 <command>dd</command> 來在執行 Windows 的系統上建立 <acronym>USB</acronym> 安裝媒介。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Important — Run <application>Red Hat Cygwin</application> as Administrator"
+#~ msgstr "重要 — 請以管理員身份執行 <application>Red Hat Cygwin</application>"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,39 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 12:19-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Using the Hypervisor"
+msgstr "Hypervisor の使用"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the hypervisor was configured with the address of the Red Hat Enterprise Virtualization Manager it reboots and is automatically registered with it. The Red Hat Enterprise Virtualization Manager interface displays the hypervisor under the <application>Hosts</application> tab. To prepare the hypervisor for use, it must be approved using Red Hat Enterprise Virtualization Manager."
+msgstr "Hypervisor が Red Hat Enterprise Virtualization Manager のアドレスとともに設定されている場合には、再起動時に自動的に Red Hat Enterprise Virtulization Manager に登録されます。この Hypervisor は、Red Hat Enterprise Virtualization Manager インターフェースの <application>ホスト</application> タブに表示されます。Hypervisor を使用するための準備をするには、Red Hat Enterprise Virtualization Manager を使用して Hypervisor を承認しておく必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the hypervisor was configured without the address of the Red Hat Enterprise Virtualization Manager it needs to be added manually. To add the hypervisor manually you must have both the IP address of the machine upon which it was installed and the password that was set on the <guilabel>RHEV-M</guilabel> screen during configuration."
+msgstr "Hypervisor が Red Hat Enterprise Virtualization Manager のアドレスなしで設定された場合には、その Hypervisor を手動で追加する必要があります。Hypervisor を手動で追加するには、Hypervisor をインストールしたマシンの IP アドレスと、設定時に <guilabel>RHEV-M</guilabel> 画面で指定したパスワードの両方が必要になります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8664-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Directory_Services_Support_in_Red_Hat_Enterprise_Virtualization" remap="TID_9262">
+	<title>Directory Services Support in Red Hat Enterprise Virtualization</title>
+	<para>
+		During installation Red Hat Enterprise Virtualization Manager creates its own internal administration user, <systemitem>admin</systemitem>. This account is intended for use when initially configuring the environment, and for troubleshooting. To add other users to Red Hat Enterprise Virtualization you will need to attach a directory server to the Manager using the Domain Management Tool, <command>rhevm-manage-domains</command>.
+	</para>
+	<para>
+		Once at least one directory server has been attached to the Manager you will be able to add users that exist in the directory server and assign roles to them using the Administration Portal. Users will be identified by their User Principle Name (<acronym>UPN</acronym>) of the form <systemitem><replaceable>user</replaceable>@<replaceable>domain</replaceable></systemitem>. Attachment of more than one Directory Server to the Manager is also supported.
+	</para>
+	<para>
+		The Directory Servers currently supported for use with Red Hat Enterprise Virtualization&nbsp;3.1 are: 
+		<itemizedlist>
+			<listitem>
+				<para>
+					Active Directory;
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Identity, Policy, Audit (<acronym>IPA</acronym>);
+				</para>
+			</listitem>
+			<listitem>
+				<para><acronym>IBM</acronym> Tivoli Directory Server (<acronym>ITDS</acronym>); and
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Red Hat Directory Server (<acronym>RHDS</acronym>).
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		You must ensure that the correct <acronym>DNS</acronym> records exist for your directory server. In particular you must ensure that the <acronym>DNS</acronym> records for the Directory Server include: 
+		<itemizedlist>
+			<listitem>
+				<para>
+					A valid pointer record (<acronym>PTR</acronym>) for the directory server's reverse look-up address.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					A valid service record (<acronym>SRV</acronym>) for <acronym>LDAP</acronym> over <acronym>TCP</acronym> port <systemitem>389</systemitem>.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					A valid service record (<acronym>SRV</acronym>) for <acronym>Kerberos</acronym> over <acronym>TCP</acronym> port <systemitem>88</systemitem>.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					A valid service record (<acronym>SRV</acronym>) for <acronym>Kerberos</acronym> over <acronym>UDP</acronym> port <systemitem>88</systemitem>.
+				</para>
+			</listitem>
+		</itemizedlist> If these records do not exist in <acronym>DNS</acronym> then you will be unable to add the domain to the Red Hat Enterprise Virtualization Manager configuration using <command>rhevm-manage-domains</command>.
+	</para>
+	<para>
+		For more detailed information on installing and configuring a supported directory server, refer to the vendor's documentation: 
+		<itemizedlist>
+			<listitem>
+				<para>
+					Active Directory — <ulink url="http://technet.microsoft.com/en-us/windowsserver/dd448614"/>.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Identity, Policy, Audit (<acronym>IPA</acronym>) — <ulink url="http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Identity_Management_Guide/index.html"/>
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<acronym>IBM</acronym> Tivoli Directory Server (<acronym>ITDS</acronym>) — <ulink url="https://www.ibm.com/developerworks/wikis/display/tivolidoccentral/Tivoli+Directory+Server"/>
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Red Hat Directory Server (<acronym>RHDS</acronym>) — <ulink url="http://docs.redhat.com/docs/en-US/Red_Hat_Directory_Server/index.html"/>
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<important>
+		<para>
+			A user must be created in the Directory Server specifically for use as the Red Hat Enterprise Virtualization administrative user. Do <emphasis>not</emphasis> use the Directory Server's administrative user as the Red Hat Enterprise Virtualization administrative user.
+		</para>
+	</important>
+	<important>
+		<para>
+			If you are using Active Directory as your Directory Server, and you wish to use <systemitem>sysprep</systemitem> in the creation of Templates and Virtual Machines, then the Red Hat Enterprise Virtualization administrative user must be delegated control over the Domain to: 
+			<itemizedlist>
+				<listitem>
+					<para><guilabel>Join a computer to the domain</guilabel>
+					</para>
+				</listitem>
+				<listitem>
+					<para><guilabel>Modify the membership of a group</guilabel>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			For information on creation of user accounts in Active Directory refer to <ulink url="http://technet.microsoft.com/en-us/library/cc732336.aspx"/>.
+		</para>
+		<para>
+			For information on delegation of control in Active Directory refer to <ulink url="http://technet.microsoft.com/en-us/library/cc732524.aspx"/>.
+		</para>
+	</important>
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="sect-Domain_Management_Tool" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9262-163901+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

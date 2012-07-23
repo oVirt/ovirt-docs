@@ -1,0 +1,50 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:54-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Log Collector"
+msgstr "日誌蒐集程式"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A log collection tool is included in the Red Hat Enterprise Virtualization Manager. This allows you to easily collect relevant logs from across the Red Hat Enterprise Virtualization environment when requesting support."
+msgstr "RHEV Manager 安裝程式中，包含了一項日誌蒐集工具。這能讓您在請求支援時，輕易地由 RHEV 環境蒐集相關日誌。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The log collection command is <command>rhevm-log-collector</command>. You are required to log in as the <systemitem class=\"username\">root</systemitem> user and provide the administration credentials for the Red Hat Enterprise Virtualization environment. The <command>rhevm-log-collector <parameter>-h</parameter></command> command displays usage information, including a list of all valid options for the <command>rhevm-log-collector</command> command."
+msgstr "日誌蒐集指令為 <command>rhevm-log-collector</command>。您必須以 <systemitem class=\"username\">root</systemitem> 使用者身份登入，才能夠成功執行它。您必須在指令列上提供 RHEV 環境的管理認證。欲取得使用上的完整資訊（包含一列指令的所有可用選項），您可執行 <command>rhevm-log-collector <parameter>-h</parameter></command> 指令。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8676-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

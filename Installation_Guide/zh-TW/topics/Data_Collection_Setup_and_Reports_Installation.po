@@ -1,0 +1,74 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:33-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Data Collection Setup and Reports Installation Overview"
+msgstr "資料蒐集設定與回報安裝"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager optionally includes a comprehensive management history database, which can be utilized by any application to extract a range of information at the data center, cluster, and host levels. As the database structure changes over time a number of database views are also included to provide a consistent structure to consuming applications. A view is a virtual table composed of the result set of a database query. The definition of a view is stored in the database as a <literal>SELECT</literal> statement. The result set of the <literal>SELECT</literal> statement populates the virtual table returned by the view. If the optional comprehensive management history database has been enabled, the history tables and their associated views are stored in the <systemitem>rhevm_history</systemitem> database."
+msgstr "RHEV Manager 會選用性地包含一個廣泛的管理 history 資料庫，此資料庫能讓任何應用程式使用，以擷取資料中心、叢集，以及主機層級的資料。資料庫結構隨著時間的改變，某些資料庫視點也會被包含，以提供消耗的應用程式一致的結構。此視點為一個以資料庫查詢結果所構成的虛擬表格。視點的定義儲存於資料庫中為 <literal>SELECT</literal> 陳述式。<literal>SELECT</literal> 陳述式的結果，會散佈視點所回傳的虛擬表格。若選用性的廣泛管理 history 資料庫已啟用，history 表格以及其相聯視點，皆會被儲存在 <systemitem>rhevm_history</systemitem> 資料庫中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In addition to the history database Red Hat Enterprise Virtualization Manager Reports functionality is also available as an optional component. Red Hat Enterprise Virtualization Manager Reports provides a customized implementation of JasperServer, and JasperReports. JasperServer is a component of JasperReports, an open source reporting tool capable of being embedded in Java-based applications. It produces reports which can be rendered to screen, printed, or exported to a variety of formats including <acronym> PDF</acronym>, Excel, <acronym> CSV</acronym>, Word, <acronym> RTF</acronym>, Flash, <acronym> ODT</acronym> and <acronym> ODS</acronym>. Reports built in Red Hat Enterprise Virtualization Manager Reports are accessed via a web interface. In addition to a range of pre-configured reports and dashboards for monitoring the system, you are also able to create your own ad hoc reports."
+msgstr "除了 history 資料庫之外，您亦可使用 RHEV Manager Reports 功能，作為選用性的元件。RHEV Manager Reports 提供了自訂化的 JasperServer，以及 JasperReports 實作。JasperServer 屬於 JasperReports 的一部分，這是個開放式原始碼回報工具，它能夠被內嵌入基於 Java 的應用程式中。它產生了能夠顯示在畫面上、列出，或匯出至各種格式的回報（包括 <acronym>PDF</acronym>、Excel、<acronym>CSV</acronym>、Word、<acronym>RTF</acronym>、Flash、<acronym>ODT</acronym> 以及 <acronym>ODS</acronym>）。建立於 RHEV Manager Reports 中的報告，可透過網站介面存取。除了一系列的預配置報告，以及用來監控系統的 dashboard 之外，您亦可建立您自己的點對點（ad hoc）報告。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before proceeding with Red Hat Virtualization Manager Reports installation you must first have installed the Red Hat Enterprise Virtualization Manager ."
+msgstr "在進行 RHEV Manager Reports 安裝程序之前，您首先必須先安裝 RHEV Manager。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager Reports functionality depends on the presence of the history database, which is installed separately. Both the history database and the Red Hat Enterprise Virtualization Manager Reports are optional components. They are not installed by default when you install the Red Hat Enterprise Virtualization Manager."
+msgstr "RHEV Manager Reports 功能取決於存在的 history 資料庫，此資料庫乃個別安裝的。history 資料庫與 RHEV Manager Reports 兩者皆為選用性元件。當您在安裝 RHEV Manager 時，它們就預設值不會被安裝。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install and configure the <systemitem>rhevm_history</systemitem> database, see ."
+msgstr "若要安裝和配置 <systemitem>rhevm_history</systemitem> 資料庫，請參閱 。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install and configure the Red Hat Enterprise Virtualization Manager Reports, see . You must ensure that you have installed, and configured, the <systemitem>rhevm_history</systemitem> database prior to installing JasperReports."
+msgstr "若要安裝和配置 RHEV Manager Reports，請參閱 。在安裝 JasperReports 之前，您必須確認您已安裝並配置了 <systemitem>rhevm_history</systemitem> 資料庫。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8654-162351+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

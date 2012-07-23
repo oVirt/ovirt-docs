@@ -1,0 +1,47 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Basic ISO Uploader Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The example below demonstrates the ISO uploader and the list parameter. The first command lists the available ISO storage domains; the user name is requested because it was not provided in the command. The second command uploads an ISO file over NFS to the listed ISO domain: <literal>ISODomain</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "List Domains and Upload Image"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>rhevm-iso-uploader list</command>\n"
+"Please provide the REST API username for RHEV-M (CTRL+D to abort): <replaceable>admin@directory.demo.redhat.com</replaceable>\n"
+"Please provide the REST API password for RHEV-M (CTRL+D to abort):\n"
+"ISO Storage Domain List:\n"
+"  ISODomain\n"
+"# <command>rhevm-iso-uploader --iso-domain=<replaceable>ISODomain</replaceable> upload <replaceable>RHEL6.iso</replaceable></command>\n"
+"Please provide the REST API username for RHEV-M (CTRL+D to abort): <replaceable>admin@directory.demo.redhat.com</replaceable>\n"
+"Please provide the REST API password for RHEV-M (CTRL+D to abort):\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8414-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

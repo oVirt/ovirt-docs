@@ -1,0 +1,75 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 12:21-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing Red Hat Enterprise Virtualization Hypervisor Hosts"
+msgstr "安裝 RHEV Hypervisor 主機"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing Hypervisor Installation Media"
+msgstr "準備 Hypervisor 安裝媒介"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Hypervisor Installation Media"
+msgstr "準備 USB Hypervisor 安裝媒介"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Booting from Hypervisor Installation Media"
+msgstr "透過 Hypervisor 安裝媒介開機"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installing the Hypervisor"
+msgstr "安裝 Hypervisor"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring the Hypervisor"
+msgstr "配置 Hypervisor"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Network"
+msgstr "配置 Hypervisor 網路"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Attaching the Hypervisor to the Red Hat Enterprise Virtualization Manager"
+msgstr "將 Hypervisor 連至 RHEV Manager"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Preparing Optical Hypervisor Installation Media"
+#~ msgstr "準備光碟 Hypervisor 安裝媒介"

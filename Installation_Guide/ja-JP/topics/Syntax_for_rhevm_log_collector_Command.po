@@ -1,0 +1,483 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 12:29-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Syntax for rhevm-log-collector Command"
+msgstr "rhevm-log-collector コマンドの構文"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The basic syntax for the log collector command is:"
+msgstr "rhevm-log-collector コマンドの構文"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"<command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter> <parameter>[all, clusters, datacenters]</parameter></command>\n"
+"       <command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>collect</parameter></command>\n"
+msgstr ""
+"\n"
+"<command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter> <parameter>[all, clusters, datacenters]</parameter></command>\n"
+"       <command>rhevm-log-collector <parameter><replaceable>[options]</replaceable></parameter> <parameter>collect</parameter></command>\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The two supported modes of operation are <parameter>list</parameter> and <parameter>collect</parameter>."
+msgstr "<parameter>list</parameter> および <parameter>collect</parameter> の 2 つの操作モードに対応しています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <parameter>list</parameter> parameter lists either the hosts, clusters, or data centers attached to the Red Hat Enterprise Virtualization Manager. You are able to filter the log collection based on the listed objects."
+msgstr "<parameter>list</parameter> パラメーターにより、Red Hat Enterprise Virtualization Manager にアタッチされているホスト、クラスター、データセンターのいずれかが一覧表示されます。一覧表示されたオブジェクトをベースとして、ログ収集をフィルタリングすることができるようになります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <parameter>collect</parameter> parameter performs log collection from the Red Hat Virtualization Manager. The collected logs are placed in an archive file under the <filename>/tmp/logcollector</filename> directory. The <command>rhevm-log-collector</command> command assigns each log a specific file name."
+msgstr "<parameter>collect</parameter> パラメーターは、Red Hat Enterprise Virtualization Manager からログを収集します。収集したログは、<filename>/tmp/logcollector</filename> ディレクトリの配下にあるアーカイブファイルに配置されます。<command>rhevm-log-collector</command> コマンドは、ログ収集完了時に使用するように選択した特定のファイル名を出力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Unless another parameter is specified, the default action is to list the available hosts together with the data center and cluster to which they belong. You will be prompted to enter user names and passwords to retrieve certain logs."
+msgstr "パラメーターが設定されていない場合には、デフォルトで、使用可能なホストならびにそれらが属するデータセンターとクラスターが一覧表示されます。必要な場合には、ログコレクターがログ取得に必要なユーザー名とパスワードの入力を要求します。"
+
+#. Tag: para
+#, no-c-format
+msgid "There are numerous parameters to further refine the <command>rhevm-log-collector</command> command."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "General options"
+msgstr "一般的なオプション"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--version</parameter>"
+msgstr "<parameter>--version</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays the version number of the command in use before exiting."
+msgstr "使用中のコマンドのバージョン番号を表示します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-h</parameter>, <parameter>--help</parameter>"
+msgstr "<parameter>-h</parameter>、<parameter>--help</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays command usage information before exiting."
+msgstr "コマンドの使用方法に関する情報を表示します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+msgstr "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the configuration file the tool is to use."
+msgstr "<replaceable>PATH</replaceable> には、ツールが使用する設定ファイルを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--local-tmp=<replaceable>PATH</replaceable></parameter>"
+msgstr "<parameter>--local-tmp=<replaceable>PATH</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the directory in which logs are saved. The default directory is <filename>/tmp/logcollector</filename>."
+msgstr "<replaceable>PATH</replaceable> には、取得したログを保存するディレクトリを指定します。デフォルトは <filename>/tmp/logcollector</filename> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--ticket-number=<replaceable>TICKET</replaceable></parameter>"
+msgstr "<parameter>--ticket-number=<replaceable>TICKET</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>TICKET</replaceable> as the ticket, or case number, to associate with the SOS report."
+msgstr "<replaceable>TICKET</replaceable> には、<acronym>SOS</acronym> レポートに関連付けるチケットまたはケース番号を指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--upload=<replaceable>FTP_SERVER</replaceable></parameter>"
+msgstr "<parameter>--upload=<replaceable>FTP_SERVER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>FTP_SERVER</replaceable> as the destination for retrieved logs to be sent using FTP. Do not use this option unless advised to by a Red Hat support representative."
+msgstr "<replaceable>FTP_SERVER</replaceable> には、<acronym>FTP</acronym> を使用して送信される取得済みログの送信先を指定します。Red Hat のサポート担当者のアドバイスなしには、このオプションは使用しないでください。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+msgstr "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the specific file name the command should use for the log output."
+msgstr "<replaceable>PATH</replaceable> には、ツールが使用する設定ファイルを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--quiet</parameter>"
+msgstr "<parameter>--quiet</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets quiet mode, reducing console output to a minimum. Quiet mode is off by default."
+msgstr "Quiet モードに設定し、コンソールの出力を最小限に抑えます。デフォルトではオフになっています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-v</parameter>, <parameter>--verbose</parameter>"
+msgstr "<parameter>-v</parameter>、<parameter>--verbose</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets verbose mode, providing more console output. Verbose mode is off by default."
+msgstr "詳細モードに設定し、より詳しいコンソール出力を提示します。デフォルトではオフになっています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Options"
+msgstr "Red Hat Enterprise Virtualization Manager のオプション"
+
+#. Tag: para
+#, no-c-format
+msgid "These options filter the log collection and specify authentication details for the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These parameters can be combined for specific commands. For example, <command>rhevm-log-collector --user=admin@internal --cluster ClusterA,ClusterB --hosts \"SalesHost\"*</command> specifies the user as <literal>admin@internal</literal> and limits the log collection to only <literal>SalesHost</literal> hosts in clusters <literal>A</literal> and <literal>B</literal>."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--no-hypervisors</parameter>"
+msgstr "<parameter>--no-hypervisors</parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "Omits virtualization hosts from the log collection."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-u <replaceable>USER</replaceable></parameter>, <parameter>--user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>-u <replaceable>USER</replaceable></parameter>、<parameter>--user=<replaceable>USER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the user name for login. The <replaceable>USER</replaceable> is specified in the format <replaceable>user</replaceable>@<replaceable>domain</replaceable>, where <replaceable>user</replaceable> is the user name and <replaceable>domain</replaceable> is the directory services domain in use. The user must exist in directory services and be known to the Red Hat Enterprise Virtualization Manager."
+msgstr "ログインするユーザー名を <replaceable>USER</replaceable> に設定します。このユーザー名は、ディレクトリーサービス内に存在し、かつ Red Hat Enterprise Virtualization Manager が既に認識している必要があります。ユーザーは、<replaceable>user</replaceable>@<replaceable>domain</replaceable> の形式で指定する必要があります。<replaceable>user</replaceable> の箇所はユーザー名に、<replaceable>domain</replaceable> の箇所は使用しているディレクトリーサービスのドメインに置き換えてください。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+msgstr "<parameter>-r <replaceable>FQDN</replaceable></parameter>、<parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the fully qualified domain name of the Red Hat Enterprise Virtualization Manager server from which to collect logs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the log collector is being run on the same local host as the Red Hat Enterprise Virtualization Manager; the default value is <literal>localhost</literal>."
+msgstr "Red Hat Enterprise Virtualization Manager が <replaceable>FQDN</replaceable> として接続するように設定します。<replaceable>FQDN</replaceable> の箇所は、Manager の完全修飾ドメイン名に置き換えてください。ログコレクターは、デフォルトでは Manager と同じマシン上で実行されるものと仮定されます。このため、このパラメーターのデフォルト値は、<literal>localhost</literal> となっています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-c <replaceable>CLUSTER</replaceable></parameter>, <parameter>--cluster <replaceable>CLUSTER</replaceable></parameter>"
+msgstr "<parameter>-c <replaceable>CLUSTER</replaceable></parameter>、<parameter>--cluster <replaceable>CLUSTER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>CLUSTER</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The cluster(s) for inclusion must be specified in a comma separated list of cluster names or match patterns."
+msgstr "Red Hat Enterprise Virtualization Manager および<replaceable>CLUSTER</replaceable> という名前のクラスター内の仮想化ホストから全ログを収集します。対象となるクラスターは、クラスター名もしくはマッチパターンのコンマ区切りの一覧で指定する必要があります。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-d <replaceable>DATACENTER</replaceable></parameter>, <parameter>--data-center <replaceable>DATACENTER</replaceable></parameter>"
+msgstr "<parameter>-d <replaceable>DATACENTER</replaceable></parameter>、<parameter>--data-center <replaceable>DATACENTER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>DATACENTER</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The data center(s) for inclusion must be specified in a comma separated list of data center names or match patterns."
+msgstr "Red Hat Enterprise Virtualization Manager および<replaceable>DATACENTER</replaceable> という名前のデータセンター内の仮想化ホストから全ログを収集します。対象となるデータセンターは、データセンター名またはマッチパターンのコンマ区切りの一覧として指定する必要があります。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-H <replaceable>HOSTS_LIST</replaceable></parameter>, <parameter>--hosts=<replaceable>HOSTS_LIST</replaceable></parameter>"
+msgstr "<parameter>-H <replaceable>HOSTS_LIST</replaceable></parameter>、<parameter>--hosts=<replaceable>HOSTS_LIST</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Collects logs from the virtualization hosts in the nominated <replaceable>HOSTS_LIST</replaceable> in addition to logs from the Red Hat Enterprise Virtualization Manager. The hosts for inclusion must be specified in a comma-separated list of host names, fully qualified domain names, or IP addresses. Match patterns are also valid."
+msgstr "Red Hat Enterprise Virtualization Manager ならびに <replaceable>HOSTS_LIST</replaceable> に記載されている仮想化ホストからすべてのログを収集します。対象となるホストは、ホスト名、完全修飾ドメイン名、または <acronym>IP</acronym> アドレスのコンマ区切り一覧で指定する必要があります。値の各タイプのマッチパターンも有効です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "SOS Report Options"
+msgstr "<acronym>SOS</acronym> Report のオプション"
+
+#. Tag: para
+#, no-c-format
+msgid "The log collector uses the JBoss SOS plugin. Use the following options to activate data collection from the JMX console."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-home=<replaceable>JBOSS_HOME</replaceable></parameter>"
+msgstr "<parameter>--jboss-home=<replaceable>JBOSS_HOME</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "JBoss installation directory path. The default is <filename>/var/lib/jbossas</filename>."
+msgstr "<acronym>JBoss</acronym> インストールディレクトリパス。デフォルトは <filename>/var/lib/jbossas</filename> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--java-home=<replaceable>JAVA_HOME</replaceable></parameter>"
+msgstr "<parameter>--java-home=<replaceable>JAVA_HOME</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Java installation directory path. The default is <filename>/usr/lib/jvm/java</filename>."
+msgstr "Java インストールのディレクトリパス。デフォルトは <filename>/usr/lib/jvm/java</filename> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-profile=<replaceable>JBOSS_PROFILE</replaceable></parameter>"
+msgstr "<parameter>--jboss-profile=<replaceable>JBOSS_PROFILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays a quoted and space-separated list of server profiles; limits log collection to specified profiles. The default is <parameter>'rhevm-slimmed'</parameter>."
+msgstr "サーバープロファイルの引用符付きスペース区切りの一覧。これにより、ログ収集が特定のプロファイルに限定されます。デフォルトは <parameter>'rhevm-slimmed'</parameter> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--enable-jmx</parameter>"
+msgstr "<parameter>--enable-jmx</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enables the collection of run-time metrics from Red Hat Enterprise Virtualization's JBoss JMX interface."
+msgstr "Red Hat Enterprise Virtualization の <acronym>JBoss</acronym> <acronym>JMX</acronym> インターフェースからのランタイムメトリックの収集を有効にします。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-user=<replaceable>JBOSS_USER</replaceable></parameter>"
+msgstr "<parameter>--jboss-user=<replaceable>JBOSS_USER</replaceable></parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "User with permissions to invoke JBoss JMX. The default is <parameter>admin</parameter>."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-logsize=<replaceable>LOG_SIZE</replaceable></parameter>"
+msgstr "<parameter>--jboss-logsize=<replaceable>LOG_SIZE</replaceable></parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "Maximum size in MB for the retrieved log files."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-stdjar=<replaceable>STATE</replaceable></parameter>"
+msgstr "<parameter>--jboss-stdjar=<replaceable>STATE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets collection of JAR statistics for JBoss standard JARs. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr "<acronym>JBoss</acronym> 標準 <acronym>JARs</acronym> の <acronym>JAR</acronym> 統計の収集を設定します。　 <replaceable>STATE</replaceable> の箇所は、<literal>on</literal> または <literal>off</literal> に置き換えます。デフォルトは、<literal>on</literal> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-servjar=<replaceable>STATE</replaceable></parameter>"
+msgstr "<parameter>--jboss-servjar=<replaceable>STATE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets collection of JAR statistics from any server configuration directories. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr "任意のサーバー設定ディレクトリからの <acronym>JAR</acronym> 統計収集を設定します。<replaceable>STATE</replaceable> の箇所は <literal>on</literal> または <literal>off</literal> に置き換えます。デフォルトは <literal>on</literal> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-twiddle=<replaceable>STATE</replaceable></parameter>"
+msgstr "<parameter>--jboss-twiddle=<replaceable>STATE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets collection of twiddle data on or off. Twiddle is the JBoss tool used to collect data from the JMX invoker. Replace <replaceable>STATE</replaceable> with <literal>on</literal> or <literal>off</literal>. The default is <literal>on</literal>."
+msgstr "Twiddle データの収集を on または off に設定します。Twiddle は、<acronym>JMX</acronym> の呼び出し元からデータを収集するのに使用する <acronym>JBoss</acronym> のツールです。<replaceable>STATE</replaceable> の箇所は、<literal>on</literal> または <literal>off</literal> に置き換えます。デフォルトは <literal>on</literal> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--jboss-appxml=<replaceable>XML_LIST</replaceable></parameter>"
+msgstr "<parameter>--jboss-appxml=<replaceable>XML_LIST</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays a quoted and space-separated list of applications with XML descriptions to be retrieved. Default is <literal>all</literal>."
+msgstr "<acronym>XML</acronym> の記述を収集する必要があるアプリケーションの引用符付きスペース区切りの一覧。デフォルトは <literal>'all'</literal> です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>SSH</acronym> Configuration"
+msgstr "<acronym>SSH</acronym> の設定"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--ssh-host=<replaceable>PORT</replaceable></parameter>"
+msgstr "<parameter>--ssh-host=<replaceable>PORT</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PORT</replaceable> as the port to use for SSH connections with virtualization hosts."
+msgstr "<replaceable>PORT</replaceable> には、仮想化ホストとの <acronym>SSH</acronym> 接続に使用するポートを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>, <parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>、<parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public SSH key to be used for accessing the virtualization hosts."
+msgstr "<replaceable>KEYFILE</replaceable> には、仮想化ホストへのアクセスに使用する <acronym>SSH</acronym> 公開鍵を指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--max-connections=<replaceable>MAX_CONNECTIONS</replaceable></parameter>"
+msgstr "<parameter>--max-connections=<replaceable>MAX_CONNECTIONS</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>MAX_CONNECTIONS</replaceable> as the maximum concurrent SSH connections for logs from virtualization hosts. The default is <literal>10</literal>."
+msgstr "<replaceable>MAX_CONNECTIONS</replaceable> には、仮想化ホストからのログを収集する際の最大同時 <acronym>SSH</acronym> 接続数を設定します。デフォルトは <literal>10</literal> です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "PostgreSQL Database Options"
+msgstr "PostgreSQL  データベースのオプション"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <parameter>pg-pass</parameter> parameter includes the Red Hat Enterprise Virtualization Manager database in the log. The database user name and database name must be specified if they have been changed from the default values."
+msgstr "<parameter>pg-pass</parameter> が指定されている場合、ログコレクターは Red Hat Enterprise Virtualization Manager のデータベースに接続してダンプを行い、ログレポートに書き込みます。データベースのユーザー名およびデータベース名をインストール時にデフォルト値から変更した場合には、それらも指定する必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <parameter>pg-dbhost</parameter> parameter if the database is not on the local host. Use the optional <parameter>pg-host-key</parameter> parameter to collect remote logs. The PostgreSQL SOS plugin must be installed on the database server for remote log collection to be successful."
+msgstr "データベースがローカルマシン上にない場合には、<parameter>pg-dbhost</parameter> を設定し、オプションで <parameter>pg-host-key</parameter> を提供して、リモートログを収集します。リモートログ収集を適切に行うには、PostgreSQL <acronym>SOS</acronym> プラグインがデータベースサーバー上にインストールされている必要があります。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--no-postgresql</parameter>"
+msgstr "<parameter>--no-postgresql</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Disables collection of database. Database collection is performed by default."
+msgstr "データベースの収集を無効にします。デフォルトでは、データベース収集が実行されるように設定されています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--pg-user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>--pg-user=<replaceable>USER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>USER</replaceable> as the user name to use for connections with the database server. The default is <systemitem>postgres</systemitem>."
+msgstr "<replaceable>USER</replaceable> には、データベースサーバーへの接続に使用するユーザー名を設定します。デフォルトは <systemitem>postgres</systemitem> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--pg-dbname=<replaceable>DBNAME</replaceable></parameter>"
+msgstr "<parameter>--pg-dbname=<replaceable>DBNAME</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>DBNAME</replaceable> as the database name to use for connections with the database server. The default is <systemitem>rhevm</systemitem>."
+msgstr "<replaceable>DBNAME</replaceable> には、データベースサーバーとの接続に使用するデータベース名を指定します。デフォルトは <systemitem>rhevm</systemitem> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--pg-dbhost=<replaceable>DBHOST</replaceable></parameter>"
+msgstr "<parameter>--pg-dbhost=<replaceable>DBHOST</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>DBHOST</replaceable> as the host name for the database server. The default is <systemitem>localhost</systemitem>."
+msgstr "<replaceable>DBHOST</replaceable> には、データベースサーバーのホスト名を指定します。デフォルトは、<systemitem>localhost</systemitem> です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--pg-host-key=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr "<parameter>--pg-host-key=<replaceable>KEYFILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public identity file (private key) for the database server. This value is not set by default; it is required only where the database does not exist on the local host."
+msgstr "<replaceable>KEYFILE</replaceable> には、データベースサーバーの公開 ID (秘密鍵) を指定します。ローカルホスト上にデータベースが存在する場合には、この値は不要なため、デフォルトでは設定されていません。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8434-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "The basic syntax is of the form:"
+#~ msgstr "基本構文は以下の形式です。"
+
+#~ msgctxt ""
+#~ msgid "The <command>rhevm-log-collector</command> command has a large number of options. You can use these options to further refine the scope of log collection."
+#~ msgstr "<command>rhevm-log-collector</command> コマンドには数多くのオプションがあります。これらのオプションを使用すると、ログ収集の範囲をさらに絞り込むをことができます。"
+
+#~ msgctxt ""
+#~ msgid "Sets <replaceable>PATH</replaceable> as the log file the command should use for its own log output. Note that this is not to be confused with the <parameter>--local-tmp</parameter> parameter."
+#~ msgstr "<replaceable>PATH</replaceable> には、コマンドが、そのコマンド自体のログ出力に使用するログファイルを指定します。これは、<parameter>--local-tmp</parameter> パラメーターと混同しないように注意してください。"
+
+#~ msgctxt ""
+#~ msgid "The options in the Red Hat Enterprise Virtualization Manager configuration group are used to specify the manager authentication details and, filter log collection from one or more virtualization hosts. Note that it is possible to combine the options used to select the virtualization hosts, for example selecting all host in clusters <literal>A</literal> and <literal>B</literal> where the name of the host matches pattern <literal>SalesHost*</literal>."
+#~ msgstr "Red Hat Enterprise Virtualization Manager 設定グループのオプションは、Manager 認証の詳細を指定したり、単一もしくは複数の仮想化ホストからのログ収集をフィルタリングするのに使用します。仮想化ホストを選択するのに使用するオプションを組み合わせることが可能である点に注意してください (例: 名前が <literal>SalesHost*</literal> のパターンに一致する、クラスター <literal>A</literal> および <literal>B</literal> 内の全ホストの選択など)。"
+
+#~ msgctxt ""
+#~ msgid "Sets the option to skip collection of logs from the virtualization hosts."
+#~ msgstr "仮想化ホストからのログ収集をスキップするオプションを設定します。"
+
+#~ msgctxt ""
+#~ msgid "The <acronym> JBoss</acronym><acronym> SOS</acronym> plugin is always executed by log collector. To activate data collection from the <acronym> JMX</acronym> console the <parameter>--java-home</parameter>, <parameter>--jboss-user</parameter>, and <parameter>jboss-pass</parameter> parameters must also be provided."
+#~ msgstr "<acronym>JBoss</acronym> <acronym>SOS</acronym> プラグインは、常にログコレクターによって実行されます。<acronym>JMX</acronym> コンソールからデータ収集をアクティベートするには、<parameter>--java-home</parameter>、<parameter>--jboss-user</parameter>、および <parameter>jboss-pass</parameter> のパラメーターを提供する必要もあります。"
+
+#~ msgctxt ""
+#~ msgid "<acronym> JBoss</acronym><acronym> JMX</acronym> invoker user to be used with twiddle. Default is <parameter>admin</parameter>."
+#~ msgstr "Twiddle で使用する、<acronym>JBoss</acronym> <acronym>JMX</acronym> の呼び出し元ユーザー。デフォルトは <parameter>admin</parameter> です。"
+
+#~ msgctxt ""
+#~ msgid "Maximum size for each log file retrieved, in <acronym> MB</acronym>."
+#~ msgstr "取得するログファイルの最大サイズ (<acronym>MB</acronym> 単位)"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,60 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 02:04-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Data Centers in Red Hat Enterprise Virtualization"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The data center is the highest level container for all physical and logical resources within a managed virtual environment. The data center is a collection of clusters of Hosts. It owns the logical network (that is, the defined subnets for management, guest network traffic and storage network traffic) and the storage pool."
+msgstr "此部分詳述了如何配置、建立和管理資料中心。資料中心為所有實體與邏輯資源，在受管理之虛擬環境中的最高層級容器。資料中心乃主機叢集的匯總。它擁有邏輯網路（也就是為管理、客座端網路流量，以及儲存網路流量定義的子網路）以及儲存裝置群。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization contains a <literal>Default</literal> data center at installation. You can create new data centers that will also be managed from the single Administration Portal. For example, you may choose to have different data centers for different physical locations, business units, or for reasons of security. It is recommended that you do not remove the <literal>Default</literal> data center, instead set up new appropriately named data centers."
+msgstr "RHEV 在進行安裝時會包含預設的資料中心。企業可設定新的與額外的資料中心，它們皆可透過單獨的管理入口網站來管理。比方說，一個組織在不同的實體位置、商業單位，或是基於安全性考量，可能會擁有不同的資料中心。建議您不要移除預設的資料中心，而是設定適當命名的新資料庫。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The system administrator, as the superuser, can manage all aspects of the platform, that is, data centers, storage domains, users, roles and permissions by default; however more specific administrative roles and permissions can be assigned to other users. For example, the enterprise may need a Data Center administrator for a specific data center, or a particular cluster may need an administrator. All system administration roles for physical resources have a hierarchical permission system. For example, a data center administrator will automatically have permission to manage all the objects in that data center - including storage domains, clusters and hosts."
+msgstr "作為 superuser 的系統管理員，就預設值能夠管理平台的所有項目，也就是資料中心、儲存裝置群、使用者、角色以及權限；然而，您亦可將其他使用者指定為特定的管理角色。比方說，一個企業可能會需要一位資料中心管理員，以管理特定資料中心，或是某特定叢集可能會需要一位管理員。實體資源的所有系統管理員角色，皆遵循階層式的權限系統。比方說，資料中心管理員將會自動擁有管理該資料中心、儲存裝置、叢集以及主機中，所有物件的管理權限；而叢集管理員則能管理特定叢集中的所有物件。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8913-162847+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Working with Data Centers"
+#~ msgstr "使用資料中心"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

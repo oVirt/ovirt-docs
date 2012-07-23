@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Syntax_for_rhevm_config_Command" remap="TID_7867">
+	<title>Syntax for rhevm-config Command</title>
+	<para>
+		The configuration tool is accessible on the client machine on which the Red Hat Enterprise Virtualization Manager is installed. For full usage information consult the help output of the <command>rhevm-config</command> command:
+	</para>
+	<screen># <command>rhevm-config <parameter>--help</parameter></command></screen>
+	<para/>
+	<variablelist>
+		<title>Common tasks</title>
+		<varlistentry>
+			<term>List available configuration keys</term>
+			<listitem>
+				<para>
+					Use the <parameter>--list</parameter> parameter to list available configuration keys.
+				</para>
+				<screen># <command>rhevm-config <parameter>--list</parameter></command></screen>
+				<para>
+					Each available configuration key is listed by name and description.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>List available configuration values</term>
+			<listitem>
+				<para>
+					Use the <parameter>--all</parameter> parameter to list available configuration values.
+				</para>
+				<screen># <command>rhevm-config <parameter>--all</parameter></command></screen>
+				<para>
+					Each available configuration key is listed by name, current value of the key, and the configuration version.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Retrieve value of configuration key</term>
+			<listitem>
+				<para>
+					Use the <parameter>--get</parameter> parameter to retrieve the value of a specific key.
+				</para>
+				<screen># <command>rhevm-config <parameter>--get <replaceable>KEY_NAME</replaceable></parameter></command></screen>
+				<para>
+					Replace <replaceable>KEY_NAME</replaceable> with the name of the specific key to retrieve the key name, value, and the configuration version. Use the <parameter>--cver</parameter> parameter to specify the configuration version of the value to be retrieved.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Set value of configuration key</term>
+			<listitem>
+				<para>
+					Use the <parameter>--set</parameter> parameter to set the value of a specific key. You must also set the configuration version to which the change is to apply using The <parameter>--cver</parameter> parameter is required to specify the configuration version of the value to be set.
+				</para>
+				<screen># <command>rhevm-config <parameter>--set <replaceable>KEY_NAME</replaceable>=<replaceable>KEY_VALUE</replaceable></parameter> <parameter>--cver=<replaceable>VERSION</replaceable></parameter></command></screen>
+				<para>
+					Replace <replaceable>KEY_NAME</replaceable> with the name of the specific key to set; replace <replaceable>KEY_VALUE</replaceable> with the value to be set. Environments with more than one configuration version require the <replaceable>VERSION</replaceable> to be specified.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7867-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

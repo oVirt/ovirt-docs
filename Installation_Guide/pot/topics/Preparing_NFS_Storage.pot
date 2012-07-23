@@ -1,0 +1,177 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Preparing NFS Storage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These steps must be taken to prepare an <acronym>NFS</acronym> file share on a server running Red Hat Enterprise Linux 6 for use with Red Hat Enterprise Virtualization."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Install <package>nfs-utils</package>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>NFS</acronym> functionality is provided by the <package>nfs-utils</package> package. Before file shares can be created, check that the package is installed by querying the <acronym>RPM</acronym> database for the system:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "$ <command>rpm -qi <package>nfs-utils</package></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the <package>nfs-utils</package> package is installed then the package information will be displayed. If no output is displayed then the package is not currently installed. Install it using <command>yum</command> while logged in as the <systemitem>root</systemitem> user:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>yum install <package>nfs-utils</package></command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configure Boot Scripts"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To ensure that<acronym>NFS</acronym> shares are always available when the system is operational both the <systemitem>nfs</systemitem> and <systemitem>rpcbind</systemitem> services must start at boot time. Use the <command>chkconfig</command> command while logged in as <systemitem>root</systemitem> to modify the boot scripts."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "                \n"
+"# <command>chkconfig --add rpcbind</command>\n"
+"# <command>chkconfig --add nfs</command>\n"
+"# <command>chkconfig rpcbind on</command>\n"
+"# <command>chkconfig nfs on</command>\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Once the boot script configuration has been done, start the services for the first time."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "                \n"
+"# <command>service rpcbind start</command>\n"
+"# <command>service nfs start</command>\n"
+""
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Create Directory"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Create the directory you wish to share using <acronym>NFS</acronym>."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>mkdir <replaceable>/exports/iso</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Export Directory"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To be accessible over the network using <acronym>NFS</acronym> the directory must be exported. <acronym>NFS</acronym> exports are controlled using the <filename>/etc/exports</filename> configuration file. Each export path appears on a separate line followed by a tab character and any additional <acronym>NFS</acronym> options. Exports to be attached to the Red Hat Enterprise Virtualization Manager must have the read, and write, options set."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To grant read, and write access to <filename>/exports/iso</filename> using <acronym>NFS</acronym> for example you add the following line to the <filename>/etc/exports</filename> file."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<replaceable>/exports/iso</replaceable>       *(rw)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Again, replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Reload <acronym>NFS</acronym> Configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For the changes to the <filename>/etc/exports</filename> file to take effect the service must be told to reload the configuration. To force the service to reload the configuration run the following command as <systemitem> root</systemitem>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>service nfs reload</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Set Permissions"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <acronym>NFS</acronym> export directory must be configured for read write access and must be owned by vdsm:kvm. If these users do not exist on your external <acronym>NFS</acronym> server use the following command, assuming that <filename><replaceable>/exports/iso</replaceable></filename> is the directory to be used as an <acronym>NFS</acronym> share."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>chown -R 36:36 <replaceable>/exports/iso</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The permissions on the directory must be set to allow read and write access to both the owner and the group. The owner should also have execute access to the directory. The permissions are set using the <command>chmod</command> command. The following command arguments set the required permissions on the <filename><replaceable>/exports/iso</replaceable></filename> directory."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# <command>chmod 0755 <replaceable>/exports/iso</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <acronym>NFS</acronym> file share has been created, and is ready to be attached by the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7539-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

@@ -1,0 +1,92 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:12-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Viewing Hypervisor Status"
+msgstr "檢視 Hypervisor 狀態"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status screen displays a brief overview of the current state of the hypervisor. The information displayed consists of:"
+msgstr "狀態畫面會顯示 hypervisor 目前狀態的總覽。顯示的資訊包含了："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the hostname,"
+msgstr "主機名稱、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the current status of the network connection,"
+msgstr "網路連線的目前狀態、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the destination(s) of logs and reports, and"
+msgstr "日誌、報告的目的地，以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the number of active virtual machines."
+msgstr "啟用中的虛擬機器數量"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status screen also provides a number of buttons to change the state of the hypervisor. They are:"
+msgstr "狀態畫面亦提供了數個按鈕，以讓您更改 hypervisor 的狀態。這些按鈕包含了："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Lock&gt;</guibutton>: Locks the hypervisor. The username and password must be entered to unlock the hypervisor."
+msgstr "「<guibutton>&lt;鎖定&gt;</guibutton>」：鎖定 hypervisor。您必須輸入使用者名稱和密碼，才能解除 hypervisor 的鎖定。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Restart&gt;</guibutton>: Restarts the hypervisor."
+msgstr "「<guibutton>&lt;重新啟動&gt;</guibutton>」：重新啟動 hypervisor。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guibutton>&lt;Power Off&gt;</guibutton>: Turns the hypervisor off."
+msgstr "「<guibutton>&lt;關閉&gt;</guibutton>」：關閉 hypervisor。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7856-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

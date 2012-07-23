@@ -1,0 +1,74 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:09-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host RAM Requirements"
+msgstr "記憶體需求"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is recommended that virtualization hosts have at least 2&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym>. The amount of RAM required varies depending on:"
+msgstr "建議虛擬機器至少擁有 2&nbsp;<acronym>GB</acronym> 的 <acronym>RAM</acronym>。這記憶體需求會根據以下條件而有所變動："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "guest operating system requirements,"
+msgstr "客座端作業系統需求、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "guest application requirements, and"
+msgstr "客座端應用程式需求、以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "memory activity and usage of guests."
+msgstr "客座端的記憶體活動與使用量。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The fact that <acronym>KVM</acronym> is able to over-commit physical <acronym>RAM</acronym> for virtualized guests must also be taken into account. This allows provisioning of guests with <acronym>RAM</acronym> requirements greater than physically present on the basis where not all guests will be at peak load concurrently. <acronym>KVM</acronym> does this by only allocating <acronym>RAM</acronym> for guests as required and shifting underutilized guests into swap."
+msgstr "您必須考量 <acronym>KVM</acronym> 亦能夠為虛擬客座端提供過度的實體 <acronym>RAM</acronym>。這能讓客座端佈建比存在實體記憶體還要大的 <acronym>RAM</acronym> 數量，因為並非所有客座端都會同時處於負載顛峰狀態。<acronym>KVM</acronym> 僅會視需求透過為客座端分配記憶體來這麼做，並將未使用的客座端轉移至 swap 中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A maximum of 1&nbsp;TB of RAM per virtualization host is currently supported."
+msgstr "每個虛擬主機目前所支援的最大記憶體為 1TB。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7844-161529+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

@@ -1,0 +1,54 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 01:10-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Bonding Modes"
+msgstr "ボンディングのモード"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization supports the following common bonding modes:"
+msgstr "Red Hat Enterprise Virtualization は以下のような一般的なボンディングモードに対応します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "(Mode 1) Active-backup policy sets all interfaces to the backup state while one remains active. Upon failure on the active interface, a backup interface replaces it as the only active interface in the bond. The MAC address of the bond in mode 1 is visible on only one port (the network adapter), to prevent confusion for the switch. Mode 1 provides fault tolerance and is supported in Red Hat Enterprise Virtualization."
+msgstr "(モード 1) アクティブバックアップのポリシーでは全インターフェースがバックアップ状態に設定されますが、１つはアクティブな状態のまま保持されます。このアクティブなインターフェースに障害が発生すると、バックアップ状態のインターフェースがボンドで唯一のアクティブなインターフェースとして、障害の発生したインターフェースを置き換えます。モード 1 でのボンドの MAC アドレスはスイッチでの混同を避けるため１つのポートでしか表示されません (ネットワークアダプター)。モード 1 はフォールトトレランスとなっており、Red Hat Enterprise Virtualization でサポートされます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "(Mode 2) XOR policy selects an interface to transmit packages to based on the result of a XOR operation on the source and destination MAC addresses multiplied by the modulo slave count. This calculation ensures that the same interface is selected for each destination MAC address used. Mode 2 provides fault tolerance and load balancing and is supported in Red Hat Enterprise Virtualization."
+msgstr "(モード 2) XOR のポリシーでは、送信元と送信先 MAC アドレスでの XOR 操作結果にモジュロスレーブ数をかけたものをもとに、パッケージ転送のインターフェースが選択されます。この計算により、使用される各送信先 MAC アドレスに必ず同じインターフェースが選択されるようになります。モード 2 はフォールトトレランスで、Red Hat Enterprise Virtualization でサポートされます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "(Mode 4) IEEE 802.3ad policy creates aggregation groups for which included interfaces share the speed and duplex settings. Mode 4 uses all interfaces in the active aggregation group in accordance with the IEEE 802.3ad specification and is supported in Red Hat Enterprise Virtualization."
+msgstr "(モード 4) IEEE 802.3ad のポリシーでは、対象のインターフェースが速度と二重設定を共有する集約グループが作成されます。モード 4 では IEEE 802.3ad 仕様に従って、このアクティブな集約グループ内の全インターフェースを使用します。Red Hat Enterprise Virtualization でサポートされます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "(Mode 5) Adaptive transmit load balancing policy ensures the outgoing traffic distribution is according to the load on each interface and that the current interface receives all incoming traffic. If the interface assigned to receive traffic fails, another interface is assigned the receiving role instead. Mode 5 is supported in Red Hat Enterprise Virtualization."
+msgstr "(モード 5) アダプティブトランスミットロードバランシング (Adaptive Transmit Load Balancing) のポリシーでは、送出トラフィックは各インターフェース上の負荷に従い配分され、また現在のインターフェースが着信トラフィックを受信するようにします。トラフィックを受信するように割り当てられているインターフェースに障害が発生した場合には、別のインターフェースが受信するように割り当てられます。モード 5 は Red Hat Enterprise Virtualization でサポートされます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7859-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

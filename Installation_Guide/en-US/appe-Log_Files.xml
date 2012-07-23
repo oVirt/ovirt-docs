@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<appendix id="appe-Log_Files">
+	<title>Log Files</title>
+	<xi:include href="topics/Installation_Log_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<xi:include href="topics/Service_Activity_Log_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	<xi:include href="topics/Red_Hat_Enterprise_Virtualization_Host_Log_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</appendix>

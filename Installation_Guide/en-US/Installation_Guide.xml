@@ -3,36 +3,16 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
 ]>
+<book status="draft">
+	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		<xi:include href="part-Before_you_Begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="part-Installing_Red_Hat_Enterprise_Virtualization_Manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="part-Installing_Virtualization_Hosts.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="part-Environment_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="appe-Log_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="appe-Additional_Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Errors.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-<book>
-	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	<part label="I" id="part_I">
-		<title>Before you Begin</title>
-		<xi:include href="Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-		<xi:include href="Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</part>
-	<part label="II" id="part_II">
-		<title>Installing oVirt Engine</title>
-		<xi:include href="Install_Engine.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</part>
-	<part label="III" id="part_III">
-		<title>Installing Virtualization Hosts</title>
-		<xi:include href="Hosts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-		<xi:include href="Install_Node.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-		<xi:include href="Install_VDSM.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</part>
-	<part label="IV" id="part_IV">
-		<title>Environment Configuration</title>
-		<xi:include href="Planning.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-		<xi:include href="Network.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-		<xi:include href="Storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</part>
-	<part label="V" id="part_V">
-		<title>Appendices</title>
-		<xi:include href="Directory_Services.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-		<xi:include href="Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-		<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</part>
+    <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </book>
-

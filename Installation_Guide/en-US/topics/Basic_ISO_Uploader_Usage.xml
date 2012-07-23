@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Basic_ISO_Uploader_Usage" remap="TID_8414">
+	<title>Basic ISO Uploader Usage</title>
+	<para>
+		The example below demonstrates the ISO uploader and the list parameter. The first command lists the available ISO storage domains; the user name is requested because it was not provided in the command. The second command uploads an ISO file over NFS to the listed ISO domain: <literal>ISODomain</literal>.
+	</para>
+	<example>
+		<title>List Domains and Upload Image</title>
+		<screen># <command>rhevm-iso-uploader list</command>
+Please provide the REST API username for RHEV-M (CTRL+D to abort): <replaceable>admin@directory.demo.redhat.com</replaceable>
+Please provide the REST API password for RHEV-M (CTRL+D to abort):
+ISO Storage Domain List:
+  ISODomain
+# <command>rhevm-iso-uploader --iso-domain=<replaceable>ISODomain</replaceable> upload <replaceable>RHEL6.iso</replaceable></command>
+Please provide the REST API username for RHEV-M (CTRL+D to abort): <replaceable>admin@directory.demo.redhat.com</replaceable>
+Please provide the REST API password for RHEV-M (CTRL+D to abort):
+</screen>
+	</example>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8414-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

@@ -1,0 +1,96 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:52-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Introduction to Virtualization Hosts"
+msgstr "虛擬主機簡介"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization supports both virtualization hosts which run the Red Hat Enterprise Virtualization Hypervisor, and those which run Red Hat Enterprise Linux. Both types of virtualization host are able to coexist in the same Red Hat Enterprise Virtualization environment."
+msgstr "RHEV 支援執行 RHEV Hypervisor 以及執行 RHEL 的虛擬主機。這兩種類型的虛擬主機皆能同時存在相同的 RHEV 環境下。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Prior to installing virtualization hosts you should ensure that:"
+msgstr "在安裝虛擬主機之前，您應確認："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "all virtualization hosts meet the hardware requirements, and"
+msgstr "所有虛擬主機皆滿足了列於 中的硬體需求，並且"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "you have successfully completed installation of the Red Hat Enterprise Virtualization Manager."
+msgstr "您已成功完成了列於 中的 RHEV Manager 安裝程序 。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Additionally you may have chosen to install the Red Hat Enterprise Virtualization Manager Reports. This is not mandatory and is not required to commence installing virtualization hosts. Once you have completed the above tasks you are ready to install virtualization hosts."
+msgstr "此外，您能夠選擇安裝 RHEV Manager Reports。這並非必要的，並且安裝虛擬主機前並不需安裝它。當您完成了以上工作後，您便準備好安裝虛擬主機了。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Attach at Least Two Virtualization Hosts"
+msgstr "重要 — 連接至少兩部虛擬主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is recommended that you install at least two virtualization hosts and attach them to the Red Hat Enterprise Virtualization environment. Where you attach only one virtualization host you will be unable to access features such as migration which require redundant hosts.."
+msgstr "建議您安裝至少兩部虛擬主機，並將它們連至 RHEV 環境中。若您僅連接一部虛擬主機，您將無法存取需要雙重主機（例如遷移之類）的功能。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"chap-Installing_Red_Hat_Enterprise_Virtualization_Hypervisor_Hosts\" xrefstyle=\"link-list\" />"
+msgstr "欲安裝 RHEV Manager，請參閱 。"
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Installing_Red_Hat_Enterprise_Linux_Hosts\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8655-163915+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To install Red Hat Enterprise Linux Hosts, see ."
+#~ msgstr "欲安裝 RHEL 主機，請參閱 。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

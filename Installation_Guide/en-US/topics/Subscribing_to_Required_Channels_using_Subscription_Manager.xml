@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Subscribing_to_Required_Channels_using_Subscription_Manager" remap="TID_10233">
+	<title>Subscribing to Required Channels using Subscription Manager</title>
+	<itemizedlist>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<listitem>
+			<para role="process-previous-link">
+				<xref linkend="Installing_Red_Hat_Enterprise_Linux"/>
+			</para>
+		</listitem>
+	</itemizedlist>
+	<formalpara>
+		<title>Summary</title>
+		<para>
+			To be used as a virtualization host a Red Hat Enterprise Linux host be registered and subscribed to a number of entitlements using either Subscription Manager or <acronym>RHN</acronym> Classic. You must follow the steps in this procedure if you wish to register and subscribe using Subscription Manager. Completion of this procedure will mean that you have: 
+			<itemizedlist>
+				<listitem>
+					<para>
+						registered the virtualization host to Red Hat Network using Subscription Manager;
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						subscribed the virtualization host to the <literal>Red Hat Enterprise Linux Server</literal> entitlement; and
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						subscribed the virtualization host to the <literal>Red Hat Enterprise Virtualization</literal> entitlement.
+					</para>
+				</listitem>
+			</itemizedlist> Do <emphasis>not</emphasis> follow the steps in this procedure if you wish to register and subscribe using <acronym>RHN</acronym> Classic.
+		</para>
+	</formalpara>
+	<procedure>
+		<title>Subscribing to Required Channels using Subscription Manager</title>
+		<step>
+			<title>Register</title>
+			<para>
+				Run the <command>subscription-manager</command> command with the <parameter>register</parameter> parameter as the <systemitem>root</systemitem> user to register the system with the Red Hat Network. To complete registration successfully you will need to supply your Red Hat Network <guilabel>Username</guilabel> and <guilabel>Password</guilabel> when prompted.
+			</para>
+			<screen># subscription-manager register</screen>
+		</step>
+		<step>
+			<title>Identify entitlement pools</title>
+			<para>
+				To subscribe the system to the correct entitlements you must first locate the identifiers for the required entitlement pools. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these.
+			</para>
+			<para>
+				To identify available subscription pools for <literal>Red Hat Enterprise Linux Server</literal> use the command:
+			</para>
+			<screen># subscription-manager list --available | grep -A8 "Red Hat Enterprise Linux Server"</screen>
+			<para>
+				To identify available subscription pools for <literal>Red Hat Enterprise Virtualization</literal> use the command:
+			</para>
+			<screen># subscription-manager list --available | grep -A8 "Red Hat Enterprise Virtualization"</screen>
+			<note>
+				<para>
+					Beta releases of Red Hat Enterprise Virtualization are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization is called <literal>Red Hat Enterprise Virtualization Beta</literal>.
+				</para>
+			</note>
+		</step>
+		<step>
+			<title>Subscribe to entitlements</title>
+			<para>
+				Using the pool identifiers that you located in the previous step, subscribe the system to <literal>Red Hat Enterprise Linux Server</literal>, and <literal>Red Hat Enterprise Virtualization</literal> entitlements. Use the subscribe <parameter>parameter</parameter> to the <command>subscription-manager</command> command, replacing <parameter>POOLID</parameter> with one of the pool identifiers each time the command is run:
+			</para>
+			<screen># subscription-manager subscribe --pool=<parameter>POOLID</parameter></screen>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result</title>
+		<para>
+			You have registered the virtualization host to Red Hat Network and subscribed to the required entitlements using Subscription Manager.
+		</para>
+	</formalpara>
+	<itemizedlist>
+		<title role="process-next-title">Next Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<listitem>
+			<para role="process-next-link">
+				<xref linkend="Subscribing_to_Required_Channels_using_RHN_Classic"/>
+			</para>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10233-163391+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

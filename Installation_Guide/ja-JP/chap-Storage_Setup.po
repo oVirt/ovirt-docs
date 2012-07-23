@@ -1,0 +1,45 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 12:22-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Storage Setup"
+msgstr "ストレージの設定"
+
+#. Tag: title
+#, no-c-format
+msgid "Adding Storage to the Environment"
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding NFS Storage"
+msgstr "NFS ストレージの追加"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding iSCSI Storage"
+msgstr "iSCSI ストレージの追加"
+
+#. Tag: title
+#, no-c-format
+msgid "Adding POSIX Compliant Filesystem Storage"
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Populating the ISO Domain"
+msgstr "ISO ドメインの生成"

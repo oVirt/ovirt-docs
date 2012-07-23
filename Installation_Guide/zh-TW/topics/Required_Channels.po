@@ -1,0 +1,116 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:18-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Software Channels"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Installation of the Red Hat Enterprise Virtualization Manager requires that the system be subscribed to a number of Red Hat Network channels in addition to those required for Red Hat Enterprise Linux. These channels are used to retrieve both the initial installation packages and later updates as they become available."
+msgstr "安裝 RHEV Manager 需要系統訂閱數個 RHN 頻道。這些頻道可用來擷取初始化安裝套件，並在稍後更新套件。"
+
+#. Tag: para
+#, no-c-format
+msgid "You must ensure that you have entitlements to the required channels listed here before proceeding with installation."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Certificate-based Red Hat Network"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <literal>Red Hat Enterprise Linux Server</literal> entitlement, provides Red Hat Enterprise Linux."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <literal>Red Hat Enterprise Virtualization</literal> entitlement, provides Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <literal>JBoss Enterprise Application Platform</literal> entitlement, provides the supported release of the application platform on which the Manager runs"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is called <literal>Red Hat Enterprise Virtualization Beta</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Network Classic"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <literal>Red Hat Enterprise Linux Server (v. 6 for 64-bit x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6</systemitem>, provides Red Hat Enterprise Linux&nbsp;6 Server. The Channel Entitlement name for this channel is <literal>Red Hat Enterprise Linux Server (v. 6)</literal>."
+msgstr "<literal>Red Hat Enterprise Virtualization Manager（v.3 x86_64）</literal>頻道，亦稱為 <systemitem>rhel-x86_64-server-6-rhevm-3</systemitem>，它提供了 RHEV Manager。這個頻道的權利名稱為 <literal>Red Hat Enterprise Virtualization Manager (v3)</literal>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <literal>Red Hat Enterprise Virtualization Manager (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3</systemitem>, provides Red Hat Enterprise Virtualization Manager. The Channel Entitlement Name for this channel is <literal>Red Hat Enterprise Virtualization Manager (v3)</literal>."
+msgstr "<literal>Red Hat Enterprise Virtualization Manager（v.3 x86_64）</literal>頻道，亦稱為 <systemitem>rhel-x86_64-server-6-rhevm-3</systemitem>，它提供了 RHEV Manager。這個頻道的權利名稱為 <literal>Red Hat Enterprise Virtualization Manager (v3)</literal>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <literal>JBoss Application Platform (v 6) for 6Server x86_64</literal> channel, also referred to as <systemitem>jbappplatform-6-x86_64-server-6-rpm</systemitem>, provides the supported release of the application platform on which the Manager runs. The Channel Entitlement Name for this channel is <literal>JBoss Enterprise Application Platform (v 4, zip format)</literal>."
+msgstr "<literal>JBoss Application Platform (v 5) for 6Server x86_64</literal> 頻道，亦稱為 <systemitem>jbappplatform-5-x86_64-server-6-rpm</systemitem>，提供了 manager 所執行於、受支援的應用程式平台發行版。這個頻道的權利名稱為 <literal>JBoss Enterprise Application Platform (v 4, zip format)</literal>。"
+
+#. Tag: para
+#, no-c-format
+msgid "Beta releases of Red Hat Enterprise Virtualization Manager are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The channel required to obtain beta releases of the Red Hat Enterprise Virtualization Manager is the <literal>Red Hat Enterprise Virtualization Manager Beta (v.3 x86_64)</literal> channel, also referred to as <systemitem>rhel-x86_64-server-6-rhevm-3-beta</systemitem>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7849-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Required Channels"
+#~ msgstr "所需頻道"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The <literal>RHEL Server Supplementary (v. 6 64-bit x86_64)</literal> channel, also referred to as <systemitem> rhel-x86_64-server-supplementary-6</systemitem>, provides the supported version of the Java Runtime Environment ( <acronym> JRE</acronym>). The Channel Entitlement Name for this channel is <literal>Red Hat Enterprise Linux Server Supplementary (v. 6)</literal>."
+#~ msgstr "<literal>RHEL Server Supplementary（v. 6 64-bit x86_64）</literal>頻道，亦稱為 <systemitem>rhel-x86_64-server-supplementary-6</systemitem>，它提供了受支援的 Java Runtime Environment（<acronym>JRE</acronym>）版本。這個頻道的權利名稱為 <literal>Red Hat Enterprise Linux Server Supplementary (v. 6)</literal>。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Use the <command>rhn-channel <parameter>--list</parameter></command> command to confirm the list of channels to which the server is subscribed."
+#~ msgstr "請使用 <command>rhn-channel <parameter>--list</parameter></command> 指令來確認伺服器所訂閱的頻道清單。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

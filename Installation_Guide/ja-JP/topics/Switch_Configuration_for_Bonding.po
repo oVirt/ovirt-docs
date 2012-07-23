@@ -1,0 +1,76 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 07:23-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Switch Configuration for Bonding"
+msgstr "ボンディング用のスイッチ設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The following is an bond example configuration for a switch. Your switch configuration may look different."
+msgstr "スイッチ用のボンドの設定例は以下のとおりです。この設定は、ご使用のスイッチの設定とは異なる場合があります。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"  interface Port-channel11\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+"  spanning-tree portfast disable\n"
+"  spanning-tree bpduguard disable\n"
+"  spanning-tree guard root\n"
+"  \n"
+"  interface GigabitEthernet0/16\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+"  channel-group 11 mode active\n"
+" \n"
+"  interface GigabitEthernet0/17\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+msgstr ""
+"\n"
+"  interface Port-channel11\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+"  spanning-tree portfast disable\n"
+"  spanning-tree bpduguard disable\n"
+"  spanning-tree guard root\n"
+"  \n"
+"  interface GigabitEthernet0/16\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+"  channel-group 11 mode active\n"
+" \n"
+"  interface GigabitEthernet0/17\n"
+"  switchport access vlan 153\n"
+"  switchport mode access\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For every type of switch it is important to set up the switch bonding with the <firstterm>Link Aggregation Control Protocol</firstterm> ( <acronym> LACP</acronym>) protocol and <emphasis> not</emphasis> the Cisco <firstterm>Port Aggregation Protocol</firstterm> ( <acronym> PAgP</acronym>) protocol."
+msgstr "いずれのスイッチタイプの場合も、Cisco <firstterm>Port Aggregation Protocol</firstterm> (<acronym>PAgP</acronym>) プロトコル <emphasis>ではなく</emphasis>、<firstterm>Link Aggregation Control Protocol</firstterm> (<acronym>LACP</acronym>) プロトコルでスイッチボンディングを設定することが重要です。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7868-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

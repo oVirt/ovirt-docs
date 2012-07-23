@@ -1,0 +1,72 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:06-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Service Activity Log Files"
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Service Activity"
+msgstr "服務活動"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Log File"
+msgstr "日誌檔"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Description"
+msgstr "描述"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "<filename>/var/log/rhevm/rhevm.log</filename>"
+msgstr "<filename>/var/log/rhevm/rhevm.log</filename>"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Reflects all Red Hat Enterprise Virtualization Manager GUI crashes, Active Directory look-ups, Database issues, and other events."
+msgstr "反映所有 RHEV Manager GUI 當機、Active Directory 查詢、資料庫問題、以及其他事件。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7862-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Service Activity Log Files"
+#~ msgstr "服務動作的日誌檔"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

@@ -1,0 +1,49 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 10:11-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "System Requirements"
+msgstr "システム要件"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Hardware Requirements"
+msgstr "ハードウェア要件"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Hardware Requirements"
+msgstr "仮想化ホストの要件"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Software Requirements"
+msgstr "ソフトウェア要件"
+
+#. Tag: title
+#, no-c-format
+msgid "Directory Services"
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Firewall Configuration"
+msgstr "ファイアウォールの設定"
+
+#~ msgctxt ""
+#~ msgid "Red Hat Network (RHN)"
+#~ msgstr "Red Hat Network (RHN)"

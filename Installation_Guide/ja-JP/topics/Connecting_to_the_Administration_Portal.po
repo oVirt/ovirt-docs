@@ -1,0 +1,88 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 11:58-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Connecting to the Administration Portal"
+msgstr "管理ポータルへの接続"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Return to the browser and navigate to <uri>https://<replaceable>manager.demo.redhat.com</replaceable>/webadmin</uri>. Replace <filename>manager.demo.redhat.com</filename> with the fully qualified domain name that you provided during installation. Additionally where a non-default <acronym>HTTPS</acronym> port was selected during installation, it must be appended to the domain name. For example if the port selected during installation was <literal>8443</literal> then the URL would become <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:<replaceable>8443</replaceable>/webadmin</uri>."
+msgstr "ブラウザーに戻り <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:8443/RHEVManager</uri> に行きます。 <filename>manager.demo.redhat.com</filename> の部分はインストール中に入力した URL に置き換えます。また、インストール中にデフォルトではない <acronym>HTTPS</acronym> ポートを選択した場合は <acronym>URL</acronym> の <literal>8443</literal> を選択したそのポートに置き換えます。"
+
+#. Tag: para
+#, no-c-format
+msgid "The first time that you connect, you will be prompted to trust the certificate being used to secure communications between your browser and the web server."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The login screen displays. Enter <systemitem>admin</systemitem> as your <guilabel>User Name</guilabel>, and enter the password that you set during installation into the <guilabel>Password</guilabel> field. Ensure that the <systemitem>internal</systemitem> domain is selected in the <guilabel>Domain</guilabel> list."
+msgstr "ポータルのログイン画面が表示されます。<guilabel>ユーザー名</guilabel> に <systemitem>admin</systemitem> を入力します。インストール中に設定したパスワードを<guilabel>パスワード</guilabel>フィールドに入力します。<guilabel>ドメイン</guilabel>一覧から <systemitem>internal</systemitem> ドメインを選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Login</guilabel> to log in."
+msgstr "<guilabel>ログイン</guilabel>をクリックしてログインします。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You have now successfully logged into the Red Hat Enterprise Virtualization web Administration Portal. You can now:"
+msgstr "これで Red Hat Enterprise Virtualization Web 管理ポータルに正しくログインできました。次のことが行えるようになります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "optionally, install Red Hat Enterprise Virtualization Manager Reports, or"
+msgstr "オプションとして Red Hat Enterprise Virtualization Manager Reports をインストールします。あるいは"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "begin installing virtualization hosts."
+msgstr "仮想化ホストのインストールを開始します。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Data_Collection_Setup_and_Reports_Installation\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"part-Installing_Virtualization_Hosts\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7629-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "If this is your first time connecting to the Administration Portal, you will be prompted to trust the <filename>ca.cer</filename> certificate and install the <filename>RHEV-GUI-CertificateInstaller.exe</filename> certificate. Follow the prompts, then click the new link that appears on the page to reload the Administration Portal."
+#~ msgstr "管理ポータルに初めて接続する場合には、<filename>ca.cer</filename> 証明書を信頼し <filename>RHEV-GUI-CertificateInstaller.exe</filename>  証明書をインストールするかプロンプトが表示されます。プロンプトに従い進めていき、ページに表示される新しいリンクをクリックし管理ポータルをリロードします。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

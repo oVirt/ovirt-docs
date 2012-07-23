@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Removing_Red_Hat_Enterprise_Virtualization_Manager" remap="TID_7521">
+	<title>Removing Red Hat Enterprise Virtualization Manager</title>
+	<para>
+		The Red Hat Enterprise Virtualization Manager provides the <command>rhevm-cleanup</command> utility to allow quick and easy removal of the data files associated with the installation. Once this has been run you are able to remove the Red Hat Enterprise Virtualization Manager packages using <command>yum</command>.
+	</para>
+	<warning>
+		<title>Warning — Potential Data Loss</title>
+		<para>
+			The <command>rhevm-cleanup</command> command removes all existing Red Hat Enterprise Virtualization Manager data. This includes configuration settings, certificates, and database tables.
+		</para>
+	</warning>
+	<procedure>
+		<step>
+			<para>
+				Run the <command>rhevm-cleanup</command> command on the system that Red Hat Enterprise Virtualization Manager is installed on. You must be logged in as the <systemitem>root</systemitem> user to run <command>rhevm-cleanup</command>.
+			</para>
+			<screen># rhevm-cleanup</screen>
+		</step>
+		<step>
+			<para>
+				The script prompts you to confirm that you wish to remove Red Hat Enterprise Virtualization Manager.
+			</para>
+			<screen>Would you like to proceed? (yes|no): yes</screen>
+			<para>
+				Type <literal>yes</literal> and then press <keycap> Enter</keycap> to proceed with removal of Red Hat Enterprise Virtualization Manager.
+			</para>
+		</step>
+		<step>
+			<para>
+				The <command>rhevm-cleanup</command> command displays a message confirming that the Red Hat Enterprise Virtualization data files have been removed successfully.
+			</para>
+			<screen>RHEV Manager cleanup finished successfully!</screen>
+			<para>
+				To complete removal of the Red Hat Enterprise Virtualization Manager you must also use <command>yum</command> to remove the relevant packages. While still logged in as the <systemitem> root</systemitem> user run:
+			</para>
+			<screen># <command>yum <parameter>remove</parameter> <parameter>rhevm*</parameter> <parameter>vdsm-bootstrap</parameter></command></screen>
+		</step>
+	</procedure>
+	<para>
+		Red Hat Enterprise Virtualization Manager has been removed from the system successfully.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7521-163913+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

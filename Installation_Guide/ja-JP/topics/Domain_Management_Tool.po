@@ -1,0 +1,52 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-28 12:06-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "What is the Domain Management Tool?"
+msgstr "ドメイン管理ツールとは"
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager authenticates users using directory services. Adding and removing users from the system requires the <systemitem>admin</systemitem> user to add the directory service relevant to the user."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The directory services supported by Red Hat Enterprise Virtualization are Active Directory and IPA. The Red Hat Enterprise Virtualization Manager includes a domain management tool, <command>rhevm-manage-domains</command>, to add and remove domains provided by these services."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>rhevm-manage-domains</command> command is only accessible on the client machine on which the Red Hat Enterprise Virtualization Manager is installed. The <command>rhevm-manage-domains</command> command must be run as the <systemitem>root</systemitem> user."
+msgstr "Red Hat Enterprise Virtualization Manager がインストールされているマシンでは、<command>rhevm-manage-domains</command> コマンドを使用することができます。<command>rhevm-manage-domains</command> コマンドは、<systemitem>root</systemitem> ユーザーとして実行する必要があります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8673-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization Manager uses directory services to authenticate users. While during installation the manager sets up a domain named <literal>internal</literal> this is only used for the <systemitem>admin</systemitem> user. To add and remove other users from the system it is first necessary to add the directory service(s) in which they are found."
+#~ msgstr "Red Hat Enterprise Virtualization Manager は、ディレクトリサービスを使用して、ユーザー認証を行います。Manager は、インストール中に <literal>internal</literal> という名前のドメインを設定します。これは <systemitem>admin</systemitem> ユーザーのみに使用されます。システムからその他のユーザーを追加、削除するには、まずそのユーザーが登録されているディレクトリサービスを追加する必要があります"
+
+#~ msgctxt ""
+#~ msgid "The supported directory services are Active Directory and <acronym> IPA</acronym>. Red Hat Enterprise Virtualization Manager includes a domain management tool, <command>rhevm-manage-domains</command>, to add and remove domains provided by these services. In this way it is possible to grant access to the Red Hat Enterprise Virtualization environment to users stored across multiple domains. This is true even where some users are stored in a domain managed by Active Directory and others are stored in a domain managed by <acronym> IPA</acronym>."
+#~ msgstr "サポートされているディレクトリサービスは、Active Directory および <acronym>IPA</acronym> です。Red Hat Enterprise Virtualization Manager には、これらのサービスが提供するドメインを追加および削除するためのドメイン管理ツール <command>rhevm-manage-domains</command> が含まれています。これにより、複数のドメインに保存されているユーザーに Red Hat Enterprise Virtualization 環境へのアクセス権を付与することができます。これは、一部のユーザーが Active Directory で管理されているドメインに保存され、その他のユーザーが <acronym>IPA</acronym> で管理されているドメインに保存されている場合でも対応します。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,107 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:49-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor Installation Overview"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before commencing Hypervisor installation you must be aware that:"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor <emphasis>must</emphasis> be installed on a physical server. It must not be installed in a Virtual Machine."
+msgstr "RHEV Hypervisor「<emphasis>必須</emphasis>」安裝在實體伺服器上，而不能安裝在虛擬機器上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The installation process will reconfigure the selected storage device and destroy all data. Therefore, ensure that any data to be retained is successfully backed up before proceeding."
+msgstr "此安裝程序會重新配置所選擇的儲存裝置，並刪除所有資料。因此，請在進行之前，確認所有希望保留的資料皆已備份。"
+
+#. Tag: para
+#, no-c-format
+msgid "All Hypervisors in an environment must have unique hostnames and IP addresses, in order to avoid network conflicts."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Instructions for using Network (PXE) Boot to install the Hypervisor are contained in the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>, available at <ulink url=\"http://www.redhat.com/docs/\" />."
+msgstr "下列程序提供了以透過 RHEV Hypervisor ISO 映像檔建立的光碟片進行安裝的相關程序，此映像檔能透過 Red Hat 取得。欲透過其它例如 USB 卸除式磁碟或網路（PXE）開機的方式進行安裝，請參閱位於 <ulink url=\"http://www.redhat.com/docs/\" /> 的《<citetitle>Red Hat Enterprise Linux — Hypervisor 建置指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisors can use Storage Attached Networks (SANs) and other network storage for storing virtualized guest images. However, a local storage device is required for installing and booting the hypervisor."
+msgstr "RHEV Hypervisor 可使用 SAN 與其它網路儲存裝置來存放虛擬客座映像檔。然而，若要安裝與啟動 hypervisor，您需使用本機儲存裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor installations can be automated or conducted without interaction. This type of installation is only recommended for advanced users. Refer to the <citetitle>Red Hat Enterprise Virtualization — Hypervisor Deployment Guide</citetitle> for more information."
+msgstr "RHEV Hypervisor 的安裝程序可設為自動化，或在不需要干預的情況下進行。此種安裝模式僅建議進階使用者使用。詳情請參閱《<citetitle>Red Hat Enterprise Virtualization Hypervisor — 建置指南</citetitle>》。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8906-164511+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Installing the Hypervisor"
+#~ msgstr "安裝 Hypervisor"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "This chapter covers installing and integrating Red Hat Enterprise Virtualization Hypervisors with a Red Hat Enterprise Virtualization Manager."
+#~ msgstr "本章包含安裝、整合 Red hat Enteprise Virtulization（以下簡稱 RHEV）Hypervisor 與 RHEV Manager 的資訊。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The following method can be used when installing multiple servers. However, ensure that unique hostnames and IP addresses are used for each hypervisor installation, in order to avoid network conflicts."
+#~ msgstr "下列方法可用來安裝多部伺服器。然而，請確認各項 hypervisor 安裝程序，皆使用了獨特的主機名稱與 IP 位址，以防止網路發生衝突。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Important — DNS Configuration"
+#~ msgstr "重要 — DNS 配置"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The Red Hat Enterprise Virtualization Hypervisor must exist in the same DNS domain as the Red Hat Enterprise Virtualization Manager."
+#~ msgstr "RHEV Hypervisor 必須存在與 RHEV Manager 相同的 DNS 區域中。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Note — Automated Installations"
+#~ msgstr "重要 — 自動化安裝"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

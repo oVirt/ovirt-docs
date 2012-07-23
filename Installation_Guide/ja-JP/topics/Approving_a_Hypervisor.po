@@ -1,0 +1,54 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 01:42-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Approving a Hypervisor"
+msgstr "Hypervisor の承認"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log in to the Red Hat Enterprise Virtualization Manager Administration Portal."
+msgstr "Red Hat Enterprise Virtualization Manager の管理ポータルにログインします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "From the <application> Hosts</application> tab, click on the host to be approved. The host should currently be listed with the status of <application> Pending Approval</application>."
+msgstr "<application>ホスト</application>タブで承認するホストをクリックします。ホストは現在、<application>承認待ち</application>の状態で表示されているはずです。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <application> Approve</application> button. The <guilabel>Edit and Approve Hosts</guilabel> dialog displays. You can use the dialog to set a name for the host and configure power management, where the host has a supported power management card. For information on power management configuration, see the <citetitle>Power Management</citetitle> chapter of the <citetitle>Red Hat Enterprise Virtualization — Administration Guide</citetitle>."
+msgstr "<application>承認</application> ボタンをクリックします。<guilabel>ホストの編集・承認</guilabel>ダイアログが表示されます。このダイアログを使ってホストの名前を設定し、ホストに対応の電源管理カードがあれば電源管理の設定を行うことができます。電源管理の詳細については  <citetitle>Red Hat Enterprise Virtualization 管理ガイド</citetitle> の <citetitle>電源管理</citetitle> の章を参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton>. If you have not configured power management you will be prompted to confirm that you wish to proceed without doing so, click <guibutton>OK</guibutton>."
+msgstr "<guibutton>OK</guibutton> をクリックします。電源管理の設定を行わなかった場合、電源管理設定なしで続行する旨の確認が求められます。<guibutton>OK</guibutton> をクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The status in the <guilabel>Hosts</guilabel> tab changes to <application> Installing</application>, after a brief delay the host status changes to <application> Up</application>."
+msgstr "<guilabel>ホスト</guilabel>タブの状態が <application>Installing</application> に変わります。少し経つとホストの状態が<application>Up</application> に変わります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7618-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

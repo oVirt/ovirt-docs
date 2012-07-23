@@ -1,0 +1,273 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 11:06-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Syntax for the Domain Management Tool"
+msgstr "區域管理工具的語法"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The usage syntax is:"
+msgstr "語法為："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "<command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command>"
+msgstr ""
+"\n"
+"Usage:  <command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command>\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Available actions are:"
+msgstr "可用的動作為："
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>add</parameter>"
+msgstr "<parameter>add</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Add a domain to the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "新增網域到 Manager 的目錄服務配置。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>edit</parameter>"
+msgstr "<parameter>edit</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Edit a domain in the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "編輯 Manager 目錄服務配置的網域。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>delete</parameter>"
+msgstr "<parameter>delete</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Delete a domain from the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "從 Manager 的目錄服務配置刪除網域。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>validate</parameter>"
+msgstr "<parameter>validate</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Validate the Red Hat Enterprise Virtualization Manager's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password."
+msgstr "驗證 Manager 的目錄服務配置。這指令會試著透過已配置的使用者名稱與密碼，驗證配置中的每個網域。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>list</parameter>"
+msgstr "<parameter>list</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "List the Red Hat Enterprise Virtualization Manager's current directory services configuration."
+msgstr "列出 Manager 的現有目錄服務配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These options can be combined with the actions on the command line:"
+msgstr "可與命令列合用的選項為："
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-domain=<replaceable>DOMAIN</replaceable></parameter>"
+msgstr "<parameter>-domain=<replaceable>DOMAIN</replaceable></parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies the domain on which the action will be performed. The <parameter>-domain</parameter> parameter is mandatory for <parameter>add</parameter>, <parameter>edit</parameter>, and <parameter>delete</parameter>."
+msgstr "指定動作必須及於的網域。<parameter>add</parameter>、<parameter>edit</parameter>、與 <parameter>delete</parameter> 必須要有 <parameter>-domain</parameter> 參數。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-provider=</parameter>PROVIDER"
+msgstr "<parameter>-report</parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "Specifies the <acronym>LDAP</acronym> provider type of the directory server for the domain. Valid values are:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>ActiveDirectory</literal> Active Directory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>IPA</literal> - Identity, Policy, Audit."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>ITDS</literal> - <acronym>IBM</acronym> Tivoli Directory Server."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>RHDS</literal> - Red Hat Directory Server."
+msgstr ""
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>-user=<replaceable>USER</replaceable></parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies the domain user to use. The <parameter>-user</parameter> parameter is mandatory for <parameter>add</parameter>, and optional for <parameter>edit</parameter>."
+msgstr "指定網域使用者。<parameter>add</parameter> 必須要有 <parameter>-user</parameter> 參數，<parameter>edit</parameter> 則視需要使用此參數。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-passwordFile=<replaceable>FILE</replaceable></parameter>"
+msgstr "<parameter>-passwordFile=<replaceable>FILE</replaceable></parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies that the domain user's password is on the first line of the provided file. This option, or the <parameter>-interactive</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action."
+msgstr "指定網域使用者的密碼位於所提供檔案的第一行。這選項，或是 <parameter>-interactive</parameter> 選項，必須與 <parameter>add</parameter> 動作合用，以提供密碼。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-interactive</parameter>"
+msgstr "<parameter>-interactive</parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies that the domain user's password is to be provided interactively. This option, or the <parameter>-passwordFile</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action."
+msgstr "表示網域使用者的密碼需以互動式方法提供。這個選項或是 <parameter>-passwordFile</parameter> 選項，必須在進行 <parameter>add</parameter> 動作時使用，以提供密碼。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-configFile=<replaceable>FILE</replaceable></parameter>"
+msgstr "<parameter>-configFile=<replaceable>FILE</replaceable></parameter>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies an alternate configuration file that the command must load. The <parameter>-configFile</parameter> parameter is always optional."
+msgstr "指定另一個配置檔案，讓指令載入。<parameter>-configFile</parameter> 是選用參數。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-report</parameter>"
+msgstr "<parameter>-report</parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "In conjunction with the <parameter>validate</parameter> action results in the output of a report of all encountered validation errors."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For full usage information consult the <command>rhevm-manage-domains</command> command's help output:"
+msgstr "一般使用範例會在本指南中進一步討論。欲知完整的資訊，請參閱 <command>rhevm-manage-domains</command> 指令的求助畫面："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-manage-domains --help</command>"
+msgstr "# <command>rhevm-manage-domains --help</command>"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_Domains_to_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Edit_Domain_in_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Deleting_Domains_from_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Validating_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Listing_Domains_in_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7865-163869+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Specifies that when performing the <parameter>validate</parameter> action all validation errors encountered will be reported in full."
+#~ msgstr "指定進行 <parameter>validate</parameter> 動作時，所有遇到的驗證錯誤都會完整回報。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

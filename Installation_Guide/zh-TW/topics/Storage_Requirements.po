@@ -1,0 +1,164 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:03-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Storage Requirements"
+msgstr "儲存裝置需求"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtualization hosts require local storage to store configuration, logs, kernel dumps, and for use as swap space. The minimum storage requirements of the Red Hat Enterprise Virtualization Hypervisor are documented in this section. The storage requirements for Red Hat Enterprise Linux hosts vary based on the amount of disk space used by their existing configuration but are expected to be greater than those of the Red Hat Enterprise Virtualization Hypervisor."
+msgstr "虛擬主機需要本機儲存裝置，以存放配置記錄、kernel 傾印，並作為 swap 空間使用。RHEV Hypervisor 的最低儲存裝置需求，列在此部分中。RHEL 主機的儲存裝置需求取決於它們既有配置所使用的磁碟空間，不過一般將會比 RHEV Hypervisor 的磁碟空間大。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is recommended that each virtualization host has at least 2&nbsp;<acronym>GB</acronym> of internal storage. The minimum supported internal storage for each Hypervisor is the total of that required to provision the following partitions:"
+msgstr "建議提供各個虛擬主機 2 <acronym>GB</acronym> 的內部儲存裝置。各個 Hypervisor 所支援的內部儲存裝置空間，為佈建以下分割區所需之空間："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The root partitions require at least 512&nbsp;MB of storage."
+msgstr "root 分割區需要至少 512MB 的空間。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration partition requires at least 8&nbsp;MB of storage."
+msgstr "配置分割區需要至少 8MB 的空間。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The recommended minimum size of the logging partition is 2048&nbsp;MB."
+msgstr "建議的日誌分割區最小大小為 2,048 MB。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The data partition requires at least 256&nbsp;MB of storage. Use of a smaller data partition may prevent future upgrades of the Hypervisor from the Red Hat Enterprise Virtualization Manager. By default all disk space remaining after allocation of swap space will be allocated to the data partition."
+msgstr "資料分割區需要至少 256MB 的儲存空間。使用較小的資料分割區，未來可能會無法由 RHEV Manager 升級 Hypervisor。就預設值，在分配 swap 空間後的所有剩餘磁碟空間，皆會分配給資料分割區。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Hypervisor is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the Red Hat Enterprise Virtualization environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>."
+msgstr "Swap 分割區需要至少 8 MB 的儲存空間。Swap 分割區的建議大小取決於 Hypervisor 將會被安裝至的系統，以及環境的過量使用等級。過量使用（Overcommit）能讓 RHEV 環境提供客座端比實際的實體記憶體還要多的記憶體。過量使用的預設比例為 <literal>0.5</literal>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The recommended size of the swap partition can be determined by:"
+msgstr "建議的 swap 分割區大小可透過以下方法來決定："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Multiplying the amount of system <acronym>RAM</acronym> by the expected overcommit ratio, and adding"
+msgstr "系統 <acronym>RAM</acronym> 乘以預期的過量使用比例，然後加上"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "2&nbsp;<acronym>GB</acronym> of swap space for systems with 4&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> or less, or"
+msgstr "2 <acronym>GB</acronym> 的 swap 空間（此乃針對擁有 4 <acronym>GB</acronym> 或更少 <acronym>RAM</acronym> 的系統），或是"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "4&nbsp;<acronym>GB</acronym> of swap space for systems with between 4&nbsp;<acronym>GB</acronym> and 16 <acronym>GB</acronym> of <acronym>RAM</acronym>, or"
+msgstr "4 <acronym>GB</acronym> 的 swap 空間（針對於擁有 4 <acronym>GB</acronym> 到 16 <acronym>GB</acronym> 之間的 <acronym>RAM</acronym> 的系統），或是"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "8 <acronym>GB</acronym> of swap space for systems with between 16&nbsp;<acronym>GB</acronym> and 64&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym>, or"
+msgstr "8 <acronym>GB</acronym> 的 swap 空間（針對於擁有 16 <acronym>GB</acronym> 到 64 <acronym>GB</acronym> 之間的 <acronym>RAM</acronym> 的系統），或是"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "16&nbsp;<acronym>GB</acronym> of swap space for systems with between 64&nbsp;<acronym>GB</acronym> and 256 <acronym>GB</acronym> of <acronym>RAM</acronym>."
+msgstr "16 <acronym>GB</acronym> 的 swap 空間（針對於擁有 64 <acronym>GB</acronym> 到 256 <acronym>GB</acronym> 之間的 <acronym>RAM</acronym> 的系統），或是"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Calculating Swap Partition Size"
+msgstr "計算 swap 分割區大小"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For a system with 8&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym> this means the formula for determining the amount of swap space to allocate is:"
+msgstr "對於一部含有 8 <acronym>GB</acronym> <acronym>RAM</acronym> 的系統來說，決定 swap 空間配置的公式會是："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "(8 <acronym>GB</acronym> x 0.5) + 4 <acronym>GB</acronym> = 8 <acronym>GB</acronym>"
+msgstr "(8 <acronym>GB</acronym> x 0.5) + 4 <acronym>GB</acronym> = 8 <acronym>GB</acronym>"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — <systemitem>Fakeraid Devices</systemitem> are not Supported"
+msgstr "重要 — <systemitem>Fakeraid Devices</systemitem> 不受支援"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor does not support installation on <systemitem>fakeraid</systemitem> devices. Where a <systemitem>fakeraid</systemitem> device is present it must be reconfigured such that it no longer runs in <acronym>RAID</acronym> mode."
+msgstr "RHEV Hypervisor 不支援安裝在 <systemitem>fakeraid</systemitem> 裝置上。當 <systemitem>fakeraid</systemitem> 裝置存在時，您必須重新配置它，使其不再執行於 <acronym>RAID</acronym> 模式中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Access the <acronym>RAID</acronym> controller's <acronym>BIOS</acronym> and remove all logical drives from it."
+msgstr "請存取 <acronym>RAID</acronym> 控制器的 <acronym>BIOS</acronym>，並移除其所有邏輯磁碟。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Change controller mode to be non-RAID. This may be referred to as compatibility or <acronym>JBOD</acronym> mode."
+msgstr "將控制器模式更改為非 RAID。這亦可稱為相容性或是 <acronym>JBOD</acronym> 模式。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Access the manufacturer provided documentation for further information related to the specific device in use."
+msgstr "存取製造商提供的文件，以取得更多有關於使用中之特定裝置的相關資訊。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

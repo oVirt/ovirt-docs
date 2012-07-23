@@ -1,0 +1,102 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 08:42-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Booting the Hypervisor from USB Installation Media"
+msgstr "透過 USB 安裝媒介啟動 Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Booting a hypervisor from a <acronym>USB</acronym> storage device is similar to booting other live <acronym>USB</acronym> operating systems. To boot from a <acronym>USB</acronym> storage device:"
+msgstr "由 <acronym>USB</acronym> 儲存裝置啟動 hypervisor，與啟動其它即時的 <acronym>USB</acronym> 作業系統類似。若要由 <acronym>USB</acronym> 儲存裝置啟動："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the system's BIOS menu to enable <acronym>USB</acronym> storage device booting if not already enabled."
+msgstr "請進入系統的 BIOS 選單，並啟用 <acronym>USB</acronym> 儲存裝置開機。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enable <acronym>USB</acronym> booting if this feature is disabled."
+msgstr "若 <acronym>USB</acronym> 開機功能被停用的話，請將它啟用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Set booting <acronym>USB</acronym> storage devices to be first boot device."
+msgstr "請將透過 <acronym>USB</acronym> 儲存裝置開機選為第一個開機裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Shut down the system."
+msgstr "關閉系統。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert the <acronym>USB</acronym> storage device that contains the hypervisor boot image."
+msgstr "請插入包含了 hypervisor 開機映像檔的 <acronym>USB</acronym> 儲存裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Restart the system."
+msgstr "重新啟動系統。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor will boot automatically."
+msgstr "Hypervisor 將會自動啟動。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Troubleshooting_BIOS_Settings_and_Boot_Process\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+# Tag: title
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"Booting_the_Hypervisor_from_Installation_Media\" xrefstyle=\"see-also\" />"
+msgstr "透過 USB 安裝媒介啟動 Hypervisor"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7530-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

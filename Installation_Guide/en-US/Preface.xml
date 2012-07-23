@@ -1,35 +1,15 @@
-<?xml version='1.0' encoding='utf-8' ?>
-<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-
 <preface id="pref-Installation_Guide-Preface">
 	<title>Preface</title>
-	<para>
-		The oVirt platform is a richly featured virtualization management solution providing fully integrated management across virtual machines. It is based on the leading open source virtualization platform and provides superior technical capabilities. The platform offers scalable management of large numbers of virtual machines.
-	</para>
-	<section id="sect-Installation_Guide-Preface-About_this_Guide">
-		<title>About this Guide</title>
-		<section id="sect-Installation_Guide-Preface-About_this_Guide-Audience">
-			<title>Audience</title>
-			<para>
-				This guide is intended to provide detailed instruction on the installation and configuration of oVirt. A background in the administration of systems running Linux is recommended. Experience with previous versions of oVirt, while beneficial, is not required.
-			</para>
-			<para condition="RHEV">
-				Customers with an Evaluation license should, in the first instance, consult the <citetitle>Evaluation Guide</citetitle> for a more streamlined installation experience. This guide will discuss all installation options in their entirety.
-			</para>
-		</section>
-		<section id="sect-Installation_Guide-Preface-About_this_Guide-Overview">
-			<title>Overview</title>
-			<para>
-				Completion of the procedures outlined within this guide will result in a working oVirt environment. The environment produced will be configured to the level such that it can be used to create, run, and manage virtual machines. 
-			</para>
-		</section>
-	</section>
-	<xi:include href="Common_Content/Conventions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	<xi:include href="Feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude"><xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include href="Common_Content/Feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
-	</xi:fallback>
+	<xi:include href="Common_Content/Conventions.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude">
+		<xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+			<xi:include href="Common_Content/Feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		</xi:fallback>
 	</xi:include>
 </preface>
-

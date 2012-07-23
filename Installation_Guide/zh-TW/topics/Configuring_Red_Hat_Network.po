@@ -1,0 +1,244 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-21 10:19-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid ""
+"Configuring Red Hat Network for Red Hat Enterprise Virtualization Manager "
+"installation"
+msgstr "配置 RHN 以進行 RHEV Manager 安裝程序"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Run the <command>rhn_register</command> command to register the system with "
+"the Red Hat Network. To complete registration successfully you will need to "
+"supply your Red Hat Network username and password. Follow the onscreen "
+"prompts to complete registration of the system."
+msgstr ""
+"請執行 <command>rhn_register</command> 指令，向 Red Hat Network 註冊系統。欲成功完成註冊，您需要提供 "
+"Red Hat Network 的使用者名稱與密碼。請遵循螢幕上的提示，完成註冊系統的過程。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# rhn_register"
+msgstr "# rhn_register"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Subscribe to Required Channels"
+msgstr "訂閱所需頻道"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You must subscribe the system to the required channels using either the Red "
+"Hat Network web interface or the command line <command>rhn-channel</command> "
+"command."
+msgstr "您必須透過 RHN 網站介面或是 <command>rhn-channel</command> 指令來將系統訂閱至必要的頻道。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Using the Red Hat Network Web Interface"
+msgstr "使用 RHN 網站界面"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "To add a channel subscription to a system from the web interface:"
+msgstr "透過網站介面來為系統新增頻道訂閱："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr "登入 RHN（<ulink url=\"http://rhn.redhat.com\" />）。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Click <guilabel>Systems</guilabel> at the top of the page."
+msgstr "點選位於網頁上方的「<guilabel>系統</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the system to which you are adding channels from the list presented "
+"on the screen, by clicking the name of the system."
+msgstr "請由顯示在畫面上的清單中，藉由點選系統名稱，以選擇您欲新增頻道的系統。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click <guilabel>Alter Channel Subscriptions</guilabel> in the "
+"<guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr ""
+"請在畫面上的「<guilabel>已訂閱頻道</guilabel>」部分中，點選「<guilabel>修改頻道訂閱</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the channel to be added from the list presented on the screen, then "
+"click the <guilabel>Change Subscription</guilabel> button to finalize the "
+"change."
+msgstr "請由畫面上的清單中，選擇欲新增的頻道，然後按下「<guilabel>更改訂閱</guilabel>」按鈕，以確認變更。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Repeat these steps for each additional channel the system is to be "
+"subscribed to."
+msgstr "請針對於系統將訂閱的額外頻道，重複以上步驟。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Using the <command>rhn-channel</command> Command"
+msgstr "使用 <command>rhn-channel</command> 指令"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Run the <command>rhn-channel</command> command to subscribe the system to "
+"each of the required channels. The commands which need to be run are:"
+msgstr "請執行 <command>rhn-channel</command> 指令，讓系統訂閱所需的每個頻道。指令為："
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3\n"
+"# rhn-channel --add --channel=jbappplatform-5-x86_64-server-6-rpm\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-supplementary-6\n"
+msgstr ""
+"\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3\n"
+"# rhn-channel --add --channel=jbappplatform-5-x86_64-server-6-rpm\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-supplementary-6\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Important — Troubleshooting <command>rhn-channel</command> Errors"
+msgstr "重要 — 疑難排解 <command>rhn-channel</command> 錯誤"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you are not the Red Hat Network administrator for the machine, or the "
+"machine is not registered to Red Hat Network, then use of the <command>rhn-"
+"channel</command> command will result in an error:"
+msgstr ""
+"若您不是一部機器的 RHN 管理員，或是該機器尚未向 RHN 註冊的話，使用 <command>rhn-channel</command> "
+"指令將會造成錯誤發生："
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"Error communicating with server. The message was:\n"
+"Error Class Code: 37\n"
+"Error Class Info: You are not allowed to perform administrative tasks on "
+"this system.\n"
+"Explanation: \n"
+"     An error has occurred while processing your request. If this problem\n"
+"     persists please enter a bug report at bugzilla.redhat.com.\n"
+"     If you choose to submit the bug report, please be sure to include\n"
+"     details of what you were trying to do when this error occurred and\n"
+"     details on how to reproduce this problem.\n"
+msgstr ""
+"\n"
+"Error communicating with server. The message was:\n"
+"Error Class Code: 37\n"
+"Error Class Info: You are not allowed to perform administrative tasks on "
+"this system.\n"
+"Explanation: \n"
+"     An error has occurred while processing your request. If this problem\n"
+"     persists please enter a bug report at bugzilla.redhat.com.\n"
+"     If you choose to submit the bug report, please be sure to include\n"
+"     details of what you were trying to do when this error occurred and\n"
+"     details on how to reproduce this problem.\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you encounter this error when using <command>rhn-channel</command> then "
+"to add the Red Hat Network channel to the system you must use the web user "
+"interface."
+msgstr ""
+"若您在使用 <command>rhn-channel</command> 時遇上了這項錯誤，那麼您必須使用網站使用者介面，來將 RHN "
+"頻道增加至系統上。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The system is now registered with Red Hat Network and subscribed to the "
+"channels required for Red Hat Enterprise Virtualization Manager installation."
+""
+msgstr "系統現在已向 Red Hat Network 註冊，並訂閱了進行 RHEV Manager 安裝程序所需的頻道。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

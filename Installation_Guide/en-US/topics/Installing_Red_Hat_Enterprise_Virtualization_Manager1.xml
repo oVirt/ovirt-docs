@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Installing_Red_Hat_Enterprise_Virtualization_Manager1" remap="TID_7519">
+	<title>Installing the Red Hat Enterprise Virtualization Manager Packages</title>
+	<para>
+		The Red Hat Enterprise Virtualization Manager and all of its dependencies are available via Red Hat Network. To install the Manager you must ensure connectivity with either the Red Hat Network or a Red Hat Network Satellite Server is available. You must also ensure that you have access to all required Red Hat Network channels. 
+		<!-- See <xref linkend="References_RHEV_3_Required_Channels" /> for further information.-->
+	</para>
+	<procedure>
+		<step>
+			<para>
+				If installed, the <package>classpathx-jaf</package> package must be removed. It conflicts with some of the components installed to support <acronym> JBoss</acronym>.
+			</para>
+			<screen># <command>yum <parameter>remove</parameter> <parameter><package>classpathx-jaf</package></parameter></command></screen>
+		</step>
+		<step>
+			<para>
+				Use <command>yum</command> to ensure that the most up to date versions of all installed packages are in use.
+			</para>
+			<screen># <command>yum <parameter>upgrade</parameter></command></screen>
+		</step>
+		<step>
+			<para>
+				Use <command>yum</command> to initiate installation of the <package>rhevm</package> package and all dependencies. You must run this command as the <systemitem class="username"> root</systemitem> user.
+			</para>
+			<screen># <command>yum</command> <parameter>install</parameter> <parameter>rhevm</parameter></screen>
+		</step>
+	</procedure>
+	<para>
+		All required packages and dependencies are installed. You must now configure the system.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7519-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

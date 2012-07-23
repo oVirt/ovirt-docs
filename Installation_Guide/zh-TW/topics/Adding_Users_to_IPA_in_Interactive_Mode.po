@@ -1,0 +1,54 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 01:38-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding Users to IPA in Interactive Mode"
+msgstr "透過互動模式，將使用者新增至 IPA"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"In interactive mode, the user is first created and their password created "
+"separately so that they can authenticate and log in. Run the <command>ipa "
+"user-add</command> command, as <systemitem> root</systemitem> to create an "
+"IPA user. You can run this command with or without additional parameters. If "
+"you omit any of the required parameters, the interface will prompt you for "
+"the information."
+msgstr ""
+"在互動模式裡，會先建立使用者，然後分開建立密碼，之後便可授權登入。請以 <systemitem> root</systemitem> 身份執行 "
+"<command>ipa user-add</command> 指令，以建立 IPA "
+"使用者。您可使用更多參數來執行這項指令。如果您忽略了必要的參數，互動介面將會提示您輸入。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

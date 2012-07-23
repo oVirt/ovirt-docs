@@ -1,0 +1,263 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 09:36-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding a Red Hat Enterprise Linux Host"
+msgstr "Red Hat Enterprise Linux ホストの追加"
+
+#. Tag: para
+#, no-c-format
+msgid "A Red Hat Enterprise Linux host is based on an standard installation of Red Hat Enterprise Linux."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization hosts are based on a customized disk image with just enough Red Hat Enterprise Linux for virtualization. They are approved rather than added."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To add a Red Hat Enterprise Linux host, provide some details about it. The Manager logs into the host to perform virtualization checks, install packages, create a network bridge and reboot the host. The process of adding a new host can take up to 10 minutes. The process can be followed in the host's details pane."
+msgstr "ホスト追加のプロセスでは、ホストの IP とパスワードを入力する必要があります。入力を行うと、Manager によりホストへのログインが行われ、仮想化の確認、パッケージのインストール、 ネットワークブリッジの作成そしてホストの再起動が行われます。新規のホストを追加するプロセスは時間がかかる場合があります。このプロセスの状態は詳細ペインで追跡できます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Hosts</guilabel> tab. The <guilabel>Hosts</guilabel> tab displays a list of all hosts in the system."
+msgstr "<guilabel>ホスト</guilabel>タブをクリックします。ホストタブにシステム内の全ホストの一覧が表示されます。"
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guibutton>New</guibutton> button. The <guilabel>New Host</guilabel> dialog displays. It allows you to configure three aspects of your new host, each identified by a tab. The tabs are <guilabel>General</guilabel>, <guilabel>Power Management</guilabel>, and <guilabel>SPM</guilabel>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>General</guilabel> tab to enter the general configuration details of your host. Only the <guilabel>General</guilabel> configuration details are mandatory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If your host has a power management device, click the <guilabel>Power Management</guilabel> tab to configure it. This allows the Manager to perform lifecycle operations on your host, like turning it off and on."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization recommends power management. Power management enables the system to fence a troublesome host by using an additional interface to bypass the host operating system."
+msgstr "Red Hat Enterprise Virtualization は電源管理の使用をお勧めします。電源管理では、別のインターフェースを使用して問題のあるホストをフェンシングすることができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the host is to be Highly Available, power management must be enabled and configured."
+msgstr "ホストを高可用性にする必要がある場合は電力管理を有効にして設定を行わなければなりません。"
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>SPM</guilabel> tab to configure the host's priority when the Manager is assigning role of Storage Pool Manager. This can usually be left at the default value."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guibutton>OK</guibutton> when you've entered all the necessary configuration details of your host."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new host displays in the list of hosts with a status of <literal>Installing</literal>. Once installation is complete, the status will update to <literal>Reboot</literal> and then <literal>Awaiting</literal>. The host must be activated for the status to change to <literal>Up</literal>."
+msgstr "新規のホストが <literal>Installing</literal> の状態でホスト一覧に表示されます。インストールが完了するとこの状態は <literal>Reboot</literal> に更新され、そのあと <literal>Awaiting</literal> になります。状態を <literal>Up</literal> に変更するには、ホストのアクティベートを行う必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "View the progress of the host installation on the Details pane."
+msgstr "詳細ペインで、ホストのインストール進捗状況を確認します。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7621-164532+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "List of Hosts"
+#~ msgstr "ホストの一覧"
+
+#~ msgctxt ""
+#~ msgid "Click the <guilabel>New</guilabel> button. The New Host dialog displays."
+#~ msgstr "<guilabel>新規</guilabel>ボタンをクリックします。新規ホストのダイアログが表示されます。"
+
+#~ msgctxt ""
+#~ msgid "New Host Dialog"
+#~ msgstr "新規ホストのダイアログ"
+
+#~ msgctxt ""
+#~ msgid "Enter the details of the new host."
+#~ msgstr "新規ホストの詳細を入力します。"
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Name </emphasis>: a descriptive name for the host."
+#~ msgstr "<emphasis role=\"bold\">名前</emphasis>: ホストの記述名"
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Address </emphasis>: the IP address, or resolvable hostname of the host (provided during installation)."
+#~ msgstr "<emphasis role=\"bold\">アドレス</emphasis>: IP アドレスまたはホストの解決可能なホスト名 (インストール時に設定) "
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Port </emphasis>: the port used for internal communication control between the hosts. A default port is displayed; change the default only if you are sure that another port can be used."
+#~ msgstr "<emphasis role=\"bold\">ポート</emphasis>: ホスト間の内部通信制御に使用するポート。デフォルトポートが表示されますが、別のポートが利用できることを確認してからのみデフォルトポートを変更するようにしてください。"
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Host Cluster </emphasis>: the cluster to which the host belongs (select from the drop-down list)."
+#~ msgstr "<emphasis role=\"bold\">ホストクラスター</emphasis>: ホストが属するクラスター (ドロップダウンリストから選択)"
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Root password </emphasis>: the password of the designated host; used during installation of the host."
+#~ msgstr "<emphasis role=\"bold\">Root パスワード</emphasis>: 指定したホストのパスワードを入力します。ホストのインストール中に使用したパスワードです。"
+
+#~ msgctxt ""
+#~ msgid "<emphasis role=\"bold\"> Enable Power Management </emphasis>: Select this checkbox to turn out-of-band (OOB) power management on. If selected, the information for the following fields must also be provided."
+#~ msgstr "<emphasis role=\"bold\">電源管理を有効にする</emphasis>: OOB (帯域外) 電源管理をオンにする場合にこのチェックボックスを選択します。選択する場合は次のフィールドの情報も入力が必要です。"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>Address</guilabel> of the host. This is usually the address of the remote access card (RAC) on the host."
+#~ msgstr "<guilabel>アドレス</guilabel>: ホストのアドレス。通常はホスト上のリモートアクセスカード (RAC) のアドレスです。"
+
+#~ msgctxt ""
+#~ msgid "A valid <guilabel>User Name</guilabel> for the OOB management."
+#~ msgstr "<guilabel>ユーザー名</guilabel>: OOB 管理の有効なユーザー名"
+
+#~ msgctxt ""
+#~ msgid "A valid, robust <guilabel>Password</guilabel> for the OOB management."
+#~ msgstr "<guilabel>パスワード</guilabel>: OOB 管理用の有効かつ堅固なパスワード。"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>Type</guilabel> of the OOB management device. Select the appropriate device from the drop down list."
+#~ msgstr "<guilabel>Type</guilabel>: OOB 管理デバイスのタイプ。ドロップダウンリストから適切なデバイスを選択します。"
+
+#~ msgctxt ""
+#~ msgid "alom"
+#~ msgstr "alom"
+
+#~ msgctxt ""
+#~ msgid "Sun Integrated Lights Out Manager (ILOM)"
+#~ msgstr "Sun Integrated Lights Out Manager (ILOM)"
+
+#~ msgctxt ""
+#~ msgid "apc"
+#~ msgstr "apc"
+
+#~ msgctxt ""
+#~ msgid "APC Master MasterSwitch network power switch"
+#~ msgstr "APC Master MasterSwitch ネットワーク電源スイッチ"
+
+#~ msgctxt ""
+#~ msgid "bladecenter"
+#~ msgstr "Bladecenter"
+
+#~ msgctxt ""
+#~ msgid "IBM Bladecentre Remote Supervisor Adapter"
+#~ msgstr "IBM Bladecentre Remote Supervisor Adapter"
+
+#~ msgctxt ""
+#~ msgid "drac5"
+#~ msgstr "drac5"
+
+#~ msgctxt ""
+#~ msgid "Dell Remote Access Controller for Dell computers"
+#~ msgstr "Dell コンピューター用の Dell Remote Access Controller"
+
+#~ msgctxt ""
+#~ msgid "eps"
+#~ msgstr "eps"
+
+#~ msgctxt ""
+#~ msgid "ePowerSwitch 8M+ network power switch"
+#~ msgstr "ePowerSwitch 8M+ ネットワーク電源スイッチ"
+
+#~ msgctxt ""
+#~ msgid "ilo"
+#~ msgstr "ilo"
+
+#~ msgctxt ""
+#~ msgid "HP Integrated Lights Out standard"
+#~ msgstr "HP Integrated Lights Out Standard"
+
+#~ msgctxt ""
+#~ msgid "ipmilan"
+#~ msgstr "ipmilan"
+
+#~ msgctxt ""
+#~ msgid "Intelligent Platform Management Interface"
+#~ msgstr "Intelligent Platform Management Interface"
+
+#~ msgctxt ""
+#~ msgid "rsa"
+#~ msgstr "rsa"
+
+#~ msgctxt ""
+#~ msgid "IBM Remote Supervisor Adaptor"
+#~ msgstr "IBM Remote Supervisor Adaptor"
+
+#~ msgctxt ""
+#~ msgid "rsb"
+#~ msgstr "rsb"
+
+#~ msgctxt ""
+#~ msgid "Fujitsu-Siemens RSB management interface"
+#~ msgstr "Fujitsu-Siemens RSB 管理インターフェース"
+
+#~ msgctxt ""
+#~ msgid "wti"
+#~ msgstr "wti"
+
+#~ msgctxt ""
+#~ msgid "WTI Network PowerSwitch"
+#~ msgstr "WTI Network PowerSwitch"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>Port</guilabel> to connect to OOB management."
+#~ msgstr "<guilabel>ポート</guilabel>: OOB 管理に接続するためのポート。"
+
+#~ msgctxt ""
+#~ msgid "<guilabel>Slot</guilabel>: The slot number in the blade chassis. This option is for blade systems only."
+#~ msgstr "<guilabel>スロット</guilabel>: ブレードシャーシのスロット番号。このオプションはブレードシステム専用"
+
+#~ msgctxt ""
+#~ msgid "<guilabel>Options</guilabel>: Extra command line options for the fence agent. Detailed documentation of the options available is provided in the man page for each fence agent."
+#~ msgstr "<guilabel>オプション</guilabel>: フェンスエージェント用の追加コマンドラインオプション。利用できるオプションの説明については各フェンスエージェントの man ページにあります。"
+
+#~ msgctxt ""
+#~ msgid "<guilabel>Secure</guilabel>: Some fence agents support both encrypted and unencrypted communications. Select this option to enable encrypted communications."
+#~ msgstr "<guilabel>暗号化</guilabel>: 暗号化されている通信と暗号化されていない通信の両方に対応するフェンスエージェントがあります。暗号化通信を有効にする場合はこのオプションを選択してください。"
+
+#~ msgctxt ""
+#~ msgid "Click the <guibutton>Test</guibutton> button to test the operation of the OOB management solution."
+#~ msgstr "<guibutton>テスト</guibutton>ボタンをクリックして OOB 管理ソリューションの動作をテスト"
+
+#~ msgctxt ""
+#~ msgid "Note"
+#~ msgstr "注記"
+
+#~ msgctxt ""
+#~ msgid "Click <guibutton>OK</guibutton>."
+#~ msgstr "<guibutton>OK</guibutton> をクリックします。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

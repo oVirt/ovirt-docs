@@ -1,0 +1,139 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 01:30-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding iSCSI Storage"
+msgstr "iSCSI ストレージの追加"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform supports iSCSI storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-existent <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time."
+msgstr "Red Hat Enterprise Virtualization プラットフォームでは、<systemitem>ボリュームグループ</systemitem>の<systemitem>ストレージドメイン</systemitem>を作成することで iSCSI ストレージをサポートします。<systemitem>ボリュームグループ</systemitem>とは、事前に定義された、一式の複数の論理ユニット番号です。Red Hat Enterprise Virtualization では、既存の <systemitem>ボリュームグループ</systemitem>または LUN セットからの <systemitem>ストレージドメイン</systemitem> 作成をサポートしています。<systemitem>ボリュームグループ</systemitem>および LUN はいずれも、一度に複数の<systemitem>ストレージドメイン</systemitem>にはアタッチできません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For information regarding the setup and configuration of iSCSI on Red Hat Enterprise Linux, see the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle>."
+msgstr "Red Hat Enterprise Linux における iSCSI 設定方法については、<citetitle>Red Hat Enterprise Linux  ストレージ管理ガイド</citetitle> を参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers."
+msgstr "ツリーペインで、<guilabel>ツリー</guilabel> タブを選択します。<guilabel>システム</guilabel> 上の <guibutton>+</guibutton> のアイコンをクリックして、使用可能なデータセンターを表示します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add an <acronym> iSCSI</acronym> data, or export, storage domain you must select an <acronym> iSCSI</acronym> data center. <acronym> iSCSI</acronym> storage domains can not be used for <acronym> ISO</acronym> storage domains."
+msgstr "ドメインを追加する<guilabel>データセンター</guilabel>を選択します。選択したデータセンターのストレージタイプによって、追加可能なストレージドメインのタイプが異なります。<acronym>iSCSI</acronym> データストレージドメイン、もしくはエクスポートストレージドメインを追加するには、<acronym>iSCSI</acronym> データセンターを選択する必要があります。<acronym>iSCSI</acronym> ストレージドメインは、<acronym>ISO</acronym> ストレージドメインには使用できません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>New Domain</guilabel> button."
+msgstr "<guilabel>新規ドメイン</guilabel>ボタンをクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Storage</guilabel>. The <guilabel>New Storage</guilabel> dialog box displays. <remark> TODO: Image here. </remark>"
+msgstr "<guilabel>新規ストレージ</guilabel>をクリックします。<guilabel>新規ストレージ</guilabel>のダイアログボックスが表示されます。<remark>TODO: Image here.</remark>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "From the <guilabel>Domain Function / Storage Type</guilabel> drop-down menu, select the appropriate storage type for the storage domain. The storage domain types that are not compatible with the chosen data center are not available."
+msgstr "<guilabel>ドメイン機能 / ストレージタイプ</guilabel>のドロップダウンメニューからストレージドメインに適したストレージタイプを選択します。選択したデータセンターと互換性のないストレージドメインタイプは表示されません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select an active host in the <guilabel>Use host</guilabel> field. To attach a domain, the name of an active host must be selected from the list of existing hosts. Only hosts that are attached to the selected <acronym> Data Center</acronym> are listed."
+msgstr "<guilabel>使用ホスト</guilabel>フィールドでアクティブなホストを選択します。ドメインを接続するには、既存のホストの一覧から、アクティブなホストを 1 つ選択する必要があります。選択された<acronym>データセンター</acronym>にアタッチされているホストのみが表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "アクティブなホストが必要です"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "ストレージドメインへの通信はすべて、Red Hat Enterprise Virtualization Manager から直接ではなく、選択したホスト経由で行われます。ストレージを設定する前には、システム内にアクティブなホストが少なくとも 1 台存在し、選択したデータセンターにアタッチされている必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager is able to map either <acronym> iSCSI</acronym> targets to <acronym> LUNs</acronym>, or <acronym> LUNs</acronym> to <acronym> iSCSI</acronym> targets. The <guilabel>New Domain</guilabel> dialog automatically displays known targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step."
+msgstr "Red Hat Enterprise Virtualization Manager でマッピングが可能なのは、<acronym>iSCSI</acronym> ターゲットから <acronym>LUN</acronym> へのマッピング、または <acronym>LUN</acronym> から <acronym>iSCSI</acronym> ターゲットへのマッピングのいずれかです。 <acronym>iSCSI</acronym> をストレージタイプに選択すると、<guilabel>新規ドメイン</guilabel>ダイアログには未使用の <acronym> LUN</acronym> を持つ既知のターゲットが自動的に表示されます。ストレージを追加する元のターゲットが表示されない場合には、ターゲットディスカバリを使用して検索することができます。表示されている場合には、次の手順に進んでください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>iSCSI</acronym> Target Discovery"
+msgstr "<acronym>iSCSI</acronym> ターゲットディスカバリ"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Discover Targets</guilabel> to enable target discovery options. The <guilabel>New Domain</guilabel> dialog automatically displays targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding is not listed, click <guilabel>Discover Targets</guilabel> to enable target discovery options."
+msgstr "<guilabel>ターゲットの検出</guilabel> をクリックしてターゲットディスカバリのオプションを有効にします。<acronym>iSCSI</acronym> をストレージタイプに選択すると、<guilabel>新規ドメイン</guilabel> ダイアログに未使用の <acronym>LUN</acronym> が割り当てられているターゲットが自動的に表示されます。追加するターゲットが表示されない場合は、<guilabel>ターゲットの検出</guilabel> をクリックしてターゲットディスカバリのオプションを有効にします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the fully qualified domain name or <acronym> IP</acronym> address of the <acronym> iSCSI</acronym> host in the <guilabel>Address</guilabel> field."
+msgstr "<guilabel>アドレス</guilabel>フィールドに <acronym>iSCSI</acronym> ホストの完全修飾ドメイン名または <acronym>IP</acronym> アドレスを入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the port to connect to the host on when browsing for targets in the <guilabel>Port</guilabel> field. The default is <literal>3260</literal>."
+msgstr "<guilabel>ポート</guilabel>フィールドには、ターゲットを参照する際にホストに接続するポートを入力します。デフォルトは <literal>3260</literal> です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the Challenge Handshake Authentication Protocol ( <acronym> CHAP</acronym>) is being used to secure the storage, select the <guilabel>User Authentication</guilabel> check box. Enter the <acronym> CHAP</acronym> user name and password."
+msgstr "ストレージのセキュリティ保護に Challenge Handshake Authentication Protocol (<acronym>CHAP</acronym>) を使用する場合には、<guilabel>ユーザー認証</guilabel> チェックボックスにチェックマークを付けます。<acronym>CHAP</acronym> ユーザー名とパスワードを入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>Discover</guibutton> button."
+msgstr "<guibutton>検出</guibutton>ボタンをクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>+</guilabel> button next to the desired target. This will expand the entry and display all unused <acronym> LUNs</acronym> attached to the target."
+msgstr "該当ターゲットの隣にある <guilabel>+</guilabel> ボタンをクリックします。 エントリが展開されてターゲットにアタッチされている未使用の <acronym> LUN</acronym> がすべて表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the check box for each <acronym> LUN</acronym> that you are using to create the storage domain."
+msgstr "ストレージドメインの作成に使用する各 <acronym>LUN</acronym> のチェックボックスにチェックマークを付けます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton> to create the storage domain."
+msgstr "<guibutton>OK</guibutton> をクリックしてストレージドメインを作成します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new <acronym> iSCSI</acronym> storage domain displays on the storage tab. This will take some time."
+msgstr "新規 <acronym>iSCSI</acronym> ストレージドメインがストレージタブに表示されます。これには多少時間がかかります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7633-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

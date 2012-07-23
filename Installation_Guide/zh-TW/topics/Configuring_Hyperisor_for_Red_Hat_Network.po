@@ -1,0 +1,284 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:42-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor for Red Hat Network"
+msgstr "為 RHN 配置 Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Guests running on the Hypervisor may need to consume Red Hat Enterprise Linux virtualization entitlements. Where this is the case the Hypervisor must be registered to Red Hat Network , a Satellite server, or Subscription Asset Manager. The Hypervisor is able to connect to these services via a <acronym>HTTP</acronym> proxy where one is in use."
+msgstr "在 Hypervisor 上執行的客座端可能需要耗費 RHEL 虛擬化的權利。在此情況下，hypervisor 必須向 RHN、衛星伺服器，或是訂閱資產管理程式（SAM）註冊。若有使用到 <acronym> HTTP</acronym> 協定的話，hypervisor 亦可透過該協定連至這些服務。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Note that when new versions of the Hypervisor itself become available they are installed from the Red Hat Enterprise Virtualization Manager, not Red Hat Network."
+msgstr "當有新版的 hypervisor 時，它們將透過 RHEV Manager 安裝，而非透過 RHN。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Register with Red Hat Network"
+msgstr "向 RHN 註冊"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Authentication"
+msgstr "認證"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter your Red Hat Network username in the <guilabel>Login</guilabel> field."
+msgstr "請在「<guilabel>使用者名稱</guilabel>」欄位中，輸入您的 RHN 使用者名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter your Red Hat Network password in the <guilabel>Password</guilabel> field."
+msgstr "請在「<guilabel>密碼</guilabel>」欄位中，輸入您的 RHN 密碼。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Profile Name"
+msgstr "設定檔名稱"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the profile name to be used for the system in the <guilabel>Profile Name</guilabel> field. This is the name that the system will appear under when viewed via the Red Hat Network."
+msgstr "請在「<guilabel>設定檔名稱</guilabel>」欄位中，輸入系統欲使用的設定檔名稱。此名稱乃系統在 RHN 下所會顯示的名稱。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Update Source"
+msgstr "更新來源"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Hypervisor is able to register directly to Red Hat Network or, if available, either a Satellite installation or a Subscription Asset Manager."
+msgstr "Hypervisor 能夠直接向 RHN 或（若可使用）衛星伺服器或 SAM 進行註冊。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect Directly to RHN"
+msgstr "直接連至 RHN"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>RHN</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled. The <guilabel>URL</guilabel> and <guilabel>CA</guilabel> values do not need to be provided."
+msgstr "請選擇「<guilabel>RHN</guilabel>」選項，並按下 <keycap>Space</keycap> 以將它切換為啟用。您無需提供「<guilabel>URL</guilabel>」與「<guilabel>CA</guilabel>」的值。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Network Configuration"
+msgstr "Red Hat Network 配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[*] RHN [ ] Satellite [ ] Subscription Asset Manager           \n"
+"URL:  ________________________________________                 \n"
+"CA :  ________________________________________  "
+msgstr ""
+"[*] RHN [ ] Satellite [ ] Subscription Asset Manager           \n"
+"URL:  ________________________________________                 \n"
+"CA :  ________________________________________  "
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect via Satellite"
+msgstr "透過衛星伺服器連線"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Satellite</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "請選擇「<guilabel>衛星伺服器</guilabel>」選項，並按下 <keycap>Space</keycap> 以將它切換為啟用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Satellite server in the <guilabel>URL</guilabel> field."
+msgstr "請在「<guilabel>URL</guilabel>」欄位中，輸入衛星伺服器的 URL。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Certificate Authority for the Satellite server in the <guilabel>CA</guilabel> field."
+msgstr "請在「<guilabel>CA</guilabel>」欄位中輸入衛星伺服器憑證許可的 URL。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Satellite Configuration"
+msgstr "衛星伺服器配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[ ] RHN [*] Satellite [ ] Subscription Asset Manager\n"
+"URL:   https://your-satellite.example.com\n"
+"CA :   https://your-satellite.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+msgstr ""
+"[ ] RHN [*] Satellite [ ] Subscription Asset Manager\n"
+"URL:   https://your-satellite.example.com\n"
+"CA :   https://your-satellite.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Connect via Subscription Asset Manager"
+msgstr "透過 SAM 連線"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Subscription Asset Manager</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "請選擇「<guilabel>訂閱資產管理程式</guilabel>」選項，並按下 <keycap>Space</keycap> 以將它切換為啟用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Subscription Asset Manager server in the <guilabel>URL</guilabel> field."
+msgstr "請在「<guilabel>URL</guilabel>」欄位中，輸入 SAM 的 URL。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the URL of the Certificate Authority for the Subscription Asset Manager server in the <guilabel>CA</guilabel> field."
+msgstr "請在「<guilabel>CA</guilabel>」欄位中，輸入 SAM 伺服器憑證許可的 URL。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Subscription Asset Manager Configuration"
+msgstr "訂閱資產管理程式配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"[ ] RHN [ ] Satellite [*] Subscription Asset Manager           \n"
+"URL:  https://subscription-asset-manager.example.com                 \n"
+"CA :  https://subscription-asset-manager.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+msgstr ""
+"[ ] RHN [ ] Satellite [*] Subscription Asset Manager           \n"
+"URL:  https://subscription-asset-manager.example.com                 \n"
+"CA :  https://subscription-asset-manager.example.com/pub/RHN-ORG-TRUSTED-SSL-CERT"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>HTTP</acronym> Proxy"
+msgstr "<acronym>HTTP</acronym> 協定"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where a <acronym> HTTP</acronym> proxy is in use the details to connect to it must be provided. To connect to the Red Hat Network or a Satellite server via a proxy you must enter:"
+msgstr "當在使用 <acronym>HTTP</acronym> 代理伺服器時，您必須提供連至它的詳細資料。若要透過代理伺服器連至 RHN 或是衛星伺服器，您必須輸入："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the proxy <guilabel>Server</guilabel>'s network address,"
+msgstr "「<guilabel>代理伺服器</guilabel>」的網路位址。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Port</guilabel> to connect to the proxy on, and"
+msgstr "連接代理伺服器的「<guilabel>連接埠</guilabel>」，以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "optionally, the <guilabel>Username</guilabel> and <guilabel>Password</guilabel> to use to connect to the proxy."
+msgstr "（選用性）使用來連至代理伺服器的「<guilabel>使用者名稱</guilabel>」與「<guilabel>密碼</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In environments where a <acronym> HTTP</acronym> proxy is not in use it is safe to ignore this step."
+msgstr "在一個未使用 <acronym>HTTP</acronym> 代理伺的環境中，您可安全地忽略此步驟。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "HTTP Proxy Configuration"
+msgstr "HTTP 代理伺服器配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"HTTP Proxy\n"
+"Server: proxy.example.com__ Port: 8080_\n"
+"Username: puser________ Password: ******_______\n"
+msgstr ""
+"HTTP Proxy\n"
+"Server: proxy.example.com__ Port: 8080_\n"
+"Username: puser________ Password: ******_______\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Configuration"
+msgstr "儲存配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To save the configuration the user must select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap>."
+msgstr "若要儲存配置，使用者必須選擇「<guibutton>&lt;套用&gt;</guibutton>」，並按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Hypervisor's <guilabel>Red Hat Network</guilabel> configuration has been updated."
+msgstr "「<guilabel>Red Hat Network</guilabel>」配置已更新。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7538-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

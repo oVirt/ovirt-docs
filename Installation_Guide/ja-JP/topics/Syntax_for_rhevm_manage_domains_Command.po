@@ -1,0 +1,235 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 11:19-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Syntax for the Domain Management Tool"
+msgstr "ドメイン管理ツールの構文"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The usage syntax is:"
+msgstr "このツールに使用する構文は、以下の形式です。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "<command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command>"
+msgstr ""
+"\n"
+"<command>rhevm-manage-domains <parameter>-action</parameter>=<parameter><replaceable>ACTION</replaceable></parameter> <replaceable>[options]</replaceable></command>\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Available actions are:"
+msgstr "利用可能なアクションは以下のとおりです。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>add</parameter>"
+msgstr "<parameter>add</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Add a domain to the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "Manager のディレクトリサービス設定にドメインを追加します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>edit</parameter>"
+msgstr "<parameter>edit</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Edit a domain in the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "Manager のディレクトリサービス設定内のドメインを編集します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>delete</parameter>"
+msgstr "<parameter>delete</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Delete a domain from the Red Hat Enterprise Virtualization Manager's directory services configuration."
+msgstr "Manager のディレクトリサービス設定からドメインを削除します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>validate</parameter>"
+msgstr "<parameter>validate</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Validate the Red Hat Enterprise Virtualization Manager's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password."
+msgstr "Manager のディレクトリサービス設定を検証します。このコマンドは、設定したユーザー名とパスワードを使用して、設定内の各ドメインを対象に認証を試みます。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>list</parameter>"
+msgstr "<parameter>list</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "List the Red Hat Enterprise Virtualization Manager's current directory services configuration."
+msgstr "Manager の現在のディレクトリサービス設定を一覧表示します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These options can be combined with the actions on the command line:"
+msgstr "コマンドライン上のアクションと組み合わせることのできるオプションは以下のとおりです。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-domain=<replaceable>DOMAIN</replaceable></parameter>"
+msgstr "<parameter>-domain=<replaceable>DOMAIN</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies the domain on which the action will be performed. The <parameter>-domain</parameter> parameter is mandatory for <parameter>add</parameter>, <parameter>edit</parameter>, and <parameter>delete</parameter>."
+msgstr "アクションの実行対象とする必要のあるドメインを指定します。<parameter>add</parameter>、<parameter>edit</parameter>、<parameter>delete</parameter> には <parameter>-domain</parameter> パラメーターが必須です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-provider=</parameter>PROVIDER"
+msgstr "<parameter>-report</parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "Specifies the <acronym>LDAP</acronym> provider type of the directory server for the domain. Valid values are:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>ActiveDirectory</literal> Active Directory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>IPA</literal> - Identity, Policy, Audit."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>ITDS</literal> - <acronym>IBM</acronym> Tivoli Directory Server."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<literal>RHDS</literal> - Red Hat Directory Server."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>-user=<replaceable>USER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies the domain user to use. The <parameter>-user</parameter> parameter is mandatory for <parameter>add</parameter>, and optional for <parameter>edit</parameter>."
+msgstr "使用するドメインを指定します。<parameter>-user</parameter> パラメーターは <parameter>add</parameter> には必須です。また、<parameter>edit</parameter> には任意指定です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-passwordFile=<replaceable>FILE</replaceable></parameter>"
+msgstr "<parameter>-passwordFile=<replaceable>FILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies that the domain user's password is on the first line of the provided file. This option, or the <parameter>-interactive</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action."
+msgstr "ドメインユーザーのパスワードが、提供されたファイルの最初の行に記載されるように指定します。このオプションまたは <parameter>-interactive</parameter> オプションは、<parameter>add</parameter> のアクションで使うパスワードを提供するのに使用する必要があります。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-interactive</parameter>"
+msgstr "<parameter>-interactive</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies that the domain user's password is to be provided interactively. This option, or the <parameter>-passwordFile</parameter> option, must be used to provide the password for use with the <parameter>add</parameter> action."
+msgstr "ドメインユーザーのパスワードを対話的に入力するように指定します。このオプション、もしくは <parameter>-passwordFile</parameter> オプションは、<parameter>add</parameter> のアクションで使うパスワードを提供するのに使用する必要があります"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-configFile=<replaceable>FILE</replaceable></parameter>"
+msgstr "<parameter>-configFile=<replaceable>FILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Specifies an alternate configuration file that the command must load. The <parameter>-configFile</parameter> parameter is always optional."
+msgstr "コマンドが読み込む必要のある代わりの設定ファイルを指定します。<parameter>-configFile</parameter> パラメーターは常に任意指定です。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-report</parameter>"
+msgstr "<parameter>-report</parameter>"
+
+#. Tag: para
+#, no-c-format
+msgid "In conjunction with the <parameter>validate</parameter> action results in the output of a report of all encountered validation errors."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For full usage information consult the <command>rhevm-manage-domains</command> command's help output:"
+msgstr "一般的な使用例については、本ガイドで詳しく説明します。使用方法についての詳細情報は、<command>rhevm-config</command> コマンドのヘルプ出力を参照してください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>rhevm-manage-domains --help</command>"
+msgstr "# <command>rhevm-manage-domains --help</command>"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_Domains_to_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Edit_Domain_in_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Deleting_Domains_from_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Validating_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Listing_Domains_in_Configuration\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7865-163869+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Specifies that when performing the <parameter>validate</parameter> action all validation errors encountered will be reported in full."
+#~ msgstr "<parameter>validate</parameter> のアクションを実行する際に、発生したすべての検証エラーを完全にレポートするように指定します。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

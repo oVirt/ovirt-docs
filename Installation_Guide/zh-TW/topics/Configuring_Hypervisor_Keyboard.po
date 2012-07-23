@@ -1,0 +1,84 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:49-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Selecting Hypervisor Keyboard"
+msgstr "選擇 Hypervisor 鍵盤"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Keyboard screen allows you to configure the appropriate keyboard layout for your locale. Use the arrow keys to highlight the appropriate option. To save your selection, use <keycap> Tab</keycap> to move to <guilabel>Apply</guilabel>, and press <keycap> Enter</keycap>."
+msgstr "鍵盤畫面能讓您針對您的語言區域，配置適當的鍵盤。請使用箭頭鍵來選取適當的選項。若要儲存您的選項，請使用 <keycap>Tab</keycap> 鍵來移至「<guilabel>套用</guilabel>」，並按下 <keycap>Enter</keycap>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Keyboard Layout Configuration"
+msgstr "Kernel 格式配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Keyboard Layout Selection\n"
+"\n"
+"| Swiss German (latin1)                |\n"
+"| Slovak (qwerty)                      |\n"
+"| Slovenian                            |\n"
+"| Serbian                              |                                                                                                                                                                                                     \n"
+"| Serbian (latin)                      |\n"
+"| Swedish                              |\n"
+"| Turkish                              |\n"
+"| Ukrainian                            |\n"
+"| United Kingdom                       |\n"
+"| *** U.S. English ******************* |\n"
+"\n"
+"  &lt;Apply&gt;   &lt;Reset&gt;"
+msgstr ""
+"Keyboard Layout Selection\n"
+"\n"
+"| Swiss German (latin1)                |\n"
+"| Slovak (qwerty)                      |\n"
+"| Slovenian                            |\n"
+"| Serbian                              |                                                                                                                                                                                                     \n"
+"| Serbian (latin)                      |\n"
+"| Swedish                              |\n"
+"| Turkish                              |\n"
+"| Ukrainian                            |\n"
+"| United Kingdom                       |\n"
+"| *** U.S. English ******************* |\n"
+"\n"
+"  &lt;Apply&gt;   &lt;Reset&gt;"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7616-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,137 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 02:26-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Client Requirements"
+msgstr "Red Hat Enterprise Virtualization 認定の Linux ベースのシンクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To access the Administration Portal, you need a client with a supported web browser. The Administration Portal supports the following clients and browsers:"
+msgstr "管理ポータルにアクセスするには対応の Web ブラウザーを搭載したクライアントが必要です。管理者ポータルは、以下のクライアントとブラウザーに対応しています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Client"
+msgstr "クライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 5.8+ (i386, AMD64 and Intel 64)"
+msgstr "Red Hat Enterprise Linux 5.5 (i386、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 6.2+ (i386, AMD64 and Intel 64)"
+msgstr "Red Hat Enterprise Linux 6.0 (i386、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP,"
+msgstr "Windows XP"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 7 (x86, AMD64 and Intel 64), and"
+msgstr "Windows 7 (x86、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 2008/R2 (x86, AMD64 and Intel 64)."
+msgstr "Windows 2008/R2 (x86、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Browser"
+msgstr "ブラウザー"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Mozilla Firefox 10 and higher on Red Hat Enterprise Linux."
+msgstr "Red Hat Enterprise Linuxでは Mozilla Firefox 3.5 以降で、SPICE プラグインがインストールされていること"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Explorer 8 and higher on Windows."
+msgstr "Windows では Internet Explorer 7 以降で、SPICE ActiveX コントロールがインストールされていること"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To access the User Portal, you need a thin client with a supported web browser. The User Portal supports the following clients and browsers:"
+msgstr "ユーザーポータルにアクセスするには、対応の Web ブラウザーを搭載したシンクライアントが必要です。ユーザーポータルは、以下のクライアントとブラウザーに対応しています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP"
+msgstr "Windows XP"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP Embedded (XPe)"
+msgstr "Windows XP Embedded (XPe)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 7 (x86, AMD64 and Intel 64)"
+msgstr "Windows 7 (x86、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows Embedded Standard 7"
+msgstr "Windows Embedded Standard 7"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 2008/R2 (x86, AMD64 and Intel 64)"
+msgstr "Windows 2008/R2 (x86、AMD64、Intel 64)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows Embedded Standard 2009"
+msgstr "Windows Embedded Standard 2009"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Certified Linux-based thin clients"
+msgstr "Red Hat Enterprise Virtualization 認定の Linux ベースのシンクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Mozilla Firefox 10 and higher on Red Hat Enterprise Linux, with the SPICE plugin installed (provided by the <package>spice-xpi</package> package)."
+msgstr "Red Hat Enterprise Linuxでは Mozilla Firefox 3.5 以降で、SPICE プラグインがインストールされていること"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Explorer 8 and higher on Windows, with the SPICE ActiveX control installed."
+msgstr "Windows では Internet Explorer 7 以降で、SPICE ActiveX コントロールがインストールされていること"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7848-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Client Requirements"
+#~ msgstr "クライアント要件"
+
+#~ msgctxt ""
+#~ msgid "Internet Explorer 7 and higher on Windows, with the <acronym> .NET</acronym> Framework 4 installed."
+#~ msgstr "Windows では Internet Explorer 7 以降で、<acronym>.NET</acronym> Framework 4 がインストールされていること"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

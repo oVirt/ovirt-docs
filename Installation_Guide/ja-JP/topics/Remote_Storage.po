@@ -1,0 +1,41 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-26 09:13-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Remote Storage"
+msgstr "リモートストレージ"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The hypervisor supports the use of a remote <acronym> iSCSI</acronym> "
+"initiator for storage. The <acronym> iSCSI</acronym> initiator to use is set "
+"from the <guilabel>Remote Storage</guilabel> screen."
+msgstr ""
+"Hypervisor は、ストレージ用にリモートの <acronym>iSCSI</acronym> イニシエーターの使用をサポートしています。使用する "
+"<acronym>iSCSI</acronym> イニシエーターは、<guilabel>Remote Storage</guilabel> "
+"画面から設定します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

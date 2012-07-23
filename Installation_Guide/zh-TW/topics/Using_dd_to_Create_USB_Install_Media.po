@@ -1,0 +1,93 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 02:50-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Installation Media Using dd"
+msgstr "使用 dd 指令準備 USB 安裝媒介"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>dd</command> command can also be used to install a hypervisor onto a <acronym>USB</acronym> storage device. Media created with the command can boot the hypervisor on systems which support booting via <acronym>USB</acronym>. Red Hat Enterprise Linux provides <command>dd</command> as part of the <package> coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems."
+msgstr "<command>dd</command> 指令亦可被使用來將 hypervisor 安裝至 <acronym>USB</acronym> 儲存裝置上。透過這項指令建立的媒介，能在支援透過 <acronym>USB</acronym> 開機的系統上啟動 hypervisor。RHEL 提供了 <command>dd</command> 作為 <package>coreutils</package> 套件的一部份。不同版本的 <command>dd</command>，亦可使用在多種不同 Linux 和 Unix 作業系統上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows users are able to obtain the <command>dd</command> command through installation of <application>Red Hat Cygwin</application>, a free Linux-like environment for Windows."
+msgstr "Windows 使用者可以安裝 <application>Red Hat Cygwin</application>：在 Windows 上執行的免費類 Linux 介面，以取得 <command>dd</command> 指令。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The basic <command>dd</command> command usage follows this structure:"
+msgstr "基本的 <command>dd</command> 指令使用方法如下："
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"# dd if=<replaceable>image</replaceable> of=<replaceable>device</replaceable>\n"
+"    "
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the <parameter>device</parameter> parameter is the device name of the <acronym> USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image."
+msgstr "<parameter>device</parameter> 參數代表欲安裝至的 <acronym>USB</acronym> 儲存裝置的裝置名稱。<parameter>image</parameter> 參數為 hypervisor 的 ISO 映像檔。Hypervisor 映像檔的預設位置為 <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>。<command>dd</command> 指令不會假定裝置的格式，因為它會在所選擇的映像檔中，進行一項原生資料的低階複製程序。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Linux_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Windows_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7854-164522+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: screen
+#~ msgctxt ""
+#~ msgid ""
+#~ "# dd if=<systemitem>image</systemitem> of=<systemitem>device</systemitem>\n"
+#~ "    "
+#~ msgstr ""
+#~ "# dd if=<systemitem>image</systemitem> of=<systemitem>device</systemitem>\n"
+#~ "    "
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

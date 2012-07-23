@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="To_add_or_edit_a_logical_network_to_hosts_in_a_cluster" remap="TID_7332">
+	<title>Adding or editing a logical network to hosts in a cluster</title>
+	<orderedlist>
+		<!-- id="add-network-to-hosts">-->
+		<listitem>
+			<para>
+				From the <guilabel>Tree</guilabel> pane, select the required cluster. The <guilabel>Hosts</guilabel> tab displays a list of available hosts.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				For each of your installed hosts, place the host into Maintenance mode and on the Details pane, select the <guilabel>Network Interfaces</guilabel> tab.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				A list of network interfaces available for this host displays. One of them will already have the management network (rhevm) configured.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Select the network interface to attach the newly added network and click the <guibutton>Edit/ Add</guibutton> button. The <guilabel>Edit Network Interface</guilabel> dialog box displays.
+			</para>
+			<figure id="edit-network-interface">
+				<title>Edit network interface</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/edit-network-interface.png" format="PNG"/>
+					</imageobject>
+				</mediaobject>
+			</figure>
+			<para>
+				Enter the new (or additional) <guilabel>Network Name</guilabel>. Select one of <guilabel>None</guilabel>, <guilabel>DHCP</guilabel>, <guilabel>Static</guilabel> radio buttons.
+			</para>
+			<para>
+				For <guilabel>Static</guilabel> enter the <guilabel>IP</guilabel> and <guilabel>Subnet Mask</guilabel> and <guilabel>Default Gateway</guilabel>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Select the <guilabel>Check Connectivity</guilabel> check box to run a network check, provided the host is in Maintenance mode.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Select the <guilabel>Save network configuration</guilabel> check box and click <guibutton>Close</guibutton>.
+			</para>
+		</listitem>
+	</orderedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7332-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

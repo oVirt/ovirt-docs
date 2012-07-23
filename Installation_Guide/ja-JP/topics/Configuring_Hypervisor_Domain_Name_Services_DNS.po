@@ -1,0 +1,54 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 11:33-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Domain Name Services (DNS)"
+msgstr "Hypervisor のドメインネームシステム (DNS: Domain Name System) の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Hypervisor supports the specification of one or more Domain Name Services (<acronym>DNS</acronym>) servers. These servers will be used when resolving host and domain names"
+msgstr "Hypervisor は、ホスト名およびドメイン名の解決に一つまたは複数のドメインネームシステム (Domain Name System (<acronym>DNS</acronym>) サーバーの仕様に対応します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To set or change the primary <acronym>DNS</acronym> server select the <guilabel>DNS Server 1</guilabel> field and enter the <acronym>IP</acronym> address of the new primary <acronym>DNS</acronym> server to use."
+msgstr "プライマリ <acronym>DNS</acronym> サーバーを設定もしくは変更するには、<guilabel>DNS サーバー 1</guilabel> フィールドを選択し、使用する新規 <acronym>DNS</acronym> サーバーの<acronym>IP</acronym> アドレスを入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To set or change the secondary <acronym>DNS</acronym> server select the <guilabel>DNS Server 2</guilabel> field and enter the IP address of the new secondary <acronym>DNS</acronym> server to use."
+msgstr "セカンダリ <acronym>DNS</acronym> サーバーを設定もしくは変更するには、<guilabel>DNS サーバー 2</guilabel> フィールドを選択して、使用する新規 <acronym>DNS</acronym> サーバーの IP アドレスを入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select <guibutton>&lt;Apply&gt;</guibutton>, and press <keycap>Enter</keycap> to save changes to the <acronym>DNS</acronym> configuration."
+msgstr "<guibutton>&lt;適用&gt;</guibutton> を選択して <keycap>Enter</keycap> を押し、<acronym>DNS</acronym> 設定の変更を保存します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The primary and secondary <acronym>DNS</acronym> servers queried by the Hypervisor are updated."
+msgstr "Hypervisor によるクエリの対象となるプライマリおよびセカンダリの <acronym>DNS</acronym> サーバーが更新されます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7613-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

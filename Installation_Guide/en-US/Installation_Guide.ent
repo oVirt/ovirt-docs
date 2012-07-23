@@ -1,4 +1,8 @@
-<!ENTITY PRODUCT "oVirt">
-<!ENTITY BOOKID "Red_Hat_Enterprise_Virtualization-Installation_Guide">
+<!ENTITY PRODUCT "Red Hat Enterprise Virtualization">
+<!ENTITY BOOKID "Installation_Guide">
 <!ENTITY YEAR "2012">
-<!ENTITY HOLDER "oVirt Project">
+<!ENTITY TITLE "Installation Guide">
+<!ENTITY HOLDER "Red Hat, Inc">
+<!ENTITY BZURL "https://bugzilla.redhat.com/">
+<!ENTITY BZCOMPONENT "Guides-Install">
+<!ENTITY BZPRODUCT "Red Hat Enterprise Virtualization Manager">

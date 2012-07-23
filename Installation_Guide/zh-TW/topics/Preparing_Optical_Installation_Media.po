@@ -1,0 +1,136 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:22-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing Optical Hypervisor Installation Media"
+msgstr "準備光碟安裝媒介"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Burn the hypervisor image to a CD-ROM with the <command>wodim</command> command. The <command>wodim</command> command is part of the <package> wodim</package> package."
+msgstr "請透過 <command>wodim</command> 指令來將 hypervisor 的映像檔燒入至光碟中。<command>wodim</command> 指令乃 <package> wodim </package> 套件的一部分。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Verify that the <package> wodim</package> package is installed on the system."
+msgstr "驗證 <package> wodim </package> 套件是否已安裝在系統上。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Verify Installation of <package>wodim</package> Package"
+msgstr "驗證 <package>wodim</package> 套件是否已安裝"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"# rpm -q wodim\n"
+"wodim-1.1.9-11.el6.x86_64\n"
+msgstr ""
+"# rpm -q wodim\n"
+"wodim-1.1.9-11.el6.x86_64\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the package version is in the output the package is available."
+msgstr "若輸出中出現了套件的版本，該套件便可使用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If nothing is listed, install <package> wodim</package>:"
+msgstr "若未列出任何項目，請安裝 <package> wodim </package>："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# yum install wodim\n"
+msgstr "# yum install wodim\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert a blank CD-ROM or DVD into your CD or DVD writer."
+msgstr "將空白 CD/DVD 插入光碟燒錄機中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Record the ISO file to the disc. The <package> wodim</package> command uses the following:"
+msgstr "將 ISO 檔案燒錄至光碟中。<package> wodim </package> 指令格式如下："
+
+#. Tag: screen
+#, no-c-format
+msgid "wodim dev=<replaceable>device</replaceable> <replaceable>image</replaceable>"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This example uses the first CD-RW (<systemitem>/dev/cdrw</systemitem>) device available and the default hypervisor image location, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>."
+msgstr "此範例使用了第一個可用的 CD-RW（<systemitem>/dev/cdrw</systemitem>）裝置，以及預設的 hypervisor 映像檔位置 <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Use of <command>wodim</command> Command"
+msgstr "<command>wodim</command> 指令的使用方法"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# wodim dev=/dev/cdrw /usr/share/rhev-hypervisor/rhev-hypervisor.iso\n"
+msgstr "# wodim dev=/dev/cdrw /usr/share/rhev-hypervisor/rhev-hypervisor.iso\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If no errors occurred, the hypervisor is ready to boot. Errors sometimes occur during the recording process due to errors on the media itself. If this occurs insert another writable disk and repeat the command above."
+msgstr "若沒有錯誤發生的話，hypervisor 便以準備好啟動了。基於媒介本身的問題，錯誤有時會在記錄程序進行時發生。若此情況發生，請插入另一片可寫入的光碟，並重複以上指令。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor uses a program (<command>isomd5sum</command>) to verify the integrity of the installation media every time the hypervisor is booted. If media errors are reported in the boot sequence you have a bad CD-ROM. Follow the procedure above to create a new CD-ROM or DVD."
+msgstr "每當 hypervisor 啟動時，它便會使用一個程式（<command>isomd5sum</command>）來驗證安裝媒介的完整性。若在進行開機序列時回報了媒介上的錯誤，即代表您的光碟有問題。請依照上述程序重新建立一片 CD 或 DVD 光碟。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7531-164528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: screen
+#~ msgctxt ""
+#~ msgid "wodim <parameter>dev=device /iso/file/path/</parameter>\n"
+#~ msgstr "wodim <parameter>dev=device /iso/file/path/</parameter>\n"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

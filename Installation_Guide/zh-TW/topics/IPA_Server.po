@@ -1,0 +1,89 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-24 10:13-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "IPA Server"
+msgstr "IPA Server"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<acronym>IPA</acronym> is an integrated security information management "
+"solution which combines Red Hat Enterprise Linux, Red Hat Directory Server, "
+"<acronym>MIT</acronym> Kerberos, and <acronym>NTP</acronym>. It provides web "
+"browser and command-line interfaces, and its numerous administration tools "
+"allow an administrator to quickly install, set up, and administer one or "
+"more servers for centralized authentication and identity management."
+msgstr ""
+"<acronym>IPA</acronym> 是個合併了 Red Hat Enterprise Linux（RHEL）、Red Hat "
+"Directory Server、<acronym>MIT</acronym> Kerberos，以及 <acronym>NTP</acronym> "
+"的整合式安全性資訊管理解決方案。它提供了網站瀏覽器以及指令列介面，並且其多數管理工具能讓管理員快速的安裝、設定，及管理一或更多部伺服器，以進行中央化的管理，以及身任管理。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The latest version of <acronym>IPA</acronym> extends the integration of "
+"<acronym>DNS</acronym>, includes a Certificate System Server, an enhanced "
+"administrative framework, support for host identities, netgroups, automount "
+"by location and other features."
+msgstr ""
+"最新版本的 <acronym>IPA</acronym> 延伸了 <acronym>DNS</acronym> 的整合性，並包含了一個 "
+"Certificate System Server（憑證系統伺服器）、強化的管理框架、支援主機身份辨識、網路群組、自動掛載以及其它功能。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "安裝"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<acronym>IPA</acronym> focuses on making centralized identity and policy "
+"easy to manage in Linux and Unix environments, and includes compatibility "
+"with Windows environments. If you need assistance installing or configuring "
+"<acronym>IPA</acronym>, see the <citetitle>Red Hat Enterprise Linux — "
+"Enterprise Identity Management Guide</citetitle>."
+msgstr ""
+"<acronym>IPA</acronym> 專注於簡化 Linux 與 Unix 環境中的中央化身份辨識與政策，並且包含了與 Windows "
+"環境的相容性。若您需要 <acronym>IPA</acronym> 安裝與配置上的相關協助，請參閱《<citetitle>Red Hat "
+"Enterprise Linux — 企業身份辨識管理指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

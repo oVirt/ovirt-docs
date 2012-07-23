@@ -1,0 +1,686 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-25 01:27-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Preparing a Red Hat Enterprise Linux Host"
+msgstr "準備 RHEL 主機"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To ensure a smooth and successful integration of Red Hat Enterprise Linux "
+"Hosts and Red Hat Enterprise Virtualization platform, prepare the host "
+"carefully according to the instructions in this section."
+msgstr "要順暢、成功地整合 RHEL 主機與 RHEV 平台，請根據本節的指示，細心地準備主機。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Directions:"
+msgstr "指示："
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Install Red Hat Enterprise Linux"
+msgstr "安裝 RHEL 主機"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Ensure that Red Hat Enterprise Linux is correctly installed and configured "
+"on the physical host. Refer to the <citetitle>Red Hat Enterprise Linux "
+"Installation Guide</citetitle> for more information. Only the Base package "
+"group is required. All other packages can be removed or not selected."
+msgstr ""
+"請確定 RHEL 已經正確安裝、配置於實體主機上。詳情請參閱《<citetitle>Red Hat Enterprise Linux 安裝指南</"
+"citetitle>》。您只需要安裝基本套件組，並移除或不選取其它套件。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Important — Provide Access to Authentication Files"
+msgstr "重要 — 提供認證檔案的存取檔"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you are using proprietary directory services or standard directory "
+"services with no access to authentication files for user management, the "
+"<systemitem class=\"daemon\"> vdsm</systemitem> package will fail to create "
+"the required system user. The authentication files required by the "
+"<command>useradd</command> command must be accessible to the installer. Red "
+"Hat Directory Server ( <application> RHDS</application>) recommends a "
+"security policy with a mixture of local files and <application> LDAP</"
+"application>. Following this recommendation will resolve this issue."
+msgstr ""
+"如果您使用的是擁有非開放式專利的目錄服務，或是無法存取授權檔以管理用戶的標準目錄服務，<systemitem class="
+"\"daemon\">vdsm</systemitem> 套件就無法建立所需的系統使用者。<command>useradd</command> "
+"指令所需的授權檔案必須可以由安裝程式所存取。<application>RHDS</application>（Red Hat Directory "
+"Server，Red Hat 目錄伺服器）建議使用混和了本機檔案與 <application>LDAP</application> "
+"的安全政策。請遵循本建議以解決這問題。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Note — DNS Configuration"
+msgstr "注意 — DNS 配置"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"It is recommended that all Red Hat Enterprise Linux hosts have a fully "
+"resolvable network address. This includes having valid forward and reverse "
+"lookups for each host's address available in <acronym> DNS</acronym>."
+msgstr ""
+"建議所有的 RHEL 主機都有可解析的網路位址。這包括<acronym>DNS</acronym> 主機上擁有每台主機合於規定、可正反向搜尋的網址。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Configure <systemitem>VLANs</systemitem>"
+msgstr "配置 <systemitem>VLAN</systemitem>"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you are using VLAN, ensure that <systemitem> VLANs</systemitem> are "
+"configured for access to the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+"如果您使用了 VLAN，請確定<systemitem>VLANs</systemitem> 已配置正確，可以存取 RHEV Manager。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Check Red Hat Network Subscriptions"
+msgstr "檢查 Red Hat Network 的訂閱狀態"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Ensure the host is correctly subscribed to the <literal>Red Hat Enterprise "
+"Virt Management Agent (v 6 x86_64)</literal> channel in Red Hat Network, "
+"also referred to as <systemitem> rhel-x86_64-rhev-mgmt-agent-6</systemitem>, "
+"on Red Hat Network. If you do not have the appropriate subscription "
+"entitlements, contact Red Hat Customer Service."
+msgstr ""
+"請確定主機已正確訂閱 RHN 的「<literal>Red Hat Enterprise Virt Management Agent (v 6 "
+"x86_64)</literal>」頻道，亦即 RHN 上的 <systemitem>rhel-x86_64-rhev-mgmt-agent-6</"
+"systemitem>。如果您沒有正確的訂閱權利，請聯絡 Red Hat 的客服人員。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If the machine has not already been registered with Red Hat Network, run the "
+"<command>rhn_register</command> command as <systemitem> root</systemitem> to "
+"register it. To complete registration successfully you will need to supply "
+"your Red Hat Network username and password. Follow the onscreen prompts to "
+"complete registration of the system."
+msgstr ""
+"若您的伺服器尚未向 RHN 註冊的話，請以 <literal>root</literal> 身份執行 <command>rhn_register</"
+"command> 指令，以註冊該伺服器。若要成功完成註冊程序，您將需要提供您的 RHN 使用者名稱及密碼。請依照畫面上的提示進行，以完成系統註冊程序。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# rhn_register"
+msgstr "# rhn_register"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You must now add a subscription to the <literal>Red Hat Enterprise Virt "
+"Management Agent (v 6 x86_64)</literal> channel to the machine. To add the "
+"channel subscription to the system from the Red Hat Network web interface:"
+msgstr ""
+"您必須新增訂閱服務至「<literal>Red Hat Enterprise Virt Management Agent (v 6 x86_64)</"
+"literal>」頻道至機器上。要從 RHN 的網站介面新增頻道訂閱服務至機器上："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr "登入 Red Hat Network（<ulink url=\"http://rhn.redhat.com\" />）。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Click <guilabel>Systems</guilabel> at the top of the page."
+msgstr "點選頁面上方的「<guilabel>系統</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the system to which you are adding channels from the list presented "
+"on the screen, by clicking the name of the system."
+msgstr "按下系統名稱，從螢幕清單上選擇您想要新增至系統上的頻道。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click <guilabel>Alter Channel Subscriptions</guilabel> in the "
+"<guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr "點選螢幕上「<guilabel>已訂閱頻道</guilabel>」的「<guilabel>修改頻道訂閱</guilabel>」一節。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the <literal>Red Hat Enterprise Virt Management Agent (v 6 x86_64)</"
+"literal> channel from the list presented on the screen, then click the "
+"<guilabel>Change Subscription</guilabel> button to finalize the change."
+msgstr ""
+"從螢幕上的清單選擇「<literal>Red Hat Enterprise Virt Management Agent (v 6 x86_64)</"
+"literal>」頻道，然後點選「<guilabel>變更訂閱</guilabel>」按鈕，完成變更。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Open firewall ports"
+msgstr "開啟防火牆連接埠"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization platform uses a number of network ports "
+"for management and other virtualization features."
+msgstr "RHEV 平台使用多個網路連接埠，以進行管理與其它虛擬化功能。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The following steps configure <command>iptables</command> to open the "
+"required ports. These steps replace any existing firewall configuration with "
+"that required for Red Hat Enterprise Virtualization Manager. If you have "
+"existing firewall rules with which this configuration must be merged then "
+"you must manually edit the rules defined in the <command>iptables</command> "
+"configuration file, <filename>/etc/sysconfig/iptables</filename>."
+msgstr ""
+"以下步驟會配置 <command>iptables</command> 以開啟所需連接埠。這些步驟會取代任何現有的防火牆配置，包括 RHEV "
+"Manager 所需的配置。如果您有任何需要合併的規則，請手動編輯 <command>iptables</command> 配置檔 <filename>/"
+"etc/sysconfig/iptables</filename>。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Remove and existing firewall rules."
+msgstr "移除現有的防火牆規則。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# iptables --flush"
+msgstr "# iptables --flush"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Add the ports required by Red Hat Enterprise Virtualization Manager to the "
+"<command>iptables</command> rules."
+msgstr "新增 RHEV Manager 所需的連接埠至 <command>iptables</command> 規則中。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"# iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n"
+"# iptables --append INPUT -p icmp -j ACCEPT\n"
+"# iptables --append INPUT -i lo -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 22 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT\n"
+"# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited\n"
+"# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --"
+"reject-with icmp-host-prohibited\n"
+"            "
+msgstr ""
+"\n"
+"# iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n"
+"# iptables --append INPUT -p icmp -j ACCEPT\n"
+"# iptables --append INPUT -i lo -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 22 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT\n"
+"# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT\n"
+"# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited\n"
+"# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --"
+"reject-with icmp-host-prohibited\n"
+"            "
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The provided <command>iptables</command> commands add firewall rules to "
+"accept network traffic on a number of ports. These include:"
+msgstr "上述 <command>iptables</command> 指令會新增防火牆規則，以接受數個連接埠的網路交通。包括："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"port <systemitem class=\"protocol\"> 22</systemitem> for <application> SSH</"
+"application>,"
+msgstr ""
+"連接埠 <systemitem class=\"protocol\">22</systemitem>：<application>SSH</"
+"application>、"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"ports <systemitem class=\"protocol\"> 5634</systemitem> to <systemitem class="
+"\"protocol\"> 6166</systemitem> for guest console connections,"
+msgstr ""
+"連接埠 <systemitem class=\"protocol\">5634</systemitem> 至 <systemitem class="
+"\"protocol\">6166</systemitem>：客座端主控台連線、"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"port <systemitem class=\"protocol\"> 16514</systemitem> for <application> "
+"libvirt</application> virtual machine migration traffic,"
+msgstr ""
+"連接埠 <systemitem class=\"protocol\">16514</systemitem>：<application>libvirt</"
+"application> 遷移虛擬機器、"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"ports <systemitem class=\"protocol\"> 49152</systemitem> to <systemitem "
+"class=\"protocol\"> 49216</systemitem> for <acronym> VDSM</acronym> virtual "
+"machine migration traffic, and"
+msgstr ""
+"連接埠 <systemitem class=\"protocol\">49152</systemitem> 至 <systemitem class="
+"\"protocol\">49216</systemitem>：<acronym>VDSM</acronym> 遷移虛擬機器、以及"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"port <systemitem class=\"protocol\"> 54321</systemitem> for the Red Hat "
+"Enterprise Virtualization Manager."
+msgstr "連接埠 <systemitem class=\"protocol\">54321</systemitem>：RHEV Manager。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Save the modified rules."
+msgstr "儲存修改後的規則。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# service iptables save"
+msgstr "# service iptables save"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Ensure that the <command>iptables</command> service is configured to start "
+"on boot and has been restarted, or started for the first time if it wasn't "
+"already running."
+msgstr ""
+"確定 <command>iptables</command> 服務在開機時會自動啟動，並重新啟動服務（如果服務目前並不處於啟動狀態，則會啟動之）。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "\n"
+"# chkconfig iptables on\n"
+"# service iptables restart\n"
+msgstr "\n"
+"# chkconfig iptables on\n"
+"# service iptables restart\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Configure <command>sudo</command> access"
+msgstr "配置 <command>sudo</command> 存取權限"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization Manager makes use of <application> "
+"sudo</application> to perform operations as <systemitem class=\"username\"> "
+"root</systemitem> on the host. The default configuration stored in "
+"<filename>/etc/sudoers</filename> contains values to allow this. If this "
+"file has been modified since Red Had Enterprise Linux installation these "
+"values may have been removed. As <systemitem class=\"username\"> root</"
+"systemitem> run <application> visudo</application> to ensure that the "
+"<filename>/etc/sudoers</filename> contains the default configuration values. "
+"Where it does not they must be added."
+msgstr ""
+"RHEV Manager 善用了 <application>sudo</application> 來進行 <systemitem class="
+"\"username\">root</systemitem> 方能執行的操作。儲存於 <filename>/etc/sudoers</filename> "
+"檔案裡的預設配置包含了此項操作。如果安裝 RHEL 時修改過這個檔案，這些值有可能會被移除。請以 <systemitem class="
+"\"username\">root</systemitem> 執行 <application>visudo</application>，來確保 "
+"<filename>/etc/sudoers</filename> 檔案裡包含了預設的配置值。如果預設值不存在，請手動加入這些值。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "\n"
+"# Allow root to run any commands anywhere \n"
+"root    ALL=(ALL)   ALL\n"
+msgstr "\n"
+"# Allow root to run any commands anywhere \n"
+"root    ALL=(ALL)   ALL\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Enable SSH access for root"
+msgstr "為 root 啟用 SSH 存取功能"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization management daemon accesses host "
+"machines via SSH. To do this it logs in as <systemitem class=\"username\"> "
+"root</systemitem> with an encrypted key for authentication. To ensure that "
+"SSH is configured and <systemitem class=\"username\"> root</systemitem> is "
+"able to use it to access the system follow these additional steps."
+msgstr ""
+"RHEV 管理 daemon 透過 SSH 存取主機電腦。它會以 <systemitem class=\"username\">root</"
+"systemitem> 身份，以加密金鑰登入。要確定 SSH 已經配置妥當，同時 <systemitem class="
+"\"username\">root</systemitem> 能透過 SSH 存取系統，請遵循以下步驟。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The first time the Red Hat Enterprise Virtualization Manager is connected to "
+"the host it will install an authentication key. In the process it will "
+"overwrite any existing keys which exist in <filename>/root/.ssh/"
+"authorized_keys</filename>."
+msgstr ""
+"RHEV Manager 第一次連上主機時，它會安裝身份認證金鑰。在這過程中，它會覆寫任何 <filename>/root/.ssh/"
+"authorized_keys</filename> 檔案中的現有金鑰。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"These steps assume that the <package> openssh-server </package> package is "
+"installed on the system. Where the package is not present use <application> "
+"yum</application> to install it."
+msgstr ""
+"這些步驟假設 <package>openssh-server</package> 套件已經安裝於系統上。如果此套件不存在，請使用 "
+"<application>yum</application> 安裝。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# yum install openssh-server"
+msgstr "# yum install openssh-server"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Use <command>chkconfig</command> to verify which run-levels SSH is enabled "
+"at."
+msgstr "請使用 <command>chkconfig</command> 來驗證 SSH 會在哪些 run-level 下啟用。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"# chkconfig --list sshd\n"
+"sshd            0:off   1:off   2:on    3:on    4:on    5:on    6:off\n"
+msgstr "\n"
+"# chkconfig --list sshd\n"
+"sshd\t\t\t0:關閉\t1:關閉\t2:開啟\t3:開啟\t4:開啟\t5:開啟\t6:關閉\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"It is expected that the SSH daemon shows as <literal>on</literal> for run-"
+"levels <literal>3</literal>, <literal>4</literal>, and <literal>5</literal>. "
+"This is the default configuration."
+msgstr ""
+"SSH daemon 應該在 run-level <literal>3</literal>、<literal>4</"
+"literal>、<literal>5</literal> 顯示為<literal>開啟</literal>。這是預設的配置。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If the configuration on the host differs use <command>chkconfig</command> to "
+"enable it for the required run-levels. The <command>/etc/init.d/sshd</"
+"command> script can then be used to ensure the service is currently started."
+msgstr ""
+"如果主機上的配置不同，請使用 <command>chkconfig</command> 來啟用 SSH，使其在所需的 run-level "
+"上執行。<command>/etc/init.d/sshd</command> script 可以用來確認系統執行了 SSH 服務。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "\n"
+"# chkconfig --level 345 sshd on\n"
+"# /etc/init.d/sshd start\n"
+msgstr "\n"
+"# chkconfig --level 345 sshd on\n"
+"# /etc/init.d/sshd start\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To verify this operation as successful run <command>chkconfig --list sshd</"
+"command> again and check the output. It should now show the daemon as "
+"<literal>on</literal> at run-level <literal>3</literal>, <literal>4</"
+"literal>, and <literal>5</literal>."
+msgstr ""
+"要驗證這項操作是否正確，請再次執行 <command>chkconfig --list sshd</command>，檢查螢幕上的輸出資訊。現在應該顯示 "
+"run-level <literal>3</literal>、<literal>4</literal> 與 <literal>5</literal> "
+"都是<literal>開啟</literal>的。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"In Red Hat Enterprise Linux the default SSH daemon configuration allows "
+"remote login by the <systemitem class=\"username\"> root</systemitem> user. "
+"This is also a requirement for the Red Hat Enterprise Virtualization Manager "
+"to successfully access the machine. In some cases administrator's may have "
+"disabled this ability."
+msgstr ""
+"在 RHEL 裡面，預設的 SSH daemon 配置能讓 <systemitem class=\"username\">root</"
+"systemitem> 使用者遠端登入。這也是 RHEV Manager 能成功存取電腦的條件。在某些情況下，管理者可能已經關閉了這功能。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To check whether or not this is the case search the <filename>/etc/ssh/"
+"sshd_config</filename> for the value <literal>PermitRootLogin</literal>. "
+"This must be done while logged in as <systemitem class=\"username\"> root</"
+"systemitem>."
+msgstr ""
+"要檢查 root 是否可以遠端登入，請搜尋 <filename>/etc/ssh/sshd_config</filename>，尋找 "
+"<literal>PermitRootLogin</literal>。請以 <systemitem class=\"username\">root</"
+"systemitem> 身份進行這項搜索。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "\n"
+"# grep PermitRootLogin /etc/ssh/sshd_config\n"
+"PermitRootLogin no\n"
+msgstr "\n"
+"# grep PermitRootLogin /etc/ssh/sshd_config\n"
+"PermitRootLogin no\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Where <systemitem> PermitRootLogin</systemitem> is set to <literal>no</"
+"literal> the value must be changed to <literal>yes</literal>. To do this "
+"edit the configuration file."
+msgstr ""
+"如果 <systemitem>PermitRootLogin</systemitem> 設為 <literal>no</literal>的 "
+"話，請將其改變為 <literal>yes</literal>。請直接編輯此配置檔即可。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "\n"
+"# vi /etc/ssh/sshd_config\n"
+msgstr "\n"
+"# vi /etc/ssh/sshd_config\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Once the updated configuration file has been saved the SSH daemon must be "
+"told to reload it."
+msgstr "更新並儲存配置檔之後，您必須重新啟動 SSH daemon。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"# /etc/init.d/sshd reload\n"
+"Reloading sshd:                                            [  OK  ]\n"
+msgstr ""
+"\n"
+"# /etc/init.d/sshd reload\n"
+"正在重新載入 sshd:                                            [  確定  ]\n"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The <systemitem class=\"username\"> root</systemitem> user should now be "
+"able to access the system via SSH."
+msgstr "現在 <systemitem class=\"username\">root</systemitem> 使用者可以透過 SSH 存取系統。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You can now add the correctly installed and configured Red Hat Enterprise "
+"Linux host to the Red Hat Enterprise Virtualization platform."
+msgstr "您現在可以新增已正確安裝、配置的 RHEL 主機到 RHEV 平台上。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

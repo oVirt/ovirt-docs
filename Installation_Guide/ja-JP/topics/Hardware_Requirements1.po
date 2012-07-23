@@ -1,0 +1,64 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 11:37-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hardware Requirements Overview"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This section outlines the minimum hardware required to install, configure, and operate a Red Hat Enterprise Virtualization environment. To setup a Red Hat Enterprise Virtualization environment it is necessary to have, at least:"
+msgstr "本章では、Red Hat Enterprise Virtualization 環境のインストール、設定、操作に最低必要とされるハードウェアについて簡単に説明しています。Red Hat Enterprise Virtualization 環境をセットアップするには少なくとも以下が必要となります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one machine to act as the management server,"
+msgstr "管理サーバーとして動作するマシンが 1 台"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one or more machines to act as virtualization hosts - at least two are required to support migration and power management,"
+msgstr "仮想化ホストとして動作するマシンが 1 台以上、移行および電源管理に対応させる場合は少なくとも 2 台必要"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one or more machines to use as clients for accessing the Administration Portal."
+msgstr "管理ポータルにアクセスするためにクライアントとして使用するマシンが 1 台以上"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "storage infrastructure provided by <acronym>NFS</acronym>, <acronym> iSCSI</acronym>, <acronym> SAN</acronym>, or local storage."
+msgstr "<acronym>NFS</acronym> または <acronym>iSCSI</acronym>、 <acronym>SAN</acronym>、ローカルのストレージのいずれかによるストレージインフラストラクチャー"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hardware required for each of these systems is further outlined in the following sections. The Red Hat Enterprise Virtualization environment also requires storage infrastructure that is accessible to the virtualization hosts. Storage infrastructure must be accessible using <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FC</acronym>, or locally attached to virtualization hosts. The use of other <acronym>POSIX</acronym> compliant filesystems is also supported."
+msgstr "各システムに必要なハードウェアについては次章で説明します。また、Red Hat Enterprise Virtualization 環境には仮想化ホストにアクセス可能なストレージのインフラストラクチャーも必要になります。ストレージのインフラストラクチャーは <acronym>NFS</acronym> または <acronym>iSCSI</acronym>、<acronym>FC</acronym>、仮想化ホストにローカルでアタッチしているストレージのいずれかでアクセスできなければなりません。 "
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7840-163897+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Hardware Requirements"
+#~ msgstr "ハードウェア要件"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

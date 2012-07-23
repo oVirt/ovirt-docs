@@ -1,0 +1,79 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-02 08:02-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Prerequisites for Setting up a Data Center"
+msgstr "データセンター設定の前提条件"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Before you create a new data center, prepare the following resources. The "
+"following tasks must be done at the host level, not from the Red Hat "
+"Enterprise Virtualization platform."
+msgstr ""
+"新規のデータセンターを作成する前に、次のリソースを準備してください。以下の作業は Red Hat Enterprise Virtualization "
+"プラットフォームからではなく、ホストレベルで行う必要があります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Setup and configure hosts. A host can be a Red Hat Enterprise Virtualization "
+"Hypervisor or a Red Hat Enterprise Linux host. A cluster needs a minimum of "
+"one host, and at least one active host is required to connect the system to "
+"a storage pool."
+msgstr ""
+"ホストのセットアップと設定を行います。ホストには Red Hat Enterprise Virtualization Hypervisor または "
+"Red Hat Enterprise Linux ホストのどちらかを使用することができます。クラスターにはホストが少なくとも 1 "
+"台必要です。また、システムをストレージプールに接続するためには、アクティブなホストが少なくとも 1 台必要となります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Setup, configure and define storage. It is recommended that data centers "
+"have a minimum of two storage domains, one to store disk images of the "
+"virtual machines and one to store ISO images. Set up the storage domains of "
+"the type required for the data center; NFS, iSCSI, FCP or Local. For "
+"example, for an NFS data center, create and mount the export directories."
+msgstr ""
+"ストレージのセットアップ、設定、定義を行います。データセンターには最低でも 2 "
+"つのストレージドメインを使用して、一方には仮想マシンのディスクイメージを格納し、もう一方には ISO "
+"イメージを格納することを推奨します。データセンターに必要なタイプ (NFS、iSCSI、FCP、またはローカル) "
+"のストレージドメインをセットアップします。たとえば、NFS データセンターには、エクスポートディレクトリを作成してマウントします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Set up logical networks for the data center, cluster and the hosts. It is "
+"recommended that you have the IP addresses/domain names available for "
+"reference."
+msgstr ""
+"データセンター、クラスタおよびホストの論理ネットワークをセットアップします。IP "
+"アドレスまたはドメイン名を参照できるように手元に用意しておくことを推奨します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Data_Collection_Setup_and_Reports_Installation" remap="TID_8654">
+	<title>Data Collection Setup and Reports Installation Overview</title>
+	<para>
+		The Red Hat Enterprise Virtualization Manager optionally includes a comprehensive management history database, which can be utilized by any application to extract a range of information at the data center, cluster, and host levels. As the database structure changes over time a number of database views are also included to provide a consistent structure to consuming applications. A view is a virtual table composed of the result set of a database query. The definition of a view is stored in the database as a <literal>SELECT</literal> statement. The result set of the <literal>SELECT</literal> statement populates the virtual table returned by the view. If the optional comprehensive management history database has been enabled, the history tables and their associated views are stored in the <systemitem>rhevm_history</systemitem> database.
+	</para>
+	<para>
+		In addition to the history database Red Hat Enterprise Virtualization Manager Reports functionality is also available as an optional component. Red Hat Enterprise Virtualization Manager Reports provides a customized implementation of JasperServer, and JasperReports. JasperServer is a component of JasperReports, an open source reporting tool capable of being embedded in Java-based applications. It produces reports which can be rendered to screen, printed, or exported to a variety of formats including <acronym> PDF</acronym>, Excel, <acronym> CSV</acronym>, Word, <acronym> RTF</acronym>, Flash, <acronym> ODT</acronym> and <acronym> ODS</acronym>. Reports built in Red Hat Enterprise Virtualization Manager Reports are accessed via a web interface. In addition to a range of pre-configured reports and dashboards for monitoring the system, you are also able to create your own ad hoc reports.
+	</para>
+	<para>
+		Before proceeding with Red Hat Virtualization Manager Reports installation you must first have installed the Red Hat Enterprise Virtualization Manager 
+		<!--, as described in <xref linkend="chap-Installation_Guide-Installing_the_RHEV_Manager-Manager" />-->.
+	</para>
+	<!--
+    <mediaobject>
+        <imageobject>
+            <imagedata fileref="images/808.png" />
+        </imageobject>
+    </mediaobject>-->
+	<para>
+		The Red Hat Enterprise Virtualization Manager Reports functionality depends on the presence of the history database, which is installed separately. Both the history database and the Red Hat Enterprise Virtualization Manager Reports are optional components. They are not installed by default when you install the Red Hat Enterprise Virtualization Manager.
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				To install and configure the <systemitem>rhevm_history</systemitem> database, see 
+				<!--<xref linkend="proc-Installation_Guide-Installing_the_RHEV_Manager-Reports-Install_and_Configure_History_Database" />-->.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				To install and configure the Red Hat Enterprise Virtualization Manager Reports, see 
+				<!--<xref linkend="proc-Installation_Guide-Installing_the_RHEV_Manager-Reports-Install_and_Configure_JasperReports" />-->. You must ensure that you have installed, and configured, the <systemitem>rhevm_history</systemitem> database prior to installing JasperReports.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8654-162351+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Attaching_NFS_Storage" remap="TID_7540">
+	<title>Attaching NFS Storage</title>
+	<para>
+		An NFS type <guilabel>Storage Domain</guilabel> is a mounted NFS share that is attached to a Data Center. It is used to provide storage for virtualized guest images and ISO boot media. Once <acronym>NFS</acronym> storage has been exported it must be attached to the Red Hat Enterprise Virtualization Manager, using the Administration Portal.
+	</para>
+	<para><acronym>NFS</acronym> data, or export, storage domains can be added to <acronym>NFS</acronym> data center. You can add <acronym>NFS</acronym> <acronym>ISO</acronym> storage domains to data centers of any type.
+	</para>
+	<procedure>
+		<step>
+			<para>
+				Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>New Domain</guilabel>.
+			</para>
+		</step>
+		<!--
+                <step>
+                    <para>
+                        The <guilabel>New Storage</guilabel> dialog box displays. 
+                    <figure id="Tasks_RHEV_Adding_NFS_Storage_new-storage-dialog1">
+                                <title>NFS Storage</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="Adding_NFS_Storage.images/storage-nfs.png" format="PNG"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+            </para>
+                </step>-->
+		<step>
+			<para>
+				Configure the following options: 
+				<simplelist>
+					<member>
+						<guilabel>Name:</guilabel> Enter a suitably descriptive name.
+					</member>
+					<member>
+						<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list.
+					</member>
+					<member>
+						<guilabel>Domain Function/ Storage Type:</guilabel> In the drop down menu, select the type of storage domain you are creating.
+					</member>
+					<member>
+						<guilabel>Export path:</guilabel> Enter the IP address or a resolvable hostname of the chosen host. The export path should be in the format of <filename>192.168.0.10:/data or domain.example.com:/data</filename>
+					</member>
+					<member>
+						<guilabel>Use Host:</guilabel> Select any of the hosts from the drop down menu. Only hosts which belong in the pre-selected data center will be displayed in this list.
+					</member>
+					<member>
+						<guilabel>Advanced Parameters</guilabel> A number of additional, advanced, parameters are provided. It is recommended that the values of these parameters not be modified.
+					</member>
+				</simplelist>
+				<important>
+					<title>Active Host Required</title>
+					<para>
+						All communication to the Storage Domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen Data Center, before the storage is configured.
+					</para>
+				</important>
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>OK</guilabel>.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The new NFS data domain displays on the Storage tab. It will remain with a <emphasis>Locked status</emphasis> while it is being prepared for use. When ready, it is automatically attached to the Data Center.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7540-162154+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

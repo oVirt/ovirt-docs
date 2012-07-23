@@ -1,0 +1,119 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 01:14-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding FCP Storage"
+msgstr "FCP ストレージの追加"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform supports SAN storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-defined <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time."
+msgstr "Red Hat Enterprise Virtualization プラットフォームでは <systemitem>ボリュームグループ</systemitem> の <systemitem>ストレージドメイン</systemitem> を作成することで SAN ストレージをサポートします。 <systemitem>ボリュームグループ</systemitem> は、事前定義された一式の論理ユニット番号 (LUN) です。Red Hat Enterprise Virtualization は、事前定義された <systemitem>ボリュームグループ</systemitem> または論理ユニット番号のセットからの <systemitem>ストレージドメイン</systemitem> の作成をサポートしています。 <systemitem>ボリュームグループ</systemitem> および論理ユニット番号はいずれも、一度に複数の <systemitem>ストレージドメイン</systemitem> にはアタッチできません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization system administrators need a working knowledge of Storage Area Networks (SAN) concepts. SAN usually uses Fibre Channel Protocol (FCP) for traffic between hosts and shared external storage. For this reason, SAN may occasionally be referred to as FCP storage."
+msgstr "Red Hat Enterprise Virtualization システムの管理者には Storage Area Networks(SAN) の概念に関する作業知識が必要になります。SAN は通常、ホストと外部の共有ストレージ間のトラフィックに Fibre Channel Protocol(FCP) を使用します。この理由から SAN は FCP ストレージとも呼ばれます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For information regarding the setup and configuration of FCP or multipathing on Red Hat Enterprise Linux, please refer to the <citetitle>Storage Administration Guide</citetitle> and <citetitle>DM Multipath Guide</citetitle>."
+msgstr "Red Hat Enterprise Linux での FCP またはマルチパス機能の設定/構成に関する情報は、<citetitle>Storage Administration Guide</citetitle> (ストレージ管理ガイド) および <citetitle>DM Multipath Guide</citetitle> (DM マルチパス機能ガイド) を参照してください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "To Add FCP Storage:"
+msgstr "FCP ストレージの追加手順"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guimenuitem>Storage</guimenuitem> tab. The Storage list and toolbar display."
+msgstr "<guimenuitem>ストレージ</guimenuitem>タブをクリックします。ストレージ一覧とツールバーが表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>."
+msgstr "<guilabel>新規ドメイン</guilabel>をクリックします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>New Domain</guilabel> dialog box displays."
+msgstr "<guilabel>新規ドメイン</guilabel>ダイアログボックスが表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Configure the following options:"
+msgstr "以下のオプションを設定します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Name:</guilabel> Enter a suitably descriptive name."
+msgstr "<guilabel>名前:</guilabel> わかりやすい名前を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Data Center:</guilabel> Select the required Data Center from the drop-down list."
+msgstr "<guilabel>データセンター:</guilabel> ドロップダウンリストから、対象のデータセンターを選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Domain Function/ Storage Type</guilabel>: Select <guimenuitem>FCP</guimenuitem>."
+msgstr "<guilabel>ドメイン機能 / ストレージタイプ</guilabel>: <guimenuitem>FCP</guimenuitem> を選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Use Host:</guilabel> Select the IP address of either the hypervisor or Red Hat Enterprise Linux host."
+msgstr "<guilabel>使用ホスト:</guilabel> Hypervisor または Red Hat Enterprise Linux ホストの IP アドレスを選択します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "アクティブなホストが必要です"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "ストレージドメインへの通信はすべて、Red Hat Enterprise Virtualization Manager から直接ではなく、選択したホスト経由で行われます。ストレージを設定する前には、システム内にアクティブなホストが少なくとも 1 台存在し、選択したデータセンターにアタッチされている必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The list of existing LUNs display. On the selected LUN, select the Add LUN check box to use it as the FCP data domain."
+msgstr "既存の LUN の一覧が表示されます。FCP データドメインとして使用するには、選択した LUN の LUN を追加のチェックボックスにチェックマークを付けます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel>."
+msgstr "<guilabel>OK</guilabel> をクリックします。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new FCP data domain displays on the <guimenuitem>Storage</guimenuitem> tab. It will remain with a Locked status while it is being prepared for use. When ready, it is automatically attached to the data center. Select either <guilabel>Build New Domain</guilabel> or <guilabel>Use Existing Volume Group</guilabel>."
+msgstr "新しい FCP データドメインが<guimenuitem>ストレージ</guimenuitem>タブに表示されます。使用準備中には、Locked の状態となります。準備が整った時点で、自動的にデータセンターにアタッチされます。<guilabel>新規ドメインの作成</guilabel>または<guilabel>既存のボリュームグループを使用</guilabel>のいずれかを選択します。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7635-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

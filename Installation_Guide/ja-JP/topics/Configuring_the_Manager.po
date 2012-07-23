@@ -1,0 +1,562 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-04 06:12-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Red Hat Enterprise Virtualization Manager"
+msgstr "Red Hat Enterprise Virtualization Manager の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once package installation is complete the Red Hat Enterprise Virtualization Manager must be configured. The <command>rhevm-setup</command> command is provided to assist with this task. The script asks you a series of questions, the answers to which form the basis for system configuration. Once all required values have been provided the updated configuration is applied and the Red Hat Enterprise Virtualization Manager services are started."
+msgstr "パッケージのインストールが完了したら、Red Hat Enterprise Virtualization Manager を設定する必要があります。この作業を容易にするため <command>rhevm-setup</command> コマンドが提供されています。このスクリプトによりシステム構成の基礎を形成するための一連の質問が問われます。必要となる値をすべて入力すると、設定の更新が適用され Red Hat Enterprise Virtualization Manager サービスが起動します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Start setup script"
+msgstr "設定スクリプトの開始"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To begin configuring the system run <command>rhevm-setup</command> as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr "システムの設定を開始するには、<systemitem class=\"username\">root</systemitem> ユーザーで <command>rhevm-setup</command> を実行します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# rhevm-setup"
+msgstr "# rhevm-setup"
+
+#. Tag: title
+#, no-c-format
+msgid "Override Apache configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>rhevm-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Do you wish to override current httpd configuration and restart the service? ['yes'| 'no']  [yes] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you do not receive this message, there is no existing <systemitem>httpd</systemitem> configuration on the system and the script will move to the next step."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you do receive this message, you must:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "enter <literal>yes</literal> if you wish to configure the Manager to listen to <acronym>HTTP</acronym> and/or <acronym>HTTPS</acronym> ports lower than port <literal>1024</literal>; or"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "enter <literal>no</literal> if you do not wish to configure the Manager to listen to <acronym>HTTP</acronym> and/or <acronym>HTTPS</acronym> ports lower than port <literal>1024</literal>, leaving the existing <systemitem>httpd</systemitem> configuration intact."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Port for <acronym>HTTP</acronym>"
+msgstr "<acronym>HTTP</acronym> ポートの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the port to use for <acronym>HTTP</acronym> communication. To use the default value, <literal>80</literal>, press <keycap> Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap> Enter</keycap>."
+msgstr "スクリプトにより <acronym>HTTP</acronym> 通信に使用するポートの入力が求められます。<literal>8080</literal> のデフォルト値を使用する場合は <keycap>Enter</keycap> を押します。別の値を使用する場合はそれをフィールドに入力してから <keycap>Enter</keycap> を押します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "HTTP Port  [80] :"
+msgstr "HTTP Port  [8080] :"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The port you select also appears in the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTP</acronym>."
+msgstr "<acronym>HTTP</acronym> 経由で Red Hat Enterprise Virtualization Manager にアクセスする場合に使用しなければならない <acronym>URL</acronym> 内にもこの選択したポートが表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Port for <acronym>HTTPS</acronym>"
+msgstr "<acronym>HTTPS</acronym> ポートの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the port to use for <acronym> HTTPS</acronym> communication. To use the default value, <literal>443</literal>, press <keycap> Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap> Enter</keycap>."
+msgstr "スクリプトにより <acronym>HTTPS</acronym> 通信に使用するポートの入力が求められます。デフォルト値の <literal>8443</literal> を使用する場合は <keycap>Enter</keycap> を押します。別の値を使用する場合はそれをフィールドに入力してから <keycap>Enter</keycap> を押します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "HTTPS Port  [443] :"
+msgstr "HTTPS Port  [8443] :"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where a port other than <literal>443</literal> is selected it changes the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTPS</acronym>."
+msgstr "<literal>8443</literal> 以外のポートを選択すると、 <acronym>HTTPS</acronym> 経由で Red Hat Enterprise Virtualization Manager にアクセスする場合に使用しなければならない <acronym>URL</acronym> が変更されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Fully Qualified Domain Name (<acronym>FQDN</acronym>)"
+msgstr "完全修飾ドメイン名 (<acronym>FQDN</acronym>) の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the system's fully qualified domain name. This name should be resolvable via both forward and reverse <acronym> DNS</acronym> lookup. The script attempts to determine the fully qualified domain name automatically. The value identified is listed in square brackets as the default setting for the fully qualified domain name, based on your setup."
+msgstr "スクリプトによりシステムの完全修飾ドメイン名の入力が求められます。この名前は、 <acronym>DNS</acronym> のフォワードルックアップとリバースルックアップの両方で解決可能でなければなりません。スクリプトは自動的に完全修飾ドメイン名を確定しようとします。 確定された値はセットアップに応じて完全修飾ドメイン名のデフォルト設定として角括弧内に表示されます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Host fully qualified domain name, note that this name should be fully resolvable  [manager.demo.redhat.com] :"
+msgstr "Host fully qualified domain name, note that this name should be fully resolvable  [manager.demo.redhat.com] :"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the automatically determined fully qualified domain name is correct, press <keycap> Enter</keycap> to use the value and continue. Where the automatically determined fully qualified domain name is not correct, enter the correct value and press <keycap> Enter</keycap> to use the new value and continue."
+msgstr "自動的に確定された完全修飾ドメイン名が正しい場合はその値を使用するよう <keycap>Enter</keycap> を押して続行します。自動的に確定された完全修飾ドメイン名が正しくない場合は、新しい値を使用するよう正しい値を入力してから <keycap>Enter</keycap> を押し続行します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Administrator Password"
+msgstr "管理者のパスワード設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script creates an authentication domain internal to the Red Hat Enterprise Virtualization Manager for the default administrative account. The domain is named <systemitem> internal</systemitem>, the administrative user is called <systemitem> admin</systemitem>. External authentication domains are added as a post-installation step using the <command>rhevm-manage-domains</command> command."
+msgstr "スクリプトにより、デフォルトの管理アカウント用の認証ドメインが Red Hat Enterprise Virtualization Manager 内に作成されます。ドメイン名は <systemitem>internal</systemitem>、管理者ユーザー名は <systemitem>admin</systemitem> になります。外部的な認証ドメインは <command>rhevm-manage-domains</command> コマンドを使ってインストール後に追加します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You must choose a password for the <systemitem class=\"username\"> admin</systemitem> user. You will be asked to enter it a second time to confirm your selection."
+msgstr "<systemitem class=\"username\">admin</systemitem> ユーザー用のパスワードを選択してください。パスワードの確認のため同じパスワードの入力が再度求められます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Password for Administrator (admin@internal) :"
+msgstr "Password for Administrator (admin@internal) :"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Organization Name"
+msgstr "組織名の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the Organization Name. The Organization Name appears in the <literal>Subject</literal> field of the certificate used to secure communications with the Red Hat Enterprise Virtualization Manager."
+msgstr "スクリプトにより組織名の入力が求められます。組織名は Red Hat Enterprise Virtualization Manager との通信を保護するため使用される証明書の <literal>Subject</literal> フィールドに表示されます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Organization Name for the Certificate :"
+msgstr "Organization Name for the Certificate :"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure Default Storage Type"
+msgstr "デフォルトのストレージタイプを設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for selection of the default storage type. This is the storage type that is used for the <literal>Default</literal> data center. You are able to add further data centers that use different storage types from the Administration Portal at any time."
+msgstr "スクリプトによりデフォルトのストレージタイプの選択が求められます。<literal>デフォルト</literal>のデータセンターに使用するストレージタイプです。異なるストレージタイプを使用するデータセンターの増設は管理ポータルからいつでも行うことができます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "The default storage type you will be using  ['NFS'| 'FC'| 'ISCSI']  [NFS] :"
+msgstr "The default storage type you will be using  ['NFS'| 'FC'| 'ISCSI']  [NFS] :"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The default selection is Network File System (<literal>NFS</literal>). The other available values are:"
+msgstr "デフォルトで選択されるのは <literal>NFS</literal> (Network File System) です。これ以外には次のような値が使用できます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Fibre Channel (<literal>FC</literal>), and"
+msgstr "ファイバーチャネル (<literal>FC</literal>)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Small Computer System Interface (<literal>ISCSI</literal>)."
+msgstr "Internet Small Computer System Interface (<literal>iSCSI</literal>)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. Red Hat Enterprise Virtualization also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center."
+msgstr "<literal>NFS</literal>、<literal>FC</literal>、<literal>iSCSI</literal> のオプションはリモートストレージに接続する場合に使用します。また、Red Hat Enterprise Virtualization では、<literal>LOCALFS</literal> ストレージタイプにも対応しているので、仮想化ホストにアタッチされているローカルストレージを使用することもできますが、このストレージタイプは<literal>デフォルト</literal>のデータセンターへの対応はしていません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To use the default selection, <literal>NFS</literal>, press <keycap> Enter</keycap>. To select <literal>FC</literal>, or <literal>ISCSI</literal> then enter the value and then press <keycap> Enter</keycap>."
+msgstr "デフォルト選択の <literal>NFS</literal> を使用する場合は <keycap>Enter</keycap> を押します。<literal>FC</literal> または <literal>iSCSI</literal> を選択する場合はその値を入力してから <keycap>Enter</keycap> を押します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Select database location"
+msgstr "データベースのパスワードの設定"
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Enter DB type for installation ['remote'| 'local']  [local] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>local</literal> to have the setup script create a local Postgresql database server for the Manager."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of a password to use for the local Red Hat Enterprise Virtualization Manager database. Enter the desired password. You will be asked to enter the password again to confirm it."
+msgstr "スクリプトにより Red Hat Enterprise Virtualization Manager データベースに使用するパスワードの入力が求められます。強固なパスワードを入力してください。強固なパスワードとは、 大文字と小文字、数字、句読点文字を組み合わせて作ります。パスワードの長さは 6 文字以上にし、辞書にあるような単語を使用するのは避けてください。パスワードを入力したら <keycap>Enter</keycap> を押します。確認のためパスワードの再入力が求められます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Database password (required for secure authentication with the locally created database) :"
+msgstr "Database password (required for secure authentication with the locally created database) :"
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>remote</literal> to have the script use a remote database server for the Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You will be prompted to provide:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the <acronym>IP</acronym> address or hostname of the remote database server,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the port number on which the remote database server is listening,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the administrative user name for the remote database server, and"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the administrative user's password."
+msgstr "管理者のパスワード設定"
+
+#. Tag: para
+#, no-c-format
+msgid "The administrative user provided must have the required permissions to create databases on the remote database server."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"Enter DB type for installation ['remote'| 'local']  [local] : remote      \n"
+"Enter the host IP or host name where DB is running: database.demo.redhat.com\n"
+"Enter DB port number  [5432] : 5432\n"
+"Enter DB admin user name  [postgres] : \n"
+"Remote database password :\n"
+"Confirm password :                \n"
+"              \t\t\t\t"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Secure connection"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can configure Red Hat Enterprise Virtualization Manager to use a secure connection, encrypted using <acronym>SSL</acronym> when connecting to the remote database server."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Configure secure connection? ['yes'| 'no']  [no] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>yes</literal> to use secure database connections."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The setup script will connect to the remote database server to verify the details that you provided are correct."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure NFS ISO Domain"
+msgstr "NFS ISO ドメインの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script asks whether or not an <acronym> NFS</acronym> share should be configured on the server and used as an <acronym> ISO</acronym> storage domain."
+msgstr "サーバーで <acronym>NFS</acronym> 共有を設定して <acronym>ISO</acronym> ストレージドメインとして使用するかどうかが問われます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Should the installer configure NFS share on this server to be used as an ISO Domain? ['yes'| 'no']  [yes] :"
+msgstr "Should the installer configure NFS share on this server to be used as an ISO Domain? ['yes'| 'no']  [yes] :"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "An <acronym> ISO</acronym> storage domain is used to store copies of removable media for use when provisioning and using virtual machines. The Red Hat Enterprise Virtualization Manager is able to use either an <acronym> ISO</acronym> storage domain on the system it is installed to or one that exists on remote storage. In either case the <acronym> ISO</acronym> storage domain must be accessible via <acronym> NFS</acronym>. The ability to configure an <acronym> ISO</acronym> storage domain is also available from the Administration Portal after installation."
+msgstr "<acronym>ISO</acronym> ストレージドメインには、仮想マシンをプロビジョニングする場合に使用するリムーバブルメディアのコピーを格納します。Red Hat Enterprise Virtualization Manager は、その Manager がインストールされているシステム上に存在する <acronym>ISO</acronym> ストレージドメイン、またはリモートストレージ上に存在する ISO ストレージドメインのいずれかを使用することができます。いずれの場合も <acronym>ISO</acronym> ストレージドメインは <acronym>NFS</acronym> からアクセスできなければなりません。<acronym>ISO</acronym> ストレージドメインの設定はインストール後、管理ポータルから行うこともできます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To take the default action, which is to configure an <acronym> NFS</acronym> share for use as an <acronym> ISO</acronym> storage domain, press <keycap> Enter</keycap>. To skip this step type <literal>no</literal> and press <keycap> Enter</keycap>."
+msgstr "<acronym>ISO</acronym> ストレージドメインに <acronym>NFS</acronym> 共有の使用を設定するデフォルト動作を選択する場合は <keycap>Enter</keycap> を押します。この手順を省略したい場合は <literal>no</literal> を入力してから <keycap>Enter</keycap> を押します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If you chose to configure an <acronym> NFS</acronym> share then you will also need to provide both a path and a display name for it. The path is the location on the local file system where the <acronym> NFS</acronym> share must be created. The directory must not already exist."
+msgstr "<acronym>NFS</acronym> 共有の設定を選択する場合はパスとディスプレイ名も入力する必要があります。パスとは <acronym>NFS</acronym> 共有の作成先となるローカルファイルシステム上の場所です。この時点ですでにディレクトリが存在していてはいけません。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Mount point path:"
+msgstr "Mount point path:"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The display name is the name the storage domain will appear under in the Red Hat Enterprise Virtualization Manager. The display name must not contain non-alphanumeric characters other than the underscore (<literal>_</literal>) and the hyphen (<literal>-</literal>)."
+msgstr "表示名とは Red Hat Enterprise Virtualization Manager 内で表示されるストレージドメインの名前です。表示名には、下線 (<literal>_</literal>) とハイフン (<literal>-</literal>) 以外はアルファベットのみを使用するようにしてください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Display name for the ISO domain:"
+msgstr "ISO ドメインの表示名："
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> ISO</acronym> domain will be created and exported as an <acronym> NFS</acronym> share. It will be shown as active in the Red Hat Enterprise Virtualization Manager once the first active virtualization host has been added to the <literal>Default</literal> data center."
+msgstr "<acronym>NFS</acronym> シェアとして、<acronym>ISO</acronym> ドメインを作成、エクスポートします。<literal>デフォルト</literal> のデータセンターに有効な仮想化ホストが始めて追加された時点で、Red Hat Enterprise Virtualization Manager で有効と表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure Firewall"
+msgstr "ファイアウォールの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager requires that network traffic on a number of ports be allowed through the system's firewall. The <command>rhevm-setup</command> script is able to configure this automatically, but selecting this option overrides any existing firewall configuration. Where there is an existing firewall configuration that needs to be maintained you must manually configure the firewall to include the additional rules required by the Red Hat Enterprise Virtualization Manager."
+msgstr "Red Hat Enterprise Virtualization Manager では、いくつかのポート上でネットワークトラフィックがシステムのファイアウォールを通過できるようにする必要があります。<command>rhevm-setup</command> スクリプトではこれを自動的に行うことができますが、このオプションを選択すると既存のファイアウォール設定を無視することになります。維持しなければならないファイアウォール設定がある場合には、手作業でファイアウォールの設定を行い Red Hat Enterprise Virtualization Manager で必要とされる追加のルールを含めてください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Firewall ports need to be opened.\n"
+"You can let the installer configure iptables automatically overriding the current configuration. The old configuration will be backed up.\n"
+"Alternately you can configure the firewall later using an example iptables file found under /usr/share/ovirt-engine/conf/iptables.example\n"
+"Configure iptables ? ['yes'| 'no']:\n"
+msgstr ""
+"\n"
+"Firewall ports need to be opened.\n"
+"You can let the installer configure iptables automatically overriding the current configuration. The old configuration will be backed up.\n"
+"Alternately you can configure the firewall later using an example iptables file found under /usr/share/rhevm/conf/iptables.example\n"
+"Should the installer configure iptables now? ['yes'| 'no']  [yes] :\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To proceed with automatic firewall configuration type <literal>yes</literal> and then press <keycap> Enter</keycap>."
+msgstr "自動ファイアウォール設定を開始する場合は <literal>yes</literal> を入力してから <keycap>Enter</keycap> を押します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To skip automatic firewall configuration type <literal>no</literal> and then press <keycap> Enter</keycap>. You will need to add rules equivalent to those found in <filename>/usr/share/ovirt-engine/conf/iptables.example</filename> to your <command>iptables</command> configuration."
+msgstr "自動ファイアウォール設定を省略する場合は <literal>no</literal> と入力してから <keycap>Enter</keycap> を押します。<filename>/usr/share/rhevm/conf/iptables.example</filename> にあるものと同等のルールを <command>iptables</command> 設定に追加する必要があります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Confirm Configuration"
+msgstr "設定の確認"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You have now provided the script with all the information required to complete configuration of the Red Hat Enterprise Virtualization Manager. The values which you entered are displayed for confirmation."
+msgstr "これでスクリプトに対して Red Hat Enterprise Virtualization Manager の設定に必要な全情報を提供しました。入力した値が確認のため表示されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuration Confirmation Screen"
+msgstr "設定確認の画面"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port:                     80\n"
+"https-port:                    443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"db-remote-install:             local\n"
+"db-local-pass:                 ********\n"
+"nfs-mp:                        /isoshare\n"
+"iso-domain-name:               ISODomain\n"
+"config-nfs                     yes\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): \n"
+msgstr ""
+"\n"
+"RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port:                     8080\n"
+"https-port:                    8443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"db-pass:                       ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"nfs-mp:                        /isoshare\n"
+"iso-domain-name:               ISODomain\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): \n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To permanently apply the configuration values listed type <literal>yes</literal> and then press <keycap> Enter</keycap> to apply the configuration."
+msgstr "表示された設定値を永続的に適用する場合は <literal>yes</literal> と入力してから <keycap>Enter</keycap> を押し設定を適用します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If one or more of the configuration values listed is incorrect type <literal>no</literal> and then <keycap> Enter</keycap> to revisit the configuration."
+msgstr "表示された設定値が正しくない場合は、<literal>no</literal> と入力してから <keycap>Enter</keycap> を押し設定に戻ります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration values are applied. A number of services need to be started and as a result this step takes some time. Do not terminate the installation once application of the configuration values has commenced."
+msgstr "設定値が適用されます。いくつかのサービスの起動が必要となるため時間がかかります。 一旦、 設定値の適用が開始されたら、インストールを終了しないようにしてください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once the script has completed successfully take note of the additional information it provides. In particular note down the <literal>SSH Certificate fingerprint</literal>, <literal>SSH Public key fingerprint</literal>, and Red Hat Enterprise Virtualization Manager <acronym> URL</acronym> for your records."
+msgstr "スクリプトが正常に完了したら、そこに表示される追加情報をメモします。特に、 <literal>SSH Certificate fingerprint</literal>、<literal>SSH Public key fingerprint</literal>、Red Hat Enterprise Virtualization Manager の <acronym>URL</acronym> などを記録としてメモに取っておきます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Successful Configuration"
+msgstr "設定の成功例"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Installing:\n"
+"Creating JBoss Profile...                                [ DONE ]\n"
+"Creating CA...                                           [ DONE ]\n"
+"Setting Database Security...                             [ DONE ]\n"
+"Creating Database...                                     [ DONE ]\n"
+"Updating the Default Data Center Storage Type...         [ DONE ]\n"
+"Editing JBoss Configuration...                           [ DONE ]\n"
+"Editing RHEV Manager Configuration...                    [ DONE ]\n"
+"Configuring the Default ISO Domain...                    [ DONE ]\n"
+"Configuring Firewall (iptables)...                       [ DONE ]\n"
+"Starting JBoss Service...                                [ DONE ]\n"
+"\n"
+" **** Installation completed successfully ******\n"
+"\n"
+"     (Please allow RHEV Manager a few moments to start up.....)\n"
+"\n"
+"\n"
+"Additional information:\n"
+" * SSL Certificate fingerprint: 4C:A4:8F:93:62:50:C1:63:C8:09:70:77:07:90:FD:65:5B:3C:E8:DD\n"
+" * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e\n"
+" * A default ISO share has been created on this host.\n"
+"   If IP based access restrictions are required, please edit /isoshare entry in /etc/exports\n"
+" * The firewall has been updated, the old iptables configuration file was saved to /usr/share/rhevm/conf/iptables.backup.103654-09092011_866\n"
+" * The installation log file is available at: /var/log/rhevm/rhevm-setup_2011_09_09_10_32_56.log\n"
+" * Please use the user \"admin\" and password specified in order to login into RHEV Manager\n"
+" * To configure additional users, first configure authentication domains using the 'rhevm-manage-domains' utility\n"
+" * To access RHEV Manager please go to the following URL: http://manager.demo.redhat.com:8080\n"
+msgstr ""
+"Installing:\n"
+"Creating JBoss Profile...                                [ DONE ]\n"
+"Creating CA...                                           [ DONE ]\n"
+"Setting Database Security...                             [ DONE ]\n"
+"Creating Database...                                     [ DONE ]\n"
+"Updating the Default Data Center Storage Type...         [ DONE ]\n"
+"Editing JBoss Configuration...                           [ DONE ]\n"
+"Editing RHEV Manager Configuration...                    [ DONE ]\n"
+"Configuring the Default ISO Domain...                    [ DONE ]\n"
+"Configuring Firewall (iptables)...                       [ DONE ]\n"
+"Starting JBoss Service...                                [ DONE ]\n"
+"\n"
+" **** Installation completed successfully ******\n"
+"\n"
+"     (Please allow RHEV Manager a few moments to start up.....)\n"
+"\n"
+"\n"
+"Additional information:\n"
+" * SSL Certificate fingerprint: 4C:A4:8F:93:62:50:C1:63:C8:09:70:77:07:90:FD:65:5B:3C:E8:DD\n"
+" * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e\n"
+" * A default ISO share has been created on this host.\n"
+"   If IP based access restrictions are required, please edit /isoshare entry in /etc/exports\n"
+" * The firewall has been updated, the old iptables configuration file was saved to /usr/share/rhevm/conf/iptables.backup.103654-09092011_866\n"
+" * The installation log file is available at: /var/log/rhevm/rhevm-setup_2011_09_09_10_32_56.log\n"
+" * Please use the user \"admin\" and password specified in order to login into RHEV Manager\n"
+" * To configure additional users, first configure authentication domains using the 'rhevm-manage-domains' utility\n"
+" * To access RHEV Manager please go to the following URL: http://manager.demo.redhat.com:8080\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager has been installed and configured successfully. You are now able to connect to the Administration Portal for the first time."
+msgstr "Red Hat Enterprise Virtualization Manager が正しくインストールされ設定が完了しました。 これで初めて管理ポータルに接続できるようになりました。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Access Using <acronym>HTTP</acronym>"
+#~ msgstr "<acronym>HTTP</acronym> を使用したアクセス"
+
+#~ msgctxt ""
+#~ msgid "For a machine with hostname <literal>manager.demo.redhat.com</literal> using the default <acronym> HTTP</acronym> port value, <literal>8080</literal>, the <acronym> URL</acronym> to access the entry page over <acronym> HTTP</acronym> is <literal>http://manager.demo.redhat.com:8080/</literal>."
+#~ msgstr "ホスト名が <literal>manager.demo.redhat.com</literal> でデフォルトの <acronym>HTTP</acronym> ポート値 <literal>8080</literal> を使用するマシンの場合、<acronym>HTTP</acronym> 経由でエントリページにアクセスする <acronym>URL</acronym> は <literal>http://manager.demo.redhat.com:8080/</literal> になります。"
+
+#~ msgctxt ""
+#~ msgid "Access Using <acronym>HTTPS</acronym>"
+#~ msgstr "<acronym>HTTPS</acronym> を使用したアクセス"
+
+#~ msgctxt ""
+#~ msgid "For a machine with hostname <literal>manager.demo.redhat.com</literal> using the default <acronym> HTTPS</acronym> port value, <literal>8443</literal>, the <acronym> URL</acronym> to access the entry page over <acronym> HTTPS</acronym> is <literal>https://manager.demo.redhat.com:8443/</literal>."
+#~ msgstr "ホスト名が <literal>manager.demo.redhat.com</literal> でデフォルトの <acronym>HTTPS</acronym> ポート値 <literal>8443</literal> を使用するマシンの場合、 <acronym>HTTPS</acronym> 経由でエントリーページにアクセスする <acronym>URL</acronym> は <literal>https://manager.demo.redhat.com:8443/</literal> になります。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

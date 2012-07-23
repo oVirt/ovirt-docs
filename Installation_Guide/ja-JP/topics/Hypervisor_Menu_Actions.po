@@ -1,0 +1,49 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-28 09:25-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Hypervisor Menu Actions"
+msgstr "Hypervisor メニューのアクション"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The directional keys ( <keycap> Up</keycap>, <keycap> Down</keycap>, <keycap> Left</keycap>, <keycap> Right</keycap>) are used to select different controls on the screen. Alternatively the <keycap> Tab</keycap> key cycles through the controls on the screen which are enabled."
+msgstr "画面上の項目を選択するには、矢印キー (<keycap>上</keycap>、<keycap>下</keycap>、<keycap>左</keycap>、<keycap>右</keycap>) を使用します。また、画面上 で有効化されている選択項目を順番に移動するには、<keycap>Tab</keycap> キーを使用します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Text fields are represented by a series of underscores (<guilabel>_</guilabel>). To enter data in a text field select it and begin entering data."
+msgstr "テキストフィールドは、複数のアンダースコア(<guilabel>_</guilabel>) で表示されます。テキストフィールドにデータを入力するには、そのフィールドを選択してからデータの入力を開始します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Buttons are represented by labels which are enclosed within a pair of angle brackets (<guilabel>&lt;</guilabel> and <guilabel>&gt;</guilabel>). To activate a button ensure it is selected and press <keycap> Enter</keycap> or <keycap> Space</keycap>."
+msgstr "ボタンは、山括弧 (<guilabel>&lt;</guilabel> と <guilabel>&gt;</guilabel>) で囲まれたラベルで表示されます。ボタンをアクティベートする場合は、そのボタンが選択されていることを確認してから <keycap>Enter</keycap> または <keycap>Space</keycap> を押します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boolean options are represented by an asterisk (<guilabel>*</guilabel>) or a space character enclosed within a pair of square brackets (<guilabel>[</guilabel> and <guilabel>]</guilabel>). When the value contained within the brackets is an asterisk then the option is set, otherwise it is not. To toggle a Boolean option on or off press <keycap> Space</keycap> while it is selected."
+msgstr "Boolean オプションは、アスタリスク (<guilabel>*</guilabel>)、または角括弧内 (<guilabel>[</guilabel> と <guilabel>]</guilabel>) の空白文字で表示されます。括弧内の値がアスタリスクの場合は、そのオプションが指定され、そうでない場合は指定されません。Boolean オプションのオンとオフを切り替えるには、オプションが選択されている状態で <keycap>Space</keycap> を押します。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7855-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

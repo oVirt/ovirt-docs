@@ -1,0 +1,55 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-21 10:37-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Data Centers"
+msgstr "資料中心"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Following Red Hat Enterprise Virtualization Manager installation it is "
+"necessary to define the data centers, and clusters, that you will use to "
+"organize your virtualization hosts. The installation process creates a data "
+"center, and associated cluster, called <literal>Default</literal>. The "
+"storage type of the data center is set based on the one selected during "
+"installation. If you wish to make use of other storage types then you will "
+"need to add additional data centers and clusters to support them."
+msgstr ""
+"在進行了 RHEV Manager 安裝後，您需要定義資料中心以及叢集，以用來管理您的虛擬主機。安裝程序會建立一個名為 "
+"<literal>Default</literal> "
+"的資料中心與相聯叢集。資料中心的儲存裝置類型，會根據您在進行安裝時所進行的選擇而設置。若您希望使用其它儲存裝置類型，您將需要新增額外資料中心與叢集，以支援它們。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

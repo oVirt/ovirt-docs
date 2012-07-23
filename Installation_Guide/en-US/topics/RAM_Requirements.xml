@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="RAM_Requirements" remap="TID_7844">
+	<title>Virtualization Host RAM Requirements</title>
+	<para>
+		It is recommended that virtualization hosts have at least 2&nbsp;<acronym>GB</acronym> of <acronym>RAM</acronym>. The amount of RAM required varies depending on:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				guest operating system requirements,
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				guest application requirements, and
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				memory activity and usage of guests.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		The fact that <acronym>KVM</acronym> is able to over-commit physical <acronym>RAM</acronym> for virtualized guests must also be taken into account. This allows provisioning of guests with <acronym>RAM</acronym> requirements greater than physically present on the basis where not all guests will be at peak load concurrently. <acronym>KVM</acronym> does this by only allocating <acronym>RAM</acronym> for guests as required and shifting underutilized guests into swap.
+	</para>
+	<para>
+		A maximum of 1&nbsp;TB of RAM per virtualization host is currently supported.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7844-161529+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

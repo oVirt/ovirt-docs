@@ -1,0 +1,159 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 03:15-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Updating the Red Hat Enterprise Virtualization Manager"
+msgstr "注意：升級 RHEV Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Upgrades of the Red Hat Enterprise Virtualization Manager are released via Red Hat Network. Before installing an update from the Red Hat Network be sure to read the advisory text associated with it as well as the most recent version of the <citetitle>Red Hat Enterprise Virtualization — Release Notes</citetitle>, and the <citetitle>Red Hat Enterprise Virtualization — Technical Notes</citetitle>."
+msgstr "使用者可以透過 Red Hat Network（RHN）更新 RHEV Manager。在從 RHN 安裝更新檔案之前，請確定先閱讀相關的建議文字，以及最新版的《<citetitle>Red Hat Enterprise Virtualization 發行公告</citetitle>》以及《<citetitle>Red Hat Enterprise Virtualization 技術公告</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To complete an upgrade a number of actions must be performed including:"
+msgstr "要完成升級，使用者必須進行一連串動作："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "stopping the <acronym> JBoss</acronym> service,"
+msgstr "停止 <acronym>JBoss</acronym> 服務、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "downloading and installing the updated packages,"
+msgstr "下載並安裝更新套件、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "backing up and updating the database,"
+msgstr "備份並更新資料庫、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "performing post installation configuration, and"
+msgstr "安裝後進行配置，並"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "restarting the <acronym> JBoss</acronym> service."
+msgstr "重新啟動 <acronym>JBoss</acronym> 服務。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A script is included to perform all of these actions for you in an automated fashion. Active virtualization hosts are not upgraded by this process and must be updated separately. As a result the virtual machines running upon them are not affected."
+msgstr "有個 script 可以自動進行這些動作。啟用中的虛擬主機不會透過這個過程自動更新，而必須分別進行更新。因此，在其上執行的虛擬機器不會受到影響。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Upgrading the Red Hat Enterprise Virtualization Manager requires network connectivity with either Red Hat Network or a Red Hat Network Satellite Server installation. You must be logged in as the <systemitem> root</systemitem> user to initiate the upgrade process."
+msgstr "更新 RHEV Manager 需要網路連線，連上 RHN 或 RHN Satellite 伺服器。您必須以 <systemitem>root</systemitem> 使用者身份登入，開始更新程序。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before you upgrade your Red Hat Enterprise Virtualization Manager installation ensure you have the latest version of the installation utilities by running <command>yum update rhevm-setup</command> as the <systemitem> root</systemitem> user. Once this has been done to commence an upgrade of the Red Hat Enterprise Virtualization Manager run the <command>rhevm-upgrade</command> command, again as the <systemitem> root</systemitem> user. No additional parameters are required. The command will produce output when it has completed each step of the upgrade process."
+msgstr "在升級 RHEV Manager 之前，請以 <systemitem>root</systemitem> 身份執行<command>yum update rhevm-setup</command>，確定您已安裝了最新的安裝工具。完成之後，請依舊以 <systemitem>root</systemitem> 身份執行 <command>rhevm-upgrade</command> 指令。不需要其它參數。完成升級程序的每個步驟之後，這命令會印出結果。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Be aware that the upgrade process may take some time. Allow time for the upgrade process to complete and do not stop it once initiated. Once the upgrade has been completed you will also be instructed to separately upgrade the data warehouse and reports functionality. These additional steps are only required if these optional packages are installed."
+msgstr "請注意，升級程序會花上一些時間。請稍安勿躁，也不要中斷升級程序。升級完成之後，您會看到指示，已分別升級資料中心與報告功能。只有在這些選用套件安裝之後，才需要這些額外步驟。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Note — Upgrading Red Hat Enterprise Virtualization Hypervisors"
+msgstr "注意：升級 RHEV Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisors can be updated directly or via the Red Hat Enterprise Virtualization Manager. For information on upgrading the hypervisor see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+msgstr "RHEV Hypervisor 可以直接升級，或透過 RHEV Manager 升級。欲知升級 Hypervisor 的資訊，請參閱《<citetitle>Red Hat Enterprise Linux — Hypervisor 建置指南</citetitle>》。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Upgrade Output"
+msgstr "升級時的螢幕輸出"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# <command>rhevm-upgrade</command> \n"
+"Checking for updates....\n"
+"Stopping JBoss Service... DONE!\n"
+"Backing Up RHEVM DB... DONE!\n"
+"Updating RHEVM rpm... DONE!\n"
+"Updating RHEVM DB... DONE!\n"
+"Running post install configuration... DONE!\n"
+"Starting JBoss... DONE!\n"
+"\n"
+"Upgrade log available at  /var/log/rhevm/rhevm-upgrade_2011_07_27_08_15_10.log\n"
+"DB Backup available at  /usr/share/rhevm/db-backups/tmpVCI0WM.sql\n"
+"To upgrade the history service or the reporting package, please run yum update rhevm-reports* and then rhevm-dwh-setup and rhevm-reports-setup.\n"
+msgstr ""
+"\n"
+"# <command>rhevm-upgrade</command> \n"
+"Checking for updates....\n"
+"Stopping JBoss Service... DONE!\n"
+"Backing Up RHEVM DB... DONE!\n"
+"Updating RHEVM rpm... DONE!\n"
+"Updating RHEVM DB... DONE!\n"
+"Running post install configuration... DONE!\n"
+"Starting JBoss... DONE!\n"
+"\n"
+"Upgrade log available at  /var/log/rhevm/rhevm-upgrade_2011_07_27_08_15_10.log\n"
+"DB Backup available at  /usr/share/rhevm/db-backups/tmpVCI0WM.sql\n"
+"To upgrade the history service or the reporting package, please run yum update rhevm-reports* and then rhevm-dwh-setup and rhevm-reports-setup.\n"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7524-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Upgrading between Minor Releases"
+#~ msgstr "更新次要版本"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

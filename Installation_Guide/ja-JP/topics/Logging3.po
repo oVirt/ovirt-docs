@@ -1,0 +1,40 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-29 02:08-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Logging"
+msgstr "ロギング"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The hypervisor creates and updates a number of log files. The "
+"<guilabel>Logging</guilabel> screen allows configuration of a daemon to "
+"automatically export these log files to a remote server."
+msgstr ""
+"Hypervisor は複数のログファイルを作成/更新します。<guilabel>Logging</guilabel> "
+"画面では、デーモンによりこれらのログファイルをリモートサーバーへ自動的にエクスポートするように設定することができます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

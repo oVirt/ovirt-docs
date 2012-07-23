@@ -1,0 +1,221 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 10:31-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Creating a new cluster"
+msgstr "新建叢集"
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before creating a new cluster, ensure that there is at least one host available to be assigned to it. The hosts in a cluster all run the same type of CPU. That is, a cluster must not contain a mix of both Intel and AMD CPUs."
+msgstr "再建立新的叢集之前，請確定至少有一台主機能指定給叢集。叢集中的主機皆執行同樣類型的處理器。換句話說，叢集絕不可同時包含 Intel 與 AMD 處理器。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The default <guilabel>rhevm</guilabel> network cannot be modified once a Cluster has been attached to a data center. Any configuration required for the <guilabel>rhevm</guilabel> network, such as enabling VLAN tagging, must be performed before a Cluster is attached, and while the data center is still in the <guilabel>Uninitialized</guilabel> state."
+msgstr "一旦叢集連上資料中心之後，預設的「<guilabel>rhevm</guilabel>」網路就不能變動。任何需要「<guilabel>rhevm</guilabel>」網路的配置（例如啟用 VLAN 標籤），皆必須在叢集連上之前完成，並且資料中心必須處於「<guilabel>未初始化</guilabel>」狀態。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Clusters</guilabel> resource tab to list all clusters in the results list."
+msgstr "點選「<guilabel>叢集</guilabel>」分頁。一列叢集清單便會出現。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>New</guilabel> button to open the <guilabel>New Cluster</guilabel> window."
+msgstr "請點選「<guilabel>叢集</guilabel>」分頁上的「<guilabel>新建</guilabel>」按鈕。"
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> the cluster will belong to from the drop-down menu."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Name</guilabel> of the cluster; this text field has a 40-character limit and allows only alpha-numeric, underscore (<literal>_</literal>), and dash (<literal>-</literal>) characters."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Description</guilabel> of the description. This field is recommended but not mandatory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>CPU Name</guilabel> from the drop-down menu. It is important to match the CPU processor family with the minimum CPU processor type of the hosts you intend to attach to the cluster, otherwise the host will be non-operational."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the compatibility version from the drop-down menu. If the data center you're attaching to is in <guilabel>3.1</guilabel> compatibility mode, <guilabel>3.1</guilabel> will be your only choice; if the data center is in <guilabel>3.0</guilabel>compatibility mode then you can choose between <guilabel>3.0</guilabel> and <guilabel>3.1</guilabel> mode."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Enable Virt Service</guilabel> check box to enable virtualization checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required virtualization capabilities."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Enable Gluster Service</guilabel> check box to enable Gluster checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required Gluster capabilities."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Memory Optimization</guilabel> tab to define how much of the host's memory can be used in excess of the permitted memory for a virtual machine in the cluster. For example, all virtual machines will not be using the full amount of allocated memory all the time. Memory sharing allows virtual machines that require additional memory at a certain time to use memory that is not being used at that time by other virtual machines. This feature allows you to fine tune how you wish to optimize the memory page sharing and large pages implementation on the hosts in the cluster."
+msgstr "請使用「<guilabel>記憶體優化</guilabel>」分頁來定義，除了叢集中虛擬機器被允許使用之記憶體之外，還能使用多少主機的記憶體。比方說，所有虛擬機器都不會在所有時候，皆使用全部配置的記憶體。記憶體共享能讓有時需要額外記憶體的虛擬機器，使用當時其它虛擬機器未使用中的記憶體。這項功能能讓您進行調整，以優化記憶體頁面共享，以及實作在叢集主機上的大型頁面。"
+
+#. Tag: para
+#, no-c-format
+msgid "Select one of the following:"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>None</guilabel> - disables memory page sharing"
+msgstr "「<guilabel>新建叢集</guilabel>」對話方塊將會出現。"
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Optimized for Server Load</guilabel> - sets the memory page sharing threshold to 150% of the system memory on each host"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Optimized for Desktop Load</guilabel> - sets the memory page sharing threshold to 200% of the system memory on each host"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Resilience Policy</guilabel> tab to define if high availability is to be implemented for the virtual machines in the cluster. If a host shuts down unexpectedly or is put into maintenance, the virtual machines running on the host can be migrated to run on another host in the same cluster. This field allows you to configure the migration settings for virtual machines."
+msgstr "請選擇「<guilabel>復原政策</guilabel>」（Resilience Policy）分頁，以定義是否要為叢集中的虛擬機器實作高可用性。若主機非預期地關閉，或是進行維護時，執行於該主機上的虛擬機器，能重新執行於相同叢集中的另一主機上。此欄位能讓您配置虛擬機器的遷移設定。"
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Migrate Virtual Machines</guilabel> - migrates all virtual machines"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Migrate only Highly Available Virtual Machines</guilabel> - migrates only highly available virtual machines"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Do Not Migrate Virtual Machines</guilabel> - does not migrate any virtual machines"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel> to create the cluster and open the <guilabel>New Cluster - Guide Me</guilabel> window."
+msgstr "請點選「<guilabel>叢集</guilabel>」分頁上的「<guilabel>新建</guilabel>」按鈕。"
+
+#. Tag: para
+#, no-c-format
+msgid "The <guilabel>Guide Me</guilabel> window lists the entities that need to be configured for the cluster. Configure these entities or postpone configuration by clicking the <guilabel>Configure Later</guilabel> button; configuration can be resumed by selecting the cluster and clicking the <guilabel>Guide Me</guilabel> button."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The new cluster is added to the virtualization environment."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7624-163744+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "To create a new host cluster:"
+#~ msgstr "新建主機叢集："
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "On the <guilabel>General</guilabel> tab, Select an existing <guilabel>Data Center</guilabel> from the list, the cluster <guilabel>Name</guilabel> and <guilabel>Description</guilabel>. The name should not include spaces."
+#~ msgstr "在「<guilabel>一般</guilabel>」分頁上，請由清單中選擇既有的「<guilabel>資料中心</guilabel>」、叢集「<guilabel>名稱</guilabel>」，以及「<guilabel>描述</guilabel>」。名稱不應包含空格。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Select the <guilabel>CPU Name</guilabel> for hosts in this cluster. All hosts must run the same type of CPU. The <guilabel>CPU Name</guilabel> list displays all the CPU types supported by Red Hat Enterprise Virtualization. Finally on the <guilabel>General</guilabel> tab, select the <guilabel>Compatibility Level</guilabel> of the data center, from either 2.2 or 3.0."
+#~ msgstr "請為此叢集中的主機選擇「<guilabel>CPU 名稱</guilabel>」。所有主機皆必須執行相同類型的 CPU。「<guilabel>CPU Name</guilabel>」清單會顯示 RHEV 所支援的所有 CPU 類型。最後，請在「<guilabel>一般</guilabel>」分頁上，選擇資料中心的「<guilabel>相容性等級</guilabel>」（2.2 或 3.0）。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Select from <guilabel>None</guilabel>, that disables memory page sharing, <guilabel>Optimized for Server Load</guilabel>, that sets the memory page sharing threshold to 150% of the system memory on each host, or <guilabel>Optimized for Desktop Load</guilabel>, that sets the memory page sharing threshold to 200% of the system memory on each host."
+#~ msgstr "請選擇「<guilabel>無</guilabel>」（這將會停用記憶體頁面共享）、「<guilabel>針對伺服器負載優化</guilabel>」（這會將記憶體頁面共享的門檻，設為各主機系統記憶體的 150%），或是「<guilabel>針對桌面負載優化</guilabel>」（這會將記憶體頁面共享的門檻，設為各主機系統記憶體的 200%）。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Select from <guilabel>Migrate Virtual Machines</guilabel>, (migrates all machines); <guilabel>Migrate only Highly Available Virtual Machines</guilabel> or <guilabel>Do Not Migrate Virtual Machines</guilabel>."
+#~ msgstr "請選擇「<guilabel>遷移虛擬機器</guilabel>」（遷移所有機器）；「<guilabel>僅遷移高可用性的虛擬機器</guilabel>」或是「<guilabel>不遷移虛擬機器</guilabel>」。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Click <guibutton>OK</guibutton> to create the cluster. The new host cluster is added to the data center and displays on the Cluster tab."
+#~ msgstr "請按下「<guibutton>確定</guibutton>」，以建立叢集。新的主機叢集將會被新增至資料中心，並顯示在叢集分頁上。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The <guilabel>New Cluster - Guide Me</guilabel> dialog displays."
+#~ msgstr "「<guilabel>新建叢集 - 指示我</guilabel>」對話方塊將會出現。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The <guilabel>Guide Me</guilabel> tab prompts you to add hosts to the new cluster. Click the <guibutton>Configure Hosts</guibutton> button, the <guilabel>New Host</guilabel> dialog displays."
+#~ msgstr "「<guilabel>指示我</guilabel>」分頁會提示您新增主機至新的叢集上。請按下「<guibutton>配置主機</guibutton>」按鈕，「<guilabel>新增主機</guilabel>」的對話方塊將會出現。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Enter the details of the host to assign to the cluster. Click <guibutton>OK</guibutton> to close the <guilabel>New Host</guilabel> dialog. Now click <guibutton>Configure Later</guibutton> to close the <guilabel>New Cluster Guide Me</guilabel> dialog and return to the <guilabel>Clusters</guilabel> tab."
+#~ msgstr "請輸入欲指定至叢集的主機之詳細資料。請按下「<guibutton>確定</guibutton>」，以關閉「<guilabel>新增主機</guilabel>」對話方塊。現在，請按下「<guibutton>稍後配置</guibutton>」，以關閉「<guilabel>新建叢集 - 指示我</guilabel>」對話方塊，並返回至「<guilabel>叢集</guilabel>」分頁。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The <guilabel>Hosts</guilabel> tab on the Details pane displays the newly added hosts."
+#~ msgstr "詳細內容面板的「<guilabel>主機</guilabel>」分頁顯示了新增的主機。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

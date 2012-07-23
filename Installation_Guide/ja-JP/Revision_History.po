@@ -1,0 +1,129 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+# noriko <noriko@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-20 05:02-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Revision History"
+msgstr "改訂履歴"
+
+#. Tag: firstname
+#, no-c-format
+msgid "CS Builder"
+msgstr ""
+
+#. Tag: surname
+#, no-c-format
+msgid "Robot"
+msgstr ""
+
+#. Tag: member
+#, no-c-format
+msgid "Initial creation by publican"
+msgstr ""
+
+#. Tag: member
+#, no-c-format
+msgid "Built from Content Specification: 8983, Revision: 164535"
+msgstr ""
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author noriko
+#~ msgctxt ""
+#~ msgid "Tim"
+#~ msgstr "Tim"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author noriko
+#~ msgctxt ""
+#~ msgid "Hildred"
+#~ msgstr "Hildred"
+
+#~ msgctxt ""
+#~ msgid "Initial staging of topic based edition of guide for review by product management."
+#~ msgstr "トピックベースでガイドを編集する最初の段階で、製品マネージメントによるレビューを行う"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author noriko
+#~ msgctxt ""
+#~ msgid "Daniel"
+#~ msgstr "Daniel"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author noriko
+#~ msgctxt ""
+#~ msgid "Macpherson"
+#~ msgstr "Macpherson"
+
+#~ msgctxt ""
+#~ msgid "BZ#798843 - Shortened admonition title to avoid overlap"
+#~ msgstr "BZ#798843 - 重複をさけるため警告のタイトル部分を短縮"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Zac"
+#~ msgstr "Zac"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Dover"
+#~ msgstr "Dover"
+
+#~ msgctxt ""
+#~ msgid "BZ#805568 - Updating storage requirements from 10GB minimum to 2 GB minimum"
+#~ msgstr "BZ#805568 - 最小ストレージ要件を 10GB から 2 GB に変更"
+
+#~ msgctxt ""
+#~ msgid "Bumped pubsnumber prior to topic export."
+#~ msgstr "トピックベースのエクスポート前に版数を上げる"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Stephen"
+#~ msgstr "Stephen"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Gordon"
+#~ msgstr "Gordon"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author myamamot
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization General Availability"
+#~ msgstr "Red Hat Enterprise Virtualization 一般公開"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author myamamot
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 4"
+#~ msgstr "Red Hat Enterprise Virtualization 社外向けベータ 4"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author myamamot
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 3"
+#~ msgstr "Red Hat Enterprise Virtualization 社外向けベータ 3"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 2"
+#~ msgstr "Red Hat Enterprise Virtualization 社外向けベータ 2"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author Ykatabam
+#~ msgctxt ""
+#~ msgid "Red Hat Enterprise Virtualization External Beta 1"
+#~ msgstr "Red Hat Enterprise Virtualization 社外向けベータ 1"
+
+# translation auto-copied from project RHEV Installation Guide, version 3.1, document Revision_History, author myamamot
+#~ msgctxt ""
+#~ msgid "Draft"
+#~ msgstr "ドラフト版"

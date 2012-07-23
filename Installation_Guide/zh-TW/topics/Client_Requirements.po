@@ -1,0 +1,168 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:06-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: para
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Client Requirements"
+msgstr "Red Hat Enterprise Virtualization Certified Linux-based thin clients"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To access the Administration Portal, you need a client with a supported web browser. The Administration Portal supports the following clients and browsers:"
+msgstr "若要存取管理入口網站，您需要一個裝有受支援之網站瀏覽器的客戶端。管理入口網站支援下列客戶端與瀏覽器："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Client"
+msgstr "客戶端"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 5.8+ (i386, AMD64 and Intel 64)"
+msgstr "RHEL 5.5（i386、AMD64 和 Intel 64）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux 6.2+ (i386, AMD64 and Intel 64)"
+msgstr "RHEL 6.0（i386、AMD64 和 Intel 64）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP,"
+msgstr "Windows XP、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 7 (x86, AMD64 and Intel 64), and"
+msgstr "Windows 7（x86、AMD64 和 Intel 64），以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 2008/R2 (x86, AMD64 and Intel 64)."
+msgstr "Windows 2008/R2（x86、AMD64 和 Intel 64）。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Browser"
+msgstr "瀏覽器"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Mozilla Firefox 10 and higher on Red Hat Enterprise Linux."
+msgstr "Mozilla Firefox 3.5 和更新版本於 Red Hat Enterprise Linux 上，並安裝了 SPICE 外掛。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Explorer 8 and higher on Windows."
+msgstr "Internet Explorer 7 和更新版本於 Windows 上，並安裝了 SPICE ActiveX"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To access the User Portal, you need a thin client with a supported web browser. The User Portal supports the following clients and browsers:"
+msgstr "若要存取使用者入口網站，您需要一個裝有受支援之網站瀏覽器的 thin client。使用者入口網站支援下列客戶端與瀏覽器："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP"
+msgstr "Windows XP"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows XP Embedded (XPe)"
+msgstr "Windows XP Embedded（XPe）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 7 (x86, AMD64 and Intel 64)"
+msgstr "Windows 7（x86、AMD64 以及 Intel 64）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows Embedded Standard 7"
+msgstr "Windows Embedded Standard 7"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows 2008/R2 (x86, AMD64 and Intel 64)"
+msgstr "Windows 2008/R2（x86、AMD64 以及 Intel 64）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows Embedded Standard 2009"
+msgstr "Windows Embedded Standard 2009"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Certified Linux-based thin clients"
+msgstr "Red Hat Enterprise Virtualization Certified Linux-based thin clients"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Mozilla Firefox 10 and higher on Red Hat Enterprise Linux, with the SPICE plugin installed (provided by the <package>spice-xpi</package> package)."
+msgstr "Mozilla Firefox 3.5 和更新版本於 Red Hat Enterprise Linux 上，並安裝了 SPICE 外掛。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Explorer 8 and higher on Windows, with the SPICE ActiveX control installed."
+msgstr "Internet Explorer 7 和更新版本於 Windows 上，並安裝了 SPICE ActiveX"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7848-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Client Requirements"
+#~ msgstr "客戶端需求"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Internet Explorer 7 and higher on Windows, with the <acronym> .NET</acronym> Framework 4 installed."
+#~ msgstr "在 Windows 上，Internet Explorer 7 或更新版本，並裝載了 <acronym> .NET</acronym> Framework 4。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

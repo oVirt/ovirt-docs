@@ -1,0 +1,98 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 01:06-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Overview"
+msgstr "總覽"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization provides IT departments with the tools to meet the challenges of managing complex environments. Red Hat's state-of-the-art virtualization platform enables administrators to reduce the cost and complexity of large deployments. Red Hat Enterprise Virtualization provides:"
+msgstr "RHEV 提供了 IT 部門適用於管理複雜環境的工具。Red Hat 最先進的虛擬化平台能讓管理員降低成本與大型建置的複雜性。RHEV 平台提供了："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "High availability to quickly configure virtual machines for fault tolerance."
+msgstr "高可用性，以快速配置虛擬機器進行容錯。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Live migration to move virtual machines between physical hosts without interruption."
+msgstr "及時遷移，以在無干擾的情況下，在實體主機之間快速遷移虛擬機器。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "System scheduler to create policies to dynamically balance compute resources."
+msgstr "系統排程程式，以建立動態平衡系統資源的政策。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Power saver to create policies to conserve power and cooling costs."
+msgstr "省電程式，以建立政策來節省電源、降低成本。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Image manager to create, manage and provision virtual machines."
+msgstr "映像檔管理員，以建立、管理和佈建虛擬機器。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Storage virtualization to consistently access common storage from any server."
+msgstr "儲存裝置虛擬化，以一致性地由任何伺服器存取常用儲存裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Multi-level administration to enable administration of physical infrastructure as well as administration of virtual objects."
+msgstr "多層級管理，同時進行實體架構以及虛擬物件上的管理。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Ability to convert existing virtual machines on foreign hypervisors to Red Hat Enterprise Virtualization platform."
+msgstr "將外部 hypervisor 上的既有虛擬機器轉移至 RHEV 平台上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A range of reports either from the reports module based on JasperReports, or from the data warehouse. The reports enable administrators to monitor and analyze information on virtual machines, hosts and storage usage and performance."
+msgstr "一系列的回報，它們來自於基於 JasperReports 的回報模組，或是資料庫。這些回報能讓管理員監控和分析虛擬機器、主機及儲存裝置使用上和效能上的資訊。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8651-163887+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,179 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring Virtualization Host Firewall"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Previous Step in <link linkend=\"proc-Preparing_a_Red_Hat_Enterprise_Linux_Host\">Preparing a Red Hat Enterprise Linux Host</link>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Subscribing_to_Required_Channels_using_RHN_Classic\" />"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization requires that a number of network ports be open to support virtual machines and remote management of the virtualization host from the Red Hat Enterprise Virtualization Manager. You must follow this procedure to open the required network ports before attempting to add the virtualization host to the Manager."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring virtualization host firewall"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The following steps configure the default firewall in Red Hat Enterprise Linux, <command>iptables</command>, to allow traffic on the required network ports. These steps replace any existing firewall configuration on your host with one containing only the required by Red Hat Enterprise Virtualization. If you have existing firewall rules with which this configuration must be merged then you must do so by manually editing the rules defined in the <command>iptables</command> configuration file, <filename>/etc/sysconfig/iptables</filename>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "All commands in this procedure must be run as the <systemitem>root</systemitem> user."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Remove existing firewall rules from configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Remove any existing firewall rules using the <parameter>--flush</parameter> parameter to the <command>iptables</command> command."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# iptables --flush"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Add new firewall rules to configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Add the new firewall rules, required by Red Hat Enterprise Virtualization, using the <parameter>--append</parameter> parameter to the <command>iptables</command> command."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# iptables --append INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT# iptables --append INPUT -p icmp -j ACCEPT# iptables --append INPUT -i lo -j ACCEPT# iptables --append INPUT -p tcp --dport 22 -j ACCEPT# iptables --append INPUT -p tcp --dport 16514 -j ACCEPT# iptables --append INPUT -p tcp --dport 54321 -j ACCEPT# iptables --append INPUT -p tcp -m multiport --dports 5634:6166 -j ACCEPT# iptables --append INPUT -p tcp -m multiport --dports 49152:49216 -j ACCEPT# iptables --append INPUT -j REJECT --reject-with icmp-host-prohibited# iptables --append FORWARD -m physdev ! --physdev-is-bridged -j REJECT --reject-with icmp-host-prohibited"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The provided <command>iptables</command> commands add firewall rules to accept network traffic on a number of ports. These include:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "port <systemitem class=\"protocol\"> 22</systemitem> for <application> SSH</application>,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "ports <systemitem class=\"protocol\"> 5634</systemitem> to <systemitem class=\"protocol\"> 6166</systemitem> for guest console connections,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "port <systemitem class=\"protocol\"> 16514</systemitem> for <application> libvirt</application> virtual machine migration traffic,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "ports <systemitem class=\"protocol\"> 49152</systemitem> to <systemitem class=\"protocol\"> 49216</systemitem> for <acronym> VDSM</acronym> virtual machine migration traffic, and"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "port <systemitem class=\"protocol\"> 54321</systemitem> for the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Save the updated firewall configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Save the updated firewall configuration script using the <parameter>save</parameter> to the <command>iptables</command> initialization script."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# service iptables save"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Enable iptables service"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Ensure that the <command>iptables</command> service is configured to start on boot and has been restarted, or started for the first time if it was not already running."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# chkconfig iptables on# service iptables restart"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You have configured the virtualization host's firewall to allow the network traffic required by Red Hat Enterprise Virtualization."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Next Step in <link linkend=\"proc-Preparing_a_Red_Hat_Enterprise_Linux_Host\">Preparing a Red Hat Enterprise Linux Host</link>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Virtualization_Host_sudo\" />"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Red_Hat_Enterprise_Virtualization_Manager_Firewall_Requirements\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10234-163863+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

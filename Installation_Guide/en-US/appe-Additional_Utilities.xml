@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<appendix id="appe-Additional_Utilities">
+	<title>Additional Utilities</title>
+	<section id="sect-Domain_Management_Tool">
+		<title>Domain Management Tool</title>
+		<xi:include href="topics/Domain_Management_Tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Syntax_for_rhevm_manage_domains_Command.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Adding_Domains_to_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Edit_Domain_in_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Deleting_Domains_from_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Validating_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Listing_Domains_in_Configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="sect-Configuration_Tool">
+		<title>Configuration Tool</title>
+		<xi:include href="topics/Configuration_Tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Syntax_for_rhevm_config_Command.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+	<section id="sect-ISO_Uploader">
+		<title>ISO Uploader</title>
+		<xi:include href="topics/ISO_Uploader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Syntax_for_rhevm_iso_uploader_Command.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<section id="sect-Usage_Examples">
+			<title>Usage Examples</title>
+			<xi:include href="topics/Specifying_an_NFS_Server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Basic_ISO_Uploader_Usage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+	</section>
+	<section id="sect-Log_Collector">
+		<title>Log Collector</title>
+		<xi:include href="topics/Log_Collector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Syntax_for_rhevm_log_collector_Command.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Basic_Log_Collector_Usage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Collecting_Logs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</appendix>

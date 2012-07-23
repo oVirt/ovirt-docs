@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Preparing_USB_Installation_Media_using_rhevhisotodisk" remap="TID_7527">
+	<title>Preparing USB Installation Media using rhevh-iso-to-disk</title>
+	<para>
+		The <command>rhevh-iso-to-disk</command> command will install a Hypervisor onto a <acronym> USB</acronym> storage device. The <command>rhevh-iso-to-disk</command> command is included in the <package>rhev-hypervisor-tools</package> package. Devices which have the Hypervisor image written to them with this command are able to boot the Hypervisor on systems which support booting via <acronym> USB</acronym>.
+	</para>
+	<para>
+		The basic <command>rhevh-iso-to-disk</command> command usage follows this structure:
+	</para>
+	<screen># rhevh-iso-to-disk <replaceable>image</replaceable> <replaceable>device</replaceable>
+    </screen>
+	<para>
+		Where the <replaceable>device</replaceable> parameter is the partition name of the <acronym>USB</acronym> storage device to install to. The <replaceable>image</replaceable> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>rhevh-iso-to-disk</command> command requires devices to be formatted with the <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> file system.
+	</para>
+	<note>
+		<title>Note — Partitions and <command>rhevh-iso-to-disk</command></title>
+		<para><command>rhevh-iso-to-disk</command> uses a <systemitem class="filesystem">FAT</systemitem> or <systemitem class="filesystem">EXT3</systemitem> formatted partition or block device.
+		</para>
+		<para>
+			<acronym> USB</acronym> storage devices are sometimes formatted without a partition table, use <systemitem>/dev/sdb</systemitem> or similar device name.
+		</para>
+		<para>
+			When a <acronym> USB</acronym> storage device is formatted with a partition table, use <systemitem>/dev/sdb1</systemitem> or similar device name.
+		</para>
+	</note>
+	<procedure>
+		<step>
+			<para>
+				Install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages.
+			</para>
+		</step>
+		<step>
+			<para>
+				Use the <command>rhevh-iso-to-disk</command> command to copy the image file, located in the <filename>/usr/share/rhev-hypervisor/</filename> directory, to the disk. The <parameter>--format</parameter> parameter formats the disk. The <parameter>--reset-mbr</parameter> initializes the Master Boot Record ( <acronym> MBR</acronym>).
+			</para>
+			<example>
+				<title>Use of <command>rhevh-iso-to-disk</command></title>
+				<para>
+					This example demonstrates the use of <command>rhevh-iso-to-disk</command> to write to a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>.
+				</para>
+				<screen>
+# rhevh-iso-to-disk --format --reset-mbr /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc
+Verifying image...
+/usr/share/rhev-hypervisor/rhev-hypervisor.iso:   eccc12a0530b9f22e5ba62b848922309
+Fragment sums: 8688f5473e9c176a73f7a37499358557e6c397c9ce2dafb5eca5498fb586
+Fragment count: 20
+Checking: 100.0%
+
+The media check is complete, the result is: PASS.
+
+It is OK to use this media.
+Copying live image to USB stick
+Updating boot config file
+Installing boot loader
+syslinux: only 512-byte sectors are supported
+USB stick set up as live image!
+</screen>
+			</example>
+			<important>
+				<para>
+					Red Hat Enterprise Linux 6.3 enables the use of the Unified Extensible Firmware Interface (UEFI) as a Technology Preview.
+				</para>
+				<para>
+					Technology Preview features provide early access to upcoming product features, allowing you to test functionality and provide feedback during feature development. However, these features are not fully supported, may not be functionally complete, and are not intended for production use. Because these features are still under development, Red Hat cannot guarantee their stability. Therefore, you may not be able to upgrade seamlessly from a Technology Preview feature to a subsequent release of that feature. Additionally, if the feature does not meet standards for enterprise viability, Red Hat cannot guarantee that the Technology Preview will be released in a supported manner. Some Technology Preview features may only be available for specific hardware architectures.
+				</para>
+				<para>
+					Using UEFI requires an additional parameter, <parameter>--efi</parameter>, with the <command>rhevh-iso-to-disk</command> command in order to correctly set up and enable UEFI. The <parameter>--efi</parameter> parameter is used like so:
+				</para>
+				<screen># rhevh-iso-to-disk --format -- efi <replaceable>image</replaceable> <replaceable>device</replaceable></screen>
+				<screen># rhevh-iso-to-disk --format /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc</screen>
+				<para>
+					Note that this Technology Preview is only available in Red Hat Enterprise Linux 6.3.
+				</para>
+			</important>
+		</step>
+	</procedure>
+	<para>
+		The <acronym> USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) has been prepared. You can now use it to boot a system and install the Hypervisor.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7527-164519+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

@@ -1,0 +1,48 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Deleting a Domain from the Configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In this example, the <command>rhevm-manage-domains</command> command is used to remove the <literal>directory.demo.redhat.com</literal> domain from the Red Hat Enterprise Virtualization Manager configuration. Users defined in the removed domain will no longer be able to authenticate with the Red Hat Enterprise Virtualization Manager. The entries for the affected users will remain defined in the Red Hat Enterprise Virtualization Manager until they are explicitly removed."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The domain being removed in this example is the last one listed in the Red Hat Enterprise Virtualization Manager configuration. A warning is displayed highlighting this fact and that only the <systemitem>admin</systemitem> user from the <literal>internal</literal> domain will be able to log in until another domain is added."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "<command>rhevm-manage-domains</command> Delete Action"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"# rhevm-manage-domains -action=delete -domain='directory.demo.redhat.com'\n"
+"WARNING: Domain directory.demo.redhat.com is the last domain in the configuration. After deleting it you will have to either add another domain, or to use the internal admin user in order to login.\n"
+"Successfully deleted domain directory.demo.redhat.com. Please remove all users and groups of this domain using the Administration portal or the API.\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8407-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

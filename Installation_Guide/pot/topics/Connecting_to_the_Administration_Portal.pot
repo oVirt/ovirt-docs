@@ -1,0 +1,79 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Connecting to the Administration Portal"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Return to the browser and navigate to <uri>https://<replaceable>manager.demo.redhat.com</replaceable>/webadmin</uri>. Replace <filename>manager.demo.redhat.com</filename> with the fully qualified domain name that you provided during installation. Additionally where a non-default <acronym>HTTPS</acronym> port was selected during installation, it must be appended to the domain name. For example if the port selected during installation was <literal>8443</literal> then the URL would become <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:<replaceable>8443</replaceable>/webadmin</uri>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The first time that you connect, you will be prompted to trust the certificate being used to secure communications between your browser and the web server."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The login screen displays. Enter <systemitem>admin</systemitem> as your <guilabel>User Name</guilabel>, and enter the password that you set during installation into the <guilabel>Password</guilabel> field. Ensure that the <systemitem>internal</systemitem> domain is selected in the <guilabel>Domain</guilabel> list."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guilabel>Login</guilabel> to log in."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You have now successfully logged into the Red Hat Enterprise Virtualization web Administration Portal. You can now:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "optionally, install Red Hat Enterprise Virtualization Manager Reports, or"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "begin installing virtualization hosts."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"chap-Data_Collection_Setup_and_Reports_Installation\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"part-Installing_Virtualization_Hosts\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7629-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

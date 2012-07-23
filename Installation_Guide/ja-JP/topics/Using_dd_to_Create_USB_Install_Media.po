@@ -1,0 +1,79 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 12:16-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Installation Media Using dd"
+msgstr "dd を使用した USB インストールメディアの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>dd</command> command can also be used to install a hypervisor onto a <acronym>USB</acronym> storage device. Media created with the command can boot the hypervisor on systems which support booting via <acronym>USB</acronym>. Red Hat Enterprise Linux provides <command>dd</command> as part of the <package> coreutils</package> package. Versions of <command>dd</command> are also available on a wide variety of Linux and Unix operating systems."
+msgstr "<acronym>USB</acronym> ストレージデバイスへの Hypervisor インストールには <command>dd</command> コマンドを使用することもできます。このコマンドで作成したメディアを使用すると、<acronym>USB</acronym> を介したブートをサポートするシステム上で Hypervisor を起動することができます。Red Hat Enterprise Linux は <command>dd</command> を <package>coreutils</package> パッケージの一部として提供しています。<command>dd</command> には、多種多様な Linux/Unix オペレーティングシステムで使用することができる複数のバージョンがあります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Windows users are able to obtain the <command>dd</command> command through installation of <application>Red Hat Cygwin</application>, a free Linux-like environment for Windows."
+msgstr "Windows ユーザーは Windows で Linux ライクな環境を提供するフリーソフトウェア <application>Red Hat Cygwin</application> をインストールすると、<command>dd</command> を取得することができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The basic <command>dd</command> command usage follows this structure:"
+msgstr "基本的な <command>dd</command> コマンドは、以下のような構文で使用します。"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"# dd if=<replaceable>image</replaceable> of=<replaceable>device</replaceable>\n"
+"    "
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the <parameter>device</parameter> parameter is the device name of the <acronym> USB</acronym> storage device to install to. The <parameter>image</parameter> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>dd</command> command does not make assumptions as to the format of the device as it performs a low-level copy of the raw data in the selected image."
+msgstr "ここで、<parameter>device</parameter> パラメーターは、インストール先となる <acronym>USB</acronym> ストレージデバイスのデバイス名です。<parameter>image</parameter> パラメーターは Hypervisor の ISO イメージです。デフォルトの Hypervisor イメージの場所は、<filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> です。<command>dd</command> コマンドは、選択したイメージ内の RAW データのローレベルコピーを行う際に、デバイスのフォーマットについては何も仮定しません。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Linux_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_dd_on_Windows_Systems\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7854-164522+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid ""
+#~ "# dd if=<systemitem>image</systemitem> of=<systemitem>device</systemitem>\n"
+#~ "    "
+#~ msgstr ""
+#~ "# dd if=<systemitem>image</systemitem> of=<systemitem>device</systemitem>\n"
+#~ "    "
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

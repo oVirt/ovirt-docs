@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Management_Server_Requirements" remap="TID_7841">
+	<title>Red Hat Enterprise Virtualization Manager Hardware Requirements</title>
+	<!-- A Reference provides additional information -->
+	<para>
+		The minimum and recommended hardware requirements outlined here are based on a typical small to medium sized installation. The exact requirements vary between deployments based on sizing and load. Please use these recommendations as a guide only.
+	</para>
+	<itemizedlist>
+		<title>Minimum</title>
+		<listitem>
+			<para>
+				A dual core <acronym>CPU</acronym>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				4&nbsp;GB of available system <acronym>RAM</acronym> that is not being consumed by existing processes.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				25&nbsp;GB of locally accessible, writeable, disk space.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				1 Network Interface Card (<acronym>NIC</acronym>) with bandwidth of at least 1 Gbps.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<itemizedlist>
+		<title>Recommended</title>
+		<listitem>
+			<para>
+				A quad core <acronym>CPU</acronym> or multiple dual core <acronym>CPUs</acronym>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				16 GB of system <acronym>RAM</acronym>.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				50 GB of locally accessible, writeable, disk space.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				1 Network Interface Card (<acronym>NIC</acronym>) with bandwidth of at least 1 Gbps.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		The Red Hat Enterprise Virtualization Manager runs on Red Hat Enterprise Linux. To confirm whether or not specific hardware items are certified for use with Red Hat Enterprise Linux refer to <ulink url="http://www.redhat.com/rhel/compatibility/hardware/"/>.
+	</para>
+	<!-- Do not edit below this line! -->
+	<!-- Injection Point: Related Overviews -->
+	<!-- Injection Point: Related Concepts -->
+	<!-- Injection Point: Related Tasks -->
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7841-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

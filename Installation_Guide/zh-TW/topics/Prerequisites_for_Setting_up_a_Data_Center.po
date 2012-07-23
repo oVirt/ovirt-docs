@@ -1,0 +1,86 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-25 01:09-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Prerequisites for Setting up a Data Center"
+msgstr "設定資料中心的先決條件"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Before you create a new data center, prepare the following resources. The "
+"following tasks must be done at the host level, not from the Red Hat "
+"Enterprise Virtualization platform."
+msgstr "在您建立新資料中心前，請準備下列資源。下列工作必須以叢集層級完成，而非透過 RHEV 平台。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Setup and configure hosts. A host can be a Red Hat Enterprise Virtualization "
+"Hypervisor or a Red Hat Enterprise Linux host. A cluster needs a minimum of "
+"one host, and at least one active host is required to connect the system to "
+"a storage pool."
+msgstr ""
+"設定和配置主機。主機能夠是 RHEV Hypervisor 或是 RHEL "
+"主機。叢集至少需要一部主機，並且至少需要一部啟用的主機，以將系統連至儲存裝置群。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Setup, configure and define storage. It is recommended that data centers "
+"have a minimum of two storage domains, one to store disk images of the "
+"virtual machines and one to store ISO images. Set up the storage domains of "
+"the type required for the data center; NFS, iSCSI, FCP or Local. For "
+"example, for an NFS data center, create and mount the export directories."
+msgstr ""
+"設定、配置和定義儲存裝置。建議您的資料中心擁有至少兩個儲存區域，一個用來儲存虛擬機器的磁碟映像檔，一個用來儲存 ISO "
+"映像檔。為資料中心設定必要類型的儲存區域；NFS、iSCSI、FCP 或是 Local。比方說，若是 NFS 資料中心，請建立並掛載 export "
+"目錄。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Set up logical networks for the data center, cluster and the hosts. It is "
+"recommended that you have the IP addresses/domain names available for "
+"reference."
+msgstr "為資料中心、叢集和主機設定邏輯網路。建議您持有 IP 位址/區域名稱以供參照。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

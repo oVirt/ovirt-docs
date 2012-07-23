@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Required_UIDs_and_GIDs" remap="TID_7853">
+	<title>Required UIDs and GIDs</title>
+	<para>
+		Red Hat Enterprise Virtualization requires certain User IDs and Group IDs (UIDs and GIDs) on the host system. When the <package> vdsm</package> and <package> qemu</package> packages are installed, default versions of these UIDs and GIDs are created on the host.
+	</para>
+	<para>
+		If existing UIDs and GIDs on the host conflict with the default values used during <package> vdsm</package> and <package> qemu</package> installation, a conflict occurs.
+	</para>
+	<para>
+		The UIDs and GIDs created by default during Red Hat Enterprise Virtualization installation are:
+	</para>
+	<table id="References_RHEV_2.3_UIDs_needed_by_RHEV_table-">
+		<title>GIDs and UIDs required by RHEV</title>
+		<tgroup align="left" cols="4" colsep="1" rowsep="1">
+			<colspec colname="c1" colwidth="1*"/>
+			<colspec colname="c2" colwidth="1*"/>
+			<colspec colname="c3" colwidth="1*"/>
+			<colspec colname="c4" colwidth="1*"/>
+			<thead>
+				<row>
+					<entry>
+						Name
+					</entry>
+					<entry>
+						UID
+					</entry>
+					<entry>
+						GID
+					</entry>
+					<entry>
+						Auxiliary Group
+					</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry><systemitem> vdsm</systemitem>
+					</entry>
+					<entry>
+						36
+					</entry>
+					<entry>
+						nil
+					</entry>
+					<entry>
+						109
+					</entry>
+				</row>
+				<row>
+					<entry><systemitem> kvm</systemitem>
+					</entry>
+					<entry>
+						nil
+					</entry>
+					<entry>
+						36
+					</entry>
+					<entry>
+						nil
+					</entry>
+				</row>
+				<row>
+					<entry><systemitem> qemu</systemitem>
+					</entry>
+					<entry>
+						107
+					</entry>
+					<entry>
+						107
+					</entry>
+					<entry>
+						nil
+					</entry>
+				</row>
+			</tbody>
+		</tgroup>
+	</table>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7853-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

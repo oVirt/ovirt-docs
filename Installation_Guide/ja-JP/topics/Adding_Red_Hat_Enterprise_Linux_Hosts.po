@@ -1,0 +1,53 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 07:47-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux hosts"
+msgstr "Red Hat Enterprise Linux ホストの追加"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization also supports hosts running Red Hat Enterprise Linux&nbsp;6&nbsp;Server AMD64/Intel 64 version. This section describes the preparatory steps for installing the Red Hat Enterprise Linux host, as well as the steps to manually add the host to the Red Hat Enterprise Virtualization platform."
+msgstr "Red Hat Enterprise Virtualization は、Red Hat Enterprise Linux AMD64/Intel 64 バージョンを実行するホストもサポートしています。このセクションでは、Red Hat Enterprise Linux ホストのインストールの準備手順、ならびに Red Hat Enterprise Virtualization プラットフォームに手動でホストを追加する手順について説明します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Adding a host can take some time, as the following steps are completed by the platform: virtualization checks, installation of packages, creation of bridge and a reboot of the host. Use the Details pane to monitor the hand-shake process as the host and management system establish a connection."
+msgstr "仮想化の確認、パッケージのインストール、ブリッジの作成、ホストの再起動などの手順がプラットフォームによって行われるため、ホストの追加には多少時間がかかることがあります。ホストと管理システムが接続を確立する際のハンドシェイクプロセスを監視する場合は詳細ペインを使用します。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Host_Compatibility_Matrix\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8665-162486+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "The following table shows which versions of Red Hat Enterprise Linux are supported as hosts for each version of Red Hat Enterprise Virtualization."
+#~ msgstr "Red Hat Enterprise Virtualization の各バージョンに対して、ホストとしてサポートされている Red Hat Enterprise Linux のバージョンを以下の表に示します。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

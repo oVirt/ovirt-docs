@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8' ?>
+<?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE authorgroup PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 <!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
 %BOOK_ENTITIES;
@@ -6,12 +6,11 @@
 
 <authorgroup>
 	<author>
-		<firstname>Stephen</firstname>
-		<surname>Gordon</surname>
-	</author>
-	<author>
-		<firstname>Tim</firstname>
-		<surname>Hildred</surname>
+		<firstname>
+			Stephen	
+		</firstname>
+		<surname>
+			Gordon
+		</surname>
 	</author>
 </authorgroup>
-

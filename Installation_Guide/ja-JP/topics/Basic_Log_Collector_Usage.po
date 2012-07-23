@@ -1,0 +1,96 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:19-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Basic Log Collector Usage"
+msgstr "ログコレクターの基本的な使用例"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In this example log collector is run to collect all logs from the Red Hat Enterprise Virtualization Manager and the three attached hosts. Additionally the database and <acronym> JBoss</acronym> logs are also collected."
+msgstr "以下の例では、ログコレクターを実行して、Red Hat Enterprise Virtualization Manager およびアタッチされている 3 台のホストから全ログを収集します。また、データベースと <acronym>JBoss</acronym> のログも収集します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Log Collector Usage"
+msgstr "ログコレクターの使用例"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# <command>rhevm-log-collector</command>\n"
+"Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com\n"
+"Please provide the password for rhevm (CTRL+D to abort): \n"
+"Host list (datacenter=None, cluster=None, host=None):\n"
+"Data Center          | Cluster              | Hostname/IP Address\n"
+"SalesDataCenter      | SalesCluster         | 192.168.122.250\n"
+"EngineeringDataCenter | EngineeringCluster   | 192.168.122.251\n"
+"FinanceDataCenter    | FinanceCluster       | 192.168.122.252\n"
+"# <command>rhevm-log-collector collect</command>\n"
+"Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com\n"
+"Please provide the password for rhevm (CTRL+D to abort):\n"
+"About to collect information from 3 hypervisors. Continue? (Y/n): Y\n"
+"INFO: Gathering information from selected hypervisors...\n"
+"INFO: collecting information from 192.168.122.250\n"
+"INFO: collecting information from 192.168.122.251\n"
+"INFO: collecting information from 192.168.122.252\n"
+"INFO: finished collecting information from 192.168.122.250\n"
+"INFO: finished collecting information from 192.168.122.251\n"
+"INFO: finished collecting information from 192.168.122.252\n"
+"Please provide the password to dump the PostgreSQL database (CTRL+D to abort):\n"
+"INFO: Gathering PostgreSQL the RHEV-M database and log files from localhost...\n"
+"INFO: Gathering RHEV-M information...\n"
+"Please provide the password for jboss (CTRL+D to abort):\n"
+"INFO: Log files have been collected and placed in /tmp/logcollector/sosreport-rhn-account-20110804121320-ce2a.tar.xz.\n"
+"      The MD5 for this file is 6d741b78925998caff29020df2b2ce2a and its size is 26.7M\n"
+msgstr ""
+"\n"
+"# <command>rhevm-log-collector</command>\n"
+"Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com\n"
+"Please provide the password for rhevm (CTRL+D to abort): \n"
+"Host list (datacenter=None, cluster=None, host=None):\n"
+"Data Center          | Cluster              | Hostname/IP Address\n"
+"SalesDataCenter      | SalesCluster         | 192.168.122.250\n"
+"EngineeringDataCenter | EngineeringCluster   | 192.168.122.251\n"
+"FinanceDataCenter    | FinanceCluster       | 192.168.122.252\n"
+"# <command>rhevm-log-collector collect</command>\n"
+"Please provide the username for rhevm (CTRL+D to abort): admin@directory.demo.redhat.com\n"
+"Please provide the password for rhevm (CTRL+D to abort):\n"
+"About to collect information from 3 hypervisors. Continue? (Y/n): Y\n"
+"INFO: Gathering information from selected hypervisors...\n"
+"INFO: collecting information from 192.168.122.250\n"
+"INFO: collecting information from 192.168.122.251\n"
+"INFO: collecting information from 192.168.122.252\n"
+"INFO: finished collecting information from 192.168.122.250\n"
+"INFO: finished collecting information from 192.168.122.251\n"
+"INFO: finished collecting information from 192.168.122.252\n"
+"Please provide the password to dump the PostgreSQL database (CTRL+D to abort):\n"
+"INFO: Gathering PostgreSQL the RHEV-M database and log files from localhost...\n"
+"INFO: Gathering RHEV-M information...\n"
+"Please provide the password for jboss (CTRL+D to abort):\n"
+"INFO: Log files have been collected and placed in /tmp/logcollector/sosreport-rhn-account-20110804121320-ce2a.tar.xz.\n"
+"      The MD5 for this file is 6d741b78925998caff29020df2b2ce2a and its size is 26.7M\n"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8435-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,87 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-08 07:39-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "インストール"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This chapter documents the installation of the Red Hat Enterprise "
+"Virtualization hypervisor. Red Hat Enterprise Virtualization Hypervisors are "
+"able to use Storage Area Networks ( <acronym> SANs</acronym>) and other "
+"network storage for storing virtualized guest images. Hypervisors can be "
+"installed on <acronym> SANs</acronym>, provided that the Host Bus Adapter ( "
+"<acronym> HBA</acronym>) permits configuration as a boot device in <acronym> "
+"BIOS</acronym>."
+msgstr ""
+"本章では Red Hat Enterprise Virtualization Hypervisor のインストールについて説明しています。 Red "
+"Hat Enterprise Virtualization Hypervisor は、仮想化ゲストのイメージを格納するための Storage Area "
+"Network (<acronym>SAN</acronym>) や他のネットワークストレージを使用することができます。また、ホストバスアダプター "
+"(<acronym>HBA</acronym>) が <acronym>BIOS</acronym> "
+"で起動デバイスとしての設定が可能であれば、Hypervisor を <acronym>SAN</acronym> にインストールすることもできます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Hypervisors are able to use multipath devices for installation. Multipath is "
+"often used for <acronym> SANs</acronym> or other networked storage. "
+"Multipath is enabled by default at install time. Any block device which "
+"responds to <command>scsi_id</command> functions with multipath. Devices "
+"where this is not the case include <acronym> USB</acronym> storage and some "
+"older <acronym> ATA</acronym> disks."
+msgstr ""
+"Hypervisor ではインストールにマルチパスのデバイスを使用することができます。マルチパスは <acronym>SAN</acronym> "
+"や他のネットワーク接続のストレージなどによく使用されます。マルチパスはインストール時にデフォルトで有効にされます。<command>scsi_id</"
+"command> に応答するブロックデバイスならいずれもマルチパスと連携して機能します。これに該当しないデバイスとしては <acronym>USB</"
+"acronym> ストレージ、 旧式の <acronym>ATA</acronym> ディスクなどがあります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"There are two methods for installing Red Hat Enterprise Virtualization "
+"Hypervisors:"
+msgstr "Red Hat Enterprise Virtualization Hypervisor のインストールは、2 通りの方法があります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Interactive Installation ."
+msgstr "対話型インストール"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Automated Installation with Kernel Parameters (see the <citetitle>Red Hat "
+"Enterprise Linux — Hypervisor Deployment Guide</citetitle>)."
+msgstr ""
+"カーネルパラメーターを使った自動インストール (<citetitle>Red Hat Enterprise Linux Hypervisor "
+"導入ガイド</citetitle> を参照)"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

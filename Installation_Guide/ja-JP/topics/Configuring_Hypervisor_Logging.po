@@ -1,0 +1,110 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-08 07:42-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Logging"
+msgstr "Hypervisor ロギングの設定"
+
+#. Tag: para
+#, no-c-format
+msgid "The hypervisor creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>Logrotate</application> Configuration"
+msgstr "<application>Logrotate</application> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application>logrotate</application> utility simplifies the administration of log files. The hypervisor uses <application>logrotate</application> to rotate logs when they reach a certain file size."
+msgstr "<application>logrotate</application> ユーティリティにより、ログファイルの管理を簡略化することができます。Hypervisor はログファイルが一定のファイルサイズに達すると、<application>logrotate</application> を使用してログをローテーションさせます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log rotation involves renaming the current log(s) and starting new ones in their place. The <guilabel>Logrotate Max Log Size</guilabel> value set on the <guilabel>Logging</guilabel> screen is used to determine when a log should be rotated."
+msgstr "ログをローテーションさせる場合には、現在のログ名を変更して、その場所で新規ログを開始する必要があります。ログのローテーションのタイミングを指定するには、<guilabel>ロギング</guilabel>画面で<guilabel>ログローテションの最大ログサイズ</guilabel>の値を設定します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Logrotate Max Log Size</guilabel> in kilobytes. The default maximum log size is 1024 kilobytes."
+msgstr "<guilabel>ログローテーションの最大ログサイズ</guilabel>をキロバイト単位で入力します。 デフォルトの最大ログサイズは 1024 キロバイトです。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>Rsyslog</application> Configuration"
+msgstr "<application>Rsyslog</application> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application> rsyslog</application> utility is a multithreaded syslog daemon. The hypervisor is able to use <application> rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Red Hat Enterprise Linux — Deployment Guide</citetitle>."
+msgstr "<application>rsyslog</application> ユーティリティはマルチスレッドのシステムログデーモンです。 Hypervisor は <application>rsyslog</application> を使用することでログファイルをネットワーク経由でリモートのシステムログデーモンに送信することができます。 リモートのシステムログデーモンの設定方法については <citetitle>Red Hat Enterprise Linux 導入ガイド</citetitle> を参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the remote <application>Rsyslog</application> server address in the <guilabel>Server Address</guilabel> field."
+msgstr "リモートの <application>Rsyslog</application> サーバーのアドレスを<guilabel>サーバーアドレス</guilabel>フィールドに入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the remote <application>Rsyslog</application> server port in the <guilabel>Server Port</guilabel> field. The default port is <literal>514</literal>."
+msgstr "<guilabel>サーバーポート</guilabel>フィールドに、リモートの <application>Rsyslog</application> サーバーのポートを入力します。デフォルトのポートは <literal>514</literal> です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>netconsole</application> Configuration"
+msgstr "<application>netconsole</application> の設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. The hypervisor uses <application>netconsole</application> to transmit kernel messages over the network."
+msgstr "<application>netconsole</application> モジュールにより、カーネルメッセージをリモートのマシンに送信することができます。Hypervisor は <application>netconsole</application> を使用して、ネットワーク上でカーネルメッセージを送信します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Server Address</guilabel>."
+msgstr "<guilabel>サーバーアドレス</guilabel>を入力します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Server Port</guilabel>. The default port is <literal>6666</literal>."
+msgstr "<guilabel>サーバーポート</guilabel>を入力します。デフォルトのポートは <literal>6666</literal> です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Configuration"
+msgstr "設定の保存"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To save the logging configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>."
+msgstr "ロギング設定を保存するには、<guibutton>&lt;適用&gt;</guibutton> を選択して <keycap>Enter</keycap> を押します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The logging configuration has been updated and logs will be exported to the remote <application>Rsyslog</application> server specified."
+msgstr "ロギング設定が更新され、ログが指定したリモートの <application>Rsyslog</application> サーバーにエクスポートされるようになりました。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7534-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

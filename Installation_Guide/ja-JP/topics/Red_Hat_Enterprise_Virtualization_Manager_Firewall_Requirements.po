@@ -1,0 +1,225 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 01:22-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Firewall Requirements"
+msgstr "Red Hat Enterprise Virtualization Manager のファイアウォール要件"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager requires that a number of ports be opened to allow network traffic through the system's firewall. The <command>rhevm-setup</command> script is able to configure the firewall automatically, but this will overwrite any pre-existing firewall configuration."
+msgstr "Red Hat Enterprise Virtualization Manager では、システムのファイアウォールをネットワークトラフィックが通過できるように複数のポートを開けておく必要があります。<filename>rhevm-setup</filename> スクリプトにより、必要なファイアウォールルールを自動で設定することが可能です。既存のファイアウォール設定がある場合には、この手順を省略して、既存のファイヤウォールスクリプトに必要な変更を手動で統合することができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "Where an existing firewall configuration exists the firewall rules required by the Manager must instead be manually inserted into it. The <command>rhevm-setup</command> command will save a list of the <systemitem>iptables</systemitem> rules required in the <filename>/usr/share/ovirt-engine/conf/iptables.example</filename> file."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The firewall configuration documented here assumes a default configuration. Where non-default <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports are chosen during installation adjust the firewall rules to allow network traffic on the ports that were selected - not the default ports (<literal>80</literal> and <literal>443</literal>) listed here."
+msgstr "本章に記載したファイアウォール設定は、デフォルトの設定を前提としています。異なる <acronym>HTTP</acronym> ポートや <acronym>HTTPS</acronym> ポートを指定するなど、インストール時に別の値を選択した場合には、以下に記載するデフォルトのポートは使用せず、ファイアウォールルールを適宜調整して、選択したポートを介するアクセスを許可してください。"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Port(s)"
+msgstr "ポート"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Protocol"
+msgstr "プロトコル"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Source"
+msgstr "ソース"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Destination"
+msgstr "デスティネーション"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Purpose"
+msgstr "目的"
+
+#. Tag: entry
+#, no-c-format
+msgid "-"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "ICMP"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr "Red Hat Enterprise Virtualization Hypervisor"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr "Red Hat Enterprise Linux ホスト"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "Red Hat Enterprise Virtualization Manager"
+
+#. Tag: entry
+#, no-c-format
+msgid "When registering to the Red Hat Enterprise Virtualization Manager, virtualization hosts send an <acronym>ICMP</acronym> ping request to the Manager to confirm that it is online."
+msgstr ""
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "22"
+msgstr "22"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "TCP"
+msgstr "TCP"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "System(s) used for maintenance of the manager including backend configuration, and software upgrades."
+msgstr "バックエンドの設定やソフトウェアのアップグレードなど、Manager のメンテナンスに使うシステム"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "SSH (optional)"
+msgstr "SSH (オプション)"
+
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "80, 443"
+msgstr "8080, 8443"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Administration Portal clients"
+msgstr "管理ポータルのクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "User Portal clients"
+msgstr "ユーザーポータルのクライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux host(s)"
+msgstr "Red Hat Enterprise Linux ホスト"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "REST API clients"
+msgstr "REST API クライアント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Provides <acronym> HTTP</acronym> and <acronym> HTTPS</acronym> access to the manager."
+msgstr "Manager に <acronym>HTTP</acronym> および <acronym>HTTPS</acronym> アクセスを提供"
+
+#. Tag: para
+#, no-c-format
+msgid "In environments where the Red Hat Enterprise Virtualization Manager is also required to export <acronym>NFS</acronym> storage, such as an <acronym>ISO</acronym> Storage Domain, additional ports must be allowed through the firewall."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "NFSv4"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>TCP</acronym> and <acronym>UDP</acronym> port <literal>2049</literal> for <acronym>NFS</acronym>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>TCP</acronym> and <acronym>UDP</acronym> port <literal>111</literal> (<systemitem>rpcbind</systemitem>/<systemitem>sunrpc</systemitem>)."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "NFSv3"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>TCP</acronym> and <acronym>UDP</acronym> port specified with <literal>MOUNTD_PORT=\"<replaceable>port</replaceable>\"</literal>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>TCP</acronym> and <acronym>UDP</acronym> port specified with <literal>STATD_PORT=\"<replaceable>port</replaceable>\"</literal>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>TCP</acronym> port specified with <literal>LOCKD_TCPPORT=\"<replaceable>port</replaceable>\"</literal>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>UDP</acronym> port specified with <literal>LOCKD_UDPPORT=\"<replaceable>port</replaceable>\"</literal>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <literal>MOUNTD_PORT</literal>, <literal>STATD_PORT</literal>, <literal>LOCKD_TCPPORT</literal>, and <literal>LOCKD_UDPPORT</literal> ports are configured in the <filename>/etc/sysconfig/nfs</filename> file."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7850-163905+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Important — Additional Ports Required to Export Storage"
+#~ msgstr "重要 — ストレージのエクスポートに必要な追加ポート"
+
+#~ msgctxt ""
+#~ msgid "Where the Red Hat Enterprise Virtualization Manager is also to export NFS storage, such as an ISO Domain, then additional ports must be allowed through the firewall. The ports used for NFS, which need to be exposed to the Red Hat Enterprise Linux Hosts and Red Hat Enterprise Virtualization Hypervisors, are listed in the <filename>/etc/sysconfig/nfs</filename> file:"
+#~ msgstr "Red Hat Enterprise Virtualization Manager で ISO ドメインなど NFS ストレージのエクスポートも行う場合には、他のポートもこのファイアウォールを通過できるようにする必要があります。Red Hat Enterprise Linux ホストおよび Red Hat Enterprise Virtualization Hypervisor に対して公開する必要のある NFS 用のポートは、<filename>/etc/sysconfig/nfs</filename> ファイルに記載されています。"
+
+#~ msgctxt ""
+#~ msgid ""
+#~ "$ cat /etc/sysconfig/nfs\n"
+#~ "LOCKD_TCPPORT=32803\n"
+#~ "LOCKD_UDPPORT=32769\n"
+#~ "MOUNTD_PORT=892\n"
+#~ "RQUOTAD_PORT=875\n"
+#~ "STATD_PORT=662\n"
+#~ "STATD_OUTGOING_PORT=2020"
+#~ msgstr ""
+#~ "$ cat /etc/sysconfig/nfs\n"
+#~ "LOCKD_TCPPORT=32803\n"
+#~ "LOCKD_UDPPORT=32769\n"
+#~ "MOUNTD_PORT=892\n"
+#~ "RQUOTAD_PORT=875\n"
+#~ "STATD_PORT=662\n"
+#~ "STATD_OUTGOING_PORT=2020"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

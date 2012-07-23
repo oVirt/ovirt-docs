@@ -1,0 +1,65 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 01:36-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux hosts"
+msgstr "新增 RHEL 主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization also supports hosts running Red Hat Enterprise Linux&nbsp;6&nbsp;Server AMD64/Intel 64 version. This section describes the preparatory steps for installing the Red Hat Enterprise Linux host, as well as the steps to manually add the host to the Red Hat Enterprise Virtualization platform."
+msgstr "RHEV 亦支援執行 RHEL AMD64/Intel 64 版本的主機。此部分詳述了安裝 RHEL 主機的準備步驟，以及手動式新增主機至 RHEV 平台的步驟。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Adding a host can take some time, as the following steps are completed by the platform: virtualization checks, installation of packages, creation of bridge and a reboot of the host. Use the Details pane to monitor the hand-shake process as the host and management system establish a connection."
+msgstr "新增主機會花上一段時間，因為平台必須完成下列步驟：檢查虛擬化、安裝套件、建立橋接器，然後重新啟動主機。請使用「詳細資料」面板來監控主機與管理系統之間，建立連線時的過程。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Host_Compatibility_Matrix\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8665-162486+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The following table shows which versions of Red Hat Enterprise Linux are supported as hosts for each version of Red Hat Enterprise Virtualization."
+#~ msgstr "以下表格顯示了哪些版本的 RHEL，受支援作為哪些版本之 RHEV 的主機。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

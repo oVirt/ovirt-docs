@@ -1,0 +1,146 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 10:33-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Creating a Bond Device using the Administration Portal"
+msgstr "使用管理入口網站來建立綁定裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Hosts</guilabel> tab."
+msgstr "點選「<guilabel>主機</guilabel>」分頁。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the host for which a bond device will be created."
+msgstr "選擇將會建立綁定裝置的主機。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Network Interfaces</guilabel> tab in the details pane."
+msgstr "點選詳細資料面板中的「<guilabel>網路介面卡</guilabel>」分頁。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the devices that will be included in the bond, ensuring they are all of the same make and model."
+msgstr "請選擇將會包含在綁定中的裝置，確保它們的製造商與型號皆相同。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Bond Network Devices."
+msgstr "綁定網路裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>Bond</guibutton> button. The <guilabel>Bond Network Interfaces</guilabel> dialog displays."
+msgstr "請按下「<guibutton>綁定</guibutton>」按鈕。「<guilabel>綁定網路介面卡</guilabel>」對話方塊將會出現。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Bond Devices Dialogue."
+msgstr "綁定裝置對話方塊。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the configuration information for the new bond device including:"
+msgstr "請輸入新綁定裝置的配置資訊，包括："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bond Name: select one from the drop down list."
+msgstr "綁定名稱：請由下拉式選單中選取。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Network: the logical network that the bond device will be a part of."
+msgstr "網路：綁定裝置將會屬於其一部分的邏輯網路。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bonding mode: the bonding mode that provides the desired functionality."
+msgstr "綁定模式：提供您欲使用之功能的綁定模式。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "IP address assignment mechanism: either DHCP or Static. If static, then IP, Subnet Mask, and Default Gateway must all be set manually."
+msgstr "IP 位址指定機制：DHCP 或是 Static。若是 Static 的話，子網路遮罩和預設閘道器皆必須手動設定。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Check connectivity: ensure that the bond device is functional upon creation."
+msgstr "檢查連線：確認綁定裝置建立時能夠運作。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Save Network Configuration: make the bond device persistent through reboots."
+msgstr "儲存網路配置：使綁定裝置在重新啟動後依然可保有一致性。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>OK</guibutton>. The <guilabel>Events</guilabel> tab displays <guilabel>Bond device created</guilabel>."
+msgstr "請按下「<guibutton>確定</guibutton>」。「<guilabel>事件</guilabel>」分頁將會顯示「<guilabel>已建立綁定裝置</guilabel>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A bond device is listed in the <guilabel>Network Interfaces</guilabel> tab of the details pain for the selected host"
+msgstr "綁定裝置將會列於所選擇之主機的詳細資料面板的「<guilabel>網路介面卡</guilabel>」分頁中"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Bonding must be enabled for the ports that the host uses on the switch it is connected to. The process by which bonding is enabled is slightly different for each switch, consult the manual provided by your switch vendor for detailed information on how to enable bonding."
+msgstr "主機在其連至的切換器上的連接埠必須啟用綁定。不同切換器的綁定啟用程序皆有些微差異，請參閱您網路切換器製造商所提供的指南，以取得啟用綁定上的詳細資訊。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7628-162305+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,84 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-25 12:22-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Booting the Hypervisor from USB Installation Media"
+msgstr "USB インストールメディアからの Hypervisor の起動"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Booting a hypervisor from a <acronym>USB</acronym> storage device is similar to booting other live <acronym>USB</acronym> operating systems. To boot from a <acronym>USB</acronym> storage device:"
+msgstr "<acronym>USB</acronym> ストレージデバイスからの Hypervisor 起動は他のライブ <acronym>USB</acronym> オペレーティングシステムの起動と同様です。<acronym>USB</acronym> ストレージデバイスから起動する手順は以下のとおりです。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the system's BIOS menu to enable <acronym>USB</acronym> storage device booting if not already enabled."
+msgstr "システムの BIOS メニューに入って <acronym>USB</acronym> ストレージデバイスの起動が有効になっていない場合は有効にします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enable <acronym>USB</acronym> booting if this feature is disabled."
+msgstr "<acronym>USB</acronym> 起動が有効になっていない場合は有効にします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Set booting <acronym>USB</acronym> storage devices to be first boot device."
+msgstr "<acronym>USB</acronym> ストレージデバイスの起動順序を 1 番目に設定します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Shut down the system."
+msgstr "システムをシャットダウンします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert the <acronym>USB</acronym> storage device that contains the hypervisor boot image."
+msgstr "Hypervisor 起動イメージを含んでいる <acronym>USB</acronym> ストレージデバイスを挿入します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Restart the system."
+msgstr "システムを再起動します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor will boot automatically."
+msgstr "Hypervisor が自動的に起動します。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Troubleshooting_BIOS_Settings_and_Boot_Process\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<xref linkend=\"Booting_the_Hypervisor_from_Installation_Media\" xrefstyle=\"see-also\" />"
+msgstr "USB インストールメディアからの Hypervisor の起動"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7530-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

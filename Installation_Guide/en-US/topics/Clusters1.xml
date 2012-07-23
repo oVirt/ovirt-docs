@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Clusters1" remap="TID_8914">
+	<title>Clusters in Red Hat Enterprise Virtualization</title>
+	<para>
+		A cluster is a collection of physical hosts that share similar characteristics and work together to provide computing resources in a highly available manner. In Red Hat Enterprise Virtualization the cluster must contain physical hosts that share the same storage domains and have the same type of CPU. Because virtual machines can be migrated across hosts in the same cluster, the cluster is the highest level at which power and load-sharing policies can be defined. The Red Hat Enterprise Virtualization platform contains a <literal>Default</literal> cluster in the <literal>Default</literal> data center at installation time.
+	</para>
+	<para>
+		Every cluster in the system must belong to a data center, and every host in the system must belong to a cluster. This enables the system to dynamically allocate a virtual machine to any host in the cluster, according to policies defined on the <guilabel>Cluster</guilabel> tab, thus maximizing memory and disk space, as well as virtual machine uptime.
+	</para>
+	<para>
+		At any given time, after a virtual machine runs on a specific host in the cluster, the virtual machine can be migrated to another host in the cluster using <guilabel>Migrate</guilabel>. This can be very useful when a host must be shut down for maintenance. The migration to another host in the cluster is transparent to the user, and the user continues working as usual. Note that a virtual machine can not be migrated to a host outside the cluster.
+	</para>
+	<note>
+		<para>
+			Red Hat Enterprise Virtualization&nbsp;3.1 supports the use of clusters to manage Gluster storage bricks, in addition to virtualization hosts. To begin managing Gluster storage bricks, create a cluster with the <guilabel>Enable Gluster Service</guilabel> option selected. For further information on Gluster storage bricks, refer to the Red Hat Enterprise Storage <citetitle>Administration Guide</citetitle>, available at <ulink url="http://docs.redhat.com/"/>.
+		</para>
+	</note>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8914-162209+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

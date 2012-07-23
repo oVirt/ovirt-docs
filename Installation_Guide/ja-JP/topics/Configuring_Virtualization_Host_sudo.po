@@ -1,0 +1,124 @@
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T19:40:51\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring Virtualization Host sudo"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Previous Step in <link linkend=\"proc-Preparing_a_Red_Hat_Enterprise_Linux_Host\">Preparing a Red Hat Enterprise Linux Host</link>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Virtualization_Host_Firewall\" />"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager makes use of <application>sudo</application> to perform operations as the <systemitem class=\"username\">root</systemitem> on the host. The default Red Hat Enterprise Linux configuration, stored in <filename>/etc/sudoers</filename>, contains values that allow this. If this file has been modified since Red Had Enterprise Linux installation these values may have been removed. This procedure provides steps to verify that the required entry still exists in the configuration, and add it if it does not."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring virtualization host sudo"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Log in"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Log in to the virtualization host as the <systemitem>root</systemitem> user."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Run visudo"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run the <command>visudo</command> command to open the <filename>/etc/sudoers</filename>"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# visudo"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Edit sudoers file"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Read the configuration file, and verify that it contains these lines:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# Allow root to run any commands anywhere root    ALL=(ALL)   ALL"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the file does not contain these lines, add them and save the file using the <acronym>VIM</acronym> <literal>:w</literal> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Exit editor"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Exit <command>visudo</command> using the <acronym>VIM</acronym> <literal>:q</literal> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You have configured <application>sudo</application> to allow use by the <systemitem>root</systemitem> user."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Next Step in <link linkend=\"proc-Preparing_a_Red_Hat_Enterprise_Linux_Host\">Preparing a Red Hat Enterprise Linux Host</link>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Configuring_Virtualization_Host_SSH\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10232-163385+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""

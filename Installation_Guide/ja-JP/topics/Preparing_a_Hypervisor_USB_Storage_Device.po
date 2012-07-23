@@ -1,0 +1,59 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 07:16-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing a Hypervisor USB Storage Device"
+msgstr "Hypervisor の USB ストレージデバイスの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor is able to install itself onto <acronym>USB</acronym> storage devices or solid state disks. However, the initial boot/install <acronym>USB</acronym> device must be a separate device from the installation target. Network booting with <acronym>PXE</acronym> and <acronym>tftp</acronym> provides the greatest flexibility and scalability. For environments where network restrictions prevent network booting, or for systems without <acronym>PXE</acronym> capable network interface cards, a local media installation such as CD-ROM or <acronym>USB</acronym> is necessary. Booting from <acronym>USB</acronym> storage devices is a useful alternative to booting from CD, for systems without CD-ROM drives."
+msgstr "Hypervisor は、<acronym>USB</acronym> ストレージデバイスまたはソリッドステートディスクにインストールすることができます。ただし、初回起動/インストール用の <acronym>USB</acronym> デバイスは、インストールのターゲットとは別にする必要があります。<acronym>PXE</acronym> や <acronym>tftp</acronym> を使用したネットワークブートは、優れた柔軟性とスケーラビリティを提供します。ネットワークの制約によりネットワークブートができない環境や <acronym>PXE</acronym> 対応のネットワークインターフェースカードが搭載されていないシステムでは、CD-ROM または <acronym>USB</acronym> などのローカルメディアを使用したインストールが必要となります。<acronym>USB</acronym> ストレージデバイスからの起動は、CD-ROM ドライブが搭載されていないシステムで、CD からの起動の代替手段として有用です。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Note — <acronym>USB</acronym> Boot Support"
+msgstr "注記 — <acronym>USB</acronym> ブートのサポート"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Not all systems support booting from a <acronym>USB</acronym> storage device. Ensure that your system's BIOS supports booting from <acronym>USB</acronym> storage devices before proceeding."
+msgstr "すべてのシステムが <acronym>USB</acronym> ストレージデバイスからの起動に対応しているわけではありません。インストールを開始する前に、ご使用のシステムの BIOS が <acronym>USB</acronym> ストレージデバイスからの起動をサポートしているかどうかを確認してください。"
+
+#. Tag: title
+#, no-c-format
+msgid "See Also:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Preparing_USB_Installation_Media_using_rhevhisotodisk\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Using_dd_to_Create_USB_Install_Media\" xrefstyle=\"see-also\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8656-164515+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

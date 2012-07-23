@@ -1,0 +1,79 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Supported virtual machines"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Supported Guests"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization presently supports the virtualization of these guest operating systems:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Linux 3 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Linux 4 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Linux 5 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Linux 6 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows XP Service Pack 3 and newer (32 bit only)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows 7 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows Server 2003 Service Pack 2 and newer (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows Server 2008 (32 bit and 64 bit)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Windows Server 2008 R2 (64 bit only)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8301-163892+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

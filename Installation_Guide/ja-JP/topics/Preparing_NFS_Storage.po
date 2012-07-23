@@ -1,0 +1,190 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 02:02-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing NFS Storage"
+msgstr "NFS ストレージの準備"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "These steps must be taken to prepare an <acronym>NFS</acronym> file share on a server running Red Hat Enterprise Linux 6 for use with Red Hat Enterprise Virtualization."
+msgstr "Red Hat Enterprise Linux 6 を実行するサーバーで <acronym>NFS</acronym> ファイル共有を Red Hat Enterprise Virtualization と共に使用するには、以下の手順にしたがって準備する必要があります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Install <package>nfs-utils</package>"
+msgstr "<package>nfs-utils</package> のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym>NFS</acronym> functionality is provided by the <package>nfs-utils</package> package. Before file shares can be created, check that the package is installed by querying the <acronym>RPM</acronym> database for the system:"
+msgstr "<acronym>NFS</acronym> 機能は、<package>nfs-utils</package> パッケージによって提供されます。ファイル共有を作成する前には、対象となるシステムの <acronym>RPM</acronym> データベースにクエリを実行して、このパッケージがインストール済みであるかどうかを確認してください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "$ <command>rpm -qi <package>nfs-utils</package></command>"
+msgstr "$ <command>rpm -qi <package>nfs-utils</package></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the <package>nfs-utils</package> package is installed then the package information will be displayed. If no output is displayed then the package is not currently installed. Install it using <command>yum</command> while logged in as the <systemitem>root</systemitem> user:"
+msgstr "<package>nfs-utils</package> パッケージがインストール済みの場合には、パッケージの情報が表示されます。出力が全く表示されない場合には、パッケージは現在インストールされていないことになります。その場合は、<systemitem>root</systemitem> ユーザーとしてログインした状態で、<command>yum</command> を使用してパッケージをインストールします。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>yum install <package>nfs-utils</package></command>"
+msgstr "# <command>yum install <package>nfs-utils</package></command>"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure Boot Scripts"
+msgstr "起動スクリプトの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To ensure that<acronym>NFS</acronym> shares are always available when the system is operational both the <systemitem>nfs</systemitem> and <systemitem>rpcbind</systemitem> services must start at boot time. Use the <command>chkconfig</command> command while logged in as <systemitem>root</systemitem> to modify the boot scripts."
+msgstr "システムの稼働中に <acronym>NFS</acronym> 共有を常時使用可能にするには、<systemitem>nfs</systemitem> サービスと <systemitem>rpcbind</systemitem> サービスの両方がブート時に起動する必要があります。<systemitem>root</systemitem> としてログインしている状態で <command>chkconfig</command> コマンドを使用して、起動スクリプトを変更します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"                \n"
+"# <command>chkconfig --add rpcbind</command>\n"
+"# <command>chkconfig --add nfs</command>\n"
+"# <command>chkconfig rpcbind on</command>\n"
+"# <command>chkconfig nfs on</command>\n"
+msgstr ""
+"                \n"
+"# <command>chkconfig --add rpcbind</command>\n"
+"# <command>chkconfig --add nfs</command>\n"
+"# <command>chkconfig rpcbind on</command>\n"
+"# <command>chkconfig nfs on</command>\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once the boot script configuration has been done, start the services for the first time."
+msgstr "起動スクリプトの設定が完了したら、初回のサービス起動を行います。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"                \n"
+"# <command>service rpcbind start</command>\n"
+"# <command>service nfs start</command>\n"
+msgstr ""
+"                \n"
+"# <command>service rpcbind start</command>\n"
+"# <command>service nfs start</command>\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Create Directory"
+msgstr "ディレクトリの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Create the directory you wish to share using <acronym>NFS</acronym>."
+msgstr "<acronym>NFS</acronym> を使用して共有するディレクトリを作成します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>mkdir <replaceable>/exports/iso</replaceable></command>"
+msgstr "# <command>mkdir <replaceable>/exports/iso</replaceable></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use."
+msgstr "<replaceable>/exports/iso</replaceable> の箇所は、使用するディレクトリの名前とパスに置き換えてください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Export Directory"
+msgstr "ディレクトリのエクスポート"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To be accessible over the network using <acronym>NFS</acronym> the directory must be exported. <acronym>NFS</acronym> exports are controlled using the <filename>/etc/exports</filename> configuration file. Each export path appears on a separate line followed by a tab character and any additional <acronym>NFS</acronym> options. Exports to be attached to the Red Hat Enterprise Virtualization Manager must have the read, and write, options set."
+msgstr "<acronym>NFS</acronym> を使用して、ディレクトリをネットワーク上でアクセス可能にするには、そのディレクトリをエクスポートする必要があります。<acronym>NFS</acronym> エクスポートは、<filename>/etc/exports</filename> 設定ファイルを使用して制御します。エクスポートパスは、それぞれ別の行に記載され、その後ろにはタブ文字と追加の <acronym>NFS</acronym> オプションが続きます。Red Hat Enterprise Virtualization Manager にアタッチされるエクスポートには、読み取りおよび書き込みのオプションを設定する必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To grant read, and write access to <filename>/exports/iso</filename> using <acronym>NFS</acronym> for example you add the following line to the <filename>/etc/exports</filename> file."
+msgstr "<filename>/exports/iso</filename> への読み取り/書き込みアクセスを許可するには、<acronym>NFS</acronym> を使用します。たとえば、以下のような行を <filename>/etc/exports</filename> ファイルに追記します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "<replaceable>/exports/iso</replaceable>       *(rw)"
+msgstr "<replaceable>/exports/iso</replaceable>       *(rw)"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Again, replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use."
+msgstr "この場合も、<replaceable>/exports/iso</replaceable> の箇所は、使用するディレクトリの名前とパスに置き換えてください。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Reload <acronym>NFS</acronym> Configuration"
+msgstr "<acronym>NFS</acronym> 設定の再読み込み"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the changes to the <filename>/etc/exports</filename> file to take effect the service must be told to reload the configuration. To force the service to reload the configuration run the following command as <systemitem> root</systemitem>:"
+msgstr "<filename>/etc/exports</filename> ファイルへの変更を有効にするには、サービスが設定を再読み込みするように指示する必要があります。サービスによる設定の再読み込みを強制的に行うには、<systemitem>root</systemitem> として以下のコマンドを実行してください。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>service nfs reload</command>"
+msgstr "# <command>service nfs reload</command>"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Permissions"
+msgstr "パーミッションの設定"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym>NFS</acronym> export directory must be configured for read write access and must be owned by vdsm:kvm. If these users do not exist on your external <acronym>NFS</acronym> server use the following command, assuming that <filename><replaceable>/exports/iso</replaceable></filename> is the directory to be used as an <acronym>NFS</acronym> share."
+msgstr "<acronym>NFS</acronym> エクスポートディレクトリは、読み取り/書き込みアクセスで設定し、vdsm:kvm が所有する必要があります。これらのユーザーが外部の <acronym>NFS</acronym> サーバーに存在しない場合には、以下のコマンドを使用してください。<filename><replaceable>/exports/iso</replaceable></filename> は、<acronym>NFS</acronym> 共有として使用するディレクトリであることを前提とします。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>chown -R 36:36 <replaceable>/exports/iso</replaceable></command>"
+msgstr "# <command>chown -R 36:36 <replaceable>/exports/iso</replaceable></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The permissions on the directory must be set to allow read and write access to both the owner and the group. The owner should also have execute access to the directory. The permissions are set using the <command>chmod</command> command. The following command arguments set the required permissions on the <filename><replaceable>/exports/iso</replaceable></filename> directory."
+msgstr "ディレクトリのパーミッションは、所有者とそのグループの両方に対して読み取り/書き込みアクセスを許可するように設定する必要があります。また、所有者にはディレクトリに対する実行アクセスも許可します。パーミッションは <command>chmod</command> コマンドを使って設定します。次のコマンド引数により <filename><replaceable>/exports/iso</replaceable></filename> ディレクトリに対する必要なパーミッションが設定されます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# <command>chmod 0755 <replaceable>/exports/iso</replaceable></command>"
+msgstr "# <command>chmod 0755 <replaceable>/exports/iso</replaceable></command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym>NFS</acronym> file share has been created, and is ready to be attached by the Red Hat Enterprise Virtualization Manager."
+msgstr "<acronym>NFS</acronym> ファイル共有が作成され、Red Hat Enterprise Virtualization Manager によってアタッチされる準備が整ったことになります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7539-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

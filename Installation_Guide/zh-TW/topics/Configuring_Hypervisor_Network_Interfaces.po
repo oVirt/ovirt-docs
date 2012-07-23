@@ -1,0 +1,238 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:58-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Network Interfaces"
+msgstr "配置 Hypervisor 網路介面卡"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For each network interface detected the hypervisor will display the:"
+msgstr "Hypervisor 會為所有偵測到的網路介面卡顯示："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Device</guilabel>,"
+msgstr "「<guilabel>裝置</guilabel>」、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Status</guilabel>,"
+msgstr "「<guilabel>狀態</guilabel>」、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>Model</guilabel>, and"
+msgstr "「<guilabel>型號</guilabel>」，以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>MAC Address</guilabel>."
+msgstr "「<guilabel>MAC 位址</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At least one network interface must be configured before the hypervisor is able to connect with the Red Hat Enterprise Virtualization Manager."
+msgstr "若要 hypervisor 能夠連上 RHEV Manager，您必須配置至少一張網路介面卡。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Device Identification"
+msgstr "裝置身份"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the network interface to be configured from the list and press <keycap> Enter</keycap>."
+msgstr "請由清單中選擇欲配置的網路介面卡，然後按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the hypervisor is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap> Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed."
+msgstr "在某些情況下，您並不明白清單中的項目代表哪個實體裝置。在此情況下，hypervisor 能夠使實體裝置的網路流量燈閃爍，以協助您進行辨識。若要使用此功能，請由清單中選擇項目，並點選「<guibutton>&lt;閃爍裝置燈以進行辨識&gt;</guibutton>」按鈕。請按下 <keycap>Enter</keycap> 並記下閃爍燈光的實體裝置是哪一個。所選裝置的配置畫面將會出現。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>IPv4</acronym> Settings"
+msgstr "<acronym>IPv4</acronym> 設定"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor supports both dynamic ( <acronym> DHCP</acronym>), and static <acronym> IPv4</acronym> network configuration."
+msgstr "Hypervisor 支援動態（<acronym>DHCP</acronym>）與靜態 <acronym>IPv4</acronym> 網路配置。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Dynamic (<guilabel>DHCP</guilabel>) Network Configuration"
+msgstr "動態（「<guilabel>DHCP</guilabel>」）網路配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym> IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym> IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "動態網路配置能讓 hypervisor 透過「<guilabel>DHCP</guilabel>」動態式地取得一組 <acronym>IP</acronym> 位址。若要啟用動態式的 <acronym>IPv4</acronym> 網路配置，請選擇「<guilabel>IPv4 設定</guilabel>」下的「<guilabel>DHCP</guilabel>」選項，然後按下 <keycap>Space</keycap> 鍵，以將它切換為啟用。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<guilabel>Static</guilabel> Network Configuration"
+msgstr "「<guilabel>靜態</guilabel>」網路配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Static network configuration allows the hypervisor to be manually assigned an <acronym> IP</acronym> address. To enable static <acronym> IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "靜態網路配置能讓 hypervisor 手動式地取得一組 <acronym>IP</acronym> 位址。若要啟用靜態式的 <acronym>IPv4</acronym> 網路配置，請選擇「<guilabel>IPv4 設定</guilabel>」下的「<guilabel>靜態</guilabel>」選項，然後按下 <keycap>Space</keycap> 鍵，以將它切換為啟用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration."
+msgstr "選擇「<guilabel>靜態</guilabel>」選項將啟用「<guilabel>IP 位址</guilabel>」、「<guilabel>子網路遮罩</guilabel>」，以及「<guilabel>閘道器</guilabel>」欄位。您必須填入「<guilabel>IP 位址</guilabel>」、「<guilabel>子網路遮罩</guilabel>」以及「<guilabel>閘道器</guilabel>」欄位，以完成靜態網路配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In particular it is necessary that:"
+msgstr "特別是，下列條件必須滿足："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>IP Address</guilabel> is not already in use on the network,"
+msgstr "「<guilabel>IP 位址</guilabel>」在網路上必須是非使用中的位址。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and"
+msgstr "「<guilabel>子網路遮罩</guilabel>」必須與網路上其它機器所使用的相符，並且"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the <guilabel>Gateway</guilabel> matches that used by other machines on the network."
+msgstr "「<guilabel>閘道器</guilabel>」必須與網路上其它機器所使用的相符。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration."
+msgstr "當不確定「<guilabel>IP 位址</guilabel>」、「<guilabel>子網路遮罩</guilabel>」，或是「<guilabel>閘道器</guilabel>」欄位的值時，請聯繫網路管理員，或考慮進行動態式配置。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Static IPv4 Networking Configuration"
+msgstr "靜態 IPv4 網路配置"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"IPv4 Settings\n"
+"[ ] Disabled [ ] DHCP [*] Static\n"
+"IP Address: 192.168.122.100_ Netmask: 255.255.255.0___\n"
+"Gateway     192.168.1.1_____\n"
+msgstr ""
+"IPv4 Settings\n"
+"[ ] Disabled [ ] DHCP [*] Static\n"
+"IP Address: 192.168.122.100_ Netmask: 255.255.255.0___\n"
+"Gateway     192.168.1.1_____\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>IPv6</acronym> Settings"
+msgstr "<acronym>IPv6</acronym> 設定"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager does not currently support <acronym> IPv6</acronym> networking. <acronym> IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>."
+msgstr "RHEV Manager 目前並不支援 <acronym>IPv6</acronym> 網路作業。<acronym>IPv6</acronym> 網路作業必須被保留設為「<guilabel>停用</guilabel>」。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>VLAN</acronym> Configuration"
+msgstr "<acronym>VLAN</acronym> 配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If <acronym> VLAN</acronym> support is required then populate the <guilabel>VLAN ID</guilabel> field with the VLAN identifier for the selected device."
+msgstr "若需要 <acronym>VLAN</acronym> 支援，請填入「<guilabel>VLAN ID</guilabel>」欄位，搭配所選裝置的 VLAN 識別符號。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Network Configuration"
+msgstr "儲存網路配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once all networking options for the selected device have been set the configuration must be saved."
+msgstr "當設置了所有所選裝置的網路選項後，您必須儲存配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guibutton>&lt;Apply&gt;</guibutton> button and press <keycap> Enter</keycap> to save the network configuration."
+msgstr "請選擇「<guibutton>&lt;套用&gt;</guibutton>」按鈕，並按下 <keycap>Enter</keycap> 以儲存網路配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>Confirm Network Settings</guilabel> dialog box will appear. Ensure that the <guibutton>Ok</guibutton> button is selected and press <keycap> Enter</keycap> to confirm."
+msgstr "「<guilabel>確認網路設定</guilabel>」對話方塊將會出現。請確認您選擇了「<guibutton>確定</guibutton>」按鈕，並按下 <keycap>Enter</keycap> 以進行確認。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>Network</guilabel> screen is displayed. The device is listed as <guilabel>Configured</guilabel>."
+msgstr "「<guilabel>網路</guilabel>」畫面將會出現。該裝置會被列為「<guilabel>已配置</guilabel>」。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7615-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

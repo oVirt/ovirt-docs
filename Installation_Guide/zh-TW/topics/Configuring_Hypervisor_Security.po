@@ -1,0 +1,91 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 10:04-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Security"
+msgstr "配置 Hypervisor 安全性"
+
+#. Tag: para
+#, no-c-format
+msgid "The <guilabel>Security</guilabel> screen is used to change the <systemitem class=\"username\">admin</systemitem> password for both local and remote access. SSH password authentication is also enabled or disabled via this screen."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Enable SSH Password Authentication"
+msgstr "啟用 SSH 密碼認證"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To enable SSH password authentication for remote access select the <guilabel>Enable ssh password authentication</guilabel> option and press <keycap> Space</keycap> to toggle it to enabled."
+msgstr "若要啟用 SSH 密碼認證，以進行遠端存取，請選擇「<guilabel>啟用 ssh 密碼認證</guilabel>」選項，並按下 <keycap>Space</keycap>，以將它切換為啟用。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Change <systemitem class=\"username\">admin</systemitem> Password"
+msgstr "更改 <systemitem class=\"username\">admin</systemitem> 密碼"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the desired <systemitem class=\"username\">admin</systemitem> password in the <guilabel>Password</guilabel> field. You should use a strong password."
+msgstr "請在「<guilabel>密碼</guilabel>」欄位中輸入欲使用的 <systemitem class=\"username\">admin</systemitem> 密碼。您應使用一組安全性較高的密碼。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words."
+msgstr "高安全性的密碼包含了大小寫字母、數字與標點符號字元的組合。它們必須包含六或更多個字元，並且不包含任何字字彙。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the desired <systemitem class=\"username\">admin</systemitem> password in the <guilabel>Confirm Password</guilabel> field. Ensure that the value entered in the <guilabel>Confirm Password</guilabel> field matches the value entered in the <guilabel>Password</guilabel> field exactly. Where this is not the case an error message will be displayed to indicate that the two values are different."
+msgstr "請在「<guilabel>確認密碼</guilabel>」欄位中，輸入 <systemitem class=\"username\">admin</systemitem> 密碼。請確認「<guilabel>確認密碼</guilabel>」欄位中的值，與「<guilabel>密碼</guilabel>」欄位中的值完全相同。若輸入的值有所不同，一則錯誤訊息將會出現，並顯示這兩個值不相同。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap> Enter</keycap> to save the security configuration."
+msgstr "請選擇「<guibutton>&lt;套用&gt;</guibutton>」，並按下 <keycap>Enter</keycap>，以儲存安全性配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The security configuration has been updated."
+msgstr "安全性配置已更新。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7533-162798+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,54 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-02 12:13-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Kernel Dump"
+msgstr "カーネルダンプ"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Red Hat Enterprise Virtualization hypervisor hosts generate a kernel dump (a "
+"<command>kdump</command> file) in the event of a system failure. These "
+"<command>kdump</command> files are essential for debugging and support."
+msgstr ""
+"Red Hat Enterprise Virtualization Hypervisor ホストは、システム障害が発生するとカーネルダンプ "
+"(<command>kdump</command> ファイル) を生成します。 <command>kdump</command> "
+"ファイルはデバッグやサポートを行う際に不可欠となります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The hypervisor supports the export of kernel dumps by <application>kdump</"
+"application> using NFS or SSH so that they may be analyzed at a later date. "
+"The <application>Kernel Dump</application> screen provides for configuration "
+"of this facility."
+msgstr ""
+"Hypervisor は、NFS または SSH を使用した <application>kdump</application> "
+"によるカーネルダンプのエクスポートに対応しているため、後日にカーネルダンプを分析することができます。この機能は、<application>Kernel "
+"Dump</application> 画面で設定することができます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Overview1" remap="TID_8651">
+	<title>Overview</title>
+	<para>
+		Red Hat Enterprise Virtualization provides IT departments with the tools to meet the challenges of managing complex environments. Red Hat's state-of-the-art virtualization platform enables administrators to reduce the cost and complexity of large deployments. Red Hat Enterprise Virtualization provides:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				High availability to quickly configure virtual machines for fault tolerance.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Live migration to move virtual machines between physical hosts without interruption.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				System scheduler to create policies to dynamically balance compute resources.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Power saver to create policies to conserve power and cooling costs.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Image manager to create, manage and provision virtual machines.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Storage virtualization to consistently access common storage from any server.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Multi-level administration to enable administration of physical infrastructure as well as administration of virtual objects.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Ability to convert existing virtual machines on foreign hypervisors to Red Hat Enterprise Virtualization platform.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				A range of reports either from the reports module based on JasperReports, or from the data warehouse. The reports enable administrators to monitor and analyze information on virtual machines, hosts and storage usage and performance.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8651-163887+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

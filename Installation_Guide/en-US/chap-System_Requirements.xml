@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-System_Requirements">
+	<title>System Requirements</title>
+	<section id="sect-Hardware_Requirements">
+		<title>Hardware Requirements</title>
+		<xi:include href="topics/Hardware_Requirements1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Management_Server_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<section id="sect-Virtualization_Host_Hardware_Requirements">
+			<title>Virtualization Host Hardware Requirements</title>
+			<xi:include href="topics/Virtualization_Host_CPU_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/CPU_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/RAM_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Storage_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/PCI_Device_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+	</section>
+	<section id="sect-Software_Requirements">
+		<title>Software Requirements</title>
+		<xi:include href="topics/Operating_Systems.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Client_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Required_Channels.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<section id="sect-Directory_Services">
+			<title>Directory Services</title>
+			<xi:include href="topics/Directory_Services1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Directory_Services_Support_in_Red_Hat_Enterprise_Virtualization.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+		<section id="sect-Firewall_Configuration">
+			<title>Firewall Configuration</title>
+			<xi:include href="topics/Red_Hat_Enterprise_Virtualization_Manager_Firewall_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Virtualization_Host_Firewall_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Directory_Firewall_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+			<xi:include href="topics/Database_Server_Firewall_Requirements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		</section>
+		<xi:include href="topics/Required_UIDs_and_GIDs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+	</section>
+</chapter>

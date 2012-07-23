@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Logging_in_to_the_Hypervisor" remap="TID_7611">
+	<title>Logging into the Hypervisor</title>
+	<para>
+		The hypervisor allows local console logins to facilitate post-installation configuration. The login prompt used is displayed once the hypervisor has booted:
+	</para>
+	<screen>
+Please login as 'admin' to configure the node
+localhost login:
+        </screen>
+	<para>
+		Type <systemitem class="username"> admin</systemitem> at the prompt and press <keycap> Enter</keycap>. When prompted enter the password which was set during the installation process and press <keycap> Enter</keycap> again to log in.
+	</para>
+	<!--
+        <para>
+            The hypervisor configuration menu will then be displayed. The menu facilitates interactive configuration of the hypervisor. Throughout the remainder of this chapter it will be referred to as the main menu. The main menu provides access to multiple screens which report on the status and configuration of the hypervisor. They also provide the ability to change the hypervisor configuration. 
+        </para>
+        <para>
+            The configuration interface is similar to that of the installation script. The same keys are used to navigate the menu and associated screens. Refer to <xref linkend="list-Deployment_Guide-Red_Hat_Enterprise_Virtualization_Hypervisor_Keys" /> to review the list of possible actions.
+        </para>    -->
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7611-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

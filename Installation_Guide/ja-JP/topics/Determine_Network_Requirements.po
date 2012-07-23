@@ -1,0 +1,82 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-01 10:10-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Networking in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization uses networking to support almost every aspect of operations. Storage, host management, user connections, and virtual machine connectivity, for example, all rely on a well planned and configured network to deliver optimal performance. Setting up networking is a vital prerequisite for a Red Hat Enterprise Virtualization environment because it is much simpler to plan for your projected networking requirements and implement your network accordingly than it is to discover your networking requirements through use and attempt to alter your network configuration retroactively."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "It is however possible to deploy a Red Hat Enterprise Virtualization environment with no consideration given to networking at all. Simply ensuring that each physical machine in the environment has at least one <firstterm>Network Interface Controller</firstterm> (<acronym>NIC</acronym>) cabled to a switch and assigned an IP address by DHCP is enough to begin using a Red Hat Enterprise Virtualization environment. While it is true that this approach to networking will provide a functional environment, it will not provide an optimal environment. Because network usage varies by task or action, grouping related tasks or functions into specialized networks can improve performance while simplifying the troubleshooting of network issues. By default, the Red Hat Enterprise Virtualization Manager creates one logical network called <systemitem>rhevm</systemitem> and uses this logical network for all traffic."
+msgstr "ネットワークについて何も考慮せず、Red Hat Enterprise Virtualization 環境をデプロイすることができます。ただ単に、同環境内の各物理マシンに DHCP からIP アドレスを割り当てられ、スイッチにつながっている<firstterm>ネットワークインターフェースコントローラー</firstterm>(<acronym>NIC</acronym>) を最低でも１つ持たせるだけで十分に Red Hat Enterprise Virtualization 環境を利用し始めることができます。実際にこの方法でも環境は機能しますが、最適な環境にはなりません。ネットワーク使用率が作業や動作によって異なるからです。関連している作業や機能を特殊なネットワークにグループ化することにより、 パフォーマンスを向上させる一方でネットワーク関連の問題解決を簡略化することができるようになります。デフォルトでは、<systemitem>rhevm</systemitem> という名前の論理ネットワークが Red Hat Enterprise Virtualization Manager によってひとつ作成され、すべてのトラフィックにこの論理ネットワークが使用されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <systemitem>rhevm</systemitem> network is created and labeled as the <guilabel>Management</guilabel> logical network. The <systemitem>rhevm</systemitem> logical network is intended for management traffic between the Red Hat Enterprise Virtualization Manager and virtualization hosts. Other types of traffic that are common to all Red Hat Enterprise Virtualization environments are:"
+msgstr "<systemitem>rhevm</systemitem> ネットワークは <guilabel>管理</guilabel>論理ネットワークとして作成されラベル付けされます。<systemitem>rhevm</systemitem> 論理ネットワークは Red Hat Enterprise Virtualization Manager と仮想化ホスト間のトラフィックの管理を目的としています。あらゆる Red Hat Enterprise Virtualization 環境に共通となるその他のトラフィックを以下に示します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Display related traffic."
+msgstr "ディスプレイ関連のトラフィック"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "General virtual machine networking traffic."
+msgstr "仮想マシンの汎用ネットワーキングトラフィック"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Storage related traffic."
+msgstr "ストレージ関連のトラフィック"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For the Red Hat Enterprise Virtualization environment to perform optimally, these types of traffic should be separated. This is easily accomplished by assigning each type of network traffic to a different logical network. Each logical network must be associated with a cabled, active network device. The network device that supports each logical network can be a physical <acronym>NIC</acronym> or a logical interface, such as a bond device."
+msgstr "Red Hat Enterprise Virtualization 環境を最適に動作させるには、これらの種類のトラフィックを分ける必要があります。トラフィックの分離は、それぞれのネットワークトラフィックを別々の論理ネットワークに割り当てることで簡単に行うことができます。これらの論理ネットワークはケーブル接続されたアクティブなネットワークデバイスに関連付けされていなければなりません。論理ネットワークをサポートするネットワークデバイスは物理的な <acronym>NIC</acronym> であっても、ボンドデバイスのような論理的な仮想 NIC (<acronym>VNIC</acronym>) であっても構いません。"
+
+#. Tag: para
+#, no-c-format
+msgid "The number of logical networks that can be created in a Red Hat Enterprise Virtualization environment is limited by the number of VLANs defined in the environment. Each logical network needs at least one VLAN to support it."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A familiarity with the network concepts and their use is highly recommended when planning and setting up networking in a Red Hat Enterprise Virtualization environment. This document does not describe the concepts, protocols, requirements or general usage of bonds, bridges and logical networks. It is recommended that you read your network hardware vendor's guides for more information on managing networking."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8668-162223+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Determine Network Requirements"
+#~ msgstr "ネットワーク要件の決定"
+
+#~ msgctxt ""
+#~ msgid "The number of logical networks that can be defined and implemented in a Red Hat Enterprise Virtualization environment is limited by the number of network interfaces present on the virtualization hosts in the environment. Each logical network needs at least one physical device to support it. Because a logical network must be implemented for each host in a cluster for the logical network to be operational, the number of logical networks that can be implemented in a given cluster is limited by the host in a cluster with the fewest NICs."
+#~ msgstr "Red Hat Enterprise Virtualization 環境で定義、実装可能な論理ネットワーク数は、その環境内の仮想化ホストにあるネットワークインターフェース数によって制限されます。各論理ネットワークに対応するには、少なくとも 1 つの物理デバイスを必要とします。論理ネットワークを動作させるには、クラスター内のホスト毎に論理ネットワークを実装する必要があるため、NIC の数が最も少ないクラスターのホストにより、特定のクラスターに実装できる論理ネットワーク数は決まります。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

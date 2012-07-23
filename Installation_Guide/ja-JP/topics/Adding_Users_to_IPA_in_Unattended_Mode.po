@@ -1,0 +1,99 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-07-05 09:54-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding Users to IPA in Unattended Mode"
+msgstr "無人モードで IPA にユーザー追加"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"As an integrated (or unattended) operation, you can pass the <parameter>--"
+"password</parameter> option to the <command>ipa user-add</command> command. "
+"This will force the command to prompt for an initial password. As an "
+"alternative, echo the password directly into the command:"
+msgstr ""
+"統合 (無人) 操作として <parameter>--password</parameter> オプションを <command>ipa user-"
+"add</command> コマンドに渡すことができます。これによりコマンドが強制的に初回パスワードを求めることになります。あるいは、echo "
+"コマンドで直接パスワードを記述します。"
+
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+msgstr ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Performing Initial Login"
+msgstr "初回ログイン"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You can now authenticate using the newly-created user and temporary password."
+" Type <command>kinit <replaceable>&lt;user login&gt;</replaceable></command> "
+"to log in to IPA. This will prompt you for a password and then immediately "
+"request a password change."
+msgstr ""
+"これで新規作成ユーザーと一時パスワードを使って認証を行うことができるようになりました。<command>kinit<replaceable>&lt;user "
+"login&gt;</replaceable></command> と入力して IPA "
+"にログインします。パスワード入力のプロンプトが出た直後にパスワードの変更が求められます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

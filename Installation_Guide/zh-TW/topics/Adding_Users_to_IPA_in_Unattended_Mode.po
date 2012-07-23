@@ -1,0 +1,110 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 01:41-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding Users to IPA in Unattended Mode"
+msgstr "透過無人值守模式來新增使用者至 IPA"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"As an integrated (or unattended) operation, you can pass the <parameter>--"
+"password</parameter> option to the <command>ipa user-add</command> command. "
+"This will force the command to prompt for an initial password. As an "
+"alternative, echo the password directly into the command:"
+msgstr ""
+"在整合式（或無人值守）操作中，您可搭配使用 <parameter>--password</parameter> 選項和 <command>ipa "
+"user-add</command> 指令。這將強迫指令提示使用者輸入初始密碼。亦可將密碼直接寫在指令中："
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+msgstr ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Performing Initial Login"
+msgstr "進行初次登入"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You can now authenticate using the newly-created user and temporary password."
+" Type <command>kinit <replaceable>&lt;user login&gt;</replaceable></command> "
+"to log in to IPA. This will prompt you for a password and then immediately "
+"request a password change."
+msgstr ""
+"您現在可授權使用新建使用者與單次密碼。請輸入<command>kinit <replaceable>&lt;user login&gt;</"
+"replaceable></command> 以登入 IPA。這將提示您輸入密碼，然後即刻進行更改密碼的程序。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

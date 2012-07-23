@@ -1,0 +1,133 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:51-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Logging"
+msgstr "配置 Hypervisor 日誌"
+
+#. Tag: para
+#, no-c-format
+msgid "The hypervisor creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>Logrotate</application> Configuration"
+msgstr "「<application>Logrotate</application>」配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application>logrotate</application> utility simplifies the administration of log files. The hypervisor uses <application>logrotate</application> to rotate logs when they reach a certain file size."
+msgstr "「<application>logrotate</application>」工具程式可簡化日誌檔案上的管理。Hypervisor 使用了 <application>logrotate</application>，來在它們達到某特定檔案大小時進行日誌循環。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Log rotation involves renaming the current log(s) and starting new ones in their place. The <guilabel>Logrotate Max Log Size</guilabel> value set on the <guilabel>Logging</guilabel> screen is used to determine when a log should be rotated."
+msgstr "日誌循環程序會將目前的日誌重新命名，並以新日誌取代它。設置於「<guilabel>紀錄</guilabel>」畫面上的「<guilabel>Logrotate Max Log Size</guilabel>」值，可使用來判斷日誌何時應該進行循環。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Logrotate Max Log Size</guilabel> in kilobytes. The default maximum log size is 1024 kilobytes."
+msgstr "請輸入「<guilabel>Logrotate Max Log Size</guilabel>」（以 KB 為單位）。預設的最大日誌大小為 1024 KB。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>Rsyslog</application> Configuration"
+msgstr "<application>Rsyslog</application> 配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application> rsyslog</application> utility is a multithreaded syslog daemon. The hypervisor is able to use <application> rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Red Hat Enterprise Linux — Deployment Guide</citetitle>."
+msgstr "<application>rsyslog</application> 工具程式是個多執行續的 syslog daemon。Hypervisor 能夠使用 <application>rsyslog</application>，以透過網路來將日誌檔案傳輸至遠端 syslog daemon。欲取得設定遠端 syslog daemon 上的相關資訊，請參閱《<citetitle>Red Hat Enterprise Linux — 建置指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the remote <application>Rsyslog</application> server address in the <guilabel>Server Address</guilabel> field."
+msgstr "請在「<guilabel>伺服器位址</guilabel>」欄位中，輸入遠端 <application>Rsyslog</application> 伺服器位址。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the remote <application>Rsyslog</application> server port in the <guilabel>Server Port</guilabel> field. The default port is <literal>514</literal>."
+msgstr "請在「<guilabel>伺服器連接埠</guilabel>」欄位中，輸入遠端 <application>Rsyslog</application> 伺服器連接埠。預設連接埠為 <literal>514</literal>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<application>netconsole</application> Configuration"
+msgstr "<application>netconsole</application> 配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. The hypervisor uses <application>netconsole</application> to transmit kernel messages over the network."
+msgstr "<application>netconsole</application> 模組能讓 kernel 訊息傳送至遠端機器上。Hypervisor 使用了 <application>netconsole</application> 來透過網路傳送 kernel 訊息。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Server Address</guilabel>."
+msgstr "輸入「<guilabel>伺服器位址</guilabel>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Server Port</guilabel>. The default port is <literal>6666</literal>."
+msgstr "輸入要連接的<guilabel>連接埠</guilabel>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Configuration"
+msgstr "儲存配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To save the logging configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>."
+msgstr "若要儲存日誌配置，請選擇「<guibutton>&lt;套用&gt;</guibutton>」，並按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The logging configuration has been updated and logs will be exported to the remote <application>Rsyslog</application> server specified."
+msgstr "日誌配置已更新，並且日誌將會被匯出至您所指定的遠端 <application>Rsyslog</application> 伺服器上。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7534-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

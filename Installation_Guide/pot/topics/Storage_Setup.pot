@@ -1,0 +1,109 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Introduction to storage in Red Hat Enterprise Virtualization"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the Red Hat Enterprise Virtualization platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A Red Hat Enterprise Virtualization system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle> for more information on managing storage, if necessary."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the Red Hat Enterprise Virtualization platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization platform has three types of storage domains:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Data domains hold the disk images of all the virtual machines running in the system, operating system images and data disks. In addition, snapshots of the virtual machines are also stored in the data domain. The data cannot be shared across data centers, and the data domain must be of the same type as the data center. For example, a data center of a <acronym>iSCSI</acronym> type, must have an <acronym>iSCSI</acronym> data domain. A data domain cannot be shared between data centers."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Additionally you must attach a data domain to a data center before you will be allowed to attach domains of other types to it."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<acronym>ISO</acronym> domains store <acronym>ISO</acronym> files (or logical <acronym>CDs</acronym>) used to install and boot operating systems and applications for the virtual machines. Because an <acronym>ISO</acronym> domain is a logical entity replacing a library of physical <acronym>CDs</acronym> or <acronym>DVDs</acronym>, an <acronym>ISO</acronym> domain removes the data center's need for physical media. An <acronym>ISO</acronym> domain can be shared across different data centers. <acronym>ISO</acronym> storage domains must be located on <acronym>NFS</acronym> storage."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "An export domain is a temporary storage repository that is used to copy/move images between data centers and Red Hat Enterprise Virtualization Manager installations. In addition, the export domain can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time. Support for export storage domains backed by mechanisms other than <acronym>NFS</acronym> is being deprecated. New export storage domains must be created on <acronym>NFS</acronym> storage."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Only commence configuring and attaching storage for your Red Hat Enterprise Virtualization environment once you have determined the storage needs of your data center(s)."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Important — Before Adding Storage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before adding storage ensure that you have a working Red Hat Enterprise Virtualization Manager environment. You must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <literal>Up</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Important — Export Domain Storage Type"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from Red Hat Enterprise Virtualization 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_FCP_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_Local_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Adding_NFS_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Adding_iSCSI_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

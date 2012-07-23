@@ -1,0 +1,165 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 07:08-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing USB Installation Media using rhevh-iso-to-disk"
+msgstr "rhevh-iso-to-disk を使用した USB インストールメディアの作成"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <command>rhevh-iso-to-disk</command> command will install a Hypervisor onto a <acronym> USB</acronym> storage device. The <command>rhevh-iso-to-disk</command> command is included in the <package>rhev-hypervisor-tools</package> package. Devices which have the Hypervisor image written to them with this command are able to boot the Hypervisor on systems which support booting via <acronym> USB</acronym>."
+msgstr "<command>rhevh-iso-to-disk</command> コマンドを実行すると、Hypervisor が <acronym>USB</acronym> ストレージデバイスにインストールされます。<command>rhevh-iso-to-disk</command> コマンドは、<package>rhev-hypervisor</package> パッケージの一部です。このコマンドで作成されたデバイスは、<acronym>USB</acronym> を介したブートをサポートするシステムで Hypervisor を起動することができます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The basic <command>rhevh-iso-to-disk</command> command usage follows this structure:"
+msgstr "基本的な <command>rhevh-iso-to-disk</command> コマンドは、以下のような構文で使用します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"# rhevh-iso-to-disk <replaceable>image</replaceable> <replaceable>device</replaceable>\n"
+"    "
+msgstr ""
+"# rhevh-iso-to-disk <systemitem>image</systemitem> <systemitem>device</systemitem>\n"
+"    "
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the <replaceable>device</replaceable> parameter is the partition name of the <acronym>USB</acronym> storage device to install to. The <replaceable>image</replaceable> parameter is a ISO image of the hypervisor. The default hypervisor image location is <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename>. The <command>rhevh-iso-to-disk</command> command requires devices to be formatted with the <systemitem class=\"filesystem\">FAT</systemitem> or <systemitem class=\"filesystem\">EXT3</systemitem> file system."
+msgstr "<parameter>device</parameter> パラメーターは、インストール先となる <acronym>USB</acronym> ストレージデバイスのパーティション名です。<parameter>image</parameter> パラメーターは、Hypervisor の ISO イメージです。Hypervisor イメージのデフォルトの場所は、<filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> です。<command>rhevh-iso-to-disk</command> コマンドを使用するには、デバイスを <systemitem class=\"filesystem\">FAT</systemitem> または <systemitem class=\"filesystem\">EXT3</systemitem> のファイルシステムにフォーマットする必要があります。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Note — Partitions and <command>rhevh-iso-to-disk</command>"
+msgstr "注記 — パーティションと <command>rhevh-iso-to-disk</command>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<command>rhevh-iso-to-disk</command> uses a <systemitem class=\"filesystem\">FAT</systemitem> or <systemitem class=\"filesystem\">EXT3</systemitem> formatted partition or block device."
+msgstr "<command>rhevh-iso-to-disk</command> は、<systemitem class=\"filesystem\">FAT</systemitem> または <systemitem class=\"filesystem\">EXT3</systemitem> にフォーマットされたパーティションまたはブロックデバイスを使用します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym> USB</acronym> storage devices are sometimes formatted without a partition table, use <systemitem>/dev/sdb</systemitem> or similar device name."
+msgstr "<acronym>USB</acronym> ストレージデバイスは、パーティションテーブルを使用せずにフォーマットされることがあります。その場合は、<systemitem>/dev/sdb</systemitem> または同様のデバイス名を使用してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "When a <acronym> USB</acronym> storage device is formatted with a partition table, use <systemitem>/dev/sdb1</systemitem> or similar device name."
+msgstr "パーティションテーブルを使用して <acronym>USB</acronym> ストレージデバイスをフォーマットした場合には、<systemitem>/dev/sdb1</systemitem> または同様のデバイス名を使用してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages."
+msgstr "<application>rhev-hypervisor*</application> パッケージをインストールします。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Use the <command>rhevh-iso-to-disk</command> command to copy the image file, located in the <filename>/usr/share/rhev-hypervisor/</filename> directory, to the disk. The <parameter>--format</parameter> parameter formats the disk. The <parameter>--reset-mbr</parameter> initializes the Master Boot Record ( <acronym> MBR</acronym>)."
+msgstr "<command>rhevh-iso-to-disk</command> コマンドを使用して、.iso ファイルをディスクにコピーします。<parameter>--format</parameter> パラメーターは、ディスクをフォーマットします。<parameter>--reset-mbr</parameter> は、Master Boot Record (<acronym>MBR</acronym>) を初期化します。以下の例では、<systemitem>/dev/sdc</systemitem> という名前の <acronym>USB</acronym> ストレージデバイスを使用しています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Use of <command>rhevh-iso-to-disk</command>"
+msgstr "<command>rhevh-iso-to-disk</command> の使用例"
+
+#. Tag: para
+#, no-c-format
+msgid "This example demonstrates the use of <command>rhevh-iso-to-disk</command> to write to a <acronym>USB</acronym> storage device named <systemitem>/dev/sdc</systemitem>."
+msgstr ""
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# rhevh-iso-to-disk --format --reset-mbr /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc\n"
+"Verifying image...\n"
+"/usr/share/rhev-hypervisor/rhev-hypervisor.iso:   eccc12a0530b9f22e5ba62b848922309\n"
+"Fragment sums: 8688f5473e9c176a73f7a37499358557e6c397c9ce2dafb5eca5498fb586\n"
+"Fragment count: 20\n"
+"Checking: 100.0%\n"
+"\n"
+"The media check is complete, the result is: PASS.\n"
+"\n"
+"It is OK to use this media.\n"
+"Copying live image to USB stick\n"
+"Updating boot config file\n"
+"Installing boot loader\n"
+"syslinux: only 512-byte sectors are supported\n"
+"USB stick set up as live image!\n"
+msgstr ""
+"\n"
+"# rhevh-iso-to-disk --format --reset-mbr /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc\n"
+"Verifying image...\n"
+"/usr/share/rhev-hypervisor/rhev-hypervisor.iso:   eccc12a0530b9f22e5ba62b848922309\n"
+"Fragment sums: 8688f5473e9c176a73f7a37499358557e6c397c9ce2dafb5eca5498fb586\n"
+"Fragment count: 20\n"
+"Checking: 100.0%\n"
+"\n"
+"The media check is complete, the result is: PASS.\n"
+"\n"
+"It is OK to use this media.\n"
+"Copying live image to USB stick\n"
+"Updating boot config file\n"
+"Installing boot loader\n"
+"syslinux: only 512-byte sectors are supported\n"
+"USB stick set up as live image!\n"
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Linux 6.3 enables the use of the Unified Extensible Firmware Interface (UEFI) as a Technology Preview."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Technology Preview features provide early access to upcoming product features, allowing you to test functionality and provide feedback during feature development. However, these features are not fully supported, may not be functionally complete, and are not intended for production use. Because these features are still under development, Red Hat cannot guarantee their stability. Therefore, you may not be able to upgrade seamlessly from a Technology Preview feature to a subsequent release of that feature. Additionally, if the feature does not meet standards for enterprise viability, Red Hat cannot guarantee that the Technology Preview will be released in a supported manner. Some Technology Preview features may only be available for specific hardware architectures."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Using UEFI requires an additional parameter, <parameter>--efi</parameter>, with the <command>rhevh-iso-to-disk</command> command in order to correctly set up and enable UEFI. The <parameter>--efi</parameter> parameter is used like so:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# rhevh-iso-to-disk --format -- efi <replaceable>image</replaceable> <replaceable>device</replaceable>"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# rhevh-iso-to-disk --format /usr/share/rhev-hypervisor/rhev-hypervisor.iso /dev/sdc"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Note that this Technology Preview is only available in Red Hat Enterprise Linux 6.3."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> USB</acronym> storage device (<systemitem>/dev/sdc</systemitem>) has been prepared. You can now use it to boot a system and install the Hypervisor."
+msgstr "<acronym>USB</acronym> ストレージデバイス (<systemitem>/dev/sdc</systemitem>) でシステムを起動して Hypervisor をインストールする準備が整いました。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7527-164519+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

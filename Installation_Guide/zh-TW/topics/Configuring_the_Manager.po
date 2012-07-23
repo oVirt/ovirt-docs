@@ -1,0 +1,636 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 10:24-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Red Hat Enterprise Virtualization Manager"
+msgstr "配置 RHEV Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once package installation is complete the Red Hat Enterprise Virtualization Manager must be configured. The <command>rhevm-setup</command> command is provided to assist with this task. The script asks you a series of questions, the answers to which form the basis for system configuration. Once all required values have been provided the updated configuration is applied and the Red Hat Enterprise Virtualization Manager services are started."
+msgstr "當套件安裝程序完成後，您必須配置 RHEV Manager。您將需要提供 <command>rhevm-setup</command> 指令來協助完成這項工作。Script 會詢問您一系列的問題，系統的配置將會根據您的回應而定。當您提供了所有必要的值之後，更新過後的配置便會被套用，並且 RHEV Manager 服務將會啟用。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Start setup script"
+msgstr "啟用設定 Script"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To begin configuring the system run <command>rhevm-setup</command> as the <systemitem class=\"username\"> root</systemitem> user."
+msgstr "若要開始配置系統，請以 <systemitem class=\"username\">root</systemitem> 使用者身份執行 <command>rhevm-setup</command>。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# rhevm-setup"
+msgstr "# rhevm-setup"
+
+#. Tag: title
+#, no-c-format
+msgid "Override Apache configuration"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>rhevm-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Do you wish to override current httpd configuration and restart the service? ['yes'| 'no']  [yes] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you do not receive this message, there is no existing <systemitem>httpd</systemitem> configuration on the system and the script will move to the next step."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you do receive this message, you must:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "enter <literal>yes</literal> if you wish to configure the Manager to listen to <acronym>HTTP</acronym> and/or <acronym>HTTPS</acronym> ports lower than port <literal>1024</literal>; or"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "enter <literal>no</literal> if you do not wish to configure the Manager to listen to <acronym>HTTP</acronym> and/or <acronym>HTTPS</acronym> ports lower than port <literal>1024</literal>, leaving the existing <systemitem>httpd</systemitem> configuration intact."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Port for <acronym>HTTP</acronym>"
+msgstr "設置 <acronym>HTTP</acronym> 的連接埠"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the port to use for <acronym>HTTP</acronym> communication. To use the default value, <literal>80</literal>, press <keycap> Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap> Enter</keycap>."
+msgstr "Script 將會提示您提供 <acronym>HTTP</acronym> 通訊所要使用的連接埠。若要使用預設值 <literal>8080</literal>，請按下 <keycap>Enter</keycap>。若要使用其它的值，請在欄位中輸入您所要使用的值，並按下 <keycap>Enter</keycap>。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "HTTP Port  [80] :"
+msgstr "HTTP Port  [8080] ："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The port you select also appears in the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTP</acronym>."
+msgstr "您所選擇的連接埠也會出現在 <acronym>URL</acronym> 中，您必須使用它來透過 <acronym>HTTP</acronym> 存取 RHEV Manager。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Port for <acronym>HTTPS</acronym>"
+msgstr "為 <acronym>HTTPS</acronym> 設置連接埠"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the port to use for <acronym> HTTPS</acronym> communication. To use the default value, <literal>443</literal>, press <keycap> Enter</keycap>. To use an alternative value enter it in the field, and then press <keycap> Enter</keycap>."
+msgstr "Script 會提示您提供 <acronym>HTTPS</acronym> 通訊的連接埠。若要使用預設值 <literal>8443</literal>，請按下 <keycap>Enter</keycap>。若要使用其它的值，請在欄位中輸入您所要使用的值，並按下 <keycap>Enter</keycap>。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "HTTPS Port  [443] :"
+msgstr "HTTPS Port  [8443]："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where a port other than <literal>443</literal> is selected it changes the <acronym> URL</acronym> that must be used to access the Red Hat Enterprise Virtualization Manager over <acronym> HTTPS</acronym>."
+msgstr "當選擇了 <literal>8443</literal> 以外的連接埠，它將會改變 <acronym>URL</acronym>，您必須使用它來透過 <acronym>HTTPS</acronym> 存取 RHEV Manager。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Fully Qualified Domain Name (<acronym>FQDN</acronym>)"
+msgstr "設置完整區域名稱（<acronym>FQDN</acronym>）"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the system's fully qualified domain name. This name should be resolvable via both forward and reverse <acronym> DNS</acronym> lookup. The script attempts to determine the fully qualified domain name automatically. The value identified is listed in square brackets as the default setting for the fully qualified domain name, based on your setup."
+msgstr "Script 會提示您輸入系統的完整區域名稱。這組名稱應能透過正向與反向 <acronym>DNS</acronym> 查詢來解析。Script 會嘗試自動判斷完整區域名稱。判斷出的值會根據您的設定被列在正括號中，作為完整區域名稱的預設設定。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Host fully qualified domain name, note that this name should be fully resolvable  [manager.demo.redhat.com] :"
+msgstr "主機的完整區域名稱，請注意這組名稱必須能夠被完整解析 [manager.demo.redhat.com]："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Where the automatically determined fully qualified domain name is correct, press <keycap> Enter</keycap> to use the value and continue. Where the automatically determined fully qualified domain name is not correct, enter the correct value and press <keycap> Enter</keycap> to use the new value and continue."
+msgstr "若自動判斷的區域名稱為正確的話，請按下 <keycap>Enter</keycap>，以使用這個值，並繼續進行。若自動判斷出的完整區域名稱非正確的話，請輸入正確的值並按下 <keycap>Enter</keycap>，以使用新的值，並繼續進行。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Administrator Password"
+msgstr "設置管理員密碼"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script creates an authentication domain internal to the Red Hat Enterprise Virtualization Manager for the default administrative account. The domain is named <systemitem> internal</systemitem>, the administrative user is called <systemitem> admin</systemitem>. External authentication domains are added as a post-installation step using the <command>rhevm-manage-domains</command> command."
+msgstr "Script 會為預設管理帳號建立一個對於 RHEV Manager 來說為內部的認證區域。該區域名為 <systemitem>internal</systemitem>，管理使用者名為 <systemitem>admin</systemitem>。在安裝完成後，您亦可透過使用 <command>rhevm-manage-domains</command> 指令，來新增外部認證區。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You must choose a password for the <systemitem class=\"username\"> admin</systemitem> user. You will be asked to enter it a second time to confirm your selection."
+msgstr "您必須為 <systemitem class=\"username\">admin</systemitem> 使用者選擇一組密碼。您將會被要求輸入兩次，以進行確認。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Password for Administrator (admin@internal) :"
+msgstr "管理員密碼（admin@internal）："
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Set Organization Name"
+msgstr "設定組織名稱"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of the Organization Name. The Organization Name appears in the <literal>Subject</literal> field of the certificate used to secure communications with the Red Hat Enterprise Virtualization Manager."
+msgstr "Script 會提示您輸入組織的名稱。組織名稱會出現在憑證的 <literal>Subject</literal> 欄位中，用來保護與 RHEV Manager 的通訊。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Organization Name for the Certificate :"
+msgstr "憑證的組織名稱："
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure Default Storage Type"
+msgstr "配置預設儲存裝置類型"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for selection of the default storage type. This is the storage type that is used for the <literal>Default</literal> data center. You are able to add further data centers that use different storage types from the Administration Portal at any time."
+msgstr "Script 會提示選擇預設的儲存裝置類型。此乃使用於 <literal>Default</literal> 資料中心的儲存裝置類型。您能夠隨時在管理入口網站上，新增更多使用不同儲存裝置類型的資料中心。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "The default storage type you will be using  ['NFS'| 'FC'| 'ISCSI']  [NFS] :"
+msgstr "您將會使用的預設儲存裝置類型為 ['NFS'| 'FC'| 'ISCSI']  [NFS]："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The default selection is Network File System (<literal>NFS</literal>). The other available values are:"
+msgstr "預設選項為網路檔案系統（<literal>NFS</literal>）。其它可用的值為："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Fibre Channel (<literal>FC</literal>), and"
+msgstr "光纖頻道（<literal>FC</literal>）、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Internet Small Computer System Interface (<literal>ISCSI</literal>)."
+msgstr "網際網路小型電腦系統介面（<literal>ISCSI</literal>），並且"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. Red Hat Enterprise Virtualization also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center."
+msgstr "<literal>NFS</literal>、<literal>FC</literal>，以及 <literal>ISCSI</literal> 選項會被使用來連至遠端儲存裝置。RHEV 亦支援 <literal>LOCALFS</literal> 儲存裝置類型，它能允許使用連至了虛擬主機的本機儲存裝置，不過此儲存裝置類型並不受到 <literal>Default</literal> 資料中心的支援。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To use the default selection, <literal>NFS</literal>, press <keycap> Enter</keycap>. To select <literal>FC</literal>, or <literal>ISCSI</literal> then enter the value and then press <keycap> Enter</keycap>."
+msgstr "若要使用預設選項 <literal>NFS</literal>，請按下 <keycap>Enter</keycap>。若要選擇 <literal>FC</literal> 或 <literal>ISCSI</literal>，請輸入它們並按下 <keycap>Enter</keycap>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Select database location"
+msgstr "設定資料庫密碼"
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Enter DB type for installation ['remote'| 'local']  [local] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>local</literal> to have the setup script create a local Postgresql database server for the Manager."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script prompts for entry of a password to use for the local Red Hat Enterprise Virtualization Manager database. Enter the desired password. You will be asked to enter the password again to confirm it."
+msgstr "Script 會提示您輸入一組使用於 RHEV Manager 資料庫的密碼。您必須輸入一組高安全性的密碼。高安全性的密碼包含了大小寫字母、數字，以及標點符號字元。密碼長度必須達六個字元以上，並且不包含任何字典字彙。請輸入您希望設置的密碼，並按下 <keycap>Enter</keycap>。您將會被要求再次輸入密碼，已進行確認。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Database password (required for secure authentication with the locally created database) :"
+msgstr "資料庫密碼（用於本機建立之資料庫的安全性認證）："
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>remote</literal> to have the script use a remote database server for the Manager."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You will be prompted to provide:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the <acronym>IP</acronym> address or hostname of the remote database server,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the port number on which the remote database server is listening,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "the administrative user name for the remote database server, and"
+msgstr ""
+
+# Tag: title
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "the administrative user's password."
+msgstr "設置管理員密碼"
+
+#. Tag: para
+#, no-c-format
+msgid "The administrative user provided must have the required permissions to create databases on the remote database server."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"Enter DB type for installation ['remote'| 'local']  [local] : remote      \n"
+"Enter the host IP or host name where DB is running: database.demo.redhat.com\n"
+"Enter DB port number  [5432] : 5432\n"
+"Enter DB admin user name  [postgres] : \n"
+"Remote database password :\n"
+"Confirm password :                \n"
+"              \t\t\t\t"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Secure connection"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can configure Red Hat Enterprise Virtualization Manager to use a secure connection, encrypted using <acronym>SSL</acronym> when connecting to the remote database server."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "Configure secure connection? ['yes'| 'no']  [no] :"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter <literal>yes</literal> to use secure database connections."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The setup script will connect to the remote database server to verify the details that you provided are correct."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure NFS ISO Domain"
+msgstr "配置 NFS ISO 區域"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The script asks whether or not an <acronym> NFS</acronym> share should be configured on the server and used as an <acronym> ISO</acronym> storage domain."
+msgstr "Script 會詢問您 <acronym>NFS</acronym> share 是否應配置於伺服器上，並且作為 <acronym>ISO</acronym> 儲存裝置區域使用。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Should the installer configure NFS share on this server to be used as an ISO Domain? ['yes'| 'no']  [yes] :"
+msgstr "安裝程式是否應在此伺服器上配置 NFS share，以作為 ISO 區域？['yes'| 'no'] [yes]："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "An <acronym> ISO</acronym> storage domain is used to store copies of removable media for use when provisioning and using virtual machines. The Red Hat Enterprise Virtualization Manager is able to use either an <acronym> ISO</acronym> storage domain on the system it is installed to or one that exists on remote storage. In either case the <acronym> ISO</acronym> storage domain must be accessible via <acronym> NFS</acronym>. The ability to configure an <acronym> ISO</acronym> storage domain is also available from the Administration Portal after installation."
+msgstr "<acronym>ISO</acronym> 儲存區域會被使用來存放卸除式媒介的副本，以在佈建和使用虛擬機器時使用。RHEV Manager 可使用安裝於系統上的 <acronym>ISO</acronym> 儲存區域，或是遠端儲存裝置上的既有 ISO 儲存區域。在這兩種情況下，<acronym>ISO</acronym> 儲存區域必須能夠透過 <acronym>NFS</acronym> 存取。配置 <acronym>ISO</acronym> 儲存區域的能力，亦可在安裝完成後，由管理入口網站取得。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To take the default action, which is to configure an <acronym> NFS</acronym> share for use as an <acronym> ISO</acronym> storage domain, press <keycap> Enter</keycap>. To skip this step type <literal>no</literal> and press <keycap> Enter</keycap>."
+msgstr "若要進行預設的動作（也就是配置使用來作為 <acronym>ISO</acronym> 儲存區域的 <acronym>NFS</acronym> share），請按下 <keycap>Enter</keycap>。若要跳過此步驟，請輸入 <literal>no</literal>，並按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If you chose to configure an <acronym> NFS</acronym> share then you will also need to provide both a path and a display name for it. The path is the location on the local file system where the <acronym> NFS</acronym> share must be created. The directory must not already exist."
+msgstr "若您選擇了配置 <acronym>NFS</acronym> share，那您亦必須為它提供路徑與顯示名稱。路徑為 <acronym>NFS</acronym> 必須被建立於的本機檔案系統。次目錄不能是已存在的目錄。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Mount point path:"
+msgstr "掛載點路徑："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The display name is the name the storage domain will appear under in the Red Hat Enterprise Virtualization Manager. The display name must not contain non-alphanumeric characters other than the underscore (<literal>_</literal>) and the hyphen (<literal>-</literal>)."
+msgstr "顯示名稱乃會顯示於 RHEV Manager 下方的儲存區域名稱。顯示的名稱必須不包含非字元數字的字元，除了下劃線（<literal>_</literal>）以及分號（<literal>-</literal>）。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "Display name for the ISO domain:"
+msgstr "ISO 區域的顯示名稱："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym> ISO</acronym> domain will be created and exported as an <acronym> NFS</acronym> share. It will be shown as active in the Red Hat Enterprise Virtualization Manager once the first active virtualization host has been added to the <literal>Default</literal> data center."
+msgstr "<acronym>ISO</acronym> 區域將被建立並匯出為一個 <acronym>NFS</acronym> share。當第一個虛擬主機被新增至 <literal>Default</literal> 時，它將會在 RHEV Manager 中，顯示為啟用中的 RHEV Manager。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configure Firewall"
+msgstr "配置防火牆"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager requires that network traffic on a number of ports be allowed through the system's firewall. The <command>rhevm-setup</command> script is able to configure this automatically, but selecting this option overrides any existing firewall configuration. Where there is an existing firewall configuration that needs to be maintained you must manually configure the firewall to include the additional rules required by the Red Hat Enterprise Virtualization Manager."
+msgstr "RHEV Manager 需要幾個連接埠的網路流量被允許通過系統的防火牆。<command>rhevm-setup</command> script 能夠針對此自動進行配置，不過選擇此選項會將任何既有的防火牆配置覆蓋過去。若您有必需保留的防火牆配置，您必須手動式配置防火牆，以包含 RHEV Manager 所需的額外規則。"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Firewall ports need to be opened.\n"
+"You can let the installer configure iptables automatically overriding the current configuration. The old configuration will be backed up.\n"
+"Alternately you can configure the firewall later using an example iptables file found under /usr/share/ovirt-engine/conf/iptables.example\n"
+"Configure iptables ? ['yes'| 'no']:\n"
+msgstr ""
+"\n"
+"防火牆連接埠需要開啓。\n"
+"您可讓安裝程式配置 iptables 並自動地覆蓋目前的配置。舊的配置將會被備份。\n"
+"此外，您亦可之後再使用能在 /usr/share/rhevm/conf/iptables.example 下找到的範例 iptables 來配置防火牆\n"
+"安裝程式是否應該現在配置 iptables？['yes'| 'no']  [yes]：\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To proceed with automatic firewall configuration type <literal>yes</literal> and then press <keycap> Enter</keycap>."
+msgstr "若要進行自動防火牆配置，請輸入 <literal>yes</literal> 然後按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To skip automatic firewall configuration type <literal>no</literal> and then press <keycap> Enter</keycap>. You will need to add rules equivalent to those found in <filename>/usr/share/ovirt-engine/conf/iptables.example</filename> to your <command>iptables</command> configuration."
+msgstr "若要跳過自動防火牆配置，請輸入 <literal>no</literal> 然後按下 <keycap>Enter</keycap>。您將需要將與 <filename>/usr/share/rhevm/conf/iptables.example</filename> 中的規則相等的規則加入至您的 <command>iptables</command> 配置中。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Confirm Configuration"
+msgstr "確認配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You have now provided the script with all the information required to complete configuration of the Red Hat Enterprise Virtualization Manager. The values which you entered are displayed for confirmation."
+msgstr "您現在已提供了 script 並包含配置 RHEV Manager 所需的所有資訊。您所輸入的值會顯示出，以供再次確認。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuration Confirmation Screen"
+msgstr "配置確認畫面"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"RHEV Manager will be installed using the following configuration:\n"
+"=================================================================\n"
+"http-port:                     80\n"
+"https-port:                    443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"db-remote-install:             local\n"
+"db-local-pass:                 ********\n"
+"nfs-mp:                        /isoshare\n"
+"iso-domain-name:               ISODomain\n"
+"config-nfs                     yes\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): \n"
+msgstr ""
+"\n"
+"RHEV Manager 將會使用下列配置進行安裝：\n"
+"=================================================================\n"
+"http-port:                     8080\n"
+"https-port:                    8443\n"
+"host-fqdn:                     manager.demo.redhat.com\n"
+"auth-pass:                     ********\n"
+"db-pass:                       ********\n"
+"org-name:                      Red Hat\n"
+"default-dc-type:               NFS\n"
+"nfs-mp:                        /isoshare\n"
+"iso-domain-name:               ISODomain\n"
+"override-iptables:             yes\n"
+"Proceed with the configuration listed above? (yes|no): \n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To permanently apply the configuration values listed type <literal>yes</literal> and then press <keycap> Enter</keycap> to apply the configuration."
+msgstr "若要永久性套用列出的這些配置值，請輸入 <literal>yes</literal>，並按下 <keycap>Enter</keycap> 以套用配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If one or more of the configuration values listed is incorrect type <literal>no</literal> and then <keycap> Enter</keycap> to revisit the configuration."
+msgstr "若有一個或更多個列出的配置值不正確，請輸入 <literal>no</literal> 然後按下 <keycap>Enter</keycap>，以重新編輯配置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration values are applied. A number of services need to be started and as a result this step takes some time. Do not terminate the installation once application of the configuration values has commenced."
+msgstr "配置值將會被套用。某些服務需要啟用，因此可能會花上一段時間。當配置值的應用程式啟動後，請勿終止安裝程序。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once the script has completed successfully take note of the additional information it provides. In particular note down the <literal>SSH Certificate fingerprint</literal>, <literal>SSH Public key fingerprint</literal>, and Red Hat Enterprise Virtualization Manager <acronym> URL</acronym> for your records."
+msgstr "當 script 成功完成後，請注意它所提供的額外資訊。特別是，請記住 <literal>SSH 憑證指紋</literal>、<literal>SSH 公共金鑰指紋</literal>，以及 RHEV Manager 的 <acronym>URL</acronym>，以供日後參考。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Successful Configuration"
+msgstr "配置成功"
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"Installing:\n"
+"Creating JBoss Profile...                                [ DONE ]\n"
+"Creating CA...                                           [ DONE ]\n"
+"Setting Database Security...                             [ DONE ]\n"
+"Creating Database...                                     [ DONE ]\n"
+"Updating the Default Data Center Storage Type...         [ DONE ]\n"
+"Editing JBoss Configuration...                           [ DONE ]\n"
+"Editing RHEV Manager Configuration...                    [ DONE ]\n"
+"Configuring the Default ISO Domain...                    [ DONE ]\n"
+"Configuring Firewall (iptables)...                       [ DONE ]\n"
+"Starting JBoss Service...                                [ DONE ]\n"
+"\n"
+" **** Installation completed successfully ******\n"
+"\n"
+"     (Please allow RHEV Manager a few moments to start up.....)\n"
+"\n"
+"\n"
+"Additional information:\n"
+" * SSL Certificate fingerprint: 4C:A4:8F:93:62:50:C1:63:C8:09:70:77:07:90:FD:65:5B:3C:E8:DD\n"
+" * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e\n"
+" * A default ISO share has been created on this host.\n"
+"   If IP based access restrictions are required, please edit /isoshare entry in /etc/exports\n"
+" * The firewall has been updated, the old iptables configuration file was saved to /usr/share/rhevm/conf/iptables.backup.103654-09092011_866\n"
+" * The installation log file is available at: /var/log/rhevm/rhevm-setup_2011_09_09_10_32_56.log\n"
+" * Please use the user \"admin\" and password specified in order to login into RHEV Manager\n"
+" * To configure additional users, first configure authentication domains using the 'rhevm-manage-domains' utility\n"
+" * To access RHEV Manager please go to the following URL: http://manager.demo.redhat.com:8080\n"
+msgstr ""
+"Installing:\n"
+"Creating JBoss Profile...                                [ DONE ]\n"
+"Creating CA...                                           [ DONE ]\n"
+"Setting Database Security...                             [ DONE ]\n"
+"Creating Database...                                     [ DONE ]\n"
+"Updating the Default Data Center Storage Type...         [ DONE ]\n"
+"Editing JBoss Configuration...                           [ DONE ]\n"
+"Editing RHEV Manager Configuration...                    [ DONE ]\n"
+"Configuring the Default ISO Domain...                    [ DONE ]\n"
+"Configuring Firewall (iptables)...                       [ DONE ]\n"
+"Starting JBoss Service...                                [ DONE ]\n"
+"\n"
+" **** Installation completed successfully ******\n"
+"\n"
+"     (Please allow RHEV Manager a few moments to start up.....)\n"
+"\n"
+"\n"
+"Additional information:\n"
+" * SSL Certificate fingerprint: 4C:A4:8F:93:62:50:C1:63:C8:09:70:77:07:90:FD:65:5B:3C:E8:DD\n"
+" * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e\n"
+" * A default ISO share has been created on this host.\n"
+"   If IP based access restrictions are required, please edit /isoshare entry in /etc/exports\n"
+" * The firewall has been updated, the old iptables configuration file was saved to /usr/share/rhevm/conf/iptables.backup.103654-09092011_866\n"
+" * The installation log file is available at: /var/log/rhevm/rhevm-setup_2011_09_09_10_32_56.log\n"
+" * Please use the user \"admin\" and password specified in order to login into RHEV Manager\n"
+" * To configure additional users, first configure authentication domains using the 'rhevm-manage-domains' utility\n"
+" * To access RHEV Manager please go to the following URL: http://manager.demo.redhat.com:8080\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager has been installed and configured successfully. You are now able to connect to the Administration Portal for the first time."
+msgstr "RHEV Manager 已成功安裝和配置。您現在即將能夠首次連上管理入口網站。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Access Using <acronym>HTTP</acronym>"
+#~ msgstr "使用 <acronym>HTTP</acronym> 來存取"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "For a machine with hostname <literal>manager.demo.redhat.com</literal> using the default <acronym> HTTP</acronym> port value, <literal>8080</literal>, the <acronym> URL</acronym> to access the entry page over <acronym> HTTP</acronym> is <literal>http://manager.demo.redhat.com:8080/</literal>."
+#~ msgstr "在一部主機名稱為 <literal>manager.demo.redhat.com</literal>，並且使用預設 <acronym>HTTP</acronym> 連接埠值 <literal>8080</literal> 的機器上，透過 <acronym>HTTP</acronym> 存取進入網頁的 <acronym>URL</acronym> 為 <literal>http://manager.demo.redhat.com:8080/</literal>。"
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Access Using <acronym>HTTPS</acronym>"
+#~ msgstr "使用 <acronym>HTTPS</acronym> 來存取"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "For a machine with hostname <literal>manager.demo.redhat.com</literal> using the default <acronym> HTTPS</acronym> port value, <literal>8443</literal>, the <acronym> URL</acronym> to access the entry page over <acronym> HTTPS</acronym> is <literal>https://manager.demo.redhat.com:8443/</literal>."
+#~ msgstr "在一部主機名稱為 <literal>manager.demo.redhat.com</literal>，並且使用預設 <acronym>HTTPS</acronym> 連接埠值 <literal>8443</literal> 的機器上，透過 <acronym>HTTPS</acronym> 存取進入網頁的 <acronym>URL</acronym> 為 <literal>http://manager.demo.redhat.com:8443/</literal>。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

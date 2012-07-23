@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter><title>Compiler Output</title><itemizedlist id="TagErrorXRef7332" ><title>Topic ID 7332</title><listitem><para>INFO: Assigned Writer: thildred  Book: RHEV Administration Guide, RHEV Installation Guide  Concerns: Networking  Content Type: Text  Content Warnings: Spelling Error  Release: RHEV 3.1  Technologies: Administration Portal, RHEV Logical Network  Topic Types: Task  Migration Workflow: XML Rewrite  IA Priority: IA Medium Priority  Concerns: Configuration  Concerns: Administration  Topic Lifecycle: Approved  Topic Lifecycle: Assigned  Topic Lifecycle: Written </para></listitem>
+<listitem><para>INFO: <ulink url="http://skynet.usersys.redhat.com:8080/TopicIndex/CustomSearchTopicList.seam?topicIds=7332">Topic URL</ulink></para></listitem>
+<listitem><para>ERROR: images/edit-network-interface.png is not a valid image. Must be in the format [ImageFileID].extension e.g. 123.png, or images/321.jpg</para></listitem>
+</itemizedlist></chapter>

@@ -1,0 +1,86 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:28-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuration Tool"
+msgstr "配置工具"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Installing the Red Hat Enterprise Virtualization Manager modifies only a subset of configuration settings from their defaults. Further modifications are made using the configuration tool: <command>rhevm-config</command>."
+msgstr "當進行安裝時，僅有一部份的 RHEV Manager 配置設定，會由預設值被修改。您將透過包含的配置工具 <command>rhevm-config</command> 進行額外的變更。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The configuration tool does not require JBoss or the Red Hat Enterprise Virtualization Manager to be running to update the configuration. Configuration key values are stored in the database; configuration changes will not be saved unless the database is operational. Changes are applied when JBoss is restarted."
+msgstr "此配置工具不需要執行 <acronym>JBoss</acronym> 或是 RHEV Manager，便可更新配置。配置金鑰值儲存在資料庫中，並且必須要處於作業狀態下，才能儲存配置變更。變更僅會在 <acronym>JBoss</acronym> 重新啟動時，才會被套用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager stores configuration settings as a series of key-to-value pair mappings. The configuration tool allows you to:"
+msgstr "管理員的配置將被儲存為一系列的金鑰/值配對。配置工具能讓您："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "list all available configuration keys,"
+msgstr "列出所有可用的配置金鑰、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "list all available configuration values,"
+msgstr "列出所有可用的配置值、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "retrieve the value of a specific configuration key, and"
+msgstr "取得特定配置金鑰的值，以及"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "set the value of a specific configuration key."
+msgstr "設置特定配置金鑰的值。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "You are also able to maintain multiple versions of the manager's configuration with the configuration tool. Use the <parameter>--cver</parameter> parameter to specify the configuration version to be used when retrieving or setting a value for a configuration key. The default configuration version is <literal>general</literal>."
+msgstr "此配置工具亦可讓您保留多版本的管理員配置。當在為配置金鑰取得或設定值的時候，<parameter>--cver</parameter> 參數可被使用來指定欲使用的配置版本。預設配置版本 <literal>general</literal>。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8674-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

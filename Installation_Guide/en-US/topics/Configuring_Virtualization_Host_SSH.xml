@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Virtualization_Host_SSH" remap="TID_10231">
+	<title>Configuring Virtualization Host SSH</title>
+	<itemizedlist>
+		<title role="process-previous-title">Previous Step in <link linkend="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">Preparing a Red Hat Enterprise Linux Host</link></title>
+		<listitem>
+			<para role="process-previous-link">
+				<xref linkend="Configuring_Virtualization_Host_sudo"/>
+			</para>
+		</listitem>
+	</itemizedlist>
+	<formalpara>
+		<title>Summary</title>
+		<para>
+			The Red Hat Enterprise Virtualization Manager accesses virtualization hosts via <acronym>SSH</acronym>. To do this it logs in as the <systemitem class="username">root</systemitem> user using an encrypted key for authentication. You must follow this procedure to ensure that <acronym>SSH</acronym> is configured to allow this.
+		</para>
+	</formalpara>
+	<warning>
+		<para>
+			The first time the Red Hat Enterprise Virtualization Manager is connected to the host it will install an authentication key. In the process it will overwrite any existing keys contained in the <filename>/root/.ssh/authorized_keys</filename> file.
+		</para>
+	</warning>
+	<procedure>
+		<title>Configuring virtualization host SSH</title>
+		<para>
+			All commands in this procedure must be run as the <systemitem>root</systemitem> user.
+		</para>
+		<step>
+			<title>Install the <acronym>SSH</acronym> server (<package>openssh-server</package>)</title>
+			<para>
+				Install the <package>openssh-server</package> package using <command>yum</command>.
+			</para>
+			<screen># yum install openssh-server</screen>
+		</step>
+		<step>
+			<title>Edit <acronym>SSH</acronym> server configuration</title>
+			<para>
+				Open the <acronym>SSH</acronym> server configuration, <filename>/etc/ssh/sshd_config</filename>, in a text editor. Search for the <parameter>PermitRootLogin</parameter>.
+			</para>
+			<stepalternatives>
+				<step>
+					<para>
+						If <parameter>PermitRootLogin</parameter> is set to <literal>yes</literal>, or is not set at all, no further action is required.
+					</para>
+				</step>
+				<step>
+					<para>
+						If <parameter>PermitRootLogin</parameter> is set to <literal>no</literal>, then you must change it to <literal>yes</literal>.
+					</para>
+				</step>
+			</stepalternatives>
+			<para>
+				Save any changes that you have made to the file, and exit the text editor.
+			</para>
+		</step>
+		<step>
+			<title>Enable the <acronym>SSH</acronym> server</title>
+			<para>
+				Configure the <acronym>SSH</acronym> server to start at system boot using the <command>chkconfig</command> command.
+			</para>
+			<screen># chkconfig --level 345 sshd on</screen>
+		</step>
+		<step>
+			<title>Start the <acronym>SSH</acronym> server</title>
+			<para>
+				Start the <acronym>SSH</acronym>, or restart it if it is already running, using the <command>service</command> command.
+			</para>
+			<screen># service sshd restart</screen>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result</title>
+		<para>
+			You have configured the virtualization host to allow <systemitem>root</systemitem> access over <acronym>SSH</acronym>.
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10231-164517+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

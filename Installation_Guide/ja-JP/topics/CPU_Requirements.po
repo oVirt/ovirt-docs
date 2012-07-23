@@ -1,0 +1,124 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-03 02:30-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host CPU Requirements"
+msgstr "CPU 要件"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtualization hosts must have at least one <acronym> CPU</acronym>. Red Hat Enterprise Virtualization supports the use of these <acronym> CPU</acronym> models in virtualization hosts:"
+msgstr "仮想化ホストには最低 1 つ以上の <acronym> CPU</acronym> が必要です。Red Hat Enterprise Virtualization は仮想化ホストで以下のような <acronym> CPU</acronym> モデルのご使用に対応しています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G1"
+msgstr "AMD Opteron G1"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G2"
+msgstr "AMD Opteron G2"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G3"
+msgstr "AMD Opteron G3"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "AMD Opteron G4"
+msgstr "AMD Opteron G1"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Conroe"
+msgstr "Intel Conroe"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Penryn"
+msgstr "Intel Penryn"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Nehalem"
+msgstr "Intel Nehalem"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Westmere"
+msgstr "Intel Westmere"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Intel Sandybridge"
+msgstr "Intel Conroe"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All <acronym> CPUs</acronym> must have support for the <trademark class=\"registered\"> Intel</trademark> 64 or AMD64 CPU extensions, and the <trademark class=\"trade\"> AMD-V</trademark> or <trademark class=\"registered\"> Intel VT</trademark> hardware virtualization extensions enabled. Support for the <literal>No eXecute</literal> flag (NX) is also required. To check that your processor supports the required flags, and that they are enabled:"
+msgstr "<acronym>CPU</acronym> はすべて、<trademark class=\"registered\"> Intel </trademark> 64 あるいは AMD64 CPU の拡張機能、<trademark class=\"trade\"> AMD-V </trademark> あるいは 有効な <trademark class=\"registered\"> Intel VT </trademark> ハードウェア仮想化拡張機能に対応する必要があります。また、<literal>No eXecute</literal> フラグ (NX) への対応も必須です。お使いのプロセッサーが必要とされる仮想化拡張機能に対応しており、有効であるかを確認するには以下を実行してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At the Red Hat Enterprise Linux or Red Hat Enterprise Virtualization Hypervisor boot screen press any key and select the <guilabel>Boot</guilabel> or <guilabel>Boot with serial console</guilabel> entry from the list. Press <guilabel>Tab</guilabel> to edit the kernel parameters for the selected option. After the last kernel parameter listed ensure there is a <keycap>Space</keycap> and append the <literal>rescue</literal> parameter."
+msgstr "Red Hat Enterprise Linux または Red Hat Enterprise Virtualization Hypervisor の起動画面でいずれかのキーを押し、一覧から<guilabel>起動</guilabel>か<guilabel>シリアルコンソールで起動</guilabel>のエントリを選択します。<guilabel>タブ</guilabel>を押して選択したオプション用のカーネルパラメーターを編集します。末尾のカーネルパラメーターの後ろに必ず１つ<keycap>空白</keycap>を入れてから <literal>rescue</literal> パラメーターを追加します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Press <keycap>Enter</keycap> to boot into rescue mode."
+msgstr "<keycap>Enter</keycap> を押してレスキューモードで起動します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "At the prompt which appears, determine that your processor has the required extensions and that they are enabled by running this command:"
+msgstr "表示されたプロンプトで、ご使用のプロセッサーに仮想化拡張があるか確認してください。また、次のコマンドを実行して、仮想化拡張機能が有効になっているか確認します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# grep -E 'svm|vmx' /proc/cpuinfo | grep nx"
+msgstr "# grep -E 'svm|vmx' /proc/cpuinfo"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If any output is shown, the processor is hardware virtualization capable. If no output is shown it is still possible that your processor supports hardware virtualization. In some circumstances manufacturers disable the virtualization extensions in the BIOS. Where you believe this to be the case consult the system's BIOS and the motherboard manual provided by the manufacturer."
+msgstr "何らかの出力が表示されれば、プロセッサーはハードウェアの仮想化が可能です。出力が何も表示されない場合でも、ご使用のプロセッサーがハードウェア仮想化に対応している可能性があります。場合によっては、メーカーが BIOS で仮想化拡張機能を無効にしていることがあります。これに該当すると思われる場合には、メーカーが提供しているシステムの BIOS とマザーボードに関するマニュアルを参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "As an additional check, verify that the <computeroutput> kvm </computeroutput> modules are loaded in the kernel:"
+msgstr "また、<computeroutput>kvm</computeroutput> モジュールがカーネルに読み込まれていることも確認します。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# lsmod | grep kvm"
+msgstr "# lsmod | grep kvm"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the output includes <computeroutput> kvm_intel </computeroutput> or <computeroutput> kvm_amd </computeroutput> then the <computeroutput> kvm </computeroutput> hardware virtualization modules are loaded and your system meets requirements."
+msgstr "出力に <computeroutput>kvm_intel</computeroutput> または <computeroutput>kvm_amd</computeroutput> が含まれている場合は、 <computeroutput>kvm</computeroutput> ハードウェア仮想化モジュールが読み込まれており、システムが要件を満すことになります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7843-161528+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

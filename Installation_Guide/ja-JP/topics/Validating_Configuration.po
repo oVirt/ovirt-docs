@@ -1,0 +1,52 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 03:33-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Validating Domain Configuration"
+msgstr "設定の検証"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In this example, the <command>rhevm-manage-domains</command> command is used to validate the Red Hat Enterprise Virtualization Manager configuration. The command attempts to log into each listed domain with the credentials provided in the configuration. The domain is reported as valid if the attempt is successful."
+msgstr "以下の例では、<command>rhevm-manage-domains</command> コマンドを実行して、Red Hat Enterprise Virtualization Manager 設定を検証します。このコマンドは、設定時に指定した認証情報を用いて、記載されている各ドメインへのログインを試行します。ログインに成功すると、ドメインが有効であるものとして報告されます。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<command>rhevm-manage-domains</command> Validate Action"
+msgstr "<command>rhevm-manage-domains</command> の Validate アクション"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# rhevm-manage-domains -action=validate\n"
+"User guide is: 80b71bae-98a1-11e0-8f20-525400866c73\n"
+"Domain directory.demo.redhat.com is valid.\n"
+msgstr ""
+"\n"
+"# rhevm-manage-domains -action=validate\n"
+"User guid is: 80b71bae-98a1-11e0-8f20-525400866c73\n"
+"Domain directory.demo.redhat.com is valid.\n"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8408-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

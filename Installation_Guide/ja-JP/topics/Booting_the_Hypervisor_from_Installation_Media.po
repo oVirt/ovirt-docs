@@ -1,0 +1,207 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-08 07:41-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "The Hypervisor Boot Menu"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Insert the Red Hat Enterprise Virtualization Hypervisor installation media."
+msgstr "Red Hat Enterprise Virtualization Hypervisor のインストールメディアを挿入します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Power on the system and ensure the system boots from the installation media."
+msgstr "システムの電源を入れ、システムがインストールメディアからブートするのを確認します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The boot splash screen appears. If no input is provided, the hypervisor installation will commence in 30 seconds, using default kernel parameters."
+msgstr "起動スプラッシュ画面が表示されます。何も入力しない場合には、デフォルトのカーネルパラメーターを使用して Hypervisor のインストールが 30 秒以内に開始されます。 "
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Splash Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot splash screen counts down for 30 seconds before automatically booting the system."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To modify the boot options, press any key. The boot menu will display."
+msgstr "起動オプションを変更する場合は、任意のキーを押してください。起動メニューが表示されます。"
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Menu Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot menu screen displays all pre-defined boot options, as well as providing the option to edit them."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The following boot options are available:"
+msgstr "以下の起動オプションが使用できます。"
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install or Upgrade</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boot the hypervisor installer."
+msgstr "Hypervisor インストーラーを起動します。"
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install (Basic Video)</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Install or Upgrade the Hypervisor, using basic video mode."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Install or Upgrade with Serial Console</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Install or Upgrade the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>."
+msgstr "<filename>/dev/ttyS0</filename> にアタッチされたシリアルデバイスにリダイレクトされているコンソールを使用して、Hypervisor のインストーラーを起動します。"
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Reinstall the Hypervisor."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall (Basic Video)</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Reinstall the hypervisor, using basic video mode."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<guilabel>Reinstall with Serial Console</guilabel>"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Reinstall the Hypervisor, with the console redirected to a serial device attached to <filename>/dev/ttyS0</filename>."
+msgstr "<filename>/dev/ttyS0</filename> にアタッチされたシリアルデバイスにリダイレクトされているコンソールを使用して、Hypervisor のインストーラーを起動します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<guilabel>Boot from Local Drive</guilabel>"
+msgstr "ローカルドライブからの起動"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boot the operating system installed on the first local drive."
+msgstr "1 番目のローカルドライブにインストールされているオペレーティングシステムを起動します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the appropriate boot option from the boot menu."
+msgstr "起動メニューから適切な起動オプションを選択します。"
+
+#. Tag: para
+#, no-c-format
+msgid "Press the <keycap>Enter</keycap> key to boot the Hypervisor with the default kernel parameters for the option selected; or"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "press the <keycap>Tab</keycap> key to edit the kernel parameters. In edit mode you are able to add or remove kernel parameters. Kernel parameters must be separated from each other by a space. Once the desired kernel parameters have been set press <keycap>Enter</keycap> to boot the system. Alternatively pressing <keycap>Esc</keycap> reverts any changes that you have made to the kernel parameters."
+msgstr "編集モードでは一覧にカーネルパラメーターを追加、あるいは一覧から削除が可能です。各カーネルパラメーターはスペースで区切ってください。希望のカーネルパラメーターを設定したら <keycap>Enter</keycap> を押してシステムを起動します。あるいは、<keycap>Esc</keycap> を押すと、カーネルパラメーターに加えた変更がすべて元に戻されます。"
+
+#. Tag: title
+#, no-c-format
+msgid "Boot Parameter Screen"
+msgstr ""
+
+#. Tag: phrase
+#, no-c-format
+msgid "The boot parameters screen allows you to add and remove boot parameters."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For a list of supported kernel parameters, see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+msgstr "カーネルパラメーターの詳細については <citetitle>Red Hat Enterprise Linux Hypervisor 導入ガイド</citetitle> を参照してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor boots with the provided boot options."
+msgstr "Hypervisor は設定した起動オプションで起動します。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7609-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "Booting the Hypervisor from Installation Media"
+#~ msgstr "インストールメディアから Hypervisor の起動"
+
+#~ msgctxt ""
+#~ msgid "Boot"
+#~ msgstr "起動"
+
+#~ msgctxt ""
+#~ msgid "Boot with Serial Console"
+#~ msgstr "シリアルコンソールを使って起動"
+
+#~ msgctxt ""
+#~ msgid "Where required additional kernel parameters should be appended to the default parameters displayed. A press of the <keycap> Enter</keycap> key boots the hypervisor installation with the default kernel parameters. Alternatively press the <keycap> Tab</keycap> key to edit kernel parameters for the selected boot option."
+#~ msgstr "必要な場合には、表示されているデフォルトのパラメーターに追加のカーネルパラメーターを追記します。<keycap>Enter</keycap> キーを押すと、デフォルトのカーネルパラメーターで Hypervisor のインストールが開始します。選択した起動オプションのカーネルパラメーターを編集するには、<keycap>Tab</keycap> キーを押してください。"
+
+#~ msgctxt ""
+#~ msgid "Important — Kernel Parameters"
+#~ msgstr "重要 — カーネルパラメーター"
+
+#~ msgctxt ""
+#~ msgid "Note — Upgrading Existing Hypervisors"
+#~ msgstr "注記 ー 既存の Hypervisor のアップグレード"
+
+#~ msgctxt ""
+#~ msgid "To upgrade an existing hypervisor installation, the kernel must be booted with the <parameter>upgrade</parameter> parameter. This will automatically upgrade and reboot the system, rather than displaying the interactive configuration menu. For more information, see the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>."
+#~ msgstr "既存の Hypervisor 設定をアップグレードする場合、 <parameter>upgrade</parameter> パラメーターを付けてカーネルを起動する必要があります。こうすることでインタラクティブな設定メニューを表示することなく、システムは自動的にアップグレードされ再起動されます。詳細については <citetitle>Red Hat Enterprise Linux Hypervisor 導入ガイド</citetitle> を参照してください。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

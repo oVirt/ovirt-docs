@@ -1,0 +1,172 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 01:58-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding iSCSI Storage"
+msgstr "新增 iSCSI 儲存裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform supports iSCSI storage via the creation of a <systemitem> Storage Domain</systemitem> for a <systemitem> Volume Group</systemitem>. A <systemitem> Volume Group</systemitem> is a set of pre-defined Logical Unit Numbers (LUNs). Red Hat Enterprise Virtualization supports creation of a <systemitem> Storage Domain</systemitem> from a pre-existent <systemitem> Volume Group</systemitem> or a set of LUNs. Neither <systemitem> Volume Group</systemitem>s nor LUNs are able to be attached to more than one <systemitem> Storage Domain</systemitem> at a time."
+msgstr "RHEV 平台透過為「<systemitem> 卷冊群組</systemitem>」建立「<systemitem> 儲存區域</systemitem>」，來支援 iSCSI 儲存裝置。「<systemitem> 卷冊群組</systemitem>」是一組預先定義的 LUN。RHEV 支援為事先存在的「<systemitem> 卷冊群組</systemitem>」建立「<systemitem> 儲存網域</systemitem>」。「<systemitem> 卷冊群組</systemitem>」與 LUN 都無法同時連上超過一組「<systemitem> 儲存網域</systemitem>」。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "For information regarding the setup and configuration of iSCSI on Red Hat Enterprise Linux, see the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle>."
+msgstr ""
+"\n"
+"欲知關於設定、配置 RHEL 的 iSCSI 之訊息，請參閱《<citetitle>RHEL — 儲存管理指南</citetitle>》。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers."
+msgstr "在樹狀分頁中，選取「<guilabel>樹狀</guilabel>」分頁。在「<guilabel>系統</guilabel>」上，點選「<guibutton>+</guibutton>」號，以顯示可用的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add an <acronym> iSCSI</acronym> data, or export, storage domain you must select an <acronym> iSCSI</acronym> data center. <acronym> iSCSI</acronym> storage domains can not be used for <acronym> ISO</acronym> storage domains."
+msgstr "選擇網域要加入的「<guilabel>資料中心</guilabel>」。所選取的資料中心之儲存類型會決定儲存網域的類型。要新增或匯出 <acronym> iSCSI</acronym> 儲存網域，您必須選擇 <acronym> iSCSI</acronym> 資料中心。<acronym> iSCSI</acronym> 儲存網域不能用於 <acronym> ISO</acronym> 儲存網域。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>New Domain</guilabel> button."
+msgstr "按下「<guilabel>新區域</guilabel>」按鈕。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Storage</guilabel>. The <guilabel>New Storage</guilabel> dialog box displays. <remark> TODO: Image here. </remark>"
+msgstr "按下「<guilabel>新的儲存裝置</guilabel>」。「<guilabel>新的儲存裝置 </guilabel>」對話視窗將會出現。<remark> 附註：在此加入圖片。 </remark>"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "From the <guilabel>Domain Function / Storage Type</guilabel> drop-down menu, select the appropriate storage type for the storage domain. The storage domain types that are not compatible with the chosen data center are not available."
+msgstr "從「<guilabel>區域功能/儲存類型</guilabel>」下拉式選單中，選擇適合儲存區域的儲存類型。不適用於所選資料中心的儲存區域類型是不能選擇的。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select an active host in the <guilabel>Use host</guilabel> field. To attach a domain, the name of an active host must be selected from the list of existing hosts. Only hosts that are attached to the selected <acronym> Data Center</acronym> are listed."
+msgstr "在「<guilabel>使用主機</guilabel>」欄位中，選擇一部啟用中的主機。 要連上網域，您必須從現有主機清單中選擇啟用主機的名稱。只有已連上所選「<acronym> 資料中心</acronym>」的住機，才會出現在清單上。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Active Host Required"
+msgstr "需要啟用的主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "所有連往儲存區域的通訊，皆是透過所選主機，而不是直接從 RHEV Manager 連出。因此在配置儲存裝置前，系統中至少得存在一台啟用中的主機，並連上所選的資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager is able to map either <acronym> iSCSI</acronym> targets to <acronym> LUNs</acronym>, or <acronym> LUNs</acronym> to <acronym> iSCSI</acronym> targets. The <guilabel>New Domain</guilabel> dialog automatically displays known targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step."
+msgstr "RHEV Manager 可以對應 <acronym> iSCSI</acronym> 目標到 <acronym> LUN</acronym>，或 <acronym> LUN</acronym> 到 <acronym> iSCSI</acronym> 目標。當選擇 <acronym> iSCSI</acronym> 作為儲存類型時，「<guilabel>新網域</guilabel>」對話視窗會自動顯示已知的、擁有尚未使用 <acronym> LUN</acronym> 的目標。如果您想要新增的目標並沒有列出，那麼您可以使用「搜尋目標」功能來尋找，否則請進行下一步。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>iSCSI</acronym> Target Discovery"
+msgstr "尋找 <acronym>iSCSI</acronym> 目標"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>Discover Targets</guilabel> to enable target discovery options. The <guilabel>New Domain</guilabel> dialog automatically displays targets with unused <acronym> LUNs</acronym> when <acronym> iSCSI</acronym> is selected as the storage type. If the target that you are adding is not listed, click <guilabel>Discover Targets</guilabel> to enable target discovery options."
+msgstr "按下「<guilabel>探索目標</guilabel>」以啟用此選項。選擇 <acronym> iSCSI</acronym> 作為儲存類型時，「<guilabel>新區域</guilabel>」對話視窗會自動顯示擁有尚未使用 <acronym> LUN</acronym> 的目標。如果您要新增的目標沒有列出，請按下「<guilabel>探索目標</guilabel>」來啟用此選項。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the fully qualified domain name or <acronym> IP</acronym> address of the <acronym> iSCSI</acronym> host in the <guilabel>Address</guilabel> field."
+msgstr "在「<guilabel>位址</guilabel>」欄位中，輸入 <acronym> iSCSI</acronym> 的完整區域名稱 FQDN 或 <acronym> IP</acronym> 位址。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the port to connect to the host on when browsing for targets in the <guilabel>Port</guilabel> field. The default is <literal>3260</literal>."
+msgstr "在「<guilabel>連接埠</guilabel>」欄位輸入瀏覽目標時所使用的連接埠。預設值為 <literal>3260</literal>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the Challenge Handshake Authentication Protocol ( <acronym> CHAP</acronym>) is being used to secure the storage, select the <guilabel>User Authentication</guilabel> check box. Enter the <acronym> CHAP</acronym> user name and password."
+msgstr "如果您使用 <acronym> CHAP</acronym> 通訊協定來確保儲存裝置的安全性，請勾選「<guilabel>使用者授權</guilabel>」方塊。請輸入 <acronym> CHAP</acronym> 的使用者名稱與密碼。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guibutton>Discover</guibutton> button."
+msgstr "按下「<guibutton>探索</guibutton>」按鈕。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>+</guilabel> button next to the desired target. This will expand the entry and display all unused <acronym> LUNs</acronym> attached to the target."
+msgstr "按下欲選取目標旁的「<guilabel>+</guilabel>」號按鈕。這會展開此條目，並顯示所有連上該目標、未使用的 <acronym> LUNs</acronym>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the check box for each <acronym> LUN</acronym> that you are using to create the storage domain."
+msgstr "選擇您要用來建立儲存網域的每個 <acronym> LUN</acronym>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton> to create the storage domain."
+msgstr "點選「<guibutton>確定</guibutton>」按鈕來建立儲存區域。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new <acronym> iSCSI</acronym> storage domain displays on the storage tab. This will take some time."
+msgstr "儲存裝置分頁中會出現新的 <acronym> iSCSI</acronym> 儲存區域。這將會花上一點時間。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7633-164508+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

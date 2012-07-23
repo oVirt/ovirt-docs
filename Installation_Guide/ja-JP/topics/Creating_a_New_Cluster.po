@@ -1,0 +1,195 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 01:26-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Creating a new cluster"
+msgstr "新規クラスターの作成"
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before creating a new cluster, ensure that there is at least one host available to be assigned to it. The hosts in a cluster all run the same type of CPU. That is, a cluster must not contain a mix of both Intel and AMD CPUs."
+msgstr "新規のクラスターを作成する前に、そのクラスターに割り当て可能なホストが少なくとも 1 つあることを確認してください。1 クラスター内にあるホストはすべて同じ タイプの CPU を実行します。つまり、1 つのクラスター内には Intel と AMD  の CPU を混在させないようにしてください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The default <guilabel>rhevm</guilabel> network cannot be modified once a Cluster has been attached to a data center. Any configuration required for the <guilabel>rhevm</guilabel> network, such as enabling VLAN tagging, must be performed before a Cluster is attached, and while the data center is still in the <guilabel>Uninitialized</guilabel> state."
+msgstr "クラスターをデータセンターに接続した後には、デフォルトの <guilabel>rhevm</guilabel> ネットワークは変更できません。VLAN タグを有効にするなど、<guilabel>rhevm</guilabel> ネットワークに必要な設定は、クラスターをアタッチする前に、データセンターがまだ <guilabel>初期化前</guilabel>の状態の時に行う必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Clusters</guilabel> resource tab to list all clusters in the results list."
+msgstr "<guilabel>クラスター</guilabel>タブをクリックします。クラスターの一覧が表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>New</guilabel> button to open the <guilabel>New Cluster</guilabel> window."
+msgstr "<guilabel>クラスター</guilabel>タブにある<guilabel>新規</guilabel>ボタンをクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> the cluster will belong to from the drop-down menu."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Name</guilabel> of the cluster; this text field has a 40-character limit and allows only alpha-numeric, underscore (<literal>_</literal>), and dash (<literal>-</literal>) characters."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Description</guilabel> of the description. This field is recommended but not mandatory."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>CPU Name</guilabel> from the drop-down menu. It is important to match the CPU processor family with the minimum CPU processor type of the hosts you intend to attach to the cluster, otherwise the host will be non-operational."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the compatibility version from the drop-down menu. If the data center you're attaching to is in <guilabel>3.1</guilabel> compatibility mode, <guilabel>3.1</guilabel> will be your only choice; if the data center is in <guilabel>3.0</guilabel>compatibility mode then you can choose between <guilabel>3.0</guilabel> and <guilabel>3.1</guilabel> mode."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Enable Virt Service</guilabel> check box to enable virtualization checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required virtualization capabilities."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Enable Gluster Service</guilabel> check box to enable Gluster checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required Gluster capabilities."
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click the <guilabel>Memory Optimization</guilabel> tab to define how much of the host's memory can be used in excess of the permitted memory for a virtual machine in the cluster. For example, all virtual machines will not be using the full amount of allocated memory all the time. Memory sharing allows virtual machines that require additional memory at a certain time to use memory that is not being used at that time by other virtual machines. This feature allows you to fine tune how you wish to optimize the memory page sharing and large pages implementation on the hosts in the cluster."
+msgstr "<guilabel>メモリの最適化</guilabel>タブを使用して、クラスター内の仮想マシンが許容メモリを超過した場合に、使用できるホストのメモリ量を定義することができます。たとえば、すべての仮想マシンが、割り当てられた最大のメモリ容量を常にに使用しているわけではありません。メモリ共有により、追加のメモリを必要とする仮想マシンは、一定時間、他の仮想マシンが使用していないメモリを使用することが可能となります。この機能により、メモリページ共有およびクラスター内のホストへの大容量ページの実装を最適化する方法を微調整することができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "Select one of the following:"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<guilabel>None</guilabel> - disables memory page sharing"
+msgstr "<guilabel>新規クラスター</guilabel>ダイアログが表示されます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Optimized for Server Load</guilabel> - sets the memory page sharing threshold to 150% of the system memory on each host"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Optimized for Desktop Load</guilabel> - sets the memory page sharing threshold to 200% of the system memory on each host"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Resilience Policy</guilabel> tab to define if high availability is to be implemented for the virtual machines in the cluster. If a host shuts down unexpectedly or is put into maintenance, the virtual machines running on the host can be migrated to run on another host in the same cluster. This field allows you to configure the migration settings for virtual machines."
+msgstr "<guilabel>復元ポリシー</guilabel>タブを選択し、クラスター内の仮想マシンに高可用性を実装するか定義します。ホストが予期せずシャットダウンする、またはホストをメンテナンスに切り替える場合、そのホストで実行している仮想マシンを同じクラスター内の別のホストで再実行することができます。このフィールドでは仮想マシンの移行を設定することができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Migrate Virtual Machines</guilabel> - migrates all virtual machines"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Migrate only Highly Available Virtual Machines</guilabel> - migrates only highly available virtual machines"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<guilabel>Do Not Migrate Virtual Machines</guilabel> - does not migrate any virtual machines"
+msgstr ""
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>OK</guilabel> to create the cluster and open the <guilabel>New Cluster - Guide Me</guilabel> window."
+msgstr "<guilabel>クラスター</guilabel>タブにある<guilabel>新規</guilabel>ボタンをクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgid "The <guilabel>Guide Me</guilabel> window lists the entities that need to be configured for the cluster. Configure these entities or postpone configuration by clicking the <guilabel>Configure Later</guilabel> button; configuration can be resumed by selecting the cluster and clicking the <guilabel>Guide Me</guilabel> button."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The new cluster is added to the virtualization environment."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7624-163744+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "To create a new host cluster:"
+#~ msgstr "新規ホストクラスターの作成手順"
+
+#~ msgctxt ""
+#~ msgid "On the <guilabel>General</guilabel> tab, Select an existing <guilabel>Data Center</guilabel> from the list, the cluster <guilabel>Name</guilabel> and <guilabel>Description</guilabel>. The name should not include spaces."
+#~ msgstr "<guilabel>一般</guilabel>タブにて、一覧から既存の<guilabel>データセンター</guilabel>を選択し、<guilabel>名前</guilabel>にクラスター名、<guilabel>説明</guilabel>にその詳細を入力します。クラスター名には空白を含まないようにしてください。"
+
+#~ msgctxt ""
+#~ msgid "Select the <guilabel>CPU Name</guilabel> for hosts in this cluster. All hosts must run the same type of CPU. The <guilabel>CPU Name</guilabel> list displays all the CPU types supported by Red Hat Enterprise Virtualization. Finally on the <guilabel>General</guilabel> tab, select the <guilabel>Compatibility Level</guilabel> of the data center, from either 2.2 or 3.0."
+#~ msgstr "このクラスター内のホストの <guilabel>CPU 名</guilabel> を選択します。ホストはすべて同じタイプの CPU を実行しなければなりません。<guilabel>CPU 名</guilabel> の一覧には、Red Hat Enterprise Virtualization が対応している全 CPU タイプが表示されます。最後に <guilabel>一般</guilabel> タブで、データセンターの <guilabel>互換レベル</guilabel> を 2.2 または 3.0 から選択します。"
+
+#~ msgctxt ""
+#~ msgid "Select from <guilabel>None</guilabel>, that disables memory page sharing, <guilabel>Optimized for Server Load</guilabel>, that sets the memory page sharing threshold to 150% of the system memory on each host, or <guilabel>Optimized for Desktop Load</guilabel>, that sets the memory page sharing threshold to 200% of the system memory on each host."
+#~ msgstr "<guilabel>なし</guilabel> (メモリページ共有を無効にする)、<guilabel>サーバーロード用に最適化</guilabel> (メモリページ共有のしきい値を各ホストのシステムメモリを 150% に設定する)、 <guilabel>デスクトップロード用に最適化</guilabel> (メモリページ共有のしきい値を各ホストのシステムメモリを 200% に設定する) のいずれかを選択します。"
+
+#~ msgctxt ""
+#~ msgid "Select from <guilabel>Migrate Virtual Machines</guilabel>, (migrates all machines); <guilabel>Migrate only Highly Available Virtual Machines</guilabel> or <guilabel>Do Not Migrate Virtual Machines</guilabel>."
+#~ msgstr "<guilabel>仮想マシンの移行</guilabel> (全仮想マシンを移行)、<guilabel>高可用性の仮想マシンのみを移行</guilabel>、または<guilabel>仮想マシンを移行しない</guilabel>の中から選択してください。"
+
+#~ msgctxt ""
+#~ msgid "Click <guibutton>OK</guibutton> to create the cluster. The new host cluster is added to the data center and displays on the Cluster tab."
+#~ msgstr "<guibutton>OK</guibutton>をクリックします。新しいホストクラスターがデータセンターに追加され、クラスターのタブに表示されます。"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>New Cluster - Guide Me</guilabel> dialog displays."
+#~ msgstr "<guilabel>新規クラスター - ガイド</guilabel>ダイアログが表示されます。"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>Guide Me</guilabel> tab prompts you to add hosts to the new cluster. Click the <guibutton>Configure Hosts</guibutton> button, the <guilabel>New Host</guilabel> dialog displays."
+#~ msgstr "<guilabel>ガイド</guilabel>タブでは新しいクラスターにホストを追加するよう求められます。<guibutton>ホストの設定</guibutton>ボタンをクリックして<guilabel>新規ホスト</guilabel>ダイアログを表示させます。"
+
+#~ msgctxt ""
+#~ msgid "Enter the details of the host to assign to the cluster. Click <guibutton>OK</guibutton> to close the <guilabel>New Host</guilabel> dialog. Now click <guibutton>Configure Later</guibutton> to close the <guilabel>New Cluster Guide Me</guilabel> dialog and return to the <guilabel>Clusters</guilabel> tab."
+#~ msgstr "クラスターに割り当てるホストの詳細を入力します。<guibutton>OK</guibutton> をクリックして <guilabel>新規ホスト</guilabel>ダイアログを閉じます。 次に <guibutton>後で設定</guibutton>をクリックして<guilabel>新規クラスター - ガイド</guilabel>ダイアログを閉じ、<guilabel>クラスター</guilabel>タブに戻ります。"
+
+#~ msgctxt ""
+#~ msgid "The <guilabel>Hosts</guilabel> tab on the Details pane displays the newly added hosts."
+#~ msgstr "詳細ペインの<guilabel>ホスト</guilabel>タブに新たに追加したホストが表示されます。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

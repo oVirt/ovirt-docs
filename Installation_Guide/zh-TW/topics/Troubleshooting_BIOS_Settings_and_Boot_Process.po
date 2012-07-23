@@ -1,0 +1,158 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 03:28-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Troubleshooting BIOS Settings and Boot Process"
+msgstr "BIOS 設定與開機程序疑難排解"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before installing Red Hat Enterprise Virtualization Hypervisors it is necessary to verify the BIOS is correctly configured for the chosen installation method. Many motherboard and PC manufacturers disable different booting methods in the BIOS. Most BIOS chips boot from the following devices in order:"
+msgstr "在安裝 RHEV Hypervisor 之前，您必須驗證 BIOS 是否已針對所選的安裝方式正確配置。許多主機板和 PC 製造商會在 BIOS 中停用不同的開機方式。大部分的 BIOS 晶片皆能由下列裝置開機："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "3.5 inch diskette"
+msgstr "3.5 吋磁片"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "CD-ROM or DVD device"
+msgstr "CD 或 DVD 光碟裝置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Local hard disk"
+msgstr "本機硬碟"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Many BIOS chips have disabled one or more of the following boot methods: <acronym>USB</acronym> storage devices, CD-ROMs, DVDs or network boot. To boot from your chosen method, enable the method or device and set that device as the first boot device in BIOS."
+msgstr "許多 BIOS 晶片停用了一個或更多個下列開機方式：<acronym>USB</acronym> 儲存裝置、CD-ROM、DVD 或網路開機。若要由您所選擇的方式開機，請啟用該方式或裝置，並在 BIOS 中將該裝置設為第一個開機裝置。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Most but not all motherboards support the boot methods described in this chapter. Consult the documentation for your motherboard or system to determine whether it is possible to use a particular boot method."
+msgstr "大部分（非所有）主機板皆支援詳述於本章節中的開機方式。欲取得是否能使用特定方式開機的相關資訊，請參閱您主機板或系統的相關文件。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Warning — <acronym>BIOS</acronym> Settings Vary Between Manufacturers"
+msgstr "警告 — <acronym>BIOS</acronym> 設定會根據製造商而異"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym>BIOS</acronym> settings vary between manufacturers. Any specific examples of <acronym>BIOS</acronym> settings may be inaccurate for some systems. Due to this inconsistency, it is necessary to review the motherboard or system manufacturer's documentation."
+msgstr "<acronym>BIOS</acronym> 設定會根據製造商而異。任何特定的 <acronym>BIOS</acronym> 設定範例對於特定系統來說皆有可能不正確。基於此不一致性，您必須詳讀主機板或系統製造商的相關文件。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Confirming Hardware Virtualization Support"
+msgstr "確認硬體是否支援虛擬化功能"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Verify that your system is capable of running the Red Hat Enterprise Virtualization Hypervisor. Hypervisors require that virtualization extensions are present and enabled in the BIOS before installation proceeds."
+msgstr "請驗證您的系統能夠執行 RHEV Hypervisor。在安裝 Hypervisor 之前，請檢查 BIOS 中是否存在虛擬化延伸功能，同時是否已經啟用。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Boot the hypervisor from removable media. For example, a <acronym>USB</acronym> stick or CD-ROM."
+msgstr "由卸除式媒介啟動 hypervisor。比方說 <acronym>USB</acronym> 卸除式磁碟或是 CD-ROM。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "When the message <literal>Automatic boot in 30 seconds...</literal> is displayed, and begins counting down from thirty, press any key to skip the automatic boot process."
+msgstr "當 <literal>Automatic boot in 30 seconds...</literal> 訊息出現，並且開始由 30 秒進行倒數時，請按下任何按鍵來跳過自動開機程序。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Ensure the <guilabel>Install or Upgrade</guilabel> option is selected and press <keycap> Tab</keycap> to edit the boot parameters."
+msgstr "請確認「<guilabel>安裝或升級</guilabel>」選項已選取，並按下 <keycap>Tab</keycap> 來編輯開機參數。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Add the <literal>rescue</literal> parameter to the list of boot parameters shown on the screen, then press <keycap> Enter</keycap>. This action will boot the hypervisor in rescue mode."
+msgstr "請將 <literal>rescue</literal> 參數附加至顯示在畫面上的開機參數，然後按下 <keycap>Enter</keycap>。此動作會將 hypervisor 啟動於救援模式中。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Once the hypervisor boots, verify your CPU contains the virtualization extensions with the following command:"
+msgstr "當 hypervisor 啟動後，請已下列指令驗證您的 CPU 是否包含了虛擬化功能延伸："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# grep -E \"svm|vmx\" /proc/cpuinfo\n"
+msgstr "# grep -E \"svm|vmx\" /proc/cpuinfo\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Output displays if the processor has the hardware virtualization extensions."
+msgstr "如果這項指令傳回任何輸出，表示處理器支援虛擬化功能。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Verify that the KVM modules load by default:"
+msgstr "驗證 KVM 模組就預設值是否會載入："
+
+# Tag: screen
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid "# lsmod | grep kvm\n"
+msgstr "# lsmod | grep kvm\n"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "If the output includes <literal>kvm_intel</literal> or <literal>kvm_amd</literal> then the kvm hardware virtualization modules are loaded and the system meets the requirements. If the output does not include the required modules then you must check that your hardware supports the virtualization extensions and that they are enabled in the system's <acronym>BIOS</acronym>."
+msgstr "若輸出包含了 <literal>kvm_intel</literal> 或是 <literal>kvm_amd</literal>，那麼 kvm 硬體虛擬化模組便有載入，並且系統有達到需求。若輸出未包含必要的模組，那麼您就必須檢查您的硬體是否支援虛擬化功能延伸，並且它們是否已啟用於系統的 <acronym>BIOS</acronym> 中。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7526-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

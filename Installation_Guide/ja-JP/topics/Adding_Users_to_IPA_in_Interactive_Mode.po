@@ -1,0 +1,44 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-07-05 10:00-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding Users to IPA in Interactive Mode"
+msgstr "インタラクティブモードで IPA にユーザー追加\n"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"In interactive mode, the user is first created and their password created "
+"separately so that they can authenticate and log in. Run the <command>ipa "
+"user-add</command> command, as <systemitem> root</systemitem> to create an "
+"IPA user. You can run this command with or without additional parameters. If "
+"you omit any of the required parameters, the interface will prompt you for "
+"the information."
+msgstr ""
+"インタラクティブモードでは、認証とログインができるように、まずユーザーを作成してからそのユーザーのパスワードが別途作成されます。<command># "
+"ipa user-add</command> コマンドを使って<systemitem> root</systemitem> で IPA "
+"ユーザーを作成します。このコマンドはパラメーターの有無に関わらず実行することができます。必要なパラメーターを省略した場合はインターフェースのプロンプトによりその情報の入力が求められます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

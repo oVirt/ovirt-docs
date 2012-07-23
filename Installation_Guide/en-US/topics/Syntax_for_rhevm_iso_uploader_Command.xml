@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Syntax_for_rhevm_iso_uploader_Command" remap="TID_8412">
+	<title>Syntax for rhevm-iso-uploader Command</title>
+	<para>
+		The basic syntax for the ISO uploader command is:
+	</para>
+	<screen>
+<command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter></command>
+       <command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>[file].[file]...[file]</replaceable></parameter></command>
+</screen>
+	<para>
+		The two supported modes of operation are <parameter>list</parameter> and <parameter>upload</parameter>.
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>
+				The <parameter>list</parameter> parameter lists the valid ISO storage domains available for ISO uploads. The Red Hat Enterprise Virtualization Manager sets this list on the local machine upon installation.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				The <parameter>upload</parameter> parameter uploads selected ISO file(s) to the specified ISO storage domain. NFS is used as default; SSH is available.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+		The ISO uploader command requires either the <parameter>list</parameter> or <parameter>upload</parameter> parameter be included for basic usage. The <parameter>upload</parameter> parameter requires a minimum of one local file name to upload.
+	</para>
+	<para>
+		There are numerous parameters to further refine the <command>rhevm-iso-uploader</command> command.
+	</para>
+	<variablelist>
+		<title>General Options</title>
+		<varlistentry>
+			<term><parameter>--version</parameter></term>
+			<listitem>
+				<para>
+					Displays the version number of the command in use before exiting.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-h</parameter>, <parameter>--help</parameter></term>
+			<listitem>
+				<para>
+					Displays command usage information before exiting.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>--conf-file=<replaceable>PATH</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets <replaceable>PATH</replaceable> as the configuration file the tool is to use.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>--log-file=<replaceable>PATH</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets <replaceable>PATH</replaceable> as the specific file name the command should use for the log output.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>--quiet</parameter></term>
+			<listitem>
+				<para>
+					Sets quiet mode, reducing console output to a minimum. Quiet mode is off by default.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-v</parameter>, <parameter>--verbose</parameter></term>
+			<listitem>
+				<para>
+					Sets verbose mode, providing more console output. Verbose mode is off by default.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-f</parameter>, <parameter>--force</parameter></term>
+			<listitem>
+				<para>
+					Force mode is necessary when the source file being uploaded has an identical file name as an existing file at the destination; it forces the existing file to be overwritten. Force mode is off by default.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<variablelist>
+		<title>Red Hat Enterprise Virtualization Manager Options</title>
+		<varlistentry>
+			<term><parameter>-u <replaceable>USER</replaceable></parameter>, <parameter>--user=<replaceable>USER</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets the user associated with the file to be uploaded. The <replaceable>USER</replaceable> is specified in the format <replaceable>user</replaceable>@<replaceable>domain</replaceable>, where <replaceable>user</replaceable> is the user name and <replaceable>domain</replaceable> is the directory services domain in use. The user must exist in directory services and be known to the Red Hat Enterprise Virtualization Manager.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--rhevm=<replaceable>FQDN</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets the fully qualified domain name of the Red Hat Enterprise Virtualization Manager server from which to upload ISOs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the ISO uploader is being run on the same client machine as the Red Hat Enterprise Virtualization Manager; the default value is <literal>localhost</literal>.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<variablelist>
+		<title><acronym>ISO</acronym> Storage Domain Options</title>
+		<para>
+			These options specify the ISO domain to which files are uploaded. They are alternatives; do not use these parameters together.
+		</para>
+		<varlistentry>
+			<term><parameter>-i</parameter>, <parameter>--iso-domain=<replaceable>ISODOMAIN</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets the storage domain <replaceable>ISODOMAIN</replaceable> as the destination for uploads.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-n</parameter>, <parameter>--nfs-server=<replaceable>NFSSERVER</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets the NFS path <replaceable>NFSSERVER</replaceable> as the destination for uploads.
+				</para>
+				<!-- Topic 8413 -->
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<variablelist>
+		<title>Connection Options</title>
+		<para>
+			The ISO uploader uses NFS as default to upload files. These options specify SSH file transfer instead.
+		</para>
+		<varlistentry>
+			<term><parameter>--ssh-user=<replaceable>USER</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets <replaceable>USER</replaceable> as the SSH user name to use for the upload.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>--ssh-port=<replaceable>PORT</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets <replaceable>PORT</replaceable> as the port to use when connecting to SSH.
+				</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term><parameter>-k <replaceable>KEYFILE</replaceable></parameter>, <parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter></term>
+			<listitem>
+				<para>
+					Sets <replaceable>KEYFILE</replaceable> as the public key to use for SSH authentication. You will be prompted to enter the password of the specified user if not key is set.
+				</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8412-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

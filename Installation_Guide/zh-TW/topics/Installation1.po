@@ -1,0 +1,99 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-24 10:15-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "安裝"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This chapter documents the installation of the Red Hat Enterprise "
+"Virtualization hypervisor. Red Hat Enterprise Virtualization Hypervisors are "
+"able to use Storage Area Networks ( <acronym> SANs</acronym>) and other "
+"network storage for storing virtualized guest images. Hypervisors can be "
+"installed on <acronym> SANs</acronym>, provided that the Host Bus Adapter ( "
+"<acronym> HBA</acronym>) permits configuration as a boot device in <acronym> "
+"BIOS</acronym>."
+msgstr ""
+"本章節記載了 RHEV hypervisor 的安裝詳情。RHEV Hypervisor 能夠使用 <acronym>SANs</acronym> "
+"以及其它網路儲存裝置來存放虛擬客座映像檔。只要 Host Bus Adapter（<acronym>HBA</acronym>）能被允許在 "
+"<acronym>BIOS</acronym> 中配置為開機裝置，hypervisor 便能安裝在 <acronym>SANs</acronym> 上。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Hypervisors are able to use multipath devices for installation. Multipath is "
+"often used for <acronym> SANs</acronym> or other networked storage. "
+"Multipath is enabled by default at install time. Any block device which "
+"responds to <command>scsi_id</command> functions with multipath. Devices "
+"where this is not the case include <acronym> USB</acronym> storage and some "
+"older <acronym> ATA</acronym> disks."
+msgstr ""
+"Hypervisors 能夠使用 multipath 裝置來進行安裝。Multipath 一般使用於 <acronym>SANs</acronym> "
+"或是其它網路儲存裝置。在進行安裝時，multipath 一般就預設值會被啟用。任何會回應 <command>scsi_id</command> "
+"功能的區塊裝置皆能與 multipath 搭配運作。情況非如此的裝置包含了 <acronym>USB</acronym> 儲存裝置以及某些較舊的 "
+"<acronym>ATA</acronym> 磁碟。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"There are two methods for installing Red Hat Enterprise Virtualization "
+"Hypervisors:"
+msgstr "安裝 RHEV Hypervisor 有兩種方法："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Interactive Installation ."
+msgstr "互動式安裝。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Automated Installation with Kernel Parameters (see the <citetitle>Red Hat "
+"Enterprise Linux — Hypervisor Deployment Guide</citetitle>)."
+msgstr ""
+"以 Kernel 參數自動化安裝（請參閱《<citetitle>Red Hat Enterprise Linux — Hypervisor 建置指南</"
+"citetitle>》）。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

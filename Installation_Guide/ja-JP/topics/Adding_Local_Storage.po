@@ -1,0 +1,132 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-02 01:40-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Adding Local Storage"
+msgstr "ローカルストレージの追加"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A local storage domain can be set up on a host, to be used as a data domain for a data center and cluster that contains only a single host. Virtual machines created in a single host cluster cannot be migrated, fenced or scheduled."
+msgstr "ローカルストレージドメインをホスト上に設定して、ホストが 1 台のみのデータセンターとクラスターのデータドメインとして使用することができます。単一ホストクラスター内で作成された仮想マシンは、移行、フェンシング、スケジュールを行うことはできません。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Preparing Local Storage"
+msgstr "ローカルストレージの準備"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This section outlines how to set up a local directory with recommended settings."
+msgstr "本セクションでは推奨される設定を用いてローカルのディレクトリを設定する方法を簡単に説明します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On a Red Hat Enterprise Virtualization Hypervisor host, set up the path for the local storage as <filename>/data/images</filename>. This is the only path permitted for a Red Hat Enterprise Virtualization Hypervisor. On a Red Hat Enterprise Linux host other paths are supported but the directories to support it must be manually created first."
+msgstr "Red Hat Enterprise Virtualization Hypervisor ホスト上でローカルストレージのパスに <filename>/data/images</filename> を設定します。Red Hat Enterprise Virtualization Hypervisor では、このパス以外は使用できません。Red Hat Enterprise Linux ホストでは、これ以外のパスにも対応しますが、パスをサポートするディレクトリを先に手作業で作成しておく必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The path must have permissions allowing read and write access to the <systemitem> vdsm</systemitem> user and <systemitem> kvm</systemitem> group. These permissions are set automatically on the <filename>/data/images</filename> path for Red Hat Enterprise Virtualization Hypervisor hosts. you must set them manually on paths to be used for local storage on Red Hat Enterprise Linux hosts."
+msgstr "このパスには、<systemitem>vdsm</systemitem> ユーザーと <systemitem>kvm</systemitem> グループに対する読み取りと書き込みのパーミッションを設定しておく必要があります。Red Hat Enterprise Virtualization Hypervisor ホストの場合、これらのパーミッションは <filename>/data/images</filename> パスで自動的に設定されます。Red Hat Enterprise Linux ホストのローカルストレージの場合には、使用するパスに手作業でこれらのパーミッションを設定しなければなりません。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"# chown 36:36 /data /data/images\n"
+"# chmod 0755 /data /data/images \n"
+"            "
+msgstr ""
+"\n"
+"# chown 36:36 /data /data/images\n"
+"# chmod 0755 /data /data/images \n"
+"            "
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On a Red Hat Enterprise Linux host, set up the path for local storage in the <filename>/data</filename> directory. Any path is permitted on a Red Hat Enterprise Linux host. Follow these instructions to add local storage:"
+msgstr "Red Hat Enterprise Linux ホストで、<filename>/data</filename> ディレクトリ内でローカルストレージへのパスを設定します。Red Hat Enterprise Linux ではいずれのパスを使用しても構いません。以下の手順にしたがってローカルストレージを追加します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers."
+msgstr "ツリーペインで、<guilabel>ツリー</guilabel>タブを選択します。<guilabel>システム</guilabel>の <guibutton>+</guibutton> のアイコンをクリックして、使用可能なデータセンターを表示します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add a local data storage domain you must select a local data center."
+msgstr "ドメインを追加したい<guilabel>データセンター</guilabel>を選択します。選択したデータセンターのストレージタイプにより追加できるストレージドメインのタイプが指定されます。ローカルのデータストレージドメインを追加する場合は、ローカルのデータセンターを選択しなければなりません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guilabel>New Domain</guilabel>. The <guilabel>New Domain</guilabel> dialog box displays."
+msgstr "<guilabel>新規ドメイン</guilabel>をクリックします。<guilabel>新規ドメイン</guilabel>のダイアログボックスが表示されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <guilabel>Name</guilabel> of the domain. A descriptive name is recommended."
+msgstr "ドメインの<guilabel>名前</guilabel>を入力します。わかりやすい名前を入力してください。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the <guilabel>Data / Local on Host</guilabel> option as the <guilabel>Domain Function / Storage Type</guilabel> for the storage domain."
+msgstr "<guilabel>データ / ホストのローカルディスク</guilabel>オプションをストレージドメインの<guilabel>ドメイン機能 / ストレージタイプ</guilabel> として選択します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Select the local host in the <guilabel>Use host</guilabel> field. This must be the host on which the local storage is set up."
+msgstr "<guilabel>使用ホスト</guilabel>フィールドにはローカルホストを選択します。これは、ローカルストレージを設定するホストでなければなりません。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Active Host Required"
+msgstr "重要 ー アクティブなホストが必要です"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured."
+msgstr "ストレージドメインへの通信はすべて、Red Hat Enterprise Virtualization Manager から直接ではなく、選択したホスト経由で行われます。ストレージを設定する前には、システム内にアクティブなホストが少なくとも 1 台存在し、選択したデータセンターに接続されている必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the Path of the storage. For example, <filename>/data/images</filename>."
+msgstr "ストレージのパスを入力します。たとえば、<filename>/data/images</filename> などになります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Click <guibutton>OK</guibutton>."
+msgstr "<guibutton>OK</guibutton> をクリックします。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The new local storage domain displays on the Storage tab. This may take a few moments."
+msgstr "ストレージタブに新しいローカルストレージドメインが表示されます。表示には数分かかる場合があります。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7636-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

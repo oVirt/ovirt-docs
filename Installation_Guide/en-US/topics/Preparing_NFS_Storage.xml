@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Preparing_NFS_Storage" remap="TID_7539">
+	<title>Preparing NFS Storage</title>
+	<para>
+		These steps must be taken to prepare an <acronym>NFS</acronym> file share on a server running Red Hat Enterprise Linux 6 for use with Red Hat Enterprise Virtualization.
+	</para>
+	<procedure>
+		<step>
+			<title>Install <package>nfs-utils</package></title>
+			<para>
+				<acronym>NFS</acronym> functionality is provided by the <package>nfs-utils</package> package. Before file shares can be created, check that the package is installed by querying the <acronym>RPM</acronym> database for the system:
+			</para>
+			<screen>$ <command>rpm -qi <package>nfs-utils</package></command></screen>
+			<para>
+				If the <package>nfs-utils</package> package is installed then the package information will be displayed. If no output is displayed then the package is not currently installed. Install it using <command>yum</command> while logged in as the <systemitem>root</systemitem> user:
+			</para>
+			<screen># <command>yum install <package>nfs-utils</package></command></screen>
+		</step>
+		<step>
+			<title>Configure Boot Scripts</title>
+			<para>
+				To ensure that<acronym>NFS</acronym> shares are always available when the system is operational both the <systemitem>nfs</systemitem> and <systemitem>rpcbind</systemitem> services must start at boot time. Use the <command>chkconfig</command> command while logged in as <systemitem>root</systemitem> to modify the boot scripts.
+			</para>
+			<screen>                
+# <command>chkconfig --add rpcbind</command>
+# <command>chkconfig --add nfs</command>
+# <command>chkconfig rpcbind on</command>
+# <command>chkconfig nfs on</command>
+</screen>
+			<para>
+				Once the boot script configuration has been done, start the services for the first time.
+			</para>
+			<screen>                
+# <command>service rpcbind start</command>
+# <command>service nfs start</command>
+</screen>
+		</step>
+		<step>
+			<title>Create Directory</title>
+			<para>
+				Create the directory you wish to share using <acronym>NFS</acronym>.
+			</para>
+			<screen># <command>mkdir <replaceable>/exports/iso</replaceable></command></screen>
+			<para>
+				Replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use.
+			</para>
+		</step>
+		<step>
+			<title>Export Directory</title>
+			<para>
+				To be accessible over the network using <acronym>NFS</acronym> the directory must be exported. <acronym>NFS</acronym> exports are controlled using the <filename>/etc/exports</filename> configuration file. Each export path appears on a separate line followed by a tab character and any additional <acronym>NFS</acronym> options. Exports to be attached to the Red Hat Enterprise Virtualization Manager must have the read, and write, options set.
+			</para>
+			<para>
+				To grant read, and write access to <filename>/exports/iso</filename> using <acronym>NFS</acronym> for example you add the following line to the <filename>/etc/exports</filename> file.
+			</para>
+			<screen><replaceable>/exports/iso</replaceable>       *(rw)</screen>
+			<para>
+				Again, replace <replaceable>/exports/iso</replaceable> with the name, and path of the directory you wish to use.
+			</para>
+		</step>
+		<step>
+			<title>Reload <acronym>NFS</acronym> Configuration</title>
+			<para>
+				For the changes to the <filename>/etc/exports</filename> file to take effect the service must be told to reload the configuration. To force the service to reload the configuration run the following command as <systemitem> root</systemitem>:
+			</para>
+			<screen># <command>service nfs reload</command></screen>
+		</step>
+		<step>
+			<title>Set Permissions</title>
+			<para>
+				The <acronym>NFS</acronym> export directory must be configured for read write access and must be owned by vdsm:kvm. If these users do not exist on your external <acronym>NFS</acronym> server use the following command, assuming that <filename><replaceable>/exports/iso</replaceable></filename> is the directory to be used as an <acronym>NFS</acronym> share.
+			</para>
+			<screen># <command>chown -R 36:36 <replaceable>/exports/iso</replaceable></command></screen>
+			<para>
+				The permissions on the directory must be set to allow read and write access to both the owner and the group. The owner should also have execute access to the directory. The permissions are set using the <command>chmod</command> command. The following command arguments set the required permissions on the <filename><replaceable>/exports/iso</replaceable></filename> directory.
+			</para>
+			<screen># <command>chmod 0755 <replaceable>/exports/iso</replaceable></command></screen>
+		</step>
+	</procedure>
+	<para>
+		The <acronym>NFS</acronym> file share has been created, and is ready to be attached by the Red Hat Enterprise Virtualization Manager.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7539-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

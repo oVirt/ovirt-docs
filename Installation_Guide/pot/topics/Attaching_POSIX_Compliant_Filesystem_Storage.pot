@@ -1,0 +1,69 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Attaching POSIX Compliant Filesystem Storage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>Storage</guilabel> tab. The Storage list and toolbar display."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>New Domain</guilabel> button. The <guilabel>New Domain</guilabel> dialog box appears."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter a <guilabel>Name</guilabel> for the Storage Domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Data Center</guilabel> the Storage Domain must be attached to. The Data Center selected must be of type <guilabel>POSIX (POSIX compliant FS)</guilabel>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select a host from the <guilabel>Use Host</guilabel> list. Only hosts within the selected Data Center will be listed. The host that you selet will be used to connect the Storage Domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Path</guilabel> to the <acronym>POSIX</acronym> filesystem, as you would normally provide it to the <command>mount</command> command."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>VFS Type</guilabel>, as you would normally provide it to the <command>mount</command> command using the <parameter>-t</parameter> argument. See <command>man mount</command> for a list of valid <acronym>VFS</acronym> types."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter additional <guilabel>Mount Options</guilabel>, as you would normally them to the <command>mount</command> command using the <parameter>-o</parameter> argument. The mount options should be provided in a comma separated list. See <command>man mount</command> for a list of valid mount options."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guilabel>OK</guilabel> to attach the new Storage Domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10031-160906+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

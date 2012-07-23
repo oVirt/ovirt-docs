@@ -1,0 +1,258 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 01:35-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Adding New Users to IPA"
+msgstr "新增使用者至 IPA"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Because this section is devoted to getting you started with IPA quickly and "
+"easily, we have included only a limited number of examples. In this case, we "
+"have used the example of adding a new user to the system as an introduction "
+"to administering your IPA system. The methods and general approach, however, "
+"apply to nearly all IPA objects (users, groups, hosts, etc.), upon which you "
+"would perform some operation, such as add, show, find, or delete. The "
+"general syntax involved follows the same pattern: <command>ipa "
+"<replaceable>object-operation</replaceable></command>"
+msgstr ""
+"由於本節的用意在於讓您快速、方便地啟用 IPA，因此我們在此納入了一些範例。在此情況下，我們使用了新增使用者到系統上的範例，作為管理 IPA "
+"系統的入門。然而這些方法與一般性的步驟，幾乎及於所有 IPA "
+"物件（使用者、群組、主機等），讓您可以進行一些操作，例如新增、顯示、搜尋、或刪除。一般性的語法包括以下格式：<command>ipa "
+"<replaceable>object-operation</replaceable></command>"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Use the <command># ipa user-add</command> command to create IPA users. "
+"Numerous options are available to customize the way your IPA users are "
+"created. Use the <command>ipa help</command> user command to access the "
+"available help on operations regarding user creation. Password management "
+"can be performed as a separate operation or as part of the initial user "
+"creation process. This, and other aspects of creating IPA users, are "
+"discussed below."
+msgstr ""
+"請使用 <command># ipa user-add</command> 指令來建立 IPA 使用者。您可以用許多選項來自訂建立 IPA "
+"使用者的方式。使用 <command>ipa help</command> "
+"使用者指定，就可以存取建立使用者時所需的操作指令。建立使用者時可以一併管理密碼，也可分開處理。我們會在之後討論建立 IPA 使用者的事宜。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Interactive Mode"
+msgstr "互動模式"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"In interactive mode, the user is first created and their password created "
+"separately so that they can authenticate and log in. Use the <command># ipa "
+"user-add</command> command to create an IPA user. You can run this command "
+"with or without additional parameters. If you omit any of the required "
+"parameters, the interface will prompt you for the information."
+msgstr ""
+"在互動模式裡，會先建立使用者，然後分開建立密碼，之後便可授權登入。請使用 <command># ipa user-add</command> 指令建立 "
+"IPA 使用者。您可使用更多參數來執行這項指令。如果您忽略了必要參數，互動介面將會提示您輸入。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The following example demonstrates adding a new user to IPA. In this "
+"example, the <command>ipa user-add</command> command was executed without "
+"any additional parameters; all required information was entered in "
+"interactive mode."
+msgstr ""
+"以下範例顯示了如何新增使用者到 IPA。在此範例中，<command>ipa user-add</command> "
+"指令並未執行其它參數，所有所需資訊皆在互動式介面中輸入。"
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"<command># ipa user-add</command>\n"
+"  First name: Ryan\n"
+"  Last name: Andrews\n"
+"  User login [randrews]:\n"
+"  ---------------------\n"
+"  Added user \"randrews\"\n"
+"  ---------------------\n"
+"  User login: randrews\n"
+"  First name: Ryan\n"
+"  Last name: Andrews\n"
+"  Full name: Ryan Andrews\n"
+"  Display name: Ryan Andrews\n"
+"  Initials: RA\n"
+"  Home directory: /home/randrews\n"
+"  GECOS field: randrews\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: randrews@IPADOCS.ORG\n"
+"  UID: 1316000004"
+msgstr ""
+"<command># ipa user-add</command>\n"
+"  First name: Ryan\n"
+"  Last name: Andrews\n"
+"  User login [randrews]:\n"
+"  ---------------------\n"
+"  Added user \"randrews\"\n"
+"  ---------------------\n"
+"  User login: randrews\n"
+"  First name: Ryan\n"
+"  Last name: Andrews\n"
+"  Full name: Ryan Andrews\n"
+"  Display name: Ryan Andrews\n"
+"  Initials: RA\n"
+"  Home directory: /home/randrews\n"
+"  GECOS field: randrews\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: randrews@IPADOCS.ORG\n"
+"  UID: 1316000004"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Type <command>ipa passwd <replaceable>&lt;user login&gt;</replaceable></"
+"command> to create a password for the user. This is a temporary password, or "
+"<firstterm>one-time password (<acronym>OTP</acronym>)</firstterm>, and the "
+"user is required to change it the first time they log in. This is done "
+"intentionally, so that an administrator can reset a password for a user but "
+"they are unable to take advantage of that knowledge, because the user must "
+"change the password when they first log in."
+msgstr ""
+"輸入 <command>ipa passwd <replaceable>&lt;user login&gt;</replaceable></"
+"command> 為使用者建立密碼。此乃暫時性的密碼，或稱「<firstterm>單次密碼（<acronym>OTP</acronym>，one-"
+"time password）</"
+"firstterm>」，同時使用者必須在第一次登入時變更。此乃刻意的，如此一來管理者便可重設使用者的密碼，但因使用者一登入即會更改密碼，這樣管理者便無法濫用該使用者帳號。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Unattended Mode"
+msgstr "無人值守模式"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"As an integrated (or unattended) operation, you can pass the <parameter>--"
+"password</parameter> option to the <command>ipa user-add</command> command. "
+"This will force the command to prompt for an initial password. As an "
+"alternative, echo the password directly into the command:"
+msgstr ""
+"在整合式（或無人值守）操作中，您可以傳遞 <parameter>--password</parameter> 選項至 <command>ipa user-"
+"add</command> 指令上。這會強迫指令提示使用者輸入初始密碼。亦可將密碼直接寫在指令中："
+
+# Tag: screen
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+msgstr ""
+"<command># echo \"secret123\" | ipa user-add asmart --first=Alex --last="
+"Smart --password</command>\n"
+"  --------------------\n"
+"  Added user \"asmart\"\n"
+"  --------------------\n"
+"  User login: asmart\n"
+"  First name: Alex\n"
+"  Last name: Smart\n"
+"  Full name: Alex Smart\n"
+"  Display name: Alex Smart\n"
+"  Initials: AS\n"
+"  Home directory: /home/asmart\n"
+"  GECOS field: asmart\n"
+"  Login shell: /bin/sh\n"
+"  Kerberos principal: asmart@IPADOCS.ORG\n"
+"  UID: 1315400003\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Performing Initial Login"
+msgstr "進行初次登入"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You can now authenticate using the newly-created user and temporary password."
+" Type <command>kinit <replaceable>&lt;user login&gt;</replaceable></command> "
+"to log in to IPA. This will prompt you for a password and then immediately "
+"request a password change."
+msgstr ""
+"您現在可以授權使用新建使用者與單次密碼。請輸入<command>kinit <replaceable>&lt;user login&gt;</"
+"replaceable></command> 以登入 IPA。這將提示您輸入密碼，然後馬上開始進行更改密碼的程序。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You can browse the IPA man pages and help system to explore other IPA "
+"commands. Please take some time to become familiar with the ways other IPA "
+"objects can be created and modified."
+msgstr "您可以瀏覽 IPA 的 man page 與求助系統，瞭解其它的 IPA 指令。請花一點時間，熟悉建立、修改其它 IPA 物件的方法。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

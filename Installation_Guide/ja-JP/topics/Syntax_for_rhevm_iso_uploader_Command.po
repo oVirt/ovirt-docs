@@ -1,0 +1,260 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-06 12:23-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Syntax for rhevm-iso-uploader Command"
+msgstr "rhevm-iso-uploader コマンドの構文"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The basic syntax for the ISO uploader command is:"
+msgstr "基本構文は以下の形式です。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"<command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter></command>\n"
+"       <command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>[file].[file]...[file]</replaceable></parameter></command>\n"
+msgstr ""
+"\n"
+"<command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>list</parameter></command>\n"
+"       <command>rhevm-iso-uploader <parameter><replaceable>[options]</replaceable></parameter> <parameter>upload</parameter> <parameter><replaceable>[file].[file]...[file]</replaceable></parameter></command>\n"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The two supported modes of operation are <parameter>list</parameter> and <parameter>upload</parameter>."
+msgstr "<parameter>list</parameter> および <parameter>upload</parameter> の 2 つの操作モードに対応しています。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <parameter>list</parameter> parameter lists the valid ISO storage domains available for ISO uploads. The Red Hat Enterprise Virtualization Manager sets this list on the local machine upon installation."
+msgstr "<parameter>list</parameter> パラメーターは、利用可能な <acronym>ISO</acronym> ストレージドメインを一覧表示します。これらのストレージドメインは、<acronym>ISO</acronym> の有効なアップロード先です。デフォルトでは、この一覧は、ローカルマシンの Red Hat Enterprise Virtualization Manager インストールから取得します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <parameter>upload</parameter> parameter uploads selected ISO file(s) to the specified ISO storage domain. NFS is used as default; SSH is available."
+msgstr "<parameter>upload</parameter> パラメーターは、選択した <acronym>ISO</acronym> ファイルを指定の <acronym>ISO</acronym> ストレージドメインにアップロードします。デフォルトでは、<acronym>NFS</acronym> を使用して転送しますが、<acronym>SSH</acronym> も利用可能です。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The ISO uploader command requires either the <parameter>list</parameter> or <parameter>upload</parameter> parameter be included for basic usage. The <parameter>upload</parameter> parameter requires a minimum of one local file name to upload."
+msgstr "基本的な <acronym>ISO</acronym> アップローダー機能を利用するには、少なくとも <parameter>list</parameter> あるいは <parameter>upload</parameter> パラメーターを提供する必要があります。<parameter>upload</parameter> を選択した場合には、アップロードするローカルファイルの名前を少なくとも 1 つ提供する必要があります。"
+
+#. Tag: para
+#, no-c-format
+msgid "There are numerous parameters to further refine the <command>rhevm-iso-uploader</command> command."
+msgstr ""
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "General Options"
+msgstr "一般的なオプション"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--version</parameter>"
+msgstr "<parameter>--version</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays the version number of the command in use before exiting."
+msgstr "使用しているコマンドのバージョン番号を表示します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-h</parameter>, <parameter>--help</parameter>"
+msgstr "<parameter>-h</parameter>、<parameter>--help</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Displays command usage information before exiting."
+msgstr "コマンドの使用方法に関する情報を表示します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+msgstr "<parameter>--conf-file=<replaceable>PATH</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the configuration file the tool is to use."
+msgstr "<replaceable>PATH</replaceable> には、コマンドが使用する設定ファイルを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+msgstr "<parameter>--log-file=<replaceable>PATH</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PATH</replaceable> as the specific file name the command should use for the log output."
+msgstr "<replaceable>PATH</replaceable> には、このコマンド自体のログ出力に使用するログファイルを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--quiet</parameter>"
+msgstr "<parameter>--quiet</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets quiet mode, reducing console output to a minimum. Quiet mode is off by default."
+msgstr "Quiet モードを設定し、コンソールの出力を最小限に抑えます。デフォルトではオフになっています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-v</parameter>, <parameter>--verbose</parameter>"
+msgstr "<parameter>-v</parameter>、<parameter>--verbose</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets verbose mode, providing more console output. Verbose mode is off by default."
+msgstr "詳細モードを設定し、より詳しいコンソール出力を提示します。デフォルトではオフになっています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-f</parameter>, <parameter>--force</parameter>"
+msgstr "<parameter>-f</parameter>、<parameter>--force</parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Force mode is necessary when the source file being uploaded has an identical file name as an existing file at the destination; it forces the existing file to be overwritten. Force mode is off by default."
+msgstr "アップロードするソースファイルが、アップロード先の既存ファイルと同名である場合、既存のファイルを自動的に上書きするよう強制します。デフォルトではオフになっています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager Options"
+msgstr "Red Hat Enterprise Virtualization Manager のオプション"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-u <replaceable>USER</replaceable></parameter>, <parameter>--user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>-u <replaceable>USER</replaceable></parameter>、 <parameter>--user=<replaceable>USER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the user associated with the file to be uploaded. The <replaceable>USER</replaceable> is specified in the format <replaceable>user</replaceable>@<replaceable>domain</replaceable>, where <replaceable>user</replaceable> is the user name and <replaceable>domain</replaceable> is the directory services domain in use. The user must exist in directory services and be known to the Red Hat Enterprise Virtualization Manager."
+msgstr "ユーザーを <replaceable>USER</replaceable> に設定します。このユーザーは、ディレクトリーサービス内に存在し、かつ Red Hat Enterprise Virtualization Manager が既に認識している必要があります。ユーザーは、<replaceable>user</replaceable>@<replaceable>domain</replaceable> の形式で指定する必要があります。<replaceable>user</replaceable> の箇所はユーザー名に、<replaceable>domain</replaceable> の箇所は使用しているディレクトリーサービスのドメインに置き換えてください。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+msgstr "<parameter>-r <replaceable>FQDN</replaceable></parameter>、<parameter>--rhevm=<replaceable>FQDN</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the fully qualified domain name of the Red Hat Enterprise Virtualization Manager server from which to upload ISOs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the ISO uploader is being run on the same client machine as the Red Hat Enterprise Virtualization Manager; the default value is <literal>localhost</literal>."
+msgstr "Red Hat Enterprise Virtualization Manager が <replaceable>FQDN</replaceable> として接続するように設定します。<replaceable>FQDN</replaceable> の箇所は、Manager の完全修飾ドメイン名に置き換えてください。デフォルトでは、ISO アップローダーが Manager と同じマシン上で実行されることを前提としています。 このため、このパラメーターのデフォルト値は、<literal>localhost</literal> となっています。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "<acronym>ISO</acronym> Storage Domain Options"
+msgstr "<acronym>ISO</acronym> ストレージドメインのオプション"
+
+#. Tag: para
+#, no-c-format
+msgid "These options specify the ISO domain to which files are uploaded. They are alternatives; do not use these parameters together."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-i</parameter>, <parameter>--iso-domain=<replaceable>ISODOMAIN</replaceable></parameter>"
+msgstr "<parameter>-i</parameter>、<parameter>--iso-domain=<replaceable>ISODOMAIN</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the storage domain <replaceable>ISODOMAIN</replaceable> as the destination for uploads."
+msgstr "<replaceable>ISODOMAIN</replaceable> には、アップロード先のストレージドメイン名を指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-n</parameter>, <parameter>--nfs-server=<replaceable>NFSSERVER</replaceable></parameter>"
+msgstr "<parameter>-n</parameter>、<parameter>--nfs-server=<replaceable>NFSSERVER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets the NFS path <replaceable>NFSSERVER</replaceable> as the destination for uploads."
+msgstr "<replaceable>ISODOMAIN</replaceable> には、アップロード先のストレージドメイン名を指定します。"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Connection Options"
+msgstr "接続オプション"
+
+#. Tag: para
+#, no-c-format
+msgid "The ISO uploader uses NFS as default to upload files. These options specify SSH file transfer instead."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--ssh-user=<replaceable>USER</replaceable></parameter>"
+msgstr "<parameter>--ssh-user=<replaceable>USER</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>USER</replaceable> as the SSH user name to use for the upload."
+msgstr "<replaceable>USER</replaceable> には、アップロード時に使用する <acronym>SSH</acronym> ユーザー名を指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>--ssh-port=<replaceable>PORT</replaceable></parameter>"
+msgstr "<parameter>--ssh-port=<replaceable>PORT</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>PORT</replaceable> as the port to use when connecting to SSH."
+msgstr "<replaceable>PORT</replaceable> には、<acronym>SSH</acronym> 接続時に使用するポートを指定します。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>, <parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+msgstr "<parameter>-k <replaceable>KEYFILE</replaceable></parameter>、<parameter>--key-file=<replaceable>KEYFILE</replaceable></parameter>"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Sets <replaceable>KEYFILE</replaceable> as the public key to use for SSH authentication. You will be prompted to enter the password of the specified user if not key is set."
+msgstr "<replaceable>KEYFILE</replaceable> には、<acronym>SSH</acronym> 認証に使用する公開鍵を指定します。鍵が指定されていない場合、プログラムは代わりにユーザーが指定したパスワードの入力を要求します。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8412-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "The <command>rhevm-iso-uploader</command> command has a large number of options."
+#~ msgstr "<command>rhevm-iso-uploader</command> コマンドには数多くのオプションがあります。"
+
+#~ msgctxt ""
+#~ msgid "The options in the Red Hat Enterprise Virtualization Manager configuration group are used to specify the manager authentication details and, filter log collection from one or more virtualization hosts. If no options in this group are specified, data is not collected from any virtualization host."
+#~ msgstr "Red Hat Enterprise Virtualization Manager 設定グループのオプションは、Manager 認証の詳細を指定したり、単一または複数の仮想化ホストからのログ収集をフィルタリングするのに使用します。このグループのオプションが指定されていない場合は、いずれの仮想化ホストからもデータは収集されません。"
+
+#~ msgctxt ""
+#~ msgid "The options in this configuration group are used to specify the <acronym> ISO</acronym> domain to which files must be uploaded"
+#~ msgstr "この設定グループのオプションは、ファイルのアップロード先となる <acronym>ISO</acronym> ドメインを指定するのに使用します。"
+
+#~ msgctxt ""
+#~ msgid "Sets the <acronym> NFS</acronym> path of <replaceable>NFSSERVER</replaceable> as the destination for uploads. This option is an alternative to <parameter>--iso-domain</parameter>, the two must not be used at the same time."
+#~ msgstr "<replaceable>NFSSERVER</replaceable> の <acronym>NFS</acronym> パスにはアップロード先を指定します。このオプションは、<parameter>--iso-domain</parameter> の代替の選択肢なので、2 つを同時に使用することはできません。"
+
+#~ msgctxt ""
+#~ msgid "By default the <acronym> ISO</acronym> uploader uses <acronym> NFS</acronym> to upload files. Use options within this configuration group to use <acronym> SSH</acronym> file transfer instead."
+#~ msgstr "デフォルトでは、<acronym>ISO</acronym> アップローダーは <acronym>NFS</acronym> を使用してファイルをアップロードします。NFS の代わりに <acronym>SSH</acronym> ファイル転送を利用するには、この設定グループのオプションを使用してください。"
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

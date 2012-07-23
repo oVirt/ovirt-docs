@@ -1,0 +1,182 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 02:24-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Virtualization Host Firewall Requirements"
+msgstr "虛擬主機的防火牆需求"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Both Red Hat Enterprise Linux hosts and Red Hat Enterprise Virtualization Hypervisors require that a number of ports be opened to allow network traffic through the system's firewall. In the case of the Red Hat Enterprise Virtualization Hypervisor these firewall rules are configured automatically. For Red Hat Enterprise Linux hosts however it is necessary to manually configure the firewall."
+msgstr "RHEL 主機與 RHEV Hypervisor 兩者皆需要數個開啟的連接埠，以允許網路流量通過系統的防火牆。在使用 RHEV Hypervisor 的情況下，這些防火牆規則將會被自動配置。然而在使用 RHEL 主機的情況下，您必須手動式配置防火牆。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Port(s)"
+msgstr "連接埠"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Protocol"
+msgstr "通訊協定"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Source"
+msgstr "來源"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Destination"
+msgstr "目的地"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Purpose"
+msgstr "用途"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "22"
+msgstr "22"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "TCP"
+msgstr "TCP"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "RHEV Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr "RHEV Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux host(s)"
+msgstr "Red Hat Enterprise Linux 主機"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Secure Shell ( <acronym> SSH</acronym>) access."
+msgstr "Secure Shell（<acronym>SSH</acronym>）存取。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "5634 - 6166"
+msgstr "5634 - 6166"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Administration Portal clients"
+msgstr "管理入口網站客戶端"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "User Portal clients"
+msgstr "使用者入口網站客戶端"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Remote guest console access via <acronym> VNC</acronym> and <acronym> Spice</acronym>. These ports must be open to facilitate client access to virtual machines."
+msgstr "遠端客座主控台可透過 <acronym>VNC</acronym> 和 <acronym>Spice</acronym> 存取。這些連接埠必須開啟，以讓客戶端存取虛擬機器。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "16514"
+msgstr "16514"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr "RHEL 主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtual machine migration using <systemitem> libvirt</systemitem>."
+msgstr "使用 <systemitem>libvirt</systemitem> 來進行虛擬機器的遷移。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "49152 - 49216"
+msgstr "49152 - 49216"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Hypervisor(s)"
+msgstr "RHEL Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Virtual machine migration and fencing using <acronym> VDSM</acronym>. These ports must be open facilitate both automated and manually initiated migration of virtual machines."
+msgstr "使用 <acronym>VDSM</acronym> 來進行虛擬機器的遷移與隔離。這些連接埠必須開啟，以提供自動與手動式的虛擬機器初始遷移"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "54321"
+msgstr "54321"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "VDSM communications with the Manager and other virtualization hosts."
+msgstr "VDSM 會與 Manager 及其它虛擬主機進行通訊。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7851-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

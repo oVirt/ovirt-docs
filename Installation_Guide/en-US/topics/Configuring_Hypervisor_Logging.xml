@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Hypervisor_Logging" remap="TID_7534">
+	<title>Configuring Hypervisor Logging</title>
+	<para>
+		The hypervisor creates and updates a number of log files. The <guilabel>Logging</guilabel> screen allows configuration of a daemon to automatically export these log files to a remote server.
+	</para>
+	<procedure>
+		<step>
+			<title><application>Logrotate</application> Configuration</title>
+			<para>
+				The <application>logrotate</application> utility simplifies the administration of log files. The hypervisor uses <application>logrotate</application> to rotate logs when they reach a certain file size.
+			</para>
+			<para>
+				Log rotation involves renaming the current log(s) and starting new ones in their place. The <guilabel>Logrotate Max Log Size</guilabel> value set on the <guilabel>Logging</guilabel> screen is used to determine when a log should be rotated.
+			</para>
+			<para>
+				Enter the <guilabel>Logrotate Max Log Size</guilabel> in kilobytes. The default maximum log size is 1024 kilobytes.
+			</para>
+		</step>
+		<step>
+			<title><application>Rsyslog</application> Configuration</title>
+			<para>
+				The <application> rsyslog</application> utility is a multithreaded syslog daemon. The hypervisor is able to use <application> rsyslog</application> to transmit log files over the network to a remote syslog daemon. For information on setting up the remote syslog daemon consult the <citetitle>Red Hat Enterprise Linux — Deployment Guide</citetitle>.
+			</para>
+			<substeps>
+				<step>
+					<para>
+						Enter the remote <application>Rsyslog</application> server address in the <guilabel>Server Address</guilabel> field.
+					</para>
+				</step>
+				<step>
+					<para>
+						Enter the remote <application>Rsyslog</application> server port in the <guilabel>Server Port</guilabel> field. The default port is <literal>514</literal>.
+					</para>
+				</step>
+			</substeps>
+		</step>
+		<step>
+			<title><application>netconsole</application> Configuration</title>
+			<para>
+				The <application>netconsole</application> module allows kernel messages to be sent to a remote machine. The hypervisor uses <application>netconsole</application> to transmit kernel messages over the network.
+			</para>
+			<substeps>
+				<step>
+					<para>
+						Enter the <guilabel>Server Address</guilabel>.
+					</para>
+				</step>
+				<step>
+					<para>
+						Enter the <guilabel>Server Port</guilabel>. The default port is <literal>6666</literal>.
+					</para>
+				</step>
+			</substeps>
+		</step>
+		<step>
+			<title>Save Configuration</title>
+			<para>
+				To save the logging configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>.
+			</para>
+		</step>
+	</procedure>
+	<para>
+		The logging configuration has been updated and logs will be exported to the remote <application>Rsyslog</application> server specified.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7534-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

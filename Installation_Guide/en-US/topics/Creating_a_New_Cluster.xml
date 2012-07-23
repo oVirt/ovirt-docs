@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Creating_a_New_Cluster" remap="TID_7624">
+	<title>Creating a new cluster</title>
+	<formalpara>
+		<title>Summary</title>
+		<para>
+			Before creating a new cluster, ensure that there is at least one host available to be assigned to it. The hosts in a cluster all run the same type of CPU. That is, a cluster must not contain a mix of both Intel and AMD CPUs.
+		</para>
+	</formalpara>
+	<important>
+		<para>
+			The default <guilabel>rhevm</guilabel> network cannot be modified once a Cluster has been attached to a data center. Any configuration required for the <guilabel>rhevm</guilabel> network, such as enabling VLAN tagging, must be performed before a Cluster is attached, and while the data center is still in the <guilabel>Uninitialized</guilabel> state.
+		</para>
+	</important>
+	<procedure>
+		<title>Creating a new cluster</title>
+		<step>
+			<para>
+				Select the <guilabel>Clusters</guilabel> resource tab to list all clusters in the results list.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click the <guilabel>New</guilabel> button to open the <guilabel>New Cluster</guilabel> window.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>Data Center</guilabel> the cluster will belong to from the drop-down menu.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter the <guilabel>Name</guilabel> of the cluster; this text field has a 40-character limit and allows only alpha-numeric, underscore (<literal>_</literal>), and dash (<literal>-</literal>) characters.
+			</para>
+		</step>
+		<step>
+			<para>
+				Enter the <guilabel>Description</guilabel> of the description. This field is recommended but not mandatory.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>CPU Name</guilabel> from the drop-down menu. It is important to match the CPU processor family with the minimum CPU processor type of the hosts you intend to attach to the cluster, otherwise the host will be non-operational.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the compatibility version from the drop-down menu. If the data center you're attaching to is in <guilabel>3.1</guilabel> compatibility mode, <guilabel>3.1</guilabel> will be your only choice; if the data center is in <guilabel>3.0</guilabel>compatibility mode then you can choose between <guilabel>3.0</guilabel> and <guilabel>3.1</guilabel> mode.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>Enable Virt Service</guilabel> check box to enable virtualization checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required virtualization capabilities.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>Enable Gluster Service</guilabel> check box to enable Gluster checks for hosts in the cluster: Hosts added to the cluster will be checked to ensure that they have the required Gluster capabilities.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click the <guilabel>Memory Optimization</guilabel> tab to define how much of the host's memory can be used in excess of the permitted memory for a virtual machine in the cluster. For example, all virtual machines will not be using the full amount of allocated memory all the time. Memory sharing allows virtual machines that require additional memory at a certain time to use memory that is not being used at that time by other virtual machines. This feature allows you to fine tune how you wish to optimize the memory page sharing and large pages implementation on the hosts in the cluster.
+			</para>
+			<para>
+				Select one of the following: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							<guilabel>None</guilabel> - disables memory page sharing
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Optimized for Server Load</guilabel> - sets the memory page sharing threshold to 150% of the system memory on each host
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Optimized for Desktop Load</guilabel> - sets the memory page sharing threshold to 200% of the system memory on each host
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the <guilabel>Resilience Policy</guilabel> tab to define if high availability is to be implemented for the virtual machines in the cluster. If a host shuts down unexpectedly or is put into maintenance, the virtual machines running on the host can be migrated to run on another host in the same cluster. This field allows you to configure the migration settings for virtual machines.
+			</para>
+			<para>
+				Select one of the following: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							<guilabel>Migrate Virtual Machines</guilabel> - migrates all virtual machines
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Migrate only Highly Available Virtual Machines</guilabel> - migrates only highly available virtual machines
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							<guilabel>Do Not Migrate Virtual Machines</guilabel> - does not migrate any virtual machines
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guilabel>OK</guilabel> to create the cluster and open the <guilabel>New Cluster - Guide Me</guilabel> window.
+			</para>
+		</step>
+		<step>
+			<para>
+				The <guilabel>Guide Me</guilabel> window lists the entities that need to be configured for the cluster. Configure these entities or postpone configuration by clicking the <guilabel>Configure Later</guilabel> button; configuration can be resumed by selecting the cluster and clicking the <guilabel>Guide Me</guilabel> button.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result</title>
+		<para>
+			The new cluster is added to the virtualization environment.
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7624-163744+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

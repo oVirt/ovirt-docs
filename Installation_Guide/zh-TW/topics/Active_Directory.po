@@ -1,0 +1,176 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:31\n"
+"PO-Revision-Date: 2012-06-21 12:30-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Active Directory"
+msgstr "Active Directory"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"This section is intended to provide a brief overview of the "
+"<application>Active Directory</application> configuration required to "
+"support the directory services requirements of Red Hat Enterprise "
+"Virtualization. It is not to be considered as a complete guide to the use of "
+"<application>Active Directory</application>. For full configuration "
+"procedures, refer to the appropriate Microsoft documentation available at "
+"<ulink url=\"http://technet.microsoft.com/en-us/library/dd578336(WS.10)."
+"aspx\" />."
+msgstr ""
+"此部分提供了 <application>Active Directory</application> 配置上的簡要總覽，以支援 RHEV "
+"的目錄服務需求。不應將本文件視為完整的 <application>Active Directory</application> "
+"使用指南。欲檢視完整的配置程序，請參閱位於 <ulink url=\"http://technet.microsoft.com/en-us/"
+"library/dd578336(WS.10).aspx\" /> 的相關 Microsoft 文件。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Installation"
+msgstr "安裝"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<application>Active Directory Domain Services</application> must be "
+"installed and available prior to commencement of the Red Hat Enterprise "
+"Virtualization Manager installation. For <application>Active Directory "
+"Domain Services</application> installation instructions, including the "
+"creation of a new <systemitem>Forest</systemitem> and associated "
+"<systemitem>Domain</systemitem>, refer to the Microsoft documentation at: "
+"<ulink url=\"http://technet.microsoft.com/en-au/library/cc772464(WS.10)."
+"aspx\" />."
+msgstr ""
+"在進行 RHEV Manager 的安裝程序之前，<application>Active Directory Domain Services</"
+"application> 必須安裝並可使用。欲取得 <application>Active Directory Domain Services</"
+"application> 的安裝指示，包括新建 <systemitem>Forest</systemitem> 以及相聯的 "
+"<systemitem>Domain</systemitem>，請參閱位於 <ulink url=\"http://technet.microsoft."
+"com/en-au/library/cc772464(WS.10).aspx\" /> 的 Microsoft 文件。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Users"
+msgstr "使用者"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization administrative user must be created "
+"prior to installation. The credentials of this user are required to complete "
+"Red Hat Enterprise Virtualization Manager installation. It is the account "
+"used when logging into the Red Hat Enterprise Virtualization Administration "
+"Portal to manage the system."
+msgstr ""
+"在進行安裝前，必須先建立 RHEV 管理使用者。需擁有此使用者的權限，才能完成 RHEV Manager 的安裝程序。這是個在登入 RHEV "
+"管理入口網站，以管理系統時所使用的帳號。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The Red Hat Enterprise Virtualization administrative user must have "
+"delegated control over the <systemitem>Domain</systemitem> to:"
+msgstr "RHEV 管理使用者必須擁有 <systemitem>Domain</systemitem> 的授權控制，以："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<systemitem>Join a computer to the domain</systemitem>."
+msgstr "<systemitem>將電腦加入區域中</systemitem>。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "<systemitem>Modify the membership of a group</systemitem>."
+msgstr "<systemitem>修改群組的成員資格</systemitem>。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"For information on creation of user accounts refer to <ulink url=\"http://"
+"technet.microsoft.com/en-us/library/cc732336.aspx\" />."
+msgstr ""
+"欲取得更多有關於建立使用者帳號上的相關資訊，請參閱 <ulink url=\"http://technet.microsoft.com/en-us/"
+"library/cc732336.aspx\" />。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"For information on delegation of control refer to <ulink url=\"http://"
+"technet.microsoft.com/en-us/library/cc732524.aspx\" />."
+msgstr ""
+"欲取得更多有關於控制授權上的相關資訊，請參閱 <ulink url=\"http://technet.microsoft.com/en-us/"
+"library/cc732524.aspx\" />。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid ""
+"Important — Do <emphasis>not</emphasis> use the <systemitem class="
+"\"username\">Administrator</systemitem> user"
+msgstr ""
+"重要 — <emphasis>請勿</emphasis>使用 <systemitem class=\"username\">Administrator</"
+"systemitem> 使用者"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"An Active Directory user account must be created specifically for use as the "
+"Red Hat Enterprise Virtualization administrative user. Do <emphasis> not </"
+"emphasis> use the Active Directory <systemitem class="
+"\"username\">Administrator</systemitem> account as the Red Hat Enterprise "
+"Virtualization Manager administrative user."
+msgstr ""
+"必須建立一組 Active Directory 使用者帳號，以專門使用來作為 RHEV 的管理使用者。<emphasis>請勿</emphasis>使用 "
+"Active Directory 的 <systemitem class=\"username\">Administrator</systemitem> "
+"帳號來作為 RHEV Manager 的管理使用者。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

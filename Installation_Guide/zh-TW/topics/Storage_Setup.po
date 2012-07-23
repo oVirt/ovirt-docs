@@ -1,0 +1,169 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:57-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Introduction to storage in Red Hat Enterprise Virtualization"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the Red Hat Enterprise Virtualization platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated."
+msgstr "RHEV 使用集中式的儲存系統，以儲存虛擬機器映像檔、ISO 檔案、以及 snapshot。儲存網路可以是 <acronym>NFS</acronym>、<acronym>iSCSI</acronym>、<acronym>FCP</acronym>、或直些連上虛擬主機的本地儲存裝置。設定儲存裝置是資料中心的基本需求，因為資料中心必須要連上、啟用儲存網域之後，才能進行初始化。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "A Red Hat Enterprise Virtualization system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Red Hat Enterprise Linux — Storage Administration Guide</citetitle> for more information on managing storage, if necessary."
+msgstr "RHEV 系統管理者需要為虛擬化的企業建立、配置、連接並維護儲存裝置。我們強烈建議您熟知儲存裝置類型及其用法。本文件並不描述 <acronym>NFS</acronym>、<acronym>iSCSI</acronym>、<acronym>FCP</acronym>、或本機儲存裝置的概念、通訊協定、需求或一般用法。我們建議您先閱讀儲存陣列供應商所提供的文件，並視需要參閱《<citetitle>Red Hat Enteprirse Linux — 儲存管理指南</citetitle>》以得知管理儲存裝置的資訊。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the Red Hat Enterprise Virtualization platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain."
+msgstr "RHEV 平台能讓系統管理者有效、快速地，指定、管理儲存裝置。RHEV 平台的「<guilabel>儲存</guilabel>」分頁提供了有效的圖形介面，以檢視、管理網路儲存裝置。「<guilabel>儲存裝置結果</guilabel>」會列出所有的儲存網域，而「詳細資料」頁框能存取網域的一般資訊。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform has three types of storage domains:"
+msgstr "RHEV 平台有三種儲存網域："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Data domains hold the disk images of all the virtual machines running in the system, operating system images and data disks. In addition, snapshots of the virtual machines are also stored in the data domain. The data cannot be shared across data centers, and the data domain must be of the same type as the data center. For example, a data center of a <acronym>iSCSI</acronym> type, must have an <acronym>iSCSI</acronym> data domain. A data domain cannot be shared between data centers."
+msgstr "資料網域存有所有系統上所執行的所有虛擬機器之映像檔、作業系統映像檔、以及資料硬碟。除此之外，虛擬機器的 snapshot 也儲存在資料網域上。資料不能在資料中心間共享，資料網域必須屬於同樣類型的資料中心。舉例來說，<acronym>iSCSI</acronym> 的資料中心就必須有 <acronym>iSCSI</acronym> 的資料網域。資料網域不能在資料中心之間共享。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Additionally you must attach a data domain to a data center before you will be allowed to attach domains of other types to it."
+msgstr "除此之外，在能連到其它網域之前，您必須先連接資料網域到資料中心。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<acronym>ISO</acronym> domains store <acronym>ISO</acronym> files (or logical <acronym>CDs</acronym>) used to install and boot operating systems and applications for the virtual machines. Because an <acronym>ISO</acronym> domain is a logical entity replacing a library of physical <acronym>CDs</acronym> or <acronym>DVDs</acronym>, an <acronym>ISO</acronym> domain removes the data center's need for physical media. An <acronym>ISO</acronym> domain can be shared across different data centers. <acronym>ISO</acronym> storage domains must be located on <acronym>NFS</acronym> storage."
+msgstr "<acronym>ISO</acronym> 網域會儲存<acronym>ISO</acronym> 檔案（或邏輯<acronym>光碟</acronym>），用來在虛擬機器上安裝、啟動作業系統與應用程式。因為 <acronym>ISO</acronym> 網域是邏輯上的單位，用來取代實體<acronym>光碟片</acronym>，所以 <acronym>ISO</acronym> 網域會降低資料中心對於實體光碟的需求。<acronym>ISO</acronym> 網域可以在資料中心之間共享。<acronym>ISO</acronym> 儲存網域必須位於 <acronym>NFS</acronym> 儲存裝置上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "An export domain is a temporary storage repository that is used to copy/move images between data centers and Red Hat Enterprise Virtualization Manager installations. In addition, the export domain can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time. Support for export storage domains backed by mechanisms other than <acronym>NFS</acronym> is being deprecated. New export storage domains must be created on <acronym>NFS</acronym> storage."
+msgstr "匯出網域是暫時的儲存空間，用來在資料中心與 RHEV Manager 機器之間複製 / 移動映像檔。除此之外，匯出網域也可以用來備份虛擬機器。匯出網域可以在資料中心之間移動；然而一次只能在一個資料中心上啟用。 支援非 <acronym>NFS</acronym> 儲存網域的方法將被淘汰。新的匯出儲存網域必須建立在 <acronym>NFS</acronym> 儲存裝置上。"
+
+#. Tag: para
+#, no-c-format
+msgid "Only commence configuring and attaching storage for your Red Hat Enterprise Virtualization environment once you have determined the storage needs of your data center(s)."
+msgstr ""
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Before Adding Storage"
+msgstr "重要 — 新增儲存裝置之前"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before adding storage ensure that you have a working Red Hat Enterprise Virtualization Manager environment. You must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <literal>Up</literal>."
+msgstr "在新增儲存裝置之前，請確定您擁有可運作的 RHEV Manager 環境。您必須能成功存取管理入口網站，同時至少要有一台主機連接其上，且狀態為 <literal>Up</literal>。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Export Domain Storage Type"
+msgstr "重要 — 匯出網域儲存類型"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from Red Hat Enterprise Virtualization 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage."
+msgstr "支援非 <acronym>NFS</acronym> 儲存區域的方法將被淘汰。雖然從 RHEV 2.2 環境匯入的既有匯出儲存網域依然受到支援，不過新的匯出儲存區域必須建立於 <acronym>NFS</acronym> 儲存裝置上。"
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_FCP_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"Adding_Local_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Adding_NFS_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<xref linkend=\"sect-Adding_iSCSI_Storage\" xrefstyle=\"link-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Storage Setup"
+#~ msgstr "設定儲存裝置"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "This chapter provides instruction on configuring, and attaching storage to the Red Hat Enterprise Virtualization environment. For information about managing storage, including maintenance and removal, refer to the <citetitle>Red Hat Enterprise Virtualization Administration Guide</citetitle>."
+#~ msgstr "本章提供了配置、連接儲存裝置至 RHEV 環境的指示。欲知管理、維護、移除儲存裝置的相關資訊，請參閱《<citetitle>Red Hat Enterprise Virtualization 管理指南</citetitle>》。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "Once you have determined the storage needs of your data center(s) you must begin configuring and attaching the storage:"
+#~ msgstr "一旦您決定了資料中心的儲存需求，就必須開始配置、連接儲存裝置。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To configure, and attach <acronym> NFS</acronym> storage, see ."
+#~ msgstr "要配置、連接 <acronym>NFS</acronym> 儲存裝置，請參閱〈〉。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To configure, and attach <acronym> iSCSI</acronym> storage, see ."
+#~ msgstr "要配置、連接 <acronym>iSCSI</acronym> 儲存裝置，請參閱〈〉。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To configure, and attach <acronym> FCP</acronym> storage, see ."
+#~ msgstr "要配置、連接 <acronym>FCP</acronym> 儲存裝置，請參閱〈〉。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "To configure, and attach <acronym> local</acronym> storage, see ."
+#~ msgstr "要配置、連接<acronym>本地</acronym>儲存裝置，請參閱〈〉。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Configuring_Hypervisor_Network_Interfaces" remap="TID_7615">
+	<title>Configuring Hypervisor Network Interfaces</title>
+	<procedure>
+		<para>
+			For each network interface detected the hypervisor will display the: 
+			<itemizedlist>
+				<listitem>
+					<para>
+						<guilabel>Device</guilabel>,
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<guilabel>Status</guilabel>,
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<guilabel>Model</guilabel>, and
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<guilabel>MAC Address</guilabel>.
+					</para>
+				</listitem>
+			</itemizedlist> At least one network interface must be configured before the hypervisor is able to connect with the Red Hat Enterprise Virtualization Manager.
+		</para>
+		<step>
+			<title>Device Identification</title>
+			<para>
+				Select the network interface to be configured from the list and press <keycap> Enter</keycap>.
+			</para>
+			<para>
+				In some cases it may be unclear which physical device an entry in the list refers to. Where this is the case the hypervisor is able to blink the physical device's network traffic lights to assist with identification. To make use of this facility select the entry from the list and, then select the <guibutton>&lt;Flash Lights to Identify&gt;</guibutton> button. Press <keycap> Enter</keycap> and, take note of which physical device's lights start blinking. The configuration screen for the selected device will be displayed.
+			</para>
+		</step>
+		<step>
+			<title><acronym>IPv4</acronym> Settings</title>
+			<para>
+				The hypervisor supports both dynamic ( <acronym> DHCP</acronym>), and static <acronym> IPv4</acronym> network configuration.
+			</para>
+			<stepalternatives>
+				<step>
+					<title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
+					<para>
+						Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym> IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym> IPv4</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
+					</para>
+				</step>
+				<step>
+					<title><guilabel>Static</guilabel> Network Configuration</title>
+					<para>
+						Static network configuration allows the hypervisor to be manually assigned an <acronym> IP</acronym> address. To enable static <acronym> IPv4</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv4 Settings</guilabel> and press <keycap> Space</keycap> to toggle it to enabled.
+					</para>
+					<para>
+						Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
+					</para>
+					<para>
+						In particular it is necessary that: 
+						<itemizedlist>
+							<listitem>
+								<para>
+									the <guilabel>IP Address</guilabel> is not already in use on the network,
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and
+								</para>
+							</listitem>
+							<listitem>
+								<para>
+									the <guilabel>Gateway</guilabel> matches that used by other machines on the network.
+								</para>
+							</listitem>
+						</itemizedlist> Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration.
+					</para>
+					<example id="exam-IPv4-static-networking">
+						<title>Static IPv4 Networking Configuration</title>
+						<screen>IPv4 Settings
+[ ] Disabled [ ] DHCP [*] Static
+IP Address: 192.168.122.100_ Netmask: 255.255.255.0___
+Gateway     192.168.1.1_____
+</screen>
+					</example>
+				</step>
+			</stepalternatives>
+		</step>
+		<step>
+			<title><acronym>IPv6</acronym> Settings</title>
+			<para>
+				The Red Hat Enterprise Virtualization Manager does not currently support <acronym> IPv6</acronym> networking. <acronym> IPv6</acronym> networking must remain set to <guilabel>Disabled</guilabel>.
+			</para>
+			<!-- SG: Had to remove this content until the Manager supports IPv6...
+                <para>  
+                    The Hypervisor supports dynamic (<guilabel>DHCP</guilabel>), <guilabel>Static</guilabel>, and <guilabel>Auto</guilabel> <acronym>IPv6</acronym> network configuration.
+                </para>
+                <stepalternatives>
+                    <step>
+                        <title>Dynamic (<guilabel>DHCP</guilabel>) Network Configuration</title>
+                        <para>
+                            Dynamic network configuration allows the hypervisor to be dynamically assigned an <acronym>IP</acronym> address via <guilabel>DHCP</guilabel>. To enable dynamic <acronym>IPv6</acronym> network configuration select the <guilabel>DHCP</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                        </para>
+                    </step>
+                    <step>                                                                                                                                                                                                                   
+                        <title><guilabel>Static</guilabel> Network Configuration</title>
+                        <para>
+                            Static network configuration allows the hypervisor to be manually assigned an <acronym>IP</acronym> address. To enable static <acronym>IPv6</acronym> network configuration select the <guilabel>Static</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                        </para>
+                        <para>
+                            Selection of the <guilabel>Static</guilabel> option enables the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields. The <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, and <guilabel>Gateway</guilabel> fields must be populated to complete static network configuration.
+                        </para>
+                        <para>
+                            In particular it is necessary that:
+                            <itemizedlist>
+                                <listitem>
+                                    <para>
+                                        the <guilabel>IP Address</guilabel> is not already in use on the network, 
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        the <guilabel>Netmask</guilabel> matches that used by other machines on the network, and
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        the <guilabel>Gateway</guilabel> matches that used by other machines on the network.
+                                    </para>
+                                </listitem>
+                            </itemizedlist>
+                            Where it is not clear what value should be used for the <guilabel>IP Address</guilabel>, <guilabel>Netmask</guilabel>, or <guilabel>Gateway</guilabel> field consult the network's administrator or consider a dynamic configuration.
+                        </para>
+                        <example id="exam-IPv6-static-networking">
+                            <title>Static IPv6 Networking Configuration</title>
+<screen>IPv6 Settings
+[ ] Disabled [ ] DHCP [*] Static
+IP Address: 2001:cdba:9abc:5678::3257______________
+Netmask:    2001:cdba:9abc:5678::/64_______________
+Gateway     2001:cdba:9abc:5678::__________________
+</screen>
+                        </example>
+                    </step>
+                    <step>
+                        <title>Automatic Network Configuration</title>
+                        <para>
+                            Automatic network configuration allows the hypervisor to dynamically determine its <acronym>IP</acronym> address using the <acronym>IPv6</acronym> <systemitem class="protocol">Neighbour Discovery</systemitem> protocol. To enable automatic <acronym>IPv6</acronym> network configuration using <systemitem class="protocol">Neighbour Discovery</systemitem> select the <guilabel>Auto</guilabel> option under <guilabel>IPv6 Settings</guilabel> and press <keycap>Space</keycap> to toggle it to enabled.
+                        </para>
+                    </step>
+                </stepalternatives>
+-->
+		</step>
+		<step>
+			<title><acronym>VLAN</acronym> Configuration</title>
+			<para>
+				If <acronym> VLAN</acronym> support is required then populate the <guilabel>VLAN ID</guilabel> field with the VLAN identifier for the selected device.
+			</para>
+		</step>
+		<step>
+			<title>Save Network Configuration</title>
+			<para>
+				Once all networking options for the selected device have been set the configuration must be saved.
+			</para>
+			<substeps>
+				<step>
+					<para>
+						Select the <guibutton>&lt;Apply&gt;</guibutton> button and press <keycap> Enter</keycap> to save the network configuration.
+					</para>
+				</step>
+				<step>
+					<para>
+						The <guilabel>Confirm Network Settings</guilabel> dialog box will appear. Ensure that the <guibutton>Ok</guibutton> button is selected and press <keycap> Enter</keycap> to confirm.
+					</para>
+				</step>
+			</substeps>
+		</step>
+	</procedure>
+	<para>
+		The <guilabel>Network</guilabel> screen is displayed. The device is listed as <guilabel>Configured</guilabel>.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7615-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

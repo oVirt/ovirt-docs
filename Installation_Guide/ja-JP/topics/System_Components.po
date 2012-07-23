@@ -1,0 +1,94 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-05 11:10-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "System Components"
+msgstr "システムコンポーネント"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform consists of one or more virtualization hosts (either Red Hat Enterprise Virtualization Hypervisors or Red Hat Enterprise Linux 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system."
+msgstr "Red Hat Enterprise Virtualization プラットフォームは、単一または複数のホスト (Red Hat Enterprise Virtualization Hypervisor または Red Hat Enterprise Linux 6.2 以降のシステム) と Manager で構成されます。仮想マシンは、ホスト上でホスティングされます。システムおよびそのコンポーネントはすべて、一元管理システムで管理されます。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "Red Hat Enterprise Virtualization Manager"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager acts as a centralized management system that allows system administrators to view and manage virtual machines. The Red Hat Enterprise Virtualization Manager provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning. The Red Hat Enterprise Virtualization Manager itself also runs on Red Hat Enterprise Linux&nbsp;6.3."
+msgstr "Red Hat Enterprise Virtualization Manager は、システム管理者が仮想マシンおよびイメージを表示・管理できる一元管理システムとして機能します。Red Hat Enterprise Virtualization Manager は、検索、リソース管理、ライブマイグレーション、プロビジョニングなど、包括的な機能を提供します。Red Hat Enterprise Virtualization Manager 自体は、Red Hat Enterprise Linux 6 上でも稼働します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The manager provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The Red Hat Enterprise Virtualization Manager exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>)."
+msgstr "Manager は、仮想環境インフラストラクチャー内の物理/論理リソースを管理するためのグラフィカルユーザーインターフェースを提供します。プロビジョニング、接続プロトコル、ユーザーセッション、仮想マシンプール、イメージ、高可用性/クラスタリングの管理に使用することができます。Red Hat Enterprise Virtualization Manager は、管理ポータル、ユーザーポータル、アプリケーションプログラミングインターフェース (<acronym>API</acronym>) を公開します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Administration Portal is used to perform setup, configuration, and management of the Red Hat Enterprise Virtualization environment."
+msgstr "管理ポータルは、Red Hat Enterprise Virtualization 環境のセットアップ、設定、管理に使用します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The User Portal is used to start, stop, reboot, and connect to virtual machines. Users granted power user access are also able to create virtual machine templates and, virtual machines from this interface."
+msgstr "ユーザーポータルは、仮想マシンの起動、停止、再起動、接続に使用します。また、その環境の管理者よりパワーユーザーアクセス権を付与されているユーザーは、このインターフェースから仮想マシンのテンプレートおよび仮想マシンを作成することもできます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym>REST</acronym>&nbsp;<acronym>API</acronym> provides an interface for automation of tasks normally accomplished manually by users. Scripts that make use of the <acronym>REST</acronym><acronym>API</acronym> are able to be written in any language which supports accessing <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> resources."
+msgstr "<acronym>REST</acronym> <acronym>API</acronym> は、通常ユーザーにより手動で実行されるタスクを自動化するためのインターフェースを提供します。<acronym>REST</acronym> <acronym>API</acronym> を使用するスクリプトは、<acronym>HTTP</acronym> および <acronym><acronym>HTTP</acronym>S</acronym> リソースへのアクセスをサポートする任意の言語で記述することができます。"
+
+#. Tag: para
+#, no-c-format
+msgid "Python bindings for the <acronym>REST</acronym>&nbsp;<acronym>API</acronym> are also provided, as well as an interface for interacting with the <acronym>API</acronym> from the command line."
+msgstr ""
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr "Red Hat Enterprise Virtualization Hypervisor"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. The Hypervisor is designed for management via the Red Hat Enterprise Virtualization Manager. It provides a thin virtualization layer deployed across the server infrastructure."
+msgstr "Red Hat Enterprise Virtualization Hypervisor は、仮想化ゲストのデプロイメントと管理を迅速かつ容易に行うためのフル機能を搭載した仮想化プラットフォームです。Hypervisor は、Red Hat Enterprise Virtualization Manager を介して管理するように設計されています。サーバーインフラストラクチャー全体にわたってデプロイされる仮想化レイヤーを提供します。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Kernel-based Virtual Machine ( <acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization. Red Hat Enterprise Virtualization Hypervisor 6.3 and later are supported by this release of Red Hat Enterprise Virtualization."
+msgstr "Linux カーネルのコアコンポーネントであるカーネルベースの仮想マシン (<acronym>KVM</acronym>) は、仮想化の提供に使用されます。本リリースの Red Hat Enterprise Virtualization は、Red Hat Enterprise Virtualization Hypervisor 6 以降をサポートしています。"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr "Red Hat Enterprise Linux ホスト"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager also supports the use of systems running Red Hat Enterprise Linux 6.3, or higher, <acronym>AMD64</acronym>/Intel 64 versions as virtualization hosts."
+msgstr "Red Hat Enterprise Virtualization Manager は Red Hat Enterprise Linux 6.2 以降の <acronym>AMD64</acronym>/Intel 64 バージョンシステムの仮想化ホストとしての使用をサポートしています。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

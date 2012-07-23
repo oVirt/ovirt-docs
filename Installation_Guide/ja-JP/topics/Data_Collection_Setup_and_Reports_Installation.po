@@ -1,0 +1,59 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-27 10:42-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Data Collection Setup and Reports Installation Overview"
+msgstr "データ収集の設定と Reports のインストール"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager optionally includes a comprehensive management history database, which can be utilized by any application to extract a range of information at the data center, cluster, and host levels. As the database structure changes over time a number of database views are also included to provide a consistent structure to consuming applications. A view is a virtual table composed of the result set of a database query. The definition of a view is stored in the database as a <literal>SELECT</literal> statement. The result set of the <literal>SELECT</literal> statement populates the virtual table returned by the view. If the optional comprehensive management history database has been enabled, the history tables and their associated views are stored in the <systemitem>rhevm_history</systemitem> database."
+msgstr "Red Hat Enterprise Virtualization Manager にはオプションで総合管理履歴データベースが含まれており、アプリケーションがデータセンターやクラスター、ホストなどのレベルでの情報収集に利用することができます。データベースの構造は時間の経過により変化していくため、使用側となるアプリケーションに対して整合性のある構造を提供できるよう複数のデータベースビューを用意しています。ビューとは、 データベースクエリの結果セットで構成される仮想テーブルです。ビューの定義は <literal>SELECT</literal> ステートメントとしてデータベース内に格納されます。<literal>SELECT</literal> ステートメントの結果セットはビューによって返される仮想テーブルを生成します。このオプションの総合履歴テーブルを有効にすると、履歴テーブルとその関連ビューが <systemitem>rhevm_history</systemitem> データベースに格納されます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In addition to the history database Red Hat Enterprise Virtualization Manager Reports functionality is also available as an optional component. Red Hat Enterprise Virtualization Manager Reports provides a customized implementation of JasperServer, and JasperReports. JasperServer is a component of JasperReports, an open source reporting tool capable of being embedded in Java-based applications. It produces reports which can be rendered to screen, printed, or exported to a variety of formats including <acronym> PDF</acronym>, Excel, <acronym> CSV</acronym>, Word, <acronym> RTF</acronym>, Flash, <acronym> ODT</acronym> and <acronym> ODS</acronym>. Reports built in Red Hat Enterprise Virtualization Manager Reports are accessed via a web interface. In addition to a range of pre-configured reports and dashboards for monitoring the system, you are also able to create your own ad hoc reports."
+msgstr "履歴データベースに加え、Red Hat Enterprise Virtualization Manager Reports 機能もオプションコンポーネントとし利用することができます。Red Hat Enterprise Virtualization Manager Reports では JasperServer と Jasper Reports をカスタマイズ実装します。JasperServer とは JasperReports の一つのコンポーネントで、Java ベースのアプリケーションに組み込み可能なオープンソースのレポーティングツールです。画面表示、出力表示の他、<acronym>PDF</acronym>、Excel、<acronym>CSV</acronym>、Word、<acronym>RTF</acronym>、Flash、<acronym>ODT</acronym>、<acronym>ODS</acronym> などの様々な形式にエクスポートが可能なレポートを生成します。Red Hat Enterprise Virtualization Manager Reports に組み込まれている Reports には Web インターフェース経由でアクセスします。 また、システム監視用に事前設定された各種レポートやダッシュボードに加え、独自の特別レポートを作成することもできます。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Before proceeding with Red Hat Virtualization Manager Reports installation you must first have installed the Red Hat Enterprise Virtualization Manager ."
+msgstr "Red Hat Virtualization Manager Reports のインストールを開始する前に、まず Red Hat Virtualization Manager をインストールしておく必要があります。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager Reports functionality depends on the presence of the history database, which is installed separately. Both the history database and the Red Hat Enterprise Virtualization Manager Reports are optional components. They are not installed by default when you install the Red Hat Enterprise Virtualization Manager."
+msgstr "Red Hat Enterprise Virtualization Manager Reports は別途にインストールされる履歴データベースを必要とします。 履歴データベースも Red Hat Enterprise Virtualization Manager Reports もオプションのコンポーネントになります。 Red Hat Enterprise Virtualization Manager をインストールする際、 デフォルトではインストールされません。"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install and configure the <systemitem>rhevm_history</systemitem> database, see ."
+msgstr "<systemitem>rhevm_history</systemitem> データベースの作成と設定手順については、"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To install and configure the Red Hat Enterprise Virtualization Manager Reports, see . You must ensure that you have installed, and configured, the <systemitem>rhevm_history</systemitem> database prior to installing JasperReports."
+msgstr "Red Hat Enterprise Virtualization Manager Reports のインストールおよび設定手順は、、、、、、、、。まず先に必ず <systemitem>rhevm_history</systemitem> データベースのインストールと設定を完了させてから JasperReports をインストールするようにしてください。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8654-162351+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

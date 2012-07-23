@@ -1,0 +1,78 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:56-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hardware Requirements Overview"
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "This section outlines the minimum hardware required to install, configure, and operate a Red Hat Enterprise Virtualization environment. To setup a Red Hat Enterprise Virtualization environment it is necessary to have, at least:"
+msgstr "此部分列出了安裝、配置與操作 RHEV 環境上的最小硬體需求。若要設定 RHEV 環境，您至少必須擁有："
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one machine to act as the management server,"
+msgstr "一部作為管理伺服器的機器、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one or more machines to act as virtualization hosts - at least two are required to support migration and power management,"
+msgstr "一或更多部作為虛擬主機的機器 - 若要支援遷移和電源管理，您必須擁有至少兩部機器、"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "one or more machines to use as clients for accessing the Administration Portal."
+msgstr "一或更多部機器，以作為存取管理入口網站的客戶端。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "storage infrastructure provided by <acronym>NFS</acronym>, <acronym> iSCSI</acronym>, <acronym> SAN</acronym>, or local storage."
+msgstr "藉由 <acronym>NFS</acronym>、<acronym>iSCSI</acronym>、<acronym>SAN</acronym>，或本機儲存裝置所提供的儲存設備。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hardware required for each of these systems is further outlined in the following sections. The Red Hat Enterprise Virtualization environment also requires storage infrastructure that is accessible to the virtualization hosts. Storage infrastructure must be accessible using <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FC</acronym>, or locally attached to virtualization hosts. The use of other <acronym>POSIX</acronym> compliant filesystems is also supported."
+msgstr "這些系統的硬體需求，將在以下部分中詳述。RHEV 環境亦需要使用虛擬主機可存取的儲存設備。儲存設備必須能透過使用 <acronym>NFS</acronym>、<acronym>iSCSI</acronym>、<acronym>FC</acronym> 或是本機連至虛擬主機來進行存取。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7840-163897+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: title
+#~ msgctxt ""
+#~ msgid "Hardware Requirements"
+#~ msgstr "硬體需求"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

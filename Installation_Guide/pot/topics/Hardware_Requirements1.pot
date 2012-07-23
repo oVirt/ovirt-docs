@@ -1,0 +1,54 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hardware Requirements Overview"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This section outlines the minimum hardware required to install, configure, and operate a Red Hat Enterprise Virtualization environment. To setup a Red Hat Enterprise Virtualization environment it is necessary to have, at least:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "one machine to act as the management server,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "one or more machines to act as virtualization hosts - at least two are required to support migration and power management,"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "one or more machines to use as clients for accessing the Administration Portal."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "storage infrastructure provided by <acronym>NFS</acronym>, <acronym> iSCSI</acronym>, <acronym> SAN</acronym>, or local storage."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The hardware required for each of these systems is further outlined in the following sections. The Red Hat Enterprise Virtualization environment also requires storage infrastructure that is accessible to the virtualization hosts. Storage infrastructure must be accessible using <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FC</acronym>, or locally attached to virtualization hosts. The use of other <acronym>POSIX</acronym> compliant filesystems is also supported."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7840-163897+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

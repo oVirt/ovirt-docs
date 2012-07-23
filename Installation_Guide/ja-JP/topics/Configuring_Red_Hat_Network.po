@@ -1,0 +1,225 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-05 09:15-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid ""
+"Configuring Red Hat Network for Red Hat Enterprise Virtualization Manager "
+"installation"
+msgstr "Red Hat Enterprise Virtualization Manager インスールの Red Hat Network 設定"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Run the <command>rhn_register</command> command to register the system with "
+"the Red Hat Network. To complete registration successfully you will need to "
+"supply your Red Hat Network username and password. Follow the onscreen "
+"prompts to complete registration of the system."
+msgstr ""
+"<command>rhn_register</command> コマンドを実行してシステムを Red Hat Network "
+"に登録します。正しく登録を完了するには Red Hat Network "
+"のユーザー名とパスワードを入力する必要があります。画面に表示されるプロンプトに従いシステムの登録を行います。"
+
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid "# rhn_register"
+msgstr "# rhn_register"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Subscribe to Required Channels"
+msgstr "適切なチャンネルのサブスクライブ"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"You must subscribe the system to the required channels using either the Red "
+"Hat Network web interface or the command line <command>rhn-channel</command> "
+"command."
+msgstr ""
+"Red Hat Network の Web インターフェースか、<command>rhn-channel</command> "
+"コマンドを使い、システムを必要なチャンネルにサブスクライブするように設定します。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Using the Red Hat Network Web Interface"
+msgstr "Red Hat Network の Web インターフェースの利用"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "To add a channel subscription to a system from the web interface:"
+msgstr "Web インターフェースを使いシステムにチャンネルサブスクリプションを追加する手順"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Log on to Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />)."
+msgstr "Red Hat Network (<ulink url=\"http://rhn.redhat.com\" />) にログインします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "Click <guilabel>Systems</guilabel> at the top of the page."
+msgstr "ページの上部にある<guilabel>システム</guilabel>をクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the system to which you are adding channels from the list presented "
+"on the screen, by clicking the name of the system."
+msgstr "システム名をクリックすることで、画面に表示された一覧からチャンネルを追加するシステムを選択します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click <guilabel>Alter Channel Subscriptions</guilabel> in the "
+"<guilabel>Subscribed Channels</guilabel> section of the screen."
+msgstr ""
+"画面の<guilabel>サブスクライブしたチャンネル</guilabel>のセクションから、<guilabel>チャンネルサブスクリプションの変更</"
+"guilabel>をクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Select the channel to be added from the list presented on the screen, then "
+"click the <guilabel>Change Subscription</guilabel> button to finalize the "
+"change."
+msgstr ""
+"画面に表示された一覧から追加するチャンネルを選択し、<guilabel>サブスクリプションの変更</"
+"guilabel>ボタンをクリックして変更を確定します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Repeat these steps for each additional channel the system is to be "
+"subscribed to."
+msgstr "システムをサブスクライブさせたいチャンネルが他にもある場合は、この手順を繰り返します。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Using the <command>rhn-channel</command> Command"
+msgstr "<command>rhn-channel</command> コマンドの使用"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Run the <command>rhn-channel</command> command to subscribe the system to "
+"each of the required channels. The commands which need to be run are:"
+msgstr ""
+"<command>rhn-channel</command> "
+"コマンドを実行してシステムを適切なチャンネルにそれぞれサブスクライブさせます。以下のコマンドを実行します。"
+
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3\n"
+"# rhn-channel --add --channel=jbappplatform-5-x86_64-server-6-rpm\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-supplementary-6\n"
+msgstr ""
+"\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-6-rhevm-3\n"
+"# rhn-channel --add --channel=jbappplatform-5-x86_64-server-6-rpm\n"
+"# rhn-channel --add --channel=rhel-x86_64-server-supplementary-6\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Important — Troubleshooting <command>rhn-channel</command> Errors"
+msgstr "重要 — <command>rhn-channel</command> のエラーに関するトラブルシューティング"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you are not the Red Hat Network administrator for the machine, or the "
+"machine is not registered to Red Hat Network, then use of the <command>rhn-"
+"channel</command> command will result in an error:"
+msgstr ""
+"マシンの Red Hat Network 管理者でない場合、あるいはマシンが Red Hat Network "
+"に登録されていない場合、<command>rhn-channel</command> のコマンドを利用するとエラーになってしまいます。"
+
+#. Tag: screen
+#, no-c-format
+msgctxt ""
+msgid ""
+"\n"
+"Error communicating with server. The message was:\n"
+"Error Class Code: 37\n"
+"Error Class Info: You are not allowed to perform administrative tasks on "
+"this system.\n"
+"Explanation: \n"
+"     An error has occurred while processing your request. If this problem\n"
+"     persists please enter a bug report at bugzilla.redhat.com.\n"
+"     If you choose to submit the bug report, please be sure to include\n"
+"     details of what you were trying to do when this error occurred and\n"
+"     details on how to reproduce this problem.\n"
+msgstr ""
+"\n"
+"Error communicating with server. The message was:\n"
+"Error Class Code: 37\n"
+"Error Class Info: You are not allowed to perform administrative tasks on "
+"this system.\n"
+"Explanation: \n"
+"     An error has occurred while processing your request. If this problem\n"
+"     persists please enter a bug report at bugzilla.redhat.com.\n"
+"     If you choose to submit the bug report, please be sure to include\n"
+"     details of what you were trying to do when this error occurred and\n"
+"     details on how to reproduce this problem.\n"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"If you encounter this error when using <command>rhn-channel</command> then "
+"to add the Red Hat Network channel to the system you must use the web user "
+"interface."
+msgstr ""
+"Red Hat Network チャンネルをシステムに追加する際に <command>rhn-channel</command> "
+"を使いこのエラーが発生した場合は、Web インターフェースを使うようにしてください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The system is now registered with Red Hat Network and subscribed to the "
+"channels required for Red Hat Enterprise Virtualization Manager installation."
+""
+msgstr ""
+"これでシステムは Red Hat Network に登録され Red Hat Enterprise Virtualization Manager "
+"のインストールに必要なチャンネルへのサブスクライブが完了しました。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

@@ -1,0 +1,54 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 10:14-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "ISO Uploader"
+msgstr "ISO 上載程式"
+
+#. Tag: para
+#, no-c-format
+msgid "The ISO uploader is a tool for uploading ISO images to the ISO storage domain. It is installed as part of the Red Hat Enterprise Virtualization Manager."
+msgstr ""
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The ISO uploader command is <command>rhevm-iso-uploader</command>. You are required to log in as the <systemitem class=\"username\">root</systemitem> user and provide the administration credentials for the Red Hat Enterprise Virtualization environment. The <command>rhevm-iso-uploader <parameter>-h</parameter></command> command displays usage information, including a list of all valid options for the <command>rhevm-iso-uploader</command> command."
+msgstr "<acronym>ISO</acronym> 上載程式的指令為 <command>rhevm-iso-uploader</command>。您必須以 <systemitem class=\"username\">root</systemitem> 使用者身份登入，以成功執行它。在指令列上，您必須提供 RHEV 環境的管理權限。欲取得使用上的完整資訊（包含一列指令的所有可用選項），您可執行 <command>rhevm-iso-uploader <parameter>-h</parameter></command> 指令。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8675-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "The Red Hat Enterprise Virtualization Manager installation includes a tool for uploading <acronym> ISO</acronym> images to the <acronym> ISO</acronym> storage domain. This tool is referred to as the ISO uploader. It provides for the listing of storage domains and uploading of <acronym> ISO</acronym> files to them."
+#~ msgstr "RHEV Manager 安裝程序包含了用來將 <acronym>ISO</acronym> 映像上載至 <acronym>ISO</acronym> 儲存區域的工具。此工具亦稱為 ISO 上載程式。它提供了列出儲存區域以及上載 <acronym>ISO</acronym> 檔案至這些區域的功能。"
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

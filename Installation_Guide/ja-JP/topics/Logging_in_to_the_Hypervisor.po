@@ -1,0 +1,52 @@
+# Ykatabam <ykatabam@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-29 02:07-0400\n"
+"Last-Translator: Ykatabam <ykatabam@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Logging into the Hypervisor"
+msgstr "Hypervisor へのログイン"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor allows local console logins to facilitate post-installation configuration. The login prompt used is displayed once the hypervisor has booted:"
+msgstr "Hypervisor では、ローカルコンソールにログインして、インストール後の設定を円滑に行うことができます。Hypervisor が起動すると、使用するログインの入力を要求するプロンプトが表示されます。"
+
+#. Tag: screen
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"Please login as 'admin' to configure the node\n"
+"localhost login:\n"
+"        "
+msgstr ""
+"\n"
+"Please login as 'admin' to configure the node\n"
+"localhost login:\n"
+"        "
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Type <systemitem class=\"username\"> admin</systemitem> at the prompt and press <keycap> Enter</keycap>. When prompted enter the password which was set during the installation process and press <keycap> Enter</keycap> again to log in."
+msgstr "プロンプトで <systemitem class=\"username\">admin</systemitem> と入力して <keycap>Enter</keycap> を押します。パスワードの入力を求められたら、インストールプロセス中に設定したパスワードを入力し、再度 <keycap>Enter</keycap> を押してログインします。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7611-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

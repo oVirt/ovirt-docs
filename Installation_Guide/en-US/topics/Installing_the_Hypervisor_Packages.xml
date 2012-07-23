@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Installing_the_Hypervisor_Packages" remap="TID_7525">
+	<title>Installing the Red Hat Enterprise Virtualization Hypervisor Packages</title>
+	<formalpara>
+		<title>Summary</title>
+		<para>
+			The <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> Red Hat Network channel contains the Hypervisor packages. The Hypervisor itself is contained in the <package>rhev-hypervisor6</package> package. Additional tools supporting <acronym>USB</acronym> and <acronym>PXE</acronym> installations are contained in the <package>rhev-hypervisor-tools</package> package. You must install the Hypervisor packages on the system that you intend to use to create Hypervisor boot media.
+		</para>
+	</formalpara>
+	<procedure>
+		<title>Installing the Red Hat Enterprise Virtualization Hypervisor Packages</title>
+		<step>
+			<stepalternatives>
+				<step>
+					<title>Subscribing to download the Hypervisor using certificate-based RHN</title>
+					<substeps>
+						<step>
+							<title>Identify Available Entitlement Pools</title>
+							<para>
+								To subscribe the system to the Red Hat Enterprise Virtualization you must locare the identifier for the relevant entitlement pool. Use the <parameter>list</parameter> action of the <command>subscription-manager</command> to find these:
+							</para>
+							<para>
+								To identify available subscription pools for <literal>Red Hat Enterprise Virtualization</literal> use the command:
+							</para>
+							<screen># subscription-manager list --available | grep -A8 "Red Hat Enterprise Virtualization"</screen>
+							<note>
+								<para>
+									Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <literal>Red Hat Enterprise Virtualization Beta</literal>.
+								</para>
+							</note>
+						</step>
+						<step>
+							<title>Subscribe System to Entitlement Pools</title>
+							<para>
+								Using the pool identifiers located in the previous step, subscribe the system to <literal>Red Hat Enterprise Linux Server</literal>, <literal>Red Hat Enterprise Virtualization</literal> entitlements. Use the <parameter>subscribe</parameter> parameter to the <command>subscription-manager</command> command, replacing <replaceable>POOLID</replaceable> with one of the pool identifiers.:
+							</para>
+							<screen># subscription-manager subscribe --pool=<replaceable>POOLID</replaceable></screen>
+						</step>
+					</substeps>
+				</step>
+				<step>
+					<title>Subscribing to download the Hypervisor using RHN Classic</title>
+					<substeps>
+						<step>
+							<para>
+								Log on to Red Hat Network (<ulink url="http://rhn.redhat.com"/>).
+							</para>
+						</step>
+						<step>
+							<para>
+								Move the mouse cursor over the <guilabel>Subscriptions</guilabel> link at the top of the page, and then click <guilabel>Registered Systems</guilabel> in the menu that appears.
+							</para>
+						</step>
+						<step>
+							<para>
+								Select the system to which you are adding channels from the list presented on the screen, by clicking the name of the system.
+							</para>
+						</step>
+						<step>
+							<para>
+								Click <guilabel>Alter Channel Subscriptions</guilabel> in the <guilabel>Subscribed Channels</guilabel> section of the screen.
+							</para>
+						</step>
+						<step>
+							<para>
+								Select the <systemitem>Red Hat Enterprise Virtualization Hypervisor (v.6 x86_64)</systemitem> channel from the list presented on the screen, then click the <guilabel>Change Subscription</guilabel> button to finalize the change.
+							</para>
+						</step>
+					</substeps>
+					<note>
+						<para>
+							Beta releases of Red Hat Enterprise Virtualization Hypervisor are distributed using an alternative channel. Beta releases consist of pre-release software. They must not be used in a production environment. The entitlement required to obtain beta releases of the Red Hat Enterprise Virtualization Hypervisor is called <systemitem>Red Hat Enterprise Virtualization Hypervisor Beta (v.6 x86_64)</systemitem>.
+						</para>
+					</note>
+				</step>
+			</stepalternatives>
+		</step>
+		<step>
+			<para>
+				Log in to the system on which the Red Hat Enterprise Virtualization Manager is installed. You must log in as the <systemitem>root</systemitem> user.
+			</para>
+		</step>
+		<step>
+			<para>
+				Use <command>yum</command> to install the <package>rhev-hypervisor6</package> and <package>rhev-hypervisor-tools</package> packages.
+			</para>
+			<screen># yum install rhev-hypervisor6 rhev-hypervisor-tools</screen>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result</title>
+		<para>
+			The hypervisor ISO image is installed into the <filename>/usr/share/rhev-hypervisor/</filename> directory. The <command>rhevh-iso-to-disk</command> and <command>rhevh-iso-to-pxeboot</command> scripts are installed to the <filename>/usr/bin</filename> directory.
+		</para>
+	</formalpara>
+	<note>
+		<para>
+			Red Hat Enterprise Linux 6.2 and later allows more than one version of the ISO image to be installed at one time. As such, <filename>/usr/share/rhev-hypervisor/rhev-hypervisor.iso</filename> is now a symbolic link to a uniquely-named version of the hypervisor ISO image, such as <filename>/usr/share/rhev-hypervisor/rhevh-6.2-20111006.0.el6.iso</filename>. Different versions of the image can now be installed alongside each other, allowing administrators to run and maintain a cluster on a previous version of the hypervisor while upgrading another cluster for testing.
+		</para>
+		<para>
+			Additionally, the symbolic links <filename>/usr/share/rhev-hypervisor/rhevh-latest6.iso</filename>, and <filename>/usr/share/rhev-hypervisor/rhev-hypervisor6.iso</filename> are created. These links also target the most recently installed version of the Red Hat Enterprise Virtualization ISO image.
+		</para>
+	</note>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7525-164513+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

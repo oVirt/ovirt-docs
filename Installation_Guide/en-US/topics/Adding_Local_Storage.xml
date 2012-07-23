@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Adding_Local_Storage" remap="TID_7636">
+	<title>Adding Local Storage</title>
+	<para>
+		A local storage domain can be set up on a host, to be used as a data domain for a data center and cluster that contains only a single host. Virtual machines created in a single host cluster cannot be migrated, fenced or scheduled.
+	</para>
+	<itemizedlist>
+		<title>Preparing Local Storage</title>
+		<para>
+			This section outlines how to set up a local directory with recommended settings.
+		</para>
+		<listitem>
+			<para>
+				On a Red Hat Enterprise Virtualization Hypervisor host, set up the path for the local storage as <filename>/data/images</filename>. This is the only path permitted for a Red Hat Enterprise Virtualization Hypervisor. On a Red Hat Enterprise Linux host other paths are supported but the directories to support it must be manually created first.
+			</para>
+			<para>
+				The path must have permissions allowing read and write access to the <systemitem> vdsm</systemitem> user and <systemitem> kvm</systemitem> group. These permissions are set automatically on the <filename>/data/images</filename> path for Red Hat Enterprise Virtualization Hypervisor hosts. you must set them manually on paths to be used for local storage on Red Hat Enterprise Linux hosts.
+			</para>
+			<screen>
+# chown 36:36 /data /data/images
+# chmod 0755 /data /data/images 
+            </screen>
+		</listitem>
+		<listitem>
+			<para>
+				On a Red Hat Enterprise Linux host, set up the path for local storage in the <filename>/data</filename> directory. Any path is permitted on a Red Hat Enterprise Linux host. Follow these instructions to add local storage:
+			</para>
+			<procedure>
+				<step>
+					<para>
+						On the tree pane, select the <guilabel>Tree</guilabel> tab. On <guilabel>System</guilabel>, click the <guibutton>+</guibutton> icon to display the available data centers.
+					</para>
+				</step>
+				<step>
+					<para>
+						Select the <guilabel>Data Center</guilabel> to which the domain is to be added. The storage type of the data center selected determines the type of storage domains that can be added to it. To add a local data storage domain you must select a local data center.
+					</para>
+				</step>
+				<step>
+					<para>
+						Click <guilabel>New Domain</guilabel>. The <guilabel>New Domain</guilabel> dialog box displays.
+					</para>
+				</step>
+				<step>
+					<para>
+						Enter the <guilabel>Name</guilabel> of the domain. A descriptive name is recommended.
+					</para>
+				</step>
+				<step>
+					<para>
+						Select the <guilabel>Data / Local on Host</guilabel> option as the <guilabel>Domain Function / Storage Type</guilabel> for the storage domain.
+					</para>
+				</step>
+				<step>
+					<para>
+						Select the local host in the <guilabel>Use host</guilabel> field. This must be the host on which the local storage is set up.
+					</para>
+					<important>
+						<title>Important — Active Host Required</title>
+						<para>
+							All communication to the storage domain is via the selected host and not directly from the Red Hat Enterprise Virtualization Manager. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.
+						</para>
+					</important>
+				</step>
+				<step>
+					<para>
+						Enter the Path of the storage. For example, <filename>/data/images</filename>.
+					</para>
+				</step>
+				<step>
+					<para>
+						Click <guibutton>OK</guibutton>.
+					</para>
+				</step>
+			</procedure>
+			<formalpara>
+				<title>Result:</title>
+				<para>
+					The new local storage domain displays on the Storage tab. This may take a few moments.
+				</para>
+			</formalpara>
+		</listitem>
+	</itemizedlist>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7636-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

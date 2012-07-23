@@ -1,0 +1,59 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor Installation Overview"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before commencing Hypervisor installation you must be aware that:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor <emphasis>must</emphasis> be installed on a physical server. It must not be installed in a Virtual Machine."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The installation process will reconfigure the selected storage device and destroy all data. Therefore, ensure that any data to be retained is successfully backed up before proceeding."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "All Hypervisors in an environment must have unique hostnames and IP addresses, in order to avoid network conflicts."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Instructions for using Network (PXE) Boot to install the Hypervisor are contained in the <citetitle>Red Hat Enterprise Linux — Hypervisor Deployment Guide</citetitle>, available at <ulink url=\"http://www.redhat.com/docs/\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisors can use Storage Attached Networks (SANs) and other network storage for storing virtualized guest images. However, a local storage device is required for installing and booting the hypervisor."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor installations can be automated or conducted without interaction. This type of installation is only recommended for advanced users. Refer to the <citetitle>Red Hat Enterprise Virtualization — Hypervisor Deployment Guide</citetitle> for more information."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8906-164511+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

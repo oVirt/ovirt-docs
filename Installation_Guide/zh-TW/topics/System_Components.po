@@ -1,0 +1,115 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# ccheng <ccheng@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 11:02-0400\n"
+"Last-Translator: ccheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "System Components"
+msgstr "系統元件"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization platform consists of one or more virtualization hosts (either Red Hat Enterprise Virtualization Hypervisors or Red Hat Enterprise Linux 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system."
+msgstr "RHEV 平台包含了一或多個主機（RHEV Hypervisor 或是 RHEL 6.2 以上的系統），以及至少一個 Manager。虛擬機器運作於主機上。系統與其所有元件皆透過中央化的管理系統來進行管理。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "RHEV Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager acts as a centralized management system that allows system administrators to view and manage virtual machines. The Red Hat Enterprise Virtualization Manager provides a comprehensive range of features including search capabilities, resource management, live migrations and provisioning. The Red Hat Enterprise Virtualization Manager itself also runs on Red Hat Enterprise Linux&nbsp;6.3."
+msgstr "RHEV Manager 會作為中央式的管理系統，它能讓系統管理者檢視、管理虛擬機器與映像檔。RHEV Manager 提供了全面性的功能，包括搜尋、資源管理、即時遷移與佈建等功能。RHEV Manager 本身亦執行於 RHEL 6 上。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The manager provides a graphical user interface to administer the physical and logical resources within the virtual environment infrastructure. It can be used to manage provisioning, connection protocols, user sessions, virtual machine pools, images and high availability/clustering. The Red Hat Enterprise Virtualization Manager exposes an Administration Portal, a User Portal, and an Application Programming Interface (<acronym>API</acronym>)."
+msgstr "Manager 提供了圖形化介面，以管理虛擬環境架構中的實體與邏輯資源。此介面可用來管理佈建、連線協定、使用者 session、虛擬機器佇列、映像檔，以及高可用性/叢集服務。RHEV Manager 提供了管理入口網站、使用者入口網站，以及一個應用程式介面（<acronym>API</acronym>）。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Administration Portal is used to perform setup, configuration, and management of the Red Hat Enterprise Virtualization environment."
+msgstr "管理入口網站會被使用來進行 RHEV 環境的設定、配置和管理。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The User Portal is used to start, stop, reboot, and connect to virtual machines. Users granted power user access are also able to create virtual machine templates and, virtual machines from this interface."
+msgstr "使用者入口網站會被使用來啟用、停用、重新啟動，和連至虛擬機器。經由環境管理員賦予特殊權限的階使用者，亦可透過此介面建立虛擬機器範本，以及虛擬機器。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <acronym>REST</acronym>&nbsp;<acronym>API</acronym> provides an interface for automation of tasks normally accomplished manually by users. Scripts that make use of the <acronym>REST</acronym><acronym>API</acronym> are able to be written in any language which supports accessing <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> resources."
+msgstr "<acronym>REST</acronym> <acronym>API</acronym> 提供了自動化工作的介面，這些工作原本需要透過使用者手動式完成。利用了 <acronym>REST</acronym> <acronym>API</acronym> 的 script 能以任何支援存取 <acronym>HTTP</acronym> 和 <acronym><acronym>HTTP</acronym>S</acronym> 資源的語言編寫。"
+
+#. Tag: para
+#, no-c-format
+msgid "Python bindings for the <acronym>REST</acronym>&nbsp;<acronym>API</acronym> are also provided, as well as an interface for interacting with the <acronym>API</acronym> from the command line."
+msgstr ""
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Hypervisor(s)"
+msgstr "RHEV Hypervisor"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Hypervisor is a fully featured virtualization platform for quick, easy deployment and management of virtualized guests. The Hypervisor is designed for management via the Red Hat Enterprise Virtualization Manager. It provides a thin virtualization layer deployed across the server infrastructure."
+msgstr "RHEV Hypervisor 是個用來快速、輕易建置和管理虛擬客座端的完整虛擬平台。Hypervisor 需透過 RHEV Manager 來管理。它在伺服器架構之間建置了一層精簡的虛擬層（virtualization layer）。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Kernel-based Virtual Machine ( <acronym>KVM</acronym>), which is a core component of the Linux kernel, is used to provide virtualization. Red Hat Enterprise Virtualization Hypervisor 6.3 and later are supported by this release of Red Hat Enterprise Virtualization."
+msgstr "Kernel-based Virtual Machine（<acronym>KVM</acronym>）是個 Linux kernel 的核心元件，它會被使用來提供虛擬化功能。此 RHEV 發行版支援了 RHEV Hypervisor 6 以及更新版本。"
+
+# Tag: term
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Linux Host(s)"
+msgstr "RHEL 主機"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The Red Hat Enterprise Virtualization Manager also supports the use of systems running Red Hat Enterprise Linux 6.3, or higher, <acronym>AMD64</acronym>/Intel 64 versions as virtualization hosts."
+msgstr "RHEV Manager 亦支援使用執行 RHEL 6.2 以上 <acronym>AMD64</acronym>/Intel 64 版本的系統作為虛擬主機。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報 bug</ulink>"

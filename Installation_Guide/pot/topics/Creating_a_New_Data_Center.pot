@@ -1,0 +1,154 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Creating a new data center"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Summary"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This procedure creates a data center in your virtualization environment. The data center requires a functioning cluster, host, and storage to operate."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The storage <guilabel>Type</guilabel> can be edited until the first storage domain is added to the domain center. Once a storage domain has been added, the storage <guilabel>Type</guilabel> cannot be changed."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you set the <guilabel>Compatibility Version</guilabel> as <guilabel>3.1</guilabel>, it cannot be changed to <guilabel>3.0</guilabel> at a later time; version regression is not allowed."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Creating a new Data Center"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Data Centers</guilabel> resource tab to list all data centers in the results list."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click the <guilabel>New</guilabel> button to open the <guilabel>New Data Center</guilabel> window."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Name</guilabel> of the data center; this text field has a 40-character limit and allows only alpha-numeric, underscore (<literal>_</literal>), and dash (<literal>-</literal>) characters."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enter the <guilabel>Description</guilabel> of the data center."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the storage <guilabel>Type</guilabel> of the data center from the drop-down menu:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "NFS"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "iSCSI"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Fibre Channel"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Local on Host"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "POSIX compliant FS"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Compatibility Version</guilabel> of the data center from the drop-down menu:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "3.0"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "3.1"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Select the <guilabel>Quota Mode</guilabel> of the data center from the drop-down menu:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disabled"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Audit"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enforced"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Click <guibutton>OK</guibutton> to create the data center and open the <guilabel>New Data Center - Guide Me</guilabel> window."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <guilabel>Guide Me</guilabel> window lists the entities that need to be configured for the data center. Configure these entities or postpone configuration by clicking the <guilabel>Configure Later</guilabel> button; configuration can be resumed by selecting the data center and clicking the <guilabel>Guide Me</guilabel> button."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Result:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The new data center is added to the virtualization environment. It will remain <guilabel>Uninitialized</guilabel> until a cluster, host, and storage is configured for it; use <guilabel>Guide Me</guilabel> to configure these entities."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7623-162611+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

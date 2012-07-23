@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Creating_a_Bond_Device_using_the_Administration_Portal" remap="TID_7628">
+	<title>Creating a Bond Device using the Administration Portal</title>
+	<orderedlist>
+		<listitem>
+			<para>
+				Click the <guilabel>Hosts</guilabel> tab.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Select the host for which a bond device will be created.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Click the <guilabel>Network Interfaces</guilabel> tab in the details pane.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Select the devices that will be included in the bond, ensuring they are all of the same make and model.
+			</para>
+			<para>
+				<figure id="bond-button">
+					<title>Bond Network Devices.</title>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/786.png" format="PNG"/>
+						</imageobject>
+					</mediaobject>
+				</figure>
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Click the <guibutton>Bond</guibutton> button. The <guilabel>Bond Network Interfaces</guilabel> dialog displays.
+			</para>
+			<para>
+				<figure id="bond-dialog">
+					<title>Bond Devices Dialogue.</title>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/787.png" format="PNG"/>
+						</imageobject>
+					</mediaobject>
+				</figure>
+			</para>
+			<para>
+				Enter the configuration information for the new bond device including: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							Bond Name: select one from the drop down list.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							Network: the logical network that the bond device will be a part of.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							Bonding mode: the bonding mode that provides the desired functionality.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							IP address assignment mechanism: either DHCP or Static. If static, then IP, Subnet Mask, and Default Gateway must all be set manually.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							Check connectivity: ensure that the bond device is functional upon creation.
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+							Save Network Configuration: make the bond device persistent through reboots.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				Click the <guibutton>OK</guibutton>. The <guilabel>Events</guilabel> tab displays <guilabel>Bond device created</guilabel>.
+			</para>
+		</listitem>
+	</orderedlist>
+	<formalpara>
+		<title>Result:</title>
+		<para>
+			A bond device is listed in the <guilabel>Network Interfaces</guilabel> tab of the details pain for the selected host
+		</para>
+	</formalpara>
+	<para>
+		Bonding must be enabled for the ports that the host uses on the switch it is connected to. The process by which bonding is enabled is slightly different for each switch, consult the manual provided by your switch vendor for detailed information on how to enable bonding.
+	</para>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7628-162305+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Mapping_iSCSI_Targets_to_LUNs" remap="TID_7634">
+	<title>Mapping iSCSI Targets to LUNs</title>
+	<para>
+		Follow the below mentioned procedure:
+	</para>
+	<procedure>
+		<step>
+			<para>
+				Click the <guilabel>+</guilabel> button next to the desired target.
+			</para>
+		</step>
+		<step>
+			<para>
+				Select the check box for each <acronym> LUN</acronym> that you are using to create the storage domain.
+			</para>
+		</step>
+		<step>
+			<para>
+				Click <guibutton>OK</guibutton>.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result:</title>
+		<para>
+			The new storage domain is created.
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7634-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

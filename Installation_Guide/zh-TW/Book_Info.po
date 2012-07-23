@@ -1,0 +1,48 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2011-05-31 02:21-0400\n"
+"Last-Translator: Chester Cheng <ccheng 紅帽子>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Installation Guide"
+msgstr "安裝指南"
+
+# Tag: subtitle
+#. Tag: subtitle
+#, fuzzy, no-c-format
+msgid "Installing Red Hat Enterprise Virtualization Environments"
+msgstr "安裝 Red Hat Enterprise Virtualization 環境"
+
+# Tag: productname
+#. Tag: productname
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization"
+msgstr "Red Hat Enterprise Virtualization（RHEV）"
+
+#. Tag: para
+#, no-c-format
+msgid "Note: This document is under development, is subject to substantial change, and is provided only as a preview. The included information and instructions should not be considered complete, and should be used with caution."
+msgstr ""
+
+# Tag: phrase
+#~ msgctxt ""
+#~ msgid "Red Hat Engineering Content Services"
+#~ msgstr "Red Hat Engineering Content Services（工程部出版中心）"

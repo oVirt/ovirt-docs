@@ -1,0 +1,180 @@
+# myamamot <myamamot@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-07-06 01:27-0400\n"
+"Last-Translator: myamamot <myamamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Certificate Installation and Browser Configuration"
+msgstr "証明書のインストールとブラウザーの設定"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To access the Administration Portal from any system, regardless of the "
+"version of Windows or Internet Explorer in use, you must:"
+msgstr ""
+"いずれのシステムから管理ポータルにアクセスする場合でも使用している Windows や Internet Explorer "
+"のバージョンに関わらず次を行う必要があります。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"install the certification authority's certificate as a trusted root "
+"certification authority, and"
+msgstr "信頼できる root 証明の認証機関として認証局の証明書をインストールします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "install the Red Hat Enterprise Virtualization site certificate."
+msgstr "Red Hat Enterprise Virtualization サイト証明書をインストールします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"These changes must be made to support secure access to the Administration "
+"Portal."
+msgstr "管理ポータルへの安全なアクセスをサポートするためこれらの変更を必ず行ってください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Open a browser and navigate to <uri> http://<replaceable>manager.demo.redhat."
+"com</replaceable>:<replaceable>8080</replaceable>/RHEVManager </uri>. "
+"Substitute <filename>manager.demo.redhat.com</filename> with the fully "
+"qualified domain name provided during Red Hat Enterprise Virtualization "
+"Manager installation. Additionally, where a non-default <acronym> HTTP</"
+"acronym> port was selected during installation replace <literal>8080</"
+"literal> with the port that was chosen."
+msgstr ""
+"ブラウザーを開き <uri>http://<replaceable>manager.demo.redhat.com</replaceable>:"
+"<replaceable>8080</replaceable>/RHEVManager</uri> に行きます。  <filename>manager."
+"demo.redhat.com</filename> は Red Hat Enterprise Virtualization Manager "
+"のインストール中に入力した完全修飾ドメイン名に置き換えてください。また、インストール中にデフォルトではない <acronym>HTTP</"
+"acronym> ポートを選択している場合は <literal>8080</literal> の部分はその選択したポートに置き換えてください。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To trust the certification authority's certificate click the <literal>this "
+"certificate</literal> link. When prompted select to <guilabel>Open</"
+"guilabel> the file. On Internet Explorer 9 the prompt appears at the bottom "
+"of the screen. Earlier versions will display a dialog box instead."
+msgstr ""
+"認証局の証明書を信頼する場合は、<literal>this certificate</literal> リンクをクリックします。プロンプトが表示されたら "
+"<guilabel>Open</guilabel> を選択してファイルを開きます。Internet Explorer 9 "
+"ではプロンプトは画面の下部に表示されます。それ以前のバージョンの場合はダイアログボックスが表示されます。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"On the screen that appears, click <guibutton>Install Certificate</guibutton> "
+"to commence certificate installation."
+msgstr ""
+"表示される画面で <guibutton>Install Certificate</guibutton> をクリックして証明書のインストールを開始します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"On the <guilabel>Certificate Store</guilabel> screen enable the "
+"<guilabel>Place all certificates in the following store</guilabel> option, "
+"then click the <guibutton>Browse...</guibutton> button."
+msgstr ""
+"<guilabel>Certificate Store</guilabel> の画面で <guilabel>Place all certificates "
+"in the following store</guilabel> オプションを有効にしてから <guibutton>Browse...</"
+"guibutton> ボタンをクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"From the list of certificate stores, select <guilabel>Trusted Root "
+"Certification Authorities</guilabel> and click <guibutton>OK</guibutton>."
+msgstr ""
+"証明書ストアの一覧から <guilabel>Trusted Root Certification Authorities</guilabel> "
+"を選択して <guibutton>OK</guibutton> をクリックします。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click <guibutton>Next &gt;</guibutton>, then follow the prompts to complete "
+"installation of the certification authority's certificate."
+msgstr ""
+"<guibutton>Next &gt;</guibutton> をクリックしてから、プロンプトに従い認証局の証明書インストールを完了します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click the <guilabel>here</guilabel> link on the Red Hat Enterprise "
+"Virtualization Manager page to download and launch the site certificate "
+"installation. Follow the prompts to complete installation of the certificate."
+""
+msgstr ""
+"Red Hat Enterprise Virtualization Manager ページの <guilabel>here</guilabel> "
+"リンクをクリックしてサイト証明書のインストールをダウンロードし起動します。プロンプトに従い証明書のインストールを完了します。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Result:"
+msgstr "結果"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The certification authority and site certificates have successfully been "
+"installed. Users of Internet Explorer 9 must complete additional "
+"configuration before accessing the Administration Portal."
+msgstr ""
+"これで認証局とサイトの証明書が正しくインストールされました。Internet Explorer 9 "
+"のユーザーは管理ポータルにアクセスする前に追加設定を完了させてください。"
+
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Connecting"
+msgstr "接続"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Now that the prerequisites have been resolved, you can log in to the Red Hat "
+"Enterprise Virtualization Manager. Ensure that you have the user name and "
+"password provided during Red Hat Enterprise Virtualization Manager "
+"installation."
+msgstr ""
+"これで必須条件が満たされたので Red Hat Enterprise Virtualization Manager "
+"にログインできるようになります。Red Hat Enterprise Virtualization Manager "
+"のインストール時に入力したユーザー名とパスワードを使用します。"
+
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">バグ報告</ulink>"

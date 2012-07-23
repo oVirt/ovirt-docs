@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Installation_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Connecting_to_the_Administration_Portal" remap="TID_7629">
+	<title>Connecting to the Administration Portal</title>
+	<procedure>
+		<step>
+			<para>
+				Return to the browser and navigate to <uri>https://<replaceable>manager.demo.redhat.com</replaceable>/webadmin</uri>. Replace <filename>manager.demo.redhat.com</filename> with the fully qualified domain name that you provided during installation. Additionally where a non-default <acronym>HTTPS</acronym> port was selected during installation, it must be appended to the domain name. For example if the port selected during installation was <literal>8443</literal> then the URL would become <uri>https://<replaceable>manager.demo.redhat.com</replaceable>:<replaceable>8443</replaceable>/webadmin</uri>.
+			</para>
+		</step>
+		<step>
+			<para>
+				The first time that you connect, you will be prompted to trust the certificate being used to secure communications between your browser and the web server.
+			</para>
+		</step>
+		<step>
+			<para>
+				The login screen displays. Enter <systemitem>admin</systemitem> as your <guilabel>User Name</guilabel>, and enter the password that you set during installation into the <guilabel>Password</guilabel> field. Ensure that the <systemitem>internal</systemitem> domain is selected in the <guilabel>Domain</guilabel> list.
+			</para>
+			<para>
+				Click <guilabel>Login</guilabel> to log in.
+			</para>
+		</step>
+	</procedure>
+	<formalpara>
+		<title>Result:</title>
+		<para>
+			You have now successfully logged into the Red Hat Enterprise Virtualization web Administration Portal. You can now:
+		</para>
+	</formalpara>
+	<itemizedlist>
+		<listitem>
+			<para>
+				optionally, install Red Hat Enterprise Virtualization Manager Reports, or
+			</para>
+		</listitem>
+		<listitem>
+			<para>
+				begin installing virtualization hosts.
+			</para>
+		</listitem>
+	</itemizedlist>
+	<formalpara role="see-also-list">
+		<title>See Also:</title>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<xref linkend="chap-Data_Collection_Setup_and_Reports_Installation" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<xref linkend="part-Installing_Virtualization_Hosts" xrefstyle="see-also"/>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</formalpara>
+	<simplesect>
+		<title/>
+		<para role="RoleCreateBugPara">
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7629-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install">Report a bug</ulink>
+		</para>
+	</simplesect>
+</section>

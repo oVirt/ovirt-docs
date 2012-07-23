@@ -1,0 +1,193 @@
+# translation of Storage.po to Chinese, Traditional
+# 
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-06-21T03:40:32\n"
+"PO-Revision-Date: 2012-06-21 08:59-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Certificate Installation and Browser Configuration"
+msgstr "憑證安裝與瀏覽器配置"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To access the Administration Portal from any system, regardless of the "
+"version of Windows or Internet Explorer in use, you must:"
+msgstr "若要由任何系統存取管理入口網站，無論您所使用的 Windows 或 Internet Explorer 是哪個版本，您皆必須："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"install the certification authority's certificate as a trusted root "
+"certification authority, and"
+msgstr "安裝認證許可的憑證作為信任的 root 認證許可，並"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid "install the Red Hat Enterprise Virtualization site certificate."
+msgstr "安裝 RHEV 的網站憑證。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"These changes must be made to support secure access to the Administration "
+"Portal."
+msgstr "您必須進行這些變更，以安全存取管理入口網站。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Open a browser and navigate to <uri> http://<replaceable>manager.demo.redhat."
+"com</replaceable>:<replaceable>8080</replaceable>/RHEVManager </uri>. "
+"Substitute <filename>manager.demo.redhat.com</filename> with the fully "
+"qualified domain name provided during Red Hat Enterprise Virtualization "
+"Manager installation. Additionally, where a non-default <acronym> HTTP</"
+"acronym> port was selected during installation replace <literal>8080</"
+"literal> with the port that was chosen."
+msgstr ""
+"請開啟瀏覽器，並前往 <uri>http://<replaceable>manager.demo.redhat.com</replaceable>:"
+"<replaceable>8080</replaceable>/RHEVManager</uri>。請將 <filename>manager.demo."
+"redhat.com</filename> 替換為在安裝 RHEV Manager 時，所提供的完整區域名稱。此外，若在進行安裝時選擇了非預設的 "
+"<acronym>HTTP</acronym> 連接埠，請將 <literal>8080</literal> 替換為所選擇的連接埠。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"To trust the certification authority's certificate click the <literal>this "
+"certificate</literal> link. When prompted select to <guilabel>Open</"
+"guilabel> the file. On Internet Explorer 9 the prompt appears at the bottom "
+"of the screen. Earlier versions will display a dialog box instead."
+msgstr ""
+"若要信任認證許可的憑證，請點選<literal>此憑證</literal>連結。當被提示時，請選擇「<guilabel>開啟</"
+"guilabel>」檔案。在 Internet Explorer 9 上，提示會出現在畫面下方。較舊的版本將會顯示一則對話方塊。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"On the screen that appears, click <guibutton>Install Certificate</guibutton> "
+"to commence certificate installation."
+msgstr "請在出現的畫面上，按下「<guibutton>安裝憑證</guibutton>」，以進行憑證安裝程序。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"On the <guilabel>Certificate Store</guilabel> screen enable the "
+"<guilabel>Place all certificates in the following store</guilabel> option, "
+"then click the <guibutton>Browse...</guibutton> button."
+msgstr ""
+"在「<guilabel>憑證存放區</guilabel>」畫面上，請啟用「<guilabel>將所有憑證放置在下列存放區中</"
+"guilabel>」選項，然後按下「<guibutton>瀏覽...</guibutton>」按鈕。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"From the list of certificate stores, select <guilabel>Trusted Root "
+"Certification Authorities</guilabel> and click <guibutton>OK</guibutton>."
+msgstr ""
+"請由憑證存放區的清單中，選擇「<guilabel>信任的 Root 認證許可</guilabel>」，並按下「<guibutton>確定</"
+"guibutton>」。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click <guibutton>Next &gt;</guibutton>, then follow the prompts to complete "
+"installation of the certification authority's certificate."
+msgstr "點選「<guibutton>下一步 &gt;</guibutton>」，然後依照提示進行，以完成認證許可的憑證安裝程序。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Click the <guilabel>here</guilabel> link on the Red Hat Enterprise "
+"Virtualization Manager page to download and launch the site certificate "
+"installation. Follow the prompts to complete installation of the certificate."
+""
+msgstr ""
+"點選 RHEV Manager 網頁上的「<guilabel>此</"
+"guilabel>」連結，以下載並啟動網站憑證安裝。請依照提示進行，以完成憑證安裝程序。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Result:"
+msgstr "結果："
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"The certification authority and site certificates have successfully been "
+"installed. Users of Internet Explorer 9 must complete additional "
+"configuration before accessing the Administration Portal."
+msgstr "認證許可與網站憑證已成功安裝。Internet Explorer 9 的使用者必須完成額外的配置，才能存取管理入口網站。"
+
+# Tag: title
+#. Tag: title
+#, no-c-format
+msgctxt ""
+msgid "Connecting"
+msgstr "連線"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"Now that the prerequisites have been resolved, you can log in to the Red Hat "
+"Enterprise Virtualization Manager. Ensure that you have the user name and "
+"password provided during Red Hat Enterprise Virtualization Manager "
+"installation."
+msgstr ""
+"現在，當先決條件滿足之後，您便可登入 RHEV Manager。請確認您擁有在進行 RHEV Manager 安裝程序時，所提供的使用者名稱與密碼。"
+
+# Tag: para
+#. Tag: para
+#, no-c-format
+msgctxt ""
+msgid ""
+"<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</"
+"ulink>"
+msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

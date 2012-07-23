@@ -1,0 +1,54 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-07-20T20:15:34\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "VirtIO and Guest Tool Image Files"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The <package>virtio-win</package> ISO and Virtual Floppy Drive (VFD) images, which contain the VirtIO drivers for Windows virtual machines, and the <package>rhev-tools-setup</package> ISO, which contains the Red Hat Enterprise Virtualization Guest Tools for Windows virtual machines, are copied to an ISO storage domain upon installation and configuration of the domain."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These image files provide software that can be installed on virtual machines to improve performance and usability. The most recent <package>virtio-win</package> and <package>rhev-tools-setup</package> images are referred to by the following symbolic links on the file system of the Red Hat Enterprise Virtualization Manager:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.iso</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<filename>/usr/share/virtio-win/virtio-win.vfd</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<filename>/usr/share/rhev-guest-tools-iso/rhev-tools-setup.iso</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "These image files must be manually uploaded to ISO storage domains that were not created locally by the installation process. Use the <command>rhevm-iso-uploader</command> command to upload these images to your ISO storage domain. Once uploaded, the image files can be attached to and used by virtual machines."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8672-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+

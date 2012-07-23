@@ -1,0 +1,128 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-21 09:55-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuring Hypervisor Management Server"
+msgstr "配置 Hypervisor 管理伺服器"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The hypervisor is able to attach itself to the Red Hat Enterprise Virtualization Manager immediately if the address of the Manager is available. Where the Manager has not yet been installed you must instead set a password. This allows the hypervisor to be added from the Administration Portal once the Manager has been installed. Both modes of configuration are supported from the <guilabel>RHEV-M</guilabel> screen in the Hypervisor user interface."
+msgstr "若是 manager 的位址可用的話，Hypervisor 能夠即刻將它自己連至 RHEV Manager。若 manager 尚未安裝的話，您必須設置一組密碼來代替。這能讓 hypervisor 在 manager 安裝完畢後，藉由管理入口網站新增。這兩種配置模式皆能透過「<guilabel>RHEV-M</guilabel>」畫面支援。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Important — Security Considerations"
+msgstr "重要 — 安全性考量"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Setting a password on the <guilabel>RHEV-M</guilabel> configuration screen sets the Hypervisor's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Hypervisor has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled."
+msgstr "在「<guilabel>RHEV-M</guilabel>」配置畫面上設定密碼，將設置 hypervisor 的 <systemitem>root</systemitem> 密碼，並啟用 <acronym>SSH</acronym> 密碼認證。當 hypervisor 成功新增至 manager 後，建議您停用 <acronym>SSH</acronym> 密碼認證。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuration Using a Management Server Address"
+msgstr "使用管理伺服器位址來進行配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the <acronym>IP</acronym> address or fully qualified domain name of the Manager in the <guilabel>Management Server</guilabel> field."
+msgstr "請在「<guilabel>管理伺服器</guilabel>」欄位中，輸入 <acronym>IP</acronym> 位址或是 manager 的完整區域名稱。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter the management server port in the <guilabel>Management Server Port</guilabel> field. The default value is <literal>443</literal>. Where a different port was selected during Red Hat Enterprise Virtualization Manager installation then it should be specified here, replacing the default value."
+msgstr "請在「<guilabel>管理伺服器連接埠</guilabel>」欄位中，輸入管理伺服器的連接埠。預設值為 <literal>8443</literal>。若在進行 RHEV Manager 的安裝程序時選擇了不同的連接埠，那麼您應在此指定，並將預設值取代。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enable the <guilabel>Verify RHEVM Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of Red Hat Enterprise Virtualization Manager installation."
+msgstr "若您希望驗證由您所指定之管理伺服器所取得的憑證指紋是否正確，請啟用「<guilabel>驗證 RHEVM 憑證</guilabel>」選項。須拿來與憑證指紋作比較的值，將會在 RHEV Manager 安裝程序的最後回傳。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Leave the <guilabel>Password</guilabel> and <guilabel>Confirm Password</guilabel> fields blank, these fields are not required if the address of the management server is known."
+msgstr "請將「<guilabel>密碼</guilabel>」與「<guilabel>確認密碼</guilabel>」欄位保留為空白，若您已知管理伺服器的位址，便無需填入這些欄位。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Configuration Using a Password"
+msgstr "使用密碼進行配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Enter a password in the <guilabel>Password</guilabel> field. It is recommended that you use a strong password. Strong passwords contain a mix of uppercase, lowercase, numeric and punctuation characters. They are six or more characters long and do not contain dictionary words."
+msgstr "請在「<guilabel>密碼</guilabel>」欄位中輸入一組密碼。建議您使用一組安全性高的密碼。安全性高的密碼包含了大小寫字母、數字與標點符號的組合。它們須包含六或更多個字元，並且不包含任何字典字彙。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Re-enter the password in the <guilabel>Confirm Password</guilabel> field."
+msgstr "重新在「<guilabel>確認密碼</guilabel>」欄位中輸入密碼。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Leave the <guilabel>Management Server</guilabel> and <guilabel>Management Server Port</guilabel> fields blank. As long as a password is set, allowing the Hypervisor to be added to the Manager later, these fields are not required."
+msgstr "請將「<guilabel>管理伺服器</guilabel>」和「<guilabel>管理伺服器連接埠</guilabel>」欄位保留為空白。只要您設置了密碼，允許 hypervisor 稍後被新增至 manager，您便無需填入這些欄位。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Save Configuration"
+msgstr "儲存配置"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "To save the configuration select <guibutton>&lt;Apply&gt;</guibutton> and press <keycap>Enter</keycap>."
+msgstr "若要儲存配置，請選擇「<guibutton>&lt;套用&gt;</guibutton>」，並按下 <keycap>Enter</keycap>。"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "The <guilabel>RHEV-M</guilabel> configuration has been updated."
+msgstr "「<guilabel>RHEV-M</guilabel>」配置已更新。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"

@@ -1,0 +1,128 @@
+# translation of Storage.po to Chinese, Traditional
+#
+#
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chester Cheng <ccheng 於紅帽子>, 2010.
+# Chester Cheng <ccheng ㄟ特 redhat.com>, 2010.
+# Chester Cheng <ccheng 紅帽子>, 2011.
+# tchuang <tchuang@redhat.com>, 2012. #zanata
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Storage\n"
+"POT-Creation-Date: 2012-07-20T20:15:34\n"
+"PO-Revision-Date: 2012-06-24 09:38-0400\n"
+"Last-Translator: tchuang <tchuang@redhat.com>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"Language: zh-Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 1.6.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Directory Server Firewall Requirements"
+msgstr "目錄防火牆需求"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization requires a directory server to support user authentication. A number of ports must be opened in the directory server's firewall to support <acronym>GSS-API</acronym> authentication as used by the Red Hat Enterprise Virtualization Manager."
+msgstr "RHEV 需要一個用來支援使用者認證的目錄伺服器。目前，受支援的目錄伺服器為 <acronym>IPA</acronym> 和 Active Directory。這兩者在目錄伺服器防火牆中，皆需要數個開啟的連接埠，以支援 RHEV Manager 所使用的 <acronym>GSS-API</acronym> 認證。"
+
+# Tag: title
+#. Tag: title
+#, fuzzy, no-c-format
+msgid "Host Firewall Requirements"
+msgstr "主機防火牆需求"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Port(s)"
+msgstr "連接埠"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Protocol"
+msgstr "協定"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Source"
+msgstr "來源"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Destination"
+msgstr "目的地"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Purpose"
+msgstr "用途"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "88, 464"
+msgstr "88、464"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "TCP, UDP"
+msgstr "TCP、UDP"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Red Hat Enterprise Virtualization Manager"
+msgstr "RHEV Manager"
+
+# Tag: para
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Directory server"
+msgstr "目錄伺服器"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Kerberos authentication."
+msgstr "Kerberos 認證。"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "389, 636"
+msgstr "389、636"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "TCP"
+msgstr "TCP"
+
+# Tag: entry
+#. Tag: entry
+#, fuzzy, no-c-format
+msgid "Lightweight Directory Access Protocol ( <acronym> LDAP</acronym>) and LDAP over <acronym> SSL</acronym>."
+msgstr "Lightweight Directory Access Protocol（<acronym>LDAP</acronym>）以及透過 <acronym>SSL</acronym> 的 LDAP。"
+
+#. Tag: para
+#, no-c-format
+msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7852-163907+20+Jul+2012+14%3A00+en-US&amp;product=Red+Hat+Enterprise+Virtualization+Manager&amp;component=Guides-Install\">Report a bug</ulink>"
+msgstr ""
+
+# Tag: para
+#~ msgctxt ""
+#~ msgid "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">Report a bug</ulink>"
+#~ msgstr "<ulink url=\"https://bugzilla.redhat.com/enter_bug.cgi\">回報錯誤</ulink>"
