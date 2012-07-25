@@ -31,21 +31,21 @@
 				</row>
 				<row>
 					<entry>
-						<filename>/var/log/ovirt-engine/OVIRT-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+						<filename>/var/log/ovirt-engine/engine-db-install-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
 					</entry>
 					<entry>
-						Log from the <command>engine-setup</command> command detailing the creation and configuration of the <systemitem>OVIRT</systemitem> database.
+						Log from the <command>engine-setup</command> command detailing the creation and configuration of the <systemitem>ovirt-engine</systemitem> database.
 					</entry>
 				</row>
 				<row>
-					<entry><filename>/var/log/ovirt-engine/OVIRT-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					<entry><filename>/var/log/ovirt-engine/engine-dwh/rhevm-dwh-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
 					</entry>
 					<entry>
 						Log from the <command>engine-dwh-setup</command> command. This is the command used to create the <systemitem> rhevm_history</systemitem> database for reporting. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
 					</entry>
 				</row>
 				<row>
-					<entry><filename>/var/log/ovirt-engine/OVIRT-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					<entry><filename>/var/log/ovirt-engine/engine-reports/rhevm-reports-setup-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
 					</entry>
 					<entry>
 						Log from the <command>engine-reports-setup</command> command. This is the command used to install the oVirt Engine Reports modules. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
@@ -59,7 +59,7 @@
 					</entry>
 				</row>
 				<row>
-					<entry><filename>/var/log/ovirt-engine/OVIRT-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
+					<entry><filename>/var/log/ovirt-engine/engine-upgrade-<replaceable>yyyy</replaceable>_<replaceable>mm</replaceable>_<replaceable>dd</replaceable>_<replaceable>hh</replaceable>_<replaceable>mm</replaceable>_<replaceable>ss</replaceable>.log</filename>
 					</entry>
 					<entry>
 						Log from the <command>engine-upgrade</command> command. A log is generated each time the command is run. The date and time of the run is used in the filename to allow multiple logs to exist concurrently.
@@ -71,7 +71,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7861-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

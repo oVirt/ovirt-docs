@@ -30,7 +30,7 @@
 	<section id="sect-Populating_the_ISO_Domain">
 		<title>Populating the ISO Domain</title>
 		<xi:include href="topics/Populating_the_ISO_Storage_Domain.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-		<xi:include href="topics/Uploading_the_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-		<xi:include href="topics/Upload_of_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<!--		<xi:include href="topics/Uploading_the_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<xi:include href="topics/Upload_of_VirtIO_and_Guest_Tool_Image_Files.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 	</section>
 </chapter>

@@ -47,7 +47,7 @@
 				</step>
 				<step>
 					<para>
-						For the history database installation to take effect it is necessary to restart the <systemitem> ovirt-engine</systemitem> service. The <command>OVIRT-dwh-setup</command> command asks you:
+						For the history database installation to take effect it is necessary to restart the <systemitem>ovirt-engine</systemitem> service. The <command>engine-dwh-setup</command> command asks you:
 					</para>
 					<screen>Would you like to stop the ovirt-engine service? (yes|no): </screen>
 					<para>
@@ -55,17 +55,17 @@
 						<itemizedlist>
 							<listitem>
 								<para>
-									stops the <systemitem> ovirt-engine</systemitem> service,
+									stops the <systemitem>ovirt-engine</systemitem> service,
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									creates and configures the <systemitem> OVIRT_history</systemitem> database, and
+									creates and configures the <systemitem>ovirt_history</systemitem> database, and
 								</para>
 							</listitem>
 							<listitem>
 								<para>
-									starts the <systemitem> ovirt-engine</systemitem> service.
+									starts the <systemitem>ovirt-engine</systemitem> service.
 								</para>
 							</listitem>
 						</itemizedlist>
@@ -75,12 +75,12 @@
 		</step>
 	</procedure>
 	<para>
-		The <systemitem> OVIRT_history</systemitem> database has been created. The oVirt Engine is configured to log information to this database for reporting purposes.
+		The <systemitem>ovirt_history</systemitem> database has been created. The oVirt Engine is configured to log information to this database for reporting purposes.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7522-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7522-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

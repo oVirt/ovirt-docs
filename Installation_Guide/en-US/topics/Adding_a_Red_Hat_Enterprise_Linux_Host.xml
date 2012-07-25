@@ -10,7 +10,7 @@
 		A Fedora host is based on an standard installation of Fedora.
 	</para>
 	<para>
-		oVirt hosts are based on a customized disk image with just enough Fedora for virtualization. They are approved rather than added.
+		ovirt-engine hosts are based on a customized disk image with just enough Fedora for virtualization. They are approved rather than added.
 	</para>
 	<para>
 		To add a Fedora host, provide some details about it. The Manager logs into the host to perform virtualization checks, install packages, create a network bridge and reboot the host. The process of adding a new host can take up to 10 minutes. The process can be followed in the host's details pane.
@@ -36,7 +36,7 @@
 				If your host has a power management device, click the <guilabel>Power Management</guilabel> tab to configure it. This allows the Manager to perform lifecycle operations on your host, like turning it off and on.
 			</para>
 			<para>
-				oVirt recommends power management. Power management enables the system to fence a troublesome host by using an additional interface to bypass the host operating system.
+				ovirt-engine recommends power management. Power management enables the system to fence a troublesome host by using an additional interface to bypass the host operating system.
 			</para>
 			<para>
 				<note>
@@ -71,7 +71,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7621-164532+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7621-164532+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

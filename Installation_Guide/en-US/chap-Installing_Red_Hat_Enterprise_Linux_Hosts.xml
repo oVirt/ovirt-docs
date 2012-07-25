@@ -11,8 +11,6 @@
 	<section id="proc-Preparing_a_Red_Hat_Enterprise_Linux_Host">
 		<title>Preparing a Fedora Host</title>
 		<xi:include href="topics/Installing_Red_Hat_Enterprise_Linux.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-		<xi:include href="topics/Subscribing_to_Required_Channels_using_Subscription_Manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-		<xi:include href="topics/Subscribing_to_Required_Channels_using_RHN_Classic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Configuring_Virtualization_Host_Firewall.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Configuring_Virtualization_Host_sudo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 		<xi:include href="topics/Configuring_Virtualization_Host_SSH.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

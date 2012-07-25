@@ -5,19 +5,19 @@
 ]>
 
 <section id="Storage_Setup" remap="TID_8671">
-	<title>Introduction to storage in oVirt</title>
+	<title>Introduction to storage in ovirt-engine</title>
 	<!--    <mediaobject>        <imageobject>            <imagedata fileref="images/813.png" />        </imageobject>    </mediaobject>-->
 	<para>
-		oVirt uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the oVirt platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.
+		ovirt-engine uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using Network File System (<acronym>NFS</acronym>), Internet Small Computer System Interface (<acronym>iSCSI</acronym>), Fibre Channel Protocol (<acronym>FCP</acronym>), local storage attached directly to the virtualization hosts, or other <acronym>POSIX</acronym> compliant filesystems. This section describes how to set up and manage the variety of storage types that can be used in the oVirt platform. Setting up storage is a vital prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.
 	</para>
 	<para>
-		A oVirt system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Fedora — Storage Administration Guide</citetitle> for more information on managing storage, if necessary.
+		A ovirt-engine system administrator needs to create, configure, attach and maintain storage for the virtualized enterprise. A familiarity with the storage types and their use is highly recommended. This document does not describe the concepts, protocols, requirements or general usage of <acronym>NFS</acronym>, <acronym>iSCSI</acronym>, <acronym>FCP</acronym>, local storage, or <acronym>POSIX</acronym> compliant filesystems. It is recommended that you read your storage array vendor's guides, and refer to the <citetitle>Fedora — Storage Administration Guide</citetitle> for more information on managing storage, if necessary.
 	</para>
 	<para>
-		The oVirt platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the oVirt platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain.
+		The ovirt-engine platform enables administrators to assign and manage storage effectively and efficiently. The <guilabel>Storage</guilabel> tab on the oVirt platform provides an efficient graphical way to view and manage networked storage. The <guilabel>Storage Results</guilabel> list displays all the storage domains, and the Details pane enables access to general information about the domain.
 	</para>
 	<para>
-		oVirt platform has three types of storage domains:
+		ovirt-engine platform has three types of storage domains:
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -40,7 +40,7 @@
 		</listitem>
 	</itemizedlist>
 	<para>
-		Only commence configuring and attaching storage for your oVirt environment once you have determined the storage needs of your data center(s).
+		Only commence configuring and attaching storage for your ovirt-engine environment once you have determined the storage needs of your data center(s).
 	</para>
 	<important>
 		<title>Important — Before Adding Storage</title>
@@ -51,7 +51,7 @@
 	<important>
 		<title>Important — Export Domain Storage Type</title>
 		<para>
-			Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from oVirt 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage.
+			Support for export storage domains backed by storage on anything other than <acronym>NFS</acronym> is being deprecated. While existing export storage domains imported from ovirt-engine 2.2 environments remain supported new export storage domains must be created on <acronym>NFS</acronym> storage.
 		</para>
 	</important>
 	<formalpara role="link-list">
@@ -84,7 +84,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8671-163871+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

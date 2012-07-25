@@ -4,7 +4,7 @@
 %BOOK_ENTITIES;
 ]>
 
-<section id="Syntax_for_OVIRT_log_collector_Command" remap="TID_8434">
+<section id="Syntax_for_ovirt-engine_log_collector_Command" remap="TID_8434">
 	<title>Syntax for engine-log-collector Command</title>
 	<para>
 		The basic syntax for the log collector command is:
@@ -134,7 +134,7 @@
 			</listitem>
 		</varlistentry>
 		<varlistentry>
-			<term><parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--OVIRT=<replaceable>FQDN</replaceable></parameter></term>
+			<term><parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--ovirt-engine=<replaceable>FQDN</replaceable></parameter></term>
 			<listitem>
 				<para>
 					Sets the fully qualified domain name of the oVirt Engine server from which to collect logs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the log collector is being run on the same local host as the oVirt Engine; the default value is <literal>localhost</literal>.
@@ -199,7 +199,7 @@
 			<term><parameter>--enable-jmx</parameter></term>
 			<listitem>
 				<para>
-					Enables the collection of run-time metrics from oVirt's JBoss JMX interface.
+					Enables the collection of run-time metrics from ovirt-engine's JBoss JMX interface.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -307,7 +307,7 @@
 			<term><parameter>--pg-dbname=<replaceable>DBNAME</replaceable></parameter></term>
 			<listitem>
 				<para>
-					Sets <replaceable>DBNAME</replaceable> as the database name to use for connections with the database server. The default is <systemitem>OVIRT</systemitem>.
+					Sets <replaceable>DBNAME</replaceable> as the database name to use for connections with the database server. The default is <systemitem>ovirt-engine</systemitem>.
 				</para>
 			</listitem>
 		</varlistentry>
@@ -331,7 +331,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8434-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8434-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

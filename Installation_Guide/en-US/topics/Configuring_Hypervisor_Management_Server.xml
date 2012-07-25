@@ -12,7 +12,7 @@
 	<important>
 		<title>Important — Security Considerations</title>
 		<para>
-			Setting a password on the <guilabel>OVIRT</guilabel> configuration screen sets the Node's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Node has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled.
+			Setting a password on the <guilabel>ovirt-engine</guilabel> configuration screen sets the Node's <systemitem>root</systemitem> password and enables <acronym>SSH</acronym> password authentication. Once the Node has successfully been added to the Manager it is recommended <acronym>SSH</acronym> password authentication is disabled.
 		</para>
 	</important>
 	<procedure>
@@ -33,7 +33,7 @@
 						</step>
 						<step>
 							<para>
-								Enable the <guilabel>Verify OVIRT Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of oVirt Engine installation.
+								Enable the <guilabel>Verify ovirt-engine Certificate</guilabel> option if you wish to verify that the finger print of the certificate retrieved from the management server you specified is correct. The value that the certificate finger print should be compared against is returned at the end of oVirt Engine installation.
 							</para>
 						</step>
 						<step>
@@ -73,12 +73,12 @@
 		</step>
 	</procedure>
 	<para>
-		The <guilabel>OVIRT</guilabel> configuration has been updated.
+		The <guilabel>ovirt-engine</guilabel> configuration has been updated.
 	</para>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7537-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

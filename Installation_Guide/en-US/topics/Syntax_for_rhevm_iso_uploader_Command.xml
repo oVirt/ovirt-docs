@@ -4,7 +4,7 @@
 %BOOK_ENTITIES;
 ]>
 
-<section id="Syntax_for_OVIRT_iso_uploader_Command" remap="TID_8412">
+<section id="Syntax_for_ovirt-engine_iso_uploader_Command" remap="TID_8412">
 	<title>Syntax for engine-iso-uploader Command</title>
 	<para>
 		The basic syntax for the ISO uploader command is:
@@ -104,7 +104,7 @@
 			</listitem>
 		</varlistentry>
 		<varlistentry>
-			<term><parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--OVIRT=<replaceable>FQDN</replaceable></parameter></term>
+			<term><parameter>-r <replaceable>FQDN</replaceable></parameter>, <parameter>--ovirt-engine=<replaceable>FQDN</replaceable></parameter></term>
 			<listitem>
 				<para>
 					Sets the fully qualified domain name of the oVirt Engine server from which to upload ISOs, where <replaceable>FQDN</replaceable>is replaced by the fully qualified domain name of the manager. It is assumed that the ISO uploader is being run on the same client machine as the oVirt Engine; the default value is <literal>localhost</literal>.
@@ -168,7 +168,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8412-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8412-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

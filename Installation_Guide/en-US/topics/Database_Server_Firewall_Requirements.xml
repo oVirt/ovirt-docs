@@ -7,7 +7,7 @@
 <section id="Database_Server_Firewall_Requirements" remap="TID_10131">
 	<title>Database Server Firewall Requirements</title>
 	<para>
-		oVirt supports the use of a remote database server. If you plan to use a remote database server with oVirt then you must ensure that the it allows connections from the Manager. If you plan to use a local database server on the Manager itself, which is the default option provided during installation, then no additional firewall rules are required.
+		ovirt-engine supports the use of a remote database server. If you plan to use a remote database server with oVirt then you must ensure that the it allows connections from the Manager. If you plan to use a local database server on the Manager itself, which is the default option provided during installation, then no additional firewall rules are required.
 	</para>
 	<table>
 		<title>Host Firewall Requirements</title>
@@ -63,7 +63,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10131-163938+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=10131-163938+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -5,7 +5,7 @@
 ]>
 
 <section id="Directory_Services_Support_in_Red_Hat_Enterprise_Virtualization" remap="TID_9262">
-	<title>Directory Services Support in oVirt</title>
+	<title>Directory Services Support in ovirt-engine</title>
 	<para>
 		During installation oVirt Engine creates its own internal administration user, <systemitem>admin</systemitem>. This account is intended for use when initially configuring the environment, and for troubleshooting. To add other users to oVirt you will need to attach a directory server to the Manager using the Domain Management Tool, <command>engine-manage-domains</command>.
 	</para>
@@ -13,7 +13,7 @@
 		Once at least one directory server has been attached to the Manager you will be able to add users that exist in the directory server and assign roles to them using the Administration Portal. Users will be identified by their User Principle Name (<acronym>UPN</acronym>) of the form <systemitem><replaceable>user</replaceable>@<replaceable>domain</replaceable></systemitem>. Attachment of more than one Directory Server to the Manager is also supported.
 	</para>
 	<para>
-		The Directory Servers currently supported for use with oVirt&nbsp;3.1 are: 
+		The Directory Servers currently supported for use with ovirt-engine&nbsp;3.1 are: 
 		<itemizedlist>
 			<listitem>
 				<para>
@@ -88,12 +88,12 @@
 	</para>
 	<important>
 		<para>
-			A user must be created in the Directory Server specifically for use as the oVirt administrative user. Do <emphasis>not</emphasis> use the Directory Server's administrative user as the oVirt administrative user.
+			A user must be created in the Directory Server specifically for use as the ovirt-engine administrative user. Do <emphasis>not</emphasis> use the Directory Server's administrative user as the oVirt administrative user.
 		</para>
 	</important>
 	<important>
 		<para>
-			If you are using Active Directory as your Directory Server, and you wish to use <systemitem>sysprep</systemitem> in the creation of Templates and Virtual Machines, then the oVirt administrative user must be delegated control over the Domain to: 
+			If you are using Active Directory as your Directory Server, and you wish to use <systemitem>sysprep</systemitem> in the creation of Templates and Virtual Machines, then the ovirt-engine administrative user must be delegated control over the Domain to: 
 			<itemizedlist>
 				<listitem>
 					<para><guilabel>Join a computer to the domain</guilabel>
@@ -127,7 +127,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9262-163901+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=9262-163901+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

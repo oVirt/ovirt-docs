@@ -6,8 +6,8 @@
 ]>
 <bookinfo id="book-Installation_Guide-Installation_Guide">
 	<title>Installation Guide</title>
-	<subtitle>Installing oVirt Virtualization  Environments</subtitle>
-	<productname>oVirt</productname>
+	<subtitle>Installing ovirt-engine Virtualization  Environments</subtitle>
+	<productname>ovirt-engine</productname>
 	<productnumber>3.1</productnumber>
 	<edition>1</edition>
 	<pubsnumber>1</pubsnumber>

@@ -20,7 +20,7 @@
 		<step>
 			<title>Override Apache configuration</title>
 			<para>
-				oVirt uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>engine-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:
+				ovirt-engine uses the <systemitem>mod_proxy</systemitem> module for the Apache web server (<systemitem>httpd</systemitem>) to redirect network traffic from the <acronym>HTTP</acronym> and <acronym>HTTPS</acronym> ports which you select, to the application server that the Manager runs on. If the <command>engine-setup</command> script detects an existing <systemitem>httpd</systemitem> configuration then you will need to decide whether or not to override it:
 			</para>
 			<screen>Do you wish to override current httpd configuration and restart the service? ['yes'| 'no']  [yes] :</screen>
 			<stepalternatives>
@@ -114,7 +114,7 @@
 							Internet Small Computer System Interface (<literal>ISCSI</literal>).
 						</para>
 					</listitem>
-				</itemizedlist> The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. oVirt also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center.
+				</itemizedlist> The <literal>NFS</literal>, <literal>FC</literal>, and <literal>ISCSI</literal> options are used to connect to remote storage. ovirt-engine also supports The <literal>LOCALFS</literal> storage type which allows the use of local storage attached to the virtualization hosts, but this storage type is not supported for the <literal>Default</literal> data center.
 			</para>
 			<para>
 				To use the default selection, <literal>NFS</literal>, press <keycap> Enter</keycap>. To select <literal>FC</literal>, or <literal>ISCSI</literal> then enter the value and then press <keycap> Enter</keycap>.
@@ -123,7 +123,7 @@
 		<step>
 			<title>Select database location</title>
 			<para>
-				oVirt supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:
+				ovirt-engine supports the use of a local database on the management system, or a remote database provided elsewhere in your environment. The setup script prompts you to indicate whether you wish to use a local database, which is the default option, or a remote database:
 			</para>
 			<screen>Enter DB type for installation ['remote'| 'local']  [local] :</screen>
 			<stepalternatives>
@@ -249,7 +249,7 @@ Configure iptables ? ['yes'| 'no']:
 			<example>
 				<title>Configuration Confirmation Screen</title>
 				<screen>
-OVIRT Engine will be installed using the following configuration:
+oVirt Engine will be installed using the following configuration:
 =================================================================
 http-port:                     80
 https-port:                    443
@@ -293,14 +293,14 @@ Setting Database Security...                             [ DONE ]
 Creating Database...                                     [ DONE ]
 Updating the Default Data Center Storage Type...         [ DONE ]
 Editing JBoss Configuration...                           [ DONE ]
-Editing OVIRT Engine Configuration...                    [ DONE ]
+Editing oVirt Engine Configuration...                    [ DONE ]
 Configuring the Default ISO Domain...                    [ DONE ]
 Configuring Firewall (iptables)...                       [ DONE ]
 Starting JBoss Service...                                [ DONE ]
 
  **** Installation completed successfully ******
 
-     (Please allow OVIRT Engine a few moments to start up.....)
+     (Please allow oVirt Engine a few moments to start up.....)
 
 
 Additional information:
@@ -308,11 +308,11 @@ Additional information:
  * SSH Public key fingerprint: fa:71:38:88:58:67:ae:f0:b1:17:fe:91:31:6c:66:6e
  * A default ISO share has been created on this host.
    If IP based access restrictions are required, please edit /isoshare entry in /etc/exports
- * The firewall has been updated, the old iptables configuration file was saved to /usr/share/OVIRT/conf/iptables.backup.103654-09092011_866
- * The installation log file is available at: /var/log/OVIRT/engine-setup_2011_09_09_10_32_56.log
- * Please use the user "admin" and password specified in order to login into OVIRT Engine
+ * The firewall has been updated, the old iptables configuration file was saved to /usr/share/ovirt-engine/conf/iptables.backup.103654-09092011_866
+ * The installation log file is available at: /var/log/ovirt-engine/engine-setup_2011_09_09_10_32_56.log
+ * Please use the user "admin" and password specified in order to login into oVirt Engine
  * To configure additional users, first configure authentication domains using the 'engine-manage-domains' utility
- * To access OVIRT Engine please go to the following URL: http://manager.demo.redhat.com:8080
+ * To access oVirt Engine please go to the following URL: http://manager.demo.redhat.com:8080
 </screen>
 			</example>
 		</step>
@@ -323,7 +323,7 @@ Additional information:
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7520-163936+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

@@ -10,7 +10,7 @@
 		The oVirt Engine authenticates users using directory services. Adding and removing users from the system requires the <systemitem>admin</systemitem> user to add the directory service relevant to the user.
 	</para>
 	<para>
-		The directory services supported by oVirt are Active Directory and IPA. The oVirt Engine includes a domain management tool, <command>engine-manage-domains</command>, to add and remove domains provided by these services.
+		The directory services supported by ovirt-engine are Active Directory and IPA. The oVirt Engine includes a domain management tool, <command>engine-manage-domains</command>, to add and remove domains provided by these services.
 	</para>
 	<para>
 		The <command>engine-manage-domains</command> command is only accessible on the client machine on which the oVirt Engine is installed. The <command>engine-manage-domains</command> command must be run as the <systemitem>root</systemitem> user.
@@ -18,7 +18,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8673-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8673-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

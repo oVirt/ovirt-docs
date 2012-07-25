@@ -7,11 +7,7 @@
 <chapter id="chap-Manager_Installation">
 	<title>Manager Installation</title>
 	<xi:include href="topics/Manager_Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-	<section id="sect-Subscribing_to_the_Red_Hat_Enterprise_Virtualization_Channels">
-		<title>Subscribing to the oVirt Channels</title>
-		<xi:include href="topics/Subscribing_to_the_Red_Hat_Enterprise_Virtualization_Manager_Channels_using_Subscription_Manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-		<xi:include href="topics/Subscribing_to_the_Red_Hat_Enterprise_Virtualization_Manager_Channels_using_RHN_Classic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-	</section>
+	<!-- YUM INSTRUCTIONS -->
 	<xi:include href="topics/Installing_Red_Hat_Enterprise_Virtualization_Manager1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<xi:include href="topics/Configuring_the_Manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 	<xi:include href="topics/Connecting_to_the_Administration_Portal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

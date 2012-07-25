@@ -5,9 +5,9 @@
 ]>
 
 <section id="Logical_Networks1" remap="TID_8669">
-	<title>Logical Networks in oVirt</title>
+	<title>Logical Networks in ovirt-engine</title>
 	<para>
-		By default the management network, called <guilabel>OVIRT</guilabel> is defined for a data center. New logical networks, for example for data, storage or display can be defined by the administrator. In general, logical networks are created to isolate network traffic by functionality or virtualize a physical topology. In addition, other networks can be used to segregate virtual machine traffic from the management networks, or isolate traffic between groups of virtual machines in the same cluster. In oVirt Engine, network definition, type and function are encapsulated in a logical entity called a <systemitem>Logical Network</systemitem>. For example, a data center may have the following networks,
+		By default the management network, called <guilabel>ovirt-engine</guilabel> is defined for a data center. New logical networks, for example for data, storage or display can be defined by the administrator. In general, logical networks are created to isolate network traffic by functionality or virtualize a physical topology. In addition, other networks can be used to segregate virtual machine traffic from the management networks, or isolate traffic between groups of virtual machines in the same cluster. In oVirt Engine, network definition, type and function are encapsulated in a logical entity called a <systemitem>Logical Network</systemitem>. For example, a data center may have the following networks,
 	</para>
 	<itemizedlist>
 		<listitem>
@@ -40,7 +40,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8669-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8669-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

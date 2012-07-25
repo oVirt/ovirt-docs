@@ -5,15 +5,15 @@
 ]>
 
 <section id="Determine_Network_Requirements" remap="TID_8668">
-	<title>Networking in oVirt</title>
+	<title>Networking in ovirt-engine</title>
 	<para>
-		oVirt uses networking to support almost every aspect of operations. Storage, host management, user connections, and virtual machine connectivity, for example, all rely on a well planned and configured network to deliver optimal performance. Setting up networking is a vital prerequisite for a oVirt environment because it is much simpler to plan for your projected networking requirements and implement your network accordingly than it is to discover your networking requirements through use and attempt to alter your network configuration retroactively.
+		ovirt-engine uses networking to support almost every aspect of operations. Storage, host management, user connections, and virtual machine connectivity, for example, all rely on a well planned and configured network to deliver optimal performance. Setting up networking is a vital prerequisite for a oVirt environment because it is much simpler to plan for your projected networking requirements and implement your network accordingly than it is to discover your networking requirements through use and attempt to alter your network configuration retroactively.
 	</para>
 	<para>
-		It is however possible to deploy a oVirt environment with no consideration given to networking at all. Simply ensuring that each physical machine in the environment has at least one <firstterm>Network Interface Controller</firstterm> (<acronym>NIC</acronym>) cabled to a switch and assigned an IP address by DHCP is enough to begin using a oVirt environment. While it is true that this approach to networking will provide a functional environment, it will not provide an optimal environment. Because network usage varies by task or action, grouping related tasks or functions into specialized networks can improve performance while simplifying the troubleshooting of network issues. By default, the oVirt Engine creates one logical network called <systemitem>OVIRT</systemitem> and uses this logical network for all traffic.
+		It is however possible to deploy a ovirt-engine environment with no consideration given to networking at all. Simply ensuring that each physical machine in the environment has at least one <firstterm>Network Interface Controller</firstterm> (<acronym>NIC</acronym>) cabled to a switch and assigned an IP address by DHCP is enough to begin using a oVirt environment. While it is true that this approach to networking will provide a functional environment, it will not provide an optimal environment. Because network usage varies by task or action, grouping related tasks or functions into specialized networks can improve performance while simplifying the troubleshooting of network issues. By default, the oVirt Engine creates one logical network called <systemitem>ovirtmgmt</systemitem> and uses this logical network for all traffic.
 	</para>
 	<para>
-		The <systemitem>OVIRT</systemitem> network is created and labeled as the <guilabel>Management</guilabel> logical network. The <systemitem>rhevm</systemitem> logical network is intended for management traffic between the oVirt Engine and virtualization hosts. Other types of traffic that are common to all oVirt environments are: 
+		The <systemitem>ovirt-engine</systemitem> network is created and labeled as the <guilabel>Management</guilabel> logical network. The <systemitem>rhevm</systemitem> logical network is intended for management traffic between the oVirt Engine and virtualization hosts. Other types of traffic that are common to all oVirt environments are: 
 		<itemizedlist>
 			<listitem>
 				<para>
@@ -33,20 +33,20 @@
 		</itemizedlist>
 	</para>
 	<para>
-		For the oVirt environment to perform optimally, these types of traffic should be separated. This is easily accomplished by assigning each type of network traffic to a different logical network. Each logical network must be associated with a cabled, active network device. The network device that supports each logical network can be a physical <acronym>NIC</acronym> or a logical interface, such as a bond device.
+		For the ovirt-engine environment to perform optimally, these types of traffic should be separated. This is easily accomplished by assigning each type of network traffic to a different logical network. Each logical network must be associated with a cabled, active network device. The network device that supports each logical network can be a physical <acronym>NIC</acronym> or a logical interface, such as a bond device.
 	</para>
 	<para>
-		The number of logical networks that can be created in a oVirt environment is limited by the number of VLANs defined in the environment. Each logical network needs at least one VLAN to support it.
+		The number of logical networks that can be created in a ovirt-engine environment is limited by the number of VLANs defined in the environment. Each logical network needs at least one VLAN to support it.
 	</para>
 	<note>
 		<para>
-			A familiarity with the network concepts and their use is highly recommended when planning and setting up networking in a oVirt environment. This document does not describe the concepts, protocols, requirements or general usage of bonds, bridges and logical networks. It is recommended that you read your network hardware vendor's guides for more information on managing networking.
+			A familiarity with the network concepts and their use is highly recommended when planning and setting up networking in a ovirt-engine environment. This document does not describe the concepts, protocols, requirements or general usage of bonds, bridges and logical networks. It is recommended that you read your network hardware vendor's guides for more information on managing networking.
 		</para>
 	</note>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8668-162223+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8668-162223+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

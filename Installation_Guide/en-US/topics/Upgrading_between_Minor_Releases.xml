@@ -63,21 +63,21 @@
 # <command>engine-upgrade</command> 
 Checking for updates....
 Stopping JBoss Service... DONE!
-Backing Up OVIRT DB... DONE!
-Updating OVIRT rpm... DONE!
-Updating OVIRT DB... DONE!
+Backing Up ovirt-engine DB... DONE!
+Updating ovirt-engine rpm... DONE!
+Updating ovirt-engine DB... DONE!
 Running post install configuration... DONE!
 Starting JBoss... DONE!
 
-Upgrade log available at  /var/log/OVIRT/rhevm-upgrade_2011_07_27_08_15_10.log
-DB Backup available at  /usr/share/OVIRT/db-backups/tmpVCI0WM.sql
+Upgrade log available at  /var/log/ovirt-engine/rhevm-upgrade_2011_07_27_08_15_10.log
+DB Backup available at  /usr/share/ovirt-engine/db-backups/tmpVCI0WM.sql
 To upgrade the history service or the reporting package, please run yum update engine-reports* and then rhevm-dwh-setup and rhevm-reports-setup.
 </screen>
 	</example>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7524-160903+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7524-160903+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

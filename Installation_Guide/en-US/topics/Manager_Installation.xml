@@ -42,7 +42,7 @@
 		</listitem>
 		<listitem>
 			<para>
-				The password you will use to secure the oVirt administration account.
+				The password you will use to secure the ovirt-engine administration account.
 			</para>
 		</listitem>
 		<listitem>
@@ -88,7 +88,7 @@
 	</para>
 	<example>
 		<title>Completed Installation</title>
-		<screen>OVIRT Engine will be installed using the following configuration:
+		<screen>oVirt Engine will be installed using the following configuration:
 =================================================================
 http-port:                     80
 https-port:                    443
@@ -128,16 +128,16 @@ Proceed with the configuration listed above? (yes|no): </screen>
 	</note>
 	<note>
 		<para>
-			Offline installation requires the creation of a software repository local to your oVirt environment. This software repository must contain all of the packages required to install oVirt Engine, Fedora virtualization hosts, and Fedora virtual machines.
+			Offline installation requires the creation of a software repository local to your ovirt-engine environment. This software repository must contain all of the packages required to install oVirt Engine, Fedora virtualization hosts, and Fedora virtual machines.
 		</para>
 		<para>
-			If you wish to create such a repository, refer to the <citetitle>Installing oVirt Offline</citetitle> technical brief, available at <ulink url="https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30"/>.
+			If you wish to create such a repository, refer to the <citetitle>Installing ovirt-engine Offline</citetitle> technical brief, available at <ulink url="https://access.redhat.com/knowledge/techbriefs/installing-red-hat-enterprise-virtualization-offline-rhev-30"/>.
 		</para>
 	</note>
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8653-163909+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

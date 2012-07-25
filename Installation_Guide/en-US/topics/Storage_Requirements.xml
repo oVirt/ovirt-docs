@@ -36,7 +36,7 @@
 		<!--   So the default size for the Node, excluding swap and storage is 2615MB   -->
 		<listitem>
 			<para>
-				The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Node is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the oVirt environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>.
+				The swap partition requires at least 8&nbsp;MB of storage. The recommended size of the swap partition varies depending on both the system the Node is being installed upon and the anticipated level of overcommit for the environment. Overcommit allows the ovirt-engine environment to present more RAM to guests than is actually physically present. The default overcommit ratio is <literal>0.5</literal>.
 			</para>
 			<para>
 				The recommended size of the swap partition can be determined by:
@@ -101,7 +101,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=7845-161531+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>

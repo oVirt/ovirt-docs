@@ -7,7 +7,7 @@
 <section id="System_Components" remap="TID_8652">
 	<title>System Components</title>
 	<para>
-		oVirt platform consists of one or more virtualization hosts (either oVirt Nodes or Fedora 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system.
+		ovirt-engine platform consists of one or more virtualization hosts (either oVirt Nodes or Fedora 6.2, or higher, systems) and at least one manager. The virtual machines run on the virtualization hosts. The system and all its components are managed through a centralized management system.
 	</para>
 	<variablelist>
 		<varlistentry>
@@ -22,7 +22,7 @@
 				<itemizedlist>
 					<listitem>
 						<para>
-							The Administration Portal is used to perform setup, configuration, and management of the oVirt environment.
+							The Administration Portal is used to perform setup, configuration, and management of the ovirt-engine environment.
 						</para>
 					</listitem>
 					<listitem>
@@ -64,7 +64,7 @@
 	<simplesect>
 		<title/>
 		<para role="RoleCreateBugPara">
-			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=oVirt&amp;component=doc-Installation_Guide">Report a bug</ulink>
+			<ulink url="https://bugzilla.redhat.com/enter_bug.cgi?cf_environment=Instance+Name%3A+Not+Defined%0ABuild%3A+CSProcessor+Builder+Version+1.5%0ABuild+Filter%3A+null%0ABuild+Name%3A+%0ABuild+Date%3A+20-07-2012+14%3A00%3A28&amp;cf_build_id=8652-163891+20+Jul+2012+14%3A00+en-US&amp;product=ovirt-engine&amp;component=doc-Installation_Guide">Report a bug</ulink>
 		</para>
 	</simplesect>
 </section>
