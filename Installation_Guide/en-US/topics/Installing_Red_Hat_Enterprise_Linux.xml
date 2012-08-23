@@ -33,12 +33,10 @@
 		</step>
 		<step>
 			<title>Enable yum repository</title>
-			<step>
-				<para>
-					Install the <package>ovirt-release</package> package as <systemitem>root</systemitem>. This package provides the repository definition file:
-				</para>
-				<screen># yum localinstall --nogpgcheck FIXME: URL</screen>
-			</step>
+			<para>
+				Install the <package>ovirt-release</package> package as <systemitem>root</systemitem>. This package provides the repository definition file:
+			</para>
+			<screen># yum localinstall --nogpgcheck FIXME: URL</screen>
 		</step>
 	</procedure>
 	<formalpara>
